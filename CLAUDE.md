@@ -55,12 +55,19 @@ one command (`python run_all.py`) must rebuild every number.
 run_all.py            one command: scrape > clean > prices > engine > metrics > report (--skip-<stage>, --only)
 config/config.yaml    locked parameters
 src/config.py         config loader, analysis window, sample split, OOS firewall guard
-src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch) and HTML parsers
+src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch, retries) and HTML parsers
+src/scrape/           Phase 1: legislators.py (service dates), listing.py, download.py (manifest),
+                      parse.py (transactions_raw + validation), names.py, summary.py;
+                      run by hand in chunks with: python -m src.scrape --years 2024 --steps listing download
+config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
+data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
+data/raw/legislators/ congress-legislators YAML (Senate service dates)
 data/raw/crsp/        CRSP daily CSV goes here once WRDS access is approved
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
+outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
 docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
@@ -71,7 +78,7 @@ tests/                pytest suite (run: python -m pytest)
 | Phase | Work | Status |
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
-| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable) | Not started |
+| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27) |
 | 2 | Clean: parse, filter universe and owners, amendments, matching, exclusions log | Not started |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Not started |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Not started |
