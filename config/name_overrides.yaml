@@ -7,4 +7,5 @@
 # (for example a candidate who never served), optionally with a note:
 #   "Jane Q|Example": {bioguide_id: E000001, note: "checked 2026-09-27, Harry"}
 #   "John|Candidate": {bioguide_id: null, note: "2016 candidate, never served"}
-overrides: {}
+overrides:
+  "James|Banks": {bioguide_id: B001299, note: "eFD \"Banks, James E.\" is Jim Banks (R-IN, Senate from 2025-01-03); confirmed by Harry 2026-09-27 (H1)"}

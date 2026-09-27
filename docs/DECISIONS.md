@@ -54,6 +54,34 @@ Config keys refer to config/config.yaml.
 | E07 | 2026-09-27 | Claude (engineer) | **The listing is fetched per filer type** (1, 4, 5 separately, because a search row does not say which type it came from) **and month by month when a year has more than 100 filings of one type** (the site caps pages at 100). A cached listing fetched on or before its end date is re-fetched on the next run, so the 2026 listing becomes final on the first run after 2026-09-30 | `data.scrape_filer_types`, `data.scrape_end` | Avoids relying on the site's sort order to page through results; the monthly totals are checked against the yearly total. |
 | E08 | 2026-09-27 | Claude (engineer) | **Phase 1 tables use the year RECEIVED** (the disclosure date) unless labelled otherwise | none (summary only) | The strategy trades on disclosure, so that is the year that matters. |
 
+## Harry's decisions, Phase 2 start (2026-09-27)
+
+| # | Date | Who | Decision | Config key | Reason |
+|---|---|---|---|---|---|
+| H1 | 2026-09-27 | Harry | **Jim Banks confirmed**: eFD's "Banks, James E." (filer "James Banks") is Jim Banks, bioguide B001299 (R-IN, Senate from 2025-01-03). Added to config/name_overrides.yaml | `data.name_overrides` | Resolves HANDOVER open question 1; the fuzzy matcher could not settle it under the "do not guess" rule. |
+| H2 | 2026-09-27 | Harry | **E03 to E08 confirmed as written** | as in E03 to E08 | Engineering interpretations reviewed and accepted. |
+| H3 | 2026-09-27 | Harry | **Headline strategy unchanged: copy every in-scope trade.** Robustness variants V1 to V12 are PRE-REGISTERED now, before any price or return has been computed (see "Pre-registered variants" below). Phase 2 builds the flags needed for V1 to V6 into data/processed/trades_clean.csv | none (variants table) | Fixing the list of robustness checks before seeing any result means none of them was chosen because of how it came out. |
+
+## Pre-registered variants
+Registered 2026-09-27 by Harry (H3) at commit `622a455fb1ce39cf4e975635195d7f44182c1989` (main after the Phase 1
+merge). At that commit no price, return or performance number of any kind had been computed. "Status" changes to
+"run" (with a row in "Variants run") when each is executed.
+
+| # | Date registered | Who | Variant | Flag / config change | Commit at registration | Status |
+|---|---|---|---|---|---|---|
+| V1 | 2026-09-27 | Harry | Exclude Tuberville | drop rows with `v1_tuberville` | 622a455 | pre-registered |
+| V2 | 2026-09-27 | Harry | Leave-one-senator-out, for each of the top 5 senators by in-scope trade count (5 runs) | drop rows with `senator_rank == k`, k = 1..5 | 622a455 | pre-registered |
+| V3 | 2026-09-27 | Harry | Exclude trades made in a senator's first 180 days of service (onboarding restructuring) | drop rows with `v3_first_180d` | 622a455 | pre-registered |
+| V4 | 2026-09-27 | Harry | Exclude trades from any single PTR with 50 or more in-scope transactions (bulk restructuring) | drop rows with `bulk_ptr` | 622a455 | pre-registered |
+| V5 | 2026-09-27 | Harry | Exclude ETFs | `universe.include_etfs: false` (drops `is_etf`) | 622a455 | pre-registered |
+| V6 | 2026-09-27 | Harry | Include spouse and dependent-child trades | `universe.owners: [Self, Joint, Spouse, Child]` (adds rows with `v6_family_owner`) | 622a455 | pre-registered |
+| V7 | 2026-09-27 | Harry | Sizing at the lower bound of the range | `trades.sizing: lower_bound` | 622a455 | pre-registered |
+| V8 | 2026-09-27 | Harry | Equal dollars per trade | `trades.sizing: equal_dollar` | 622a455 | pre-registered |
+| V9 | 2026-09-27 | Harry | Same-day close entry for filings timestamped before 15:30 US Eastern, otherwise next day | `trades.price_timing: same_day_close` (cutoff 15:30 ET) | 622a455 | pre-registered |
+| V10 | 2026-09-27 | Harry | Equal-weight portfolio, rebalanced at each filing date | `portfolio.weighting: equal` | 622a455 | pre-registered |
+| V11 | 2026-09-27 | Harry | 3-year window | `analysis.window_years: 3` | 622a455 | pre-registered |
+| V12 | 2026-09-27 | Harry | 10-year window | `analysis.window_years: 10` | 622a455 | pre-registered |
+
 ## Variants run
 Every run with any non-default config value is logged here: date, who, what changed, commit, where the output is.
 The professor asks how many variants were tried.
