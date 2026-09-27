@@ -1,0 +1,104 @@
+{
+ "data": [
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/d6d82ed2-cdde-4953-9ac8-97566630a7a4/\" target=\"_blank\">Periodic Transaction Report for 05/31/2020</a>",
+   "05/31/2020"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/bc032824-ed4b-4468-80c2-a6beaada0366/\" target=\"_blank\">Periodic Transaction Report for 05/27/2020</a>",
+   "05/27/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/ae9950be-f385-4c4f-b70a-caa5e1602966/\" target=\"_blank\">Periodic Transaction Report for 05/21/2020</a>",
+   "05/21/2020"
+  ],
+  [
+   "Roger F",
+   "Wicker",
+   "Wicker, Roger (Senator)",
+   "<a href=\"/search/view/ptr/83bec0fa-4735-47a7-b445-8434b42db9cb/\" target=\"_blank\">Periodic Transaction Report for 05/18/2020</a>",
+   "05/18/2020"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/31e8128b-93b6-4a0d-88b2-2c54c6e802fc/\" target=\"_blank\">Periodic Transaction Report for 05/15/2020</a>",
+   "05/15/2020"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/586556d6-f408-4f10-a3a5-e45ea07e23c7/\" target=\"_blank\">Periodic Transaction Report for 05/14/2020</a>",
+   "05/14/2020"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/69e82326-32d6-493a-8a31-3f741479ba76/\" target=\"_blank\">Periodic Transaction Report for 05/11/2020</a>",
+   "05/11/2020"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/8104804b-208a-49ca-8089-7d270a4b2bfa/\" target=\"_blank\">Periodic Transaction Report for 05/11/2020</a>",
+   "05/11/2020"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/ef8819eb-45c8-4ab3-addb-50fc3a7f9ddf/\" target=\"_blank\">Periodic Transaction Report for 10/15/2019 (Amendment 1)</a>",
+   "05/07/2020"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/d411d8c3-b780-4e4e-8490-aa790811fa5f/\" target=\"_blank\">Periodic Transaction Report for 05/05/2020</a>",
+   "05/05/2020"
+  ],
+  [
+   "Roger F",
+   "Wicker",
+   "Wicker, Roger (Senator)",
+   "<a href=\"/search/view/ptr/9fd36476-cd7e-4635-88f2-4806e574e3e7/\" target=\"_blank\">Periodic Transaction Report for 05/05/2020</a>",
+   "05/05/2020"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/e4f7fd47-09da-42c8-ab8e-064ddd5e185f/\" target=\"_blank\">Periodic Transaction Report for 05/04/2020</a>",
+   "05/04/2020"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/39da51c8-cf62-43bc-847f-6cf679e0e831/\" target=\"_blank\">Periodic Transaction Report for 05/01/2020</a>",
+   "05/01/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:51",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-05-01"
+ },
+ "recordsTotal": 13
+}

@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/39701819-7165-4d51-a3d0-47ba61e239d6/\" target=\"_blank\">Periodic Transaction Report for 09/26/2020</a>",
+   "09/26/2020"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/272a44f0-e514-4d0a-993d-bc69316c77aa/\" target=\"_blank\">Periodic Transaction Report for 09/24/2020</a>",
+   "09/24/2020"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/bd6ad088-ad7f-48c7-a23f-58dd648c6200/\" target=\"_blank\">Periodic Transaction Report for 09/18/2020</a>",
+   "09/18/2020"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/1de8728d-7085-4ddc-8275-d10d2684ff60/\" target=\"_blank\">Periodic Transaction Report for 09/16/2020</a>",
+   "09/16/2020"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/34ebca60-a389-42b5-874e-c59eeea89ad6/\" target=\"_blank\">Periodic Transaction Report for 09/11/2020</a>",
+   "09/11/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/53a76d97-d1c7-4c80-999a-99d12987979b/\" target=\"_blank\">Periodic Transaction Report for 09/09/2020</a>",
+   "09/09/2020"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/5809a671-cb5c-46c3-a6ec-35481814e274/\" target=\"_blank\">Periodic Transaction Report for 09/08/2020</a>",
+   "09/08/2020"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/19b4badb-691c-451d-90a1-5f8e68c3750d/\" target=\"_blank\">Periodic Transaction Report for 09/08/2020</a>",
+   "09/08/2020"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/d4ab53a8-86b8-43ee-8d12-64458b870046/\" target=\"_blank\">Periodic Transaction Report for 09/02/2020</a>",
+   "09/02/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:55",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-09-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-09-01"
+ },
+ "recordsTotal": 9
+}

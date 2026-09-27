@@ -1,0 +1,55 @@
+{
+ "data": [
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/e29a0a93-7153-42f3-97c5-e9f68fe47820/\" target=\"_blank\">Periodic Transaction Report for 07/31/2020</a>",
+   "07/31/2020"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/21f72e24-9365-46e8-8cfc-c5a5a2a4ca99/\" target=\"_blank\">Periodic Transaction Report for 07/14/2020</a>",
+   "07/14/2020"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/9363be8a-0a06-443e-b27a-8c62cf83a956/\" target=\"_blank\">Periodic Transaction Report for 07/14/2020</a>",
+   "07/14/2020"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/98fe5365-9847-440a-95d9-cc5a2be582de/\" target=\"_blank\">Periodic Transaction Report for 07/13/2020</a>",
+   "07/13/2020"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/f4826329-8802-464c-b502-66165bc501c5/\" target=\"_blank\">Periodic Transaction Report for 07/02/2020</a>",
+   "07/02/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/5222f3bf-d740-4457-b3b9-190e56485109/\" target=\"_blank\">Periodic Transaction Report for 07/01/2020</a>",
+   "07/01/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:53",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-07-01"
+ },
+ "recordsTotal": 6
+}

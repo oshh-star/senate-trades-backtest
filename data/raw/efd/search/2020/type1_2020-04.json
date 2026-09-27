@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/d68fe6d0-0db6-41c7-b1ed-0a65561c22cf/\" target=\"_blank\">Periodic Transaction Report for 04/30/2020</a>",
+   "04/30/2020"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/17fc6d2d-4992-420c-a064-32cec375ed31/\" target=\"_blank\">Periodic Transaction Report for 04/29/2020</a>",
+   "04/29/2020"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/c4cd5932-d6d6-49b1-a149-f3d0ec8333ef/\" target=\"_blank\">Periodic Transaction Report for 04/22/2020</a>",
+   "04/22/2020"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/54f358d2-7193-43cd-993c-f832c810a771/\" target=\"_blank\">Periodic Transaction Report for 04/17/2020</a>",
+   "04/17/2020"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/8eae5ca1-bec4-44fd-b294-088d17ed7760/\" target=\"_blank\">Periodic Transaction Report for 04/16/2020</a>",
+   "04/16/2020"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/469d1b8f-262c-4cdc-9052-2f76ce33c2bc/\" target=\"_blank\">Periodic Transaction Report for 04/14/2020</a>",
+   "04/14/2020"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/eb7f09d1-cd5b-48b5-a073-89dfe1a14f1c/\" target=\"_blank\">Periodic Transaction Report for 04/11/2020</a>",
+   "04/11/2020"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/e2727dd9-816b-4bcb-b303-9eaaa4c39215/\" target=\"_blank\">Periodic Transaction Report for 04/10/2020</a>",
+   "04/10/2020"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/a92c001e-0975-47b5-966e-e8b3a01a7767/\" target=\"_blank\">Periodic Transaction Report for 04/03/2020</a>",
+   "04/03/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:50",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-04-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-04-01"
+ },
+ "recordsTotal": 9
+}
