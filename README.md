@@ -42,7 +42,7 @@ No file paths need editing. Run `python run_all.py --help` for the other options
 ## Where the data came from
 | Data | Source | Notes |
 |---|---|---|
-| Senate trades | Senate eFD, Periodic Transaction Reports received 2016-01-01 to 2026-09-30, scraped directly | Keyed to the date each report was **received** (made public). Paper (scanned) filings, candidate filings, amended originals and excluded owners are counted and listed in `outputs/data_quality.md`. |
+| Senate trades | Senate eFD, Periodic Transaction Reports received 2016-01-01 to 2026-09-30, scraped directly | Keyed to the date each report was **received** (made public). In scope only if the transaction date falls within the filer's Senate service (congress-legislators dates). Paper (scanned) filings, out-of-service transactions, amended originals and excluded owners are counted and listed in `outputs/data_quality.md`. |
 | Stock and ETF prices | Yahoo Finance adjusted close (dividends reinvested), USD | Delisted stocks are missing from Yahoo (survivorship bias). CRSP is used as a robustness check if WRDS access is granted (`prices.price_source: crsp`). |
 | Factors and risk-free rate | Kenneth French Data Library: US Fama-French 3 factors, momentum, and RF (daily and monthly) | One risk-free series throughout: Ken French US RF (one-month T-bill). |
 

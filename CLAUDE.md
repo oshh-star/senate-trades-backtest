@@ -16,12 +16,14 @@ one command (`python run_all.py`) must rebuild every number.
 
 ### Locked spec in brief (details and reasons in DECISIONS.md)
 - **Data**: scrape Senate eFD PTRs directly (never the frozen senate-stock-watcher-data repo).
-  PTRs received 2016-01-01 to 2026-09-30. Filers who were senators when they filed (eFD filer
-  types 1 Senator and 5 Former Senator); candidate filings (type 4) are logged and excluded.
+  PTRs received 2016-01-01 to 2026-09-30, ALL filer types (1 Senator, 4 Candidate, 5 Former Senator),
+  with the date AND time received. **Scope (A05)**: a transaction is in scope if and only if its
+  transaction date falls within that person's Senate service (unitedstates/congress-legislators
+  dates, data/interim/senate_terms.csv); the eFD filer-type label is today's status and is not used.
   Paper filings are logged (senator, date, link) and excluded. Amendments: keep the latest version
   and log the replaced originals. Raw downloads are cached in data/raw/ and committed.
-- **Analysis window**: `analysis.window_years` (default 5, i.e. disclosures 2021-10-01 to
-  2026-09-30; 3 and 10 are a one-line change).
+- **Analysis window (A06)**: ends 2026-08-31 (Ken French data ends there). `analysis.window_years`
+  (default 5, i.e. disclosures 2021-09-01 to 2026-08-31, 60 months; 3 and 10 are a one-line change).
 - **Universe**: US common stocks **and US-listed ETFs** (every trade flagged `is_etf`;
   `universe.include_etfs: false` is the ETF-excluded variant). Options, bonds, crypto and mutual
   funds are excluded.
@@ -43,7 +45,8 @@ one command (`python run_all.py`) must rebuild every number.
   and 252 trading days.
 - **Benchmarks** (Phase 5): SPY; SPY scaled to strategy volatility; equal-weighted universe;
   FF3 plus momentum (US); NANC and KRUZ from February 2023.
-- **Out-of-sample firewall**: the window splits at its midpoint. Code refuses to compute
+- **Out-of-sample firewall**: the window splits at its midpoint in whole months (5y: in-sample to
+  2024-02-29, out-of-sample from 2024-03-01). Code refuses to compute
   out-of-sample results unless `oos.oos_unlocked: true` AND `project.frozen_rules_commit` is set,
   and flipping them requires a DECISIONS.md entry naming the frozen commit.
 
