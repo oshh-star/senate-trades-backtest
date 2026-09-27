@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/7c1aecfe-f71c-4834-b8c5-cd1780356c17/\" target=\"_blank\">Periodic Transaction Report for 09/27/2017</a>",
+   "09/27/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/984c84fa-c389-49cf-995b-75afcefdc5b1/\" target=\"_blank\">Periodic Transaction Report for 09/19/2017</a>",
+   "09/19/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/3119e824-d7fa-44df-8f51-e33693af10bd/\" target=\"_blank\">Periodic Transaction Report for 09/19/2017</a>",
+   "09/19/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/55437b5c-4e37-4e20-a94c-22ae42d0dece/\" target=\"_blank\">Periodic Transaction Report for 09/15/2017</a>",
+   "09/15/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/bb5e855a-e130-45b5-89da-f9d64954a56e/\" target=\"_blank\">Periodic Transaction Report for 09/12/2017</a>",
+   "09/12/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/9d393664-5ed4-4040-b148-f066e79ae9a7/\" target=\"_blank\">Periodic Transaction Report for 09/11/2017</a>",
+   "09/11/2017"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f9733850-1db0-4406-8936-ce2867c1b3b8/\" target=\"_blank\">Periodic Transaction Report for 09/01/2017</a>",
+   "09/01/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:41",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-09-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-09-01"
+ },
+ "recordsTotal": 7
+}

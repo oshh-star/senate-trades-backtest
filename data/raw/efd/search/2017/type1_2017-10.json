@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "Mike",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/4c47b9b8-1018-4619-bc5d-7afa0a3c3abd/\" target=\"_blank\">Periodic Transaction Report for 10/30/2017</a>",
+   "10/30/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/03dd1dcd-f724-4af3-800b-93e9d1fb3fd0/\" target=\"_blank\">Periodic Transaction Report for 10/24/2017</a>",
+   "10/24/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/28678982-72de-419a-b2c9-5ead837ddc57/\" target=\"_blank\">Periodic Transaction Report for 10/18/2017</a>",
+   "10/18/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/7f8ebdbb-c6d8-4b1f-b3bb-67a1c5b8bc4f/\" target=\"_blank\">Periodic Transaction Report for 10/17/2017</a>",
+   "10/17/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/73989da6-5bdd-4eb4-9085-a64b4cf9d2d6/\" target=\"_blank\">Periodic Transaction Report for 10/16/2017</a>",
+   "10/16/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/bbab31ed-9493-4abc-a572-3a29c273fd97/\" target=\"_blank\">Periodic Transaction Report for 10/12/2017</a>",
+   "10/12/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/8ecb444e-a54c-47a1-8db4-f4b05ac70b9d/\" target=\"_blank\">Periodic Transaction Report for 10/06/2017</a>",
+   "10/06/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/2697b867-b20d-47be-98d3-a8d19339b36d/\" target=\"_blank\">Periodic Transaction Report for 10/06/2017</a>",
+   "10/06/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:42",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-10-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-10-01"
+ },
+ "recordsTotal": 8
+}

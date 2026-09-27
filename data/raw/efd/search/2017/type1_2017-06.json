@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/c93d6361-2085-406a-a3a3-e75201c6def5/\" target=\"_blank\">Periodic Transaction Report for 06/27/2017</a>",
+   "06/27/2017"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/de110889-435b-4838-94d6-872fed00db5e/\" target=\"_blank\">Periodic Transaction Report for 06/26/2017</a>",
+   "06/26/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/3255d218-079d-48fa-8adb-e80312374a77/\" target=\"_blank\">Periodic Transaction Report for 06/23/2017</a>",
+   "06/23/2017"
+  ],
+  [
+   "Patty",
+   "Murray",
+   "Murray, Patty (Senator)",
+   "<a href=\"/search/view/ptr/07a7470c-ae50-4a37-8c10-cf1c59a69674/\" target=\"_blank\">Periodic Transaction Report for 06/22/2017</a>",
+   "06/22/2017"
+  ],
+  [
+   "Jeanne",
+   "Shaheen",
+   "Shaheen, Jeanne (Senator)",
+   "<a href=\"/search/view/ptr/9e63eb2b-5a2a-4cd6-9d86-1ea6157208c1/\" target=\"_blank\">Periodic Transaction Report for 06/21/2017</a>",
+   "06/21/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/8b7d2849-1062-4bc9-b230-fd1cab165b22/\" target=\"_blank\">Periodic Transaction Report for 06/20/2017</a>",
+   "06/20/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/e2b3fafe-ed03-4a9b-b450-9f54400fe50f/\" target=\"_blank\">Periodic Transaction Report for 06/14/2017</a>",
+   "06/14/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/2853a408-a50a-44a1-88a6-62d939858430/\" target=\"_blank\">Periodic Transaction Report for 06/13/2017</a>",
+   "06/13/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/b33c92f5-43d9-430a-8c52-7e5c29954e6d/\" target=\"_blank\">Periodic Transaction Report for 06/08/2017</a>",
+   "06/08/2017"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/b2a66353-5016-440f-820e-08c86c3f4eff/\" target=\"_blank\">Periodic Transaction Report for 06/06/2017</a>",
+   "06/06/2017"
+  ],
+  [
+   "Steve",
+   "Daines",
+   "Daines, Steve (Senator)",
+   "<a href=\"/search/view/ptr/dd115181-bd68-40b7-bacc-2eb1269da846/\" target=\"_blank\">Periodic Transaction Report for 06/01/2017</a>",
+   "06/01/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:38",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-06-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-06-01"
+ },
+ "recordsTotal": 11
+}

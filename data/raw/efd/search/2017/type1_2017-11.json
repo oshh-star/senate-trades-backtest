@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/3b49848e-ffef-40f0-bae2-134f42e73b99/\" target=\"_blank\">Periodic Transaction Report for 11/16/2017</a>",
+   "11/16/2017"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/e0a8aa1c-11b5-45aa-baeb-9216b60b0e5d/\" target=\"_blank\">Periodic Transaction Report for 11/14/2017</a>",
+   "11/14/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/6998c521-4892-4eca-a67e-9b76dd030d9f/\" target=\"_blank\">Periodic Transaction Report for 11/14/2017</a>",
+   "11/14/2017"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/32bf0111-becd-47e8-bc3d-74caf0bd364a/\" target=\"_blank\">Periodic Transaction Report for 11/13/2017</a>",
+   "11/13/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/4a4ea989-1531-4b37-8d79-89a7915c1cb7/\" target=\"_blank\">Periodic Transaction Report for 11/08/2017</a>",
+   "11/07/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/5d2e0b4a-2d16-4cc2-9bd0-7c619e1e8407/\" target=\"_blank\">Periodic Transaction Report for 11/07/2017</a>",
+   "11/07/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/feb25195-2fd4-4690-868a-68ae29e5b591/\" target=\"_blank\">Periodic Transaction Report for 11/07/2017</a>",
+   "11/07/2017"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/ab5a547e-ce37-4e98-98a6-1df64460bbbb/\" target=\"_blank\">Periodic Transaction Report for 11/03/2017</a>",
+   "11/03/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:43",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-11-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-11-01"
+ },
+ "recordsTotal": 8
+}
