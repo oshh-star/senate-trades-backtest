@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1607610600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Airbnb, Inc.",
+  "shortName": "Airbnb, Inc.",
+  "symbol": "ABNB"
+ },
+ "queried_at": "2026-09-27T22:26:30Z",
+ "symbol": "ABNB"
+}

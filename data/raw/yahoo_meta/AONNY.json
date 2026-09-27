@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 996586200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Aeon Co., Ltd.",
+  "shortName": "Aeon Co. Ltd.",
+  "symbol": "AONNY"
+ },
+ "queried_at": "2026-09-27T22:27:55Z",
+ "symbol": "AONNY"
+}

@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:26:58Z",
+ "search": [
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Agung Podomoro Land Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Agung Podomoro Land Tbk.",
+   "symbol": "APLN.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Sumber Tani Agung Resources Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Sumber Tani Agung Resources Tbk",
+   "symbol": "STAA.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Summarecon Agung Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Summarecon Agung Tbk",
+   "symbol": "SMRA.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "Grupo Rotoplas S.A.B. de C.V.",
+   "quoteType": "EQUITY",
+   "shortname": "GRUPO ROTOPLAS SAB DE CV",
+   "symbol": "AGUA.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Bhakti Agung Propertindo Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Bhakti Agung Propertindo Tbk.",
+   "symbol": "BAPI.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": "Aguas Andinas S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "AGUAS ANDINAS S.A., SERIE A",
+   "symbol": "AGUAS-A.SN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "INVERSIONES AGUAS METROPOLITANA",
+   "symbol": "IAM0.SN",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "AGU"
+}

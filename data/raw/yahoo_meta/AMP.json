@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1126791000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ameriprise Financial, Inc.",
+  "shortName": "Ameriprise Financial, Inc.",
+  "symbol": "AMP"
+ },
+ "queried_at": "2026-09-27T22:27:42Z",
+ "symbol": "AMP"
+}

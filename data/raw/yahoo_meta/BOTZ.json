@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1473773400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Global X Robotics & Artificial Intelligence ETF",
+  "shortName": "Global X Robotics & Artificial ",
+  "symbol": "BOTZ"
+ },
+ "queried_at": "2026-09-27T22:29:52Z",
+ "symbol": "BOTZ"
+}

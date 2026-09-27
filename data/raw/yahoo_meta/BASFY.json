@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "BASF SE",
+  "shortName": "BASF SE",
+  "symbol": "BASFY"
+ },
+ "queried_at": "2026-09-27T22:28:57Z",
+ "symbol": "BASFY"
+}

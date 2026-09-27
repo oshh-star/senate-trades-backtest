@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 769095000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ANZ Group Holdings Limited",
+  "shortName": "ANZ GROUP HLDGS LTD",
+  "symbol": "ANZGY"
+ },
+ "queried_at": "2026-09-27T22:27:53Z",
+ "symbol": "ANZGY"
+}

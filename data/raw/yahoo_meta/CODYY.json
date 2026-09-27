@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Compagnie de Saint-Gobain S.A.",
+  "shortName": "Compagnie de Saint-Gobain",
+  "symbol": "CODYY"
+ },
+ "queried_at": "2026-09-27T22:31:58Z",
+ "symbol": "CODYY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 761927400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Albemarle Corporation",
+  "shortName": "Albemarle Corporation",
+  "symbol": "ALB"
+ },
+ "queried_at": "2026-09-27T22:27:17Z",
+ "symbol": "ALB"
+}

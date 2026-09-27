@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 986563800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ABB Ltd",
+  "shortName": "ABB Ltd.",
+  "symbol": "ABBNY"
+ },
+ "queried_at": "2026-09-27T22:26:26Z",
+ "symbol": "ABBNY"
+}

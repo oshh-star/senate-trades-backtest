@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 795277800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "ASML Holding N.V.",
+  "shortName": "ASML Holding N.V. - New York Re",
+  "symbol": "ASML"
+ },
+ "queried_at": "2026-09-27T22:28:22Z",
+ "symbol": "ASML"
+}

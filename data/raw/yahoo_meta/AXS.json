@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1057066200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AXIS Capital Holdings Limited",
+  "shortName": "Axis Capital Holdings Limited",
+  "symbol": "AXS"
+ },
+ "queried_at": "2026-09-27T22:28:43Z",
+ "symbol": "AXS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 783264600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bank of Montreal",
+  "shortName": "Bank Of Montreal",
+  "symbol": "BMO"
+ },
+ "queried_at": "2026-09-27T22:29:46Z",
+ "symbol": "BMO"
+}

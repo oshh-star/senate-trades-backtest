@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1556803800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Beyond Meat, Inc.",
+  "shortName": "Beyond Meat, Inc.",
+  "symbol": "BYND"
+ },
+ "queried_at": "2026-09-27T22:30:25Z",
+ "symbol": "BYND"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1176211800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Intermediate-Term Bond Index Fund ETF Shares",
+  "shortName": "Vanguard Intermediate-Term Bond",
+  "symbol": "BIV"
+ },
+ "queried_at": "2026-09-27T22:29:28Z",
+ "symbol": "BIV"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1404307800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "VictoryShares US 500 Volatility Wtd ETF",
+  "shortName": "VictoryShares US 500 Volatility",
+  "symbol": "CFA"
+ },
+ "queried_at": "2026-09-27T22:31:14Z",
+ "symbol": "CFA"
+}

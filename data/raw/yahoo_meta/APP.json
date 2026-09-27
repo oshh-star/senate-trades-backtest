@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1618493400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "AppLovin Corporation",
+  "shortName": "Applovin Corporation",
+  "symbol": "APP"
+ },
+ "queried_at": "2026-09-27T22:28:04Z",
+ "symbol": "APP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1626701400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Bureau Veritas SA",
+  "shortName": "Bureau Veritas SA",
+  "symbol": "BVVBY"
+ },
+ "queried_at": "2026-09-27T22:30:20Z",
+ "symbol": "BVVBY"
+}

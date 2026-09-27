@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:29:56Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Boston Partners Long/Short Equity Instl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Boston Partners Long/Short Equi",
+   "symbol": "BPLSX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "BPLENOV@EC2702A",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "14876.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Boston Partners Long/Short Equity Inv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Boston Partners Long/Short Equi",
+   "symbol": "BPLEX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": "Banchile Dividendos Accs Chilenas BPLUS",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001SJ3I.SN",
+   "symbol": "0P0001SJ3I.SN",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Tokyo Stock Exchange",
+   "exchange": "JPX",
+   "longname": "BPLATS,Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BPLATS INC",
+   "symbol": "4381.T",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Bharat Parenterals Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Bharat Parenterals Limited",
+   "symbol": "BPLPHARMA.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "BlackRock Inflation Protected Bond K",
+   "quoteType": "MUTUALFUND",
+   "shortname": "BlackRock Inflation Protected B",
+   "symbol": "BPLBX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "BPL"
+}

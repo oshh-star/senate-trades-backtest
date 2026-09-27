@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1466515800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Barratt Redrow plc",
+  "shortName": "BARRATT REDROW PLC",
+  "symbol": "BTDPY"
+ },
+ "queried_at": "2026-09-27T22:30:14Z",
+ "symbol": "BTDPY"
+}

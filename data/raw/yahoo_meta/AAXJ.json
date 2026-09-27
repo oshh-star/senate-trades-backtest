@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1218807000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI All Country Asia ex Japan ETF",
+  "shortName": "iShares MSCI All Country Asia e",
+  "symbol": "AAXJ"
+ },
+ "queried_at": "2026-09-27T22:26:23Z",
+ "symbol": "AAXJ"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1554816600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Alcon Inc.",
+  "shortName": "Alcon Inc.",
+  "symbol": "ALC"
+ },
+ "queried_at": "2026-09-27T22:27:18Z",
+ "symbol": "ALC"
+}

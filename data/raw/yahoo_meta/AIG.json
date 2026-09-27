@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 94833000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "American International Group, Inc.",
+  "shortName": "American International Group, I",
+  "symbol": "AIG"
+ },
+ "queried_at": "2026-09-27T22:27:06Z",
+ "symbol": "AIG"
+}

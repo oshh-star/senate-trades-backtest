@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1770906600,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "ARKO Petroleum Corp.",
+  "shortName": "ARKO Petroleum Corp.",
+  "symbol": "APC"
+ },
+ "queried_at": "2026-09-27T22:27:59Z",
+ "symbol": "APC"
+}

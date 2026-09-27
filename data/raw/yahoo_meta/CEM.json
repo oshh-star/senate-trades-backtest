@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:31:07Z",
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "CEMEX, S.A.B. de C.V.",
+   "quoteType": "EQUITY",
+   "shortname": "Cemex, S.A.B. de C.V. Sponsored",
+   "symbol": "CX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Cemtrex, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Cemtrex Inc.",
+   "symbol": "CETX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Companhia Energ\u00e9tica de Minas Gerais - CEMIG",
+   "quoteType": "EQUITY",
+   "shortname": "Comp En De Mn Cemig",
+   "symbol": "CIG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "CEMATRIX Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "CEMATRIX CORPORATION",
+   "symbol": "CEMX.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "CEMEX, S.A.B. de C.V.",
+   "quoteType": "EQUITY",
+   "shortname": "CEMEX S.A.B. DE C.V.",
+   "symbol": "CEMEXCPO.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Cementos Pacasmayo S.A.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Cementos Pacasmayo S.A.A.",
+   "symbol": "CPAC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "UltraTech Cement Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ULTRATECH CEMENT LIMITED",
+   "symbol": "ULTRACEMCO.NS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CEM"
+}

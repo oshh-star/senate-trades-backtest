@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1693229400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Mobile Infrastructure Corporation",
+  "shortName": "Mobile Infrastructure Corporati",
+  "symbol": "BEEP"
+ },
+ "queried_at": "2026-09-27T22:29:12Z",
+ "symbol": "BEEP"
+}

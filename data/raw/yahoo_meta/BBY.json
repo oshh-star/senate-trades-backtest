@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 482682600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Best Buy Co., Inc.",
+  "shortName": "Best Buy Co., Inc.",
+  "symbol": "BBY"
+ },
+ "queried_at": "2026-09-27T22:29:06Z",
+ "symbol": "BBY"
+}

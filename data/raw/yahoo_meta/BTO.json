@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 777043800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "John Hancock Financial Opportunities Fund",
+  "shortName": "John Hancock Financial Opportun",
+  "symbol": "BTO"
+ },
+ "queried_at": "2026-09-27T22:30:16Z",
+ "symbol": "BTO"
+}

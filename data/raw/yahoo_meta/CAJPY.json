@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Canon Inc.",
+  "shortName": "Canon, Inc.",
+  "symbol": "CAJPY"
+ },
+ "queried_at": "2026-09-27T22:30:38Z",
+ "symbol": "CAJPY"
+}

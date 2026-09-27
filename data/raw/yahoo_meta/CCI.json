@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 903447000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Crown Castle Inc.",
+  "shortName": "Crown Castle Inc.",
+  "symbol": "CCI"
+ },
+ "queried_at": "2026-09-27T22:30:54Z",
+ "symbol": "CCI"
+}

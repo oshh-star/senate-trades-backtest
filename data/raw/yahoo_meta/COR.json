@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 797002200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cencora, Inc.",
+  "shortName": "Cencora, Inc.",
+  "symbol": "COR"
+ },
+ "queried_at": "2026-09-27T22:32:08Z",
+ "symbol": "COR"
+}

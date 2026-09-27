@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Compass Group PLC",
+  "shortName": "Compass Group Plc",
+  "symbol": "CMPGY"
+ },
+ "queried_at": "2026-09-27T22:31:53Z",
+ "symbol": "CMPGY"
+}

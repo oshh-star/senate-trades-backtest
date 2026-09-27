@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1265639400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ASSA ABLOY AB (publ)",
+  "shortName": "Assa Abloy AB",
+  "symbol": "ASAZY"
+ },
+ "queried_at": "2026-09-27T22:28:18Z",
+ "symbol": "ASAZY"
+}

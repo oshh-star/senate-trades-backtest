@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1270474200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Alstom SA",
+  "shortName": "Alstom",
+  "symbol": "ALSMY"
+ },
+ "queried_at": "2026-09-27T22:27:26Z",
+ "symbol": "ALSMY"
+}

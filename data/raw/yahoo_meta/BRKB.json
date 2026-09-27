@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:30:02Z",
+ "search": [
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BERKSHIRE HATHAWAY INC",
+   "symbol": "BRKB.VI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Direxion Daily BRKB Bull 2X ETF",
+   "symbol": "BRKU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "Roundhill BRKB WeeklyPay ETF",
+   "quoteType": "ETF",
+   "shortname": "Roundhill BRKB WeeklyPay ETF",
+   "symbol": "BRKW",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "Corgi BRKB 2x Daily ETF",
+   "quoteType": "ETF",
+   "shortname": "Corgi BRKB 2x Daily ETF",
+   "symbol": "BRKL",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Buenos Aires",
+   "exchange": "BUE",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BERKSHIRE HATHAWAY INC CEDEAR E",
+   "symbol": "BRKB.BA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Berkshire Hathaway Inc Class B (Derivatives) USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Berkshire Hathaway Inc Class B (Derivatives) USD",
+   "symbol": "BRKB-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "BERKSHIRE HATHAWAY INC.",
+   "symbol": "BRKBCL1.SN",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BRKB"
+}

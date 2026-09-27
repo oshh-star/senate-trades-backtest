@@ -1,0 +1,31 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:32:02Z",
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Colgate-Palmolive (India) Limited",
+   "quoteType": "EQUITY",
+   "shortname": "COLGATE PALMOLIVE LTD.",
+   "symbol": "COLPAL.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Colgate-Palmolive (India) Limited",
+   "quoteType": "EQUITY",
+   "shortname": "COLGATE-PALMOLIVE (INDIA) LTD.",
+   "symbol": "COLPAL.BO",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "COLPAL"
+}

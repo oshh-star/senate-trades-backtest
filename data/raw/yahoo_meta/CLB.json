@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 811690200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Core Laboratories Inc.",
+  "shortName": "Core Laboratories Inc.",
+  "symbol": "CLB"
+ },
+ "queried_at": "2026-09-27T22:31:37Z",
+ "symbol": "CLB"
+}

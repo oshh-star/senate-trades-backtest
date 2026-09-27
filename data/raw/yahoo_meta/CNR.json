@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1510669800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Core Natural Resources, Inc.",
+  "shortName": "Core Natural Resources, Inc.",
+  "symbol": "CNR"
+ },
+ "queried_at": "2026-09-27T22:31:57Z",
+ "symbol": "CNR"
+}

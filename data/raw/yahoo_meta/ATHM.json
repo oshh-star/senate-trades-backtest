@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1386772200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Autohome Inc.",
+  "shortName": "Autohome Inc.",
+  "symbol": "ATHM"
+ },
+ "queried_at": "2026-09-27T22:28:25Z",
+ "symbol": "ATHM"
+}

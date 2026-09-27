@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:31:26Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Check Point Software Technologies Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Check Point Software Technologi",
+   "symbol": "CHKP",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CHK2B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Chesapeake Granite Wash Trust",
+   "quoteType": "EQUITY",
+   "shortname": "Chesapeake Granite Wash Trust",
+   "symbol": "CHKR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CI U.S. Stock Selection Corporate Class (Series A shares) ISC (2567A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CHKMX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "Check Point Software Technologies Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "CHECK POINT SOFTWARE TECH",
+   "symbol": "CHKP.VI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "China Southern Airlines Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "China Southern Airlines Co. Ltd",
+   "symbol": "CHKIF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "CHK Oil Limited",
+   "quoteType": "EQUITY",
+   "shortname": "CHK OIL",
+   "symbol": "0632.HK",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CHK"
+}

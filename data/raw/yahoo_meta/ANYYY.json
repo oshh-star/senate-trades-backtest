@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1615386600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Aena S.M.E., S.A.",
+  "shortName": "Aena SME S.A.",
+  "symbol": "ANYYY"
+ },
+ "queried_at": "2026-09-27T22:27:52Z",
+ "symbol": "ANYYY"
+}

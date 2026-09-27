@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1434029400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cable One, Inc.",
+  "shortName": "Cable One, Inc.",
+  "symbol": "CABO"
+ },
+ "queried_at": "2026-09-27T22:30:33Z",
+ "symbol": "CABO"
+}

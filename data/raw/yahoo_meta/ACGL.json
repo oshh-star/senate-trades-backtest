@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 811085400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Arch Capital Group Ltd.",
+  "shortName": "Arch Capital Group Ltd.",
+  "symbol": "ACGL"
+ },
+ "queried_at": "2026-09-27T22:26:36Z",
+ "symbol": "ACGL"
+}

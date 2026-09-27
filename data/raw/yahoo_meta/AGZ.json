@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1226413800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Agency Bond ETF",
+  "shortName": "iShares  Agency Bond ETF",
+  "symbol": "AGZ"
+ },
+ "queried_at": "2026-09-27T22:27:01Z",
+ "symbol": "AGZ"
+}

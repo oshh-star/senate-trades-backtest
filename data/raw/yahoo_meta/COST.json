@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 521299800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Costco Wholesale Corporation",
+  "shortName": "Costco Wholesale Corporation",
+  "symbol": "COST"
+ },
+ "queried_at": "2026-09-27T22:32:09Z",
+ "symbol": "COST"
+}

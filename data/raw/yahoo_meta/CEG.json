@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1642602600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Constellation Energy Corporation",
+  "shortName": "Constellation Energy Corporatio",
+  "symbol": "CEG"
+ },
+ "queried_at": "2026-09-27T22:31:03Z",
+ "symbol": "CEG"
+}

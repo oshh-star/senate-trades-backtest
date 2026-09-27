@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Algonquin Power & Utilities Corp.",
+  "shortName": "Algonquin Power & Utilities Cor",
+  "symbol": "AQN"
+ },
+ "queried_at": "2026-09-27T22:28:08Z",
+ "symbol": "AQN"
+}

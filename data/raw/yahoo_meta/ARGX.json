@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1495114200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "argenx SE",
+  "shortName": "argenx SE",
+  "symbol": "ARGX"
+ },
+ "queried_at": "2026-09-27T22:28:12Z",
+ "symbol": "ARGX"
+}

@@ -1,0 +1,12 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:30:50Z",
+ "search": [],
+ "symbol": "CCCS"
+}

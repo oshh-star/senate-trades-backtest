@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1182519000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Blackstone Inc.",
+  "shortName": "Blackstone Inc.",
+  "symbol": "BX"
+ },
+ "queried_at": "2026-09-27T22:30:22Z",
+ "symbol": "BX"
+}

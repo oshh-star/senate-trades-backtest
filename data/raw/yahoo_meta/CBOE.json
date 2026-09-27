@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1276608600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "EQUITY",
+  "longName": "Cboe Global Markets, Inc.",
+  "shortName": "Cboe Global Markets, Inc.",
+  "symbol": "CBOE"
+ },
+ "queried_at": "2026-09-27T22:30:45Z",
+ "symbol": "CBOE"
+}

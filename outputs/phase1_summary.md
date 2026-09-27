@@ -68,9 +68,9 @@ Every row of every downloaded electronic PTR, before any filtering.
 
 ## 5. Senators
 
-- Distinct filer names in the listing: **82** (81 matched to a senator with high confidence, 1 unmatched or low confidence; see section 8).
-- Distinct senators (bioguide ids) with at least one filing: **80**; with at least one parsed transaction: **76**; with at least one key-number transaction: **31**.
-- The top 5 senators account for **88.5%** of the 2,520 key-number transactions:
+- Distinct filer names in the listing: **82** (82 matched to a senator with high confidence, 0 unmatched or low confidence; see section 8).
+- Distinct senators (bioguide ids) with at least one filing: **80**; with at least one parsed transaction: **77**; with at least one key-number transaction: **32**.
+- The top 5 senators account for **88.3%** of the 2,523 key-number transactions:
 
 | Senator          | party      | state   | bioguide_id   |   Transactions | Share of key-number transactions   |
 |:-----------------|:-----------|:--------|:--------------|---------------:|:-----------------------------------|
@@ -108,9 +108,9 @@ PTR received 2021-09-01 to 2026-08-31; filer matched to a senator with high conf
 | 2022               |        134 |           121 |               32 |              0 |           153 |          8 |       0 |     295 |                               1 |                                        0 |                                                 0 |
 | 2023               |        287 |           178 |               68 |              0 |           246 |          5 |       0 |     538 |                             109 |                                        0 |                                                 0 |
 | 2024               |        119 |           194 |               99 |              0 |           293 |          1 |       0 |     413 |                               7 |                                        3 |                                                 2 |
-| 2025               |        215 |            93 |               96 |              0 |           189 |          1 |       0 |     405 |                              42 |                                        1 |                                                 0 |
-| 2026 (to 31 Aug)   |        497 |           198 |              112 |              0 |           310 |          0 |       0 |     807 |                             191 |                                        2 |                                                 2 |
-| Total              |       1280 |           817 |              408 |              0 |          1225 |         15 |       0 |    2520 |                             350 |                                        6 |                                                 4 |
+| 2025               |        215 |            94 |               96 |              0 |           190 |          1 |       0 |     406 |                              42 |                                        2 |                                                 0 |
+| 2026 (to 31 Aug)   |        497 |           200 |              112 |              0 |           312 |          0 |       0 |     809 |                             191 |                                        2 |                                                 2 |
+| Total              |       1280 |           820 |              408 |              0 |          1228 |         15 |       0 |    2523 |                             350 |                                        7 |                                                 4 |
 
 How each condition narrows the sample:
 
@@ -118,18 +118,14 @@ How each condition narrows the sample:
 |:----------------------------------------------------------------------------|------------:|
 | All parsed transaction rows (all years)                                     |       14558 |
 | PTR received 2021-09-01 to 2026-08-31 (default window)                      |        5823 |
-| Filer matched to a senator with high confidence                             |        5818 |
-| Transaction date inside the filer's Senate service                          |        5813 |
-| Owner is Self or Joint                                                      |        3891 |
-| Ticker present                                                              |        2893 |
-| Asset type "Stock", or "Other Securities"/"Other" with a ticker (ETF proxy) |        2520 |
+| Filer matched to a senator with high confidence                             |        5823 |
+| Transaction date inside the filer's Senate service                          |        5818 |
+| Owner is Self or Joint                                                      |        3896 |
+| Ticker present                                                              |        2896 |
+| Asset type "Stock", or "Other Securities"/"Other" with a ticker (ETF proxy) |        2523 |
 
 ## 8. Filer names to review
 
-These were not matched with high confidence and are left OUT of the key number. Settle each one in `config/name_overrides.yaml` (a bioguide_id, or null for "not a senator").
-
-| first_name   | last_name   | office_texts              | filer_type_labels   |   n_filings | first_received   | last_received   | method   | confidence   | matched_name   | bioguide_id   |   score | runner_up                      | note   |
-|:-------------|:------------|:--------------------------|:--------------------|------------:|:-----------------|:----------------|:---------|:-------------|:---------------|:--------------|--------:|:-------------------------------|:-------|
-| James        | Banks       | Banks, James E. (Senator) | Senator             |           5 | 2025-03-10       | 2026-06-07      | fuzzy    | low          | Jim Banks      | B001299       |     0.8 | James Lankford (L000575) 0.720 |        |
+None: every filer name matched a senator with high confidence.
 
 Full match table: `data/interim/filer_matches.csv`. Data-quality log: `outputs/data_quality.md`.

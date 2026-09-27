@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 863703000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Amazon.com, Inc.",
+  "shortName": "Amazon.com, Inc.",
+  "symbol": "AMZN"
+ },
+ "queried_at": "2026-09-27T22:27:46Z",
+ "symbol": "AMZN"
+}

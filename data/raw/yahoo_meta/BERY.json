@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:29:14Z",
+ "search": [
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Beryl Securities Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BERYL SECURITIES LTD.",
+   "symbol": "BERYLSE.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "SET",
+   "exchange": "SET",
+   "longname": "Beryl 8 Plus Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BE8_BERYL 8 PLUS",
+   "symbol": "BE8-R.BK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "FTSEGlobal Index",
+   "exchange": "FGI",
+   "longname": "WisdomTree Berylls LeanVal Glob",
+   "quoteType": "INDEX",
+   "shortname": "WisdomTree Berylls LeanVal Glob",
+   "symbol": "^WTCARN",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "iShares Enhanced Roll Yield Index",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "BERYX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Beryl Drugs Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BERYL DRUGS LTD.",
+   "symbol": "BERLDRG.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "FTSEGlobal Index",
+   "exchange": "FGI",
+   "longname": "WisdomTree Berylls LeanVal Glob",
+   "quoteType": "INDEX",
+   "shortname": "WisdomTree Berylls LeanVal Glob",
+   "symbol": "^WTCAR",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "SET",
+   "exchange": "SET",
+   "longname": "Beryl 8 Plus Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BE8_BERYL 8 PLUS",
+   "symbol": "BE8.BK",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BERY"
+}

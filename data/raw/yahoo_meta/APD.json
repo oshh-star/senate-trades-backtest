@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Air Products and Chemicals, Inc.",
+  "shortName": "Air Products and Chemicals, Inc",
+  "symbol": "APD"
+ },
+ "queried_at": "2026-09-27T22:28:00Z",
+ "symbol": "APD"
+}

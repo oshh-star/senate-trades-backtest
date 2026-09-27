@@ -23,7 +23,8 @@ RAW_DIR = Path("data/raw/legislators")
 TERMS_CSV = Path("data/interim/senate_terms.csv")
 COLUMNS = ["bioguide_id", "full_name", "first", "middle", "last", "suffix", "nickname", "party",
            "state", "senate_class", "term_start", "term_end", "start_how", "end_type",
-           "scheduled_end", "ended_early", "source_file"]
+           "scheduled_end", "ended_early", "source_file", "service_start"]
+SPELL_GAP_DAYS = 31   # Senate terms this close together count as one continuous spell of service
 # The class of seats up in the election of November (Y - 1) and ending 3 January Y:
 # class 1 ends in 2019, 2025, 2031...; class 2 in 2015, 2021, 2027...; class 3 in 2017, 2023, 2029...
 _CLASS_END_YEAR_MOD6 = {1: 2019 % 6, 2: 2021 % 6, 3: 2023 % 6}
@@ -56,6 +57,22 @@ def _date(x) -> dt.date:
     return x if isinstance(x, dt.date) else dt.date.fromisoformat(str(x))
 
 
+def service_spells(terms: list[tuple[dt.date, dt.date]]) -> list[tuple[dt.date, dt.date]]:
+    """Merge a person's Senate terms into continuous spells of service (gaps up to SPELL_GAP_DAYS).
+
+    service_start (the first day of the spell containing a term) drives days_since_service_start
+    in Phase 2 and the pre-registered first-180-days variant (V3). All terms are used, including
+    those before data.service_dates.terms_from.
+    """
+    spells: list[list[dt.date]] = []
+    for s, e in sorted(terms):
+        if spells and (s - spells[-1][1]).days <= SPELL_GAP_DAYS:
+            spells[-1][1] = max(spells[-1][1], e)
+        else:
+            spells.append([s, e])
+    return [(a, b) for a, b in spells]
+
+
 def build_terms(cfg: dict) -> list[dict]:
     terms_from = _date(cfg["data"]["service_dates"]["terms_from"])
     rows = []
@@ -64,6 +81,8 @@ def build_terms(cfg: dict) -> list[dict]:
         for p in people:
             n = p["name"]
             full = n.get("official_full") or " ".join(x for x in (n.get("first"), n.get("last")) if x)
+            spells = service_spells([(_date(t["start"]), _date(t["end"]))
+                                     for t in p.get("terms", []) if t["type"] == "sen"])
             for t in p.get("terms", []):
                 if t["type"] != "sen":
                     continue
@@ -80,6 +99,7 @@ def build_terms(cfg: dict) -> list[dict]:
                     "start_how": t.get("how", ""), "end_type": t.get("end-type", ""),
                     "scheduled_end": sched.isoformat(), "ended_early": end < sched,
                     "source_file": name,
+                    "service_start": next(a for a, b in spells if a <= start <= b).isoformat(),
                 })
     rows.sort(key=lambda r: (r["state"], r["senate_class"], r["term_start"]))
     return rows

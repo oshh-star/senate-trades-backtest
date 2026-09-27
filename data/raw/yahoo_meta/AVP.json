@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:28:36Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AvePoint, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AvePoint, Inc.",
+   "symbol": "AVPT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Singapore",
+   "exchange": "SES",
+   "longname": "AvePoint, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AvePoint",
+   "symbol": "AVP.SI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "AMER.CENT.ICAV-AV.Pac.Eq.ETF  R",
+   "symbol": "AVPE.MU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "AVPT Jan 2027 14.000 call",
+   "quoteType": "OPTION",
+   "shortname": "AVPT Jan 2027 14.000 call",
+   "symbol": "AVPT270115C00014000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Avantis Pacific Equity UCITS ETF USD Acc",
+   "quoteType": "ETF",
+   "shortname": "AMERICAN CENTURY ICAV AVANTIS P",
+   "symbol": "AVPE.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "American Beacon Small Cp Val Inv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "American Beacon Small Cap Value",
+   "symbol": "AVPAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "Avrupakent Gayrimenkul Yatirim Ortakligi Anonim Sirketi",
+   "quoteType": "EQUITY",
+   "shortname": "AVRUPAKENT GMYO",
+   "symbol": "AVPGY.IS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "AVP"
+}

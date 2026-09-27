@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 560179800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Coherent Corp.",
+  "shortName": "Coherent Corp.",
+  "symbol": "COHR"
+ },
+ "queried_at": "2026-09-27T22:32:00Z",
+ "symbol": "COHR"
+}

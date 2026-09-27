@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1704983400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Bitwise Bitcoin ETF",
+  "shortName": "Bitwise Bitcoin ETF",
+  "symbol": "BITB"
+ },
+ "queried_at": "2026-09-27T22:29:27Z",
+ "symbol": "BITB"
+}

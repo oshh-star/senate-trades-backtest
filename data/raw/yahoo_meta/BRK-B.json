@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 831648600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Berkshire Hathaway Inc.",
+  "shortName": "Berkshire Hathaway Inc. New",
+  "symbol": "BRK-B"
+ },
+ "queried_at": "2026-09-27T22:25:15Z",
+ "symbol": "BRK-B"
+}

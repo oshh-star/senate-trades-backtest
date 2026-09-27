@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1669905000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Brookfield Asset Management Ulc",
+  "shortName": "Brookfield Asset Management Inc",
+  "symbol": "BAM"
+ },
+ "queried_at": "2026-09-27T22:28:56Z",
+ "symbol": "BAM"
+}

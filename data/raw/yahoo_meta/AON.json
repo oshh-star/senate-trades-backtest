@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 328800600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Aon plc",
+  "shortName": "Aon plc",
+  "symbol": "AON"
+ },
+ "queried_at": "2026-09-27T22:27:54Z",
+ "symbol": "AON"
+}

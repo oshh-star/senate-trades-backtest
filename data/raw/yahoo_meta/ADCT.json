@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1589808600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ADC Therapeutics SA",
+  "shortName": "ADC Therapeutics SA",
+  "symbol": "ADCT"
+ },
+ "queried_at": "2026-09-27T22:26:42Z",
+ "symbol": "ADCT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 424704600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Amgen Inc.",
+  "shortName": "Amgen Inc.",
+  "symbol": "AMGN"
+ },
+ "queried_at": "2026-09-27T22:27:37Z",
+ "symbol": "AMGN"
+}

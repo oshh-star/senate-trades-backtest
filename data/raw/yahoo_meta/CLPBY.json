@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1389623400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Coloplast A/S",
+  "shortName": "Coloplast AS",
+  "symbol": "CLPBY"
+ },
+ "queried_at": "2026-09-27T22:31:42Z",
+ "symbol": "CLPBY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 221149800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Citigroup Inc.",
+  "shortName": "Citigroup, Inc.",
+  "symbol": "C"
+ },
+ "queried_at": "2026-09-27T22:30:27Z",
+ "symbol": "C"
+}

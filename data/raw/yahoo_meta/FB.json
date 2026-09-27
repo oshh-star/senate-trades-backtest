@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1750944600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "ProShares S&P 500 Dynamic Daily Buffer ETF",
+  "shortName": "ProShares S&P 500 Dynamic Buffe",
+  "symbol": "FB"
+ },
+ "queried_at": "2026-09-27T22:25:16Z",
+ "symbol": "FB"
+}

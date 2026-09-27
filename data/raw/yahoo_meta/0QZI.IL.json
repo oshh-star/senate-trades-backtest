@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "IOB",
+  "exchangeTimezoneName": "Europe/London",
+  "firstTradeDate": 1415174400,
+  "fullExchangeName": "IOB",
+  "instrumentType": "EQUITY",
+  "longName": "Meta Platforms, Inc.",
+  "shortName": "META PLATFORMS INC",
+  "symbol": "0QZI.IL"
+ },
+ "queried_at": "2026-09-27T22:26:16Z",
+ "symbol": "0QZI.IL"
+}

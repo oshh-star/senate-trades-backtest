@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 320509800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bio-Rad Laboratories, Inc.",
+  "shortName": "Bio-Rad Laboratories, Inc.",
+  "symbol": "BIO"
+ },
+ "queried_at": "2026-09-27T22:29:26Z",
+ "symbol": "BIO"
+}

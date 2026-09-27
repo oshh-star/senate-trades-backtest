@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 880122600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Affiliated Managers Group, Inc.",
+  "shortName": "Affiliated Managers Group, Inc.",
+  "symbol": "AMG"
+ },
+ "queried_at": "2026-09-27T22:27:36Z",
+ "symbol": "AMG"
+}

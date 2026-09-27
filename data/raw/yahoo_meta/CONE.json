@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:32:04Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Conexeu Sciences Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Conexeu Sciences Inc.",
+   "symbol": "CNXU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "CANADA ONE MINING CORP",
+   "symbol": "CONE.NE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Conestoga Small Cap Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Conestoga Small Cap Fund Instit",
+   "symbol": "CCALX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CI Structured Premium Yield Fund Series I NL (816894A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CONEX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "BitCone USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "BitCone USD",
+   "symbol": "CONE26386-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Conestoga Small Cap Investors",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Conestoga Small Cap Fund",
+   "symbol": "CCASX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Conestoga Discovery Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CMIRX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "CONE"
+}

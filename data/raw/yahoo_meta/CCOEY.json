@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1364909400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Capcom Co., Ltd.",
+  "shortName": "Capcom Co. Ltd",
+  "symbol": "CCOEY"
+ },
+ "queried_at": "2026-09-27T22:30:57Z",
+ "symbol": "CCOEY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 793636200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "ACI Worldwide, Inc.",
+  "shortName": "ACI Worldwide, Inc.",
+  "symbol": "ACIW"
+ },
+ "queried_at": "2026-09-27T22:26:37Z",
+ "symbol": "ACIW"
+}

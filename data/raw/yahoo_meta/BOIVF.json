@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1287149400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Bollor\u00e9 SE",
+  "shortName": "Bollore Investissement",
+  "symbol": "BOIVF"
+ },
+ "queried_at": "2026-09-27T22:29:51Z",
+ "symbol": "BOIVF"
+}

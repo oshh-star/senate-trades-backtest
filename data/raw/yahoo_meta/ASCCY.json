@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415802600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ASICS Corporation",
+  "shortName": "Asics Corp.",
+  "symbol": "ASCCY"
+ },
+ "queried_at": "2026-09-27T22:28:20Z",
+ "symbol": "ASCCY"
+}

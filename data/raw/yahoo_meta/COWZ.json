@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1482417000,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Pacer US Cash Cows 100 ETF",
+  "shortName": "Pacer US Cash Cows 100 ETF",
+  "symbol": "COWZ"
+ },
+ "queried_at": "2026-09-27T22:32:12Z",
+ "symbol": "COWZ"
+}

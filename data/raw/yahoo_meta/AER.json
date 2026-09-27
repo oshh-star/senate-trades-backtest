@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1164119400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AerCap Holdings N.V.",
+  "shortName": "AerCap Holdings N.V.",
+  "symbol": "AER"
+ },
+ "queried_at": "2026-09-27T22:26:51Z",
+ "symbol": "AER"
+}

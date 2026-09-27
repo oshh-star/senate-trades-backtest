@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1555421400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Global X Cloud Computing ETF",
+  "shortName": "Global X Cloud Computing ETF",
+  "symbol": "CLOU"
+ },
+ "queried_at": "2026-09-27T22:31:41Z",
+ "symbol": "CLOU"
+}

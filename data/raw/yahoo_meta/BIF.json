@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:29:23Z",
+ "search": [
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "BIF/BRX",
+   "quoteType": "CURRENCY",
+   "shortname": "BIF/BRX",
+   "symbol": "BIFBRX=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "EUR/BIF",
+   "quoteType": "CURRENCY",
+   "shortname": "EUR/BIF",
+   "symbol": "EURBIF=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "USD/BIF",
+   "quoteType": "CURRENCY",
+   "shortname": "USD/BIF",
+   "symbol": "BIF=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "GBP/BIF",
+   "quoteType": "CURRENCY",
+   "shortname": "GBP/BIF",
+   "symbol": "GBPBIF=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "CHF/BIF",
+   "quoteType": "CURRENCY",
+   "shortname": "CHF/BIF",
+   "symbol": "CHFBIF=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "CAD/BIF",
+   "quoteType": "CURRENCY",
+   "shortname": "CAD/BIF",
+   "symbol": "CADBIF=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "BIF/USD",
+   "quoteType": "CURRENCY",
+   "shortname": "BIF/USD",
+   "symbol": "BIFUSD=X",
+   "typeDisp": "Currency"
+  }
+ ],
+ "symbol": "BIF"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 441469800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Atmos Energy Corporation",
+  "shortName": "Atmos Energy Corporation",
+  "symbol": "ATO"
+ },
+ "queried_at": "2026-09-27T22:28:29Z",
+ "symbol": "ATO"
+}

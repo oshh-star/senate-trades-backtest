@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1217597400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds Bond Fund of Amer F-2",
+  "shortName": "The Bond Fd of America, Class F",
+  "symbol": "ABNFX"
+ },
+ "queried_at": "2026-09-27T22:26:31Z",
+ "symbol": "ABNFX"
+}

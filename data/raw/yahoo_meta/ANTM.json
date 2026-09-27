@@ -1,0 +1,49 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:27:50Z",
+ "search": [
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Antam (Persero) Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "ANTAM (Persero) Tbk.",
+   "symbol": "ANTM.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Antilles Gold Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ANTILLES GOLD LTD.",
+   "symbol": "ANTMF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": "Bit Global Multi Asset",
+   "quoteType": "ETF",
+   "shortname": "BIT Global Multi Asset        I",
+   "symbol": "ANTM.MU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "American Century Intl Sm-Md Cp G",
+   "quoteType": "MUTUALFUND",
+   "shortname": "NT International Small-Mid Cap ",
+   "symbol": "ANTMX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "ANTM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 826813800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cameco Corporation",
+  "shortName": "Cameco Corporation",
+  "symbol": "CCJ"
+ },
+ "queried_at": "2026-09-27T22:30:55Z",
+ "symbol": "CCJ"
+}

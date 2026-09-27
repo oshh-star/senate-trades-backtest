@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1404394200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Abbey Capital Futures Strategy I",
+  "shortName": "Abbey Capital Futures Strategy ",
+  "symbol": "ABYIX"
+ },
+ "queried_at": "2026-09-27T22:26:34Z",
+ "symbol": "ABYIX"
+}

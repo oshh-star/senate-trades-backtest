@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bank of America Corporation",
+  "shortName": "Bank of America Corporation",
+  "symbol": "BAC"
+ },
+ "queried_at": "2026-09-27T22:28:52Z",
+ "symbol": "BAC"
+}

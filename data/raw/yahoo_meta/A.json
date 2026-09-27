@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 942935400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Agilent Technologies, Inc.",
+  "shortName": "Agilent Technologies, Inc.",
+  "symbol": "A"
+ },
+ "queried_at": "2026-09-27T22:26:18Z",
+ "symbol": "A"
+}

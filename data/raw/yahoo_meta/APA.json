@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 295623000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "APA Corporation",
+  "shortName": "APA Corporation",
+  "symbol": "APA"
+ },
+ "queried_at": "2026-09-27T22:27:57Z",
+ "symbol": "APA"
+}

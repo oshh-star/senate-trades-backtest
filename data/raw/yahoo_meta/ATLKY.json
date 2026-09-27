@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Atlas Copco AB (publ)",
+  "shortName": "Atlas Copco AB",
+  "symbol": "ATLKY"
+ },
+ "queried_at": "2026-09-27T22:28:28Z",
+ "symbol": "ATLKY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1174570200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Broadridge Financial Solutions, Inc.",
+  "shortName": "Broadridge Financial Solutions,",
+  "symbol": "BR"
+ },
+ "queried_at": "2026-09-27T22:29:58Z",
+ "symbol": "BR"
+}

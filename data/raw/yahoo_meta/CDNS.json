@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 550330200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cadence Design Systems, Inc.",
+  "shortName": "Cadence Design Systems, Inc.",
+  "symbol": "CDNS"
+ },
+ "queried_at": "2026-09-27T22:31:00Z",
+ "symbol": "CDNS"
+}

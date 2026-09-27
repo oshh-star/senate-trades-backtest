@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 350749800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Brown & Brown, Inc.",
+  "shortName": "Brown & Brown, Inc.",
+  "symbol": "BRO"
+ },
+ "queried_at": "2026-09-27T22:30:05Z",
+ "symbol": "BRO"
+}

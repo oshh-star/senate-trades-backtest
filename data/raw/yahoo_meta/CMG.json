@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138285800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chipotle Mexican Grill, Inc.",
+  "shortName": "Chipotle Mexican Grill, Inc.",
+  "symbol": "CMG"
+ },
+ "queried_at": "2026-09-27T22:31:51Z",
+ "symbol": "CMG"
+}

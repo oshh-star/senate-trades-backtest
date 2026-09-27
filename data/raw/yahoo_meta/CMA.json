@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:31:46Z",
+ "search": [
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "HAMILTON CANADIAN EQUITY YIELD ",
+   "symbol": "CMAX.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CMA3B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Corgi Mag 7 ETF",
+   "symbol": "CMAG",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CMA2B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Hamilton Canadian Equity YIELD MAXIMIZER ETF",
+   "quoteType": "ETF",
+   "shortname": "HAMILTON CANADIAN EQTY YIELD MA",
+   "symbol": "CMAX.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "China Minsheng Banking Corp., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "China Minsheng Banking Corp., L",
+   "symbol": "CMAKY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": "AS Siguldas Ciltslietu Un Maksligas Apseklosanas Stacija",
+   "quoteType": "EQUITY",
+   "shortname": "Siguldas CMAS A/S             R",
+   "symbol": "W2I.MU",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CMA"
+}

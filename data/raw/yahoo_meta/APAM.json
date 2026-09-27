@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1362666600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Artisan Partners Asset Management Inc.",
+  "shortName": "Artisan Partners Asset Manageme",
+  "symbol": "APAM"
+ },
+ "queried_at": "2026-09-27T22:27:58Z",
+ "symbol": "APAM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 941203800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Akamai Technologies, Inc.",
+  "shortName": "Akamai Technologies, Inc.",
+  "symbol": "AKAM"
+ },
+ "queried_at": "2026-09-27T22:27:14Z",
+ "symbol": "AKAM"
+}

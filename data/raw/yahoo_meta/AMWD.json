@@ -1,0 +1,22 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:27:44Z",
+ "search": [
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "DAX All Cap UCITS Capped I",
+   "quoteType": "INDEX",
+   "shortname": "DAX All Cap UCITS Capped      I",
+   "symbol": "AMWD.DE",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "AMWD"
+}

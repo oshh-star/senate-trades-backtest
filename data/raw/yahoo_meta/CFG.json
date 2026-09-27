@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1411565400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Citizens Financial Group, Inc.",
+  "shortName": "Citizens Financial Group, Inc.",
+  "symbol": "CFG"
+ },
+ "queried_at": "2026-09-27T22:31:15Z",
+ "symbol": "CFG"
+}

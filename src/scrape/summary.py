@@ -26,6 +26,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.config import analysis_window
+from src.quality import write_section
 from .download import FAILURES, MANIFEST
 from .legislators import TERMS_CSV, check_departures
 from .names import MATCHES, filer_key
@@ -289,10 +290,7 @@ def run(cfg: dict) -> None:
                                   dt.date.today())
     early = terms[terms["ended_early"] == "True"][["full_name", "state", "party", "term_start", "term_end",
                                                     "scheduled_end", "start_how", "end_type"]]
-    Q = ["# Data quality log", "",
-         "Every exclusion and every data problem, counted and explained. Phase 1 sections below; later "
-         "phases add theirs.", "",
-         "## Phase 1: scrape", "",
+    Q = ["## Phase 1: scrape", "",
          f"- Filings in the eFD listing (received {cfg['data']['scrape_start']} to {cfg['data']['scrape_end']}, "
          f"all filer types): **{len(man):,}**; electronic **{(man['kind'] == 'electronic').sum():,}**, "
          f"paper **{(man['kind'] == 'paper').sum():,}**, other **{(~man['kind'].isin(['electronic', 'paper'])).sum()}**.",
@@ -348,6 +346,5 @@ def run(cfg: dict) -> None:
           f"in Phase 2): **{len(outside):,}** of {len(tx_matched):,}."]
     if len(outside_by):
         Q += ["", md(outside_by.rename("Rows outside service").to_frame()), ""]
-    QUALITY.parent.mkdir(parents=True, exist_ok=True)
-    QUALITY.write_text("\n".join(Q) + "\n")
+    write_section(1, Q, QUALITY)
     print(f"  [summary] key number: {len(key):,} transactions -> {SUMMARY}; quality log -> {QUALITY}")

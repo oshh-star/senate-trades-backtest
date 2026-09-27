@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 598199400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Banco Bilbao Vizcaya Argentaria, S.A.",
+  "shortName": "Banco Bilbao Vizcaya Argentaria",
+  "symbol": "BBVA"
+ },
+ "queried_at": "2026-09-27T22:29:05Z",
+ "symbol": "BBVA"
+}

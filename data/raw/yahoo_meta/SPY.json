@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 728317800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street SPDR S&P 500 ETF Trust",
+  "shortName": "State Street SPDR S&P 500 ETF T",
+  "symbol": "SPY"
+ },
+ "queried_at": "2026-09-27T22:25:23Z",
+ "symbol": "SPY"
+}

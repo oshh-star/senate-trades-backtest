@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:26:56Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AGNC Investment Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "AGNC Investment Corp.",
+   "symbol": "AGNC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Agnico Eagle Mines Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Agnico Eagle Mines Limited",
+   "symbol": "AEM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Agnico Eagle Mines Limited",
+   "quoteType": "EQUITY",
+   "shortname": "AGNICO EAGLE MINES LIMITED",
+   "symbol": "AEM.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "AGNT, Inc",
+   "quoteType": "EQUITY",
+   "shortname": "AGNT, Inc.",
+   "symbol": "AGNT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AGNC Investment Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "AGNC Investment Corp. - Deposit",
+   "symbol": "AGNCN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AGNC Investment Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "AGNC Investment Corp. - Deposit",
+   "symbol": "AGNCO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Amsterdam",
+   "exchange": "AMS",
+   "longname": "Aegon Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "AEGON",
+   "symbol": "AGN.AS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "AGN"
+}

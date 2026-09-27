@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1357137000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AbbVie Inc.",
+  "shortName": "AbbVie Inc.",
+  "symbol": "ABBV"
+ },
+ "queried_at": "2026-09-27T22:26:27Z",
+ "symbol": "ABBV"
+}

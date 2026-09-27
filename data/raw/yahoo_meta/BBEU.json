@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1529328600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "JPMorgan BetaBuilders Europe ETF",
+  "shortName": "JPMorgan BetaBuilders Europe ET",
+  "symbol": "BBEU"
+ },
+ "queried_at": "2026-09-27T22:29:02Z",
+ "symbol": "BBEU"
+}

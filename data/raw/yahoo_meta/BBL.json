@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:29:03Z",
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Bone Biologics Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Bone Biologics Corp",
+   "symbol": "BBLG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Ea Bridgeway Blue Chip ETF",
+   "quoteType": "ETF",
+   "shortname": "EA Bridgeway Blue Chip ETF",
+   "symbol": "BBLU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Munificent Seven ETF",
+   "symbol": "BBLS",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "SET",
+   "exchange": "SET",
+   "longname": "Bangkok Bank Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BBL_BANGKOK BANK",
+   "symbol": "BBL.BK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Bubblr Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Bubblr Inc.",
+   "symbol": "BBLR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "JPM ETFs(I)-BB US Treas.Bd0-3MR",
+   "symbol": "BBL0.HM",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Bharat Bijlee Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BHARAT BIJLEE LTD",
+   "symbol": "BBL.NS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BBL"
+}

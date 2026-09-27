@@ -1,0 +1,76 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:26:24Z",
+ "search": [
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "AbbVie Inc Stock Futures,Dec-20",
+   "symbol": "SABBV=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "AbbVie Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AbbVie Inc.",
+   "symbol": "ABBV",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Abbott Laboratories",
+   "quoteType": "EQUITY",
+   "shortname": "Abbott Laboratories",
+   "symbol": "ABT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "ABB Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ABB Ltd.",
+   "symbol": "ABBNY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "ABB Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ABB LTD N",
+   "symbol": "ABBN.SW",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Stockholm",
+   "exchange": "STO",
+   "longname": "ABB Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ABB Ltd",
+   "symbol": "ABB.ST",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OQX",
+   "exchange": "OQX",
+   "longname": "AbraSilver Resource Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "AbraSilver Resource Corp",
+   "symbol": "ABBRF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ABB"
+}

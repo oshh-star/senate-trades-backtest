@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 456586200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Arthur J. Gallagher & Co.",
+  "shortName": "Arthur J. Gallagher & Co.",
+  "symbol": "AJG"
+ },
+ "queried_at": "2026-09-27T22:27:11Z",
+ "symbol": "AJG"
+}

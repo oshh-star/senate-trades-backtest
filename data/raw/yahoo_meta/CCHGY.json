@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1367242200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Coca-Cola HBC AG",
+  "shortName": "Coca-Cola HBC AG",
+  "symbol": "CCHGY"
+ },
+ "queried_at": "2026-09-27T22:30:53Z",
+ "symbol": "CCHGY"
+}

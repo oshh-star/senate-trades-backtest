@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Comcast Corporation",
+  "shortName": "Comcast Corporation",
+  "symbol": "CMCSA"
+ },
+ "queried_at": "2026-09-27T22:31:49Z",
+ "symbol": "CMCSA"
+}

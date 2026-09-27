@@ -1,0 +1,31 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "queried_at": "2026-09-27T22:27:03Z",
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Ahluwalia Contracts (India) Limited",
+   "quoteType": "EQUITY",
+   "shortname": "AHLUWALIA CONT IND LTD",
+   "symbol": "AHLUCONT.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Ahluwalia Contracts (India) Limited",
+   "quoteType": "EQUITY",
+   "shortname": "AHLUWALIA CONTRACTS (INDIA) LT",
+   "symbol": "AHLUCONT.BO",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "AHL-C"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1190813400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Bankinter, S.A.",
+  "shortName": "Bankinter, S.A.",
+  "symbol": "BKNIY"
+ },
+ "queried_at": "2026-09-27T22:29:39Z",
+ "symbol": "BKNIY"
+}

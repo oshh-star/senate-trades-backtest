@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1106317800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Celanese Corporation",
+  "shortName": "Celanese Corporation",
+  "symbol": "CE"
+ },
+ "queried_at": "2026-09-27T22:31:01Z",
+ "symbol": "CE"
+}

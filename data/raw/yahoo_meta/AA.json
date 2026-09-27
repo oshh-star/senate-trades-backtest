@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Alcoa Corporation",
+  "shortName": "Alcoa Corporation",
+  "symbol": "AA"
+ },
+ "queried_at": "2026-09-27T22:26:19Z",
+ "symbol": "AA"
+}

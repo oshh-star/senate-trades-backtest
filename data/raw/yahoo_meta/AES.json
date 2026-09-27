@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 677943000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The AES Corporation",
+  "shortName": "The AES Corporation",
+  "symbol": "AES"
+ },
+ "queried_at": "2026-09-27T22:26:52Z",
+ "symbol": "AES"
+}

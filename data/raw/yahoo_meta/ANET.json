@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1402061400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Arista Networks, Inc.",
+  "shortName": "Arista Networks, Inc.",
+  "symbol": "ANET"
+ },
+ "queried_at": "2026-09-27T22:27:49Z",
+ "symbol": "ANET"
+}

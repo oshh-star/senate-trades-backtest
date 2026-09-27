@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1120570200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Goldman Sachs Small/Mid Cap Growth Instl",
+  "shortName": "Goldman Sachs Small/Mid Cap Gro",
+  "symbol": "GSMYX"
+ },
+ "queried_at": "2026-09-27T22:25:17Z",
+ "symbol": "GSMYX"
+}
