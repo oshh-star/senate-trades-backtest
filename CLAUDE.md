@@ -78,7 +78,7 @@ tests/                pytest suite (run: python -m pytest)
 | Phase | Work | Status |
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
-| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27) |
+| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
 | 2 | Clean: parse, filter universe and owners, amendments, matching, exclusions log | Not started |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Not started |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Not started |

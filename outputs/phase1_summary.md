@@ -8,10 +8,18 @@ All filer types (A05). The eFD filer-type label is today's status, shown for ref
 
 | year   |   Filings |   Electronic |   Paper |   Amendments |   Amendments (paper) |   Downloaded |   Failed/pending |   Label "Senator" |   Label "Former Senator" |   Label "Candidate" |
 |:-------|----------:|-------------:|--------:|-------------:|---------------------:|-------------:|-----------------:|------------------:|-------------------------:|--------------------:|
+| 2016   |       205 |          169 |      36 |           19 |                    2 |          169 |                0 |               118 |                       82 |                   5 |
+| 2017   |       219 |          182 |      37 |           22 |                    1 |          182 |                0 |               124 |                       95 |                   0 |
+| 2018   |       235 |          185 |      50 |           23 |                    1 |          185 |                0 |               129 |                      106 |                   0 |
+| 2019   |       230 |          178 |      52 |           37 |                    6 |          178 |                0 |               130 |                      100 |                   0 |
+| 2020   |       179 |          146 |      33 |           17 |                    3 |          146 |                0 |               105 |                       74 |                   0 |
 | 2021   |       145 |          123 |      22 |           12 |                    0 |          123 |                0 |               111 |                       34 |                   0 |
 | 2022   |       119 |          100 |      19 |            5 |                    0 |          100 |                0 |                97 |                       22 |                   0 |
-| 2023   |       115 |          100 |      15 |            5 |                    0 |           68 |               32 |                95 |                       20 |                   0 |
-| Total  |       379 |          323 |      56 |           22 |                    0 |          291 |               32 |               303 |                       76 |                   0 |
+| 2023   |       115 |          100 |      15 |            5 |                    0 |          100 |                0 |                95 |                       20 |                   0 |
+| 2024   |       129 |          115 |      14 |            2 |                    0 |          115 |                0 |               105 |                       24 |                   0 |
+| 2025   |       167 |          146 |      21 |           10 |                    1 |          146 |                0 |               141 |                       26 |                   0 |
+| 2026   |       131 |          122 |       9 |           17 |                    0 |          122 |                0 |               125 |                        6 |                   0 |
+| Total  |      1874 |         1566 |     308 |          169 |                   14 |         1566 |                0 |              1280 |                      589 |                   5 |
 
 ## 2. Transactions by year received and owner
 
@@ -19,10 +27,18 @@ Every row of every downloaded electronic PTR, before any filtering.
 
 | year   |   Child |   Joint |   Self |   Spouse |   Total |
 |:-------|--------:|--------:|-------:|---------:|--------:|
+| 2016   |      47 |     938 |    231 |      302 |    1518 |
+| 2017   |      27 |     624 |    252 |      647 |    1550 |
+| 2018   |       4 |     759 |    204 |      514 |    1481 |
+| 2019   |      12 |     562 |    233 |      629 |    1436 |
+| 2020   |      24 |     635 |    156 |      980 |    1795 |
 | 2021   |      31 |     529 |     96 |      448 |    1104 |
 | 2022   |      43 |     330 |    149 |      410 |     932 |
-| 2023   |       0 |     471 |    144 |      142 |     757 |
-| Total  |      74 |    1330 |    389 |     1000 |    2793 |
+| 2023   |       0 |     663 |    165 |      342 |    1170 |
+| 2024   |      48 |     394 |    189 |      319 |     950 |
+| 2025   |      24 |     335 |    271 |      345 |     975 |
+| 2026   |      29 |     478 |    817 |      323 |    1647 |
+| Total  |     289 |    6247 |   2763 |     5259 |   14558 |
 
 ## 3. Transactions by asset type
 
@@ -30,83 +46,90 @@ Every row of every downloaded electronic PTR, before any filtering.
 
 | asset_type                   |   All years |   Default window |
 |:-----------------------------|------------:|-----------------:|
-| Stock                        |        1760 |             1126 |
-| Stock Option                 |         336 |              254 |
-| Other                        |         316 |              182 |
-| Municipal Security           |         148 |              124 |
-| Commodities/Futures Contract |         139 |              134 |
-| Corporate Bond               |          65 |               31 |
-| Non-Public Stock             |          23 |               11 |
-| Cryptocurrency               |           6 |                4 |
-| Total                        |        2793 |             1866 |
+| Stock                        |       11253 |             3934 |
+| Municipal Security           |        1134 |              776 |
+| Other                        |         903 |              398 |
+| Stock Option                 |         578 |              374 |
+| Corporate Bond               |         413 |              164 |
+| Commodities/Futures Contract |         146 |              141 |
+| Non-Public Stock             |         124 |               31 |
+| Cryptocurrency               |           7 |                5 |
+| Total                        |       14558 |             5823 |
 
 ## 4. Transactions by transaction type
 
 | transaction_type   |   All years |   Default window |
 |:-------------------|------------:|-----------------:|
-| Purchase           |        1200 |              794 |
-| Sale (Full)        |        1083 |              721 |
-| Sale (Partial)     |         487 |              334 |
-| Exchange           |          23 |               17 |
-| Total              |        2793 |             1866 |
+| Purchase           |        7539 |             3021 |
+| Sale (Full)        |        3928 |             1802 |
+| Sale (Partial)     |        2968 |              974 |
+| Exchange           |         123 |               26 |
+| Total              |       14558 |             5823 |
 
 ## 5. Senators
 
-- Distinct filer names in the listing: **46** (46 matched to a senator with high confidence, 0 unmatched or low confidence; see section 8).
-- Distinct senators (bioguide ids) with at least one filing: **46**; with at least one parsed transaction: **39**; with at least one key-number transaction: **19**.
-- The top 5 senators account for **91.8%** of the 745 key-number transactions:
+- Distinct filer names in the listing: **82** (81 matched to a senator with high confidence, 1 unmatched or low confidence; see section 8).
+- Distinct senators (bioguide ids) with at least one filing: **80**; with at least one parsed transaction: **76**; with at least one key-number transaction: **31**.
+- The top 5 senators account for **88.5%** of the 2,520 key-number transactions:
 
-| Senator            | party      | state   | bioguide_id   |   Transactions | Share of key-number transactions   |
-|:-------------------|:-----------|:--------|:--------------|---------------:|:-----------------------------------|
-| Tommy Tuberville   | Republican | AL      | T000278       |            516 | 69.3%                              |
-| Dan Sullivan       | Republican | AK      | S001198       |            108 | 14.5%                              |
-| Sheldon Whitehouse | Democrat   | RI      | W000802       |             23 | 3.1%                               |
-| Jerry Moran        | Republican | KS      | M000934       |             20 | 2.7%                               |
-| Bill Hagerty       | Republican | TN      | H000601       |             17 | 2.3%                               |
+| Senator          | party      | state   | bioguide_id   |   Transactions | Share of key-number transactions   |
+|:-----------------|:-----------|:--------|:--------------|---------------:|:-----------------------------------|
+| Tommy Tuberville | Republican | AL      | T000278       |            923 | 36.6%                              |
+| John Boozman     | Republican | AR      | B001236       |            464 | 18.4%                              |
+| Alan Armstrong   | Republican | OK      | A000383       |            366 | 14.5%                              |
+| Markwayne Mullin | Republican | OK      | M001190       |            358 | 14.2%                              |
+| Dan Sullivan     | Republican | AK      | S001198       |            118 | 4.7%                               |
 
 ## 6. Missing tickers
 
-**471** of 2,793 rows (16.9%) have no ticker (shown as "--" or blank); 362 of them are in the default window. By asset type:
+**3,369** of 14,558 rows (23.1%) have no ticker (shown as "--" or blank); 1,805 of them are in the default window. By asset type:
 
 | asset_type                   |   All years |   Default window |
 |:-----------------------------|------------:|-----------------:|
-| Municipal Security           |         148 |              124 |
-| Commodities/Futures Contract |         139 |              134 |
-| Corporate Bond               |          64 |               30 |
-| Other                        |          53 |               38 |
-| Stock                        |          39 |               21 |
-| Non-Public Stock             |          23 |               11 |
-| Stock Option                 |           3 |                2 |
-| Cryptocurrency               |           2 |                2 |
-| Total                        |         471 |              362 |
+| Municipal Security           |        1134 |              776 |
+| Stock                        |        1118 |              521 |
+| Other                        |         445 |              167 |
+| Corporate Bond               |         394 |              163 |
+| Commodities/Futures Contract |         146 |              141 |
+| Non-Public Stock             |         124 |               31 |
+| Stock Option                 |           5 |                3 |
+| Cryptocurrency               |           3 |                3 |
+| Total                        |        3369 |             1805 |
 
 ## 7. THE KEY NUMBER: copyable purchases and sales in the default window
 
-PTR received 2021-09-01 to 2026-08-31; filer matched to a senator with high confidence; transaction date inside that senator's Senate service; owner Self or Joint; ticker present; asset type "Stock", or "Other Securities" with a ticker (rough ETF proxy until Phase 2 classifies ETFs).
+PTR received 2021-09-01 to 2026-08-31; filer matched to a senator with high confidence; transaction date inside that senator's Senate service; owner Self or Joint; ticker present; asset type "Stock", or "Other Securities"/"Other" with a ticker (rough ETF proxy until Phase 2 classifies ETFs). eFD labels this type "Other" in these filings; with a ticker it is mostly ETFs plus some mutual funds, counted separately below (five-letter tickers ending in X).
 
 **Caveat:** amendments are not de-duplicated yet (Phase 2 keeps the latest version only), so rows from an amended filing can appear twice. The "of which in amendment filings" column shows the most this can inflate each count.
 
-| period             |   Purchase |   Sale (Full) |   Sale (Partial) |   Sale (other) |   Sales (all) |   Exchange |   Other |   Total |   of which in amendment filings |   of which asset type Other Securities |
-|:-------------------|-----------:|--------------:|-----------------:|---------------:|--------------:|-----------:|--------:|--------:|--------------------------------:|---------------------------------------:|
-| 2021 (from 01 Sep) |         28 |            33 |                1 |              0 |            34 |          0 |       0 |      62 |                               0 |                                      0 |
-| 2022               |        134 |           121 |               32 |              0 |           153 |          8 |       0 |     295 |                               1 |                                      0 |
-| 2023               |        164 |           175 |               48 |              0 |           223 |          1 |       0 |     388 |                             109 |                                      0 |
-| Total              |        326 |           329 |               81 |              0 |           410 |          9 |       0 |     745 |                             110 |                                      0 |
+| period             |   Purchase |   Sale (Full) |   Sale (Partial) |   Sale (other) |   Sales (all) |   Exchange |   Other |   Total |   of which in amendment filings |   of which ETF proxy (Other with ticker) |   of which ETF proxy with mutual-fund-like ticker |
+|:-------------------|-----------:|--------------:|-----------------:|---------------:|--------------:|-----------:|--------:|--------:|--------------------------------:|-----------------------------------------:|--------------------------------------------------:|
+| 2021 (from 01 Sep) |         28 |            33 |                1 |              0 |            34 |          0 |       0 |      62 |                               0 |                                        0 |                                                 0 |
+| 2022               |        134 |           121 |               32 |              0 |           153 |          8 |       0 |     295 |                               1 |                                        0 |                                                 0 |
+| 2023               |        287 |           178 |               68 |              0 |           246 |          5 |       0 |     538 |                             109 |                                        0 |                                                 0 |
+| 2024               |        119 |           194 |               99 |              0 |           293 |          1 |       0 |     413 |                               7 |                                        3 |                                                 2 |
+| 2025               |        215 |            93 |               96 |              0 |           189 |          1 |       0 |     405 |                              42 |                                        1 |                                                 0 |
+| 2026 (to 31 Aug)   |        497 |           198 |              112 |              0 |           310 |          0 |       0 |     807 |                             191 |                                        2 |                                                 2 |
+| Total              |       1280 |           817 |              408 |              0 |          1225 |         15 |       0 |    2520 |                             350 |                                        6 |                                                 4 |
 
 How each condition narrows the sample:
 
-| Condition (cumulative)                                              |   Rows left |
-|:--------------------------------------------------------------------|------------:|
-| All parsed transaction rows (all years)                             |        2793 |
-| PTR received 2021-09-01 to 2026-08-31 (default window)              |        1866 |
-| Filer matched to a senator with high confidence                     |        1866 |
-| Transaction date inside the filer's Senate service                  |        1865 |
-| Owner is Self or Joint                                              |        1217 |
-| Ticker present                                                      |         999 |
-| Asset type "Stock", or "Other Securities" with a ticker (ETF proxy) |         745 |
+| Condition (cumulative)                                                      |   Rows left |
+|:----------------------------------------------------------------------------|------------:|
+| All parsed transaction rows (all years)                                     |       14558 |
+| PTR received 2021-09-01 to 2026-08-31 (default window)                      |        5823 |
+| Filer matched to a senator with high confidence                             |        5818 |
+| Transaction date inside the filer's Senate service                          |        5813 |
+| Owner is Self or Joint                                                      |        3891 |
+| Ticker present                                                              |        2893 |
+| Asset type "Stock", or "Other Securities"/"Other" with a ticker (ETF proxy) |        2520 |
 
 ## 8. Filer names to review
 
-None: every filer name matched a senator with high confidence.
+These were not matched with high confidence and are left OUT of the key number. Settle each one in `config/name_overrides.yaml` (a bioguide_id, or null for "not a senator").
+
+| first_name   | last_name   | office_texts              | filer_type_labels   |   n_filings | first_received   | last_received   | method   | confidence   | matched_name   | bioguide_id   |   score | runner_up                      | note   |
+|:-------------|:------------|:--------------------------|:--------------------|------------:|:-----------------|:----------------|:---------|:-------------|:---------------|:--------------|--------:|:-------------------------------|:-------|
+| James        | Banks       | Banks, James E. (Senator) | Senator             |           5 | 2025-03-10       | 2026-06-07      | fuzzy    | low          | Jim Banks      | B001299       |     0.8 | James Lankford (L000575) 0.720 |        |
 
 Full match table: `data/interim/filer_matches.csv`. Data-quality log: `outputs/data_quality.md`.

@@ -4,8 +4,8 @@ Every exclusion and every data problem, counted and explained. Phase 1 sections 
 
 ## Phase 1: scrape
 
-- Filings in the eFD listing (received 2016-01-01 to 2026-09-30, all filer types): **379**; electronic **323**, paper **56**, other **0**.
-- Electronic PTRs downloaded: **291**; failed: **0**; pending: **32**.
+- Filings in the eFD listing (received 2016-01-01 to 2026-09-30, all filer types): **1,874**; electronic **1,566**, paper **308**, other **0**.
+- Electronic PTRs downloaded: **1,566**; failed: **0**; pending: **0**.
 - Listing fetched on or before the scrape end date is refreshed automatically on the next run (the 2026 listing is incomplete until after 2026-09-30).
 
 ### Download failures
@@ -14,18 +14,21 @@ None.
 
 ### Paper filings (excluded, D05)
 
-**56** paper filings are scanned images and cannot be parsed; they are excluded. The full list (senator, date, link) is in `data/interim/paper_filings.csv`. By filer:
+**308** paper filings are scanned images and cannot be parsed; they are excluded. The full list (senator, date, link) is in `data/interim/paper_filings.csv`. By filer:
 
 | filer_name         |   Paper filings |
 |:-------------------|----------------:|
-| JOHN BOOZMAN       |              27 |
-| RICHARD BLUMENTHAL |              26 |
-| DIANNE FEINSTEIN   |               2 |
-| RICHARD M BURR     |               1 |
+| RICHARD BLUMENTHAL |             118 |
+| JOHN BOOZMAN       |              74 |
+| RICHARD M BURR     |              63 |
+| DIANNE FEINSTEIN   |              37 |
+| MARK R WARNER      |              14 |
+| JAMES M INHOFE     |               1 |
+| JOHN FETTERMAN     |               1 |
 
 ### Parse validation
 
-Each of the 291 downloaded PTRs was checked three ways: rows parsed, `<tbody>` rows counted by a separate parser, and the page's own "(N transactions total)" line.
+Each of the 1,566 downloaded PTRs was checked three ways: rows parsed, `<tbody>` rows counted by a separate parser, and the page's own "(N transactions total)" line.
 
 - Row-count mismatches: **0**
 - Owner-count mismatches (page's "N Self / N Spouse ..." line vs parsed Owner column): **0**
@@ -87,12 +90,14 @@ Checks for departures the dataset may NOT record (a successor in the same seat s
 
 ### Filer name matching
 
-46 distinct filer names: override 0, exact 45, fuzzy 1, ambiguous 0, unmatched 0. Unmatched or low-confidence: **0** (listed in outputs/phase1_summary.md section 8; their transactions are left out of the key number).
+82 distinct filer names: override 0, exact 80, fuzzy 2, ambiguous 0, unmatched 0. Unmatched or low-confidence: **1** (listed in outputs/phase1_summary.md section 8; their transactions are left out of the key number).
 
 - Matched filers none of whose transactions fall inside that senator's service (would suggest the wrong person): **0**
-- Transactions by high-confidence matched filers dated OUTSIDE Senate service (excluded by A05 in Phase 2): **1** of 2,793.
+- Transactions by high-confidence matched filers dated OUTSIDE Senate service (excluded by A05 in Phase 2): **5** of 14,553.
 
-| matched_name   |   Rows outside service |
-|:---------------|-----------------------:|
-| Pete Ricketts  |                      1 |
+| matched_name    |   Rows outside service |
+|:----------------|-----------------------:|
+| John R. Curtis  |                      3 |
+| David McCormick |                      1 |
+| Pete Ricketts   |                      1 |
 
