@@ -1,0 +1,292 @@
+ptr_id,filer_name,date_received,has_table,parsed_rows,tbody_rows,stated_total,row_count_ok,owner_counts_ok,owner_detail,columns
+e405f3e2-7f99-4124-a457-14dcb85a9532,Gary C Peters,2021-01-05,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0c7816ca-9df7-4ed1-af40-4590dd17209f,Thomas R Carper,2021-01-07,True,9,9,9,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+88b55682-a6d5-44c9-85c4-1c42e91737f3,Patrick J Toomey,2021-01-08,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5a42cbe1-4c6a-48f6-a2e1-f3652f50340a,Shelley M Capito,2021-01-12,True,10,10,10,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+fe83be59-4d6a-4ade-8163-a12b214d71ab,Rick Scott,2021-01-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+2f96648f-acf8-4f28-9e05-ad1d6ebac36d,Susan M Collins,2021-01-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7269bd5f-a8b1-43ea-9f8b-5d0bb4cfde73,Mark R Warner,2021-01-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4f809324-f54d-48b7-af27-46f6657857f3,Pat Roberts,2021-01-14,True,14,14,14,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+62d693bf-7dd8-4d87-98b8-26d0c71f87c5,Pat Roberts,2021-01-14,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+81de3681-e5ac-4205-896a-07512dbac921,James M Inhofe,2021-01-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b960f3a6-2f53-4273-bae6-b61e983e6d60,Sheldon Whitehouse,2021-01-25,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ae5e8414-35c1-44f7-9549-700e9453a96a,Thomas R Carper,2021-02-01,True,26,26,26,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+cf66f482-baa0-409c-abdd-b9cfcbb5fd4e,Gary C Peters,2021-02-02,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7d15a774-58c7-45bf-889a-ff2b0aff5cc6,Patrick J Toomey,2021-02-08,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7b095739-bb31-4b09-965f-5ac00e2c1321,"Jerry Moran,",2021-02-08,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a0a26d20-b140-444b-b562-9d73de4c6bd9,Ron L Wyden,2021-02-18,True,12,12,12,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f8e43fad-614c-4bc7-b13c-8e075c40869d,John W Hickenlooper,2021-02-19,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+823ec2b1-9e0c-4b13-bf35-81722c1a083c,"William F Hagerty, IV",2021-02-19,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+331fc417-1f96-4a2e-a164-b15fc2493281,"William F Hagerty, IV",2021-02-24,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+32f5972d-f18a-4bd7-be67-4a856a5b9ff7,Thomas R Carper,2021-03-03,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b65c1aeb-1831-4da3-ae45-eddb7a270abe,Christopher A Coons,2021-03-04,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b5a212bb-ad2c-48e4-9d21-db8d13f8ee78,Patrick J Toomey,2021-03-09,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+39693df5-619c-4640-ab14-d54f0786ba3a,Mark R Warner,2021-03-10,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+32550a8f-923e-416f-84f3-e19ab4f148b1,Susan M Collins,2021-03-10,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3542ce53-b0e3-46a1-92f5-8f32c262fe3d,Shelley M Capito,2021-03-14,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ed8c186c-c456-4ce6-a8d7-4e8cc7175fd3,"A. Mitchell McConnell, Jr.",2021-03-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+32a40eaa-a4a2-4bc3-a594-1c05cbe0531b,Ron L Wyden,2021-03-23,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+52d54a0a-b378-441c-8a5b-38007a211b78,Thomas R Carper,2021-04-01,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e3f4d9c3-2ada-4fad-9e67-3941095a8f0c,John W Hickenlooper,2021-04-01,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+37d25209-4ff8-4113-a8d2-bb4b2810351e,Ron L Wyden,2021-04-02,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6788596d-6a54-4caf-a73c-f03f5d2f6e5f,"William F Hagerty, IV",2021-04-08,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+46d660a1-eca6-48cf-976e-bb7f49946397,Susan M Collins,2021-04-08,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c4771ad7-1434-4eb6-a5b8-d53fa8f70249,Ron L Wyden,2021-04-09,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+57115c4a-d7fd-47d0-ad5b-597aff5656ea,Mark R Warner,2021-04-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ab7ffb25-df44-407d-9972-1608b7be4861,Shelley M Capito,2021-04-12,True,6,6,6,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+378080ec-6299-4274-a5e6-aa4f68577985,Daniel S Sullivan,2021-04-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d746dd73-17e0-4fb7-9228-f410962653c0,Ladda Tammy Duckworth,2021-04-16,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+084b183f-b04b-4d5d-98d4-3c3768a099ab,Gary C Peters,2021-04-22,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d5f6be77-a2f6-49c5-8f4d-e299ffae70db,Rick Scott,2021-04-23,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+37a7e285-49c2-425c-a02a-c40330e2e52b,Patrick J Toomey,2021-04-26,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+19a274dd-2f9c-4468-b9f2-dc68f2d2ac6b,Ron L Wyden,2021-04-30,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b907f852-1e91-473b-ab7b-3b33cf57b58f,"David A Perdue , Jr",2021-05-02,True,189,189,189,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3644a5ce-e1f9-4b36-9f48-65842e44f75e,"David A Perdue , Jr",2021-05-02,True,82,82,82,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+50c0a1b2-4fe2-468b-8084-36832c976a95,Thomas R Carper,2021-05-03,True,9,9,9,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+505fff21-a8c4-426e-9475-b119d3602361,"William F Hagerty, IV",2021-05-04,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1c08a95d-02db-456c-8b96-e3e27ed2dc29,Tina Smith,2021-05-10,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b7ddcd56-16da-4a95-8000-2c2ac19be5e6,Susan M Collins,2021-05-12,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+bc6505f6-4219-4ce3-b146-a9faaabda324,Thomas R Carper,2021-05-17,True,68,68,68,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+66e04e1d-0b8e-4619-bfa4-6ff7b2ee8160,Thomas R Carper,2021-05-17,True,48,48,48,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+2c50727e-eb4d-4dc1-a092-456e4d6e8dab,Thomas R Carper,2021-05-17,True,11,11,11,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+14af60f9-7849-45a0-8f42-c7742edfe403,Thomas R Carper,2021-05-17,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6697156a-918e-4db5-86f3-bf7abe42c239,Thomas R Carper,2021-05-17,True,62,62,62,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+84c90822-fa5c-4230-9db0-61ead2fc469a,Shelley M Capito,2021-05-19,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+121df9b4-2fea-46d1-8090-10cf701ddb38,"Jerry Moran,",2021-05-19,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5d96ee20-55b8-4258-b059-7f5c91683748,"Jerry Moran,",2021-05-19,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+534becb6-71f8-418b-963b-a0a33b3a5be8,"Jerry Moran,",2021-05-19,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+31ba15f9-3190-4872-8094-7044810a33c8,Mike Rounds,2021-05-20,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+286126a9-0b94-4462-b5c4-69bd099f437b,Thomas R Carper,2021-06-01,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8fc9bf25-8952-42b4-a7c9-ed80f599b450,John W Hickenlooper,2021-06-03,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+2c09f31e-0a1f-4905-9a71-7750a856111d,Sheldon Whitehouse,2021-06-06,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+18c33f81-90a3-4bc3-a8d9-a7cc62898c64,"A. Mitchell McConnell, Jr.",2021-06-07,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+32274587-17b3-4a09-ade9-99b7dc0436ba,"William F Hagerty, IV",2021-06-08,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+925ab727-eecf-4403-9a40-ee76f3ef0f03,Shelley M Capito,2021-06-08,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5f219f13-10ce-46c2-a637-99c206a39eaf,Rick Scott,2021-06-24,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+21aac4a2-b3ab-45de-965e-e56943678ea7,Thomas R Carper,2021-07-06,True,18,18,18,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+742b5ad0-9b33-4970-9285-b4e9e9521d4a,Gary C Peters,2021-07-06,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b1deab19-2db4-481b-97eb-8b616f00d7f9,Patrick J Toomey,2021-07-07,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0e6e0250-95fe-41a2-91ed-607a396b11cc,"William F Hagerty, IV",2021-07-08,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4fc6484d-a9d0-4646-a418-beab49148783,John W Hickenlooper,2021-07-09,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+dd6f0dbb-3333-442f-a947-20c79871ee45,Ron L Wyden,2021-07-12,True,14,14,14,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+596ec5e5-2392-4cb7-a12d-8466ab2a4f8e,Michael F Bennet,2021-07-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9ed788e7-5747-4d7c-9888-1da907b35cde,Susan M Collins,2021-07-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+68e2d163-9ecd-4bde-a0f2-4b0e2ad08c79,Mark R Warner,2021-07-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+84915b6e-846b-411b-907e-46fd4a179919,Shelley M Capito,2021-07-16,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1d84ad6b-1e5f-45b7-a95a-a9cdcb46c69b,Thomas H Tuberville,2021-07-16,True,6,6,6,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3bdd9340-7c8c-4ed0-898d-dad3835940d2,Thomas H Tuberville,2021-07-23,True,132,132,132,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+89f81dcb-e3d3-4c79-bc26-3aa06b346e41,Sheldon Whitehouse,2021-07-23,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ebdeed3c-9789-4bae-acc4-298448c28344,"Angus S King, Jr.",2021-07-28,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ab4ef7b8-d7ac-48b4-860f-dd7033dbcdd7,Thomas R Carper,2021-08-02,True,20,20,20,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+56ff7a1f-ddf5-42cf-9f9d-892e2c483511,Gary C Peters,2021-08-03,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+355e54ff-08df-4323-b019-5c88cf24aa6f,Patrick J Toomey,2021-08-05,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+267d588f-a44e-46c0-8654-9b6396851c34,Sheldon Whitehouse,2021-08-06,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f0c49765-8045-4aa6-a699-2fc462b00526,John W Hickenlooper,2021-08-09,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+400a40ef-9e53-4b18-8c61-06e0a485cc08,Susan M Collins,2021-08-09,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5407f18e-8faa-4f1e-a8bf-6cf7a2ffe5bd,Rand Paul,2021-08-11,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+045f76aa-7ae2-4040-a603-67b5ebc3b271,Shelley M Capito,2021-08-11,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+19dc5bc2-296b-459f-89c4-778307ee9556,John Hoeven,2021-08-11,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9df3fe53-21d5-43a5-a632-ea804aca39a3,Thomas H Tuberville,2021-08-13,True,30,30,30,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e3c66cc8-ca84-4899-b3dd-21a0a400ffc6,Roger W Marshall,2021-08-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4a7a7530-6012-4a41-8fbc-3c4842f9303e,Christopher A Coons,2021-08-16,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4430ac89-7784-4f2f-8417-2f0072874995,Mark E Kelly,2021-08-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d19be4e7-a40b-4083-b22d-7c7e65524f33,Thomas R Carper,2021-09-01,True,6,6,6,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d9700aee-b8d6-4eb3-bf67-676134edae39,Thomas H Tuberville,2021-09-08,True,17,17,17,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a281e3d8-07ad-434d-a8e3-b596b997e55a,Mark R Warner,2021-09-08,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4ae9501c-7657-4472-b2f1-3a7179219dbd,Patrick J Toomey,2021-09-09,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+2d59cb0c-ba0d-4d1d-af20-4aa1d70582d7,Sheldon Whitehouse,2021-09-13,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1a756e7a-56c4-4406-8a4b-1f6c549bd17d,"A. Mitchell McConnell, Jr.",2021-09-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6d5a5182-2b97-4772-b982-ff501f343822,Shelley M Capito,2021-09-15,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4760c9fb-67ec-40d5-9684-094527a0226b,Roy Blunt,2021-09-28,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ada707c8-e4a8-4cd8-a5f9-99dc5b6c3174,Thomas R Carper,2021-10-04,True,7,7,7,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1124fac7-7277-4328-8740-fbaceeaac1b5,Cynthia M Lummis,2021-10-07,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e4053f72-b9ad-4642-a996-f250485f4d33,Cynthia M Lummis,2021-10-07,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a1cec047-73fd-4433-9ac4-bbd4a32db7d5,Thomas H Tuberville,2021-10-15,True,34,34,34,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a91110ad-2cfb-452a-99be-f49948aecc93,Susan M Collins,2021-10-26,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d6b9057a-9de9-4ec1-a210-31683309ded2,Rick Scott,2021-10-28,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8f724a40-8f11-4089-8bd9-6269ffb2445e,Thomas R Carper,2021-11-02,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+aad16d9a-4250-452f-8dd8-3a85be9e8739,Thomas H Tuberville,2021-11-10,True,24,24,24,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+75f769c6-519f-4a2f-8999-a77a0f4c7c03,Shelley M Capito,2021-11-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+26f2c5b8-4bed-4ba0-a4b0-94ddcddc8d95,Patrick J Toomey,2021-11-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1abf71df-3cf3-47b5-9f8f-16ca358a157e,Mark R Warner,2021-11-17,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+16198565-5608-4bb4-837b-4b8a02e9a050,Rick Scott,2021-11-19,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3b5e5f56-1328-473b-85bb-cf831243c8da,John W Hickenlooper,2021-11-19,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7c9634ee-7352-469f-b311-c3ee8b38ec8c,"William F Hagerty, IV",2021-11-23,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ffed6c7a-6f2d-43ef-bb8c-433704146f24,Roy Blunt,2021-11-25,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+36b58614-d07b-408b-8ff9-b5846cbe801d,Christopher A Coons,2021-11-29,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a89172dd-f90e-4a61-9da4-24fa2544ddf5,Thomas R Carper,2021-12-04,True,13,13,13,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6799f5d8-9bc8-427f-a33b-24a59bffe182,Gary C Peters,2021-12-07,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+50849906-5dd4-4cc2-8d1f-9252ea0000bf,Jacklyn S Rosen,2021-12-09,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+149541b8-9421-4598-9709-0dc7caea0595,Thomas H Tuberville,2021-12-10,True,23,23,23,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3ca89f70-6cd2-4b06-a15d-44fd54fc58fa,John W Hickenlooper,2021-12-10,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+029bd30d-5f2a-4ad4-9235-4e153b41a29e,"A. Mitchell McConnell, Jr.",2021-12-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ac2ba9f8-2938-46be-a501-88910e9d2299,"William F Hagerty, IV",2021-12-22,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1490bd57-e464-4fb8-8782-5c24eb1be1e1,Susan M Collins,2021-12-23,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+41868f55-ad42-4855-9aca-1764a05fb956,Thomas R Carper,2022-01-04,True,6,6,6,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9c5c1a62-11f3-4542-887a-8012c8f35640,Rick Scott,2022-01-07,True,9,9,9,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0cb6066b-f95a-4585-86e3-6ef83857bb5e,Gary C Peters,2022-01-08,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ef87390b-ab6c-433f-a852-838d02a1dd5a,"William F Hagerty, IV",2022-01-10,True,11,11,11,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0985f3bb-3c7d-4c95-984e-5acfa9541f94,Thomas H Tuberville,2022-01-12,True,13,13,13,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ef1c990c-0eda-434f-ab4d-987550fa9738,John R Thune,2022-01-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d3e4f531-5e2e-4348-b928-e6b7d5312777,Shelley M Capito,2022-01-15,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+69388a65-26f9-4be6-9f6f-1865fc1140f9,Susan M Collins,2022-01-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f7f09d5f-fb2d-47bd-83fb-a78852c339d7,Mark R Warner,2022-01-19,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+cbca251b-4a4d-40cb-95c9-7ac3fc6b8d7c,Shelley M Capito,2022-01-21,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+bfd4faf3-88b4-445a-8559-11ee5269ba7b,Shelley M Capito,2022-01-21,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a8e388bc-72c5-4227-b6f3-64b7bb779883,"Jerry Moran,",2022-01-21,True,35,35,35,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a6c73206-244d-439c-8887-e977b545b901,Thomas R Carper,2022-02-03,True,79,79,79,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a324cfce-d7dd-4f8c-9903-2829ab6e90df,Rick Scott,2022-02-04,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+fcb0d9dc-aba4-4fa0-a15b-afed9107a34a,Rafael E Cruz,2022-02-04,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c9da6bea-fa14-4a3a-9d8b-1745e834da59,Thomas H Tuberville,2022-02-14,True,65,65,65,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ae6a1390-3883-4d8f-ae47-e8d20f20e043,Susan M Collins,2022-02-17,True,11,11,11,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+eabaeaaf-6bf6-45bd-9be6-4929fba3647c,Mark R Warner,2022-02-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4c748cab-1ab3-4cc5-8c1d-5a51053c0695,Thomas R Carper,2022-03-03,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3224ecf0-f45b-4f71-b092-a7cce9350ef8,Patrick J Toomey,2022-03-04,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+cb278bca-e252-4330-8513-4f216a679395,Susan M Collins,2022-03-09,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e7893c34-0761-4c2b-ac52-e303f166517f,Shelley M Capito,2022-03-11,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+95310897-f905-4ac6-a595-7ea2df711b28,Thomas H Tuberville,2022-03-11,True,25,25,25,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6cabc9a2-da3c-424e-9bab-5ce572bc3f24,"A. Mitchell McConnell, Jr.",2022-03-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ac3a0986-f795-4be0-9786-f224d54ce4f9,Sheldon Whitehouse,2022-03-16,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+cce3e143-c2b9-4c54-a95f-936f0fac06ef,Patrick J Toomey,2022-03-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e1ecd5de-aabb-4dfc-ae6e-3862b8df2673,Ron L Wyden,2022-03-23,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3f548fd9-50f8-47a3-826a-17d562db6065,Rick Scott,2022-03-25,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b21b9cd6-fd14-441c-8d7e-3f9193befb82,"William F Hagerty, IV",2022-03-29,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+79382c5c-4004-4888-8469-de7dcd6d45c0,Thomas R Carper,2022-04-05,True,22,22,22,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+90f6d409-977f-4c76-858b-c22e09759f54,Daniel S Sullivan,2022-04-07,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0f1deb54-a350-4646-9365-899394573269,Thomas H Tuberville,2022-04-08,True,65,65,65,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3520c9a8-d39c-4f03-95ac-3a24e345444f,"William F Hagerty, IV",2022-04-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+16484f65-2392-4ff2-b246-ac1c2d975ca7,Roy Blunt,2022-04-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c1e81cf0-c49f-444e-b387-c12f3b0170fd,Tina Smith,2022-04-20,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ef10027d-4041-4ecd-8c9a-f988371ab897,Jacklyn S Rosen,2022-04-21,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7fe3d995-edac-445a-b57b-fe4d67504e8a,Thomas R Carper,2022-04-28,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6ce0159a-685e-4766-b036-7e3ec26401a7,Thomas R Carper,2022-05-03,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8edc0f02-be98-47ca-a4a4-0faa1c0f55da,Christopher A Coons,2022-05-03,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f62896e5-30fb-412e-98b0-2fd1232c7a9b,Thomas R Carper,2022-05-04,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+568b2751-dc6b-4143-9c83-b5a067d9770b,Thomas R Carper,2022-05-04,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5409750e-79c5-48c6-9015-b3d7523c2f18,Rick Scott,2022-05-05,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f2d4cf6d-210e-4e00-a176-83879439cae0,Gary C Peters,2022-05-11,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+de8c4e8a-36e6-4f7d-aec6-e6b5a8732e9a,John R Thune,2022-05-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+74522dfd-7573-4918-bef7-dc2b09f172fc,Thomas H Tuberville,2022-05-13,True,10,10,10,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1d3a7fe5-fb35-4229-8ec2-f2caac84bb02,Tina Smith,2022-05-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6c81e400-b184-4eb3-80e7-eb91f8b5a609,Susan M Collins,2022-05-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5286dd41-6735-41b0-be8f-374d874c3ea3,"William F Hagerty, IV",2022-05-16,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9b809dc9-35a0-441f-a513-c3317ecedd55,John W Hickenlooper,2022-05-16,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+185eedae-ceda-4e66-b427-b8924f408b00,Gary C Peters,2022-05-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f8a77a14-e152-4e88-ac79-ccf069b7a356,Sheldon Whitehouse,2022-05-24,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1faaea57-05b9-4b83-872b-7e6d806c5c56,Thomas R Carper,2022-06-03,True,19,19,19,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c134c6ea-d9e6-4a53-a84f-4cddf20545fe,Shelley M Capito,2022-06-12,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ccfb1037-7ef7-4904-a1e6-a14db7558ac6,Roy Blunt,2022-06-12,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5ed49813-1cfe-42fc-8235-9da7d7a21051,"A. Mitchell McConnell, Jr.",2022-06-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+40602988-914b-49a7-b7d7-e82d7b0364b2,Thomas H Tuberville,2022-06-13,True,7,7,7,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f86c5e38-2281-4197-9c09-1aa5bef13c16,John W Hickenlooper,2022-06-13,True,19,19,19,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8ddf0001-ba8d-4c25-b970-556e8d44149c,Rick Scott,2022-06-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a6ce1670-29e5-4b70-bc24-f77d4ce7dff5,Thomas R Carper,2022-07-05,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5bbb799a-4bef-46a5-863a-eeaad0574157,Lindsey Graham,2022-07-13,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3c3a2143-08cd-4dbb-b217-2b2c76133ce5,Thomas H Tuberville,2022-07-13,True,37,37,37,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+07515a5e-e784-4a94-93d7-98c916cb0df2,"William F Hagerty, IV",2022-07-13,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1d4c2a70-18ec-4a6a-a524-707e6c937aca,Daniel S Sullivan,2022-07-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3ec54964-5549-470b-bdcc-da34d2ddf5c2,Shelley M Capito,2022-07-15,True,9,9,9,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a285e53c-f72f-4bbb-afaf-0c19ce7e0c5a,"William F Hagerty, IV",2022-07-20,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+dd07f9c3-7244-4a84-8b97-55c68f381c31,Debra S Fischer,2022-07-20,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+94260020-c950-467c-82cd-d03e18bcf36b,Shelley M Capito,2022-08-10,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+213f297e-85a8-45ce-9d16-6154ccd71fde,Thomas H Tuberville,2022-08-15,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3da479a8-e0f2-4a53-b787-4fbbb1f075ab,Patrick J Toomey,2022-08-15,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8ac1ad57-0e4e-4c79-bccb-0d9145d7461b,Rick Scott,2022-08-15,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+da98ff4a-4e03-4e8a-a824-c50a93e4a267,Mark R Warner,2022-08-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+64bae1ca-56a7-46cb-b6b1-19c49af27fc3,John W Hickenlooper,2022-08-19,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a2d04863-1aae-4d0d-9147-1de6d28f6be4,Gary C Peters,2022-08-22,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ba5ba5e2-085a-45ce-9075-fb818e972877,Thomas R Carper,2022-09-02,True,37,37,37,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+41063ac9-dfc3-4b5b-b43d-7bd012bae17e,"William F Hagerty, IV",2022-09-02,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7718a62c-639e-4cf9-bcb8-00eb421ac444,Thomas H Tuberville,2022-09-15,True,37,37,37,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7c29d4eb-ec9a-4a28-b1ba-7067fe97afc3,Susan M Collins,2022-09-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+58bcf2b9-00ff-43aa-a1f5-e8655290b69b,"A. Mitchell McConnell, Jr.",2022-09-26,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+008809fb-0861-4493-ba69-6520d89fd4ac,Thomas R Carper,2022-10-04,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+94a6e892-6680-4235-a4b8-655e96e2fe71,Thomas H Tuberville,2022-10-12,True,12,12,12,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+27166ff1-200c-49ab-a4cf-52c6d5fb235a,Tina Smith,2022-10-17,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3d1b3c85-7b41-4183-89d6-aec3600db2a1,Michael F Bennet,2022-10-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b353bbdc-ec37-4048-a7a9-9b4c94a58c7a,Rick Scott,2022-10-28,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+de4faced-abf6-488c-b122-7763a37b5964,Thomas R Carper,2022-11-03,True,34,34,34,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ebb82d27-2e1d-4c9f-baab-227c08aaf29a,Daniel S Sullivan,2022-11-03,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4ef71e79-ac98-4126-9415-66da6899ab72,Roy Blunt,2022-11-08,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+bdd81552-894d-4dc5-b1f3-9fe349529bf8,Thomas H Tuberville,2022-11-10,True,69,69,69,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+dc79907d-3b7a-4a2e-9a3d-e8f1625c70f6,Shelley M Capito,2022-11-13,True,10,10,10,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3e37ef80-caff-4b2a-a6dd-ba4f557fd3f4,Shelley M Capito,2022-11-13,True,10,10,10,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e96754b3-3ded-4636-94c2-dc9b0500f289,Rick Scott,2022-11-23,True,18,18,18,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ee5452a8-5c24-4044-8ffa-250971a8394c,John W Hickenlooper,2022-11-29,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5ac4d053-0258-4531-af39-8a8067f0d085,Thomas R Carper,2022-12-09,True,11,11,11,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b239e81f-3a2a-4cde-8c96-e82c84266aad,Ron L Wyden,2022-12-11,True,14,14,14,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7da74f60-a4f9-42bb-9663-35bde0f9af53,Thomas H Tuberville,2022-12-14,True,22,22,22,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7471e623-3ee6-4c58-a6ae-64aa50851b03,Susan M Collins,2022-12-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+91384996-f2d2-4cb1-b261-43afd6b8c465,Daniel S Sullivan,2022-12-21,True,41,41,41,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0acee755-ed8e-4a93-8785-9946d8c49e03,John W Hickenlooper,2022-12-22,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a878d31a-cc7f-4402-aea8-e2ad2847ab4c,Rick Scott,2022-12-23,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+adcbd2b1-63a0-4c50-b7ef-d093b34336eb,"A. Mitchell McConnell, Jr.",2022-12-29,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+53ddfdc6-dc9a-4945-af41-20de2224ae1c,Sheldon Whitehouse,2022-12-30,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e3f6ea2b-56c6-4451-b518-36bb67405626,John P Ricketts,2023-02-17,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+dfde0f14-54a7-4191-bd4e-05e7e40d175c,Rick Scott,2023-02-24,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5cffa7e6-cede-4e66-a9dd-ab13a2b78b1c,Shelley M Capito,2023-03-13,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4e5c9e79-cdd5-4fd7-92f1-889fb8c69e11,Thomas H Tuberville,2023-03-14,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+58a2554f-5865-4c99-93dc-3be5490ae475,Daniel S Sullivan,2023-03-16,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+83de647b-ddf0-49c3-bd56-8b32f23c0e78,Rick Scott,2023-03-23,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4333a18b-8e9d-41e9-98e1-d73006ccfe04,"A. Mitchell McConnell, Jr.",2023-03-28,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+ea347ad9-be7e-4ccf-b353-a671bb9fd9f1,Thomas H Tuberville,2023-04-12,True,17,17,17,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c72c43d7-f169-4954-ab54-f2b277f943bb,Gary C Peters,2023-04-12,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+39cfdfe3-cf60-434e-ade7-953741614120,"Angus S King, Jr.",2023-04-13,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+4b312925-a9a6-48e1-baab-80010d8e2800,John W Hickenlooper,2023-04-13,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7c840533-d541-42ab-b8ca-361a1be272d2,Tina Smith,2023-04-19,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f88cf591-1b51-412e-aff4-d36890bf3ced,Daniel S Sullivan,2023-04-26,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d13dcd12-a93c-4e85-8142-be77dea149f3,Ladda Tammy Duckworth,2023-05-01,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+06817610-b151-4531-9e35-0eb27b38ff59,Gary C Peters,2023-05-10,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7fc6c207-7c6f-4d05-aae6-1f5b2f661252,Rick Scott,2023-05-11,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d4a78d56-71f0-4658-a22e-72a8b9de1816,Thomas H Tuberville,2023-05-11,True,76,76,76,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0f75ebb1-f361-48c9-b347-b76366b49029,Thomas H Tuberville,2023-05-12,True,76,76,76,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+60987939-a116-41ee-86c2-8ba920461691,Shelley M Capito,2023-05-15,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b0c8c060-b625-4ade-bea9-624c36cd54dd,Ron L Wyden,2023-05-15,True,14,14,14,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1fd6d368-0262-4c40-bc47-1fff0f8a3ae6,John W Hickenlooper,2023-05-15,True,12,12,12,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f590a331-1f74-4d08-b79f-88930593f314,Michael F Bennet,2023-05-16,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9fc025a0-f893-47b2-9252-a2820737a409,Sheldon Whitehouse,2023-05-17,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+6d943dc9-5d3f-467a-8a6b-133eb6440190,"A. Mitchell McConnell, Jr.",2023-06-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+024c859b-2886-4edf-90b0-4c9449ec2648,Shelley M Capito,2023-06-14,True,4,4,4,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+da5e8124-07be-4e4a-8bb8-82dc7331e90c,Thomas H Tuberville,2023-06-15,True,50,50,50,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+fca2d837-22ec-457d-914a-45debad43294,John W Hickenlooper,2023-06-15,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+0165d493-3c0e-4404-a4f0-dd99c1f95160,"Angus S King, Jr.",2023-06-20,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f1af8e74-b65e-4886-9361-bc13bd413bc8,Gary C Peters,2023-06-30,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+90e958fd-45d3-422f-b33e-935092384205,Thomas H Tuberville,2023-07-14,True,43,43,43,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+2d6428b6-c786-4e23-958f-a9d887b893d7,Thomas R Tillis,2023-07-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+8af46e43-23ee-40b9-8018-b8a2f90de99b,Shelley M Capito,2023-07-17,True,8,8,8,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+016757b7-4990-4541-a2e6-3058ea8b0bfe,Daniel S Sullivan,2023-07-26,True,17,17,17,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+9d268a6e-94c2-48c5-9db9-79f3eaa75d25,Thomas H Tuberville,2023-08-14,True,33,33,33,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+5506edae-7d2f-4c33-a22e-7971200c6f0d,"William F Hagerty, IV",2023-08-14,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c6821127-de2d-4e81-ada0-1b26b047a35d,Gary C Peters,2023-08-29,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+90faa158-bcfe-403f-807f-1ff21fb3275f,"A. Mitchell McConnell, Jr.",2023-08-31,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+129f391b-9bb5-4ed3-a1ce-6b4e3e2a34c9,Roger W Marshall,2023-09-06,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a85f356c-5d2f-4b83-9262-774af3e97e46,John Boozman,2023-09-07,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b5ce3c9a-ef28-4e18-8769-20a38abc25d1,Mark R Warner,2023-09-12,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+905a4b13-f6e9-4edf-8558-ddc5122e8062,Shelley M Capito,2023-09-15,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+14405c0d-7a4a-4c50-a5dd-375441a0f996,"A. Mitchell McConnell, Jr.",2023-09-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3fbf28e0-d8fa-4f01-a605-eca8e912dde8,Rick Scott,2023-09-15,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+50d15e98-196c-4b71-8175-dcf9b92481d8,Thomas H Tuberville,2023-09-15,True,19,19,19,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+58c402ff-7995-4e0a-809d-b08544832300,Daniel S Sullivan,2023-09-18,True,33,33,33,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+026ff795-7e4d-446b-aff2-8d01be09e318,Katie Britt,2023-09-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f9252211-a695-4c37-869a-0e223fce8d88,Daniel S Sullivan,2023-09-22,True,33,33,33,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d798a094-353b-4186-aa90-8122dd5960d1,Sheldon Whitehouse,2023-10-03,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+3eb948ba-1409-4224-86d9-1236de63d137,Thomas H Tuberville,2023-10-13,True,25,25,25,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+e158755a-9569-408d-a3d6-bd3563a837df,Shelley M Capito,2023-10-14,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7b5ea4a8-cef8-49da-a63e-a2e2a7e54590,Sheldon Whitehouse,2023-10-17,True,17,17,17,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+dc545c54-6034-406d-9af3-43ad7bd29cda,"William F Hagerty, IV",2023-10-18,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+7c54bfd2-2445-4cae-96b1-1188ae921230,John P Ricketts,2023-10-20,True,25,25,25,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+c1adc02c-a9f6-4643-a4e8-43bf67c0d620,John Boozman,2023-11-07,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+25e0814a-7ea9-41b7-96e6-9c59fbc8c0e3,Thomas H Tuberville,2023-11-16,True,87,87,87,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+de3cd462-f294-4333-a9b3-cccd64e711b2,Tina Smith,2023-11-20,True,3,3,3,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+1243bbc1-0185-4ede-a8e9-c15ab2b709ac,"Angus S King, Jr.",2023-11-28,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+23092692-9a3b-418e-85b9-3b660a52db8c,Gary C Peters,2023-12-01,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+b46702f8-b4c8-4d63-8a57-fbd4399cabab,Sheldon Whitehouse,2023-12-07,True,5,5,5,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f23ecd4c-3174-4fba-90ae-a9a825b4a22f,Rick Scott,2023-12-10,True,16,16,16,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f5f28f25-43fe-48f8-af40-ea83c8d6f0a9,Shelley M Capito,2023-12-11,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+f80f54a3-981e-4f11-8774-2a919db38389,John Boozman,2023-12-12,True,11,11,11,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+d4e95f06-60b2-43c5-9084-91ae10b9fde3,Thomas H Tuberville,2023-12-15,True,13,13,13,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+56e94501-503d-480f-96f0-354febac789e,Katie Britt,2023-12-15,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+87e49767-79f9-4e2f-8ad1-30585d4bd673,"A. Mitchell McConnell, Jr.",2023-12-18,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+db451761-8791-4226-b5ef-21582ac6a228,Shelley M Capito,2023-12-19,True,2,2,2,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a1a9f50d-8027-40b9-8260-514a1a140615,Mark R Warner,2023-12-19,True,30,30,30,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
+a2ae668a-789a-45f3-820b-5a90e82636cc,Gary C Peters,2023-12-21,True,1,1,1,True,True,,#|Transaction Date|Owner|Ticker|Asset Name|Asset Type|Type|Amount|Comment
