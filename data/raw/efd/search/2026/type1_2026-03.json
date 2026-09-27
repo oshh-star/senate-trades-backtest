@@ -1,0 +1,111 @@
+{
+ "data": [
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/b7c1a149-760f-4a4e-96a7-e2d689bccd2e/\" target=\"_blank\">Periodic Transaction Report for 03/28/2026</a>",
+   "03/28/2026"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/1e345459-9cbe-4434-99ed-eaca63641fb3/\" target=\"_blank\">Periodic Transaction Report for 03/26/2026</a>",
+   "03/25/2026"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/f6e2adb6-d995-4d21-ad04-5325892a0bf9/\" target=\"_blank\">Periodic Transaction Report for 03/25/2026</a>",
+   "03/25/2026"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/09b9c1ed-1d73-4f17-b6f8-7b2d92021c5b/\" target=\"_blank\">Periodic Transaction Report for 03/24/2026</a>",
+   "03/24/2026"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/8ee57a8c-076d-4e8b-bf04-061edaf0724e/\" target=\"_blank\">Periodic Transaction Report for 03/19/2026</a>",
+   "03/19/2026"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d337c392-e0aa-428e-be93-44a327b90d08/\" target=\"_blank\">Periodic Transaction Report for 03/13/2026</a>",
+   "03/13/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/2b56957f-6859-43e2-a447-898509c7f142/\" target=\"_blank\">Periodic Transaction Report for 03/06/2026</a>",
+   "03/06/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/141ea86c-9411-4d3f-ae9b-ce6e5e8065d1/\" target=\"_blank\">Periodic Transaction Report for 03/06/2026</a>",
+   "03/06/2026"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/4ce4bf43-4f25-4cc0-b084-4ab230a1b080/\" target=\"_blank\">Periodic Transaction Report for 03/06/2026</a>",
+   "03/06/2026"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/f7a22ac4-87ea-46e3-9303-c84d8b1ed6e0/\" target=\"_blank\">Periodic Transaction Report for 03/05/2026</a>",
+   "03/05/2026"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/a27cbd70-4bc0-4e69-a444-387de64d14f8/\" target=\"_blank\">Periodic Transaction Report for 03/05/2026</a>",
+   "03/04/2026"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/31980453-e298-4f21-9134-5d0b1a0e6491/\" target=\"_blank\">Periodic Transaction Report for 03/04/2026</a>",
+   "03/04/2026"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/29828a0d-22e7-4acf-b0e4-2a340947b79e/\" target=\"_blank\">Periodic Transaction Report for 03/04/2026</a>",
+   "03/04/2026"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/12848a78-c94a-4813-9051-5b3063c718a9/\" target=\"_blank\">Periodic Transaction Report for 03/02/2026</a>",
+   "03/02/2026"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:11:08",
+ "query": {
+  "date_field": "date received",
+  "end": "2026-03-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2026-03-01"
+ },
+ "recordsTotal": 14
+}

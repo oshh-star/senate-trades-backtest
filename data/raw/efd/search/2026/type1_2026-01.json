@@ -1,0 +1,125 @@
+{
+ "data": [
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/a8f2bab8-0feb-49cf-b80f-9826cb4a7a4c/\" target=\"_blank\">Periodic Transaction Report for 01/30/2026</a>",
+   "01/30/2026"
+  ],
+  [
+   "Katie",
+   "Britt",
+   "Britt, Katie (Senator)",
+   "<a href=\"/search/view/ptr/37900303-65bf-467d-962b-76555d510b28/\" target=\"_blank\">Periodic Transaction Report for 01/29/2026</a>",
+   "01/29/2026"
+  ],
+  [
+   "Katie",
+   "Britt",
+   "Britt, Katie (Senator)",
+   "<a href=\"/search/view/ptr/28e79480-3dcb-4793-86ed-48e7fd214587/\" target=\"_blank\">Periodic Transaction Report for 01/26/2026</a>",
+   "01/26/2026"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/d7cae837-f73c-4eb1-b9fb-e510f53d65de/\" target=\"_blank\">Periodic Transaction Report for 01/26/2026</a>",
+   "01/26/2026"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/5dfd6dd1-5c2f-4398-984b-79c88380fc84/\" target=\"_blank\">Periodic Transaction Report for 01/20/2026</a>",
+   "01/20/2026"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/f873aeb4-adbb-4934-a188-79416a2e4c76/\" target=\"_blank\">Periodic Transaction Report for 01/20/2026</a>",
+   "01/20/2026"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/5a8fc13a-c5aa-44b1-a72e-a68badbdd5f4/\" target=\"_blank\">Periodic Transaction Report for 01/16/2026</a>",
+   "01/16/2026"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/b2bdf363-af39-43c8-ae93-13ed14aa3752/\" target=\"_blank\">Periodic Transaction Report for 01/15/2026</a>",
+   "01/15/2026"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/a71d2e2b-337a-4d0f-bf2f-a4c9a0c1f6dc/\" target=\"_blank\">Periodic Transaction Report for 01/13/2026</a>",
+   "01/13/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/d3daa40b-123d-4451-9974-02bf5a96d8da/\" target=\"_blank\">Periodic Transaction Report for 01/13/2026</a>",
+   "01/13/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/0677bd3f-167e-4cae-8f1d-05eb4340fcdc/\" target=\"_blank\">Periodic Transaction Report for 01/13/2026</a>",
+   "01/13/2026"
+  ],
+  [
+   "Bernie",
+   "Moreno",
+   "Moreno, Bernardo (Senator)",
+   "<a href=\"/search/view/ptr/de8efd52-6618-4e4f-bd3d-d3e32cccaa0c/\" target=\"_blank\">Periodic Transaction Report for 01/09/2026</a>",
+   "01/09/2026"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/0dbb004e-a36f-4554-986d-d8b1a9a4769a/\" target=\"_blank\">Periodic Transaction Report for 01/07/2026</a>",
+   "01/07/2026"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/abe1d99a-f229-49cd-af07-301511ecf0d1/\" target=\"_blank\">Periodic Transaction Report for 01/06/2026</a>",
+   "01/06/2026"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/3e408f48-f710-420d-ba46-d2269c689a8a/\" target=\"_blank\">Periodic Transaction Report for 01/06/2026</a>",
+   "01/06/2026"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/439c1ac8-2955-486b-9f9c-4f1c6524671a/\" target=\"_blank\">Periodic Transaction Report for 01/06/2026</a>",
+   "01/06/2026"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:11:06",
+ "query": {
+  "date_field": "date received",
+  "end": "2026-01-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2026-01-01"
+ },
+ "recordsTotal": 16
+}

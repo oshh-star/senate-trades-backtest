@@ -1,0 +1,132 @@
+{
+ "data": [
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/5245bd7a-a8b7-4d3e-8fb1-f563322da8f8/\" target=\"_blank\">Periodic Transaction Report for 05/29/2026</a>",
+   "05/28/2026"
+  ],
+  [
+   "Bernie",
+   "Moreno",
+   "Moreno, Bernardo (Senator)",
+   "<a href=\"/search/view/ptr/86810b3e-3dee-4e8e-9b47-6d3822385b7d/\" target=\"_blank\">Periodic Transaction Report for 05/22/2026</a>",
+   "05/22/2026"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d02263c3-381d-4ee9-8d84-2c44d9baa59e/\" target=\"_blank\">Periodic Transaction Report for 05/19/2026</a>",
+   "05/19/2026"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/98b63289-518f-44d6-b51c-4efc59acde85/\" target=\"_blank\">Periodic Transaction Report for 05/15/2026</a>",
+   "05/15/2026"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/50e54b67-b398-470e-8baf-e09e3be81d86/\" target=\"_blank\">Periodic Transaction Report for 07/15/2025 (Amendment 1)</a>",
+   "05/15/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/8292d644-09cf-45f9-8126-cbf54a114745/\" target=\"_blank\">Periodic Transaction Report for 04/20/2025 (Amendment 1)</a>",
+   "05/11/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/27f15751-bcec-4e3e-a0ab-d7e843c08d06/\" target=\"_blank\">Periodic Transaction Report for 10/10/2025 (Amendment 1)</a>",
+   "05/11/2026"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/969f5bc0-89d8-4c76-a55e-944fb03aff0d/\" target=\"_blank\">Periodic Transaction Report for 05/11/2026</a>",
+   "05/11/2026"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/3f315067-5f69-42b3-b32d-063ce735957b/\" target=\"_blank\">Periodic Transaction Report for 05/10/2026</a>",
+   "05/10/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/c99d5ebd-82ce-439c-a678-014946f46c50/\" target=\"_blank\">Periodic Transaction Report for 05/08/2026</a>",
+   "05/08/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/f148dc2e-d440-4759-be4d-f000c1cd6e89/\" target=\"_blank\">Periodic Transaction Report for 05/08/2026</a>",
+   "05/08/2026"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/029f67f3-121a-406c-bddf-a9a7e7d6267b/\" target=\"_blank\">Periodic Transaction Report for 05/07/2026</a>",
+   "05/07/2026"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/f34c4d7a-29ba-48fb-beea-d94c1368cc99/\" target=\"_blank\">Periodic Transaction Report for 05/06/2026</a>",
+   "05/06/2026"
+  ],
+  [
+   "M. Michael",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/374c35de-6615-4f76-85b9-7f8922bdcc37/\" target=\"_blank\">Periodic Transaction Report for 05/06/2026</a>",
+   "05/06/2026"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/8036348f-2470-41f7-be97-d822d0b17e7c/\" target=\"_blank\">Periodic Transaction Report for 05/05/2026</a>",
+   "05/05/2026"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/747b4aac-bbc9-4636-bf0f-95b0454e39d9/\" target=\"_blank\">Periodic Transaction Report for 05/04/2026</a>",
+   "05/04/2026"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/dcea4793-9402-493b-8c92-ba4d77970c75/\" target=\"_blank\">Periodic Transaction Report for 05/01/2026</a>",
+   "05/01/2026"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:11:10",
+ "query": {
+  "date_field": "date received",
+  "end": "2026-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2026-05-01"
+ },
+ "recordsTotal": 17
+}
