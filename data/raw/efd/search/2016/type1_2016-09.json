@@ -1,0 +1,55 @@
+{
+ "data": [
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/8186fc3c-f4e6-454d-8126-68d7c0800553/\" target=\"_blank\">Periodic Transaction Report for 09/19/2016</a>",
+   "09/19/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/cd422bb9-6efe-4eed-80a8-9d620cdf500d/\" target=\"_blank\">Periodic Transaction Report for 09/13/2016</a>",
+   "09/13/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/9ccfe7a6-66c2-478e-be77-0db00e97d1ab/\" target=\"_blank\">Periodic Transaction Report for 09/09/2016</a>",
+   "09/09/2016"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/068b57a8-cf17-434d-a3a0-9af169328016/\" target=\"_blank\">Periodic Transaction Report for 09/09/2016</a>",
+   "09/09/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/c17a4232-aff8-415b-85d0-3bd01e3b6fe7/\" target=\"_blank\">Periodic Transaction Report for 02/03/2015 (Amendment 2)</a>",
+   "09/08/2016"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/050accd8-143f-4578-b3b0-9d4852cb9a72/\" target=\"_blank\">Periodic Transaction Report for 09/07/2016</a>",
+   "09/07/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:33",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-09-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-09-01"
+ },
+ "recordsTotal": 6
+}
