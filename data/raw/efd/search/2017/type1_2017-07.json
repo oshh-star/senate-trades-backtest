@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/d9fd43e2-2f3c-46a7-b688-50990f1e430c/\" target=\"_blank\">Periodic Transaction Report for 07/26/2017</a>",
+   "07/26/2017"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/7f33e550-caa2-4718-8bf5-d73d0adb010b/\" target=\"_blank\">Periodic Transaction Report for 07/26/2017</a>",
+   "07/26/2017"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/38e883a6-03e1-43ac-ab63-41a211a5635b/\" target=\"_blank\">Periodic Transaction Report for 07/24/2017</a>",
+   "07/24/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/a4b3c74c-30b7-481c-80d5-ebf806202f96/\" target=\"_blank\">Periodic Transaction Report for 07/24/2017</a>",
+   "07/24/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/e362c90d-5cf4-4734-b949-27f998978e3f/\" target=\"_blank\">Periodic Transaction Report for 07/20/2017</a>",
+   "07/20/2017"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/a7674ea9-d5dd-4d57-85a8-c2f943222216/\" target=\"_blank\">Periodic Transaction Report for 07/20/2017</a>",
+   "07/20/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/4e10ef83-13cb-488a-b24e-bd5a77f7d4d0/\" target=\"_blank\">Periodic Transaction Report for 07/13/2017</a>",
+   "07/13/2017"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/bc79b7d5-c51e-4a7e-b8ff-38671e538939/\" target=\"_blank\">Periodic Transaction Report for 07/12/2017</a>",
+   "07/12/2017"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/47c97854-cc20-4066-9374-925d20c32cd1/\" target=\"_blank\">Periodic Transaction Report for 07/10/2017</a>",
+   "07/10/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/1dcead78-4298-43b4-a3aa-fa3c09ba2f4d/\" target=\"_blank\">Periodic Transaction Report for 07/07/2017</a>",
+   "07/07/2017"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/17cb92a5-f23f-4320-a96d-892ee76c92d9/\" target=\"_blank\">Periodic Transaction Report for 07/06/2017</a>",
+   "07/06/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:39",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-07-01"
+ },
+ "recordsTotal": 11
+}

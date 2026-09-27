@@ -1,0 +1,83 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/298ebe23-17e0-41d0-9e5c-c398ae350857/\" target=\"_blank\">Periodic Transaction Report for 11/28/2018</a>",
+   "11/28/2018"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/a31f4ed9-2215-4833-9a19-1a30db5a65c5/\" target=\"_blank\">Periodic Transaction Report for 11/26/2018</a>",
+   "11/26/2018"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/5c8025e9-c8bb-4f1e-a476-19331fe8f348/\" target=\"_blank\">Periodic Transaction Report for 11/26/2018</a>",
+   "11/26/2018"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/bbd1f7c0-aefc-4f68-b5c1-d7fe1310b2c0/\" target=\"_blank\">Periodic Transaction Report for 11/16/2018</a>",
+   "11/16/2018"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/2a765d2c-1938-48c6-bdb6-1cda693e0e50/\" target=\"_blank\">Periodic Transaction Report for 11/15/2018</a>",
+   "11/15/2018"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/f02241a5-ba65-429f-ab64-3d97674f8e77/\" target=\"_blank\">Periodic Transaction Report for 11/14/2018</a>",
+   "11/14/2018"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/cc72eaf0-41e8-4ca1-9439-46e5d7b8a3dc/\" target=\"_blank\">Periodic Transaction Report for 11/13/2018</a>",
+   "11/13/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/5ab9ecbc-bc7c-463c-8395-ae66f226b026/\" target=\"_blank\">Periodic Transaction Report for 11/08/2018</a>",
+   "11/08/2018"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/7e834dd0-24aa-4f2c-a743-8743ebb07559/\" target=\"_blank\">Periodic Transaction Report for 11/08/2018</a>",
+   "11/08/2018"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/954bf027-bb1c-4ee1-bb59-f6e1ff493de3/\" target=\"_blank\">Periodic Transaction Report for 11/01/2018</a>",
+   "11/01/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:04",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-11-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2018-11-01"
+ },
+ "recordsTotal": 10
+}

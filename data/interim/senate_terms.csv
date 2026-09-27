@@ -1,0 +1,408 @@
+bioguide_id,full_name,first,middle,last,suffix,nickname,party,state,senate_class,term_start,term_end,start_how,end_type,scheduled_end,ended_early,source_file
+B001265,Mark Begich,Mark,,Begich,,,Democrat,AK,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+S001198,Dan Sullivan,Dan,,Sullivan,,,Republican,AK,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+S001198,Dan Sullivan,Dan,,Sullivan,,,Republican,AK,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+M001153,Lisa Murkowski,Lisa,A.,Murkowski,,,Republican,AK,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+M001153,Lisa Murkowski,Lisa,A.,Murkowski,,,Republican,AK,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+M001153,Lisa Murkowski,Lisa,A.,Murkowski,,,Republican,AK,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+M001153,Lisa Murkowski,Lisa,A.,Murkowski,,,Republican,AK,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+S001141,Jeff Sessions,Jefferson,B.,Sessions,,Jeff,Republican,AL,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+S001141,Jeff Sessions,Jefferson,B.,Sessions,,Jeff,Republican,AL,2,2015-01-06,2017-02-08,,,2021-01-03,True,legislators-historical.yaml
+S001202,Luther Strange,Luther,,Strange,,,Republican,AL,2,2017-02-09,2018-01-03,appointment,,2021-01-03,True,legislators-historical.yaml
+J000300,Doug Jones,Doug,,Jones,,,Democrat,AL,2,2018-01-03,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+T000278,Tommy Tuberville,Tommy,Hawley,Tuberville,,,Republican,AL,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+S000320,Richard C. Shelby,Richard,C.,Shelby,,,Republican,AL,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+S000320,Richard C. Shelby,Richard,C.,Shelby,,,Republican,AL,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+S000320,Richard C. Shelby,Richard,C.,Shelby,,,Republican,AL,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+B001319,Katie Boyd Britt,Katie,Elizabeth,Britt,,,Republican,AL,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+P000590,Mark L. Pryor,Mark,,Pryor,,,Democrat,AR,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+C001095,Tom Cotton,Tom,,Cotton,,,Republican,AR,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001095,Tom Cotton,Tom,,Cotton,,,Republican,AR,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+L000035,Blanche Lincoln,Blanche,Lambert,Lincoln,,,Democrat,AR,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+B001236,John Boozman,John,,Boozman,,,Republican,AR,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+B001236,John Boozman,John,,Boozman,,,Republican,AR,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+B001236,John Boozman,John,,Boozman,,,Republican,AR,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+K000352,Jon Kyl,Jon,,Kyl,,,Republican,AZ,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+F000444,Jeff Flake,Jeff,,Flake,,,Republican,AZ,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+S001191,Kyrsten Sinema,Kyrsten,,Sinema,,,Independent,AZ,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+G000574,Ruben Gallego,Ruben,,Gallego,,,Democrat,AZ,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+M000303,John McCain,John,S.,McCain,,,Republican,AZ,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+M000303,John McCain,John,S.,McCain,,,Republican,AZ,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+M000303,John McCain,John,S.,McCain,,,Republican,AZ,3,2017-01-03,2018-08-25,,,2023-01-03,True,legislators-historical.yaml
+K000352,Jon Kyl,Jon,,Kyl,,,Republican,AZ,3,2018-09-05,2018-12-31,appointment,,2023-01-03,True,legislators-historical.yaml
+M001197,Martha McSally,Martha,,McSally,,,Republican,AZ,3,2019-01-03,2020-12-02,appointment,special-election,2023-01-03,True,legislators-historical.yaml
+K000377,Mark Kelly,Mark,,Kelly,,,Democrat,AZ,3,2020-12-02,2023-01-03,special-election,,2023-01-03,False,legislators-current.yaml
+K000377,Mark Kelly,Mark,,Kelly,,,Democrat,AZ,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+F000062,Dianne Feinstein,Dianne,,Feinstein,,,Democrat,CA,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+F000062,Dianne Feinstein,Dianne,,Feinstein,,,Democrat,CA,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+F000062,Dianne Feinstein,Dianne,,Feinstein,,,Democrat,CA,1,2019-01-03,2023-09-28,,,2025-01-03,True,legislators-historical.yaml
+B001320,Laphonza R. Butler,Laphonza,Romanique,Butler,,,Democrat,CA,1,2023-10-03,2024-12-08,appointment,special-election,2025-01-03,True,legislators-historical.yaml
+S001150,Adam B. Schiff,Adam,B.,Schiff,,,Democrat,CA,1,2024-12-09,2025-01-03,special-election,,2025-01-03,False,legislators-current.yaml
+S001150,Adam B. Schiff,Adam,B.,Schiff,,,Democrat,CA,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+B000711,Barbara Boxer,Barbara,,Boxer,,,Democrat,CA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+B000711,Barbara Boxer,Barbara,,Boxer,,,Democrat,CA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+H001075,Kamala D. Harris,Kamala,,Harris,,,Democrat,CA,3,2017-01-03,2021-01-18,,,2023-01-03,True,legislators-historical.yaml
+P000145,Alex Padilla,Alejandro,,Padilla,,Alex,Democrat,CA,3,2021-01-20,2022-12-21,appointment,,2023-01-03,True,legislators-current.yaml
+P000145,Alex Padilla,Alejandro,,Padilla,,Alex,Democrat,CA,3,2022-12-22,2023-01-03,special-election,,2023-01-03,False,legislators-current.yaml
+P000145,Alex Padilla,Alejandro,,Padilla,,Alex,Democrat,CA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+U000038,Mark Udall,Mark,E.,Udall,,,Democrat,CO,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+G000562,Cory Gardner,Cory,,Gardner,,,Republican,CO,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+H000273,John W. Hickenlooper,John,Wright,Hickenlooper,,,Democrat,CO,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B001267,Michael F. Bennet,Michael,F.,Bennet,,,Democrat,CO,3,2009-01-22,2011-01-03,appointment,,2011-01-03,False,legislators-current.yaml
+B001267,Michael F. Bennet,Michael,F.,Bennet,,,Democrat,CO,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+B001267,Michael F. Bennet,Michael,F.,Bennet,,,Democrat,CO,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+B001267,Michael F. Bennet,Michael,F.,Bennet,,,Democrat,CO,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+L000304,Joseph I. Lieberman,Joseph,I.,Lieberman,,,Independent,CT,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+M001169,Christopher Murphy,Christopher,S.,Murphy,,,Democrat,CT,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+M001169,Christopher Murphy,Christopher,S.,Murphy,,,Democrat,CT,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+M001169,Christopher Murphy,Christopher,S.,Murphy,,,Democrat,CT,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+D000388,Christopher Dodd,Christopher,J.,Dodd,,,Democrat,CT,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+B001277,Richard Blumenthal,Richard,,Blumenthal,,,Democrat,CT,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+B001277,Richard Blumenthal,Richard,,Blumenthal,,,Democrat,CT,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+B001277,Richard Blumenthal,Richard,,Blumenthal,,,Democrat,CT,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+C000174,Thomas R. Carper,Thomas,Richard,Carper,,,Democrat,DE,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+C000174,Thomas R. Carper,Thomas,Richard,Carper,,,Democrat,DE,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+C000174,Thomas R. Carper,Thomas,Richard,Carper,,,Democrat,DE,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+B001303,Lisa Blunt Rochester,Lisa,,Blunt Rochester,,,Democrat,DE,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+K000373,Edward Kaufman,Edward,E.,Kaufman,,,Democrat,DE,2,2009-01-16,2010-11-15,appointment,,2015-01-03,True,legislators-historical.yaml
+C001088,Christopher A. Coons,Christopher,Andrew,Coons,,,Democrat,DE,2,2010-11-15,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+C001088,Christopher A. Coons,Christopher,Andrew,Coons,,,Democrat,DE,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001088,Christopher A. Coons,Christopher,Andrew,Coons,,,Democrat,DE,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+N000032,Bill Nelson,Bill,,Nelson,,,Democrat,FL,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+N000032,Bill Nelson,Bill,,Nelson,,,Democrat,FL,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+S001217,Rick Scott,Rick,,Scott,,,Republican,FL,1,2019-01-08,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+S001217,Rick Scott,Rick,,Scott,,,Republican,FL,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+L000572,George LeMieux,George,S.,LeMieux,,,Republican,FL,3,2009-09-10,2011-01-03,appointment,,2011-01-03,False,legislators-historical.yaml
+R000595,Marco Rubio,Marco,,Rubio,,,Republican,FL,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+R000595,Marco Rubio,Marco,,Rubio,,,Republican,FL,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+R000595,Marco Rubio,Marco,,Rubio,,,Republican,FL,3,2023-01-03,2025-01-20,,,2029-01-03,True,legislators-historical.yaml
+M001244,Ashley Moody,Ashley,Brooke,Moody,,,Republican,FL,3,2025-01-21,2026-11-03,appointment,special-election,2029-01-03,True,legislators-current.yaml
+C000286,Saxby Chambliss,Saxby,,Chambliss,,,Republican,GA,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+P000612,David Perdue,David,,Perdue,,,Republican,GA,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+O000174,Jon Ossoff,Jon,,Ossoff,,,Democrat,GA,2,2021-01-20,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+I000055,Johnny Isakson,John,H.,Isakson,,Johnny,Republican,GA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+I000055,Johnny Isakson,John,H.,Isakson,,Johnny,Republican,GA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+I000055,Johnny Isakson,John,H.,Isakson,,Johnny,Republican,GA,3,2017-01-03,2019-12-31,,,2023-01-03,True,legislators-historical.yaml
+L000594,Kelly Loeffler,Kelly,,Loeffler,,,Republican,GA,3,2020-01-06,2021-01-20,appointment,special-election,2023-01-03,True,legislators-historical.yaml
+W000790,Raphael G. Warnock,Raphael,Gamaliel,Warnock,,,Democrat,GA,3,2021-01-20,2023-01-03,special-election,,2023-01-03,False,legislators-current.yaml
+W000790,Raphael G. Warnock,Raphael,Gamaliel,Warnock,,,Democrat,GA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+A000069,Daniel K. Akaka,Daniel,Kahikina,Akaka,,,Democrat,HI,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+H001042,Mazie K. Hirono,Mazie,K.,Hirono,,,Democrat,HI,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+H001042,Mazie K. Hirono,Mazie,K.,Hirono,,,Democrat,HI,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+H001042,Mazie K. Hirono,Mazie,K.,Hirono,,,Democrat,HI,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+I000025,Daniel K. Inouye,Daniel,K.,Inouye,,,Democrat,HI,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+I000025,Daniel K. Inouye,Daniel,K.,Inouye,,,Democrat,HI,3,2011-01-05,2012-12-17,,,2017-01-03,True,legislators-historical.yaml
+S001194,Brian Schatz,Brian,Emanuel,Schatz,,,Democrat,HI,3,2012-12-27,2015-01-03,appointment,,2017-01-03,True,legislators-current.yaml
+S001194,Brian Schatz,Brian,Emanuel,Schatz,,,Democrat,HI,3,2015-01-06,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+S001194,Brian Schatz,Brian,Emanuel,Schatz,,,Democrat,HI,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+S001194,Brian Schatz,Brian,Emanuel,Schatz,,,Democrat,HI,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+H000206,Tom Harkin,Thomas,,Harkin,,Tom,Democrat,IA,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+E000295,Joni Ernst,Joni,,Ernst,,,Republican,IA,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+E000295,Joni Ernst,Joni,,Ernst,,,Republican,IA,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+G000386,Chuck Grassley,Charles,E.,Grassley,,Chuck,Republican,IA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+G000386,Chuck Grassley,Charles,E.,Grassley,,Chuck,Republican,IA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+G000386,Chuck Grassley,Charles,E.,Grassley,,Chuck,Republican,IA,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+G000386,Chuck Grassley,Charles,E.,Grassley,,Chuck,Republican,IA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+R000584,James E. Risch,James,E.,Risch,,,Republican,ID,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+R000584,James E. Risch,James,E.,Risch,,,Republican,ID,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+R000584,James E. Risch,James,E.,Risch,,,Republican,ID,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+C000880,Mike Crapo,Michael,D.,Crapo,,Mike,Republican,ID,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+C000880,Mike Crapo,Michael,D.,Crapo,,Mike,Republican,ID,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+C000880,Mike Crapo,Michael,D.,Crapo,,Mike,Republican,ID,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+C000880,Mike Crapo,Michael,D.,Crapo,,Mike,Republican,ID,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+D000563,Richard J. Durbin,Richard,J.,Durbin,,,Democrat,IL,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+D000563,Richard J. Durbin,Richard,J.,Durbin,,,Democrat,IL,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+D000563,Richard J. Durbin,Richard,J.,Durbin,,,Democrat,IL,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B001266,Roland Burris,Roland,,Burris,,,Democrat,IL,3,2009-01-15,2010-11-29,appointment,,2011-01-03,True,legislators-historical.yaml
+K000360,Mark Kirk,Mark,Steven,Kirk,,,Republican,IL,3,2010-11-29,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+K000360,Mark Kirk,Mark,Steven,Kirk,,,Republican,IL,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+D000622,Tammy Duckworth,Tammy,,Duckworth,,,Democrat,IL,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+D000622,Tammy Duckworth,Tammy,,Duckworth,,,Democrat,IL,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+L000504,Richard G. Lugar,Richard,G.,Lugar,,,Republican,IN,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+D000607,Joe Donnelly,Joe,,Donnelly,,,Democrat,IN,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+B001310,Mike Braun,Mike,,Braun,,,Republican,IN,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+B001299,Jim Banks,Jim,,Banks,,,Republican,IN,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+B001233,Evan Bayh,Evan,,Bayh,,,Democrat,IN,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+C000542,Daniel Coats,Daniel,Ray,Coats,,,Republican,IN,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+Y000064,Todd Young,Todd,C.,Young,,,Republican,IN,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+Y000064,Todd Young,Todd,C.,Young,,,Republican,IN,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+R000307,Pat Roberts,Pat,,Roberts,,,Republican,KS,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+R000307,Pat Roberts,Pat,,Roberts,,,Republican,KS,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+M001198,Roger Marshall,Roger,,Marshall,,,Republican,KS,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B000953,Samuel Brownback,Samuel,D.,Brownback,,Sam,Republican,KS,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+M000934,Jerry Moran,Jerry,,Moran,,,Republican,KS,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+M000934,Jerry Moran,Jerry,,Moran,,,Republican,KS,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+M000934,Jerry Moran,Jerry,,Moran,,,Republican,KS,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+M000355,Mitch McConnell,Mitch,,McConnell,,,Republican,KY,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+M000355,Mitch McConnell,Mitch,,McConnell,,,Republican,KY,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+M000355,Mitch McConnell,Mitch,,McConnell,,,Republican,KY,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B001066,Jim Bunning,Jim,,Bunning,,,Republican,KY,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+P000603,Rand Paul,Rand,,Paul,,,Republican,KY,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+P000603,Rand Paul,Rand,,Paul,,,Republican,KY,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+P000603,Rand Paul,Rand,,Paul,,,Republican,KY,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+L000550,Mary L. Landrieu,Mary,L.,Landrieu,,,Democrat,LA,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+C001075,Bill Cassidy,Bill,,Cassidy,,,Republican,LA,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001075,Bill Cassidy,Bill,,Cassidy,,,Republican,LA,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+V000127,David Vitter,David,,Vitter,,,Republican,LA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+V000127,David Vitter,David,,Vitter,,,Republican,LA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+K000393,John Kennedy,John,Neely,Kennedy,,,Republican,LA,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+K000393,John Kennedy,John,Neely,Kennedy,,,Republican,LA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+K000374,Paul Kirk,Paul,G.,Kirk,Jr.,,Democrat,MA,1,2009-09-25,2010-02-04,appointment,,2013-01-03,True,legislators-historical.yaml
+B001268,Scott P. Brown,Scott,,Brown,,,Republican,MA,1,2010-02-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+W000817,Elizabeth Warren,Elizabeth,,Warren,,,Democrat,MA,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+W000817,Elizabeth Warren,Elizabeth,,Warren,,,Democrat,MA,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+W000817,Elizabeth Warren,Elizabeth,,Warren,,,Democrat,MA,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+K000148,John F. Kerry,John,Forbes,Kerry,,,Democrat,MA,2,2009-01-06,2013-02-01,,,2015-01-03,True,legislators-historical.yaml
+C001099,William M. Cowan,William,,Cowan,,Mo,Democrat,MA,2,2013-02-06,2013-07-16,appointment,,2015-01-03,True,legislators-historical.yaml
+M000133,Edward J. Markey,Edward,J.,Markey,,Ed,Democrat,MA,2,2013-07-16,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+M000133,Edward J. Markey,Edward,J.,Markey,,Ed,Democrat,MA,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+M000133,Edward J. Markey,Edward,J.,Markey,,Ed,Democrat,MA,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+C000141,Benjamin L. Cardin,Benjamin,L.,Cardin,,,Democrat,MD,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+C000141,Benjamin L. Cardin,Benjamin,L.,Cardin,,,Democrat,MD,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+C000141,Benjamin L. Cardin,Benjamin,L.,Cardin,,,Democrat,MD,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+A000382,Angela D. Alsobrooks,Angela,Deneece,Alsobrooks,,,Democrat,MD,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+M000702,Barbara A. Mikulski,Barbara,A.,Mikulski,,,Democrat,MD,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+M000702,Barbara A. Mikulski,Barbara,A.,Mikulski,,,Democrat,MD,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+V000128,Chris Van Hollen,Chris,,Van Hollen,,,Democrat,MD,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+V000128,Chris Van Hollen,Chris,,Van Hollen,,,Democrat,MD,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+S000663,Olympia J. Snowe,Olympia,J.,Snowe,,,Republican,ME,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+K000383,"Angus S. King, Jr.",Angus,S.,King,Jr.,,Independent,ME,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+K000383,"Angus S. King, Jr.",Angus,S.,King,Jr.,,Independent,ME,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+K000383,"Angus S. King, Jr.",Angus,S.,King,Jr.,,Independent,ME,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+C001035,Susan M. Collins,Susan,M.,Collins,,,Republican,ME,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+C001035,Susan M. Collins,Susan,M.,Collins,,,Republican,ME,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001035,Susan M. Collins,Susan,M.,Collins,,,Republican,ME,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+S000770,Debbie Stabenow,Debbie,Ann,Stabenow,,,Democrat,MI,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+S000770,Debbie Stabenow,Debbie,Ann,Stabenow,,,Democrat,MI,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+S000770,Debbie Stabenow,Debbie,Ann,Stabenow,,,Democrat,MI,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+S001208,Elissa Slotkin,Elissa,,Slotkin,,,Democrat,MI,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+L000261,Carl Levin,Carl,,Levin,,,Democrat,MI,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+P000595,Gary C. Peters,Gary,C.,Peters,,,Democrat,MI,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+P000595,Gary C. Peters,Gary,C.,Peters,,,Democrat,MI,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+K000367,Amy Klobuchar,Amy,Jean,Klobuchar,,,Democrat,MN,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-current.yaml
+K000367,Amy Klobuchar,Amy,Jean,Klobuchar,,,Democrat,MN,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+K000367,Amy Klobuchar,Amy,Jean,Klobuchar,,,Democrat,MN,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+K000367,Amy Klobuchar,Amy,Jean,Klobuchar,,,Democrat,MN,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+F000457,Al Franken,Alan,Stuart,Franken,,Al,Democrat,MN,2,2009-07-07,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+F000457,Al Franken,Alan,Stuart,Franken,,Al,Democrat,MN,2,2015-01-06,2018-01-02,,,2021-01-03,True,legislators-historical.yaml
+S001203,Tina Smith,Tina,Flint,Smith,,,Democrat,MN,2,2018-01-03,2018-11-06,appointment,special-election,2021-01-03,True,legislators-current.yaml
+S001203,Tina Smith,Tina,Flint,Smith,,,Democrat,MN,2,2018-11-07,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+S001203,Tina Smith,Tina,Flint,Smith,,,Democrat,MN,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+M001170,Claire McCaskill,Claire,,McCaskill,,,Democrat,MO,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+M001170,Claire McCaskill,Claire,,McCaskill,,,Democrat,MO,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+H001089,Josh Hawley,Joshua,,Hawley,,Josh,Republican,MO,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+H001089,Josh Hawley,Joshua,,Hawley,,Josh,Republican,MO,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+B000611,Christopher Bond,Christopher,S.,Bond,,Kit,Republican,MO,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+B000575,Roy Blunt,Roy,,Blunt,,,Republican,MO,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+B000575,Roy Blunt,Roy,,Blunt,,,Republican,MO,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+S001227,Eric Schmitt,Eric,Stephen,Schmitt,,,Republican,MO,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+W000437,Roger F. Wicker,Roger,F.,Wicker,,,Republican,MS,1,2007-12-31,2013-01-03,appointment,,2013-01-03,False,legislators-current.yaml
+W000437,Roger F. Wicker,Roger,F.,Wicker,,,Republican,MS,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+W000437,Roger F. Wicker,Roger,F.,Wicker,,,Republican,MS,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+W000437,Roger F. Wicker,Roger,F.,Wicker,,,Republican,MS,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+C000567,Thad Cochran,Thad,,Cochran,,,Republican,MS,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+C000567,Thad Cochran,Thad,,Cochran,,,Republican,MS,2,2015-01-06,2018-04-01,,,2021-01-03,True,legislators-historical.yaml
+H001079,Cindy Hyde-Smith,Cindy,,Hyde-Smith,,,Republican,MS,2,2018-04-09,2018-11-27,appointment,special-election,2021-01-03,True,legislators-current.yaml
+H001079,Cindy Hyde-Smith,Cindy,,Hyde-Smith,,,Republican,MS,2,2018-11-28,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+H001079,Cindy Hyde-Smith,Cindy,,Hyde-Smith,,,Republican,MS,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+T000464,Jon Tester,Jon,,Tester,,,Democrat,MT,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+T000464,Jon Tester,Jon,,Tester,,,Democrat,MT,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+T000464,Jon Tester,Jon,,Tester,,,Democrat,MT,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+S001232,Tim Sheehy,Tim,Patrick,Sheehy,,,Republican,MT,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+B000243,Max Baucus,Max,S.,Baucus,,,Democrat,MT,2,2009-01-06,2014-02-06,,,2015-01-03,True,legislators-historical.yaml
+W000818,John E. Walsh,John,E.,Walsh,,,Democrat,MT,2,2014-02-11,2015-01-03,appointment,,2015-01-03,False,legislators-historical.yaml
+D000618,Steve Daines,Steve,,Daines,,,Republican,MT,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+D000618,Steve Daines,Steve,,Daines,,,Republican,MT,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+H001049,Kay R. Hagan,Kay,,Hagan,,,Democrat,NC,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+T000476,Thom Tillis,Thom,,Tillis,,,Republican,NC,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+T000476,Thom Tillis,Thom,,Tillis,,,Republican,NC,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B001135,Richard Burr,Richard,M.,Burr,,,Republican,NC,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+B001135,Richard Burr,Richard,M.,Burr,,,Republican,NC,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+B001135,Richard Burr,Richard,M.,Burr,,,Republican,NC,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+B001305,Ted Budd,Ted,,Budd,,,Republican,NC,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+C000705,Kent Conrad,Kent,Kent,Conrad,,,Democrat,ND,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+H001069,Heidi Heitkamp,Heidi,,Heitkamp,,,Democrat,ND,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+C001096,Kevin Cramer,Kevin,,Cramer,,,Republican,ND,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+C001096,Kevin Cramer,Kevin,,Cramer,,,Republican,ND,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+D000432,Byron Dorgan,Byron,L.,Dorgan,,,Democrat,ND,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+H001061,John Hoeven,John,,Hoeven,,,Republican,ND,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+H001061,John Hoeven,John,,Hoeven,,,Republican,ND,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+H001061,John Hoeven,John,,Hoeven,,,Republican,ND,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+N000180,Ben Nelson,Ben,E.,Nelson,,,Democrat,NE,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+F000463,Deb Fischer,Deb,,Fischer,,,Republican,NE,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+F000463,Deb Fischer,Deb,,Fischer,,,Republican,NE,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+F000463,Deb Fischer,Deb,,Fischer,,,Republican,NE,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+J000291,Mike Johanns,Mike,,Johanns,,,Republican,NE,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+S001197,Ben Sasse,Benjamin,Eric,Sasse,,Ben,Republican,NE,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+S001197,Ben Sasse,Benjamin,Eric,Sasse,,Ben,Republican,NE,2,2021-01-03,2023-01-08,,,2027-01-03,True,legislators-historical.yaml
+R000618,Pete Ricketts,Pete,,Ricketts,,,Republican,NE,2,2023-01-23,2024-11-05,appointment,special-election,2027-01-03,True,legislators-current.yaml
+R000618,Pete Ricketts,Pete,,Ricketts,,,Republican,NE,2,2024-11-05,2027-01-03,special-election,,2027-01-03,False,legislators-current.yaml
+S001181,Jeanne Shaheen,Jeanne,,Shaheen,,,Democrat,NH,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+S001181,Jeanne Shaheen,Jeanne,,Shaheen,,,Democrat,NH,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+S001181,Jeanne Shaheen,Jeanne,,Shaheen,,,Democrat,NH,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+G000445,Judd Gregg,Judd,A.,Gregg,,,Republican,NH,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+A000368,Kelly Ayotte,Kelly,,Ayotte,,,Republican,NH,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+H001076,Margaret Wood Hassan,Margaret,Wood,Hassan,,Maggie,Democrat,NH,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+H001076,Margaret Wood Hassan,Margaret,Wood,Hassan,,Maggie,Democrat,NH,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+M000639,Robert Menendez,Robert,,Menendez,,Bob,Democrat,NJ,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+M000639,Robert Menendez,Robert,,Menendez,,Bob,Democrat,NJ,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+M000639,Robert Menendez,Robert,,Menendez,,Bob,Democrat,NJ,1,2019-01-03,2024-08-20,,,2025-01-03,True,legislators-historical.yaml
+H001097,George S. Helmy,George,S.,Helmy,,,Democrat,NJ,1,2024-09-09,2024-12-08,appointment,,2025-01-03,True,legislators-historical.yaml
+K000394,Andy Kim,Andy,,Kim,,,Democrat,NJ,1,2024-12-09,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+K000394,Andy Kim,Andy,,Kim,,,Democrat,NJ,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+L000123,Frank R. Lautenberg,Frank,R.,Lautenberg,,,Democrat,NJ,2,2009-01-06,2013-06-03,,,2015-01-03,True,legislators-historical.yaml
+C001100,Jeff Chiesa,Jeffrey,Scott,Chiesa,,,Republican,NJ,2,2013-06-10,2013-10-31,appointment,,2015-01-03,True,legislators-historical.yaml
+B001288,Cory A. Booker,Cory,Anthony,Booker,,,Democrat,NJ,2,2013-10-31,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+B001288,Cory A. Booker,Cory,Anthony,Booker,,,Democrat,NJ,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+B001288,Cory A. Booker,Cory,Anthony,Booker,,,Democrat,NJ,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B000468,Jeff Bingaman,Jeff,,Bingaman,,,Democrat,NM,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+H001046,Martin Heinrich,Martin,,Heinrich,,,Democrat,NM,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+H001046,Martin Heinrich,Martin,,Heinrich,,,Democrat,NM,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+H001046,Martin Heinrich,Martin,,Heinrich,,,Democrat,NM,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+U000039,Tom Udall,Tom,S.,Udall,,,Democrat,NM,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+U000039,Tom Udall,Tom,S.,Udall,,,Democrat,NM,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+L000570,Ben Ray Luján,Ben,Ray,Luján,,,Democrat,NM,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+E000194,John Ensign,John,Eric,Ensign,,,Republican,NV,1,2007-01-04,2011-05-03,,,2013-01-03,True,legislators-historical.yaml
+H001041,Dean Heller,Dean,,Heller,,,Republican,NV,1,2011-05-09,2013-01-03,appointment,,2013-01-03,False,legislators-historical.yaml
+H001041,Dean Heller,Dean,,Heller,,,Republican,NV,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+R000608,Jacky Rosen,Jacky,,Rosen,,,Democrat,NV,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+R000608,Jacky Rosen,Jacky,,Rosen,,,Democrat,NV,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+R000146,Harry Reid,Harry,M.,Reid,,,Democrat,NV,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+R000146,Harry Reid,Harry,M.,Reid,,,Democrat,NV,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+C001113,Catherine Cortez Masto,Catherine,,Cortez Masto,,,Democrat,NV,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+C001113,Catherine Cortez Masto,Catherine,,Cortez Masto,,,Democrat,NV,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+G000555,Kirsten E. Gillibrand,Kirsten,E.,Gillibrand,,,Democrat,NY,1,2009-01-27,2013-01-03,appointment,,2013-01-03,False,legislators-current.yaml
+G000555,Kirsten E. Gillibrand,Kirsten,E.,Gillibrand,,,Democrat,NY,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+G000555,Kirsten E. Gillibrand,Kirsten,E.,Gillibrand,,,Democrat,NY,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+G000555,Kirsten E. Gillibrand,Kirsten,E.,Gillibrand,,,Democrat,NY,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+S000148,Charles E. Schumer,Charles,E.,Schumer,,Chuck,Democrat,NY,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+S000148,Charles E. Schumer,Charles,E.,Schumer,,Chuck,Democrat,NY,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+S000148,Charles E. Schumer,Charles,E.,Schumer,,Chuck,Democrat,NY,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+S000148,Charles E. Schumer,Charles,E.,Schumer,,Chuck,Democrat,NY,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+B000944,Sherrod Brown,Sherrod,,Brown,,,Democrat,OH,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+B000944,Sherrod Brown,Sherrod,,Brown,,,Democrat,OH,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+B000944,Sherrod Brown,Sherrod,,Brown,,,Democrat,OH,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+M001242,Bernie Moreno,Bernie,,Moreno,,,Republican,OH,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+V000126,George Voinovich,George,V.,Voinovich,,,Republican,OH,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+P000449,Rob Portman,Robert,J.,Portman,,Rob,Republican,OH,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+P000449,Rob Portman,Robert,J.,Portman,,Rob,Republican,OH,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+V000137,J.D. Vance,James David,,Vance,,J.D.,Republican,OH,3,2023-01-03,2025-01-09,,,2029-01-03,True,legislators-historical.yaml
+H001104,Jon Husted,Jon,Allen,Husted,,,Republican,OH,3,2025-01-21,2026-11-03,appointment,special-election,2029-01-03,True,legislators-current.yaml
+I000024,James M. Inhofe,James,M.,Inhofe,,Jim,Republican,OK,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+I000024,James M. Inhofe,James,M.,Inhofe,,Jim,Republican,OK,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+I000024,James M. Inhofe,James,M.,Inhofe,,Jim,Republican,OK,2,2021-01-03,2023-01-03,,,2027-01-03,True,legislators-historical.yaml
+M001190,Markwayne Mullin,Markwayne,,Mullin,,,Republican,OK,2,2023-01-03,2026-03-23,,,2027-01-03,True,legislators-historical.yaml
+A000383,Alan Armstrong,Alan,,Armstrong,,,Republican,OK,2,2026-03-24,2027-01-03,appointment,,2027-01-03,False,legislators-current.yaml
+C000560,Tom Coburn,Thomas,A.,Coburn,,,Republican,OK,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+C000560,Tom Coburn,Thomas,A.,Coburn,,,Republican,OK,3,2011-01-05,2015-01-03,,,2017-01-03,True,legislators-historical.yaml
+L000575,James Lankford,James,,Lankford,,,Republican,OK,3,2015-01-06,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+L000575,James Lankford,James,,Lankford,,,Republican,OK,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+L000575,James Lankford,James,,Lankford,,,Republican,OK,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+M001176,Jeff Merkley,Jeff,,Merkley,,,Democrat,OR,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+M001176,Jeff Merkley,Jeff,,Merkley,,,Democrat,OR,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+M001176,Jeff Merkley,Jeff,,Merkley,,,Democrat,OR,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+W000779,Ron Wyden,Ron,,Wyden,,,Democrat,OR,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+W000779,Ron Wyden,Ron,,Wyden,,,Democrat,OR,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+W000779,Ron Wyden,Ron,,Wyden,,,Democrat,OR,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+W000779,Ron Wyden,Ron,,Wyden,,,Democrat,OR,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+C001070,"Robert P. Casey, Jr.",Robert,P.,Casey,Jr.,Bob,Democrat,PA,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+C001070,"Robert P. Casey, Jr.",Robert,P.,Casey,Jr.,Bob,Democrat,PA,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+C001070,"Robert P. Casey, Jr.",Robert,P.,Casey,Jr.,Bob,Democrat,PA,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+M001243,David McCormick,Dave,Harold,McCormick,,,Republican,PA,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+S000709,Arlen Specter,Arlen,,Specter,,,Democrat,PA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+T000461,Patrick J. Toomey,Patrick,J.,Toomey,,Pat,Republican,PA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+T000461,Patrick J. Toomey,Patrick,J.,Toomey,,Pat,Republican,PA,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+F000479,John Fetterman,John,Karl,Fetterman,,,Democrat,PA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+W000802,Sheldon Whitehouse,Sheldon,,Whitehouse,,,Democrat,RI,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-current.yaml
+W000802,Sheldon Whitehouse,Sheldon,,Whitehouse,,,Democrat,RI,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+W000802,Sheldon Whitehouse,Sheldon,,Whitehouse,,,Democrat,RI,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+W000802,Sheldon Whitehouse,Sheldon,,Whitehouse,,,Democrat,RI,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+R000122,Jack Reed,John,F.,Reed,,Jack,Democrat,RI,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+R000122,Jack Reed,John,F.,Reed,,Jack,Democrat,RI,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+R000122,Jack Reed,John,F.,Reed,,Jack,Democrat,RI,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+G000359,Lindsey Graham,Lindsey,O.,Graham,,,Republican,SC,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+G000359,Lindsey Graham,Lindsey,O.,Graham,,,Republican,SC,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+G000359,Lindsey Graham,Lindsey,O.,Graham,,,Republican,SC,2,2021-01-03,2026-07-11,,,2027-01-03,True,legislators-historical.yaml
+G000608,Darline Graham,Darline,,Graham Nordone,,,Republican,SC,2,2026-07-14,2027-01-03,appointment,,2027-01-03,False,legislators-current.yaml
+D000595,Jim DeMint,Jim,W.,DeMint,,,Republican,SC,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+D000595,Jim DeMint,Jim,W.,DeMint,,,Republican,SC,3,2011-01-05,2013-01-01,,,2017-01-03,True,legislators-historical.yaml
+S001184,Tim Scott,Tim,,Scott,,,Republican,SC,3,2013-01-03,2015-01-03,appointment,,2017-01-03,True,legislators-current.yaml
+S001184,Tim Scott,Tim,,Scott,,,Republican,SC,3,2015-01-06,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+S001184,Tim Scott,Tim,,Scott,,,Republican,SC,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+S001184,Tim Scott,Tim,,Scott,,,Republican,SC,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+J000177,Tim Johnson,Tim,P.,Johnson,,,Democrat,SD,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+R000605,Mike Rounds,Mike,,Rounds,,,Republican,SD,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+R000605,Mike Rounds,Mike,,Rounds,,,Republican,SD,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+T000250,John Thune,John,,Thune,,,Republican,SD,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+T000250,John Thune,John,,Thune,,,Republican,SD,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+T000250,John Thune,John,,Thune,,,Republican,SD,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+T000250,John Thune,John,,Thune,,,Republican,SD,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+C001071,Bob Corker,Bob,,Corker,,,Republican,TN,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+C001071,Bob Corker,Bob,,Corker,,,Republican,TN,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+B001243,Marsha Blackburn,Marsha,W.,Blackburn,,,Republican,TN,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+B001243,Marsha Blackburn,Marsha,W.,Blackburn,,,Republican,TN,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+A000360,Lamar Alexander,Lamar,,Alexander,,,Republican,TN,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+A000360,Lamar Alexander,Lamar,,Alexander,,,Republican,TN,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+H000601,Bill Hagerty,Bill,Francis,Hagerty,,,Republican,TN,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+H001016,Kay Bailey Hutchison,Kay,Bailey,Hutchison,,,Republican,TX,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+C001098,Ted Cruz,Ted,,Cruz,,,Republican,TX,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+C001098,Ted Cruz,Ted,,Cruz,,,Republican,TX,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+C001098,Ted Cruz,Ted,,Cruz,,,Republican,TX,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+C001056,John Cornyn,John,,Cornyn,,,Republican,TX,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+C001056,John Cornyn,John,,Cornyn,,,Republican,TX,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001056,John Cornyn,John,,Cornyn,,,Republican,TX,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+H000338,Orrin G. Hatch,Orrin,G.,Hatch,,,Republican,UT,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+H000338,Orrin G. Hatch,Orrin,G.,Hatch,,,Republican,UT,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+R000615,Mitt Romney,Mitt,,Romney,,,Republican,UT,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+C001114,John R. Curtis,John,R.,Curtis,,,Republican,UT,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+B000382,Robert Bennett,Robert,F.,Bennett,,,Republican,UT,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+L000577,Mike Lee,Mike,,Lee,,,Republican,UT,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+L000577,Mike Lee,Mike,,Lee,,,Republican,UT,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+L000577,Mike Lee,Mike,,Lee,,,Republican,UT,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+W000803,Jim Webb,Jim,,Webb,,,Democrat,VA,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+K000384,Tim Kaine,Timothy,,Kaine,,Tim,Democrat,VA,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+K000384,Tim Kaine,Timothy,,Kaine,,Tim,Democrat,VA,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+K000384,Tim Kaine,Timothy,,Kaine,,Tim,Democrat,VA,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+W000805,Mark R. Warner,Mark,R.,Warner,,,Democrat,VA,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-current.yaml
+W000805,Mark R. Warner,Mark,R.,Warner,,,Democrat,VA,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+W000805,Mark R. Warner,Mark,R.,Warner,,,Democrat,VA,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+S000033,Bernard Sanders,Bernard,,Sanders,,Bernie,Independent,VT,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-current.yaml
+S000033,Bernard Sanders,Bernard,,Sanders,,Bernie,Independent,VT,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+S000033,Bernard Sanders,Bernard,,Sanders,,Bernie,Independent,VT,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+S000033,Bernard Sanders,Bernard,,Sanders,,Bernie,Independent,VT,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+L000174,Patrick J. Leahy,Patrick,J.,Leahy,,,Democrat,VT,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+L000174,Patrick J. Leahy,Patrick,J.,Leahy,,,Democrat,VT,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-historical.yaml
+L000174,Patrick J. Leahy,Patrick,J.,Leahy,,,Democrat,VT,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-historical.yaml
+W000800,Peter Welch,Peter,,Welch,,,Democrat,VT,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+C000127,Maria Cantwell,Maria,,Cantwell,,,Democrat,WA,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-current.yaml
+C000127,Maria Cantwell,Maria,,Cantwell,,,Democrat,WA,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+C000127,Maria Cantwell,Maria,,Cantwell,,,Democrat,WA,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+C000127,Maria Cantwell,Maria,,Cantwell,,,Democrat,WA,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+M001111,Patty Murray,Patty,,Murray,,,Democrat,WA,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-current.yaml
+M001111,Patty Murray,Patty,,Murray,,,Democrat,WA,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+M001111,Patty Murray,Patty,,Murray,,,Democrat,WA,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+M001111,Patty Murray,Patty,,Murray,,,Democrat,WA,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+K000305,Herb Kohl,Herbert,H.,Kohl,,Herb,Democrat,WI,1,2007-01-04,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+B001230,Tammy Baldwin,Tammy,,Baldwin,,,Democrat,WI,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+B001230,Tammy Baldwin,Tammy,,Baldwin,,,Democrat,WI,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+B001230,Tammy Baldwin,Tammy,,Baldwin,,,Democrat,WI,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+F000061,Russell Feingold,Russell,D.,Feingold,,,Democrat,WI,3,2005-01-04,2011-01-03,,,2011-01-03,False,legislators-historical.yaml
+J000293,Ron Johnson,Ron,,Johnson,,,Republican,WI,3,2011-01-05,2017-01-03,,,2017-01-03,False,legislators-current.yaml
+J000293,Ron Johnson,Ron,,Johnson,,,Republican,WI,3,2017-01-03,2023-01-03,,,2023-01-03,False,legislators-current.yaml
+J000293,Ron Johnson,Ron,,Johnson,,,Republican,WI,3,2023-01-03,2029-01-03,,,2029-01-03,False,legislators-current.yaml
+B001210,Robert Byrd,Robert,C.,Byrd,,,Democrat,WV,1,2007-01-04,2010-06-28,,,2013-01-03,True,legislators-historical.yaml
+G000561,Carte Goodwin,Carte,P.,Goodwin,,,Democrat,WV,1,2010-07-20,2010-11-14,appointment,,2013-01-03,True,legislators-historical.yaml
+M001183,"Joe Manchin, III",Joe,,Manchin,III,,Democrat,WV,1,2010-11-15,2013-01-03,,,2013-01-03,False,legislators-historical.yaml
+M001183,"Joe Manchin, III",Joe,,Manchin,III,,Democrat,WV,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-historical.yaml
+M001183,"Joe Manchin, III",Joe,,Manchin,III,,Independent,WV,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-historical.yaml
+J000312,James C. Justice,Jim,Conley,Justice,II,,Republican,WV,1,2025-01-14,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+R000361,"John D. Rockefeller, IV",John,D.,Rockefeller,IV,Jay,Democrat,WV,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+C001047,Shelley Moore Capito,Shelley,Moore,Capito,,,Republican,WV,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-current.yaml
+C001047,Shelley Moore Capito,Shelley,Moore,Capito,,,Republican,WV,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml
+B001261,John Barrasso,John,A.,Barrasso,,,Republican,WY,1,2007-06-25,2013-01-03,appointment,,2013-01-03,False,legislators-current.yaml
+B001261,John Barrasso,John,A.,Barrasso,,,Republican,WY,1,2013-01-03,2019-01-03,,,2019-01-03,False,legislators-current.yaml
+B001261,John Barrasso,John,A.,Barrasso,,,Republican,WY,1,2019-01-03,2025-01-03,,,2025-01-03,False,legislators-current.yaml
+B001261,John Barrasso,John,A.,Barrasso,,,Republican,WY,1,2025-01-03,2031-01-03,,,2031-01-03,False,legislators-current.yaml
+E000285,Michael B. Enzi,Michael,B.,Enzi,,,Republican,WY,2,2009-01-06,2015-01-03,,,2015-01-03,False,legislators-historical.yaml
+E000285,Michael B. Enzi,Michael,B.,Enzi,,,Republican,WY,2,2015-01-06,2021-01-03,,,2021-01-03,False,legislators-historical.yaml
+L000571,Cynthia M. Lummis,Cynthia,M.,Lummis,,,Republican,WY,2,2021-01-03,2027-01-03,,,2027-01-03,False,legislators-current.yaml

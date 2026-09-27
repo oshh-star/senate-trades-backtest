@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/945754a0-5c42-494a-bd06-c3870fb4477d/\" target=\"_blank\">Periodic Transaction Report for 04/28/2017</a>",
+   "04/28/2017"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/72c35c48-196f-415b-bbd5-5b9b53f2c8f3/\" target=\"_blank\">Periodic Transaction Report for 04/26/2017</a>",
+   "04/26/2017"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/80a82376-fdab-471f-bd31-31bdd33976d9/\" target=\"_blank\">Periodic Transaction Report for 04/19/2017</a>",
+   "04/19/2017"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/4e7bb61b-4909-40ed-ac1b-b60fc553558f/\" target=\"_blank\">Periodic Transaction Report for 04/18/2017</a>",
+   "04/18/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/0c3d0d20-2de7-463c-bf63-94a4277a1f2c/\" target=\"_blank\">Periodic Transaction Report for 04/17/2017</a>",
+   "04/17/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/0c18739c-bfa5-409c-8dc0-181051acccc9/\" target=\"_blank\">Periodic Transaction Report for 04/12/2017</a>",
+   "04/12/2017"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/ea48ecad-1959-4f7a-ace0-778a71d06437/\" target=\"_blank\">Periodic Transaction Report for 04/11/2017</a>",
+   "04/11/2017"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/ca3a419d-76cb-45f4-b6ac-203baf908371/\" target=\"_blank\">Periodic Transaction Report for 04/10/2017</a>",
+   "04/10/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/b6fff099-21db-484e-9119-a8d70923e256/\" target=\"_blank\">Periodic Transaction Report for 04/05/2017</a>",
+   "04/05/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:36",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-04-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-04-01"
+ },
+ "recordsTotal": 9
+}

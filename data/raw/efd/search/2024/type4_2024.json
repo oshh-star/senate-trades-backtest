@@ -1,0 +1,12 @@
+{
+ "data": [],
+ "fetched_at": "2026-09-27T16:06:20",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-12-31",
+  "filer_type": 4,
+  "report_type": 11,
+  "start": "2024-01-01"
+ },
+ "recordsTotal": 0
+}

@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/fde3b4a5-78ab-4ec7-a0a1-fc462d39649a/\" target=\"_blank\">Periodic Transaction Report for 10/30/2024</a>",
+   "10/30/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/a7daa704-b0e4-4069-8ee4-d2dd854a4d33/\" target=\"_blank\">Periodic Transaction Report for 10/23/2024</a>",
+   "10/23/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/e059c06a-1f17-4143-bdca-be82e73eba53/\" target=\"_blank\">Periodic Transaction Report for 10/18/2024</a>",
+   "10/18/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/833ba1d7-3736-4a2c-a3be-c56a641a01fe/\" target=\"_blank\">Periodic Transaction Report for 10/18/2024</a>",
+   "10/18/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/520e479e-3586-4de5-a16b-cb7c22414594/\" target=\"_blank\">Periodic Transaction Report for 10/16/2024</a>",
+   "10/16/2024"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/7d47ef37-89f5-4649-ac7d-739741be9148/\" target=\"_blank\">Periodic Transaction Report for 10/15/2024</a>",
+   "10/15/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/be35b273-bd11-4c0f-a437-8eb1df7fc77a/\" target=\"_blank\">Periodic Transaction Report for 10/10/2024</a>",
+   "10/10/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/1489e003-c0e6-4370-9068-7c42946e5555/\" target=\"_blank\">Periodic Transaction Report for 10/05/2024</a>",
+   "10/05/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/c6b29455-39fd-4033-93fe-f9b1d69c9751/\" target=\"_blank\">Periodic Transaction Report for 10/02/2024</a>",
+   "10/02/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:17",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-10-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-10-01"
+ },
+ "recordsTotal": 9
+}

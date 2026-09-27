@@ -16,12 +16,14 @@ one command (`python run_all.py`) must rebuild every number.
 
 ### Locked spec in brief (details and reasons in DECISIONS.md)
 - **Data**: scrape Senate eFD PTRs directly (never the frozen senate-stock-watcher-data repo).
-  PTRs received 2016-01-01 to 2026-09-30. Filers who were senators when they filed (eFD filer
-  types 1 Senator and 5 Former Senator); candidate filings (type 4) are logged and excluded.
+  PTRs received 2016-01-01 to 2026-09-30, ALL filer types (1 Senator, 4 Candidate, 5 Former Senator),
+  with the date AND time received. **Scope (A05)**: a transaction is in scope if and only if its
+  transaction date falls within that person's Senate service (unitedstates/congress-legislators
+  dates, data/interim/senate_terms.csv); the eFD filer-type label is today's status and is not used.
   Paper filings are logged (senator, date, link) and excluded. Amendments: keep the latest version
   and log the replaced originals. Raw downloads are cached in data/raw/ and committed.
-- **Analysis window**: `analysis.window_years` (default 5, i.e. disclosures 2021-10-01 to
-  2026-09-30; 3 and 10 are a one-line change).
+- **Analysis window (A06)**: ends 2026-08-31 (Ken French data ends there). `analysis.window_years`
+  (default 5, i.e. disclosures 2021-09-01 to 2026-08-31, 60 months; 3 and 10 are a one-line change).
 - **Universe**: US common stocks **and US-listed ETFs** (every trade flagged `is_etf`;
   `universe.include_etfs: false` is the ETF-excluded variant). Options, bonds, crypto and mutual
   funds are excluded.
@@ -43,7 +45,8 @@ one command (`python run_all.py`) must rebuild every number.
   and 252 trading days.
 - **Benchmarks** (Phase 5): SPY; SPY scaled to strategy volatility; equal-weighted universe;
   FF3 plus momentum (US); NANC and KRUZ from February 2023.
-- **Out-of-sample firewall**: the window splits at its midpoint. Code refuses to compute
+- **Out-of-sample firewall**: the window splits at its midpoint in whole months (5y: in-sample to
+  2024-02-29, out-of-sample from 2024-03-01). Code refuses to compute
   out-of-sample results unless `oos.oos_unlocked: true` AND `project.frozen_rules_commit` is set,
   and flipping them requires a DECISIONS.md entry naming the frozen commit.
 
@@ -52,12 +55,19 @@ one command (`python run_all.py`) must rebuild every number.
 run_all.py            one command: scrape > clean > prices > engine > metrics > report (--skip-<stage>, --only)
 config/config.yaml    locked parameters
 src/config.py         config loader, analysis window, sample split, OOS firewall guard
-src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch) and HTML parsers
+src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch, retries) and HTML parsers
+src/scrape/           Phase 1: legislators.py (service dates), listing.py, download.py (manifest),
+                      parse.py (transactions_raw + validation), names.py, summary.py;
+                      run by hand in chunks with: python -m src.scrape --years 2024 --steps listing download
+config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
+data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
+data/raw/legislators/ congress-legislators YAML (Senate service dates)
 data/raw/crsp/        CRSP daily CSV goes here once WRDS access is approved
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
+outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
 docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
@@ -68,7 +78,7 @@ tests/                pytest suite (run: python -m pytest)
 | Phase | Work | Status |
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
-| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable) | Not started |
+| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
 | 2 | Clean: parse, filter universe and owners, amendments, matching, exclusions log | Not started |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Not started |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Not started |

@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "Katie",
+   "Britt",
+   "Britt, Katie (Senator)",
+   "<a href=\"/search/view/ptr/15b456b6-a016-42dd-abdd-4bec977f69c0/\" target=\"_blank\">Periodic Transaction Report for 07/29/2024</a>",
+   "07/29/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/a95aa661-875c-461e-9dbd-fccd25dce9de/\" target=\"_blank\">Periodic Transaction Report for 07/16/2024</a>",
+   "07/16/2024"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/b1e91027-5aab-4824-9583-5e9d739c2d57/\" target=\"_blank\">Periodic Transaction Report for 07/12/2024</a>",
+   "07/12/2024"
+  ],
+  [
+   "JOHN ",
+   "FETTERMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/3b1affbf-2359-4fef-980d-1d2600cb8731/\" target=\"_blank\">Periodic Transaction Report for 07/12/2024</a>",
+   "07/12/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/66665c54-7f3f-43a4-bd64-6181a43205da/\" target=\"_blank\">Periodic Transaction Report for 07/11/2024</a>",
+   "07/11/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/17792029-d977-49d7-8d9c-042dc3d342e9/\" target=\"_blank\">Periodic Transaction Report for 07/11/2024</a>",
+   "07/11/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/c417b7b2-e80f-477d-9647-c22bc8c1cd1b/\" target=\"_blank\">Periodic Transaction Report for 07/11/2024</a>",
+   "07/11/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/909566de-2b97-434a-aff2-decc117f92e7/\" target=\"_blank\">Periodic Transaction Report for 07/06/2024</a>",
+   "07/06/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:14",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-07-01"
+ },
+ "recordsTotal": 8
+}

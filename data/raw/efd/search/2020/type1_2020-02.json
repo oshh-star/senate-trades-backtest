@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/e01a74ce-8d08-42e0-961e-6b275519c2db/\" target=\"_blank\">Periodic Transaction Report for 02/24/2020</a>",
+   "02/24/2020"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/3cfdaebe-eba9-4b90-9f87-c3b18d213656/\" target=\"_blank\">Periodic Transaction Report for 02/12/2020</a>",
+   "02/12/2020"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/a1ef9953-a4ae-49b8-8f03-1bf633e085e4/\" target=\"_blank\">Periodic Transaction Report for 02/10/2020</a>",
+   "02/10/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/c3471d47-b8ef-4f81-95a4-296a440b2ddc/\" target=\"_blank\">Periodic Transaction Report for 02/10/2020</a>",
+   "02/10/2020"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/d145efef-1925-4ec2-b435-118c9a57a394/\" target=\"_blank\">Periodic Transaction Report for 02/07/2020</a>",
+   "02/07/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/03b9dc2b-2e00-44ed-8b2f-cfc729313f92/\" target=\"_blank\">Periodic Transaction Report for 02/04/2020</a>",
+   "02/04/2020"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/f062a213-2d1b-4da4-b00a-291bb6a8c1ed/\" target=\"_blank\">Periodic Transaction Report for 02/03/2020</a>",
+   "02/03/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:48",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-02-29",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-02-01"
+ },
+ "recordsTotal": 7
+}

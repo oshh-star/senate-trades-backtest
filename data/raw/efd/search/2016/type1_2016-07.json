@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/d40b2263-32c8-45a7-b1e1-a549953d5c2b/\" target=\"_blank\">Periodic Transaction Report for 07/27/2016</a>",
+   "07/27/2016"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/acc35b83-1ed6-4d21-ae5b-7e844646e422/\" target=\"_blank\">Periodic Transaction Report for 07/27/2016</a>",
+   "07/27/2016"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/573bea07-5080-4442-a6c5-d3fedff265da/\" target=\"_blank\">Periodic Transaction Report for 07/25/2016</a>",
+   "07/25/2016"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/31ef88ae-376c-48cc-8189-4038ce47b405/\" target=\"_blank\">Periodic Transaction Report for 07/22/2016</a>",
+   "07/22/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/99cf9f1a-d58b-4476-9838-ead38e41edc1/\" target=\"_blank\">Periodic Transaction Report for 07/12/2016</a>",
+   "07/12/2016"
+  ],
+  [
+   "MARK R",
+   "WARNER",
+   "Senator",
+   "<a href=\"/search/view/paper/c19189dd-dfbc-4ef0-bcf2-6b5cf518c2a4/\" target=\"_blank\">Periodic Transaction Report for 07/12/2016</a>",
+   "07/12/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/4f9feb8f-ba7b-495e-b5ed-64309635b19f/\" target=\"_blank\">Periodic Transaction Report for 07/08/2016</a>",
+   "07/08/2016"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/c353e204-51dd-442a-868f-f370de15d57d/\" target=\"_blank\">Periodic Transaction Report for 07/08/2016</a>",
+   "07/08/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:31",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-07-01"
+ },
+ "recordsTotal": 8
+}

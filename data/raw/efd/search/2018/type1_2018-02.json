@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/42cc8ae3-90b8-4bfa-a230-6c08cb5f29dc/\" target=\"_blank\">Periodic Transaction Report for 02/27/2018</a>",
+   "02/27/2018"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/53c9a191-370c-4efd-a23a-a24a21015c7e/\" target=\"_blank\">Periodic Transaction Report for 02/21/2018</a>",
+   "02/21/2018"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/c2888db8-8e5e-4384-97cb-818c5b63268d/\" target=\"_blank\">Periodic Transaction Report for 02/15/2018</a>",
+   "02/15/2018"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/24979d6b-a2a6-41c5-b62f-533ca7611c55/\" target=\"_blank\">Periodic Transaction Report for 02/14/2018</a>",
+   "02/14/2018"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/18fe7224-f911-47a4-ade4-8084b1cdb9cc/\" target=\"_blank\">Periodic Transaction Report for 02/13/2018</a>",
+   "02/13/2018"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/1f92054e-7799-4438-a50c-dc4930429f4f/\" target=\"_blank\">Periodic Transaction Report for 02/13/2018</a>",
+   "02/13/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/f89dfc3f-54f9-46a0-9acc-d4b63323ba9e/\" target=\"_blank\">Periodic Transaction Report for 02/10/2018</a>",
+   "02/10/2018"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/846b8cd9-497b-4dd9-bd1e-602233f2a572/\" target=\"_blank\">Periodic Transaction Report for 02/08/2018</a>",
+   "02/08/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:19:55",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-02-28",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2018-02-01"
+ },
+ "recordsTotal": 8
+}

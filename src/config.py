@@ -26,10 +26,17 @@ def analysis_window(cfg: dict) -> tuple[dt.date, dt.date]:
 
 
 def sample_split(cfg: dict) -> dict:
-    """In-sample = first half of the window, out-of-sample = second half."""
+    """In-sample = first half of the window in whole months, out-of-sample = second half (A06).
+
+    5 years: in-sample 2021-09-01..2024-02-29, out-of-sample 2024-03-01..2026-08-31.
+    """
     start, end = analysis_window(cfg)
-    mid = start + (end - start) / 2
-    return {"in_sample": (start, mid), "out_of_sample": (mid + dt.timedelta(days=1), end)}
+    if start.day != 1:
+        raise ValueError(f"Window start {start} is not the first of a month; cannot split in months")
+    half = int(cfg["analysis"]["window_years"]) * 12 // 2
+    k = start.month - 1 + half
+    oos_start = dt.date(start.year + k // 12, k % 12 + 1, 1)
+    return {"in_sample": (start, oos_start - dt.timedelta(days=1)), "out_of_sample": (oos_start, end)}
 
 
 class OutOfSampleLocked(RuntimeError):

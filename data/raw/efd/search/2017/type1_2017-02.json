@@ -1,0 +1,83 @@
+{
+ "data": [
+  [
+   "John",
+   "Cornyn",
+   "Cornyn, John (Senator)",
+   "<a href=\"/search/view/ptr/3c3b5ad6-91be-4cd0-9c18-fbeab62cb0fd/\" target=\"_blank\">Periodic Transaction Report for 02/24/2017</a>",
+   "02/24/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/df687d9b-c276-491b-9df6-dc650c327f93/\" target=\"_blank\">Periodic Transaction Report for 02/22/2017</a>",
+   "02/22/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/ea5c1111-8f2d-45b3-b34c-5fdd502fc7fb/\" target=\"_blank\">Periodic Transaction Report for 02/21/2017</a>",
+   "02/21/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/282d1640-d7cd-441e-845b-00f68a3a449d/\" target=\"_blank\">Periodic Transaction Report for 02/21/2017</a>",
+   "02/21/2017"
+  ],
+  [
+   "Thomas R",
+   "Tillis",
+   "Tillis, Thom (Senator)",
+   "<a href=\"/search/view/ptr/c7e41996-1636-4615-8d99-3fe47ca90f95/\" target=\"_blank\">Periodic Transaction Report for 02/17/2017</a>",
+   "02/17/2017"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/614f837e-4d49-459b-b50b-1e6cdd90d212/\" target=\"_blank\">Periodic Transaction Report for 02/14/2017</a>",
+   "02/14/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/18f07909-0ca6-4804-8503-d83c0b84a15e/\" target=\"_blank\">Periodic Transaction Report for 02/14/2017</a>",
+   "02/14/2017"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/e326a763-0e64-4700-b4f6-d3c8b070b8dc/\" target=\"_blank\">Periodic Transaction Report for 02/11/2017</a>",
+   "02/11/2017"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/d72b5a11-2578-4923-b5db-120464bc4261/\" target=\"_blank\">Periodic Transaction Report for 02/07/2017</a>",
+   "02/07/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/de190fdc-f710-411e-bbbe-41aaf566fb1a/\" target=\"_blank\">Periodic Transaction Report for 02/01/2017</a>",
+   "02/01/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:34",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-02-28",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-02-01"
+ },
+ "recordsTotal": 10
+}

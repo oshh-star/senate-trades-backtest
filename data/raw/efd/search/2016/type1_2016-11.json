@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/99a7a983-4c6d-4ee4-aa35-af8253d28f4a/\" target=\"_blank\">Periodic Transaction Report for 11/28/2016</a>",
+   "11/28/2016"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/33adc80e-a7e9-443d-95d2-269d4b027478/\" target=\"_blank\">Periodic Transaction Report for 11/28/2016</a>",
+   "11/28/2016"
+  ],
+  [
+   "Mike",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/4889ab33-0e9c-4fc1-af0f-2b84b36b6047/\" target=\"_blank\">Periodic Transaction Report for 11/22/2016</a>",
+   "11/22/2016"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/36884c7d-49e1-4b08-82a7-f567270ac9dd/\" target=\"_blank\">Periodic Transaction Report for 11/21/2016</a>",
+   "11/21/2016"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/90233c4f-c41f-421b-8aa2-40082e786d12/\" target=\"_blank\">Periodic Transaction Report for 11/17/2016</a>",
+   "11/17/2016"
+  ],
+  [
+   "MARK R",
+   "WARNER",
+   "Senator",
+   "<a href=\"/search/view/paper/8757b133-a1f5-43c9-93cd-d9f037bf7d5e/\" target=\"_blank\">Periodic Transaction Report for 11/15/2016</a>",
+   "11/15/2016"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/7dd32f76-2862-421d-b105-84ff6a5e01cd/\" target=\"_blank\">Periodic Transaction Report for 11/10/2016</a>",
+   "11/10/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/dde3c8b0-e3ec-41a2-8bc3-5da3117bbc0f/\" target=\"_blank\">Periodic Transaction Report for 11/08/2016</a>",
+   "11/08/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/bbc1b507-8846-40ea-8243-f35caf2a847e/\" target=\"_blank\">Periodic Transaction Report for 11/07/2016</a>",
+   "11/07/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:35",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-11-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-11-01"
+ },
+ "recordsTotal": 9
+}

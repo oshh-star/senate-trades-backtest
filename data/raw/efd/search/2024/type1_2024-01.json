@@ -1,0 +1,104 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/a801ab6e-6491-4775-8318-3ead166fd778/\" target=\"_blank\">Periodic Transaction Report for 01/25/2024</a>",
+   "01/25/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/68e19861-e82e-4994-966f-a48ff53e73f3/\" target=\"_blank\">Periodic Transaction Report for 01/19/2024</a>",
+   "01/19/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/642f38a1-c21c-429e-94c1-86e57ee39de6/\" target=\"_blank\">Periodic Transaction Report for 01/18/2024</a>",
+   "01/18/2024"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/b08cdf32-a5e7-4767-97b1-20c8750638ca/\" target=\"_blank\">Periodic Transaction Report for 01/17/2024</a>",
+   "01/17/2024"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/61e98942-0ed6-491e-8f7f-5d5386b45073/\" target=\"_blank\">Periodic Transaction Report for 01/16/2024</a>",
+   "01/16/2024"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/750f4fe2-9632-4d95-b6e2-2248e29983d8/\" target=\"_blank\">Periodic Transaction Report for 01/16/2024</a>",
+   "01/16/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/09ad11ea-1ccd-488f-b0b4-d545f6571714/\" target=\"_blank\">Periodic Transaction Report for 01/12/2024</a>",
+   "01/12/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/99b8e5a1-b98a-4083-a6c8-8cd634a14378/\" target=\"_blank\">Periodic Transaction Report for 01/12/2024</a>",
+   "01/12/2024"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/0fb62423-2e23-4ec0-ba06-c07646b316d4/\" target=\"_blank\">Periodic Transaction Report for 01/11/2024</a>",
+   "01/11/2024"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/5cf58a0a-aa8f-4a64-972a-fcf9c5532b76/\" target=\"_blank\">Periodic Transaction Report for 01/10/2024</a>",
+   "01/10/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/6a8e509d-cde7-4266-848e-a27fa42ba438/\" target=\"_blank\">Periodic Transaction Report for 01/08/2024 (Amendment 1)</a>",
+   "01/08/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/a7afd87e-027e-4b96-995c-fc3af98e6009/\" target=\"_blank\">Periodic Transaction Report for 01/08/2024</a>",
+   "01/08/2024"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/02954bb2-1254-4cb1-b369-7a9f82a41dd0/\" target=\"_blank\">Periodic Transaction Report for 01/02/2024</a>",
+   "01/02/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:08",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-01-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-01-01"
+ },
+ "recordsTotal": 13
+}

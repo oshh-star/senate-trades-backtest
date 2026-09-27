@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/49a203db-a9ea-4a15-9a86-ec96dfaeb096/\" target=\"_blank\">Periodic Transaction Report for 02/29/2016</a>",
+   "02/29/2016"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/ea758fbc-f062-401b-8c38-66139a93efff/\" target=\"_blank\">Periodic Transaction Report for 02/25/2016</a>",
+   "02/25/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/3c8c518b-3825-40e9-a845-c5ea7759fbf5/\" target=\"_blank\">Periodic Transaction Report for 02/23/2016</a>",
+   "02/23/2016"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/adc06731-9b32-4afc-8f86-b86959e584a5/\" target=\"_blank\">Periodic Transaction Report for 02/17/2016</a>",
+   "02/17/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/e1c8b2ba-e3eb-4cfc-8e9f-c99fc677a7a7/\" target=\"_blank\">Periodic Transaction Report for 02/12/2016</a>",
+   "02/12/2016"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/db28ae3b-bec7-4ae3-85f1-08fc226b5ff4/\" target=\"_blank\">Periodic Transaction Report for 02/09/2016</a>",
+   "02/09/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/21a365ca-4cce-46e3-8e60-aaf5f9b9b090/\" target=\"_blank\">Periodic Transaction Report for 02/08/2016</a>",
+   "02/08/2016"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/575fb89d-a1f9-452d-84de-dcc16b19c1f5/\" target=\"_blank\">Periodic Transaction Report for 02/08/2016</a>",
+   "02/08/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:26",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-02-29",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-02-01"
+ },
+ "recordsTotal": 8
+}

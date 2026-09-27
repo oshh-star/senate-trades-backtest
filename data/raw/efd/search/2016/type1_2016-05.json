@@ -1,0 +1,125 @@
+{
+ "data": [
+  [
+   "Jeanne",
+   "Shaheen",
+   "Shaheen, Jeanne (Senator)",
+   "<a href=\"/search/view/ptr/ae015c97-8a29-422d-8089-2e90bbfb125b/\" target=\"_blank\">Periodic Transaction Report for 05/23/2016</a>",
+   "05/23/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/d22782c5-434d-4e49-ac10-64a8deca52b9/\" target=\"_blank\">Periodic Transaction Report for 05/23/2016</a>",
+   "05/23/2016"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/db6da422-4c82-46d8-b4c2-e14a8c07818b/\" target=\"_blank\">Periodic Transaction Report for 05/23/2016</a>",
+   "05/23/2016"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/e218c064-9915-4e51-9c4b-38065c6f822b/\" target=\"_blank\">Periodic Transaction Report for 05/18/2016</a>",
+   "05/18/2016"
+  ],
+  [
+   "Rafael E",
+   "Cruz",
+   "Cruz, Ted (Senator)",
+   "<a href=\"/search/view/ptr/34e0aa3f-b58f-48ca-a412-b143434a82fb/\" target=\"_blank\">Periodic Transaction Report for 05/18/2016</a>",
+   "05/17/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/066c6308-05de-417b-9f8c-13e743c443e4/\" target=\"_blank\">Periodic Transaction Report for 05/16/2016</a>",
+   "05/16/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/33773030-9b75-4f65-928f-f9ad31504f55/\" target=\"_blank\">Periodic Transaction Report for 04/06/2015 (Amendment 1)</a>",
+   "05/16/2016"
+  ],
+  [
+   "MARK R",
+   "WARNER",
+   "Senator",
+   "<a href=\"/search/view/paper/529c1eeb-4ba4-481b-af35-8d08053b00e9/\" target=\"_blank\">Periodic Transaction Report for 05/16/2016</a>",
+   "05/16/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/4fcd4d35-4f84-466c-94c7-d372284bfced/\" target=\"_blank\">Periodic Transaction Report for 05/12/2016</a>",
+   "05/12/2016"
+  ],
+  [
+   "Maria",
+   "Cantwell",
+   "Cantwell, Maria (Senator)",
+   "<a href=\"/search/view/ptr/03ac42db-829c-4c48-8624-fa9dd85f1ad7/\" target=\"_blank\">Periodic Transaction Report for 05/11/2016</a>",
+   "05/11/2016"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/c3f66065-5528-496f-81cd-8351ad4a2be1/\" target=\"_blank\">Periodic Transaction Report for 05/04/2016</a>",
+   "05/04/2016"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/779cc401-a1a3-4943-bfc4-6e5fae29a3a3/\" target=\"_blank\">Periodic Transaction Report for 05/03/2016</a>",
+   "05/03/2016"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/6795db72-a531-4fb9-8156-b4ec30d21f3f/\" target=\"_blank\">Periodic Transaction Report for 03/03/2015 (Amendment 1)</a>",
+   "05/03/2016"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/58a3b1ce-d1c2-4ad6-9458-be9a7fbe6c6d/\" target=\"_blank\">Periodic Transaction Report for 03/04/2016 (Amendment 1)</a>",
+   "05/03/2016"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/56cd23d0-e41f-41a4-9f69-d90722af497a/\" target=\"_blank\">Periodic Transaction Report for 05/03/2016</a>",
+   "05/02/2016"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/9bcd76b3-61c3-434c-9b34-8398e7a50b40/\" target=\"_blank\">Periodic Transaction Report for 05/02/2016</a>",
+   "05/02/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:29",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-05-01"
+ },
+ "recordsTotal": 16
+}

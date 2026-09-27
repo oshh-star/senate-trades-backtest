@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/7246e5b3-88d3-49b0-8c41-946dbf1cbba2/\" target=\"_blank\">Periodic Transaction Report for 10/27/2020</a>",
+   "10/27/2020"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/abb66306-3276-4a3e-acd6-698cf63e71d4/\" target=\"_blank\">Periodic Transaction Report for 10/23/2020</a>",
+   "10/23/2020"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/dfeac24c-e61d-4732-b200-ccae42657df2/\" target=\"_blank\">Periodic Transaction Report for 10/16/2020</a>",
+   "10/16/2020"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f0902f8a-6b89-4971-96a6-7b5e55b4f34e/\" target=\"_blank\">Periodic Transaction Report for 10/14/2020</a>",
+   "10/13/2020"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/de3406b8-6047-4f08-8c2e-2f20aa280112/\" target=\"_blank\">Periodic Transaction Report for 10/13/2020</a>",
+   "10/13/2020"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/7a16edce-2afd-47e6-bd0b-ba09dda254e9/\" target=\"_blank\">Periodic Transaction Report for 10/09/2020</a>",
+   "10/09/2020"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/ccf754fc-faaa-41b0-8393-fa3abd544f7e/\" target=\"_blank\">Periodic Transaction Report for 10/08/2020</a>",
+   "10/08/2020"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/9054bb2c-2d54-4ea8-adef-f982a54ecd7a/\" target=\"_blank\">Periodic Transaction Report for 10/07/2020</a>",
+   "10/07/2020"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:26:56",
+ "query": {
+  "date_field": "date received",
+  "end": "2020-10-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2020-10-01"
+ },
+ "recordsTotal": 8
+}

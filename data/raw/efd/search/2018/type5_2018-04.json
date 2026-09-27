@@ -1,0 +1,27 @@
+{
+ "data": [
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/ccac59b4-ae2d-47b6-ae63-69a4f1f5f968/\" target=\"_blank\">Periodic Transaction Report for 04/10/2018</a>",
+   "04/10/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/6d02e725-df28-4d70-9635-f99acf687da8/\" target=\"_blank\">Periodic Transaction Report for 04/05/2018</a>",
+   "04/05/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:11",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-04-30",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-04-01"
+ },
+ "recordsTotal": 2
+}

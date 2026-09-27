@@ -1,0 +1,111 @@
+{
+ "data": [
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/ebdeed3c-9789-4bae-acc4-298448c28344/\" target=\"_blank\">Periodic Transaction Report for 07/28/2021</a>",
+   "07/28/2021"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/89f81dcb-e3d3-4c79-bc26-3aa06b346e41/\" target=\"_blank\">Periodic Transaction Report for 07/23/2021</a>",
+   "07/23/2021"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/3bdd9340-7c8c-4ed0-898d-dad3835940d2/\" target=\"_blank\">Periodic Transaction Report for 07/23/2021</a>",
+   "07/23/2021"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/1d84ad6b-1e5f-45b7-a95a-a9cdcb46c69b/\" target=\"_blank\">Periodic Transaction Report for 07/16/2021</a>",
+   "07/16/2021"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/84915b6e-846b-411b-907e-46fd4a179919/\" target=\"_blank\">Periodic Transaction Report for 07/16/2021</a>",
+   "07/16/2021"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/68e2d163-9ecd-4bde-a0f2-4b0e2ad08c79/\" target=\"_blank\">Periodic Transaction Report for 07/14/2021</a>",
+   "07/14/2021"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/9ed788e7-5747-4d7c-9888-1da907b35cde/\" target=\"_blank\">Periodic Transaction Report for 07/14/2021</a>",
+   "07/14/2021"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/596ec5e5-2392-4cb7-a12d-8466ab2a4f8e/\" target=\"_blank\">Periodic Transaction Report for 07/12/2021</a>",
+   "07/12/2021"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/dd6f0dbb-3333-442f-a947-20c79871ee45/\" target=\"_blank\">Periodic Transaction Report for 07/12/2021</a>",
+   "07/12/2021"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/4fc6484d-a9d0-4646-a418-beab49148783/\" target=\"_blank\">Periodic Transaction Report for 07/09/2021</a>",
+   "07/09/2021"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/0e6e0250-95fe-41a2-91ed-607a396b11cc/\" target=\"_blank\">Periodic Transaction Report for 07/08/2021</a>",
+   "07/08/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/d40c72ed-6239-4214-a20a-f576b9628901/\" target=\"_blank\">Periodic Transaction Report for 07/07/2021</a>",
+   "07/07/2021"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/742b5ad0-9b33-4970-9285-b4e9e9521d4a/\" target=\"_blank\">Periodic Transaction Report for 07/07/2021</a>",
+   "07/06/2021"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/7d15a892-ceff-43c2-acd3-092d7a240de6/\" target=\"_blank\">Periodic Transaction Report for 07/01/2021</a>",
+   "07/01/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:18",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-07-01"
+ },
+ "recordsTotal": 14
+}

@@ -1,0 +1,48 @@
+{
+ "data": [
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/07935a4d-85ec-406f-8c1c-bd951dfd2903/\" target=\"_blank\">Periodic Transaction Report for 10/04/2017 (Amendment 1)</a>",
+   "03/12/2018"
+  ],
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/7a09d93e-a0f5-4522-8735-eaf5c10b0f99/\" target=\"_blank\">Periodic Transaction Report for 03/07/2018</a>",
+   "03/07/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/f8548ffc-c648-4462-8884-330ac5db6c21/\" target=\"_blank\">Periodic Transaction Report for 03/05/2018</a>",
+   "03/05/2018"
+  ],
+  [
+   "Pat",
+   "Roberts",
+   "Roberts, Pat (Senator)",
+   "<a href=\"/search/view/ptr/880caa8f-bd2d-4351-9397-3775e4cc2680/\" target=\"_blank\">Periodic Transaction Report for 03/03/2018</a>",
+   "03/03/2018"
+  ],
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/c92b1efa-9294-4cc9-b002-c13f5863c0c8/\" target=\"_blank\">Periodic Transaction Report for 03/01/2018</a>",
+   "03/01/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:10",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-03-31",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-03-01"
+ },
+ "recordsTotal": 5
+}

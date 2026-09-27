@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/f66b6c26-4eda-49c4-8215-aad78ab1a4aa/\" target=\"_blank\">Periodic Transaction Report for 12/27/2016</a>",
+   "12/27/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/887f19e5-8a16-4f96-b317-ce70265f2e46/\" target=\"_blank\">Periodic Transaction Report for 12/22/2016</a>",
+   "12/22/2016"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/3d61dcac-c059-494f-9d46-cb7f2a1b0b85/\" target=\"_blank\">Periodic Transaction Report for 12/21/2016</a>",
+   "12/21/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/0f3a5882-6a25-446b-8c3d-b71aeb1d63ed/\" target=\"_blank\">Periodic Transaction Report for 12/20/2016</a>",
+   "12/20/2016"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/4e70cc48-0073-4e1b-84fd-483b30822b3f/\" target=\"_blank\">Periodic Transaction Report for 12/17/2016</a>",
+   "12/17/2016"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/a1acf60e-03f1-4e23-b9e3-3ac6b7dc1f6f/\" target=\"_blank\">Periodic Transaction Report for 12/16/2016</a>",
+   "12/16/2016"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/0fb8d5eb-e20b-4059-96ae-db537df609c8/\" target=\"_blank\">Periodic Transaction Report for 12/15/2016</a>",
+   "12/15/2016"
+  ],
+  [
+   "MARK R",
+   "WARNER",
+   "Senator",
+   "<a href=\"/search/view/paper/a7a15ba6-fde7-4b5a-b6bf-d3517746144d/\" target=\"_blank\">Periodic Transaction Report for 12/15/2016</a>",
+   "12/15/2016"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/0b09f334-04bc-4942-b432-d9fcdae80d08/\" target=\"_blank\">Periodic Transaction Report for 12/12/2016</a>",
+   "12/12/2016"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/33d29259-5947-4ac6-bdb8-940d752466c9/\" target=\"_blank\">Periodic Transaction Report for 12/07/2016</a>",
+   "12/07/2016"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/c3f63433-47f8-4e65-92df-2289cc8e220e/\" target=\"_blank\">Periodic Transaction Report for 12/06/2016</a>",
+   "12/06/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:36",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-12-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2016-12-01"
+ },
+ "recordsTotal": 11
+}

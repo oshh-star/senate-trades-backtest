@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/f0f1cd53-d159-42e8-89fc-c86fc7a7a68c/\" target=\"_blank\">Periodic Transaction Report for 06/28/2021</a>",
+   "06/28/2021"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/5f219f13-10ce-46c2-a637-99c206a39eaf/\" target=\"_blank\">Periodic Transaction Report for 06/24/2021</a>",
+   "06/24/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/4716d538-d7d0-4146-8ed3-d619366db4da/\" target=\"_blank\">Periodic Transaction Report for 06/10/2021</a>",
+   "06/10/2021"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/925ab727-eecf-4403-9a40-ee76f3ef0f03/\" target=\"_blank\">Periodic Transaction Report for 06/08/2021</a>",
+   "06/08/2021"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/32274587-17b3-4a09-ade9-99b7dc0436ba/\" target=\"_blank\">Periodic Transaction Report for 06/08/2021</a>",
+   "06/08/2021"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/18c33f81-90a3-4bc3-a8d9-a7cc62898c64/\" target=\"_blank\">Periodic Transaction Report for 06/07/2021</a>",
+   "06/07/2021"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/2c09f31e-0a1f-4905-9a71-7750a856111d/\" target=\"_blank\">Periodic Transaction Report for 06/06/2021</a>",
+   "06/06/2021"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/8fc9bf25-8952-42b4-a7c9-ed80f599b450/\" target=\"_blank\">Periodic Transaction Report for 06/03/2021</a>",
+   "06/03/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:17",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-06-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-06-01"
+ },
+ "recordsTotal": 8
+}

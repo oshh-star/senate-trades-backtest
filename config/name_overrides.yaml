@@ -1,0 +1,10 @@
+# Hand-checked matches from an eFD filer name to a congress-legislators bioguide_id.
+# Used by src/scrape/names.py BEFORE any automatic matching. Never guess: add an entry only after
+# checking the person (office text, dates, state) against data/interim/senate_terms.csv.
+#
+# Key: "<first name>|<last name>" exactly as eFD lists it (case, punctuation and suffixes such
+# as Jr./IV are ignored when comparing). Value: a bioguide_id, or null for "not a senator"
+# (for example a candidate who never served), optionally with a note:
+#   "Jane Q|Example": {bioguide_id: E000001, note: "checked 2026-09-27, Harry"}
+#   "John|Candidate": {bioguide_id: null, note: "2016 candidate, never served"}
+overrides: {}

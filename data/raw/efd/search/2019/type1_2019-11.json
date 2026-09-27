@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/73d356d2-b803-4997-b6d4-8f74c32134f9/\" target=\"_blank\">Periodic Transaction Report for 11/25/2019</a>",
+   "11/25/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/25c4bc94-c83d-4349-a5f5-6cd34744828c/\" target=\"_blank\">Periodic Transaction Report for 11/21/2019</a>",
+   "11/21/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/efda208f-8afc-48d9-938e-5cb8e6bfc988/\" target=\"_blank\">Periodic Transaction Report for 11/20/2019</a>",
+   "11/20/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/e9f8ce31-2155-4723-8380-51f438de474c/\" target=\"_blank\">Periodic Transaction Report for 11/13/2019</a>",
+   "11/13/2019"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/845d7e7a-0c6a-405a-96c0-2602552222f4/\" target=\"_blank\">Periodic Transaction Report for 11/11/2019</a>",
+   "11/11/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/f338e466-4bf9-4c6f-a70a-4d25208b0c5e/\" target=\"_blank\">Periodic Transaction Report for 11/11/2019</a>",
+   "11/11/2019"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/1a744b68-61f5-4313-9eb4-533bd2f33aee/\" target=\"_blank\">Periodic Transaction Report for 11/06/2019</a>",
+   "11/06/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/16a9d121-1b14-4ad9-90a1-e28a477e6df6/\" target=\"_blank\">Periodic Transaction Report for 11/06/2019</a>",
+   "11/06/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:40",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-11-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-11-01"
+ },
+ "recordsTotal": 8
+}

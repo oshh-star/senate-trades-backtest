@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/573468dc-d6e1-4873-a3e8-cfbb9f3bb958/\" target=\"_blank\">Periodic Transaction Report for 08/30/2019</a>",
+   "08/30/2019"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/585f17d0-8851-4a92-8e8f-8ccf71dc7b1c/\" target=\"_blank\">Periodic Transaction Report for 08/26/2019</a>",
+   "08/26/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/5b5588c0-5433-408a-a8c9-3a1963c4e706/\" target=\"_blank\">Periodic Transaction Report for 08/23/2019</a>",
+   "08/23/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/40116820-a759-432f-a37e-b8a118feae2d/\" target=\"_blank\">Periodic Transaction Report for 08/15/2019</a>",
+   "08/15/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/1f722e86-cc10-49b9-8dcc-62fb6251fc5f/\" target=\"_blank\">Periodic Transaction Report for 08/13/2019</a>",
+   "08/13/2019"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/85a752ed-7121-421f-8c1e-2a055fffe95e/\" target=\"_blank\">Periodic Transaction Report for 08/12/2019</a>",
+   "08/12/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/6d562c3e-4be9-4811-8759-fef6c3fa0a40/\" target=\"_blank\">Periodic Transaction Report for 08/09/2019 (Amendment)</a>",
+   "08/09/2019"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/aea94c0d-f18b-4ab7-bdac-95a0f3f04339/\" target=\"_blank\">Periodic Transaction Report for 08/07/2019</a>",
+   "08/07/2019"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/cbd26d64-e82e-4abf-8e86-30e979445f66/\" target=\"_blank\">Periodic Transaction Report for 08/07/2019</a>",
+   "08/07/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/c5663e35-5503-41f1-af29-d1647866c41e/\" target=\"_blank\">Periodic Transaction Report for 08/05/2019</a>",
+   "08/05/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/6f3fbbb9-f091-4aa2-915c-a4fc78645aae/\" target=\"_blank\">Periodic Transaction Report for 08/01/2019</a>",
+   "08/01/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:37",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-08-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-08-01"
+ },
+ "recordsTotal": 11
+}

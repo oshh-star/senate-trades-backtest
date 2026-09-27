@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/cd2add48-f2bc-42bc-acbd-d8f7b502eae1/\" target=\"_blank\">Periodic Transaction Report for 12/21/2017</a>",
+   "12/21/2017"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/8c37c970-7a72-4821-b02d-bbaef57875dd/\" target=\"_blank\">Periodic Transaction Report for 12/20/2017</a>",
+   "12/20/2017"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/e8a40887-94c1-446e-912c-277c8c226bde/\" target=\"_blank\">Periodic Transaction Report for 12/18/2017</a>",
+   "12/18/2017"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/4e1b4ab1-df80-45fe-8f5f-8dbbd5cd8e00/\" target=\"_blank\">Periodic Transaction Report for 12/12/2017</a>",
+   "12/12/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/058352a8-724f-4732-abea-a29791a161ef/\" target=\"_blank\">Periodic Transaction Report for 12/12/2017</a>",
+   "12/12/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/5d05e733-82e7-42a4-9653-0859439e3f13/\" target=\"_blank\">Periodic Transaction Report for 12/11/2017</a>",
+   "12/11/2017"
+  ],
+  [
+   "Tammy",
+   "Duckworth",
+   "Duckworth, Tammy (Senator)",
+   "<a href=\"/search/view/ptr/2db68076-a5e6-49c9-9d73-6017b6885e67/\" target=\"_blank\">Periodic Transaction Report for 12/11/2017</a>",
+   "12/11/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/efb93782-9a75-4cf1-863d-dcf5bd899c65/\" target=\"_blank\">Periodic Transaction Report for 12/08/2017</a>",
+   "12/08/2017"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/d94f6136-fd12-4105-910f-6f52c771faee/\" target=\"_blank\">Periodic Transaction Report for 12/08/2017</a>",
+   "12/08/2017"
+  ],
+  [
+   "Michael D",
+   "Crapo",
+   "Crapo, Michael D. (Senator)",
+   "<a href=\"/search/view/ptr/8fc0605a-e7b8-49d7-9b29-5177b357907b/\" target=\"_blank\">Periodic Transaction Report for 12/06/2017</a>",
+   "12/06/2017"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/b4225956-fc39-48e4-bdcd-71e01a4a0bb4/\" target=\"_blank\">Periodic Transaction Report for 05/02/2016 (Amendment 1)</a>",
+   "12/06/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:44",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-12-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-12-01"
+ },
+ "recordsTotal": 11
+}

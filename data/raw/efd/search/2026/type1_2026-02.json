@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f3dc67af-1a91-4d58-a98f-f5adec91ecd7/\" target=\"_blank\">Periodic Transaction Report for 02/23/2026</a>",
+   "02/23/2026"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/f977c281-48c1-4de0-af95-6765127f4720/\" target=\"_blank\">Periodic Transaction Report for 02/23/2026</a>",
+   "02/22/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/bd886067-927f-48a8-9d43-8ab6fa713f98/\" target=\"_blank\">Periodic Transaction Report for 02/15/2026</a>",
+   "02/15/2026"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/135ebfe9-099e-4d58-ba46-f739b90d61da/\" target=\"_blank\">Periodic Transaction Report for 02/15/2026</a>",
+   "02/15/2026"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/ab93dc59-4217-40a6-bee8-ba19deae027a/\" target=\"_blank\">Periodic Transaction Report for 02/14/2026</a>",
+   "02/13/2026"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/068274e1-4b7a-4453-a242-563dde4c10d8/\" target=\"_blank\">Periodic Transaction Report for 02/12/2026</a>",
+   "02/12/2026"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/83722654-25b1-499e-8ad5-4a1349d993a6/\" target=\"_blank\">Periodic Transaction Report for 02/06/2026</a>",
+   "02/06/2026"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/863cb85f-ff3b-41b2-ac1b-7d82f427c7b4/\" target=\"_blank\">Periodic Transaction Report for 02/05/2026</a>",
+   "02/05/2026"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/d8dd8a6c-08c7-4432-8e62-5cd0ee9c4a8e/\" target=\"_blank\">Periodic Transaction Report for 02/04/2026</a>",
+   "02/04/2026"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:11:07",
+ "query": {
+  "date_field": "date received",
+  "end": "2026-02-28",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2026-02-01"
+ },
+ "recordsTotal": 9
+}

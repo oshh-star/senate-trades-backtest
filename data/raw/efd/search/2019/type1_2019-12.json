@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/b4f5da30-40c3-4b8c-a01b-91c5ec512773/\" target=\"_blank\">Periodic Transaction Report for 12/23/2019</a>",
+   "12/23/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/85087a7f-92f9-460b-b3b6-1b9df7e5cd2b/\" target=\"_blank\">Periodic Transaction Report for 12/20/2019</a>",
+   "12/20/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/dc7026aa-e4d5-481c-9846-270e41a8f72c/\" target=\"_blank\">Periodic Transaction Report for 12/20/2019</a>",
+   "12/20/2019"
+  ],
+  [
+   "John N",
+   "Kennedy",
+   "Kennedy, John (Senator)",
+   "<a href=\"/search/view/ptr/e9f2d5d8-0d9f-4894-ac58-55e9afdea159/\" target=\"_blank\">Periodic Transaction Report for 12/19/2019</a>",
+   "12/19/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/3ade0c4c-6fe4-46cc-b318-c88b913aaab1/\" target=\"_blank\">Periodic Transaction Report for 12/18/2019</a>",
+   "12/18/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/b7efa216-68b7-412b-9ca9-a491afc231ff/\" target=\"_blank\">Periodic Transaction Report for 12/16/2019</a>",
+   "12/16/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/1debb953-82f1-4cd3-a038-ee7c85d975f8/\" target=\"_blank\">Periodic Transaction Report for 12/12/2019</a>",
+   "12/12/2019"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/c8736c02-d30a-4c66-a4d9-0bac2e7afd46/\" target=\"_blank\">Periodic Transaction Report for 12/12/2019</a>",
+   "12/12/2019"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/d030c264-a886-4f41-9b55-3613ab493cf8/\" target=\"_blank\">Periodic Transaction Report for 12/10/2019</a>",
+   "12/10/2019"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/56bdcfcf-d2f5-44a4-ab51-446a7ab58116/\" target=\"_blank\">Periodic Transaction Report for 12/06/2019</a>",
+   "12/06/2019"
+  ],
+  [
+   "Rafael E",
+   "Cruz",
+   "Cruz, Ted (Senator)",
+   "<a href=\"/search/view/ptr/f2b74022-dcf0-485b-8fbe-187feefadac6/\" target=\"_blank\">Periodic Transaction Report for 12/03/2019</a>",
+   "12/03/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:41",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-12-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-12-01"
+ },
+ "recordsTotal": 11
+}

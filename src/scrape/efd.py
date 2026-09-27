@@ -14,6 +14,9 @@ Form codes (read from the live search form, not assumed):
   report_type: 11 = Periodic Transactions
 
 Every request goes through a rate limiter (config: scrape.min_seconds_between_requests).
+Transient failures (connection errors, timeouts, HTTP 429/5xx, or a lost terms agreement that
+bounces us to /search/home/) are retried with exponential backoff; after the last attempt the
+error is raised for the caller to log, so one failure never stops a whole run.
 """
 from __future__ import annotations
 
@@ -28,8 +31,16 @@ FILER_TYPES = {"senator": 1, "candidate": 4, "former_senator": 5}
 REPORT_TYPE_PTR = 11
 
 
+class TransientError(RuntimeError):
+    pass
+
+
+RETRY_WAITS = (5, 15, 45, 120, 300)   # seconds between attempts
+
+
 class EfdClient:
-    def __init__(self, user_agent: str, min_interval: float = 1.0, timeout: int = 60):
+    def __init__(self, user_agent: str, min_interval: float = 1.0, timeout: int = 60,
+                 retry_waits: tuple = RETRY_WAITS):
         self.session = requests.Session()
         self.session.headers["User-Agent"] = user_agent
         self.min_interval = min_interval
@@ -37,6 +48,26 @@ class EfdClient:
         self._last = 0.0
         self.n_requests = 0
         self.agreed = False
+        self.retry_waits = retry_waits
+
+    def _retry(self, fn, what: str):
+        """Call fn() until it succeeds or the retry budget is spent."""
+        for attempt in range(len(self.retry_waits) + 1):
+            try:
+                return fn()
+            except (requests.ConnectionError, requests.Timeout, TransientError) as e:
+                err = e
+            except requests.HTTPError as e:
+                if e.response is None or e.response.status_code not in (403, 429, 500, 502, 503, 504):
+                    raise
+                err = e
+            if attempt == len(self.retry_waits):
+                break
+            wait = self.retry_waits[attempt]
+            print(f"    [efd] {what}: {type(err).__name__}: {str(err)[:120]} -> retry in {wait}s")
+            time.sleep(wait)
+            self.agreed = False            # a fresh terms agreement fixes an expired session
+        raise err
 
     def _wait(self):
         gap = time.monotonic() - self._last
@@ -77,7 +108,12 @@ class EfdClient:
     def search_page(self, filer_types: list[int], start: str, end: str,
                     offset: int = 0, length: int = 100,
                     report_types: list[int] = (REPORT_TYPE_PTR,)) -> dict:
-        """One page of search results. Dates are MM/DD/YYYY (date received)."""
+        """One page of search results. Dates are MM/DD/YYYY (date received). The site caps
+        `length` at 100 rows; results come sorted by date received, newest first."""
+        return self._retry(lambda: self._search_page(filer_types, start, end, offset, length,
+                                                     report_types), f"search {start}-{end}")
+
+    def _search_page(self, filer_types, start, end, offset, length, report_types) -> dict:
         if not self.agreed:
             self.agree()
         data = {
@@ -89,7 +125,14 @@ class EfdClient:
             "candidate_state": "", "senator_state": "", "office_id": "",
             "first_name": "", "last_name": "",
         }
-        return self._post("/search/report/data/", data, referer="/search/").json()
+        r = self._post("/search/report/data/", data, referer="/search/")
+        try:
+            out = r.json()
+        except ValueError:
+            raise TransientError(f"search returned non-JSON (landed on {r.url})")
+        if "recordsTotal" not in out or "data" not in out:
+            raise TransientError(f"search JSON missing fields: {list(out)}")
+        return out
 
     def search_all(self, filer_types: list[int], start: str, end: str, length: int = 100):
         """All result rows for a query, following pagination."""
@@ -105,7 +148,29 @@ class EfdClient:
         return self.search_page(filer_types, start, end, length=1)["recordsTotal"]
 
     def fetch_report(self, link: str) -> str:
-        return self._get(link).text
+        """HTML of a PTR page; retried until it looks like a real report."""
+        def once():
+            if not self.agreed:
+                self.agree()
+            r = self._get(link)
+            if "/search/home" in r.url or "prohibition_agreement" in r.text:
+                raise TransientError("terms agreement expired (redirected to the home page)")
+            if "filedReport" not in r.text:
+                raise TransientError(f"page has no report header (status {r.status_code})")
+            return r.text
+        return self._retry(once, f"fetch {link}")
+
+
+AMENDMENT_RE = re.compile(r"\(Amendment\s*(\d+)\)", re.I)
+TITLE_DATE_RE = re.compile(r"for\s+(\d{2}/\d{2}/\d{4})")
+
+
+def amendment_number(title: str) -> int:
+    """0 for an original report, n for '(Amendment n)'; 1 if marked amended without a number."""
+    m = AMENDMENT_RE.search(title)
+    if m:
+        return int(m.group(1))
+    return 1 if "amendment" in title.lower() else 0
 
 
 def parse_search_row(row: list) -> dict:
@@ -120,6 +185,8 @@ def parse_search_row(row: list) -> dict:
         "office": " ".join(office.split()), "title": title, "link": link,
         "report_id": uuid, "kind": kind, "date_received": date_received,
         "is_amendment": "amendment" in title.lower(),
+        "amendment_number": amendment_number(title),
+        "title_date": (TITLE_DATE_RE.search(title).group(1) if TITLE_DATE_RE.search(title) else ""),
     }
 
 
@@ -156,11 +223,29 @@ class _TableParser(HTMLParser):
             self._cell.append(data)
 
 
+TOTAL_RE = re.compile(r"\((\d+)\s+transactions?\s+total\)", re.I)
+OWNER_COUNT_RE = re.compile(r'<li class="list-inline-item">\s*(\d+)\s+(Self|Joint|Spouse|Dependent Child)\s*</li>')
+
+
+def count_table_rows(html: str) -> int | None:
+    """Independent row count for validation: <tr> elements in the <tbody> of the table whose
+    header has "Transaction Date", counted with BeautifulSoup/lxml rather than the stdlib parser.
+    None when the page has no such table."""
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "lxml")
+    for table in soup.find_all("table"):
+        if any("Transaction Date" in th.get_text() for th in table.find_all("th")):
+            body = table.find("tbody")
+            return len(body.find_all("tr", recursive=False)) if body else 0
+    return None
+
+
 def parse_ptr(html: str) -> dict:
     """Extract filing metadata and the transactions table from an electronic PTR page."""
     p = _TableParser()
     p.feed(html)
     txn = next((t for t in p.tables if "Transaction Date" in t["header"]), None)
+    total = TOTAL_RE.search(html)
     filed = re.search(r"Filed\s+(\d{2}/\d{2}/\d{4})\s*@\s*([\d:]+\s*[AP]M)", html)
     name = re.search(r'<h2 class="filedReport">(.*?)</h2>', html, re.S)
     title = re.search(r'<h1 class="mb-2">(.*?)</h1>', html, re.S)
@@ -169,6 +254,9 @@ def parse_ptr(html: str) -> dict:
         "title": " ".join(title.group(1).split()) if title else "",
         "filed_date": filed.group(1) if filed else "",
         "filed_time": " ".join(filed.group(2).split()) if filed else "",
+        "stated_total": int(total.group(1)) if total else None,
+        "stated_owner_counts": {k: int(v) for v, k in OWNER_COUNT_RE.findall(html)},
+        "has_table": txn is not None,
         "columns": txn["header"] if txn else [],
         "transactions": [dict(zip(txn["header"], r)) for r in txn["rows"]] if txn else [],
     }

@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/8b98c664-7c64-4fe0-a7b9-016b0cc251f3/\" target=\"_blank\">Periodic Transaction Report for 01/25/2017</a>",
+   "01/25/2017"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/94c8e45b-640f-46dc-8cd9-d96edc20e67a/\" target=\"_blank\">Periodic Transaction Report for 01/17/2017</a>",
+   "01/17/2017"
+  ],
+  [
+   "MARK R",
+   "WARNER",
+   "Senator",
+   "<a href=\"/search/view/paper/d3c89148-fffb-4594-85e5-be13223c11bd/\" target=\"_blank\">Periodic Transaction Report for 01/13/2017</a>",
+   "01/13/2017"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/217dbf6f-8941-4967-94d3-22bf039e1d30/\" target=\"_blank\">Periodic Transaction Report for 01/11/2017</a>",
+   "01/11/2017"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/e373cb0c-9dae-4a6b-8c6f-f29374a271ac/\" target=\"_blank\">Periodic Transaction Report for 01/10/2017</a>",
+   "01/10/2017"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/c4e01a61-abfd-47aa-8539-e3662889107e/\" target=\"_blank\">Periodic Transaction Report for 01/10/2017</a>",
+   "01/10/2017"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/bd0ea319-82af-4de3-b9e8-b81e1af51cc9/\" target=\"_blank\">Periodic Transaction Report for 01/04/2017</a>",
+   "01/04/2017"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/fbe1a534-1259-442e-b587-37af2ca8ec09/\" target=\"_blank\">Periodic Transaction Report for 01/04/2017</a>",
+   "01/04/2017"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:16:33",
+ "query": {
+  "date_field": "date received",
+  "end": "2017-01-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2017-01-01"
+ },
+ "recordsTotal": 8
+}

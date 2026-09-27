@@ -1,0 +1,83 @@
+{
+ "data": [
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/6369d27e-cd94-49ef-8340-471a4d454344/\" target=\"_blank\">Periodic Transaction Report for 07/24/2018</a>",
+   "07/24/2018"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/033d040a-4fe0-4d8e-a37e-355a174d0b52/\" target=\"_blank\">Periodic Transaction Report for 07/24/2018</a>",
+   "07/24/2018"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d53321ee-78d6-40dd-9011-40b0defe14cb/\" target=\"_blank\">Periodic Transaction Report for 07/23/2018</a>",
+   "07/23/2018"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/383fb792-fd57-44fb-a8d6-46909a496b33/\" target=\"_blank\">Periodic Transaction Report for 07/19/2018</a>",
+   "07/19/2018"
+  ],
+  [
+   "John F",
+   "Reed",
+   "Reed, John F. (Senator)",
+   "<a href=\"/search/view/ptr/933ba436-9551-4e92-ac77-dc357267292d/\" target=\"_blank\">Periodic Transaction Report for 07/18/2018</a>",
+   "07/18/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/7d7bc284-fade-45f2-b8bd-3b6414dfdefc/\" target=\"_blank\">Periodic Transaction Report for 07/14/2018</a>",
+   "07/14/2018"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/323d6a47-cb2a-4ff4-8b0b-774a6312a1fa/\" target=\"_blank\">Periodic Transaction Report for 07/13/2018</a>",
+   "07/13/2018"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/5138bdf6-011d-4f7f-a59f-a11cbd24aaed/\" target=\"_blank\">Periodic Transaction Report for 07/10/2018</a>",
+   "07/10/2018"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/05cfb9cb-8100-4305-8e0a-fb8396c94586/\" target=\"_blank\">Periodic Transaction Report for 07/10/2018</a>",
+   "07/10/2018"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/12127bd4-50d9-49b6-a294-bd79ebe9adac/\" target=\"_blank\">Periodic Transaction Report for 07/03/2018</a>",
+   "07/03/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:00",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2018-07-01"
+ },
+ "recordsTotal": 10
+}

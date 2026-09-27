@@ -1,0 +1,97 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/9bd241d9-dfd9-4c0d-ba26-293762f60c7c/\" target=\"_blank\">Periodic Transaction Report for 06/25/2019</a>",
+   "06/25/2019"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/f06ca66b-6f1d-461e-990d-01e6bb206b51/\" target=\"_blank\">Periodic Transaction Report for 06/24/2019</a>",
+   "06/24/2019"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/54feb2cd-c07e-499e-a649-964d9b6fb1d0/\" target=\"_blank\">Periodic Transaction Report for 06/21/2019</a>",
+   "06/21/2019"
+  ],
+  [
+   "Jacklyn S",
+   "Rosen",
+   "Rosen, Jacky (Senator)",
+   "<a href=\"/search/view/ptr/f9713429-c28a-4e22-bdb8-f5e182c364ed/\" target=\"_blank\">Periodic Transaction Report for 06/20/2019</a>",
+   "06/20/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/c075c149-8a56-4afd-9c75-0ad24eb084a0/\" target=\"_blank\">Periodic Transaction Report for 06/18/2019</a>",
+   "06/18/2019"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/8b901467-872e-4963-96fa-a5cef2760fa2/\" target=\"_blank\">Periodic Transaction Report for 06/17/2019</a>",
+   "06/17/2019"
+  ],
+  [
+   "Thomas R",
+   "Tillis",
+   "Tillis, Thom (Senator)",
+   "<a href=\"/search/view/ptr/2c7b33c4-c85b-44a8-b8f7-cfe2f15961f5/\" target=\"_blank\">Periodic Transaction Report for 02/27/2019 (Amendment 1)</a>",
+   "06/15/2019"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/00f9f9ee-b87b-4736-950b-41f9a6cfe2b4/\" target=\"_blank\">Periodic Transaction Report for 06/14/2019</a>",
+   "06/14/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/a24acea9-5d87-46e6-978e-14fa5a4cffb3/\" target=\"_blank\">Periodic Transaction Report for 06/13/2019</a>",
+   "06/13/2019"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/e0a3239b-193d-47db-971a-9f55c134f18a/\" target=\"_blank\">Periodic Transaction Report for 06/11/2019</a>",
+   "06/11/2019"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/923dbc06-079b-4cb5-b251-fd0480b7471a/\" target=\"_blank\">Periodic Transaction Report for 06/11/2019</a>",
+   "06/11/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/b661543f-099b-40c5-87fa-bafce0b6eb34/\" target=\"_blank\">Periodic Transaction Report for 06/03/2019</a>",
+   "06/03/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:35",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-06-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-06-01"
+ },
+ "recordsTotal": 12
+}

@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "JAMES M",
+   "INHOFE",
+   "Senator",
+   "<a href=\"/search/view/paper/cc424d65-f559-40ae-9caf-645f7a1fbfc0/\" target=\"_blank\">Periodic Transaction Report for 12/21/2018 (Amendment)</a>",
+   "12/21/2018"
+  ],
+  [
+   "DIANNE ",
+   "FEINSTEIN",
+   "Former Senator",
+   "<a href=\"/search/view/paper/1278718c-4552-46f1-9b33-e7972215b1dd/\" target=\"_blank\">Periodic Transaction Report for 12/18/2018</a>",
+   "12/18/2018"
+  ],
+  [
+   "James M",
+   "Inhofe",
+   "Inhofe, James M. (Senator)",
+   "<a href=\"/search/view/ptr/ddf06dcd-abf8-4537-a9c6-96e1fc3f2408/\" target=\"_blank\">Periodic Transaction Report for 12/12/2018 (Amendment 1)</a>",
+   "12/12/2018"
+  ],
+  [
+   "James M",
+   "Inhofe",
+   "Inhofe, James M. (Senator)",
+   "<a href=\"/search/view/ptr/3e10f881-18e4-4359-8f26-3f9620a103fd/\" target=\"_blank\">Periodic Transaction Report for 12/12/2018</a>",
+   "12/12/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/d5952c7e-4bd6-4fa1-8e8a-5018fc6e9415/\" target=\"_blank\">Periodic Transaction Report for 12/06/2018</a>",
+   "12/06/2018"
+  ],
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/3fc1418c-5789-4f36-b7f5-2a9c445a756d/\" target=\"_blank\">Periodic Transaction Report for 12/04/2018</a>",
+   "12/04/2018"
+  ],
+  [
+   "RICHARD M",
+   "BURR",
+   "Senator",
+   "<a href=\"/search/view/paper/a9376ef3-2a48-4543-94ec-eea5b522bffd/\" target=\"_blank\">Periodic Transaction Report for 12/04/2018</a>",
+   "12/04/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:19",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-12-31",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-12-01"
+ },
+ "recordsTotal": 7
+}

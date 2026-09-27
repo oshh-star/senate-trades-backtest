@@ -1,0 +1,48 @@
+{
+ "data": [
+  [
+   "Jefferson B",
+   "Sessions, III",
+   "Sessions, Jefferson B. III (Senator)",
+   "<a href=\"/search/view/ptr/dd4abe42-718e-4d57-a848-8447451a6c4b/\" target=\"_blank\">Periodic Transaction Report for 09/12/2016</a>",
+   "09/12/2016"
+  ],
+  [
+   "Jefferson B",
+   "Sessions, III",
+   "Sessions, Jefferson B. III (Senator)",
+   "<a href=\"/search/view/ptr/ef1398cf-08c6-4dce-a70f-a73c0060f135/\" target=\"_blank\">Periodic Transaction Report for 07/06/2016</a>",
+   "07/06/2016"
+  ],
+  [
+   "Jefferson B",
+   "Sessions, III",
+   "Sessions, Jefferson B. III (Senator)",
+   "<a href=\"/search/view/ptr/33c67e54-1d07-4099-8e10-920cfe4a74d5/\" target=\"_blank\">Periodic Transaction Report for 05/26/2016 (Amendment 1)</a>",
+   "06/15/2016"
+  ],
+  [
+   "Jefferson B",
+   "Sessions, III",
+   "Sessions, Jefferson B. III (Senator)",
+   "<a href=\"/search/view/ptr/3c59754e-6ab2-4b25-9e2f-6d0e45beb83e/\" target=\"_blank\">Periodic Transaction Report for 05/26/2016</a>",
+   "05/26/2016"
+  ],
+  [
+   "Jefferson B",
+   "Sessions, III",
+   "Sessions, Jefferson B. III (Senator)",
+   "<a href=\"/search/view/ptr/b24f929e-8867-47c0-9681-9a6d39743a30/\" target=\"_blank\">Periodic Transaction Report for 01/05/2016</a>",
+   "01/05/2016"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:13:37",
+ "query": {
+  "date_field": "date received",
+  "end": "2016-12-31",
+  "filer_type": 4,
+  "report_type": 11,
+  "start": "2016-01-01"
+ },
+ "recordsTotal": 5
+}

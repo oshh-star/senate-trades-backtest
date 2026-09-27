@@ -1,0 +1,48 @@
+{
+ "data": [
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/84618bff-2333-4ebc-a817-eedb81177ab4/\" target=\"_blank\">Periodic Transaction Report for 02/16/2024</a>",
+   "02/16/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/3dabcae6-b7fd-4dd0-9ece-e936d07def11/\" target=\"_blank\">Periodic Transaction Report for 02/15/2024</a>",
+   "02/14/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/ea190d96-3d92-4617-b44e-467b6fc05a93/\" target=\"_blank\">Periodic Transaction Report for 02/14/2024</a>",
+   "02/14/2024"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/6f16eba7-e6a1-464f-8c61-ff112d89aef1/\" target=\"_blank\">Periodic Transaction Report for 02/09/2024</a>",
+   "02/09/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/9335e60a-450c-464e-8452-8602eec4d2ad/\" target=\"_blank\">Periodic Transaction Report for 02/05/2024</a>",
+   "02/05/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:09",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-02-29",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-02-01"
+ },
+ "recordsTotal": 5
+}

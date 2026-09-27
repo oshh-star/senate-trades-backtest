@@ -23,19 +23,24 @@ data:
   scrape_end: 2026-09-30           # PTR date received, inclusive; fixed cutoff
   report_type: 11                  # eFD code for Periodic Transaction Report
   # eFD filer_type codes: 1 = Senator, 4 = Candidate, 5 = Former Senator.
-  # eFD labels a filer by CURRENT status, so senators who have since left office
-  # appear under 5. "Sitting Senators" = sitting when they filed, hence 1 and 5.
-  # See DECISIONS.md 2026-09-27 "Filer types".
-  include_filer_types: [1, 5]
-  excluded_filer_types_logged: [4] # candidate filings: searched, counted, logged, excluded
+  # The label is the filer's CURRENT status, so it is wrong in both directions (A05).
+  # Phase 1 scrapes all three; scope is decided by Senate service dates instead.
+  scrape_filer_types: [1, 4, 5]
+  scope_rule: transaction_date_within_senate_service   # A05, applied in Phase 2
+  service_dates:                   # unitedstates/congress-legislators, cached in data/raw/legislators/
+    base_url: https://raw.githubusercontent.com/unitedstates/congress-legislators/main/
+    files: [legislators-current.yaml, legislators-historical.yaml]
+    terms_from: 2010-01-01         # data/interim/senate_terms.csv keeps terms ending on or after this
+  name_overrides: config/name_overrides.yaml   # hand-checked eFD filer name -> bioguide_id
+  record_time_received: true       # A07: date AND time received ("Filed ... @ time" on the PTR page)
   paper_filings: exclude_and_log   # scanned filings cannot be parsed
   amendments: keep_latest_and_log_replaced
   cache_raw_downloads: true        # everything under data/raw/ is committed
 
-# Analysis window: window_years back from window_end (disclosure date).
-# 5 -> 2021-10-01..2026-09-30; 3 -> 2023-10-01..; 10 -> 2016-10-01..
+# Analysis window: window_years back from window_end (disclosure date). A06: ends 2026-08-31
+# because Ken French data ends there. 5 -> 2021-09-01..2026-08-31; 3 -> 2023-09-01..; 10 -> 2016-09-01..
 analysis:
-  window_end: 2026-09-30
+  window_end: 2026-08-31
   window_years: 5                  # one-line change: 3 | 5 | 10
 
 # ---------------------------------------------------------------- UNIVERSE
@@ -91,7 +96,7 @@ benchmarks:                        # built in Phase 5
 
 # ---------------------------------------------------------------- OUT-OF-SAMPLE FIREWALL
 oos:
-  split: midpoint                  # of the analysis window
+  split: midpoint_months           # A06: first half of the window in whole months (5y: IS to 2024-02-29)
   oos_unlocked: false              # true only with a DECISIONS.md entry naming the frozen commit
 
 # ---------------------------------------------------------------- SCRAPING ETIQUETTE

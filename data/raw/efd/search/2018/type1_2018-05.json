@@ -1,0 +1,118 @@
+{
+ "data": [
+  [
+   "John A",
+   "Barrasso",
+   "Barrasso, John (Senator)",
+   "<a href=\"/search/view/ptr/265964e0-3d22-4a52-af4f-37916b56390d/\" target=\"_blank\">Periodic Transaction Report for 05/24/2018</a>",
+   "05/24/2018"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/92de2283-fef4-4f5c-bead-956ceb88688d/\" target=\"_blank\">Periodic Transaction Report for 05/24/2018</a>",
+   "05/24/2018"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/01cec9aa-793e-407f-9186-4c48160e5278/\" target=\"_blank\">Periodic Transaction Report for 05/22/2018</a>",
+   "05/22/2018"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/475ad4bf-fb94-474c-9ecd-80529d70ace5/\" target=\"_blank\">Periodic Transaction Report for 05/15/2018</a>",
+   "05/15/2018"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/a4f2d467-8303-4dac-98fb-b88b61e6a360/\" target=\"_blank\">Periodic Transaction Report for 05/15/2018</a>",
+   "05/15/2018"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/044ee3b6-5fd0-48cc-a54a-a60e79d6a4f0/\" target=\"_blank\">Periodic Transaction Report for 05/15/2018</a>",
+   "05/15/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/27dda4bd-c665-48e0-be5c-e1c3cb0f78db/\" target=\"_blank\">Periodic Transaction Report for 05/14/2018</a>",
+   "05/14/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/9e8c8d32-39da-4bb6-9b6e-8f5be4a29897/\" target=\"_blank\">Periodic Transaction Report for 05/14/2018</a>",
+   "05/14/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/b17ecfe5-f246-4f4c-bf2f-4f1dd4c35539/\" target=\"_blank\">Periodic Transaction Report for 05/14/2018</a>",
+   "05/14/2018"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/b3dacabf-fe85-4795-818a-cae96746587b/\" target=\"_blank\">Periodic Transaction Report for 05/14/2018</a>",
+   "05/14/2018"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/fe9822ee-cb9e-460e-8544-c42006c591e0/\" target=\"_blank\">Periodic Transaction Report for 05/10/2018</a>",
+   "05/10/2018"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/70e0b144-88b5-4d6a-a353-5e2e264a6ad7/\" target=\"_blank\">Periodic Transaction Report for 05/10/2018</a>",
+   "05/10/2018"
+  ],
+  [
+   "Roger F",
+   "Wicker",
+   "Wicker, Roger (Senator)",
+   "<a href=\"/search/view/ptr/19ab8dfe-79bd-427f-ade0-c62df4f377ad/\" target=\"_blank\">Periodic Transaction Report for 05/09/2018</a>",
+   "05/09/2018"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/a6b666c5-01b8-4625-98e1-88dfb7e2b149/\" target=\"_blank\">Periodic Transaction Report for 05/09/2018</a>",
+   "05/09/2018"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/75638602-b725-4bc9-9ab7-0c9f7699f896/\" target=\"_blank\">Periodic Transaction Report for 05/03/2018</a>",
+   "05/03/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:19:58",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2018-05-01"
+ },
+ "recordsTotal": 15
+}

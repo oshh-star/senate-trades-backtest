@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/f37321cd-cd47-443b-8687-4093e9bd5a15/\" target=\"_blank\">Periodic Transaction Report for 09/22/2021</a>",
+   "09/22/2021"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/6d5a5182-2b97-4772-b982-ff501f343822/\" target=\"_blank\">Periodic Transaction Report for 09/15/2021</a>",
+   "09/15/2021"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/1a756e7a-56c4-4406-8a4b-1f6c549bd17d/\" target=\"_blank\">Periodic Transaction Report for 09/15/2021</a>",
+   "09/15/2021"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/2d59cb0c-ba0d-4d1d-af20-4aa1d70582d7/\" target=\"_blank\">Periodic Transaction Report for 09/13/2021</a>",
+   "09/13/2021"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/a281e3d8-07ad-434d-a8e3-b596b997e55a/\" target=\"_blank\">Periodic Transaction Report for 09/08/2021</a>",
+   "09/08/2021"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/d9700aee-b8d6-4eb3-bf67-676134edae39/\" target=\"_blank\">Periodic Transaction Report for 09/08/2021</a>",
+   "09/08/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/1f256949-caed-40d5-8076-d9243221bbc4/\" target=\"_blank\">Periodic Transaction Report for 09/08/2021</a>",
+   "09/08/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:20",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-09-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-09-01"
+ },
+ "recordsTotal": 7
+}
