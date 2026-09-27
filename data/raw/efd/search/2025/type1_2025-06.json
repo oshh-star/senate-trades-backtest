@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "James",
+   "Banks",
+   "Banks, James E. (Senator)",
+   "<a href=\"/search/view/ptr/9d380e2e-86d9-4378-a156-353054bb5833/\" target=\"_blank\">Periodic Transaction Report for 06/26/2025</a>",
+   "06/26/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/95c54ecf-69b7-47d2-8cc9-e68dac2db254/\" target=\"_blank\">Periodic Transaction Report for 06/20/2025</a>",
+   "06/20/2025"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/d1af8002-3bf0-4188-aca4-87007c729893/\" target=\"_blank\">Periodic Transaction Report for 06/19/2025</a>",
+   "06/19/2025"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/56ecce5e-12a2-43db-916c-52cd3ba3a375/\" target=\"_blank\">Periodic Transaction Report for 06/18/2025</a>",
+   "06/18/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/7f1f888e-f759-4c18-8fbe-baf8f3488374/\" target=\"_blank\">Periodic Transaction Report for 06/14/2025</a>",
+   "06/14/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/db2a4c73-e714-4ad0-9548-b1b83f1d0773/\" target=\"_blank\">Periodic Transaction Report for 06/14/2025</a>",
+   "06/14/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/382eb074-7a02-42de-ac55-12372a6be649/\" target=\"_blank\">Periodic Transaction Report for 06/13/2025</a>",
+   "06/13/2025"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/36d82d69-0816-44bb-9d4d-5ce3cb68872b/\" target=\"_blank\">Periodic Transaction Report for 06/13/2025</a>",
+   "06/13/2025"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/bb28c116-64b8-4088-a93d-8ba9965930ae/\" target=\"_blank\">Periodic Transaction Report for 06/09/2025</a>",
+   "06/09/2025"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/51edfa22-1827-41ce-8ba4-511b8ce62af4/\" target=\"_blank\">Periodic Transaction Report for 06/04/2025</a>",
+   "06/04/2025"
+  ],
+  [
+   "Jon A",
+   "Husted",
+   "Husted, Jon A. (Senator)",
+   "<a href=\"/search/view/ptr/b2cccee8-9ee6-4059-913b-ad68b28b6afb/\" target=\"_blank\">Periodic Transaction Report for 06/03/2025</a>",
+   "06/03/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:26",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-06-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-06-01"
+ },
+ "recordsTotal": 11
+}

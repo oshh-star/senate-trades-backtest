@@ -1,0 +1,97 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/a3722489-195c-4554-8ad0-d32981aa2f61/\" target=\"_blank\">Periodic Transaction Report for 05/28/2025</a>",
+   "05/28/2025"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/f4eeafe8-a4a5-4d85-bf3b-04ad0b4aca18/\" target=\"_blank\">Periodic Transaction Report for 05/27/2025</a>",
+   "05/26/2025"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/92a96483-fc17-4654-93e4-19bc866a9218/\" target=\"_blank\">Periodic Transaction Report for 05/15/2025</a>",
+   "05/15/2025"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/0ce898d6-4a82-4d78-a5b8-74df5b307720/\" target=\"_blank\">Periodic Transaction Report for 05/15/2025</a>",
+   "05/15/2025"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/63e4a2b1-5bfc-43b6-b952-ba54e377212c/\" target=\"_blank\">Periodic Transaction Report for 05/15/2025</a>",
+   "05/15/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/52c9fa8c-a4fa-4f74-9013-0e1076574cfa/\" target=\"_blank\">Periodic Transaction Report for 05/14/2025</a>",
+   "05/14/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/59691760-24e4-47a9-bc8d-9888bce9660b/\" target=\"_blank\">Periodic Transaction Report for 05/14/2025</a>",
+   "05/14/2025"
+  ],
+  [
+   "Ashley",
+   "Moody",
+   "Moody, Ashley B. (Senator)",
+   "<a href=\"/search/view/ptr/bc4381fc-d714-45da-be6f-1fa87f2212ba/\" target=\"_blank\">Periodic Transaction Report for 05/14/2025</a>",
+   "05/13/2025"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/3d05b76c-8d7a-4ff0-8d76-b66e8770018d/\" target=\"_blank\">Periodic Transaction Report for 05/13/2025</a>",
+   "05/13/2025"
+  ],
+  [
+   "John N",
+   "Kennedy",
+   "Kennedy, John (Senator)",
+   "<a href=\"/search/view/ptr/94863fb5-21cc-4585-a124-c0ea92ef5f1b/\" target=\"_blank\">Periodic Transaction Report for 05/08/2025</a>",
+   "05/08/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/177da1cd-00da-40c7-b244-5dab13d3fc50/\" target=\"_blank\">Periodic Transaction Report for 05/07/2025</a>",
+   "05/07/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d5562ad3-9789-426c-9ba9-a056e09d62c1/\" target=\"_blank\">Periodic Transaction Report for 05/06/2025</a>",
+   "05/06/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:25",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-05-01"
+ },
+ "recordsTotal": 12
+}

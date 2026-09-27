@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f09fb0fe-7f70-434e-88c7-a43e96ee08a7/\" target=\"_blank\">Periodic Transaction Report for 01/22/2025</a>",
+   "01/22/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d7d35e4a-545e-4215-a318-f90031461bc3/\" target=\"_blank\">Periodic Transaction Report for 01/21/2025</a>",
+   "01/21/2025"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/e37322e3-0829-4e3c-9faf-7a4a1a957e09/\" target=\"_blank\">Periodic Transaction Report for 01/18/2025</a>",
+   "01/18/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/53c96503-83f8-41d0-ae07-9f7ea463f37b/\" target=\"_blank\">Periodic Transaction Report for 01/14/2025</a>",
+   "01/14/2025"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/70c80513-d89a-4382-afa6-d80f6c1fcbf1/\" target=\"_blank\">Periodic Transaction Report for 01/08/2025</a>",
+   "01/08/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/37265fce-ec98-4bba-8b2b-33b30def336f/\" target=\"_blank\">Periodic Transaction Report for 01/06/2025</a>",
+   "01/06/2025"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/de5dbd67-5370-432c-a943-a267f16ef49d/\" target=\"_blank\">Periodic Transaction Report for 01/04/2025</a>",
+   "01/04/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:21",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-01-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-01-01"
+ },
+ "recordsTotal": 7
+}

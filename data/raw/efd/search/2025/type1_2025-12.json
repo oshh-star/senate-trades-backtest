@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/e337e1b4-ff0a-4b83-8a58-1d25a81ea26f/\" target=\"_blank\">Periodic Transaction Report for 12/26/2025</a>",
+   "12/26/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/13a0fc2a-bbbb-4c1b-b380-d315e198d2a3/\" target=\"_blank\">Periodic Transaction Report for 12/22/2025</a>",
+   "12/22/2025"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/30986bcb-c94b-406a-8c4c-2927590e1d22/\" target=\"_blank\">Periodic Transaction Report for 12/19/2025</a>",
+   "12/19/2025"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/f18410ed-0a48-4ed1-ace6-a8b90cf88b7f/\" target=\"_blank\">Periodic Transaction Report for 12/12/2025</a>",
+   "12/12/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/16afdd38-c0ec-4e37-bc05-cbd82901b43f/\" target=\"_blank\">Periodic Transaction Report for 12/12/2025</a>",
+   "12/12/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/3a779539-8451-49d2-8419-d3eb72c7922a/\" target=\"_blank\">Periodic Transaction Report for 12/08/2025</a>",
+   "12/08/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/2c4705cc-0f3e-4105-9093-f82fcec8bacd/\" target=\"_blank\">Periodic Transaction Report for 12/08/2025</a>",
+   "12/08/2025"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/b9164fd3-7f99-4060-8e86-7ad89350cd03/\" target=\"_blank\">Periodic Transaction Report for 12/04/2025</a>",
+   "12/04/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/1f88d468-fa98-4064-bc40-05cc6f58b555/\" target=\"_blank\">Periodic Transaction Report for 12/04/2025</a>",
+   "12/04/2025"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/00818cb5-a732-46ec-82f8-38dd6247072a/\" target=\"_blank\">Periodic Transaction Report for 12/01/2025</a>",
+   "12/01/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/19dc3e18-b10f-465d-8f37-117ab78a8d0b/\" target=\"_blank\">Periodic Transaction Report for 12/01/2025</a>",
+   "12/01/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:32",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-12-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-12-01"
+ },
+ "recordsTotal": 11
+}

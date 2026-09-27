@@ -1,0 +1,132 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/05ec5023-a80c-47ce-8f1c-02494ac41ba3/\" target=\"_blank\">Periodic Transaction Report for 08/25/2025</a>",
+   "08/25/2025"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/218c16a3-d408-4cc0-aa89-08730d05dfc3/\" target=\"_blank\">Periodic Transaction Report for 08/18/2025</a>",
+   "08/18/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/1d6d6efd-3e8b-4702-b437-20dd08c9bce0/\" target=\"_blank\">Periodic Transaction Report for 12/20/2024 (Amendment 1)</a>",
+   "08/13/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/85199603-1615-424e-ba12-801a5d8dd0f4/\" target=\"_blank\">Periodic Transaction Report for 07/06/2024 (Amendment 1)</a>",
+   "08/13/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/03e0a1db-2fe8-409f-ae3e-61ab61e14cae/\" target=\"_blank\">Periodic Transaction Report for 05/10/2024 (Amendment 1)</a>",
+   "08/13/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/f1058108-7055-4891-9a74-98eb4b670d65/\" target=\"_blank\">Periodic Transaction Report for 03/15/2024 (Amendment 1)</a>",
+   "08/13/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/83d12cdb-288d-4937-91d3-31bbabbd3edb/\" target=\"_blank\">Periodic Transaction Report for 08/13/2025</a>",
+   "08/13/2025"
+  ],
+  [
+   "John R",
+   "Curtis",
+   "Curtis, John R. (Senator)",
+   "<a href=\"/search/view/ptr/000e724b-fb9a-4922-9011-ca8925a047f3/\" target=\"_blank\">Periodic Transaction Report for 08/13/2025</a>",
+   "08/13/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/09694768-3b1e-4af0-8b46-8521c00cbd96/\" target=\"_blank\">Periodic Transaction Report for 08/13/2025</a>",
+   "08/13/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/85d70f0a-406a-40e1-80bb-bd9fbdf4d360/\" target=\"_blank\">Periodic Transaction Report for 08/13/2025</a>",
+   "08/13/2025"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f60cfac8-0389-4a5e-8619-095312492adc/\" target=\"_blank\">Periodic Transaction Report for 08/11/2025</a>",
+   "08/11/2025"
+  ],
+  [
+   "James",
+   "Banks",
+   "Banks, James E. (Senator)",
+   "<a href=\"/search/view/ptr/743c6542-9aec-48ae-8fa6-62645757bc8f/\" target=\"_blank\">Periodic Transaction Report for 08/10/2025</a>",
+   "08/10/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/331e9f42-09c3-4edc-b923-a1566486262c/\" target=\"_blank\">Periodic Transaction Report for 08/06/2025</a>",
+   "08/06/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/796ac37b-f491-4311-b8aa-fe2c233f2487/\" target=\"_blank\">Periodic Transaction Report for 08/06/2025</a>",
+   "08/06/2025"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/bb3ca8de-099e-4df2-a950-f64afdb5dc73/\" target=\"_blank\">Periodic Transaction Report for 08/04/2025</a>",
+   "08/04/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/1e086831-c7e8-43cd-a11d-dd366a27f400/\" target=\"_blank\">Periodic Transaction Report for 08/04/2025</a>",
+   "08/04/2025"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/0bf421b2-cf4e-40d8-9c9f-98ba5e535c6c/\" target=\"_blank\">Periodic Transaction Report for 08/02/2025</a>",
+   "08/01/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:28",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-08-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-08-01"
+ },
+ "recordsTotal": 17
+}

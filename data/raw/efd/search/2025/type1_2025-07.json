@@ -1,0 +1,97 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/db518e1a-cc0c-4d04-95c9-f22f1c1a1e36/\" target=\"_blank\">Periodic Transaction Report for 07/18/2025</a>",
+   "07/18/2025"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/d899796b-3221-4c1c-a28a-265fe99303c3/\" target=\"_blank\">Periodic Transaction Report for 07/15/2025</a>",
+   "07/15/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/4b5c15fa-74ca-4e12-a0c4-3dd9ef5124b7/\" target=\"_blank\">Periodic Transaction Report for 06/14/2025 (Amendment 1)</a>",
+   "07/09/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/9e9e74e9-25bf-45a6-9d79-5f33173e055e/\" target=\"_blank\">Periodic Transaction Report for 07/09/2025</a>",
+   "07/09/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/d32a2469-2157-4352-886c-cc992fd13d2f/\" target=\"_blank\">Periodic Transaction Report for 07/09/2025</a>",
+   "07/09/2025"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/8bbbda05-9155-43c0-a273-352b87c5273f/\" target=\"_blank\">Periodic Transaction Report for 07/07/2025</a>",
+   "07/07/2025"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/321917b2-65f8-4370-9dc8-bf462aab5a9b/\" target=\"_blank\">Periodic Transaction Report for 07/07/2025</a>",
+   "07/07/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/119cb6b4-75e0-4955-9a84-21e7a2612695/\" target=\"_blank\">Periodic Transaction Report for 07/04/2025</a>",
+   "07/04/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/69b40e20-ff5a-45cd-92cb-a24035f53f33/\" target=\"_blank\">Periodic Transaction Report for 07/03/2025</a>",
+   "07/03/2025"
+  ],
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/fe7c39b7-a8ee-4011-b0f6-ab3a320546a0/\" target=\"_blank\">Periodic Transaction Report for 07/03/2025</a>",
+   "07/02/2025"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/9be0bf66-ca8a-4082-94f6-d51e1b56435d/\" target=\"_blank\">Periodic Transaction Report for 07/02/2025</a>",
+   "07/02/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/c07a01ce-c10e-4a5a-8ee9-ec9e1f366153/\" target=\"_blank\">Periodic Transaction Report for 07/01/2025</a>",
+   "07/01/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:27",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-07-01"
+ },
+ "recordsTotal": 12
+}

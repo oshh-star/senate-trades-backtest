@@ -1,0 +1,111 @@
+{
+ "data": [
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/5823084a-1dd6-4707-aee5-53c57af4df8c/\" target=\"_blank\">Periodic Transaction Report for 03/30/2025</a>",
+   "03/29/2025"
+  ],
+  [
+   "Ashley",
+   "Moody",
+   "Moody, Ashley B. (Senator)",
+   "<a href=\"/search/view/ptr/376521e5-ad5e-44ec-8bd4-63847da2e049/\" target=\"_blank\">Periodic Transaction Report for 03/23/2025</a>",
+   "03/22/2025"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/ec33423d-b244-4bc3-a96f-da77436cda11/\" target=\"_blank\">Periodic Transaction Report for 03/19/2025</a>",
+   "03/19/2025"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/ac293f74-570f-4c11-9224-79686a7500a9/\" target=\"_blank\">Periodic Transaction Report for 03/06/2025 (Amendment 1)</a>",
+   "03/19/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/8e8ae815-6d8b-4330-8aa0-da89ab2e2ca0/\" target=\"_blank\">Periodic Transaction Report for 03/17/2025</a>",
+   "03/17/2025"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/07155f69-e46a-49db-8341-66a2fab74c3c/\" target=\"_blank\">Periodic Transaction Report for 03/12/2025</a>",
+   "03/12/2025"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/d445c200-69d3-4a59-a5a8-4252ef807649/\" target=\"_blank\">Periodic Transaction Report for 03/12/2025</a>",
+   "03/12/2025"
+  ],
+  [
+   "James",
+   "Banks",
+   "Banks, James E. (Senator)",
+   "<a href=\"/search/view/ptr/f90fce4f-35b7-4e45-b540-a8f2e2372a63/\" target=\"_blank\">Periodic Transaction Report for 03/10/2025</a>",
+   "03/10/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/b6f24083-8ed9-4368-b482-3d14155c1e9b/\" target=\"_blank\">Periodic Transaction Report for 03/06/2025</a>",
+   "03/06/2025"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/6cf4a78e-92f0-4201-bf73-e9b02cd8f9ef/\" target=\"_blank\">Periodic Transaction Report for 03/06/2025</a>",
+   "03/06/2025"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/2f191d07-0340-4367-ba29-a81216bb20e3/\" target=\"_blank\">Periodic Transaction Report for 03/06/2025</a>",
+   "03/06/2025"
+  ],
+  [
+   "David H",
+   "McCormick",
+   "McCormick, David H. (Senator)",
+   "<a href=\"/search/view/ptr/87e8ffc9-b032-4706-a4d1-8769a6eca634/\" target=\"_blank\">Periodic Transaction Report for 03/05/2025</a>",
+   "03/05/2025"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/4fbbf6be-25c1-4589-bda0-95b5295c4107/\" target=\"_blank\">Periodic Transaction Report for 03/04/2025</a>",
+   "03/04/2025"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/379b806a-8e3a-40ff-b363-bd95b247bc38/\" target=\"_blank\">Periodic Transaction Report for 03/03/2025</a>",
+   "03/03/2025"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:08:23",
+ "query": {
+  "date_field": "date received",
+  "end": "2025-03-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2025-03-01"
+ },
+ "recordsTotal": 14
+}
