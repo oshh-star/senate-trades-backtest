@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/bc5764cd-d819-4508-bfda-8b3931bcfeb6/\" target=\"_blank\">Periodic Transaction Report for 09/30/2019</a>",
+   "09/30/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/eefc9098-5599-4d95-9044-f7d0173034ce/\" target=\"_blank\">Periodic Transaction Report for 09/25/2019</a>",
+   "09/25/2019"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/1867563f-44a7-41d0-8e2e-96ddf747eae4/\" target=\"_blank\">Periodic Transaction Report for 09/16/2019</a>",
+   "09/16/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/23a66446-0a5f-4f04-8e57-da53c701b4c2/\" target=\"_blank\">Periodic Transaction Report for 09/12/2019</a>",
+   "09/12/2019"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/17f2fb92-a548-45bc-9033-bd6b50703caa/\" target=\"_blank\">Periodic Transaction Report for 09/11/2019</a>",
+   "09/11/2019"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/6784a9a9-d791-451f-816e-e317349aace7/\" target=\"_blank\">Periodic Transaction Report for 09/10/2019</a>",
+   "09/10/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/f0f9e5f1-9983-4b0f-b1bb-37a6cee7ed7d/\" target=\"_blank\">Periodic Transaction Report for 09/03/2019</a>",
+   "09/03/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:38",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-09-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-09-01"
+ },
+ "recordsTotal": 7
+}

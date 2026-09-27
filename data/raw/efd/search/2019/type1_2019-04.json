@@ -1,0 +1,111 @@
+{
+ "data": [
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/6973eebd-1e5e-41a8-8fa6-2baff09adbac/\" target=\"_blank\">Periodic Transaction Report for 04/29/2019</a>",
+   "04/29/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/40f35e56-632b-4b9d-b28c-658419ca0d53/\" target=\"_blank\">Periodic Transaction Report for 04/29/2019</a>",
+   "04/29/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/6fb6530c-db51-4751-a1ab-7928aeff396d/\" target=\"_blank\">Periodic Transaction Report for 04/25/2019</a>",
+   "04/25/2019"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/a01704e8-58d6-42ee-a525-300381ea2f49/\" target=\"_blank\">Periodic Transaction Report for 04/24/2019</a>",
+   "04/24/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/df5cc344-2da5-471d-9470-be7ecc4d742f/\" target=\"_blank\">Periodic Transaction Report for 04/23/2019</a>",
+   "04/23/2019"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/94008f80-fd16-4656-afb6-ba4ae1d47319/\" target=\"_blank\">Periodic Transaction Report for 04/17/2019</a>",
+   "04/17/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/04d279c4-2a06-42c9-94ab-903e116a76be/\" target=\"_blank\">Periodic Transaction Report for 04/17/2019</a>",
+   "04/17/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/46cecbcc-7c1c-4cbb-aa4f-fa1d2cd63627/\" target=\"_blank\">Periodic Transaction Report for 04/17/2019</a>",
+   "04/17/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/514f7dc7-c7bf-47ed-92fe-baa8c553eaec/\" target=\"_blank\">Periodic Transaction Report for 04/12/2019</a>",
+   "04/12/2019"
+  ],
+  [
+   "Mike",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/52499168-0dec-404b-a9c6-c3f96da3f739/\" target=\"_blank\">Periodic Transaction Report for 04/09/2019</a>",
+   "04/09/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/252cb80b-a178-4762-8e33-d1d3776a0656/\" target=\"_blank\">Periodic Transaction Report for 04/09/2019</a>",
+   "04/09/2019"
+  ],
+  [
+   "Daniel S",
+   "Sullivan",
+   "Sullivan, Dan (Senator)",
+   "<a href=\"/search/view/ptr/761ccdcd-aa8f-42fa-884a-5e67c47199e5/\" target=\"_blank\">Periodic Transaction Report for 04/08/2019</a>",
+   "04/08/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/59e4865b-0547-48e7-8f92-f0bc687b788b/\" target=\"_blank\">Periodic Transaction Report for 04/08/2019</a>",
+   "04/08/2019"
+  ],
+  [
+   "Michael F",
+   "Bennet",
+   "Bennet, Michael (Senator)",
+   "<a href=\"/search/view/ptr/cc21478c-7266-432d-9412-efd04d059ab4/\" target=\"_blank\">Periodic Transaction Report for 04/02/2019</a>",
+   "04/02/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:33",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-04-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-04-01"
+ },
+ "recordsTotal": 14
+}

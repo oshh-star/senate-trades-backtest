@@ -1,0 +1,132 @@
+{
+ "data": [
+  [
+   "Rafael E",
+   "Cruz",
+   "Cruz, Ted (Senator)",
+   "<a href=\"/search/view/ptr/f7fff831-e133-4d72-b2f4-91ad003d1dff/\" target=\"_blank\">Periodic Transaction Report for 05/24/2019</a>",
+   "05/24/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/8fb44b9a-2425-4e09-a9ed-b77ee31ce026/\" target=\"_blank\">Periodic Transaction Report for 05/21/2019</a>",
+   "05/21/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/9df8ad03-172a-43eb-80f4-b6f311b2aa41/\" target=\"_blank\">Periodic Transaction Report for 05/20/2019</a>",
+   "05/20/2019"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/1e74ebeb-9ecc-4ea4-8fd3-3025d02ffef8/\" target=\"_blank\">Periodic Transaction Report for 05/17/2019</a>",
+   "05/17/2019"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/dafb67b1-d578-402d-9e26-c3c2a575b42c/\" target=\"_blank\">Periodic Transaction Report for 05/15/2019</a>",
+   "05/15/2019"
+  ],
+  [
+   "Roger F",
+   "Wicker",
+   "Wicker, Roger (Senator)",
+   "<a href=\"/search/view/ptr/9da1d8c3-ac6f-4409-a0f9-1c6442bbeab8/\" target=\"_blank\">Periodic Transaction Report for 05/14/2019</a>",
+   "05/14/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/82643de6-1072-4e0e-81b2-3aa5049988db/\" target=\"_blank\">Periodic Transaction Report for 05/11/2019</a>",
+   "05/11/2019"
+  ],
+  [
+   "Jacklyn S",
+   "Rosen",
+   "Rosen, Jacky (Senator)",
+   "<a href=\"/search/view/ptr/8a349af4-cf50-4c02-8451-01b0082cbb2f/\" target=\"_blank\">Periodic Transaction Report for 05/09/2019</a>",
+   "05/09/2019"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/9b77526c-0b0e-453d-b906-a8bd5955758b/\" target=\"_blank\">Periodic Transaction Report for 05/09/2019</a>",
+   "05/09/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/fd71d29d-557b-4cf7-8080-a84c9bf6bce3/\" target=\"_blank\">Periodic Transaction Report for 02/10/2018 (Amendment 2)</a>",
+   "05/09/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/ff931edc-194d-48dc-98bf-ddef7f4d0e45/\" target=\"_blank\">Periodic Transaction Report for 05/14/2018 (Amendment 1)</a>",
+   "05/09/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/ef76dcba-a95a-4f41-abfd-3b32dde7035e/\" target=\"_blank\">Periodic Transaction Report for 02/10/2018 (Amendment 1)</a>",
+   "05/09/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/9b76f720-181f-496f-aed1-9f22805876e8/\" target=\"_blank\">Periodic Transaction Report for 05/08/2019 (Amendment 1)</a>",
+   "05/08/2019"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/9e6258de-a888-41d7-a489-493da362704a/\" target=\"_blank\">Periodic Transaction Report for 05/08/2019</a>",
+   "05/08/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/493baf8c-4c4a-449f-a5e6-d20fe910bf3b/\" target=\"_blank\">Periodic Transaction Report for 05/08/2019</a>",
+   "05/08/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/654577b9-4028-4cfa-bb47-c961a41f2b1b/\" target=\"_blank\">Periodic Transaction Report for 05/08/2019</a>",
+   "05/08/2019"
+  ],
+  [
+   "William",
+   "Cassidy",
+   "Cassidy, Bill (Senator)",
+   "<a href=\"/search/view/ptr/1ca02c35-f720-4d35-9c3c-e7b9f25b81c6/\" target=\"_blank\">Periodic Transaction Report for 05/03/2019</a>",
+   "05/03/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:34",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-05-01"
+ },
+ "recordsTotal": 17
+}

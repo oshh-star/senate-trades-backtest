@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "Thomas R",
+   "Tillis",
+   "Tillis, Thom (Senator)",
+   "<a href=\"/search/view/ptr/eaa9e663-e475-41a5-ac0d-3e107ed67481/\" target=\"_blank\">Periodic Transaction Report for 02/27/2019 (Amendment 2)</a>",
+   "07/30/2019"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/71d52432-2f3f-4692-acf0-7ba0d116d6c5/\" target=\"_blank\">Periodic Transaction Report for 07/24/2019</a>",
+   "07/24/2019"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/93e79f26-9cce-4cec-936f-33435468bdc0/\" target=\"_blank\">Periodic Transaction Report for 07/18/2019</a>",
+   "07/18/2019"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/4fced9a8-70f9-4a26-bd65-f4537ccb4a09/\" target=\"_blank\">Periodic Transaction Report for 07/15/2019</a>",
+   "07/15/2019"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/1146e634-4ae6-4bfd-b507-9aaae89fa796/\" target=\"_blank\">Periodic Transaction Report for 07/11/2019</a>",
+   "07/11/2019"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/79266f0a-3ed6-41c1-819f-075cd3c3c329/\" target=\"_blank\">Periodic Transaction Report for 07/10/2019</a>",
+   "07/10/2019"
+  ],
+  [
+   "John",
+   "Hoeven",
+   "Hoeven, John (Senator)",
+   "<a href=\"/search/view/ptr/47efab39-e97d-4131-9ac2-8d68c52b7c62/\" target=\"_blank\">Periodic Transaction Report for 07/09/2019</a>",
+   "07/09/2019"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/eb3075d2-0697-4113-a05f-086e3d919399/\" target=\"_blank\">Periodic Transaction Report for 07/02/2019</a>",
+   "07/02/2019"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/e356c17f-8053-4e6a-a7a4-f6507ac6d2fa/\" target=\"_blank\">Periodic Transaction Report for 07/02/2019</a>",
+   "07/02/2019"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:23:36",
+ "query": {
+  "date_field": "date received",
+  "end": "2019-07-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2019-07-01"
+ },
+ "recordsTotal": 9
+}
