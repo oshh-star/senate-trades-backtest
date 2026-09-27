@@ -1,0 +1,151 @@
+{
+ "senator": [
+  {
+   "first_name": "Adam B",
+   "last_name": "Schiff",
+   "office": "Schiff, Adam B. (Senator)",
+   "title": "Periodic Transaction Report for 09/30/2025",
+   "link": "/search/view/ptr/e8371653-d5d0-4150-abca-15cb5e6f1b2c/",
+   "report_id": "e8371653-d5d0-4150-abca-15cb5e6f1b2c",
+   "kind": "electronic",
+   "date_received": "09/30/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "RICHARD",
+   "last_name": "BLUMENTHAL",
+   "office": "Senator",
+   "title": "Periodic Transaction Report for 09/24/2025",
+   "link": "/search/view/paper/387cefb6-11f7-4871-89ef-5bad61124584/",
+   "report_id": "387cefb6-11f7-4871-89ef-5bad61124584",
+   "kind": "paper",
+   "date_received": "09/24/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "Rick",
+   "last_name": "Scott",
+   "office": "Scott, Rick (Senator)",
+   "title": "Periodic Transaction Report for 09/19/2025",
+   "link": "/search/view/ptr/7b7c3053-b221-4d35-8538-a25c751f302c/",
+   "report_id": "7b7c3053-b221-4d35-8538-a25c751f302c",
+   "kind": "electronic",
+   "date_received": "09/18/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "John",
+   "last_name": "Boozman",
+   "office": "Boozman, John (Senator)",
+   "title": "Periodic Transaction Report for 09/12/2025",
+   "link": "/search/view/ptr/c104f1ee-c957-4485-9807-e4798463c3b9/",
+   "report_id": "c104f1ee-c957-4485-9807-e4798463c3b9",
+   "kind": "electronic",
+   "date_received": "09/12/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "John",
+   "last_name": "Boozman",
+   "office": "Boozman, John (Senator)",
+   "title": "Periodic Transaction Report for 09/12/2025",
+   "link": "/search/view/ptr/59bccfcc-9400-4d3d-917f-ce22a0fd2feb/",
+   "report_id": "59bccfcc-9400-4d3d-917f-ce22a0fd2feb",
+   "kind": "electronic",
+   "date_received": "09/12/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "A. Mitchell",
+   "last_name": "McConnell, Jr.",
+   "office": "McConnell, A. Mitchell Jr. (Senator)",
+   "title": "Periodic Transaction Report for 09/12/2025",
+   "link": "/search/view/ptr/bf5feb82-a589-4318-a3ba-5905269d580a/",
+   "report_id": "bf5feb82-a589-4318-a3ba-5905269d580a",
+   "kind": "electronic",
+   "date_received": "09/12/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "RICHARD",
+   "last_name": "BLUMENTHAL",
+   "office": "Senator",
+   "title": "Periodic Transaction Report for 09/12/2025",
+   "link": "/search/view/paper/e08ef39c-87e8-4381-9f92-41218ecc7cd4/",
+   "report_id": "e08ef39c-87e8-4381-9f92-41218ecc7cd4",
+   "kind": "paper",
+   "date_received": "09/12/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "John",
+   "last_name": "Fetterman",
+   "office": "Fetterman, John (Senator)",
+   "title": "Periodic Transaction Report for 09/04/2025",
+   "link": "/search/view/ptr/d55832ea-b5e3-4e39-8587-5005dc48f3d6/",
+   "report_id": "d55832ea-b5e3-4e39-8587-5005dc48f3d6",
+   "kind": "electronic",
+   "date_received": "09/04/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "Sheldon",
+   "last_name": "Whitehouse",
+   "office": "Whitehouse, Sheldon (Senator)",
+   "title": "Periodic Transaction Report for 09/03/2025",
+   "link": "/search/view/ptr/59112b4e-976a-4c7a-92e5-112ab45d2bf8/",
+   "report_id": "59112b4e-976a-4c7a-92e5-112ab45d2bf8",
+   "kind": "electronic",
+   "date_received": "09/03/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "Shelley M",
+   "last_name": "Capito",
+   "office": "Capito, Shelley Moore (Senator)",
+   "title": "Periodic Transaction Report for 09/03/2025",
+   "link": "/search/view/ptr/0132a900-988f-466c-919d-73dfb4238889/",
+   "report_id": "0132a900-988f-466c-919d-73dfb4238889",
+   "kind": "electronic",
+   "date_received": "09/03/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  },
+  {
+   "first_name": "David H",
+   "last_name": "McCormick",
+   "office": "McCormick, David H. (Senator)",
+   "title": "Periodic Transaction Report for 09/01/2025",
+   "link": "/search/view/ptr/fc29dd5c-8fd0-4525-9aae-8f1e41c9337b/",
+   "report_id": "fc29dd5c-8fd0-4525-9aae-8f1e41c9337b",
+   "kind": "electronic",
+   "date_received": "09/01/2025",
+   "is_amendment": false,
+   "filer_type": "senator"
+  }
+ ],
+ "former_senator": [
+  {
+   "first_name": "Markwayne",
+   "last_name": "Mullin",
+   "office": "Mullin, Markwayne (Senator)",
+   "title": "Periodic Transaction Report for 09/17/2025",
+   "link": "/search/view/ptr/16cc4156-6e05-4ccb-b223-7c05496a6dd8/",
+   "report_id": "16cc4156-6e05-4ccb-b223-7c05496a6dd8",
+   "kind": "electronic",
+   "date_received": "09/17/2025",
+   "is_amendment": false,
+   "filer_type": "former_senator"
+  }
+ ],
+ "candidate": []
+}
