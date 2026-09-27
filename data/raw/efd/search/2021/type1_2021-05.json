@@ -1,0 +1,83 @@
+{
+ "data": [
+  [
+   "Mike",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/31ba15f9-3190-4872-8094-7044810a33c8/\" target=\"_blank\">Periodic Transaction Report for 05/20/2021</a>",
+   "05/20/2021"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/534becb6-71f8-418b-963b-a0a33b3a5be8/\" target=\"_blank\">Periodic Transaction Report for 03/16/2020 (Amendment 2)</a>",
+   "05/19/2021"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/5d96ee20-55b8-4258-b059-7f5c91683748/\" target=\"_blank\">Periodic Transaction Report for 03/16/2020 (Amendment 1)</a>",
+   "05/19/2021"
+  ],
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/121df9b4-2fea-46d1-8090-10cf701ddb38/\" target=\"_blank\">Periodic Transaction Report for 05/19/2021</a>",
+   "05/19/2021"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/84c90822-fa5c-4230-9db0-61ead2fc469a/\" target=\"_blank\">Periodic Transaction Report for 05/19/2021</a>",
+   "05/19/2021"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/b7ddcd56-16da-4a95-8000-2c2ac19be5e6/\" target=\"_blank\">Periodic Transaction Report for 05/12/2021</a>",
+   "05/12/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/612be9f2-83b7-4ae3-b107-458dd493b516/\" target=\"_blank\">Periodic Transaction Report for 05/11/2021</a>",
+   "05/11/2021"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/1c08a95d-02db-456c-8b96-e3e27ed2dc29/\" target=\"_blank\">Periodic Transaction Report for 05/10/2021</a>",
+   "05/10/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/6b110b5f-e060-4d6d-b1c2-b14d8442d03c/\" target=\"_blank\">Periodic Transaction Report for 05/06/2021</a>",
+   "05/06/2021"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/505fff21-a8c4-426e-9475-b119d3602361/\" target=\"_blank\">Periodic Transaction Report for 05/04/2021</a>",
+   "05/04/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:16",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-05-01"
+ },
+ "recordsTotal": 10
+}

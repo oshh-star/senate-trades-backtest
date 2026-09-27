@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/d6b9057a-9de9-4ec1-a210-31683309ded2/\" target=\"_blank\">Periodic Transaction Report for 10/28/2021</a>",
+   "10/28/2021"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/a91110ad-2cfb-452a-99be-f49948aecc93/\" target=\"_blank\">Periodic Transaction Report for 10/27/2021</a>",
+   "10/26/2021"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/a1cec047-73fd-4433-9ac4-bbd4a32db7d5/\" target=\"_blank\">Periodic Transaction Report for 10/15/2021</a>",
+   "10/15/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/8df50107-62ea-45a1-87db-ee144cc3f568/\" target=\"_blank\">Periodic Transaction Report for 10/12/2021</a>",
+   "10/12/2021"
+  ],
+  [
+   "Cynthia M",
+   "Lummis",
+   "Lummis, Cynthia (Senator)",
+   "<a href=\"/search/view/ptr/e4053f72-b9ad-4642-a996-f250485f4d33/\" target=\"_blank\">Periodic Transaction Report for 10/07/2021</a>",
+   "10/07/2021"
+  ],
+  [
+   "Cynthia M",
+   "Lummis",
+   "Lummis, Cynthia (Senator)",
+   "<a href=\"/search/view/ptr/1124fac7-7277-4328-8740-fbaceeaac1b5/\" target=\"_blank\">Periodic Transaction Report for 10/07/2021</a>",
+   "10/07/2021"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/a84b299c-20ca-4f6d-8987-a23c5f5bcf54/\" target=\"_blank\">Periodic Transaction Report for 10/04/2021</a>",
+   "10/04/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:21",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-10-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-10-01"
+ },
+ "recordsTotal": 7
+}

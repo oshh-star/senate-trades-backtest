@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "Ron L",
+   "Wyden",
+   "Wyden, Ron (Senator)",
+   "<a href=\"/search/view/ptr/32a40eaa-a4a2-4bc3-a594-1c05cbe0531b/\" target=\"_blank\">Periodic Transaction Report for 03/23/2021</a>",
+   "03/23/2021"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/ed8c186c-c456-4ce6-a8d7-4e8cc7175fd3/\" target=\"_blank\">Periodic Transaction Report for 03/16/2021</a>",
+   "03/16/2021"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/a68e9328-7725-42ef-8f34-32fb4139270f/\" target=\"_blank\">Periodic Transaction Report for 03/15/2021</a>",
+   "03/15/2021"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/3542ce53-b0e3-46a1-92f5-8f32c262fe3d/\" target=\"_blank\">Periodic Transaction Report for 03/14/2021</a>",
+   "03/14/2021"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/32550a8f-923e-416f-84f3-e19ab4f148b1/\" target=\"_blank\">Periodic Transaction Report for 03/10/2021</a>",
+   "03/10/2021"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/39693df5-619c-4640-ab14-d54f0786ba3a/\" target=\"_blank\">Periodic Transaction Report for 03/10/2021</a>",
+   "03/10/2021"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/f276f338-ccee-4392-bb95-f55fd8b57f24/\" target=\"_blank\">Periodic Transaction Report for 03/09/2021</a>",
+   "03/09/2021"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/b65c1aeb-1831-4da3-ae45-eddb7a270abe/\" target=\"_blank\">Periodic Transaction Report for 03/04/2021</a>",
+   "03/04/2021"
+  ]
+ ],
+ "fetched_at": "2026-09-27T15:59:14",
+ "query": {
+  "date_field": "date received",
+  "end": "2021-03-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2021-03-01"
+ },
+ "recordsTotal": 8
+}
