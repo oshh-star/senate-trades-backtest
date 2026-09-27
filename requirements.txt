@@ -1,6 +1,6 @@
 # Pinned versions. Python 3.11.
-# NOTE (2026-09-27): PyPI was blocked in the cloud environment when this was written, so these
-# pins could not be test-installed. The SessionStart hook installs them once PyPI is reachable.
+# Verified 2026-09-27 (Phase 1): every pin below installs from PyPI on Python 3.11.15 and the
+# pytest suite passes. The SessionStart hook (scripts/install_pkgs.sh) installs them in cloud sessions.
 pandas==2.2.3
 numpy==2.1.3
 scipy==1.14.1
