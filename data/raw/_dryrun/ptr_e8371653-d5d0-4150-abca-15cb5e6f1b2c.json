@@ -1,0 +1,30 @@
+{
+ "filer": "The Honorable Adam B Schiff (Schiff, Adam B.)",
+ "title": "Periodic Transaction Report for 09/30/2025",
+ "filed_date": "09/30/2025",
+ "filed_time": "11:20 AM",
+ "columns": [
+  "#",
+  "Transaction Date",
+  "Owner",
+  "Ticker",
+  "Asset Name",
+  "Asset Type",
+  "Type",
+  "Amount",
+  "Comment"
+ ],
+ "transactions": [
+  {
+   "#": "1",
+   "Transaction Date": "09/22/2025",
+   "Owner": "Spouse",
+   "Ticker": "AAPL",
+   "Asset Name": "Apple Inc",
+   "Asset Type": "Stock",
+   "Type": "Sale (Partial)",
+   "Amount": "$15,001 - $50,000",
+   "Comment": "--"
+  }
+ ]
+}
