@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/2cd90465-7aef-4f33-881a-57cbf4f439ef/\" target=\"_blank\">Periodic Transaction Report for 06/20/2024</a>",
+   "06/20/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/b5272e54-0ad8-462c-97f5-9af1ea47b1f1/\" target=\"_blank\">Periodic Transaction Report for 06/14/2024</a>",
+   "06/14/2024"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/33379f87-4267-4484-baa7-1f48a4375f65/\" target=\"_blank\">Periodic Transaction Report for 06/13/2024</a>",
+   "06/13/2024"
+  ],
+  [
+   "John W",
+   "Hickenlooper",
+   "Hickenlooper, John (Senator)",
+   "<a href=\"/search/view/ptr/115febfe-55cb-4f57-8452-71748371578b/\" target=\"_blank\">Periodic Transaction Report for 06/10/2024</a>",
+   "06/10/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/88c3e137-fe24-42c9-a65e-1370f6d2ca6f/\" target=\"_blank\">Periodic Transaction Report for 06/09/2024</a>",
+   "06/09/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/fa292fd4-a512-4dc9-99b5-0a397b1b92db/\" target=\"_blank\">Periodic Transaction Report for 06/06/2024</a>",
+   "06/06/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/5e1f9c4d-5891-47c4-a916-297de68814fd/\" target=\"_blank\">Periodic Transaction Report for 06/05/2024</a>",
+   "06/05/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:13",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-06-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-06-01"
+ },
+ "recordsTotal": 7
+}

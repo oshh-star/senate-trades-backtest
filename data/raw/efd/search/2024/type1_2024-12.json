@@ -1,0 +1,69 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/7d8d619e-cbcb-4fec-9146-d4bbd7b87c3a/\" target=\"_blank\">Periodic Transaction Report for 12/31/2024</a>",
+   "12/31/2024"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/63d6b410-364c-479e-bc08-f51fb938c72a/\" target=\"_blank\">Periodic Transaction Report for 12/30/2024</a>",
+   "12/30/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/d9c3a185-c62f-410b-96b7-ae662334ee39/\" target=\"_blank\">Periodic Transaction Report for 12/20/2024</a>",
+   "12/20/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/0fb45fec-86dd-4450-a593-2137fb0c5b39/\" target=\"_blank\">Periodic Transaction Report for 12/17/2024</a>",
+   "12/17/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/e69e4753-8d5b-485e-8c9f-3b8fedf24b80/\" target=\"_blank\">Periodic Transaction Report for 12/17/2024</a>",
+   "12/17/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/9af2d969-8530-41e5-bba4-fbdfa7dce896/\" target=\"_blank\">Periodic Transaction Report for 12/09/2024</a>",
+   "12/09/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/85351604-889b-4ee8-ac8e-6b99b5543143/\" target=\"_blank\">Periodic Transaction Report for 12/05/2024</a>",
+   "12/05/2024"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/8d18c865-ecbd-4945-aacd-5df646910155/\" target=\"_blank\">Periodic Transaction Report for 12/03/2024</a>",
+   "12/03/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:19",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-12-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-12-01"
+ },
+ "recordsTotal": 8
+}

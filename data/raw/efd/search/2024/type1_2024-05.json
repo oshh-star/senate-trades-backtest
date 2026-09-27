@@ -1,0 +1,83 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/1f48b3e2-dafe-4f0a-ab51-32cb30c9337b/\" target=\"_blank\">Periodic Transaction Report for 05/23/2024</a>",
+   "05/23/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/3c3b2fe8-c1ea-4d84-b986-a4484cbead80/\" target=\"_blank\">Periodic Transaction Report for 05/21/2024</a>",
+   "05/21/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/0383f798-74f7-466c-8ecc-2cd1873526eb/\" target=\"_blank\">Periodic Transaction Report for 05/20/2024</a>",
+   "05/20/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/dda61a64-82ed-4cc8-87e7-ef1d256c6565/\" target=\"_blank\">Periodic Transaction Report for 05/15/2024</a>",
+   "05/15/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/d079ab57-5156-4bf5-93a8-bbb556cf3a69/\" target=\"_blank\">Periodic Transaction Report for 05/13/2024</a>",
+   "05/13/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/a33e00ac-46fe-4e2f-b8ed-d8be0e4ebe33/\" target=\"_blank\">Periodic Transaction Report for 05/10/2024</a>",
+   "05/10/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/ab2e7833-29a8-4802-8873-14c882b32167/\" target=\"_blank\">Periodic Transaction Report for 05/08/2024</a>",
+   "05/08/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/a88b0a6b-d700-4c7a-ad2e-bfdf4bc5633f/\" target=\"_blank\">Periodic Transaction Report for 05/08/2024</a>",
+   "05/08/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/5ac65f38-4803-4b25-b252-5140bba4d8b5/\" target=\"_blank\">Periodic Transaction Report for 05/07/2024</a>",
+   "05/07/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/2842ecf5-a3c9-4263-a25b-cb6ddde63186/\" target=\"_blank\">Periodic Transaction Report for 05/03/2024</a>",
+   "05/03/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:12",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-05-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-05-01"
+ },
+ "recordsTotal": 10
+}

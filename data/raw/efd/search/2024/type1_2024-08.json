@@ -1,0 +1,97 @@
+{
+ "data": [
+  [
+   "Jerry",
+   "Moran,  ",
+   "Moran, Jerry (Senator)",
+   "<a href=\"/search/view/ptr/bef47efb-e0e5-47b1-ac7b-80dae682a8c7/\" target=\"_blank\">Periodic Transaction Report for 08/29/2024</a>",
+   "08/29/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/659af64a-f12f-43f9-b4f4-0a7bcf3d3613/\" target=\"_blank\">Periodic Transaction Report for 08/21/2024</a>",
+   "08/21/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/d7e2b033-3bb4-4877-95fc-497264e9e0ce/\" target=\"_blank\">Periodic Transaction Report for 08/20/2024</a>",
+   "08/20/2024"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/56ec1f7c-ec77-465a-a3c7-d70caf591e61/\" target=\"_blank\">Periodic Transaction Report for 08/19/2024</a>",
+   "08/19/2024"
+  ],
+  [
+   "Susan M",
+   "Collins",
+   "Collins, Susan M. (Senator)",
+   "<a href=\"/search/view/ptr/9b782ca8-bf85-4256-bada-b6cca565e20f/\" target=\"_blank\">Periodic Transaction Report for 08/16/2024</a>",
+   "08/15/2024"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/2596f23a-bfab-416a-8971-dab737a46efc/\" target=\"_blank\">Periodic Transaction Report for 08/15/2024</a>",
+   "08/15/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/73a99931-0e4a-4ca0-bf62-305fc0386998/\" target=\"_blank\">Periodic Transaction Report for 08/14/2024</a>",
+   "08/13/2024"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/161ff3c5-a401-48b8-aa82-70272dde4da1/\" target=\"_blank\">Periodic Transaction Report for 08/13/2024</a>",
+   "08/13/2024"
+  ],
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/f0ddb350-3763-4bc9-8d9f-6c0d8885396d/\" target=\"_blank\">Periodic Transaction Report for 08/13/2024</a>",
+   "08/13/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/919a2b2d-d5f8-4f14-ab26-9e67b82b7b4c/\" target=\"_blank\">Periodic Transaction Report for 08/11/2024</a>",
+   "08/11/2024"
+  ],
+  [
+   "John",
+   "Boozman",
+   "Boozman, John (Senator)",
+   "<a href=\"/search/view/ptr/53393448-4e89-49a2-9fb0-ddce2e0d4832/\" target=\"_blank\">Periodic Transaction Report for 08/06/2024</a>",
+   "08/06/2024"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/af3e4dec-0e1e-4833-9620-4f6c61523cfc/\" target=\"_blank\">Periodic Transaction Report for 08/05/2024</a>",
+   "08/05/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:15",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-08-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-08-01"
+ },
+ "recordsTotal": 12
+}

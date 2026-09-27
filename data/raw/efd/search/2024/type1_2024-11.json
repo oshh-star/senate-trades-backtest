@@ -1,0 +1,76 @@
+{
+ "data": [
+  [
+   "William F",
+   "Hagerty, IV",
+   "Hagerty, Bill (Senator)",
+   "<a href=\"/search/view/ptr/a076a6f8-81d7-4cde-9fa0-bb434fb9821a/\" target=\"_blank\">Periodic Transaction Report for 11/25/2024</a>",
+   "11/25/2024"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/c337b418-b154-457a-9fd1-147b2dbcb151/\" target=\"_blank\">Periodic Transaction Report for 11/21/2024</a>",
+   "11/21/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/b16a2be7-815a-4451-a4a7-dce671fb5e8d/\" target=\"_blank\">Periodic Transaction Report for 11/20/2024</a>",
+   "11/20/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/fb8e7c07-ad6c-48e0-a6af-de9bf58827d6/\" target=\"_blank\">Periodic Transaction Report for 11/15/2024</a>",
+   "11/15/2024"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/f107eca1-7edb-4f5a-b81e-f4134df3b21b/\" target=\"_blank\">Periodic Transaction Report for 11/14/2024</a>",
+   "11/14/2024"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/4c8b14b5-10c1-4b0c-93dc-49886f76075c/\" target=\"_blank\">Periodic Transaction Report for 11/12/2024</a>",
+   "11/12/2024"
+  ],
+  [
+   "John",
+   "Fetterman",
+   "Fetterman, John (Senator)",
+   "<a href=\"/search/view/ptr/04487b72-9a2e-4ba2-815d-bb092850f6a6/\" target=\"_blank\">Periodic Transaction Report for 11/12/2024</a>",
+   "11/12/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/31c14513-bc60-4d79-a426-210190638482/\" target=\"_blank\">Periodic Transaction Report for 11/12/2024</a>",
+   "11/12/2024"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/a3fd3dbc-8c32-476a-85eb-67ee0ce304cb/\" target=\"_blank\">Periodic Transaction Report for 11/07/2024</a>",
+   "11/07/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:18",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-11-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-11-01"
+ },
+ "recordsTotal": 9
+}

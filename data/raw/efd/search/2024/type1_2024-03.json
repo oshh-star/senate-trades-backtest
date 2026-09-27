@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/9a6471ce-564f-4f65-8a3d-2c12370bf870/\" target=\"_blank\">Periodic Transaction Report for 03/28/2024</a>",
+   "03/28/2024"
+  ],
+  [
+   "A. Mitchell",
+   "McConnell, Jr.",
+   "McConnell, A. Mitchell Jr. (Senator)",
+   "<a href=\"/search/view/ptr/4ab7f389-ca00-4a1e-b9e7-6eb91b8c3ebe/\" target=\"_blank\">Periodic Transaction Report for 03/19/2024</a>",
+   "03/19/2024"
+  ],
+  [
+   "Rick",
+   "Scott",
+   "Scott, Rick (Senator)",
+   "<a href=\"/search/view/ptr/43a6c37c-44f6-4749-9232-1e9725258b41/\" target=\"_blank\">Periodic Transaction Report for 03/15/2024</a>",
+   "03/15/2024"
+  ],
+  [
+   "Thomas H",
+   "Tuberville",
+   "Tuberville, Tommy (Senator)",
+   "<a href=\"/search/view/ptr/2fc8e17b-0db3-404a-b617-b180804063c6/\" target=\"_blank\">Periodic Transaction Report for 03/15/2024</a>",
+   "03/15/2024"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/94bc262a-9045-40d2-be53-18fd4ee6568c/\" target=\"_blank\">Periodic Transaction Report for 03/15/2024</a>",
+   "03/15/2024"
+  ],
+  [
+   "Christopher A",
+   "Coons",
+   "Coons, Chris (Senator)",
+   "<a href=\"/search/view/ptr/c56a14be-de98-45f7-8dd0-9c6e92d3619c/\" target=\"_blank\">Periodic Transaction Report for 03/06/2024</a>",
+   "03/06/2024"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/0663c4d9-f5f8-43d4-81d3-6d46b49d4dfd/\" target=\"_blank\">Periodic Transaction Report for 03/05/2024</a>",
+   "03/05/2024"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:06:10",
+ "query": {
+  "date_field": "date received",
+  "end": "2024-03-31",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2024-03-01"
+ },
+ "recordsTotal": 7
+}
