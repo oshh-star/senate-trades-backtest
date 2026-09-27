@@ -1,0 +1,102 @@
+# Locked specification for the "copy the US Senate" backtest.
+# Every value here is LOCKED. Changing one requires a dated entry in docs/DECISIONS.md.
+# Every variant run (any non-default value) must also be logged in docs/DECISIONS.md.
+
+project:
+  name: senate-trades-backtest
+  course: LBS CA01 Investment Fundamentals, Autumn 2026
+  frozen_rules_commit: null        # set when the rules are frozen (see oos below)
+
+paths:                             # relative to the repo root, always
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  tables: outputs/tables
+  figures: outputs/figures
+  data_quality_report: outputs/data_quality.md
+
+# ---------------------------------------------------------------- DATA
+data:
+  source: senate_efd               # scrape efdsearch.senate.gov directly
+  # The senate-stock-watcher-data GitHub repo is frozen and must NOT be used.
+  scrape_start: 2016-01-01         # PTR date received, inclusive
+  scrape_end: 2026-09-30           # PTR date received, inclusive; fixed cutoff
+  report_type: 11                  # eFD code for Periodic Transaction Report
+  # eFD filer_type codes: 1 = Senator, 4 = Candidate, 5 = Former Senator.
+  # eFD labels a filer by CURRENT status, so senators who have since left office
+  # appear under 5. "Sitting Senators" = sitting when they filed, hence 1 and 5.
+  # See DECISIONS.md 2026-09-27 "Filer types".
+  include_filer_types: [1, 5]
+  excluded_filer_types_logged: [4] # candidate filings: searched, counted, logged, excluded
+  paper_filings: exclude_and_log   # scanned filings cannot be parsed
+  amendments: keep_latest_and_log_replaced
+  cache_raw_downloads: true        # everything under data/raw/ is committed
+
+# Analysis window: window_years back from window_end (disclosure date).
+# 5 -> 2021-10-01..2026-09-30; 3 -> 2023-10-01..; 10 -> 2016-10-01..
+analysis:
+  window_end: 2026-09-30
+  window_years: 5                  # one-line change: 3 | 5 | 10
+
+# ---------------------------------------------------------------- UNIVERSE
+universe:
+  asset_classes: [common_stock, etf]   # options, bonds, crypto, mutual funds excluded
+  include_etfs: true               # every trade carries is_etf; false = ETF-excluded variant
+  exclude: [options, bonds, crypto, mutual_funds]
+  owners: [Self, Joint]            # add Spouse, Child for the family-included variant
+  keep_owner_field: true           # excluded owners stay in the raw cache and are counted by type
+
+# ---------------------------------------------------------------- TRADES
+trades:
+  sizing: midpoint                 # midpoint | lower_bound | equal_dollar
+  open_top_band: lower_bound       # e.g. "Over $50,000,000" -> 50,000,000
+  price_timing: next_close_after_disclosure   # next_close_after_disclosure | same_day_close
+  matching: fifo_same_senator_same_ticker     # regardless of owner
+  sale_full: close_whole_position
+  sale_partial: midpoint_capped_at_holding
+  unmatched_sales: ignore_and_log  # no shorting; includes stock bought before the window
+  exchanges: ignore_and_log
+  open_at_window_end: mark_to_last_price
+  also_compute_transaction_date_returns: true  # senator's return vs copier's return
+
+# ---------------------------------------------------------------- PORTFOLIO
+portfolio:
+  weighting: dollar                # dollar | equal (equal = rebalanced at each filing date)
+  idle_days_earn: risk_free
+  engine_frequency: daily
+  stats_frequency: monthly         # Sharpe ratios and factor regressions
+  event_study_horizons: [5, 21, 63, 126, 252]   # trading days
+  returns: total_usd               # dividend-adjusted adjusted close, USD
+
+prices:
+  price_source: yahoo              # yahoo | crsp (CRSP CSV in data/raw/crsp/, robustness check)
+  fallback_source: stooq           # Stooq was unreachable from the cloud on 2026-09-27
+  crsp_dir: data/raw/crsp
+
+factors:
+  source: ken_french
+  risk_free: ken_french_us_rf
+  daily_3factor_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip
+  daily_momentum_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip
+  monthly_3factor_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip
+  monthly_momentum_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip
+
+benchmarks:                        # built in Phase 5
+  - spy
+  - spy_vol_scaled                 # rf + k (SPY - rf), k = sigma_strategy / sigma_SPY
+  - equal_weighted_universe
+  - ff3_plus_momentum_us
+  - {ticker: NANC, from: 2023-02-01}
+  - {ticker: KRUZ, from: 2023-02-01}
+
+# ---------------------------------------------------------------- OUT-OF-SAMPLE FIREWALL
+oos:
+  split: midpoint                  # of the analysis window
+  oos_unlocked: false              # true only with a DECISIONS.md entry naming the frozen commit
+
+# ---------------------------------------------------------------- SCRAPING ETIQUETTE
+scrape:
+  min_seconds_between_requests: 1.0
+  user_agent: "LBS-CA01-senate-trades-backtest/0.1 (academic research; contact: {contact_email})"
+  contact_email: PLACEHOLDER_ASK_HARRY   # required before any SEC request
+  search_page_length: 100
