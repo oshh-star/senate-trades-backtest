@@ -1,0 +1,41 @@
+{
+ "data": [
+  [
+   "DIANNE ",
+   "FEINSTEIN",
+   "Former Senator",
+   "<a href=\"/search/view/paper/aa2d3d72-8f88-4eab-8192-b9c7276ae718/\" target=\"_blank\">Periodic Transaction Report for 11/15/2018</a>",
+   "11/15/2018"
+  ],
+  [
+   "James M",
+   "Inhofe",
+   "Inhofe, James M. (Senator)",
+   "<a href=\"/search/view/ptr/75695274-99b1-48cf-bf1d-f203108ed861/\" target=\"_blank\">Periodic Transaction Report for 11/08/2018</a>",
+   "11/08/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/32bb45d0-bd8d-4f3c-9003-69e577c4e6ae/\" target=\"_blank\">Periodic Transaction Report for 11/08/2018</a>",
+   "11/08/2018"
+  ],
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/ead81d70-af51-4861-839c-10933f246e99/\" target=\"_blank\">Periodic Transaction Report for 11/02/2018</a>",
+   "11/02/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:18",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-11-30",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-11-01"
+ },
+ "recordsTotal": 4
+}

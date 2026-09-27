@@ -1,0 +1,62 @@
+{
+ "data": [
+  [
+   "Pat",
+   "Roberts",
+   "Roberts, Pat (Senator)",
+   "<a href=\"/search/view/ptr/263a0113-cdbb-43b8-a994-75fec2fd65c4/\" target=\"_blank\">Periodic Transaction Report for 10/01/2018</a>",
+   "09/30/2018"
+  ],
+  [
+   "RICHARD M",
+   "BURR",
+   "Senator",
+   "<a href=\"/search/view/paper/883ac04d-7b79-4949-9221-6ac7567d2558/\" target=\"_blank\">Periodic Transaction Report for 09/26/2018</a>",
+   "09/26/2018"
+  ],
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/9b7a5966-d5fd-4976-8a2c-e28fbdc865f9/\" target=\"_blank\">Periodic Transaction Report for 09/13/2018</a>",
+   "09/13/2018"
+  ],
+  [
+   "DIANNE ",
+   "FEINSTEIN",
+   "Former Senator",
+   "<a href=\"/search/view/paper/4b384664-d12b-465b-8219-c910566adf06/\" target=\"_blank\">Periodic Transaction Report for 09/13/2018</a>",
+   "09/13/2018"
+  ],
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/a131cf90-0d59-4a6f-9581-0fdfc3aa0852/\" target=\"_blank\">Periodic Transaction Report for 09/07/2018</a>",
+   "09/07/2018"
+  ],
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/fe2fa574-9d5d-486d-87e3-30c6628ea080/\" target=\"_blank\">Periodic Transaction Report for 09/05/2018</a>",
+   "09/05/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/1446099f-87a3-4c3c-a875-d2761b013d35/\" target=\"_blank\">Periodic Transaction Report for 09/04/2018</a>",
+   "09/04/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:16",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-09-30",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-09-01"
+ },
+ "recordsTotal": 7
+}

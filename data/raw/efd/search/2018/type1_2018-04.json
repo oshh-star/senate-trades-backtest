@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/ba587b09-a5f3-48cf-b464-9bdeb6692241/\" target=\"_blank\">Periodic Transaction Report for 04/27/2018</a>",
+   "04/27/2018"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/e4eae413-9ad7-4ccf-a37c-a277a55707cc/\" target=\"_blank\">Periodic Transaction Report for 04/20/2018</a>",
+   "04/20/2018"
+  ],
+  [
+   "JOHN ",
+   "BOOZMAN",
+   "Senator",
+   "<a href=\"/search/view/paper/e194954a-ab04-4284-9d79-c830631d348d/\" target=\"_blank\">Periodic Transaction Report for 04/20/2018</a>",
+   "04/20/2018"
+  ],
+  [
+   "Sheldon",
+   "Whitehouse",
+   "Whitehouse, Sheldon (Senator)",
+   "<a href=\"/search/view/ptr/3e0e6c8e-e659-4081-97cf-05e6f350a459/\" target=\"_blank\">Periodic Transaction Report for 04/19/2018</a>",
+   "04/19/2018"
+  ],
+  [
+   "Angus S",
+   "King, Jr.",
+   "King, Angus (Senator)",
+   "<a href=\"/search/view/ptr/5c15668a-97a0-4959-896a-3d4b5baf7954/\" target=\"_blank\">Periodic Transaction Report for 04/16/2018</a>",
+   "04/16/2018"
+  ],
+  [
+   "Mike",
+   "Rounds",
+   "Rounds, Mike (Senator)",
+   "<a href=\"/search/view/ptr/6fdcc5cc-bcbd-4cd5-8feb-0e94c0f906df/\" target=\"_blank\">Periodic Transaction Report for 04/13/2018</a>",
+   "04/13/2018"
+  ],
+  [
+   "Gary C",
+   "Peters",
+   "Peters, Gary (Senator)",
+   "<a href=\"/search/view/ptr/8e46586d-e3a0-494b-baa5-4931183a6adc/\" target=\"_blank\">Periodic Transaction Report for 04/12/2018</a>",
+   "04/12/2018"
+  ],
+  [
+   "Mark R",
+   "Warner",
+   "Warner, Mark (Senator)",
+   "<a href=\"/search/view/ptr/9fa88d3e-3deb-4aca-940b-b34d6ffba01d/\" target=\"_blank\">Periodic Transaction Report for 04/12/2018</a>",
+   "04/12/2018"
+  ],
+  [
+   "Tina",
+   "Smith",
+   "Smith, Tina (Senator)",
+   "<a href=\"/search/view/ptr/5aa4f067-861b-466a-95e5-6d31e3d79ea1/\" target=\"_blank\">Periodic Transaction Report for 04/09/2018</a>",
+   "04/09/2018"
+  ],
+  [
+   "Shelley M",
+   "Capito",
+   "Capito, Shelley Moore (Senator)",
+   "<a href=\"/search/view/ptr/0ab7eda5-7112-4fda-919b-b44b37efd191/\" target=\"_blank\">Periodic Transaction Report for 04/07/2018</a>",
+   "04/07/2018"
+  ],
+  [
+   "RICHARD ",
+   "BLUMENTHAL",
+   "Senator",
+   "<a href=\"/search/view/paper/b592b168-6ec8-4ea4-b153-cd3148404c2e/\" target=\"_blank\">Periodic Transaction Report for 04/02/2018</a>",
+   "04/02/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:19:57",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-04-30",
+  "filer_type": 1,
+  "report_type": 11,
+  "start": "2018-04-01"
+ },
+ "recordsTotal": 11
+}

@@ -1,0 +1,90 @@
+{
+ "data": [
+  [
+   "Pat",
+   "Roberts",
+   "Roberts, Pat (Senator)",
+   "<a href=\"/search/view/ptr/03cb719a-2b68-4f51-b5ee-c96a9b9b9e13/\" target=\"_blank\">Periodic Transaction Report for 10/24/2018</a>",
+   "10/24/2018"
+  ],
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/f76f4a51-a0f6-458c-a0f0-20f0f664cd9c/\" target=\"_blank\">Periodic Transaction Report for 05/20/2015 (Amendment 2)</a>",
+   "10/16/2018"
+  ],
+  [
+   "RICHARD M",
+   "BURR",
+   "Senator",
+   "<a href=\"/search/view/paper/0a9a1209-6dc7-499b-be11-847b557c833d/\" target=\"_blank\">Periodic Transaction Report for 10/16/2018</a>",
+   "10/16/2018"
+  ],
+  [
+   "RICHARD M",
+   "BURR",
+   "Senator",
+   "<a href=\"/search/view/paper/39c78342-f5e4-47eb-83fd-2e101e8c1724/\" target=\"_blank\">Periodic Transaction Report for 10/16/2018</a>",
+   "10/16/2018"
+  ],
+  [
+   "DIANNE ",
+   "FEINSTEIN",
+   "Former Senator",
+   "<a href=\"/search/view/paper/60f60b4f-0b5d-4090-82a8-b0800110d21e/\" target=\"_blank\">Periodic Transaction Report for 10/15/2018</a>",
+   "10/15/2018"
+  ],
+  [
+   "James M",
+   "Inhofe",
+   "Inhofe, James M. (Senator)",
+   "<a href=\"/search/view/ptr/cadee6b4-fce1-4f81-829f-34776edf2bbe/\" target=\"_blank\">Periodic Transaction Report for 10/11/2018</a>",
+   "10/11/2018"
+  ],
+  [
+   "RICHARD M",
+   "BURR",
+   "Senator",
+   "<a href=\"/search/view/paper/c413b08c-f70d-41d1-a7b8-ea38a00f6d18/\" target=\"_blank\">Periodic Transaction Report for 10/09/2018</a>",
+   "10/09/2018"
+  ],
+  [
+   "Patrick J",
+   "Toomey",
+   "Toomey, Pat (Senator)",
+   "<a href=\"/search/view/ptr/0e79d520-ab5e-4b3a-83ec-8a4c4c57538d/\" target=\"_blank\">Periodic Transaction Report for 10/05/2018</a>",
+   "10/05/2018"
+  ],
+  [
+   "Thomas R",
+   "Carper",
+   "Carper, Thomas R. (Senator)",
+   "<a href=\"/search/view/ptr/bb4fab28-8b2b-4fd7-a7f0-3127150d61b8/\" target=\"_blank\">Periodic Transaction Report for 10/04/2018</a>",
+   "10/04/2018"
+  ],
+  [
+   "Lamar",
+   "Alexander",
+   "Alexander, Lamar (Senator)",
+   "<a href=\"/search/view/ptr/288c9d97-88cf-42f7-8736-661d3a564ef7/\" target=\"_blank\">Periodic Transaction Report for 10/03/2018</a>",
+   "10/02/2018"
+  ],
+  [
+   "David A",
+   "Perdue , Jr",
+   "Perdue, David (Senator)",
+   "<a href=\"/search/view/ptr/38b95ec7-d871-407d-957e-724e5cefead0/\" target=\"_blank\">Periodic Transaction Report for 10/02/2018</a>",
+   "10/02/2018"
+  ]
+ ],
+ "fetched_at": "2026-09-27T16:20:17",
+ "query": {
+  "date_field": "date received",
+  "end": "2018-10-31",
+  "filer_type": 5,
+  "report_type": 11,
+  "start": "2018-10-01"
+ },
+ "recordsTotal": 11
+}
