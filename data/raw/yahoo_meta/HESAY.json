@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1296052200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
+  "shortName": "Hermes International SA",
+  "symbol": "HESAY"
+ },
+ "queried_at": "2026-09-27T22:38:14Z",
+ "symbol": "HESAY"
+}

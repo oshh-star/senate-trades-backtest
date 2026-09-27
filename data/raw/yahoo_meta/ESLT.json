@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 849105000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Elbit Systems Ltd.",
+  "shortName": "Elbit Systems Ltd.",
+  "symbol": "ESLT"
+ },
+ "queried_at": "2026-09-27T22:35:05Z",
+ "symbol": "ESLT"
+}

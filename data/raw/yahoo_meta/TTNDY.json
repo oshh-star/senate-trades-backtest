@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 994858200,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Techtronic Industries Company Limited",
+  "shortName": "Techtronic Industries Ltd.",
+  "symbol": "TTNDY"
+ },
+ "queried_at": "2026-09-27T22:51:35Z",
+ "symbol": "TTNDY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 735571800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "O'Reilly Automotive, Inc.",
+  "shortName": "O'Reilly Automotive, Inc.",
+  "symbol": "ORLY"
+ },
+ "queried_at": "2026-09-27T22:45:17Z",
+ "symbol": "ORLY"
+}

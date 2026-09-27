@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 761495400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Martin Marietta Materials, Inc.",
+  "shortName": "Martin Marietta Materials, Inc.",
+  "symbol": "MLM"
+ },
+ "queried_at": "2026-09-27T22:42:54Z",
+ "symbol": "MLM"
+}

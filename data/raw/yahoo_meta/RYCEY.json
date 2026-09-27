@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Rolls-Royce Holdings plc",
+  "shortName": "Rolls Royce Holdings plc",
+  "symbol": "RYCEY"
+ },
+ "queried_at": "2026-09-27T22:48:10Z",
+ "symbol": "RYCEY"
+}

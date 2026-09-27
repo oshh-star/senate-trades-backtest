@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 914337000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street Utilities Select Sector SPDR ETF",
+  "shortName": "State Street Utilities Select S",
+  "symbol": "XLU"
+ },
+ "queried_at": "2026-09-27T22:54:21Z",
+ "symbol": "XLU"
+}

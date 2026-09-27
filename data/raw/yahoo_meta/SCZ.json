@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1197469800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI EAFE Small-Cap ETF",
+  "shortName": "iShares MSCI EAFE Small-Cap ETF",
+  "symbol": "SCZ"
+ },
+ "queried_at": "2026-09-27T22:48:37Z",
+ "symbol": "SCZ"
+}

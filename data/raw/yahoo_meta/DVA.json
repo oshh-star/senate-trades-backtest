@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 815149800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "DaVita Inc.",
+  "shortName": "DaVita Inc.",
+  "symbol": "DVA"
+ },
+ "queried_at": "2026-09-27T22:34:10Z",
+ "symbol": "DVA"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146576600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Dividend Appreciation Index Fund ETF Shares",
+  "shortName": "Vanguard Div Appreciation ETF",
+  "symbol": "VIG"
+ },
+ "queried_at": "2026-09-27T22:52:42Z",
+ "symbol": "VIG"
+}

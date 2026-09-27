@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 485703000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Healthpeak Properties, Inc.",
+  "shortName": "Healthpeak Properties, Inc.",
+  "symbol": "DOC"
+ },
+ "queried_at": "2026-09-27T22:33:47Z",
+ "symbol": "DOC"
+}

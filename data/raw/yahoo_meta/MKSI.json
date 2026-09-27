@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 922804200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "MKS Inc.",
+  "shortName": "MKS Inc.",
+  "symbol": "MKSI"
+ },
+ "queried_at": "2026-09-27T22:42:52Z",
+ "symbol": "MKSI"
+}

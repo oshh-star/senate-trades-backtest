@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1514903400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "VICI Properties Inc.",
+  "shortName": "VICI Properties Inc.",
+  "symbol": "VICI"
+ },
+ "queried_at": "2026-09-27T22:52:41Z",
+ "symbol": "VICI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1571751000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Halma plc",
+  "shortName": "Halma PLC",
+  "symbol": "HALMY"
+ },
+ "queried_at": "2026-09-27T22:37:54Z",
+ "symbol": "HALMY"
+}

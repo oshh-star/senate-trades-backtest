@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1618407000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "RUM Group Inc.",
+  "shortName": "RUM Group Inc.",
+  "symbol": "RUM"
+ },
+ "queried_at": "2026-09-27T22:48:06Z",
+ "symbol": "RUM"
+}

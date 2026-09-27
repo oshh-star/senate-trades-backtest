@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415889000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Enova International, Inc.",
+  "shortName": "Enova International, Inc.",
+  "symbol": "ENVA"
+ },
+ "queried_at": "2026-09-27T22:34:51Z",
+ "symbol": "ENVA"
+}

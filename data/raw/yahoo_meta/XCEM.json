@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1441200600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Columbia EM Core ex-China ETF",
+  "shortName": "Columbia EM Core ex-China ETF",
+  "symbol": "XCEM"
+ },
+ "queried_at": "2026-09-27T22:54:14Z",
+ "symbol": "XCEM"
+}

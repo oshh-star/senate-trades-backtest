@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1267453800,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Victory Sycamore Established Value I",
+  "shortName": "Victory Sycamore Established Va",
+  "symbol": "VEVIX"
+ },
+ "queried_at": "2026-09-27T22:52:28Z",
+ "symbol": "VEVIX"
+}

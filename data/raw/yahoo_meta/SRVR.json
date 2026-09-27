@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1526477400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Pacer Data & Infrastructure Real Estate ETF",
+  "shortName": "Pacer Data & Infrastructure Rea",
+  "symbol": "SRVR"
+ },
+ "queried_at": "2026-09-27T22:49:56Z",
+ "symbol": "SRVR"
+}

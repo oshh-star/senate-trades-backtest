@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322324200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Welltower Inc.",
+  "shortName": "Welltower Inc.",
+  "symbol": "WELL"
+ },
+ "queried_at": "2026-09-27T22:53:30Z",
+ "symbol": "WELL"
+}

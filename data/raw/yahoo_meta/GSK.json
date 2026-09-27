@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 323101800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "GSK plc",
+  "shortName": "GSK plc",
+  "symbol": "GSK"
+ },
+ "queried_at": "2026-09-27T22:37:45Z",
+ "symbol": "GSK"
+}

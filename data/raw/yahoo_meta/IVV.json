@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 958743000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Core S&P 500 ETF",
+  "shortName": "iShares Core S&P 500 ETF",
+  "symbol": "IVV"
+ },
+ "queried_at": "2026-09-27T22:39:50Z",
+ "symbol": "IVV"
+}

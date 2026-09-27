@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1182432600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares International Select Dividend ETF",
+  "shortName": "iShares International Select Di",
+  "symbol": "IDV"
+ },
+ "queried_at": "2026-09-27T22:39:02Z",
+ "symbol": "IDV"
+}

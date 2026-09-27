@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1513693800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "UniCredit S.p.A.",
+  "shortName": "UniCredito Spa",
+  "symbol": "UNCRY"
+ },
+ "queried_at": "2026-09-27T22:52:00Z",
+ "symbol": "UNCRY"
+}

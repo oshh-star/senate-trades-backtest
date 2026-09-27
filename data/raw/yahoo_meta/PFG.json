@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1003843800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Principal Financial Group, Inc.",
+  "shortName": "Principal Financial Group Inc",
+  "symbol": "PFG"
+ },
+ "queried_at": "2026-09-27T22:45:51Z",
+ "symbol": "PFG"
+}

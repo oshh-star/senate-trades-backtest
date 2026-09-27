@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1298039400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust IndXX NextG ETF",
+  "shortName": "First Trust Indxx NextG ETF",
+  "symbol": "NXTG"
+ },
+ "queried_at": "2026-09-27T22:44:51Z",
+ "symbol": "NXTG"
+}

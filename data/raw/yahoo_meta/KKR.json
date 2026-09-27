@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1279200600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "KKR & Co. Inc.",
+  "shortName": "KKR & Co. Inc.",
+  "symbol": "KKR"
+ },
+ "queried_at": "2026-09-27T22:40:45Z",
+ "symbol": "KKR"
+}

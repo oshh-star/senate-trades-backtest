@@ -1,0 +1,69 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:37:41Z"
+ },
+ "queried_at": "2026-09-27T23:00:30Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "BVC",
+   "exchange": "BVC",
+   "longname": "Grupo Bol\u00edvar S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "GRUPO BOLIVAR SA",
+   "symbol": "GRUBOLIVAR.CL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "Dogan Sirketler Grubu Holding A.S.",
+   "quoteType": "EQUITY",
+   "shortname": "DOGAN HOLDING",
+   "symbol": "DOHOL.IS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "Doganlar Mobilya Grubu Imalat Sanayi ve Ticaret Anonim Sirketi",
+   "quoteType": "EQUITY",
+   "shortname": "DOGANLAR MOBILYA",
+   "symbol": "DGNMO.IS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "AG Anadolu Grubu Holding A.S.",
+   "quoteType": "EQUITY",
+   "shortname": "ANADOLU GRUBU HOLDING",
+   "symbol": "AGHOL.IS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GrubMarket - Company Level",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "GRUMZZX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "GRUB"
+}

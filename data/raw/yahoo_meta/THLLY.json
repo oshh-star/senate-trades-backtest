@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1010154600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Thales S.A.",
+  "shortName": "THALES",
+  "symbol": "THLLY"
+ },
+ "queried_at": "2026-09-27T22:50:56Z",
+ "symbol": "THLLY"
+}

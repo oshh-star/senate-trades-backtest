@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:34:57Z"
+ },
+ "queried_at": "2026-09-27T22:59:55Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Equity Metals Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Equity Metals Corporation",
+   "symbol": "EQMEF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "onemarkets Rockefeller Glb Innvt EqM\u20acAcc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001S137.F",
+   "symbol": "0P0001S137.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "EQM Lithium & Battery Technolog",
+   "quoteType": "INDEX",
+   "shortname": "EQM Lithium & Battery Technolog",
+   "symbol": "^BATTIDXN",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "onemarkets Rockefeller Glb Innvt EqM$Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "onemarkets Rockefeller Global I",
+   "symbol": "0P0001S139",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "EQMC Europe Development Capital G2",
+   "quoteType": "MUTUALFUND",
+   "shortname": "EQMC Europe Development Capital",
+   "symbol": "0P0001990L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "PUTM ACS UK All Shr Lstd EqMultiMgrC\u00a3Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001U31X.L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "EQM Rare Earths & Critical Mate",
+   "quoteType": "INDEX",
+   "shortname": "EQM Rare Earths & Critical Mate",
+   "symbol": "^CRITNTR",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "EQM"
+}

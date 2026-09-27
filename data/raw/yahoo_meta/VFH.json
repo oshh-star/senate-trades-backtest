@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1075473000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Financials Index Fund ETF Shares",
+  "shortName": "Vanguard Financials ETF",
+  "symbol": "VFH"
+ },
+ "queried_at": "2026-09-27T22:52:31Z",
+ "symbol": "VFH"
+}

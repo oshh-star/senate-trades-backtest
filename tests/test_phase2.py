@@ -179,6 +179,23 @@ def test_verify_embedded_needs_yahoo_and_a_shared_word():
     assert tk.verify_embedded("NVDA", "", {"recognised": True, "name": "NVIDIA", "short_name": ""}, None)[0]
 
 
+@pytest.mark.parametrize("a,b,ok", [
+    ("NN Group NV Unsponsored ADR", "NN Group N.V.", True), ("Loreal Company ADR France", "L'Oréal S.A.", True),
+    ("Fuji Film Holding Corporation ADR", "FUJIFILM Holdings Corporation", True),
+    ("Heidelbergcement AG ADR", "Heidelberg Materials AG", True),
+    ("Facebook, Inc.", "ProShares S&P 500 Dynamic Daily Buffer ETF", False),
+    ("Glaxo Wellcome plc ADR", "GSK plc", False)])
+def test_names_agree(a, b, ok):
+    assert bool(tk.names_agree(a, b)) is ok
+
+
+def test_sec_share_class_from_name():
+    sec = tk.SecIndex([{"ticker": "BF-A", "title": "BROWN FORMAN CORP", "cik": "9"},
+                       {"ticker": "BF-B", "title": "BROWN FORMAN CORP", "cik": "9"}])
+    assert sec.match_name("Brown-Forman Corp Class B")[0] == "BF-B"
+    assert sec.match_name("Brown-Forman Corp")[0] == ""
+
+
 def test_sec_name_match_is_exact_and_unique():
     sec = tk.SecIndex([{"ticker": "QCOM", "title": "QUALCOMM INC/DE", "cik": "1"},
                        {"ticker": "GOOGL", "title": "Alphabet Inc.", "cik": "2"},

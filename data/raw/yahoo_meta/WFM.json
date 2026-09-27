@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:53:39Z"
+ },
+ "queried_at": "2026-09-27T23:03:58Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Allspring Special Mid Cap Value Inst",
+   "quoteType": "MUTUALFUND",
+   "shortname": "WF Special Mid Cap Value Fund I",
+   "symbol": "WFMIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Allspring Special Mid Cap Value Admin",
+   "quoteType": "MUTUALFUND",
+   "shortname": "WF Special Mid Cap Value Fund A",
+   "symbol": "WFMDX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "WFM"
+}

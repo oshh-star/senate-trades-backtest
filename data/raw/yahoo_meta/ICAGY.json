@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 556291800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "International Consolidated Airlines Group S.A.",
+  "shortName": "International Consolidated Airl",
+  "symbol": "ICAGY"
+ },
+ "queried_at": "2026-09-27T22:38:56Z",
+ "symbol": "ICAGY"
+}

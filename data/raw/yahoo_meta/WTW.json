@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 992352600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Willis Towers Watson Public Limited Company",
+  "shortName": "Willis Towers Watson Public Lim",
+  "symbol": "WTW"
+ },
+ "queried_at": "2026-09-27T22:54:04Z",
+ "symbol": "WTW"
+}

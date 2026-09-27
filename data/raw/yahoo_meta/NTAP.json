@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 816964200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "NetApp, Inc.",
+  "shortName": "NetApp, Inc.",
+  "symbol": "NTAP"
+ },
+ "queried_at": "2026-09-27T22:44:27Z",
+ "symbol": "NTAP"
+}

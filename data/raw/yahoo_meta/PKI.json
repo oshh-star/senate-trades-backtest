@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:46:03Z"
+ },
+ "queried_at": "2026-09-27T23:02:21Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "B-INDEX ETF CONNECT CHINA UNIVERSAL CSI 300 FUNDO DE \u00cdNDICE - RESP LIMITADA",
+   "quoteType": "EQUITY",
+   "shortname": "B INDEX PKINCI",
+   "symbol": "PKIN11.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Pekin Life Insurance Company",
+   "quoteType": "EQUITY",
+   "shortname": "Pekin Life Insurance Co.",
+   "symbol": "PKIN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "PKI Dynamic Fund",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001ED5S.F",
+   "symbol": "0P0001ED5S.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "MSC",
+   "exchange": "MSC",
+   "longname": "MSCI PK/INFORMATION TEC STRD PK",
+   "quoteType": "INDEX",
+   "shortname": "MSCI PK/INFORMATION TEC STRD PK",
+   "symbol": "^118027-PKR-STRD",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "MSC",
+   "exchange": "MSC",
+   "longname": "MSCI PK/INFORMATION TEC GRTR PK",
+   "quoteType": "INDEX",
+   "shortname": "MSCI PK/INFORMATION TEC GRTR PK",
+   "symbol": "^118027-PKR-GRTR",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "MSC",
+   "exchange": "MSC",
+   "longname": "MSCI PK/INDUSTRIALS STRD PKR",
+   "quoteType": "INDEX",
+   "shortname": "MSCI PK/INDUSTRIALS STRD PKR",
+   "symbol": "^118026-PKR-STRD",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "MSC",
+   "exchange": "MSC",
+   "longname": "MSCI PK/INDUSTRIALS GRTR PKR",
+   "quoteType": "INDEX",
+   "shortname": "MSCI PK/INDUSTRIALS GRTR PKR",
+   "symbol": "^118026-PKR-GRTR",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "PKI"
+}

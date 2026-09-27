@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 800026200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Darden Restaurants, Inc.",
+  "shortName": "Darden Restaurants, Inc.",
+  "symbol": "DRI"
+ },
+ "queried_at": "2026-09-27T22:33:58Z",
+ "symbol": "DRI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1474032600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Fidelity Quality Factor ETF",
+  "shortName": "Fidelity Quality Factor ETF",
+  "symbol": "FQAL"
+ },
+ "queried_at": "2026-09-27T22:36:32Z",
+ "symbol": "FQAL"
+}

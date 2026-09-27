@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 769267800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ING Groep N.V.",
+  "shortName": "ING Group, N.V.",
+  "symbol": "ING"
+ },
+ "queried_at": "2026-09-27T22:39:25Z",
+ "symbol": "ING"
+}

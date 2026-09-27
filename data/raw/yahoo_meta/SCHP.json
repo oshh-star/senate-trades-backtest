@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1281015000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Schwab U.S. TIPS ETF",
+  "shortName": "Schwab U.S. TIPs ETF",
+  "symbol": "SCHP"
+ },
+ "queried_at": "2026-09-27T22:48:33Z",
+ "symbol": "SCHP"
+}

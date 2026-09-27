@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1585661400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Westwood Quality SmallCap Fund Ultra",
+  "shortName": "Westwood SmallCap Fund - Class ",
+  "symbol": "WWSYX"
+ },
+ "queried_at": "2026-09-27T22:54:06Z",
+ "symbol": "WWSYX"
+}

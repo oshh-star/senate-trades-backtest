@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1123680600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "National Grid plc",
+  "shortName": "National Grid Transco, PLC Nati",
+  "symbol": "NGG"
+ },
+ "queried_at": "2026-09-27T22:43:57Z",
+ "symbol": "NGG"
+}

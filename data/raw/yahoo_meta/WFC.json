@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Wells Fargo & Company",
+  "shortName": "Wells Fargo & Company",
+  "symbol": "WFC"
+ },
+ "queried_at": "2026-09-27T22:53:37Z",
+ "symbol": "WFC"
+}

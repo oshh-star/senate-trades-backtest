@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 465053400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Expeditors International of Washington, Inc.",
+  "shortName": "Expeditors International of Was",
+  "symbol": "EXPD"
+ },
+ "queried_at": "2026-09-27T22:35:31Z",
+ "symbol": "EXPD"
+}

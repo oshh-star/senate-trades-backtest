@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:32:39Z"
+ },
+ "queried_at": "2026-09-27T22:59:15Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Critical One Energy Inc.",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CTLOF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CTL3B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "CTLIAUT@EC2612A",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "22593.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CTL9B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "CTLUXSH@EC2701B",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "14953.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CTL7B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Zhejiang Sanhua Intelligent Controls Co.,Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ZHEJIANG SANHUA INTELLIGENT CTL",
+   "symbol": "ZSINF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CTL"
+}

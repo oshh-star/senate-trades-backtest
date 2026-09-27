@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1605623400,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Revelation Biosciences, Inc.",
+  "shortName": "Revelation Biosciences, Inc.",
+  "symbol": "REVB"
+ },
+ "queried_at": "2026-09-27T22:47:25Z",
+ "symbol": "REVB"
+}

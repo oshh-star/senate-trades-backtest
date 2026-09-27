@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1271770200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Global X Silver Miners ETF",
+  "shortName": "Global X Silver Miners ETF",
+  "symbol": "SIL"
+ },
+ "queried_at": "2026-09-27T22:49:02Z",
+ "symbol": "SIL"
+}

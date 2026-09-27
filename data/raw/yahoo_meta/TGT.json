@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Target Corporation",
+  "shortName": "Target Corporation",
+  "symbol": "TGT"
+ },
+ "queried_at": "2026-09-27T22:50:55Z",
+ "symbol": "TGT"
+}

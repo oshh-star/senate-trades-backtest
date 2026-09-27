@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1231770600,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "DHL AG",
+  "shortName": "Deutsche Post AG",
+  "symbol": "DHLGY"
+ },
+ "queried_at": "2026-09-27T22:33:23Z",
+ "symbol": "DHLGY"
+}

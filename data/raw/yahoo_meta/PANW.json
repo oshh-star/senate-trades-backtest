@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1342791000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Palo Alto Networks, Inc.",
+  "shortName": "Palo Alto Networks, Inc.",
+  "symbol": "PANW"
+ },
+ "queried_at": "2026-09-27T22:45:30Z",
+ "symbol": "PANW"
+}

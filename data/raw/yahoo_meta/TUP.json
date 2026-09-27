@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:51:38Z"
+ },
+ "queried_at": "2026-09-27T23:03:32Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "T\u00fcrkiye Petrol Rafinerileri A.S.",
+   "quoteType": "EQUITY",
+   "shortname": "TUPRAS",
+   "symbol": "TUPRS.IS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Tupy S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "TUPY        ON      NM",
+   "symbol": "TUPY3.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "TUPY        ON      NM",
+   "symbol": "TUPY3Q.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "TD Canada Banks 5% AR Index-Linked Autocallable Coupon Notes - Series 3524 NL (879352A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "TUPQZXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Wright Tupinamba Timercado FIFM C Priv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P00017NI5.SA",
+   "symbol": "0P00017NI5.SA",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "BTG Tup\u00e3 FIM C Priv IE",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P00015QKQ.SA",
+   "symbol": "0P00015QKQ.SA",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Wright Tupinamba II FIFM C Priv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001T5Q2.SA",
+   "symbol": "0P0001T5Q2.SA",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "TUP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1337088600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daikin Industries,Ltd.",
+  "shortName": "Daikin Industries Ltd.",
+  "symbol": "DKILF"
+ },
+ "queried_at": "2026-09-27T22:59:36Z",
+ "symbol": "DKILF"
+}

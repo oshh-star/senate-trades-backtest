@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1776346200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "ClearThink 1 Acquisition Corp.",
+  "shortName": "ClearThink 1 Acquisition Corp.",
+  "symbol": "CTAA"
+ },
+ "queried_at": "2026-09-27T22:32:35Z",
+ "symbol": "CTAA"
+}

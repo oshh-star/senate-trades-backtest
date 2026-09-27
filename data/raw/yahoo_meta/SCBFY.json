@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1570541400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Standard Chartered PLC",
+  "shortName": "Standard Chartered PLC",
+  "symbol": "SCBFY"
+ },
+ "queried_at": "2026-09-27T22:48:28Z",
+ "symbol": "SCBFY"
+}

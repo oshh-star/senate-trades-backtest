@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1374759000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "WisdomTree U.S. SmallCap Quality Dividend Growth Fund",
+  "shortName": "WisdomTree U.S. SmallCap Qualit",
+  "symbol": "DGRS"
+ },
+ "queried_at": "2026-09-27T22:33:20Z",
+ "symbol": "DGRS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 887293800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Quanta Services, Inc.",
+  "shortName": "Quanta Services, Inc.",
+  "symbol": "PWR"
+ },
+ "queried_at": "2026-09-27T22:46:48Z",
+ "symbol": "PWR"
+}

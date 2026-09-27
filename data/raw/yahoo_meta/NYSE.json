@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:44:52Z"
+ },
+ "queried_at": "2026-09-27T23:02:09Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "NYSE Composite Index",
+   "quoteType": "INDEX",
+   "shortname": "NYSE Composite Index",
+   "symbol": "^NYA",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "NYSE American Composite Index",
+   "quoteType": "INDEX",
+   "shortname": "NYSE American Composite Index",
+   "symbol": "^XAX",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "NYSE Arca Gold BUGS Index",
+   "quoteType": "INDEX",
+   "shortname": "NYSE Arca Gold BUGS Index",
+   "symbol": "^HUI",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYS",
+   "longname": "NYSE FANG+ Index",
+   "quoteType": "INDEX",
+   "shortname": "NYSE FANG+ Index",
+   "symbol": "^NYFANG",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "First Trust NYSE Arca Biotechnology Index Fund",
+   "quoteType": "ETF",
+   "shortname": "First Trust Amex Biotech Index ",
+   "symbol": "FBT",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "State Street SPDR NYSE Technology ETF",
+   "quoteType": "ETF",
+   "shortname": "State Street SPDR NYSE Technolo",
+   "symbol": "XNTK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Direxion Daily NYSE FANG+ Bull 2X Shares",
+   "quoteType": "ETF",
+   "shortname": "Direxion Daily NYSE FANG+ Bull ",
+   "symbol": "FNGG",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "NYSE"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1413811800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Keysight Technologies, Inc.",
+  "shortName": "Keysight Technologies Inc.",
+  "symbol": "KEYS"
+ },
+ "queried_at": "2026-09-27T22:40:38Z",
+ "symbol": "KEYS"
+}

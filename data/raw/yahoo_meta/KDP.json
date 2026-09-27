@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1210167000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Keurig Dr Pepper Inc.",
+  "shortName": "Keurig Dr Pepper Inc.",
+  "symbol": "KDP"
+ },
+ "queried_at": "2026-09-27T22:40:35Z",
+ "symbol": "KDP"
+}

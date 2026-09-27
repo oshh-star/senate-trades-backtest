@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1680096600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Crane Company",
+  "shortName": "Crane Company",
+  "symbol": "CR"
+ },
+ "queried_at": "2026-09-27T22:32:17Z",
+ "symbol": "CR"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1265898600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Generac Holdings Inc.",
+  "shortName": "Generac Holdlings Inc.",
+  "symbol": "GNRC"
+ },
+ "queried_at": "2026-09-27T22:37:30Z",
+ "symbol": "GNRC"
+}

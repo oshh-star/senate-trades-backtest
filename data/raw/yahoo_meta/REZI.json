@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1540819800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Resideo Technologies, Inc.",
+  "shortName": "Resideo Technologies, Inc.",
+  "symbol": "REZI"
+ },
+ "queried_at": "2026-09-27T22:47:26Z",
+ "symbol": "REZI"
+}

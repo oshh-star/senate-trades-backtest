@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1381930200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Veeva Systems Inc.",
+  "shortName": "Veeva Systems Inc.",
+  "symbol": "VEEV"
+ },
+ "queried_at": "2026-09-27T22:52:27Z",
+ "symbol": "VEEV"
+}

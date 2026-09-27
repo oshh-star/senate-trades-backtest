@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:51:07Z"
+ },
+ "queried_at": "2026-09-27T23:03:28Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "TMK Energy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TMKENERGY FPO [TMK]",
+   "symbol": "TMK.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "TMK Energy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TMK ENERGY LTD",
+   "symbol": "TMKEF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Dream Buddha Resources Group Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "China TMK Battery Systems, Inc.",
+   "symbol": "DFEL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Kuala Lumpur Stock Exchange",
+   "exchange": "KLS",
+   "longname": "TMK Chemical Bhd",
+   "quoteType": "EQUITY",
+   "shortname": "TMK",
+   "symbol": "5330.KL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "TMKN FIF MULT CP",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001RQ21.SA",
+   "symbol": "0P0001RQ21.SA",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "CXA",
+   "exchange": "CXA",
+   "longname": "TMK Energy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TMKENERGY FPO [TMK]",
+   "symbol": "TMK.XA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "TD PLTR Equity-Linked Autocallable Coupon Notes - Series 3667F NL (882059A1)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "TMKQBXX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "TMK"
+}

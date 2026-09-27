@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "CVS Health Corporation",
+  "shortName": "CVS Health Corporation",
+  "symbol": "CVS"
+ },
+ "queried_at": "2026-09-27T22:32:50Z",
+ "symbol": "CVS"
+}

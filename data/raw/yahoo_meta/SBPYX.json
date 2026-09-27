@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1099319400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "ClearBridge Small Cap Growth I",
+  "shortName": "ClearBridge Small Cap Growth Fu",
+  "symbol": "SBPYX"
+ },
+ "queried_at": "2026-09-27T22:48:26Z",
+ "symbol": "SBPYX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1092922200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Alphabet Inc.",
+  "shortName": "Alphabet Inc.",
+  "symbol": "GOOGL"
+ },
+ "queried_at": "2026-09-27T22:37:35Z",
+ "symbol": "GOOGL"
+}

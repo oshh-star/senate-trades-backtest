@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 583162200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "National Australia Bank Limited",
+  "shortName": "National Australia Bank Ltd. (V",
+  "symbol": "NABZY"
+ },
+ "queried_at": "2026-09-27T22:43:45Z",
+ "symbol": "NABZY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 391872600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Norfolk Southern Corporation",
+  "shortName": "Norfolk Southern Corporation",
+  "symbol": "NSC"
+ },
+ "queried_at": "2026-09-27T22:44:26Z",
+ "symbol": "NSC"
+}

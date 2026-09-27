@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1142433000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "TransDigm Group Incorporated",
+  "shortName": "Transdigm Group Incorporated",
+  "symbol": "TDG"
+ },
+ "queried_at": "2026-09-27T22:50:42Z",
+ "symbol": "TDG"
+}

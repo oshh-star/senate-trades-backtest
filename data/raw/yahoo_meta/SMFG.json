@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138372200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sumitomo Mitsui Financial Group, Inc.",
+  "shortName": "Sumitomo Mitsui Financial Group",
+  "symbol": "SMFG"
+ },
+ "queried_at": "2026-09-27T22:49:20Z",
+ "symbol": "SMFG"
+}

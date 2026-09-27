@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 820852200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Southern Copper Corporation",
+  "shortName": "Southern Copper Corporation",
+  "symbol": "SCCO"
+ },
+ "queried_at": "2026-09-27T22:48:29Z",
+ "symbol": "SCCO"
+}

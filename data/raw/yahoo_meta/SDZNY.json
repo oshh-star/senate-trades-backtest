@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1696426200,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Sandoz Group AG",
+  "shortName": "Sandoz Group AG",
+  "symbol": "SDZNY"
+ },
+ "queried_at": "2026-09-27T22:48:41Z",
+ "symbol": "SDZNY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 966951000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pinnacle Financial Partners, Inc.",
+  "shortName": "Pinnacle Financial Partners, In",
+  "symbol": "PNFP"
+ },
+ "queried_at": "2026-09-27T22:46:12Z",
+ "symbol": "PNFP"
+}

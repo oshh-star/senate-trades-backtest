@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1288618200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Global ex-U.S. Real Estate Index Fund ETF Shares",
+  "shortName": "Vanguard Global ex-U.S. Real Es",
+  "symbol": "VNQI"
+ },
+ "queried_at": "2026-09-27T22:52:52Z",
+ "symbol": "VNQI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 743347800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Camden Property Trust",
+  "shortName": "Camden Property Trust",
+  "symbol": "CPT"
+ },
+ "queried_at": "2026-09-27T22:32:16Z",
+ "symbol": "CPT"
+}

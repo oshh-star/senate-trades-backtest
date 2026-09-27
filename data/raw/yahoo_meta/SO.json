@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 378657000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Southern Company",
+  "shortName": "Southern Company (The)",
+  "symbol": "SO"
+ },
+ "queried_at": "2026-09-27T22:49:35Z",
+ "symbol": "SO"
+}

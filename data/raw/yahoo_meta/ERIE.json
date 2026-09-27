@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 812640600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Erie Indemnity Company",
+  "shortName": "Erie Indemnity Company",
+  "symbol": "ERIE"
+ },
+ "queried_at": "2026-09-27T22:35:01Z",
+ "symbol": "ERIE"
+}

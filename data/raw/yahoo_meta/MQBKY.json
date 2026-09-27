@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1153402200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Macquarie Group Limited",
+  "shortName": "Macquarie Group, Ltd.",
+  "symbol": "MQBKY"
+ },
+ "queried_at": "2026-09-27T22:43:14Z",
+ "symbol": "MQBKY"
+}

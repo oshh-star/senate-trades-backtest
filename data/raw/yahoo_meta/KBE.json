@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1132065000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street SPDR S&P Bank ETF",
+  "shortName": "State Street SPDR S&P Bank ETF",
+  "symbol": "KBE"
+ },
+ "queried_at": "2026-09-27T22:40:31Z",
+ "symbol": "KBE"
+}

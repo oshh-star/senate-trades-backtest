@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1287581400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Mercedes-Benz Group AG",
+  "shortName": "Mercedes Benz Group AG",
+  "symbol": "MBGYY"
+ },
+ "queried_at": "2026-09-27T22:42:27Z",
+ "symbol": "MBGYY"
+}

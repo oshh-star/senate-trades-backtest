@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 763741800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "NN, Inc.",
+  "shortName": "NN, Inc.",
+  "symbol": "NNBR"
+ },
+ "queried_at": "2026-09-27T23:02:02Z",
+ "symbol": "NNBR"
+}

@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:26:56Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:26:56Z"
+ },
+ "queried_at": "2026-09-27T22:57:40Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "NASDAQ",
@@ -63,12 +74,12 @@
    "typeDisp": "Equity"
   },
   {
-   "exchDisp": "Amsterdam",
-   "exchange": "AMS",
-   "longname": "Aegon Ltd.",
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AGNC Investment Corp.",
    "quoteType": "EQUITY",
-   "shortname": "AEGON",
-   "symbol": "AGN.AS",
+   "shortname": "AGNC Investment Corp. - Deposit",
+   "symbol": "AGNCZ",
    "typeDisp": "Equity"
   }
  ],

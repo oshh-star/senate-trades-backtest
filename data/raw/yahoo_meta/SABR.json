@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1397741400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Sabre Corporation",
+  "shortName": "Sabre Corporation",
+  "symbol": "SABR"
+ },
+ "queried_at": "2026-09-27T22:48:15Z",
+ "symbol": "SABR"
+}

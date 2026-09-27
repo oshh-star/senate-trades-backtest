@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1418308200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Restaurant Brands International Inc.",
+  "shortName": "Restaurant Brands International",
+  "symbol": "QSR"
+ },
+ "queried_at": "2026-09-27T22:47:06Z",
+ "symbol": "QSR"
+}

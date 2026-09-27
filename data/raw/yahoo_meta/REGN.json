@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 670602600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Regeneron Pharmaceuticals, Inc.",
+  "shortName": "Regeneron Pharmaceuticals, Inc.",
+  "symbol": "REGN"
+ },
+ "queried_at": "2026-09-27T22:47:23Z",
+ "symbol": "REGN"
+}

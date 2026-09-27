@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1651498200,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Solidion Technology, Inc.",
+  "shortName": "Solidion Technology, Inc.",
+  "symbol": "STI"
+ },
+ "queried_at": "2026-09-27T22:50:06Z",
+ "symbol": "STI"
+}

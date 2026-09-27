@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Champion Homes, Inc.",
+  "shortName": "Champion Homes, Inc.",
+  "symbol": "SKY"
+ },
+ "queried_at": "2026-09-27T22:49:11Z",
+ "symbol": "SKY"
+}

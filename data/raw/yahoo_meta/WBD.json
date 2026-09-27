@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1120829400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Warner Bros. Discovery, Inc.",
+  "shortName": "Warner Bros. Discovery, Inc. - ",
+  "symbol": "WBD"
+ },
+ "queried_at": "2026-09-27T22:53:25Z",
+ "symbol": "WBD"
+}

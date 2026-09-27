@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Koninklijke Philips N.V.",
+  "shortName": "Koninklijke Philips N.V. NY Reg",
+  "symbol": "PHG"
+ },
+ "queried_at": "2026-09-27T22:45:56Z",
+ "symbol": "PHG"
+}

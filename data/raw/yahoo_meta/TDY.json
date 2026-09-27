@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 943367400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Teledyne Technologies Incorporated",
+  "shortName": "Teledyne Technologies Incorpora",
+  "symbol": "TDY"
+ },
+ "queried_at": "2026-09-27T22:50:43Z",
+ "symbol": "TDY"
+}

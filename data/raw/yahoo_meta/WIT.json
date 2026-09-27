@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 971962200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Wipro Limited",
+  "shortName": "Wipro Limited",
+  "symbol": "WIT"
+ },
+ "queried_at": "2026-09-27T22:53:40Z",
+ "symbol": "WIT"
+}

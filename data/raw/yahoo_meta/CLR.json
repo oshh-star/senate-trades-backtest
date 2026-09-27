@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:31:43Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:43Z"
+ },
+ "queried_at": "2026-09-27T22:58:59Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "NASDAQ",

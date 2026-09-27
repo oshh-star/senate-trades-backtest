@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322237800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Truist Financial Corporation",
+  "shortName": "Truist Financial Corporation",
+  "symbol": "TFC"
+ },
+ "queried_at": "2026-09-27T22:50:50Z",
+ "symbol": "TFC"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Kingfisher plc",
+  "shortName": "Kingfisher plc",
+  "symbol": "KGFHY"
+ },
+ "queried_at": "2026-09-27T22:40:39Z",
+ "symbol": "KGFHY"
+}

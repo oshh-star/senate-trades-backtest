@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 553959000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fair Isaac Corporation",
+  "shortName": "Fair Isaac Corporation",
+  "symbol": "FICO"
+ },
+ "queried_at": "2026-09-27T22:36:05Z",
+ "symbol": "FICO"
+}

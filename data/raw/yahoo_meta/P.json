@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1444138200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Everpure, Inc.",
+  "shortName": "Everpure, Inc.",
+  "symbol": "P"
+ },
+ "queried_at": "2026-09-27T23:02:16Z",
+ "symbol": "P"
+}

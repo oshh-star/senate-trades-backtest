@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1494595800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ingersoll Rand Inc.",
+  "shortName": "Ingersoll Rand Inc.",
+  "symbol": "IR"
+ },
+ "queried_at": "2026-09-27T22:39:36Z",
+ "symbol": "IR"
+}

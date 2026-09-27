@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1646663400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Hensoldt AG",
+  "shortName": "HENSOLDT AG",
+  "symbol": "HNSDF"
+ },
+ "queried_at": "2026-09-27T23:00:38Z",
+ "symbol": "HNSDF"
+}

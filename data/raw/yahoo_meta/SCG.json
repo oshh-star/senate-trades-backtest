@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:48:30Z"
+ },
+ "queried_at": "2026-09-27T23:03:04Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale Soci\u00e9t\u00e9 anonyme",
+   "quoteType": "EQUITY",
+   "shortname": "Societe Generale",
+   "symbol": "SCGLY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Sealand Capital Galaxy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "SEALAND CAPITAL GALAXY LIMITED ",
+   "symbol": "SCGL.L",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Kuala Lumpur Stock Exchange",
+   "exchange": "KLS",
+   "longname": "Southern Cable Group Berhad",
+   "quoteType": "EQUITY",
+   "shortname": "SCGBHD",
+   "symbol": "0225.KL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "DWS Capital Growth S",
+   "quoteType": "MUTUALFUND",
+   "shortname": "DWS Capital Growth Fund - Class",
+   "symbol": "SCGSX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale Soci\u00e9t\u00e9 anonyme",
+   "quoteType": "EQUITY",
+   "shortname": "Societe Generale",
+   "symbol": "SCGLF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Scentre Group",
+   "quoteType": "EQUITY",
+   "shortname": "SCENTRE STAPLED [SCG]",
+   "symbol": "SCG.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "SET",
+   "exchange": "SET",
+   "longname": "SCG Decor Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "SCGD_SCG DECOR",
+   "symbol": "SCGD.BK",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SCG"
+}

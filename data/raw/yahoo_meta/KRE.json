@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1150983000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street SPDR S&P Regional Banking ETF",
+  "shortName": "State Street SPDR S&P Regional ",
+  "symbol": "KRE"
+ },
+ "queried_at": "2026-09-27T22:41:01Z",
+ "symbol": "KRE"
+}

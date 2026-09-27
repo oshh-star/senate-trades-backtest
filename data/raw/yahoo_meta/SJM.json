@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 783613800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The J. M. Smucker Company",
+  "shortName": "The J.M. Smucker Company",
+  "symbol": "SJM"
+ },
+ "queried_at": "2026-09-27T22:49:07Z",
+ "symbol": "SJM"
+}

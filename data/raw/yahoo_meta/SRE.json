@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 899127000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sempra",
+  "shortName": "DBA Sempra",
+  "symbol": "SRE"
+ },
+ "queried_at": "2026-09-27T22:49:55Z",
+ "symbol": "SRE"
+}

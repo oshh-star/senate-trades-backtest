@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 849623400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Viasat, Inc.",
+  "shortName": "ViaSat, Inc.",
+  "symbol": "VSAT"
+ },
+ "queried_at": "2026-09-27T22:53:03Z",
+ "symbol": "VSAT"
+}

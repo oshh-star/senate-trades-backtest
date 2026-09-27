@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1120224600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Western Alliance Bancorporation",
+  "shortName": "Western Alliance Bancorporation",
+  "symbol": "WAL"
+ },
+ "queried_at": "2026-09-27T22:53:21Z",
+ "symbol": "WAL"
+}

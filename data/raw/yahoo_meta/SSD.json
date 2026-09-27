@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 769959000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Simpson Manufacturing Co., Inc.",
+  "shortName": "Simpson Manufacturing Company, ",
+  "symbol": "SSD"
+ },
+ "queried_at": "2026-09-27T22:49:59Z",
+ "symbol": "SSD"
+}

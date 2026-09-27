@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1508506200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sea Limited",
+  "shortName": "Sea Limited",
+  "symbol": "SE"
+ },
+ "queried_at": "2026-09-27T22:48:42Z",
+ "symbol": "SE"
+}

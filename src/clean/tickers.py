@@ -7,14 +7,17 @@ Recovery, for rows with no ticker (never guessed; everything not accepted is lis
   1. embedded: the filer wrote the ticker inside the asset name, e.g. "Wise plc Sponsored ADR
      (WIZEY)", "GOOGL - Alphabet Inc. A", "JPM-JPMorgan Chase & Co." or just "NVDA". The candidate
      is accepted only if Yahoo recognises the symbol AND (the name is the bare ticker, or a
-     significant word of the rest of the name appears in Yahoo's or SEC's name for that symbol).
-  2. sec_name: the asset name, cleaned of legal-form and share-type words, equals exactly one
-     company title in SEC's company_tickers.json, and that company has exactly one plain ticker.
+     distinctive word of the rest of the name appears in Yahoo's or SEC's name for that symbol,
+     ignoring accents, apostrophes and spaces inside words: see names_agree).
+  2. sec_name (also tried when an embedded candidate is rejected): the asset name, cleaned of legal-form and share-type words, equals exactly one
+     company title in SEC's company_tickers.json, and that company has exactly one plain ticker
+     (or the name states a share class that picks exactly one of its class tickers).
 """
 from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 import requests
@@ -47,8 +50,25 @@ def normalise_ticker(raw: str) -> str:
     return t
 
 
-def words(text: str) -> set[str]:
-    return {w for w in re.sub(r"[^a-z0-9]+", " ", text.lower()).split() if w not in STOP and len(w) >= 3}
+def fold(text: str) -> str:
+    """Lower-case ASCII without accents or apostrophes: "L'Oréal" -> "loreal"."""
+    text = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode().lower()
+    return re.sub(r"['’]", "", text)
+
+
+def words(text: str, min_len: int = 3) -> set[str]:
+    return {w for w in re.sub(r"[^a-z0-9]+", " ", fold(text)).split() if w not in STOP and len(w) >= min_len}
+
+
+def names_agree(a: str, b: str) -> set[str]:
+    """Distinctive words the two names share. Also counts a word of 4+ letters of one name found
+    inside the other name written without spaces ("Fuji Film" / "FUJIFILM", "Heidelbergcement" /
+    "Heidelberg Materials")."""
+    wa, wb = words(a, 2), words(b, 2)
+    common = wa & wb
+    sa, sb = re.sub(r"[^a-z0-9]", "", fold(a)), re.sub(r"[^a-z0-9]", "", fold(b))
+    common |= {w for w in wa if len(w) >= 4 and w in sb} | {w for w in wb if len(w) >= 4 and w in sa}
+    return common
 
 
 def clean_company(text: str) -> str:
@@ -105,6 +125,12 @@ class SecIndex:
         (cik, tickers), = hits.items()
         plain = sorted(t for t in tickers if re.fullmatch(r"[A-Z]{1,5}", t))
         if len(plain) != 1:
+            # A share class named in the asset name picks exactly one class ticker (BF-A / BF-B).
+            m = re.search(r"\bclass\s+([a-c])\b", asset_name, re.I)
+            cls = [t for t in tickers if m and t.endswith("-" + m.group(1).upper())]
+            if len(cls) == 1:
+                return cls[0], f"SEC exact name match with share class {m.group(1).upper()}: " \
+                                f"{self.by_ticker[cls[0]]['title']} (CIK {cik})"
             return "", f"SEC company CIK {cik} has several tickers: {', '.join(sorted(tickers))}"
         return plain[0], f"SEC exact name match: {self.by_ticker[plain[0]]['title']} (CIK {cik})"
 
@@ -117,7 +143,7 @@ def verify_embedded(ticker: str, rest: str, yahoo_rec: dict | None, sec: SecInde
     names = [yahoo_rec.get("name", ""), yahoo_rec.get("short_name", "")]
     if sec and ticker in sec.by_ticker:
         names.append(sec.by_ticker[ticker]["title"])
-    common = words(rest) & set().union(*(words(n) for n in names))
+    common = set().union(*(names_agree(rest, n) for n in names if n))
     if common:
         return True, f"embedded ticker {ticker}; name words shared with {'/'.join(n for n in names if n)}: {', '.join(sorted(common))}"
     return False, f"embedded ticker {ticker} but its name ({'/'.join(n for n in names if n)}) shares no word with '{rest}'"

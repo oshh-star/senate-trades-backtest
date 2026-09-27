@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Singapore Airlines Limited",
+  "shortName": "Singapore Airlines Ltd.",
+  "symbol": "SINGY"
+ },
+ "queried_at": "2026-09-27T22:49:03Z",
+ "symbol": "SINGY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1329489000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust Emerging Markets Small Cap AlphaDEX Fund",
+  "shortName": "First Trust Emerging Markets Sm",
+  "symbol": "FEMS"
+ },
+ "queried_at": "2026-09-27T22:35:54Z",
+ "symbol": "FEMS"
+}

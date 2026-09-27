@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 812727000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Everest Group, Ltd.",
+  "shortName": "Everest Group, Ltd.",
+  "symbol": "EG"
+ },
+ "queried_at": "2026-09-27T22:34:34Z",
+ "symbol": "EG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 780845400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "NTT, Inc.",
+  "shortName": "NTT Inc.",
+  "symbol": "NTTYY"
+ },
+ "queried_at": "2026-09-27T22:44:35Z",
+ "symbol": "NTTYY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 970839000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Tapestry, Inc.",
+  "shortName": "Tapestry, Inc.",
+  "symbol": "TPR"
+ },
+ "queried_at": "2026-09-27T22:51:13Z",
+ "symbol": "TPR"
+}

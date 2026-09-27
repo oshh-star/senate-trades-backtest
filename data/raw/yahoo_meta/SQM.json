@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 748618200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
+  "shortName": "Sociedad Quimica y Minera S.A.",
+  "symbol": "SQM"
+ },
+ "queried_at": "2026-09-27T22:49:52Z",
+ "symbol": "SQM"
+}

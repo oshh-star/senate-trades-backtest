@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146835800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Broker-Dealers & Securities Exchanges ETF",
+  "shortName": "iShares U.S. Broker-Dealers & S",
+  "symbol": "IAI"
+ },
+ "queried_at": "2026-09-27T22:38:47Z",
+ "symbol": "IAI"
+}

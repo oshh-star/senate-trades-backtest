@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Kirin Holdings Company, Limited",
+  "shortName": "Kirin Holdings Co., Ltd.",
+  "symbol": "KNBWY"
+ },
+ "queried_at": "2026-09-27T22:40:54Z",
+ "symbol": "KNBWY"
+}

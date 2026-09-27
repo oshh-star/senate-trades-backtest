@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138285800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Isuzu Motors Limited",
+  "shortName": "Isuzu Motors, Ltd.",
+  "symbol": "ISUZY"
+ },
+ "queried_at": "2026-09-27T22:39:44Z",
+ "symbol": "ISUZY"
+}

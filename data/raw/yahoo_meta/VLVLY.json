@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "AB Volvo (publ)",
+  "shortName": "Volvo AB",
+  "symbol": "VLVLY"
+ },
+ "queried_at": "2026-09-27T22:52:47Z",
+ "symbol": "VLVLY"
+}

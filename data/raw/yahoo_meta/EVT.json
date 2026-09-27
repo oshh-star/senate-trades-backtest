@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1064583000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Eaton Vance Tax-Advantaged Dividend Income Fund",
+  "shortName": "Eaton Vance Tax Advantaged Divi",
+  "symbol": "EVT"
+ },
+ "queried_at": "2026-09-27T22:35:25Z",
+ "symbol": "EVT"
+}

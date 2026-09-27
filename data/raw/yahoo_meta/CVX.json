@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chevron Corporation",
+  "shortName": "Chevron Corporation",
+  "symbol": "CVX"
+ },
+ "queried_at": "2026-09-27T22:32:51Z",
+ "symbol": "CVX"
+}

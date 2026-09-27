@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1760621400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "EQUITY",
+  "longName": "Pictet Cleaner Planet ETF",
+  "shortName": "Pictet Cleaner Planet ETF",
+  "symbol": "PCLN"
+ },
+ "queried_at": "2026-09-27T22:45:36Z",
+ "symbol": "PCLN"
+}

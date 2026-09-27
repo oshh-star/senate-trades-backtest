@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 981988200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Vanguard GNMA Adm",
+  "shortName": "Vanguard GNMA Fd Admiral Shs",
+  "symbol": "VFIJX"
+ },
+ "queried_at": "2026-09-27T22:52:31Z",
+ "symbol": "VFIJX"
+}

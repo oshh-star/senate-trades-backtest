@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 957274200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "ON Semiconductor Corporation",
+  "shortName": "ON Semiconductor Corporation",
+  "symbol": "ON"
+ },
+ "queried_at": "2026-09-27T22:45:10Z",
+ "symbol": "ON"
+}

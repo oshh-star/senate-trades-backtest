@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1229092200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daiichi Sankyo Company, Limited",
+  "shortName": "Daiichi Sankyo Co., Ltd.",
+  "symbol": "DSNKY"
+ },
+ "queried_at": "2026-09-27T22:34:03Z",
+ "symbol": "DSNKY"
+}

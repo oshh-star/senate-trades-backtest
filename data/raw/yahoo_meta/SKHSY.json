@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1043850600,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Sekisui House, Ltd.",
+  "shortName": "Sekisui House Ltd.",
+  "symbol": "SKHSY"
+ },
+ "queried_at": "2026-09-27T22:49:10Z",
+ "symbol": "SKHSY"
+}

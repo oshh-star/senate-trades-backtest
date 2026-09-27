@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Stanley Black & Decker, Inc.",
+  "shortName": "Stanley Black & Decker, Inc.",
+  "symbol": "SWK"
+ },
+ "queried_at": "2026-09-27T22:50:21Z",
+ "symbol": "SWK"
+}

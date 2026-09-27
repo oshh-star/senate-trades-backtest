@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1675434600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Structure Therapeutics Inc.",
+  "shortName": "Structure Therapeutics Inc.",
+  "symbol": "GPCR"
+ },
+ "queried_at": "2026-09-27T22:37:37Z",
+ "symbol": "GPCR"
+}

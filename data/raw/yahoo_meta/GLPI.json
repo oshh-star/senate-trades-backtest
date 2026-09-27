@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1381757400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Gaming and Leisure Properties, Inc.",
+  "shortName": "Gaming and Leisure Properties, ",
+  "symbol": "GLPI"
+ },
+ "queried_at": "2026-09-27T22:37:20Z",
+ "symbol": "GLPI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 942244200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "United Parcel Service, Inc.",
+  "shortName": "United Parcel Service, Inc.",
+  "symbol": "UPS"
+ },
+ "queried_at": "2026-09-27T22:52:08Z",
+ "symbol": "UPS"
+}

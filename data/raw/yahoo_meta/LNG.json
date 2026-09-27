@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 765466200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cheniere Energy, Inc.",
+  "shortName": "Cheniere Energy, Inc.",
+  "symbol": "LNG"
+ },
+ "queried_at": "2026-09-27T22:41:46Z",
+ "symbol": "LNG"
+}

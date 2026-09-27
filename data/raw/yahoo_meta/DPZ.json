@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1089725400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Domino's Pizza, Inc.",
+  "shortName": "Domino's Pizza Inc",
+  "symbol": "DPZ"
+ },
+ "queried_at": "2026-09-27T22:33:55Z",
+ "symbol": "DPZ"
+}

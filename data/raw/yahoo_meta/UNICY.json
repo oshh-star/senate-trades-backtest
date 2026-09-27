@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1286544600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Unicharm Corporation",
+  "shortName": "Unicharm Corp.",
+  "symbol": "UNICY"
+ },
+ "queried_at": "2026-09-27T22:52:03Z",
+ "symbol": "UNICY"
+}

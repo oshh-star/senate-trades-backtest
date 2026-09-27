@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1004452200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Elevance Health, Inc.",
+  "shortName": "Elevance Health, Inc.",
+  "symbol": "ELV"
+ },
+ "queried_at": "2026-09-27T22:34:42Z",
+ "symbol": "ELV"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1606487400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Nerdy Inc.",
+  "shortName": "Nerdy Inc.",
+  "symbol": "NRDY"
+ },
+ "queried_at": "2026-09-27T22:44:21Z",
+ "symbol": "NRDY"
+}

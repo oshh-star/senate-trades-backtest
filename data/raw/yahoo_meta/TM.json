@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Toyota Motor Corporation",
+  "shortName": "Toyota Motor Corporation",
+  "symbol": "TM"
+ },
+ "queried_at": "2026-09-27T22:51:06Z",
+ "symbol": "TM"
+}

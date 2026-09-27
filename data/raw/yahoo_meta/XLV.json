@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 914337000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street Health Care Select Sector SPDR ETF",
+  "shortName": "State Street Health Care Select",
+  "symbol": "XLV"
+ },
+ "queried_at": "2026-09-27T22:54:22Z",
+ "symbol": "XLV"
+}

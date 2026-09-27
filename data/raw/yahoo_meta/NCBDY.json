@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1554471000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "BANDAI NAMCO Holdings Inc.",
+  "shortName": "Bandai Namco Holdings, Inc.",
+  "symbol": "NCBDY"
+ },
+ "queried_at": "2026-09-27T22:43:49Z",
+ "symbol": "NCBDY"
+}

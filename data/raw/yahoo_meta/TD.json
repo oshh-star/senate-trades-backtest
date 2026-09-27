@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 841411800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Toronto-Dominion Bank",
+  "shortName": "Toronto Dominion Bank (The)",
+  "symbol": "TD"
+ },
+ "queried_at": "2026-09-27T22:50:41Z",
+ "symbol": "TD"
+}

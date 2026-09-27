@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 546183000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Six Flags Entertainment Corporation",
+  "shortName": "Six Flags Entertainment Corpora",
+  "symbol": "FUN"
+ },
+ "queried_at": "2026-09-27T22:36:47Z",
+ "symbol": "FUN"
+}

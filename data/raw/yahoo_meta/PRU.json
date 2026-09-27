@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1008253800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Prudential Financial, Inc.",
+  "shortName": "Prudential Financial, Inc.",
+  "symbol": "PRU"
+ },
+ "queried_at": "2026-09-27T22:46:31Z",
+ "symbol": "PRU"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1392388200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Knowles Corporation",
+  "shortName": "Knowles Corporation",
+  "symbol": "KN"
+ },
+ "queried_at": "2026-09-27T22:40:53Z",
+ "symbol": "KN"
+}

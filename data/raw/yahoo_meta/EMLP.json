@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1340285400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "First Trust North American Energy Infrastructure Fund",
+  "shortName": "First Trust North American Ener",
+  "symbol": "EMLP"
+ },
+ "queried_at": "2026-09-27T22:34:45Z",
+ "symbol": "EMLP"
+}

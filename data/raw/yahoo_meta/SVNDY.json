@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1237469400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Seven & i Holdings Co., Ltd.",
+  "shortName": "Seven & I Holdings Co., Ltd.",
+  "symbol": "SVNDY"
+ },
+ "queried_at": "2026-09-27T22:50:17Z",
+ "symbol": "SVNDY"
+}

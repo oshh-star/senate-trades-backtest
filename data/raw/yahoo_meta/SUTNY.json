@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1301664600,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Sumitomo Mitsui Trust Group, Inc.",
+  "shortName": "Sumitomo Mitsui Trust Group, In",
+  "symbol": "SUTNY"
+ },
+ "queried_at": "2026-09-27T22:50:16Z",
+ "symbol": "SUTNY"
+}

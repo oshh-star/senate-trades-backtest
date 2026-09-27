@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1205760600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Philip Morris International Inc.",
+  "shortName": "Philip Morris International Inc",
+  "symbol": "PM"
+ },
+ "queried_at": "2026-09-27T22:46:08Z",
+ "symbol": "PM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138372200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ITOCHU Corporation",
+  "shortName": "Itochu Corp.",
+  "symbol": "ITOCY"
+ },
+ "queried_at": "2026-09-27T22:39:47Z",
+ "symbol": "ITOCY"
+}

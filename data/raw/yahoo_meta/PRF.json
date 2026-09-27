@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1135089000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Invesco RAFI US 1000 ETF",
+  "shortName": "Invesco RAFI US 1000 ETF",
+  "symbol": "PRF"
+ },
+ "queried_at": "2026-09-27T22:46:24Z",
+ "symbol": "PRF"
+}

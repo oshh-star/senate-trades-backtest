@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1391524200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "WisdomTree Floating Rate Treasury Fund",
+  "shortName": "WisdomTree Floating Rate Treasu",
+  "symbol": "USFR"
+ },
+ "queried_at": "2026-09-27T22:52:14Z",
+ "symbol": "USFR"
+}

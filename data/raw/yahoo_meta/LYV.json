@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1135175400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Live Nation Entertainment, Inc.",
+  "shortName": "Live Nation Entertainment, Inc.",
+  "symbol": "LYV"
+ },
+ "queried_at": "2026-09-27T22:42:11Z",
+ "symbol": "LYV"
+}

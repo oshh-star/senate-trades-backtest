@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 816618600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Est\u00e9e Lauder Companies Inc.",
+  "shortName": "Estee Lauder Companies, Inc. (T",
+  "symbol": "EL"
+ },
+ "queried_at": "2026-09-27T22:34:38Z",
+ "symbol": "EL"
+}

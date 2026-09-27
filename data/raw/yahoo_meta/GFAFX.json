@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 984666600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds Growth Fd of Amer F-1",
+  "shortName": "The Growth Fund of America Clas",
+  "symbol": "GFAFX"
+ },
+ "queried_at": "2026-09-27T22:37:08Z",
+ "symbol": "GFAFX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1584624600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Otis Worldwide Corporation",
+  "shortName": "Otis Worldwide Corporation",
+  "symbol": "OTIS"
+ },
+ "queried_at": "2026-09-27T22:45:19Z",
+ "symbol": "OTIS"
+}

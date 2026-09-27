@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1255095000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pampa Energ\u00eda S.A.",
+  "shortName": "Pampa Energia S.A.",
+  "symbol": "PAM"
+ },
+ "queried_at": "2026-09-27T22:45:29Z",
+ "symbol": "PAM"
+}

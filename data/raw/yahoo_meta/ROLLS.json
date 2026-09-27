@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:47:50Z"
+ },
+ "queried_at": "2026-09-27T23:02:51Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "Rolls Royce Holdings plc",
+   "symbol": "RYCEY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "ROLLS-ROYCE HOLDINGS PLC ORD SH",
+   "symbol": "RR.L",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "Rolls Royce Holdings plc",
+   "symbol": "RLLCF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "Rolls Royce Holdings plc",
+   "symbol": "RYCEF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "Rolls Royce Holdings PLC      R",
+   "symbol": "RRU.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Rolls-Royce Holdings plc",
+   "quoteType": "EQUITY",
+   "shortname": "Rolls Royce Holdings PLC      R",
+   "symbol": "RRU.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Rollsroyce USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Rollsroyce USD",
+   "symbol": "ROLLSROYCE-USD",
+   "typeDisp": "Cryptocurrency"
+  }
+ ],
+ "symbol": "ROLLS"
+}

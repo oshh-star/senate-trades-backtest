@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pearson plc",
+  "shortName": "Pearson, Plc",
+  "symbol": "PSO"
+ },
+ "queried_at": "2026-09-27T22:46:34Z",
+ "symbol": "PSO"
+}

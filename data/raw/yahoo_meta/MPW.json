@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:43:11Z"
+ },
+ "queried_at": "2026-09-27T23:01:48Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Monolithic Power Systems, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Monolithic Power Systems, Inc.",
+   "symbol": "MPWR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "Tradr 2X Long MPWR Daily ETF",
+   "quoteType": "ETF",
+   "shortname": "Tradr 2X Long MPWR Daily ETF",
+   "symbol": "MPWX",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "Medical Properties Trust, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "MEDICAL PROPERTIES TRUST INC",
+   "symbol": "MPW.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Corgi MPWR 2x Daily ETF",
+   "symbol": "MPWC",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Metal Powder Works Limited",
+   "quoteType": "EQUITY",
+   "shortname": "METALPWLTD FPO [MPW]",
+   "symbol": "MPW.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Mackenzie GQE International Balanced Fund Series PWFB NL (879293A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "MPWUX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "MPWR Nov 2026 910.000 call",
+   "quoteType": "OPTION",
+   "shortname": "MPWR Nov 2026 910.000 call",
+   "symbol": "MPWR261120C00910000",
+   "typeDisp": "Option"
+  }
+ ],
+ "symbol": "MPW"
+}

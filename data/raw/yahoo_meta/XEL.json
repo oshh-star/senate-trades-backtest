@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Xcel Energy Inc.",
+  "shortName": "Xcel Energy Inc.",
+  "symbol": "XEL"
+ },
+ "queried_at": "2026-09-27T22:54:15Z",
+ "symbol": "XEL"
+}

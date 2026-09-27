@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 602519400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "BlackRock Global Allocation Instl",
+  "shortName": "BlackRock Global Allocation Fun",
+  "symbol": "MALOX"
+ },
+ "queried_at": "2026-09-27T22:42:16Z",
+ "symbol": "MALOX"
+}

@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:52:17Z"
+ },
+ "queried_at": "2026-09-27T23:03:38Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "UTX USD",
+   "quoteType": "INDEX",
+   "shortname": "UTX USD",
+   "symbol": "UTX.VI",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "UTX EUR",
+   "quoteType": "INDEX",
+   "shortname": "UTX EUR",
+   "symbol": "UTE.VI",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "UTX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1560778200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "FLEX LNG Ltd.",
+  "shortName": "FLEX LNG Ltd.",
+  "symbol": "FLNG"
+ },
+ "queried_at": "2026-09-27T22:36:18Z",
+ "symbol": "FLNG"
+}

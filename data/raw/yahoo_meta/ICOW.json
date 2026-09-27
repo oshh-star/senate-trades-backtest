@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1497879000,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Pacer Developed Markets International Cash Cows 100 ETF",
+  "shortName": "Pacer Developed Markets Interna",
+  "symbol": "ICOW"
+ },
+ "queried_at": "2026-09-27T22:39:00Z",
+ "symbol": "ICOW"
+}

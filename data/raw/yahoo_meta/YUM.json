@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 874503000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Yum! Brands, Inc.",
+  "shortName": "Yum! Brands, Inc.",
+  "symbol": "YUM"
+ },
+ "queried_at": "2026-09-27T22:54:35Z",
+ "symbol": "YUM"
+}

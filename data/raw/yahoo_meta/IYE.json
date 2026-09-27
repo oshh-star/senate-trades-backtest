@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 961162200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Energy ETF",
+  "shortName": "iShares U.S. Energy ETF",
+  "symbol": "IYE"
+ },
+ "queried_at": "2026-09-27T22:39:59Z",
+ "symbol": "IYE"
+}

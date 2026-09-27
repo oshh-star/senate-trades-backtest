@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Mitsui & Co., Ltd.",
+  "shortName": "Mitsui & Co., Ltd.",
+  "symbol": "MITSY"
+ },
+ "queried_at": "2026-09-27T22:42:50Z",
+ "symbol": "MITSY"
+}

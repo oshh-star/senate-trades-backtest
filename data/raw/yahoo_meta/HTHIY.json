@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 386519400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Hitachi, Ltd.",
+  "shortName": "Hitachi Ltd.",
+  "symbol": "HTHIY"
+ },
+ "queried_at": "2026-09-27T22:38:35Z",
+ "symbol": "HTHIY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1320762600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Marriott Vacations Worldwide Corporation",
+  "shortName": "Marriott Vacations Worldwide Co",
+  "symbol": "VAC"
+ },
+ "queried_at": "2026-09-27T22:52:20Z",
+ "symbol": "VAC"
+}

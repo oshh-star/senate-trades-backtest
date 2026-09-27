@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 635178600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cisco Systems, Inc.",
+  "shortName": "Cisco Systems, Inc.",
+  "symbol": "CSCO"
+ },
+ "queried_at": "2026-09-27T22:32:29Z",
+ "symbol": "CSCO"
+}

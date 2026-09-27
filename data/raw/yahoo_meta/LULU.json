@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1185543000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "lululemon athletica inc.",
+  "shortName": "lululemon athletica inc.",
+  "symbol": "LULU"
+ },
+ "queried_at": "2026-09-27T22:42:03Z",
+ "symbol": "LULU"
+}

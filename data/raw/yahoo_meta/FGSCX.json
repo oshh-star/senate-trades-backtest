@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 808493400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Federated Hermes MDT Mid Cap Growth C",
+  "shortName": "Federated Hermes MDT Mid Cap Gr",
+  "symbol": "FGSCX"
+ },
+ "queried_at": "2026-09-27T22:36:00Z",
+ "symbol": "FGSCX"
+}

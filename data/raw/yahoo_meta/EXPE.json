@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1121952600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Expedia Group, Inc.",
+  "shortName": "Expedia Group, Inc.",
+  "symbol": "EXPE"
+ },
+ "queried_at": "2026-09-27T22:35:32Z",
+ "symbol": "EXPE"
+}

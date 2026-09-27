@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 353946600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "FUJIFILM Holdings Corporation",
+  "shortName": "FUJIFILM Holdings Corp.",
+  "symbol": "FUJIY"
+ },
+ "queried_at": "2026-09-27T22:36:46Z",
+ "symbol": "FUJIY"
+}

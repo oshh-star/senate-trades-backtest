@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:35:09Z"
+ },
+ "queried_at": "2026-09-27T22:59:59Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Ensign Energy Services Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Ensign Energy Services Inc.",
+   "symbol": "ESVIF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": null,
+   "quoteType": "INDEX",
+   "shortname": null,
+   "symbol": "ESVD4.PA",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": "Esval S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "ESVAL S.A., SERIE C",
+   "symbol": "ESVAL-C.SN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Milan",
+   "exchange": "MIL",
+   "longname": "WisdomTree Silver - EUR Daily Hedged",
+   "quoteType": "ETF",
+   "shortname": "WISDOMTREE SILVER - EUR DAILY H",
+   "symbol": "ESVR.MI",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": null,
+   "quoteType": "INDEX",
+   "shortname": null,
+   "symbol": "ESVN3.PA",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Apptly Health Technologies Corp",
+   "quoteType": "EQUITY",
+   "shortname": "SERRA ENERGY METALS CORP.",
+   "symbol": "ESVNF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": "Euronext Souverainete Europeenn",
+   "quoteType": "INDEX",
+   "shortname": "Euronext Souverainete Europeenn",
+   "symbol": "ESVEP.PA",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "ESV"
+}

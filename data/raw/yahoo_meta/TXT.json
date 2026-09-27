@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Textron Inc.",
+  "shortName": "Textron Inc.",
+  "symbol": "TXT"
+ },
+ "queried_at": "2026-09-27T22:51:46Z",
+ "symbol": "TXT"
+}

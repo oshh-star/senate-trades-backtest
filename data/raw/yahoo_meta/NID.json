@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:44:01Z"
+ },
+ "queried_at": "2026-09-27T23:01:58Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Tokyo Stock Exchange",
+   "exchange": "JPX",
+   "longname": "Nidec Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "NIDEC CORPORATION",
+   "symbol": "6594.T",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "Nidec Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "NIDEC CORP",
+   "symbol": "NIB.VI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": "Nidec Corp",
+   "quoteType": "EQUITY",
+   "shortname": "Nidec Corp.                   R",
+   "symbol": "NIB1.HM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBC Auto Callable CINS 5% AR DSC (879711A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NIDWUXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "Nidec Corp",
+   "quoteType": "EQUITY",
+   "shortname": "NIDEC CORP.                   R",
+   "symbol": "NIB.DU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Northeast Indiana Bancorp, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Northeast Indiana Bancorp, Inc.",
+   "symbol": "NIDB",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Nidec Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Nidec Corp.                   R",
+   "symbol": "NIB1.F",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "NID"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1028035800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares 7-10 Year Treasury Bond ETF",
+  "shortName": "iShares 7-10 Year Treasury Bond",
+  "symbol": "IEF"
+ },
+ "queried_at": "2026-09-27T22:39:04Z",
+ "symbol": "IEF"
+}

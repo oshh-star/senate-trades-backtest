@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 626625000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Lattice Semiconductor Corporation",
+  "shortName": "Lattice Semiconductor Corporati",
+  "symbol": "LSCC"
+ },
+ "queried_at": "2026-09-27T22:41:54Z",
+ "symbol": "LSCC"
+}

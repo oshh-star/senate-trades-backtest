@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1006957800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Lloyds Banking Group plc",
+  "shortName": "Lloyds Banking Group Plc",
+  "symbol": "LYG"
+ },
+ "queried_at": "2026-09-27T22:42:09Z",
+ "symbol": "LYG"
+}

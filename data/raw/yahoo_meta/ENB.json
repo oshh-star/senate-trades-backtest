@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 448209000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Enbridge Inc.",
+  "shortName": "Enbridge Inc",
+  "symbol": "ENB"
+ },
+ "queried_at": "2026-09-27T22:34:48Z",
+ "symbol": "ENB"
+}

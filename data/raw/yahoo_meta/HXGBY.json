@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1368538200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Hexagon AB (publ)",
+  "shortName": "Hexagon AB",
+  "symbol": "HXGBY"
+ },
+ "queried_at": "2026-09-27T22:38:42Z",
+ "symbol": "HXGBY"
+}

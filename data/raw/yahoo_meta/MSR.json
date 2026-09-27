@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1778679000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Graniteshares Autocallable Mstr ETF",
+  "shortName": "GraniteShares Autocallable MSTR",
+  "symbol": "MSR"
+ },
+ "queried_at": "2026-09-27T22:43:28Z",
+ "symbol": "MSR"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "MDU Resources Group, Inc.",
+  "shortName": "MDU Resources Group, Inc.",
+  "symbol": "MDU"
+ },
+ "queried_at": "2026-09-27T22:42:39Z",
+ "symbol": "MDU"
+}

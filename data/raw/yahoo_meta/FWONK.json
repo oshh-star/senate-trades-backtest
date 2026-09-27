@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1404826200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Formula One Group",
+  "shortName": "Liberty Media Corporation - Ser",
+  "symbol": "FWONK"
+ },
+ "queried_at": "2026-09-27T22:36:49Z",
+ "symbol": "FWONK"
+}

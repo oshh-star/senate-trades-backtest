@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1343655000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cohen & Steers Limited Duration Preferred and Income Fund, Inc.",
+  "shortName": "Cohen & Steers Limited Duration",
+  "symbol": "LDP"
+ },
+ "queried_at": "2026-09-27T22:41:18Z",
+ "symbol": "LDP"
+}

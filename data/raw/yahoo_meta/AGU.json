@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:26:58Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:26:58Z"
+ },
+ "queried_at": "2026-09-27T22:57:42Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "Jakarta",
@@ -20,19 +31,19 @@
   {
    "exchDisp": "Jakarta",
    "exchange": "JKT",
-   "longname": "PT Sumber Tani Agung Resources Tbk",
+   "longname": "PT Summarecon Agung Tbk",
    "quoteType": "EQUITY",
-   "shortname": "Sumber Tani Agung Resources Tbk",
-   "symbol": "STAA.JK",
+   "shortname": "Summarecon Agung Tbk",
+   "symbol": "SMRA.JK",
    "typeDisp": "Equity"
   },
   {
    "exchDisp": "Jakarta",
    "exchange": "JKT",
-   "longname": "PT Summarecon Agung Tbk",
+   "longname": "PT Sumber Tani Agung Resources Tbk",
    "quoteType": "EQUITY",
-   "shortname": "Summarecon Agung Tbk",
-   "symbol": "SMRA.JK",
+   "shortname": "Sumber Tani Agung Resources Tbk",
+   "symbol": "STAA.JK",
    "typeDisp": "Equity"
   },
   {

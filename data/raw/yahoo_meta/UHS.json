@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 363533400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Universal Health Services, Inc.",
+  "shortName": "Universal Health Services, Inc.",
+  "symbol": "UHS"
+ },
+ "queried_at": "2026-09-27T22:51:55Z",
+ "symbol": "UHS"
+}

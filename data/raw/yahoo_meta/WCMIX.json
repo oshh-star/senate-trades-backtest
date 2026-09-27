@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1306935000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "WCM Focused International Growth Instl",
+  "shortName": "WCM Focused International Growt",
+  "symbol": "WCMIX"
+ },
+ "queried_at": "2026-09-27T22:53:26Z",
+ "symbol": "WCMIX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 882455400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "United Rentals, Inc.",
+  "shortName": "United Rentals, Inc.",
+  "symbol": "URI"
+ },
+ "queried_at": "2026-09-27T22:52:11Z",
+ "symbol": "URI"
+}

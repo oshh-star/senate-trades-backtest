@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 492355800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Ross Stores, Inc.",
+  "shortName": "Ross Stores, Inc.",
+  "symbol": "ROST"
+ },
+ "queried_at": "2026-09-27T22:47:53Z",
+ "symbol": "ROST"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 852042600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Templeton Global Bond Adv",
+  "shortName": "Templeton Global Bond Fund Advi",
+  "symbol": "TGBAX"
+ },
+ "queried_at": "2026-09-27T22:50:53Z",
+ "symbol": "TGBAX"
+}

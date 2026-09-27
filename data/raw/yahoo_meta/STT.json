@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "State Street Corporation",
+  "shortName": "State Street Corporation",
+  "symbol": "STT"
+ },
+ "queried_at": "2026-09-27T22:50:10Z",
+ "symbol": "STT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1601904600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Genius Sports Limited",
+  "shortName": "Genius Sports Limited",
+  "symbol": "GENI"
+ },
+ "queried_at": "2026-09-27T22:37:06Z",
+ "symbol": "GENI"
+}

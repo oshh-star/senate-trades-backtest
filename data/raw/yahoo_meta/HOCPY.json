@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1186493400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "HOYA Corporation",
+  "shortName": "Hoya Corp.",
+  "symbol": "HOCPY"
+ },
+ "queried_at": "2026-09-27T22:38:21Z",
+ "symbol": "HOCPY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1211463000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ProShares UltraShort 20+ Year Treasury",
+  "shortName": "ProShares UltraShort Lehman 20 ",
+  "symbol": "TBT"
+ },
+ "queried_at": "2026-09-27T22:50:34Z",
+ "symbol": "TBT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1337088600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Fresenius SE & Co. KGaA",
+  "shortName": "Fresenius SE & Co. KGaA",
+  "symbol": "FSNUY"
+ },
+ "queried_at": "2026-09-27T22:36:39Z",
+ "symbol": "FSNUY"
+}

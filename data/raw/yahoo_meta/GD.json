@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "General Dynamics Corporation",
+  "shortName": "General Dynamics Corporation",
+  "symbol": "GD"
+ },
+ "queried_at": "2026-09-27T22:36:56Z",
+ "symbol": "GD"
+}

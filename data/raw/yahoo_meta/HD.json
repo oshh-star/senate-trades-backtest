@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 370013400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Home Depot, Inc.",
+  "shortName": "Home Depot, Inc. (The)",
+  "symbol": "HD"
+ },
+ "queried_at": "2026-09-27T22:38:03Z",
+ "symbol": "HD"
+}

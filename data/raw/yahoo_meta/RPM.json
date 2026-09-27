@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "RPM International Inc.",
+  "shortName": "RPM International Inc.",
+  "symbol": "RPM"
+ },
+ "queried_at": "2026-09-27T22:47:54Z",
+ "symbol": "RPM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1458739800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Under Armour, Inc.",
+  "shortName": "Under Armour, Inc.",
+  "symbol": "UA"
+ },
+ "queried_at": "2026-09-27T22:51:47Z",
+ "symbol": "UA"
+}

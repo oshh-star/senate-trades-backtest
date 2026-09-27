@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1100788200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "SPDR Gold Shares",
+  "shortName": "SPDR Gold Shares",
+  "symbol": "GLD"
+ },
+ "queried_at": "2026-09-27T22:37:18Z",
+ "symbol": "GLD"
+}

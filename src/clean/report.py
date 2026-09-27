@@ -29,16 +29,17 @@ def pct(x: float) -> str:
     return f"{x:.1%}"
 
 
-def ticker_table(clean: pd.DataFrame) -> pd.DataFrame:
-    g = clean.groupby("ticker")
+def ticker_table(tr: pd.DataFrame) -> pd.DataFrame:
+    """Every ticker that reached the instrument check (3/5/10-year windows, any owner)."""
+    g = tr[tr["reached_instrument_step"]].groupby("ticker")
     t = pd.DataFrame({
-        "n_trades": g.size(), "n_in_scope": g["in_scope"].sum(),
+        "n_trades": g.size(), "n_in_trades_clean": g["in_trades_clean"].sum(), "n_in_scope": g["in_scope"].sum(),
         "first_trade_date": g["transaction_date"].min(), "last_trade_date": g["transaction_date"].max(),
         "first_disclosure_date": g["disclosure_date"].min(), "last_disclosure_date": g["disclosure_date"].max(),
         "efd_asset_names": g["asset_name"].agg(lambda s: " | ".join(s.value_counts().index[:3])),
         "ticker_sources": g["ticker_source"].agg(lambda s: " ".join(sorted(set(s)))),
     })
-    first = g[["instrument_type", "yahoo_type", "exchange", "exchange_name", "listing", "is_etf", "is_otc",
+    first = g[["instrument_status", "instrument_type", "yahoo_type", "exchange", "exchange_name", "listing", "is_etf", "is_otc",
                "instrument_unresolved", "yahoo_name_mismatch", "yahoo_name"]].first()
     return t.join(first).reset_index().sort_values("ticker")
 
@@ -83,7 +84,7 @@ def run_report(cfg: dict, R: dict) -> None:
     PROCESSED.mkdir(parents=True, exist_ok=True)
     clean = tr[tr["in_trades_clean"]].sort_values(["disclosure_datetime", "trade_id"])
     clean[CLEAN_COLUMNS].to_csv(TRADES_CLEAN, index=False)
-    tickers = ticker_table(clean)
+    tickers = ticker_table(tr)
     tickers.to_csv(TICKERS, index=False)
     excl = rows[~((rows["role"] == "first_report") & rows["trade_id"].map(tr.set_index("trade_id")["in_scope"]).fillna(False).astype(bool))]
     excl = excl.rename(columns={"senator": "senator"})
@@ -157,8 +158,10 @@ def run_report(cfg: dict, R: dict) -> None:
           f"(owner, date, ticker, type or amount): **{int(subst.sum()):,}** (in scope: "
           f"**{int((subst & tr['in_scope']).sum()):,}**). By field (`data/interim/amendment_corrections.csv`):", "",
           md(fields), "",
-          f"- UNLINKED amendments: all {int(cls['UNLINKED'])} amend reports that predate the scrape start or were on "
-          "paper (see the note column); their rows count as first disclosed by the amendment.",
+          f"- UNLINKED amendments ({int(cls['UNLINKED'])}): no earlier electronic filing found. Reason: "
+          + (", ".join(f"{v} {k}" for k, v in amend.loc[amend['class'] == 'UNLINKED', 'note'].str.replace(
+              r"\(\d{4}-\d{2}-\d{2}\) ", "", regex=True).value_counts().items()) or "none")
+          + ". Their rows count as first disclosed by the amendment.",
           f"- Trades touched by an AMBIGUOUS amendment: {int(tr['amendment_ambiguous'].sum()):,} "
           f"(in scope: **{int((tr['amendment_ambiguous'] & tr['in_scope']).sum()):,}**). Rule applied: keep every "
           "version's trades once (a trade missing from the amendment is NOT deleted). Flag: `amendment_ambiguous`.", ""]
@@ -177,7 +180,10 @@ def run_report(cfg: dict, R: dict) -> None:
     acc = rec[rec["accepted"]]
     rej = rec[~rec["accepted"]].sort_values(["n_trades_self_joint_in_window", "n_trades"], ascending=False)
     L += ["### 4. Tickers", "",
-          f"- Unique tickers in trades_clean.csv: **{len(tickers):,}** (in scope: {int((tickers['n_in_scope'] > 0).sum()):,}).",
+          f"- Unique tickers checked with Yahoo (3/5/10-year windows, any owner): **{len(tickers):,}**; kept "
+          f"{int((tickers['instrument_status'] == 'kept').sum()):,}; with at least one in-scope trade "
+          f"{int((tickers['n_in_scope'] > 0).sum()):,}. Status by ticker: "
+          + ", ".join(f"{k} {v}" for k, v in tickers['instrument_status'].value_counts().items()) + ".",
           f"- Rows with a raw ticker changed by normalisation (case, spaces, share class BRK.B -> BRK-B): "
           f"{int((rows['ticker_raw'].str.strip().str.upper().replace('--', '') != rows['ticker']).sum())}.",
           f"- Missing-ticker asset names recovered: **{len(acc)}** names, {int(acc['n_trades'].sum())} trades "
@@ -205,9 +211,11 @@ def run_report(cfg: dict, R: dict) -> None:
     conc = s.groupby(["senator", "party"]).agg(trades=("trade_id", "size"), dollars=("dollars", "sum")).reset_index()
     conc["share_trades"] = conc["trades"] / conc["trades"].sum()
     conc["share_dollars"] = conc["dollars"] / conc["dollars"].sum()
-    by_n = conc.sort_values("trades", ascending=False).reset_index(drop=True)
+    by_n = conc.sort_values(["trades", "senator"], ascending=[False, True]).reset_index(drop=True)
+    by_n.index += 1
     by_n["cum_share_trades"] = by_n["share_trades"].cumsum()
-    by_d = conc.sort_values("dollars", ascending=False).reset_index(drop=True)
+    by_d = conc.sort_values(["dollars", "senator"], ascending=[False, True]).reset_index(drop=True)
+    by_d.index += 1
     by_d["cum_share_dollars"] = by_d["share_dollars"].cumsum()
     fmt = lambda d, cols: d.assign(**{c: d[c].map(pct) for c in cols})
     L += ["### 5. Concentration by senator (in-scope trades)", "",

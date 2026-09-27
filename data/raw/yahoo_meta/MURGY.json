@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1224250200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "M\u00fcnchener R\u00fcckversicherungs-Gesellschaft Aktiengesellschaft in M\u00fcnchen",
+  "shortName": "Muenchener Rueckver Ges",
+  "symbol": "MURGY"
+ },
+ "queried_at": "2026-09-27T22:43:40Z",
+ "symbol": "MURGY"
+}

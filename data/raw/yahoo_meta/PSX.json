@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1334237400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Phillips 66",
+  "shortName": "Phillips 66",
+  "symbol": "PSX"
+ },
+ "queried_at": "2026-09-27T22:46:38Z",
+ "symbol": "PSX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 753546600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Viavi Solutions Inc.",
+  "shortName": "Viavi Solutions Inc.",
+  "symbol": "VIAV"
+ },
+ "queried_at": "2026-09-27T22:52:40Z",
+ "symbol": "VIAV"
+}

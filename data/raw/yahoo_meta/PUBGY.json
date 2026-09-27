@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 968765400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Publicis Groupe S.A.",
+  "shortName": "Publicis Groupe S.A.",
+  "symbol": "PUBGY"
+ },
+ "queried_at": "2026-09-27T22:46:46Z",
+ "symbol": "PUBGY"
+}

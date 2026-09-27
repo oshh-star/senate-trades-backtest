@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Hershey Company",
+  "shortName": "The Hershey Company",
+  "symbol": "HSY"
+ },
+ "queried_at": "2026-09-27T22:38:34Z",
+ "symbol": "HSY"
+}

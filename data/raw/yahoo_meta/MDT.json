@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105197400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Medtronic plc",
+  "shortName": "Medtronic plc.",
+  "symbol": "MDT"
+ },
+ "queried_at": "2026-09-27T22:42:38Z",
+ "symbol": "MDT"
+}

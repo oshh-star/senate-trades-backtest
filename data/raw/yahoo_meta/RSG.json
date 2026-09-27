@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 899299800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Republic Services, Inc.",
+  "shortName": "Republic Services, Inc.",
+  "symbol": "RSG"
+ },
+ "queried_at": "2026-09-27T22:47:56Z",
+ "symbol": "RSG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1286458200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Daqo New Energy Corp.",
+  "shortName": "DAQO New Energy Corp.",
+  "symbol": "DQ"
+ },
+ "queried_at": "2026-09-27T22:33:56Z",
+ "symbol": "DQ"
+}

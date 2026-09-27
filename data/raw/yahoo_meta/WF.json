@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1065015000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Woori Financial Group Inc.",
+  "shortName": "Woori Financial Group Inc.",
+  "symbol": "WF"
+ },
+ "queried_at": "2026-09-27T22:53:35Z",
+ "symbol": "WF"
+}

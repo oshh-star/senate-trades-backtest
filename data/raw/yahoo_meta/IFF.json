@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 156522600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "International Flavors & Fragrances Inc.",
+  "shortName": "International Flavors & Fragran",
+  "symbol": "IFF"
+ },
+ "queried_at": "2026-09-27T22:39:09Z",
+ "symbol": "IFF"
+}

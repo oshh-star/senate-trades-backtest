@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1290090600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "LPL Financial Holdings Inc.",
+  "shortName": "LPL Financial Holdings Inc.",
+  "symbol": "LPLA"
+ },
+ "queried_at": "2026-09-27T22:41:49Z",
+ "symbol": "LPLA"
+}

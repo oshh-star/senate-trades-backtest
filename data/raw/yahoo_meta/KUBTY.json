@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 324052200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Kubota Corporation",
+  "shortName": "Kubota Corp.",
+  "symbol": "KUBTY"
+ },
+ "queried_at": "2026-09-27T22:41:04Z",
+ "symbol": "KUBTY"
+}

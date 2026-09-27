@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1108564200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "WEX Inc.",
+  "shortName": "WEX Inc.",
+  "symbol": "WEX"
+ },
+ "queried_at": "2026-09-27T22:53:34Z",
+ "symbol": "WEX"
+}

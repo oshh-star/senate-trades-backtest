@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 783091800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Knight-Swift Transportation Holdings Inc.",
+  "shortName": "Knight-Swift Transportation Hol",
+  "symbol": "KNX"
+ },
+ "queried_at": "2026-09-27T22:40:56Z",
+ "symbol": "KNX"
+}

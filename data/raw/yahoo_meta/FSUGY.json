@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1331731800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Fortescue Ltd",
+  "shortName": "FORTESCUE LTD.",
+  "symbol": "FSUGY"
+ },
+ "queried_at": "2026-09-27T22:36:40Z",
+ "symbol": "FSUGY"
+}

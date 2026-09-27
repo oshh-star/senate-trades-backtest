@@ -1,0 +1,240 @@
+trade_id,field,old,new,amendment_ptr_id,match_pass
+T00279,ticker,ADT.F,ADT,17caad4c-3801-48b6-85b5-b4bfbe09be8b,asset_replaced
+T00279,asset_name,ADT CORPORATION,The ADT Corporation,17caad4c-3801-48b6-85b5-b4bfbe09be8b,asset_replaced
+T00282,transaction_type,Sale (Full),Sale (Partial),58a3b1ce-d1c2-4ad6-9458-be9a7fbe6c6d,sale_type
+T00481,transaction_type,Purchase,Sale (Full),33c67e54-1d07-4099-8e10-920cfe4a74d5,type
+T00904,ticker,SPY,,5bdbba1a-4794-48fa-a26c-09717428dc37,asset_replaced
+T00904,asset_name,SPDR S&P 500 ETF Trust (NYSEArca),SPDR S&P Bank ETF,5bdbba1a-4794-48fa-a26c-09717428dc37,asset_replaced
+T00045,transaction_date_iso,2016-01-05,2015-12-30,19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00045,ticker,INTC,,19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00045,asset_name,Intel Corporation (NASDAQ),INTC-Intel Corporation (NASDAQ),19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00047,transaction_date_iso,2016-01-05,2015-12-30,19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00047,ticker,AAPL,,19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00047,asset_name,Apple Inc. (NASDAQ),AAPL-Apple Inc. (NASDAQ),19885715-1a99-459e-bfce-8f5f57ca5e94,date
+T00628,asset_name,Testainer Group Holdings,Textainer Group Holdings,d2d04078-48e2-4399-81d6-bd2d8cb5a912,asset_replaced
+T01377,transaction_date_iso,2017-01-04,2016-12-29,99e5e5c2-c650-4e77-b625-aaa79a9df6dd,date
+T01377,asset_name,"Simon Property Group, Inc.","SPG-SPG-Simon Property Group, Inc.",99e5e5c2-c650-4e77-b625-aaa79a9df6dd,date
+T01378,transaction_date_iso,2017-01-04,2016-12-29,99e5e5c2-c650-4e77-b625-aaa79a9df6dd,date
+T01378,asset_name,"NIKE, Inc.","NKE-NKE-NKE-NIKE, Inc.",99e5e5c2-c650-4e77-b625-aaa79a9df6dd,date
+T01384,ticker,PRGO,,5bc04cde-0e58-495a-96a3-4de12b0d0c27,type
+T01384,asset_name,Perrigo Company plc,PRGO-Perrigo Company plc,5bc04cde-0e58-495a-96a3-4de12b0d0c27,type
+T01384,transaction_type,Purchase,Sale (Full),5bc04cde-0e58-495a-96a3-4de12b0d0c27,type
+T00250,ticker,PFE,,86121a25-fe1d-481a-9557-d0b9a975494d,sale_type
+T00250,asset_name,Pfizer Inc.,PFE-Pfizer Inc.,86121a25-fe1d-481a-9557-d0b9a975494d,sale_type
+T00250,transaction_type,Sale (Partial),Sale (Full),86121a25-fe1d-481a-9557-d0b9a975494d,sale_type
+T00459,ticker,OKE,,f1c064c4-90c8-4eb0-a518-184055d47983,sale_type
+T00459,asset_name,ONEOK Inc.,OKE-ONEOK Inc.,f1c064c4-90c8-4eb0-a518-184055d47983,sale_type
+T00459,transaction_type,Sale (Partial),Sale (Full),f1c064c4-90c8-4eb0-a518-184055d47983,sale_type
+T00475,ticker,STT,,f07795d2-5520-4ea3-b0f3-ec400a7534a4,sale_type
+T00475,asset_name,State Street Corporation,STT-State Street Corporation,f07795d2-5520-4ea3-b0f3-ec400a7534a4,sale_type
+T00475,transaction_type,Sale (Full),Sale (Partial),f07795d2-5520-4ea3-b0f3-ec400a7534a4,sale_type
+T00304,ticker,GS,,80c3ecb6-c69b-4ca0-8791-37c32edd49b0,sale_type
+T00304,asset_name,"The Goldman Sachs Group, Inc.","GS-The Goldman Sachs Group, Inc.",80c3ecb6-c69b-4ca0-8791-37c32edd49b0,sale_type
+T00304,transaction_type,Sale (Partial),Sale (Full),80c3ecb6-c69b-4ca0-8791-37c32edd49b0,sale_type
+T01150,ticker,BUNT,,06ebd3f4-8ea6-439e-8cc5-2d07a4be9fa3,type
+T01150,asset_name,DB 3x German Bund Futures ETN,BUNT-DB 3x German Bund Futures ETN,06ebd3f4-8ea6-439e-8cc5-2d07a4be9fa3,type
+T01150,transaction_type,Purchase,Sale (Full),06ebd3f4-8ea6-439e-8cc5-2d07a4be9fa3,type
+T00394,transaction_type,Sale (Full),Sale (Partial),b4225956-fc39-48e4-bdcd-71e01a4a0bb4,sale_type
+T01070,transaction_type,Sale (Partial),Sale (Full),8a37e32d-5c37-4fbd-a7bc-c2b30aa9583e,sale_type
+T00183,ticker,SPY160219P00180000,,72854f36-aae4-445b-b63a-4fba86861178,asset_replaced
+T00183,asset_name,SPY Feb 2016 put 180.000,SPY160219P00180000-SPY Feb 29th 2016 put 180.000,72854f36-aae4-445b-b63a-4fba86861178,asset_replaced
+T02355,amount,"$15,001 - $50,000","$1,001 - $15,000",07935a4d-85ec-406f-8c1c-bd951dfd2903,amount
+T01826,transaction_type,Sale (Full),Sale (Partial),13cd6696-9614-4773-94dd-5f14da177d93,sale_type
+T02658,transaction_type,Sale (Full),Sale (Partial),f8df0be3-2838-4f6f-86a4-de6027825cc0,sale_type
+T02659,transaction_type,Sale (Full),Sale (Partial),f8df0be3-2838-4f6f-86a4-de6027825cc0,sale_type
+T02660,transaction_type,Sale (Full),Sale (Partial),f8df0be3-2838-4f6f-86a4-de6027825cc0,sale_type
+T02732,transaction_type,Sale (Full),Sale (Partial),06bc054e-4044-4322-80ad-ae881b8c8843,sale_type
+T00147,ticker,,ABBV,30c3b59c-377c-432c-a177-f6e5f38debd6,asset_replaced
+T00147,asset_name,ACN,AbbVie Inc.,30c3b59c-377c-432c-a177-f6e5f38debd6,asset_replaced
+T00261,transaction_type,Sale (Partial),Sale (Full),d5741310-e8a2-4be6-b3ae-9843568526a8,sale_type
+T01780,owner,Self,Joint,f78374ac-8a55-4e51-bf19-3ccc27a88c4e,owner
+T01484,owner,Spouse,Joint,0f136e07-eaf1-47c8-84e8-89a390dd3855,owner
+T03453,transaction_date_iso,2017-07-18,2018-07-18,025cc231-0964-4f3b-a84a-b33d8b5572e3,date
+T01451,asset_name,AT&T Inc.,AT&T Inc. Rate/Coupon: 5.8% Matures: 02/15/2019,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,exact
+T01451,asset_type,Stock,Corporate Bond,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,exact
+T01452,asset_name,Bank of America Corporation,Bank of America Corporation Rate/Coupon: 5.5% Matures: 03/15/2018,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,exact
+T01452,asset_type,Stock,Corporate Bond,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,exact
+T01448,transaction_type,Sale (Partial),Sale (Full),bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,sale_type
+T01450,ticker,NEE-PC,,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,asset_replaced
+T01450,asset_name,"FPL Group, Inc. 5 7/8% Preferre",FPL Group Capital Inc. Rate/Coupon: 6.0% Matures: 03/01/2019,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,asset_replaced
+T01450,asset_type,Stock,Corporate Bond,bd44b543-c8e5-4d3b-9638-9a8e0c9c35e1,asset_replaced
+T01527,asset_name,"The Travelers Companies, Inc.","The Travelers Companies, Inc. Rate/Coupon: 5.8% Matures: 05/15/2018",c88f4a1d-16de-4362-955d-ab5402b6653e,exact
+T01527,asset_type,Stock,Corporate Bond,c88f4a1d-16de-4362-955d-ab5402b6653e,exact
+T01528,asset_name,E. I. du Pont de Nemours and Company,E. I. du Pont de Nemours and Company Rate/Coupon: 6% Matures: 07/15/2018,c88f4a1d-16de-4362-955d-ab5402b6653e,exact
+T01528,asset_type,Stock,Corporate Bond,c88f4a1d-16de-4362-955d-ab5402b6653e,exact
+T01526,ticker,XEL,,c88f4a1d-16de-4362-955d-ab5402b6653e,asset_replaced
+T01526,asset_name,Xcel Energy Inc.,Public Service Company of Colorado Rate/Coupon: 5.8% Matures: 08/01/2018,c88f4a1d-16de-4362-955d-ab5402b6653e,asset_replaced
+T01526,asset_type,Stock,Corporate Bond,c88f4a1d-16de-4362-955d-ab5402b6653e,asset_replaced
+T02263,owner,Self,Joint,9ff9c3ee-4a28-46e5-a818-f02bbb6ebe47,owner
+T02263,asset_name,AT&T Inc.,AT&T Inc. Rate/Coupon: 5.8% Matures: 02/15/2019,9ff9c3ee-4a28-46e5-a818-f02bbb6ebe47,owner
+T02263,asset_type,Stock,Corporate Bond,9ff9c3ee-4a28-46e5-a818-f02bbb6ebe47,owner
+T02733,amount,"$1,001 - $15,000","$15,001 - $50,000",b133682c-13d9-4484-b7f5-847c1ee7f768,amount
+T02729,owner,Self,Joint,b133682c-13d9-4484-b7f5-847c1ee7f768,owner
+T02732,owner,Self,Joint,b133682c-13d9-4484-b7f5-847c1ee7f768,owner
+T02657,owner,Self,Joint,45839e69-5f6a-478d-a622-5af143c9766a,owner
+T02658,owner,Self,Joint,45839e69-5f6a-478d-a622-5af143c9766a,owner
+T02659,owner,Self,Joint,45839e69-5f6a-478d-a622-5af143c9766a,owner
+T02660,owner,Self,Joint,45839e69-5f6a-478d-a622-5af143c9766a,owner
+T02648,owner,Joint,Self,f76f4a51-a0f6-458c-a0f0-20f0f664cd9c,owner
+T02649,owner,Joint,Self,f76f4a51-a0f6-458c-a0f0-20f0f664cd9c,owner
+T02525,transaction_type,Sale (Partial),Sale (Full),6afda1fe-9dec-4298-a0dd-4e53e898eec8,sale_type
+T03886,owner,Spouse,Self,2ae1f15e-73c5-40ea-bff7-28aecdbeb585,owner
+T04233,asset_name,RBC Contingent Autocall on Nvidia Rate/Coupon: 12.65% Matures: 07/30/219,RBC Contingent Autocall on Nvidia Rate/Coupon: 12.65% Matures: 07/30/2019,84faff2e-dc17-44a5-ace7-8a3bb65c00ad,asset_replaced
+T04400,transaction_date_iso,2019-01-19,2018-01-19,9b76f720-181f-496f-aed1-9f22805876e8,date
+T02864,transaction_type,Sale (Full),Sale (Partial),ef76dcba-a95a-4f41-abfd-3b32dde7035e,sale_type
+T03204,transaction_type,Sale (Full),Sale (Partial),ff931edc-194d-48dc-98bf-ddef7f4d0e45,sale_type
+T03126,ticker,IBM.MX,IBM,ff931edc-194d-48dc-98bf-ddef7f4d0e45,asset
+T02861,transaction_type,Sale (Full),Sale (Partial),fd71d29d-557b-4cf7-8080-a84c9bf6bce3,sale_type
+T03429,owner,Self,Spouse,59621016-9a15-404e-b3db-cde44aa15719,owner
+T02755,owner,Spouse,Joint,0d60b065-461c-4fca-be82-d0c8e54b9ad1,owner
+T03331,owner,Spouse,Joint,5e407914-33e4-4388-b670-c4a680f927aa,owner
+T03679,transaction_type,Sale (Full),Sale (Partial),3235ca53-346d-4905-94b6-2dc6e50bc2c7,sale_type
+T03677,asset_name,S&P 500 Index Fd,Ishares Core S&P 500 ETF,3235ca53-346d-4905-94b6-2dc6e50bc2c7,asset_replaced
+T02816,asset_name,Ishares MSCI SP Small Cap Index,Ishares Core S&P Small Cap ETF,b9beb296-ed8a-49f3-8d2a-dc782679fd71,asset_replaced
+T04083,transaction_type,Sale (Partial),Sale (Full),eaa9e663-e475-41a5-ac0d-3e107ed67481,sale_type
+T03472,owner,Self,Joint,f3401d4b-32f3-4ae3-8fad-d76d5154f170,owner
+T02849,owner,Self,Joint,482ea72a-ca70-4fd9-922a-68cd723b0ee7,owner
+T02849,asset_name,Bank of America Corporation,Bank of America Corporation Rate/Coupon: 5.5% Matures: 03/15/2018,482ea72a-ca70-4fd9-922a-68cd723b0ee7,owner
+T02849,asset_type,Stock,Corporate Bond,482ea72a-ca70-4fd9-922a-68cd723b0ee7,owner
+T03239,owner,Self,Joint,957fc2e0-f898-4b9b-acbc-c7acca4820e8,owner
+T03240,owner,Self,Joint,957fc2e0-f898-4b9b-acbc-c7acca4820e8,owner
+T03420,owner,Self,Joint,fb862ec8-d6d8-4199-8ffe-41b750ebfe3f,owner
+T03421,owner,Self,Joint,fb862ec8-d6d8-4199-8ffe-41b750ebfe3f,owner
+T03551,owner,Self,Joint,42013227-54d2-4641-ba01-d21a7d77cee7,owner
+T03552,owner,Self,Joint,42013227-54d2-4641-ba01-d21a7d77cee7,owner
+T03562,asset_name,SANTANDER UK GROUP HOLDINGS Rate/Coupon: 3.125 Matures: 01/01/2021,SANTANDER UK GROUP HOLDINGS Rate/Coupon: 3.125 Matures: 01/08/2021,8c05e0b3-a896-40b5-9ab9-9579d238cee5,asset_replaced
+T04619,transaction_type,Sale (Full),Sale (Partial),3d907991-077d-4816-81d5-9644415cff66,sale_type
+T04229,transaction_type,Sale (Full),Sale (Partial),16a9d865-f3b4-48a6-8220-5eaeeb8c47c5,sale_type
+T04078,transaction_type,Sale (Full),Sale (Partial),cf3ffbbc-56ba-44e0-a4b9-5bd37287ba4f,sale_type
+T05133,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05134,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05135,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05136,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05137,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05138,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05139,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05140,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05141,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05146,owner,Spouse,Joint,d1798081-ddcc-48fd-a599-ceb60730a02d,owner
+T05142,transaction_date_iso,2020-01-21,2020-01-17,07b4e543-0978-4d51-87d4-bc4bbe63a1fc,date
+T05125,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05126,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05127,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05128,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05129,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05130,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05140,transaction_type,Sale (Partial),Sale (Full),07b4e543-0978-4d51-87d4-bc4bbe63a1fc,sale_type
+T05270,amount,"$15,001 - $50,000","$50,001 - $100,000",8d87d0d9-8094-4891-a29c-c0e0435acb1a,amount
+T05261,transaction_date_iso,2020-02-12,2020-02-10,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05262,transaction_date_iso,2020-02-12,2020-02-10,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05263,transaction_date_iso,2020-02-11,2020-02-07,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05268,transaction_date_iso,2020-02-07,2020-02-05,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05269,transaction_date_iso,2020-02-07,2020-02-05,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05272,transaction_date_iso,2020-02-06,2020-02-04,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05273,transaction_date_iso,2020-02-06,2020-02-04,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05274,transaction_date_iso,2020-02-06,2020-02-04,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05276,transaction_date_iso,2020-02-05,2020-02-03,8d87d0d9-8094-4891-a29c-c0e0435acb1a,date
+T05277,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05278,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05279,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05280,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05281,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05282,transaction_type,Sale (Partial),Sale (Full),8d87d0d9-8094-4891-a29c-c0e0435acb1a,sale_type
+T05346,amount,"$15,001 - $50,000","$50,001 - $100,000",b56659bd-564b-46ee-9c6f-4520348904fd,amount
+T05347,amount,"$100,001 - $250,000","$15,001 - $50,000",b56659bd-564b-46ee-9c6f-4520348904fd,amount
+T05333,transaction_date_iso,2020-03-13,2020-03-12,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05334,transaction_date_iso,2020-03-10,2020-03-09,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05335,transaction_date_iso,2020-03-10,2020-03-09,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05350,transaction_date_iso,2020-03-09,2020-03-06,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05352,transaction_date_iso,2020-03-09,2020-03-05,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05362,transaction_date_iso,2020-02-27,2020-02-25,b56659bd-564b-46ee-9c6f-4520348904fd,date
+T05020,ticker,UAA,UA,e0862315-29f3-42d0-9ca7-9d660dbb1c0d,asset
+T04793,transaction_date_iso,2019-09-16,2019-09-19,ef8819eb-45c8-4ab3-addb-50fc3a7f9ddf,date
+T04354,transaction_type,Sale (Full),Sale (Partial),5a076a67-a796-4c09-91e7-c0d1aa0302a4,sale_type
+T06071,ticker,BRY,BERY,42688977-19a1-49ce-8286-d3ad06e68187,asset_replaced
+T06071,asset_name,Berry Corporation,"Berry Global Group, Inc.",42688977-19a1-49ce-8286-d3ad06e68187,asset_replaced
+T05015,transaction_type,Sale (Full),Sale (Partial),c690e54c-261b-4535-a690-6d11919f00ff,sale_type
+T05016,transaction_type,Sale (Full),Sale (Partial),c690e54c-261b-4535-a690-6d11919f00ff,sale_type
+T04356,transaction_type,Sale (Full),Sale (Partial),4de1179d-9ca8-48f9-960a-81724ef5f260,sale_type
+T04361,transaction_type,Sale (Partial),Sale (Full),7d3f2202-20b5-43ca-9170-da4ab32a7a19,sale_type
+T06571,transaction_type,Sale (Partial),Sale (Full),4f809324-f54d-48b7-af27-46f6657857f3,sale_type
+T06019,ticker,SOJA,,b907f852-1e91-473b-ab7b-3b33cf57b58f,asset_replaced
+T06019,asset_name,The Southern Company JR SUB NT 2015A,Southern Cmpy Bond,b907f852-1e91-473b-ab7b-3b33cf57b58f,asset_replaced
+T05245,transaction_type,Sale (Partial),Purchase,3644a5ce-e1f9-4b36-9f48-65842e44f75e,type
+T05250,transaction_type,Sale (Partial),Purchase,3644a5ce-e1f9-4b36-9f48-65842e44f75e,type
+T05791,ticker,HPQ,,bc6505f6-4219-4ce3-b146-a9faaabda324,asset_replaced
+T05791,asset_name,HP Inc.,HPE - HP Inc.,bc6505f6-4219-4ce3-b146-a9faaabda324,asset_replaced
+T06234,transaction_type,Sale (Partial),Sale (Full),66e04e1d-0b8e-4619-bfa4-6ff7b2ee8160,sale_type
+T06361,transaction_type,Sale (Partial),Sale (Full),2c50727e-eb4d-4dc1-a092-456e4d6e8dab,sale_type
+T06545,transaction_type,Sale (Partial),Sale (Full),6697156a-918e-4db5-86f3-bf7abe42c239,sale_type
+T06549,transaction_type,Sale (Partial),Sale (Full),6697156a-918e-4db5-86f3-bf7abe42c239,sale_type
+T06550,transaction_type,Sale (Partial),Sale (Full),6697156a-918e-4db5-86f3-bf7abe42c239,sale_type
+T06498,ticker,,XCAPX,6697156a-918e-4db5-86f3-bf7abe42c239,asset_replaced
+T06498,asset_name,ACAP STRAGIC INTERVAL,ACAP Strategic Fund,6697156a-918e-4db5-86f3-bf7abe42c239,asset_replaced
+T05286,owner,Joint,Self,5d96ee20-55b8-4258-b059-7f5c91683748,owner
+T05285,ticker,VWO,VUSFX,534becb6-71f8-418b-963b-a0a33b3a5be8,asset_replaced
+T05285,asset_name,Vanguard FTSE Emerging Markets Index Fund ETF Shar,Vanguard Ultra-Short-Term Bond Fund Admiral Shares,534becb6-71f8-418b-963b-a0a33b3a5be8,asset_replaced
+T06496,transaction_type,Sale (Full),Sale (Partial),267d588f-a44e-46c0-8654-9b6396851c34,sale_type
+T06714,ticker,GGSM,GEM,7fe3d995-edac-445a-b57b-fe4d67504e8a,asset_replaced
+T06714,asset_name,Gold and GemStone Mining Inc.,GS Activebeta Emerging Markets Equity ETF,7fe3d995-edac-445a-b57b-fe4d67504e8a,asset_replaced
+T06829,owner,Self,Joint,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T06829,ticker,ETHE,,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T06829,asset_name,Grayscale Ethereum Trust (ETH) Exchange/Platform: OTC,ETHE - Grayscale Ethereum Trust Exchange/Platform: OTC,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T06830,owner,Self,Joint,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T06830,ticker,GBTC,,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T06830,asset_name,Grayscale Bitcoin Trust (BTC) Exchange/Platform: OTC,GBTC - Grayscale Bitcoin Trust Exchange/Platform: OTC,3da479a8-e0f2-4a53-b787-4fbbb1f075ab,owner
+T08007,owner,Joint,Spouse,3e37ef80-caff-4b2a-a6dd-ba4f557fd3f4,owner
+T08466,transaction_date_iso,2022-04-03,2023-04-03,0f75ebb1-f361-48c9-b347-b76366b49029,date
+T08054,transaction_type,Sale (Full),Sale (Partial),b0c8c060-b625-4ade-bea9-624c36cd54dd,sale_type
+T07627,transaction_type,Sale (Partial),Sale (Full),5506edae-7d2f-4c33-a22e-7971200c6f0d,sale_type
+T09214,ticker,PALL,PPLT,6a8e509d-cde7-4266-848e-a27fa42ba438,asset_replaced
+T09214,asset_name,abrdn Physical Palladium Shares ETF,abrdn Physical Platinum Shares ETF,6a8e509d-cde7-4266-848e-a27fa42ba438,asset_replaced
+T09321,transaction_date_iso,2024-01-26,2023-12-28,950138d9-644e-4216-9e64-46b6f1520074,date
+T09322,transaction_date_iso,2024-01-26,2023-12-28,950138d9-644e-4216-9e64-46b6f1520074,date
+T10313,transaction_date_iso,2024-02-18,2025-02-18,ac293f74-570f-4c11-9224-79686a7500a9,date
+T10567,ticker,,AVGO,4b5c15fa-74ca-4e12-a0c4-3dd9ef5124b7,asset
+T09581,owner,Joint,Spouse,324d2ffc-178b-417a-aecb-5c86481ba4bc,owner
+T10068,ticker,,PDBC,748ff789-e7a2-4d19-b631-fa023b718682,asset_replaced
+T10068,asset_name,Invesco Actively Managed Exchange Traded,Invesco Optimum Yield Diversified Commodity Strate,748ff789-e7a2-4d19-b631-fa023b718682,asset_replaced
+T10070,ticker,HIYS,PDBC,748ff789-e7a2-4d19-b631-fa023b718682,asset_replaced
+T10070,asset_name,Invesco Actively Managed Exchange-Traded Fund Trus,Invesco Optimum Yield Diversified Commodity Strate,748ff789-e7a2-4d19-b631-fa023b718682,asset_replaced
+T09326,transaction_type,Sale (Full),Sale (Partial),5b2ca943-b150-4679-92d0-843c127e6064,sale_type
+T09496,transaction_type,Sale (Full),Sale (Partial),f1058108-7055-4891-9a74-98eb4b670d65,sale_type
+T09601,transaction_type,Sale (Full),Sale (Partial),03e0a1db-2fe8-409f-ae3e-61ab61e14cae,sale_type
+T10083,transaction_type,Sale (Full),Sale (Partial),1d6d6efd-3e8b-4702-b437-20dd08c9bce0,sale_type
+T09844,transaction_type,Sale (Full),Sale (Partial),85199603-1615-424e-ba12-801a5d8dd0f4,sale_type
+T10830,amount,"$15,001 - $50,000","$1,001 - $15,000",27f15751-bcec-4e3e-a0ab-d7e843c08d06,amount
+T10419,transaction_type,Sale (Full),Sale (Partial),8292d644-09cf-45f9-8126-cbf54a114745,sale_type
+T10615,transaction_date_iso,2025-06-25,2025-04-24,50e54b67-b398-470e-8baf-e09e3be81d86,date
+T10615,asset_name,BAKER HUGHES HLDGS LLC Rate/Coupon: 4.486% Matures: 05/01/2030,BAKER HUGHES HLDGS LLC Rate/Coupon: 4.486% Matures: 2030-05-01,50e54b67-b398-470e-8baf-e09e3be81d86,date
+T11428,ticker,,SPYM,727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T11428,asset_name,SPYM - Tradr 2X Long SPY Monthly ETF,Tradr 2X Long SPY Monthly ETF,727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T11435,ticker,,FTGC,727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T11435,asset_name,FTGC - First Trust Global Tactical Commodity Strategy Fund,First Trust Global Tactical Commodity Strategy Fund,727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T11438,ticker,,ACN,727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T11438,asset_name,ACN - Accenture plc Class A Ordinary Shares (Ireland),Accenture plc Class A Ordinary Shares (Ireland),727b4eb6-d8c7-4792-aa5b-c651c2d72f9c,exact
+T09567,transaction_type,Sale (Full),Sale (Partial),548cacbf-7cf2-42cb-9f23-71250938caae,sale_type
+T09569,transaction_type,Sale (Full),Sale (Partial),548cacbf-7cf2-42cb-9f23-71250938caae,sale_type
+T09570,transaction_type,Sale (Full),Sale (Partial),548cacbf-7cf2-42cb-9f23-71250938caae,sale_type
+T09794,transaction_type,Purchase,Sale (Full),0a25588d-a3f8-4ed6-971a-706097f78e3a,type
+T09957,transaction_type,Sale (Full),Sale (Partial),2758f09a-fda9-4fb4-a465-270173a8125d,sale_type
+T10052,transaction_type,Sale (Full),Sale (Partial),cce52b36-d00c-4710-a8ee-e84893fb4be1,sale_type
+T10058,transaction_type,Sale (Full),Sale (Partial),cce52b36-d00c-4710-a8ee-e84893fb4be1,sale_type
+T10061,transaction_type,Sale (Full),Sale (Partial),2b076d77-6bc1-4b67-8be9-8f45a787479f,sale_type
+T10240,transaction_type,Sale (Full),Sale (Partial),d1afafd0-a78f-44ef-ae47-da99dfb01317,sale_type
+T10504,transaction_type,Sale (Full),Sale (Partial),014817f0-9809-457f-8ac5-048948608e02,sale_type
+T10506,transaction_type,Sale (Full),Sale (Partial),014817f0-9809-457f-8ac5-048948608e02,sale_type
+T10511,transaction_type,Sale (Full),Sale (Partial),014817f0-9809-457f-8ac5-048948608e02,sale_type
+T10513,transaction_type,Sale (Full),Sale (Partial),014817f0-9809-457f-8ac5-048948608e02,sale_type
+T10892,transaction_type,Sale (Full),Sale (Partial),1a5e6752-653a-4b11-82b6-efd51d466bb6,sale_type
+T10893,transaction_type,Sale (Full),Sale (Partial),1a5e6752-653a-4b11-82b6-efd51d466bb6,sale_type
+T11026,transaction_type,Sale (Full),Sale (Partial),57cf1745-e3dd-4afd-8685-228153848631,sale_type
+T11027,transaction_type,Sale (Full),Sale (Partial),57cf1745-e3dd-4afd-8685-228153848631,sale_type
+T10289,asset_name,Central Texas Regional Mobility Auth Revenue Bond Rate/Coupon: 5.0% Matures: 01/01/2040,Central Texas Regional Mobility Auth Revenue Bond Rate/Coupon: 5.0% Matures: 2040-01-01,f0a05c3b-66e0-4287-a388-454e2b4c823d,type
+T10289,transaction_type,Purchase,Sale (Full),f0a05c3b-66e0-4287-a388-454e2b4c823d,type
+T12291,ticker,,SPYM,4184cc9a-78e0-45f3-84f7-642011e6ff98,exact
+T12291,asset_name,SPYM - Tradr 2X Long SPY Monthly ETF,Tradr 2X Long SPY Monthly ETF,4184cc9a-78e0-45f3-84f7-642011e6ff98,exact
+T10490,ticker,FTGC,CBOE,f727289a-4d72-4c90-a3ea-63d5bcd23398,asset_replaced
+T10490,asset_name,First Trust Global Tactical Commodity Strategy Fun,"Cboe Global Markets, Inc. Common Stock",f727289a-4d72-4c90-a3ea-63d5bcd23398,asset_replaced
+T10948,ticker,RNWAX,RNWGX,51455bcd-4966-4e77-b481-09897ada81ae,asset_replaced
+T10948,asset_name,American Funds - New World Fund Inc Class R-1 Sh,NEW WORLD FUND INC - Class R-6,51455bcd-4966-4e77-b481-09897ada81ae,asset_replaced

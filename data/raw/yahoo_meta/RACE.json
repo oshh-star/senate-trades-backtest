@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1445434200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ferrari N.V.",
+  "shortName": "Ferrari N.V.",
+  "symbol": "RACE"
+ },
+ "queried_at": "2026-09-27T22:47:08Z",
+ "symbol": "RACE"
+}

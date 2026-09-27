@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138372200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sandvik AB (publ)",
+  "shortName": "Sandvik AB",
+  "symbol": "SDVKY"
+ },
+ "queried_at": "2026-09-27T22:48:39Z",
+ "symbol": "SDVKY"
+}

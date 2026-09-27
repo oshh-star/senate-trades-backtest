@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 941203800,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Plug Power Inc.",
+  "shortName": "Plug Power, Inc.",
+  "symbol": "PLUG"
+ },
+ "queried_at": "2026-09-27T22:46:07Z",
+ "symbol": "PLUG"
+}

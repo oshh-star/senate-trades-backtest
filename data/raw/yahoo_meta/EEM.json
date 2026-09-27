@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1050327000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI Emerging Markets ETF",
+  "shortName": "iShares MSCI Emerging Index Fun",
+  "symbol": "EEM"
+ },
+ "queried_at": "2026-09-27T22:34:30Z",
+ "symbol": "EEM"
+}

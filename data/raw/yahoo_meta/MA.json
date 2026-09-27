@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1148563800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Mastercard Incorporated",
+  "shortName": "Mastercard Incorporated",
+  "symbol": "MA"
+ },
+ "queried_at": "2026-09-27T22:42:14Z",
+ "symbol": "MA"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 440260200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "LiveRamp Holdings, Inc.",
+  "shortName": "LiveRamp Holdings, Inc.",
+  "symbol": "RAMP"
+ },
+ "queried_at": "2026-09-27T22:47:11Z",
+ "symbol": "RAMP"
+}

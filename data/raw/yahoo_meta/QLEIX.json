@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1373981400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "AQR Long-Short Equity I",
+  "shortName": "AQR Long-Short Equity Fund Clas",
+  "symbol": "QLEIX"
+ },
+ "queried_at": "2026-09-27T22:46:58Z",
+ "symbol": "QLEIX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 890663400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Marriott International, Inc.",
+  "shortName": "Marriott International",
+  "symbol": "MAR"
+ },
+ "queried_at": "2026-09-27T22:42:19Z",
+ "symbol": "MAR"
+}

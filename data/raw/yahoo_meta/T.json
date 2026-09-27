@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 438273000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AT&T Inc.",
+  "shortName": "AT&T Inc.",
+  "symbol": "T"
+ },
+ "queried_at": "2026-09-27T22:50:29Z",
+ "symbol": "T"
+}

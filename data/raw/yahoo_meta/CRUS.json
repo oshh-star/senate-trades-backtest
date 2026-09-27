@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 613402200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cirrus Logic, Inc.",
+  "shortName": "Cirrus Logic, Inc.",
+  "symbol": "CRUS"
+ },
+ "queried_at": "2026-09-27T22:32:26Z",
+ "symbol": "CRUS"
+}

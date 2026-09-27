@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1663248600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Bondbloxx Bloomberg Five Year Target Duration US Treasury ETF",
+  "shortName": "BondBloxx Bloomberg Five Year T",
+  "symbol": "XFIV"
+ },
+ "queried_at": "2026-09-27T22:54:17Z",
+ "symbol": "XFIV"
+}

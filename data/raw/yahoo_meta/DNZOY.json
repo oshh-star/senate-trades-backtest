@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1026912600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "DENSO Corporation",
+  "shortName": "Denso Corp.",
+  "symbol": "DNZOY"
+ },
+ "queried_at": "2026-09-27T22:33:46Z",
+ "symbol": "DNZOY"
+}

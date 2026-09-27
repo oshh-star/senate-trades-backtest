@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Loews Corporation",
+  "shortName": "Loews Corporation",
+  "symbol": "L"
+ },
+ "queried_at": "2026-09-27T22:41:12Z",
+ "symbol": "L"
+}

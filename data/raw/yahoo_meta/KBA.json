@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1394029800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "KraneShares Bosera MSCI China A 50 Connect Index ETF",
+  "shortName": "KraneShares Bosera MSCI China A",
+  "symbol": "KBA"
+ },
+ "queried_at": "2026-09-27T22:40:29Z",
+ "symbol": "KBA"
+}

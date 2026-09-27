@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1214400600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares Global Clean Energy ETF",
+  "shortName": "iShares Global Clean Energy ETF",
+  "symbol": "ICLN"
+ },
+ "queried_at": "2026-09-27T22:38:59Z",
+ "symbol": "ICLN"
+}

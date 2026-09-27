@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1168525800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares Broad USD Investment Grade Corporate Bond ETF",
+  "shortName": "iShares Broad USD Investment Gr",
+  "symbol": "USIG"
+ },
+ "queried_at": "2026-09-27T22:52:16Z",
+ "symbol": "USIG"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:39:18Z"
+ },
+ "queried_at": "2026-09-27T23:00:53Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": "Iino Kaiun Kaisha Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "IINO KAIUN KAISHA LTD.        R",
+   "symbol": "1UD.HM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Neuberger Nex GenSpcEcy\u20acIIncClUnH",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001YGXC.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Stuttgart",
+   "exchange": "STU",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "Iino Kaiun Kaisha Ltd",
+   "symbol": "1UD.SG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "CT (Lux) Sst Glb Eq Enh Inc IIncQEUR",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001XR1U.F",
+   "symbol": "0P0001XR1U.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "BNPP Flexi IIncrementoAzionarioEurp30ClD",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001YOCT.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "BNPP Flexi IIncrementoAzionarioEurp30ClC",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001YOCV.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "CT (Lux) Sst Glb Eq Enh Inc IIncPtfHEUR",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001RDZQ.F",
+   "symbol": "0P0001RDZQ.F",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "IIN"
+}

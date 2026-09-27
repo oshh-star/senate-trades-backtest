@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1472650200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Evolution AB (publ)",
+  "shortName": "Evolution AB",
+  "symbol": "EVVTY"
+ },
+ "queried_at": "2026-09-27T22:35:26Z",
+ "symbol": "EVVTY"
+}

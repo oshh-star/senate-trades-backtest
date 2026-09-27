@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1639405800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daimler Truck Holding AG",
+  "shortName": "DAIMLER TRUCK HLDG AG",
+  "symbol": "DTRUY"
+ },
+ "queried_at": "2026-09-27T22:34:07Z",
+ "symbol": "DTRUY"
+}

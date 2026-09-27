@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1337347800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Meta Platforms, Inc.",
+  "shortName": "Meta Platforms, Inc.",
+  "symbol": "META"
+ },
+ "queried_at": "2026-09-27T22:42:42Z",
+ "symbol": "META"
+}

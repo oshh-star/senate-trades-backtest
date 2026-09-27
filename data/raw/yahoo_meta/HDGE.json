@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1296138600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "AdvisorShares Active Bear ETF",
+  "shortName": "Ranger Equity Bear Bear ETF",
+  "symbol": "HDGE"
+ },
+ "queried_at": "2026-09-27T22:38:04Z",
+ "symbol": "HDGE"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Cr\u00e9dit Agricole S.A.",
+  "shortName": "Credit Agricole SA",
+  "symbol": "CRARY"
+ },
+ "queried_at": "2026-09-27T22:32:18Z",
+ "symbol": "CRARY"
+}

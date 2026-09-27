@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 975681000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fluor Corporation",
+  "shortName": "Fluor Corporation",
+  "symbol": "FLR"
+ },
+ "queried_at": "2026-09-27T22:36:19Z",
+ "symbol": "FLR"
+}

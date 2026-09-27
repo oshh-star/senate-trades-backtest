@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 953821800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sun Life Financial Inc.",
+  "shortName": "Sun Life Financial Inc.",
+  "symbol": "SLF"
+ },
+ "queried_at": "2026-09-27T22:49:13Z",
+ "symbol": "SLF"
+}

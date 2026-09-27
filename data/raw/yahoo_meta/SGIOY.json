@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1448980200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Shionogi & Co., Ltd.",
+  "shortName": "Shionogi & Co. Ltd.",
+  "symbol": "SGIOY"
+ },
+ "queried_at": "2026-09-27T22:48:49Z",
+ "symbol": "SGIOY"
+}

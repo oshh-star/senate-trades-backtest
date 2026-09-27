@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "ASE",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1130333400,
+  "fullExchangeName": "NYSE American",
+  "instrumentType": "EQUITY",
+  "longName": "NanoViricides, Inc.",
+  "shortName": "NanoViricides, Inc.",
+  "symbol": "NNVC"
+ },
+ "queried_at": "2026-09-27T22:44:10Z",
+ "symbol": "NNVC"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1042727400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Provident Financial Services, Inc.",
+  "shortName": "Provident Financial Services, I",
+  "symbol": "PFS"
+ },
+ "queried_at": "2026-09-27T22:45:52Z",
+ "symbol": "PFS"
+}

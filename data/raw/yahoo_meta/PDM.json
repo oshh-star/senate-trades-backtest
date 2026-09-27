@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1265812200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Piedmont Realty Trust, Inc.",
+  "shortName": "Piedmont Realty Trust, Inc.",
+  "symbol": "PDM"
+ },
+ "queried_at": "2026-09-27T22:45:42Z",
+ "symbol": "PDM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 203866200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Mattel, Inc.",
+  "shortName": "Mattel, Inc.",
+  "symbol": "MAT"
+ },
+ "queried_at": "2026-09-27T22:42:23Z",
+ "symbol": "MAT"
+}

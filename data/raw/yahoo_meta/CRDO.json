@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1643293800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Credo Technology Group Holding Ltd",
+  "shortName": "Credo Technology Group Holding ",
+  "symbol": "CRDO"
+ },
+ "queried_at": "2026-09-27T22:32:19Z",
+ "symbol": "CRDO"
+}

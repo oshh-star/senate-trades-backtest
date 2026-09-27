@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 925133400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Swire Pacific Limited",
+  "shortName": "Swire Pacific Ltd.",
+  "symbol": "SWRAY"
+ },
+ "queried_at": "2026-09-27T22:50:23Z",
+ "symbol": "SWRAY"
+}

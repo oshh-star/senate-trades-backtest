@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1288704600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Smiths Group plc",
+  "shortName": "Smiths Group Plc",
+  "symbol": "SMGZY"
+ },
+ "queried_at": "2026-09-27T22:49:22Z",
+ "symbol": "SMGZY"
+}

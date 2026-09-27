@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 925824600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Goldman Sachs Group, Inc.",
+  "shortName": "Goldman Sachs Group, Inc. (The)",
+  "symbol": "GS"
+ },
+ "queried_at": "2026-09-27T22:37:43Z",
+ "symbol": "GS"
+}

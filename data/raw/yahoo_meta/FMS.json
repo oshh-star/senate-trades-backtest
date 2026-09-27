@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 842967000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fresenius Medical Care AG",
+  "shortName": "Fresenius Medical Care AG",
+  "symbol": "FMS"
+ },
+ "queried_at": "2026-09-27T22:36:23Z",
+ "symbol": "FMS"
+}

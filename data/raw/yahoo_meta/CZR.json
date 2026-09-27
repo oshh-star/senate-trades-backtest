@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1411392600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Caesars Entertainment, Inc.",
+  "shortName": "Caesars Entertainment, Inc.",
+  "symbol": "CZR"
+ },
+ "queried_at": "2026-09-27T22:32:55Z",
+ "symbol": "CZR"
+}

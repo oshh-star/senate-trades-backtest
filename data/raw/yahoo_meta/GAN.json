@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:36:52Z"
+ },
+ "queried_at": "2026-09-27T23:00:23Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Gain Therapeutics, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Gain Therapeutics, Inc.",
+   "symbol": "GANX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Ganfeng Lithium Group Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "GANFENGLITHIUM",
+   "symbol": "1772.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "Ganfeng Lithium Group Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "GANFENGLITHIUM",
+   "symbol": "002460.SZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Bank Ganesha Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Bank Ganesha Tbk.",
+   "symbol": "BGTG.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Ganfeng Lithium Group Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Ganfeng Lithium Group Co. Ltd.",
+   "symbol": "GNENF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Ganga Forging Limited",
+   "quoteType": "EQUITY",
+   "shortname": "GANGA FORGING LIMITED",
+   "symbol": "GANGAFORGE.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "Gansu Yatai Industrial Developent Co.,Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "YATAI",
+   "symbol": "000691.SZ",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "GAN"
+}

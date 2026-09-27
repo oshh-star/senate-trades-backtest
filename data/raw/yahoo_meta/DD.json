@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "DuPont de Nemours, Inc.",
+  "shortName": "DuPont de Nemours, Inc.",
+  "symbol": "DD"
+ },
+ "queried_at": "2026-09-27T22:33:08Z",
+ "symbol": "DD"
+}

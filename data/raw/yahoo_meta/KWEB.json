@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1375363800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "KraneShares CSI China Internet ETF",
+  "shortName": "KraneShares CSI China Internet ",
+  "symbol": "KWEB"
+ },
+ "queried_at": "2026-09-27T22:41:06Z",
+ "symbol": "KWEB"
+}

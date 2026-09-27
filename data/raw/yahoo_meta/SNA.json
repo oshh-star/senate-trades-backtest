@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Snap-on Incorporated",
+  "shortName": "Snap-On Incorporated",
+  "symbol": "SNA"
+ },
+ "queried_at": "2026-09-27T22:49:27Z",
+ "symbol": "SNA"
+}

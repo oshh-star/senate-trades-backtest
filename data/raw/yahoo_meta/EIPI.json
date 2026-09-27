@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1715002200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "FT Energy Income Partners Enhanced Income ETF",
+  "shortName": "FT Energy Income Partners Enhan",
+  "symbol": "EIPI"
+ },
+ "queried_at": "2026-09-27T22:34:36Z",
+ "symbol": "EIPI"
+}

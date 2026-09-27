@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1168525800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares 3-7 Year Treasury Bond ETF",
+  "shortName": "iShares 3-7 Year Treasury Bond ",
+  "symbol": "IEI"
+ },
+ "queried_at": "2026-09-27T22:39:06Z",
+ "symbol": "IEI"
+}

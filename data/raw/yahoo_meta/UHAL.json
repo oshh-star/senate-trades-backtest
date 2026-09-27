@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 783959400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "U-Haul Holding Company",
+  "shortName": "U-Haul Holding Company",
+  "symbol": "UHAL"
+ },
+ "queried_at": "2026-09-27T22:51:54Z",
+ "symbol": "UHAL"
+}

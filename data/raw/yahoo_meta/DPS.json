@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:53Z"
+ },
+ "queried_at": "2026-09-27T22:59:45Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Direxion Daily Regional Banks Bull 3X Shares",
+   "quoteType": "ETF",
+   "shortname": "Direxion Daily Regional Banks B",
+   "symbol": "DPST",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XKLS",
+   "exchange": "XKLS",
+   "longname": "DPS Resources Berhad",
+   "quoteType": "EQUITY",
+   "shortname": "DPS Resources Bhd",
+   "symbol": "7198.KL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTCM",
+   "exchange": "OTCM",
+   "longname": "DHL AG",
+   "quoteType": "EQUITY",
+   "shortname": "DHL AG",
+   "symbol": "DPSTF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSE",
+   "longname": "India Power Corporation Limited",
+   "quoteType": "EQUITY",
+   "shortname": "India Power Corp Ltd",
+   "symbol": "DPSCLTD.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "Direxion Daily Regional Banks Bull 3X Shares",
+   "quoteType": "ETF",
+   "shortname": "DIREXION SHARES ETF TRUST DAILY",
+   "symbol": "DPST.MX",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "EX$$$$XSHE",
+   "exchange": "EX$$$$XSHE",
+   "longname": "CCB Principal CSI Ngt Crt Dps AAA Idx 7D",
+   "quoteType": "MUTUALFUND",
+   "shortname": "CCB Principal CSI Negotiable Certificate of Deposit AAA Index 7-days Holding Period Fund",
+   "symbol": "0P0001PJSP.SZ",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "EX$$$$XSHE",
+   "exchange": "EX$$$$XSHE",
+   "longname": "Baijia CSI Itbk Ctfct Of Dpst AAA Idx 7D",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Baijia CSI Itbk Ctfct Of Dpst AAA Idx 7D",
+   "symbol": "0P0001QK3W.SZ",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "DPS"
+}

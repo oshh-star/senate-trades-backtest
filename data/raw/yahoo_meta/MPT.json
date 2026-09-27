@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1120829400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Medical Properties Trust, Inc.",
+  "shortName": "Medical Properties Trust, Inc.",
+  "symbol": "MPT"
+ },
+ "queried_at": "2026-09-27T22:43:10Z",
+ "symbol": "MPT"
+}

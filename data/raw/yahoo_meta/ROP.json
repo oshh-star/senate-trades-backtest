@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 697991400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Roper Technologies, Inc.",
+  "shortName": "Roper Technologies, Inc.",
+  "symbol": "ROP"
+ },
+ "queried_at": "2026-09-27T22:47:52Z",
+ "symbol": "ROP"
+}

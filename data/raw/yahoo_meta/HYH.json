@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:38:45Z"
+ },
+ "queried_at": "2026-09-27T23:00:43Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "ProShares High Yield\u2014Interest Rate Hedged",
+   "quoteType": "ETF",
+   "shortname": "ProShares High Yield Interest R",
+   "symbol": "HYHG",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Hydrogen Hybrid Technologies, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "HYDROGEN HYBRID TECHNOLOGIES IN",
+   "symbol": "HYHY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "iShsIII-Br.DL HY Corp.Bd U.ETFR",
+   "symbol": "HYHE.MU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "iShsIII-Br.DL HY Corp.Bd U.ETFR",
+   "symbol": "HYHE.DU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "ISHARES BROAD $ HIGH YIELD CORP BOND UCITS ETF EUR HEDGED (DIST)",
+   "quoteType": "ETF",
+   "shortname": "iShsIII-Br.DL HY Corp.Bd U.ETFR",
+   "symbol": "HYHE.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Sixty Six Capital Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "SIXTY SIX CAP INC.",
+   "symbol": "HYHDF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Hygeia Healthcare Holdings Co., Limited",
+   "quoteType": "EQUITY",
+   "shortname": "HYGEIA HEALTHCARE HLDGS CO LTD",
+   "symbol": "HYHHF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "HYH"
+}

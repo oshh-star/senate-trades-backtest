@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1323268200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Tripadvisor, Inc.",
+  "shortName": "TripAdvisor, Inc.",
+  "symbol": "TRIP"
+ },
+ "queried_at": "2026-09-27T22:51:17Z",
+ "symbol": "TRIP"
+}

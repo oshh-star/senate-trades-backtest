@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1161351000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "ExlService Holdings, Inc.",
+  "shortName": "ExlService Holdings, Inc.",
+  "symbol": "EXLS"
+ },
+ "queried_at": "2026-09-27T22:35:29Z",
+ "symbol": "EXLS"
+}

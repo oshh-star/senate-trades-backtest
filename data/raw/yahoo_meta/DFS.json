@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:15Z"
+ },
+ "queried_at": "2026-09-27T22:59:27Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "DEFSEC Technologies Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "DEFSEC Technologies Inc.",
+   "symbol": "DFSC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Dimensional US Small Cap Value ETF",
+   "quoteType": "ETF",
+   "shortname": "Dimensional US Small Cap Value ",
+   "symbol": "DFSV",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "DFA US Small Cap Value I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "DFA U.S. Small Cap Value Portfo",
+   "symbol": "DFSVX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "DFA US Small Cap I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "DFA U.S.  Small Cap Portfolio",
+   "symbol": "DFSTX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Dimensional Short-Duration Fixed Income ETF",
+   "quoteType": "ETF",
+   "shortname": "Dimensional Short-Duration Fixe",
+   "symbol": "DFSD",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "DFA US Micro Cap I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "DFA U.S. Micro Cap Portfolio",
+   "symbol": "DFSCX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Dimensional International Sustainability Core 1 ETF",
+   "quoteType": "ETF",
+   "shortname": "Dimensional International Susta",
+   "symbol": "DFSI",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "DFS"
+}

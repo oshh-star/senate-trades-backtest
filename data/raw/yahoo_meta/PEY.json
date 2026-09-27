@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1102602600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Invesco High Yield Equity Dividend Achievers ETF",
+  "shortName": "Invesco High Yield Equity Divid",
+  "symbol": "PEY"
+ },
+ "queried_at": "2026-09-27T22:45:49Z",
+ "symbol": "PEY"
+}

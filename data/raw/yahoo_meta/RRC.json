@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 330269400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Range Resources Corporation",
+  "shortName": "Range Resources Corporation",
+  "symbol": "RRC"
+ },
+ "queried_at": "2026-09-27T22:47:55Z",
+ "symbol": "RRC"
+}

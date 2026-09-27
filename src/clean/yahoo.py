@@ -11,7 +11,8 @@ Caveat: Yahoo describes whoever owns the symbol TODAY. A recycled symbol can des
 company from the one the senator traded, so name_mismatch flags symbols whose Yahoo name shares no
 word with any eFD asset name seen for that ticker (Phase 3 checks these).
 
-Resumable: one JSON file per symbol; delete a file to re-query it.
+Resumable: one JSON file per symbol; delete a file to re-query it. A symbol Yahoo did not
+recognise is asked once more on a later run (marked "retried") to rule out a transient error.
 """
 from __future__ import annotations
 
@@ -95,9 +96,16 @@ def lookup(symbols: list[str], user_agent: str, min_interval: float) -> dict[str
     for i, sym in enumerate(todo, 1):
         p = cache_path(sym)
         if p.exists():
-            out[sym] = json.loads(p.read_text())
-            continue
-        rec = fetch(sym, session, throttle)
+            rec = json.loads(p.read_text())
+            if classify(rec)["recognised"] or rec.get("retried"):
+                out[sym] = rec
+                continue
+            first = rec
+            rec = fetch(sym, session, throttle)
+            rec["retried"] = True
+            rec["first_attempt"] = {k: first.get(k) for k in ("queried_at", "chart_error")}
+        else:
+            rec = fetch(sym, session, throttle)
         p.write_text(json.dumps(rec, indent=1, sort_keys=True))
         out[sym] = rec
         n_new += 1

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1344000600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Oriental Land Co., Ltd.",
+  "shortName": "Oriental Land Co., Ltd.",
+  "symbol": "OLCLY"
+ },
+ "queried_at": "2026-09-27T22:45:07Z",
+ "symbol": "OLCLY"
+}

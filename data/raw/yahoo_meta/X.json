@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:54:10Z"
+ },
+ "queried_at": "2026-09-27T23:04:11Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "MarketDesk International Momentum ETF",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "XUSM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "XRP USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "XRP USD",
+   "symbol": "XRP-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Stellar USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Stellar USD",
+   "symbol": "XLM-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "ExxonMobil Holdings Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "ExxonMobil Holdings Corporation",
+   "symbol": "XOM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": "SpaceX Single Stock futures",
+   "quoteType": "FUTURE",
+   "shortname": "Space X Futures,Dec-2026",
+   "symbol": "SSPCX=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "XRP Futures,Oct-2026",
+   "symbol": "XRP=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "E-mini Industrial Select Sector",
+   "symbol": "XAI=F",
+   "typeDisp": "Futures"
+  }
+ ],
+ "symbol": "X"
+}

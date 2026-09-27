@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1568813400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "VanEck Emerging Markets Z",
+  "shortName": "Emerging Markets Fund Class Z",
+  "symbol": "EMRZX"
+ },
+ "queried_at": "2026-09-27T22:34:47Z",
+ "symbol": "EMRZX"
+}

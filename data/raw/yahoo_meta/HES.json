@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:38:12Z"
+ },
+ "queried_at": "2026-09-27T23:00:36Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Hess Midstream LP",
+   "quoteType": "EQUITY",
+   "shortname": "Hess Midstream LP",
+   "symbol": "HESM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Hesai Group",
+   "quoteType": "EQUITY",
+   "shortname": "Hesai Group",
+   "symbol": "HSAI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
+   "quoteType": "EQUITY",
+   "shortname": "Hermes International SA",
+   "symbol": "HESAY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Hesai Group",
+   "quoteType": "EQUITY",
+   "shortname": "HESAI-W",
+   "symbol": "2525.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "Hesai Group",
+   "quoteType": "EQUITY",
+   "shortname": "Hesai Group                   R",
+   "symbol": "ZN80.DU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Herm\u00e8s International Soci\u00e9t\u00e9 en commandite par actions",
+   "quoteType": "EQUITY",
+   "shortname": "Hermes International SA",
+   "symbol": "HESAF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shanghai",
+   "exchange": "SHH",
+   "longname": "Hunan Heshun Petroleum Co.,Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "HUNAN HESHUN PETROLEUM CO LTD",
+   "symbol": "603353.SS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "HES"
+}

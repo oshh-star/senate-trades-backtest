@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:06Z"
+ },
+ "queried_at": "2026-09-27T22:59:25Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "DCP0B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "DCP4B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "DCP6B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "DCP2B.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Desjardins Canadian Preferred Share Index ETF",
+   "quoteType": "ETF",
+   "shortname": "DESJARDINS CDN PREF SHARE IDX E",
+   "symbol": "DCP.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "BNY Mellon Core Plus Fund A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "BNY Mellon Core Plus Fund Class",
+   "symbol": "DCPAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "DCP9B.NX",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "DCP"
+}

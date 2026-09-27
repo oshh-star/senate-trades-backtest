@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:35:14Z"
+ },
+ "queried_at": "2026-09-27T23:00:01Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Leverage Shares 4x Long Semiconductors ETP Securities",
+   "quoteType": "ETF",
+   "shortname": "LEVERAGE SHARES PUBLIC LIMITED ",
+   "symbol": "SOXL.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Leverage Shares 3x Long MicroStrategy (MSTR) ETP",
+   "quoteType": "ETF",
+   "shortname": "LEVERAGE SHARES PUBLIC LIMITED ",
+   "symbol": "MST3.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Leverage Shares 5x Long Magnificent 7 ETP Securities",
+   "quoteType": "ETF",
+   "shortname": "LEVERAGE SHARES PUBLIC LIMITED ",
+   "symbol": "MAG7.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "iShares Bitcoin ETP",
+   "quoteType": "EQUITY",
+   "shortname": "iSHARES DIGITAL ASSETS AG     O",
+   "symbol": "IB1T.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Amsterdam",
+   "exchange": "AMS",
+   "longname": "Leverage Shares 3x Long SanDisk (SNDK) ETP",
+   "quoteType": "EQUITY",
+   "shortname": "Leverage Shares 3x Long SanDisk",
+   "symbol": "SND3.AS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "VanEck Bitcoin ETN A",
+   "quoteType": "EQUITY",
+   "shortname": "VanEck ETP AG                 E",
+   "symbol": "VBTC.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Amsterdam",
+   "exchange": "AMS",
+   "longname": "21Shares Ondo ETP",
+   "quoteType": "ETF",
+   "shortname": "21Shares Ondo ETP",
+   "symbol": "ONDO.AS",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "ETP"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:43:17Z"
+ },
+ "queried_at": "2026-09-27T23:01:50Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "MRO/BRX",
+   "quoteType": "CURRENCY",
+   "shortname": "MRO/BRX",
+   "symbol": "MROBRX=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Melrose Industries PLC",
+   "quoteType": "EQUITY",
+   "shortname": "MELROSE INDUSTRIES PLC ORD GBP0",
+   "symbol": "MRO.L",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "MROSY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "Melrose Industries PLC",
+   "quoteType": "EQUITY",
+   "shortname": "MELROSE INDUSTRIES PLC",
+   "symbol": "MROSN.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "MicroPort CardioFlow Medtech Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "MICROPORT CARDIOFLOW MEDTECH CO",
+   "symbol": "MROPF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "MRO-TEK Networks Limited",
+   "quoteType": "EQUITY",
+   "shortname": "UMIYA BUILDCON LIMITED",
+   "symbol": "UMIYA-MRO.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "MRO-TEK Networks Limited",
+   "quoteType": "EQUITY",
+   "shortname": "UMIYA BUILDCON LIMITED",
+   "symbol": "UMIYA-MRO.BO",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MRO"
+}

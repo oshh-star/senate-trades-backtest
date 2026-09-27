@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Compagnie G\u00e9n\u00e9rale des \u00c9tablissements Michelin Soci\u00e9t\u00e9 en commandite par actions",
+  "shortName": "CIE GENERALE DES ETABLISSEMENTS",
+  "symbol": "MGDDY"
+ },
+ "queried_at": "2026-09-27T22:42:45Z",
+ "symbol": "MGDDY"
+}

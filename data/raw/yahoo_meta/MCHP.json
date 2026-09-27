@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 732551400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Microchip Technology Incorporated",
+  "shortName": "Microchip Technology Incorporat",
+  "symbol": "MCHP"
+ },
+ "queried_at": "2026-09-27T22:42:32Z",
+ "symbol": "MCHP"
+}

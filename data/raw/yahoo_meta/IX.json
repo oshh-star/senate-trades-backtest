@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 905952600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ORIX Corporation",
+  "shortName": "ORIX Corporation",
+  "symbol": "IX"
+ },
+ "queried_at": "2026-09-27T22:39:58Z",
+ "symbol": "IX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1383748200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Karyopharm Therapeutics Inc.",
+  "shortName": "Karyopharm Therapeutics Inc.",
+  "symbol": "KPTI"
+ },
+ "queried_at": "2026-09-27T22:40:59Z",
+ "symbol": "KPTI"
+}

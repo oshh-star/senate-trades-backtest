@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1491571800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Okta, Inc.",
+  "shortName": "Okta, Inc.",
+  "symbol": "OKTA"
+ },
+ "queried_at": "2026-09-27T22:45:06Z",
+ "symbol": "OKTA"
+}

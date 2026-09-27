@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Brown-Forman Corporation",
+  "shortName": "Brown Forman Inc",
+  "symbol": "BF-B"
+ },
+ "queried_at": "2026-09-27T22:58:16Z",
+ "symbol": "BF-B"
+}

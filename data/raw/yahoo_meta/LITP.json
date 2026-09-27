@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1675348200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Sprott Lithium Miners ETF",
+  "shortName": "Sprott Lithium Miners ETF",
+  "symbol": "LITP"
+ },
+ "queried_at": "2026-09-27T22:41:33Z",
+ "symbol": "LITP"
+}

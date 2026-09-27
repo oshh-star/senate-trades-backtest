@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 877354200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Orange S.A.",
+  "shortName": "Orange",
+  "symbol": "ORANY"
+ },
+ "queried_at": "2026-09-27T22:45:14Z",
+ "symbol": "ORANY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 959347800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares S&P 500 Growth ETF",
+  "shortName": "iShares S&P 500 Growth ETF",
+  "symbol": "IVW"
+ },
+ "queried_at": "2026-09-27T22:39:51Z",
+ "symbol": "IVW"
+}

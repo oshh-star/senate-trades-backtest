@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 677511000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "IDEXX Laboratories, Inc.",
+  "shortName": "IDEXX Laboratories, Inc.",
+  "symbol": "IDXX"
+ },
+ "queried_at": "2026-09-27T22:39:03Z",
+ "symbol": "IDXX"
+}

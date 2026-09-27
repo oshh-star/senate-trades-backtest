@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1491485400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Schneider National, Inc.",
+  "shortName": "Schneider National, Inc.",
+  "symbol": "SNDR"
+ },
+ "queried_at": "2026-09-27T22:49:30Z",
+ "symbol": "SNDR"
+}

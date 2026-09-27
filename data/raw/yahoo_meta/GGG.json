@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Graco Inc.",
+  "shortName": "Graco Inc.",
+  "symbol": "GGG"
+ },
+ "queried_at": "2026-09-27T22:37:10Z",
+ "symbol": "GGG"
+}

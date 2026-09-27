@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1281101400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "NXP Semiconductors N.V.",
+  "shortName": "NXP Semiconductors N.V.",
+  "symbol": "NXPI"
+ },
+ "queried_at": "2026-09-27T22:44:50Z",
+ "symbol": "NXPI"
+}

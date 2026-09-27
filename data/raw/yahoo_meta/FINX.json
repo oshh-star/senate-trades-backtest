@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1473773400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Global X FinTech ETF",
+  "shortName": "Global X FinTech ETF",
+  "symbol": "FINX"
+ },
+ "queried_at": "2026-09-27T22:36:08Z",
+ "symbol": "FINX"
+}

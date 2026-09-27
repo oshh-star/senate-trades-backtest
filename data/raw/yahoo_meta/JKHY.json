@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 501345000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Jack Henry & Associates, Inc.",
+  "shortName": "Jack Henry & Associates, Inc.",
+  "symbol": "JKHY"
+ },
+ "queried_at": "2026-09-27T22:40:10Z",
+ "symbol": "JKHY"
+}

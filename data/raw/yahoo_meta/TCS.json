@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:50:39Z"
+ },
+ "queried_at": "2026-09-27T23:03:21Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Tata Consultancy Services Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TATA CONSULTANCY SERV LT",
+   "symbol": "TCS.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Tata Consultancy Services Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TATA CONSULTANCY SERVICES LTD.",
+   "symbol": "TCS.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Tecsys Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "TECSYS INC J",
+   "symbol": "TCS.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuveen Quant Small Cap Equity A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "TIAA-CREF Quant Small-Cap Equit",
+   "symbol": "TCSEX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "TD Cash Management ETF",
+   "quoteType": "ETF",
+   "shortname": "TD CASH MANAGEMENT ETF",
+   "symbol": "TCSH.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Axon Enterprise, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Axon Enterprise Inc.          R",
+   "symbol": "TCS.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Kuala Lumpur Stock Exchange",
+   "exchange": "KLS",
+   "longname": "TCS Group Holdings Berhad",
+   "quoteType": "EQUITY",
+   "shortname": "TCS",
+   "symbol": "0221.KL",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "TCS"
+}

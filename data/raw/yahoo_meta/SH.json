@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1150896600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ProShares Short S&P500",
+  "shortName": "ProShares Short S&P500",
+  "symbol": "SH"
+ },
+ "queried_at": "2026-09-27T22:48:52Z",
+ "symbol": "SH"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322324200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Terex Corporation",
+  "shortName": "Terex Corporation",
+  "symbol": "TEX"
+ },
+ "queried_at": "2026-09-27T22:50:49Z",
+ "symbol": "TEX"
+}

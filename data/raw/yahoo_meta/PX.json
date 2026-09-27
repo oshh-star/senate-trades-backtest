@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:46:49Z"
+ },
+ "queried_at": "2026-09-27T23:02:29Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Pixelworks, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Pixelworks, Inc.",
+   "symbol": "PXLW",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Pyxis Tankers Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Pyxis Tankers Inc.",
+   "symbol": "PXS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Phoenix Education Partners, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Phoenix Education Partners, Inc",
+   "symbol": "PXED",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Parex Resources Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "PAREX RESOURCES INC",
+   "symbol": "PXT.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "PaxMedica, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "PaxMedica, Inc.",
+   "symbol": "PXMD",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Invesco RAFI Developed Markets ex-U.S. ETF",
+   "quoteType": "ETF",
+   "shortname": "Invesco RAFI Developed Markets ",
+   "symbol": "PXF",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Invesco Energy Exploration & Production ETF",
+   "quoteType": "ETF",
+   "shortname": "Invesco Energy Exploration & Pr",
+   "symbol": "PXE",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "PX"
+}

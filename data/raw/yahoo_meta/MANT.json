@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:17Z"
+ },
+ "queried_at": "2026-09-27T23:01:32Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "HEL",
+   "exchange": "HEL",
+   "longname": "Mandatum Oyj",
+   "quoteType": "EQUITY",
+   "shortname": "Mandatum Oyj",
+   "symbol": "MANTA.HE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "Suzhou Gold Mantis Construction Decoration Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "GOLD MANTIS",
+   "symbol": "002081.SZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mantex AB (publ)",
+   "quoteType": "EQUITY",
+   "shortname": "Mantex AB                     N",
+   "symbol": "2NA0.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "MANTRA (old) USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "MANTRA (old) USD",
+   "symbol": "OM-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Manta Network USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Manta Network USD",
+   "symbol": "MANTA-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "Johannesburg Stock Exchange",
+   "exchange": "JNB",
+   "longname": "Mantengu Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Mantengu Limited",
+   "symbol": "MTU.JO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "MANTRA USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "MANTRA USD",
+   "symbol": "MANTRA-USD",
+   "typeDisp": "Cryptocurrency"
+  }
+ ],
+ "symbol": "MANT"
+}

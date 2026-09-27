@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Procter & Gamble Company",
+  "shortName": "Procter & Gamble Company (The)",
+  "symbol": "PG"
+ },
+ "queried_at": "2026-09-27T22:45:53Z",
+ "symbol": "PG"
+}

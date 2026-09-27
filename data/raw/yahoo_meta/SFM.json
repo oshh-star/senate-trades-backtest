@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1375363800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Sprouts Farmers Market, Inc.",
+  "shortName": "Sprouts Farmers Market, Inc.",
+  "symbol": "SFM"
+ },
+ "queried_at": "2026-09-27T22:48:46Z",
+ "symbol": "SFM"
+}

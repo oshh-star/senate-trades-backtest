@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1784295000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Electronic Arts Inc",
+  "shortName": "Electronic Arts Inc.",
+  "symbol": "EA"
+ },
+ "queried_at": "2026-09-27T22:34:18Z",
+ "symbol": "EA"
+}

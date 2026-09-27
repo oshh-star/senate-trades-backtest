@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1103121000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Las Vegas Sands Corp.",
+  "shortName": "Las Vegas Sands Corp.",
+  "symbol": "LVS"
+ },
+ "queried_at": "2026-09-27T22:42:06Z",
+ "symbol": "LVS"
+}

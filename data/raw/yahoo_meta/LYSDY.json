@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Lynas Rare Earths Limited",
+  "shortName": "Lynas Rare Earths Limited",
+  "symbol": "LYSDY"
+ },
+ "queried_at": "2026-09-27T22:42:10Z",
+ "symbol": "LYSDY"
+}

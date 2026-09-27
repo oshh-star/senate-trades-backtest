@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1431696600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Clearway Energy, Inc.",
+  "shortName": "Clearway Energy, Inc.",
+  "symbol": "CWEN"
+ },
+ "queried_at": "2026-09-27T22:32:52Z",
+ "symbol": "CWEN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 401376600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "TC Energy Corporation",
+  "shortName": "TC Energy Corporation",
+  "symbol": "TRP"
+ },
+ "queried_at": "2026-09-27T22:51:21Z",
+ "symbol": "TRP"
+}

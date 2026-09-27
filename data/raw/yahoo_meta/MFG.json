@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1162996200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Mizuho Financial Group, Inc.",
+  "shortName": "Mizuho Financial Group, Inc. Sp",
+  "symbol": "MFG"
+ },
+ "queried_at": "2026-09-27T22:42:43Z",
+ "symbol": "MFG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1257777000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Lear Corporation",
+  "shortName": "Lear Corporation",
+  "symbol": "LEA"
+ },
+ "queried_at": "2026-09-27T22:41:20Z",
+ "symbol": "LEA"
+}

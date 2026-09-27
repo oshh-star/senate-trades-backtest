@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 886170600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "VeriSign, Inc.",
+  "shortName": "VeriSign, Inc.",
+  "symbol": "VRSN"
+ },
+ "queried_at": "2026-09-27T22:53:00Z",
+ "symbol": "VRSN"
+}

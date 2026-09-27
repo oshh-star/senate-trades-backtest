@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1229005800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Givaudan SA",
+  "shortName": "Givaudan SA",
+  "symbol": "GVDNY"
+ },
+ "queried_at": "2026-09-27T22:37:49Z",
+ "symbol": "GVDNY"
+}

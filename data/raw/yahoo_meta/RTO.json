@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Rentokil Initial plc",
+  "shortName": "Rentokil Initial plc",
+  "symbol": "RTO"
+ },
+ "queried_at": "2026-09-27T22:48:04Z",
+ "symbol": "RTO"
+}

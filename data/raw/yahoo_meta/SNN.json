@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 942762600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Smith & Nephew plc",
+  "shortName": "Smith & Nephew SNATS, Inc.",
+  "symbol": "SNN"
+ },
+ "queried_at": "2026-09-27T22:49:31Z",
+ "symbol": "SNN"
+}

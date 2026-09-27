@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 962371800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "NetEase, Inc.",
+  "shortName": "NetEase, Inc.",
+  "symbol": "NTES"
+ },
+ "queried_at": "2026-09-27T22:44:29Z",
+ "symbol": "NTES"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1305034200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Vtech Holdings Limited",
+  "shortName": "VTech Holdings, Ltd.",
+  "symbol": "VTKLY"
+ },
+ "queried_at": "2026-09-27T22:53:09Z",
+ "symbol": "VTKLY"
+}

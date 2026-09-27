@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 954941400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "MetLife, Inc.",
+  "shortName": "MetLife, Inc.",
+  "symbol": "MET"
+ },
+ "queried_at": "2026-09-27T22:42:41Z",
+ "symbol": "MET"
+}

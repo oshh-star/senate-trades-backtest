@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1696426200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Veralto Corporation",
+  "shortName": "Veralto Corp",
+  "symbol": "VLTO"
+ },
+ "queried_at": "2026-09-27T22:52:46Z",
+ "symbol": "VLTO"
+}

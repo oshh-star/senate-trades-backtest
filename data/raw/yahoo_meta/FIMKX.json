@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1080657000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Fidelity Advisor Focused Em Mkts I",
+  "shortName": "Fidelity Advisor Emerging Marke",
+  "symbol": "FIMKX"
+ },
+ "queried_at": "2026-09-27T22:36:06Z",
+ "symbol": "FIMKX"
+}

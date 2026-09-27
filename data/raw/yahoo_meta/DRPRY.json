@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1668177000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Dr. Ing. h.c. F. Porsche AG",
+  "shortName": "DR ING H C F PORSCHE AG",
+  "symbol": "DRPRY"
+ },
+ "queried_at": "2026-09-27T22:33:59Z",
+ "symbol": "DRPRY"
+}

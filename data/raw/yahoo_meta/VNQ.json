@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1096464600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Real Estate Index Fund ETF Shares",
+  "shortName": "Vanguard Real Estate ETF",
+  "symbol": "VNQ"
+ },
+ "queried_at": "2026-09-27T22:52:51Z",
+ "symbol": "VNQ"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 315671400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Union Pacific Corporation",
+  "shortName": "Union Pacific Corporation",
+  "symbol": "UNP"
+ },
+ "queried_at": "2026-09-27T22:52:04Z",
+ "symbol": "UNP"
+}

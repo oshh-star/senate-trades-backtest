@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76599000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Hubbell Incorporated",
+  "shortName": "Hubbell Inc",
+  "symbol": "HUBB"
+ },
+ "queried_at": "2026-09-27T22:38:36Z",
+ "symbol": "HUBB"
+}

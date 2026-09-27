@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1397655000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "FS KKR Capital Corp.",
+  "shortName": "FS KKR Capital Corp.",
+  "symbol": "FSK"
+ },
+ "queried_at": "2026-09-27T22:36:37Z",
+ "symbol": "FSK"
+}

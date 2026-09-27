@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 512836200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "T. Rowe Price Group, Inc.",
+  "shortName": "T. Rowe Price Group, Inc.",
+  "symbol": "TROW"
+ },
+ "queried_at": "2026-09-27T22:51:20Z",
+ "symbol": "TROW"
+}

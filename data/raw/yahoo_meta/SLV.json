@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146231000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Silver Trust",
+  "shortName": "iShares Silver Trust",
+  "symbol": "SLV"
+ },
+ "queried_at": "2026-09-27T22:49:14Z",
+ "symbol": "SLV"
+}

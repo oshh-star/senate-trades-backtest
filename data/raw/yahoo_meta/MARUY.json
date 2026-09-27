@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Marubeni Corporation",
+  "shortName": "Marubeni Corp.",
+  "symbol": "MARUY"
+ },
+ "queried_at": "2026-09-27T22:42:20Z",
+ "symbol": "MARUY"
+}

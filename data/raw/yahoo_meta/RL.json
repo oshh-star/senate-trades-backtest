@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 866122200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ralph Lauren Corporation",
+  "shortName": "Ralph Lauren Corporation",
+  "symbol": "RL"
+ },
+ "queried_at": "2026-09-27T22:47:36Z",
+ "symbol": "RL"
+}

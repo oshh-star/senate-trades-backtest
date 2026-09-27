@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:35Z"
+ },
+ "queried_at": "2026-09-27T23:01:40Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Medicus Pharma Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Medicus Pharma Ltd.",
+   "symbol": "MDCX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "BlackRock Balanced Investor A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "BlackRock Bal Capital A",
+   "symbol": "MDCPX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "KBC Instl FdEuro EqSm&MdCps InstlDiscr C",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001SJQS.F",
+   "symbol": "0P0001SJQS.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Edelweiss Nifty Mdcp150 Momt 50 RgIDCW-P",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001Q0UY.BO",
+   "symbol": "0P0001Q0UY.BO",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Edelweiss Nifty Mdcp150 Momt 50 Dr Gr",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001Q0UT.BO",
+   "symbol": "0P0001Q0UT.BO",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Edelweiss Nifty Mdcp150 Momt 50 RgIDCW-T",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001Q0V0.BO",
+   "symbol": "0P0001Q0V0.BO",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Medicus Pharma Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Medicus Pharma Ltd. Warrant",
+   "symbol": "MDCXW",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MDC"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1384353000,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "ProShares Investment Grade\u2014Interest Rate Hedged",
+  "shortName": "ProShares Investment Grade-Inte",
+  "symbol": "IGHG"
+ },
+ "queried_at": "2026-09-27T22:39:12Z",
+ "symbol": "IGHG"
+}

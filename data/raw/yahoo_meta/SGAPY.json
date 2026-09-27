@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1157549400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Singapore Telecommunications Limited",
+  "shortName": "Singapore Telecommunications Lt",
+  "symbol": "SGAPY"
+ },
+ "queried_at": "2026-09-27T22:48:48Z",
+ "symbol": "SGAPY"
+}

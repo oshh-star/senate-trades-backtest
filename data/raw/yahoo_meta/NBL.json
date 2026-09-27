@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:43:47Z"
+ },
+ "queried_at": "2026-09-27T23:01:56Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Noble Plains Uranium Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Noble Plains Uranium Corp.",
+   "symbol": "NBLXF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "NOBEL RESOURCES CORP",
+   "symbol": "NBLC.NE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Nobel Resources Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "NOBEL RESOURCES CORP",
+   "symbol": "NBLC.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBI U.S. Equity Fund Series H ISC (762676A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBLOX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBI U.S. Equity Fund O Series U$ NL (477601A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBLLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBI U.S. Equity Index Fund F Series U$ NL (719506A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBLTX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBI U.S. Equity Index Fund O Series NL (460894A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBLYX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "NBL"
+}

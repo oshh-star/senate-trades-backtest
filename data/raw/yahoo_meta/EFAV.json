@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1319117400,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI EAFE Min Vol Factor ETF",
+  "shortName": "iShares MSCI EAFE Min Vol Facto",
+  "symbol": "EFAV"
+ },
+ "queried_at": "2026-09-27T22:34:33Z",
+ "symbol": "EFAV"
+}

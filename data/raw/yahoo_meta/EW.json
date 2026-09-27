@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 954167400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Edwards Lifesciences Corporation",
+  "shortName": "Edwards Lifesciences Corporatio",
+  "symbol": "EW"
+ },
+ "queried_at": "2026-09-27T22:35:27Z",
+ "symbol": "EW"
+}

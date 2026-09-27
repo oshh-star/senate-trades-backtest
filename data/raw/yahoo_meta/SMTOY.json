@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 826036200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sumitomo Electric Industries, Ltd.",
+  "shortName": "Sumitomo Electric Industries Lt",
+  "symbol": "SMTOY"
+ },
+ "queried_at": "2026-09-27T22:49:26Z",
+ "symbol": "SMTOY"
+}

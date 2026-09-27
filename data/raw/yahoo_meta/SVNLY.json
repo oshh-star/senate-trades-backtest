@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Svenska Handelsbanken AB (publ)",
+  "shortName": "Svenska Handelsbanken AB PUBL",
+  "symbol": "SVNLY"
+ },
+ "queried_at": "2026-09-27T22:50:18Z",
+ "symbol": "SVNLY"
+}

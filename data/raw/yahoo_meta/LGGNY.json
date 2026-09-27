@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Legal & General Group Plc",
+  "shortName": "Legal & General Group Plc",
+  "symbol": "LGGNY"
+ },
+ "queried_at": "2026-09-27T22:41:25Z",
+ "symbol": "LGGNY"
+}

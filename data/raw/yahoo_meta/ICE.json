@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1132151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Intercontinental Exchange, Inc.",
+  "shortName": "Intercontinental Exchange Inc.",
+  "symbol": "ICE"
+ },
+ "queried_at": "2026-09-27T22:38:57Z",
+ "symbol": "ICE"
+}

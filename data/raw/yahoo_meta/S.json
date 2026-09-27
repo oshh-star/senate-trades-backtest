@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1625059800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "SentinelOne, Inc.",
+  "shortName": "SentinelOne, Inc.",
+  "symbol": "S"
+ },
+ "queried_at": "2026-09-27T22:48:13Z",
+ "symbol": "S"
+}

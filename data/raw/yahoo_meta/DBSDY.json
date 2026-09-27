@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "DBS Group Holdings Ltd",
+  "shortName": "DBS Group Holdings Ltd.",
+  "symbol": "DBSDY"
+ },
+ "queried_at": "2026-09-27T22:33:05Z",
+ "symbol": "DBSDY"
+}

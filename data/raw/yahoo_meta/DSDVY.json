@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "DSV A/S",
+  "shortName": "DSV A S",
+  "symbol": "DSDVY"
+ },
+ "queried_at": "2026-09-27T22:34:01Z",
+ "symbol": "DSDVY"
+}

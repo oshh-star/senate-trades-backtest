@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1182346200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Henkel AG & Co. KGaA",
+  "shortName": "Henkel AG & Co. KGAA",
+  "symbol": "HENOY"
+ },
+ "queried_at": "2026-09-27T22:38:11Z",
+ "symbol": "HENOY"
+}

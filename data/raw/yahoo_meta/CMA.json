@@ -6,69 +6,80 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:31:46Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:46Z"
+ },
+ "queried_at": "2026-09-27T22:59:01Z",
+ "retried": true,
  "search": [
   {
-   "exchDisp": "NEO",
-   "exchange": "NEO",
-   "longname": null,
-   "quoteType": "ETF",
-   "shortname": "HAMILTON CANADIAN EQUITY YIELD ",
-   "symbol": "CMAX.NE",
-   "typeDisp": "ETF"
-  },
-  {
-   "exchDisp": "Euronext",
-   "exchange": "ENX",
-   "longname": null,
+   "exchDisp": "LTS",
+   "exchange": "LTS",
+   "longname": "Siguldas CMAS",
    "quoteType": "EQUITY",
-   "shortname": null,
-   "symbol": "CMA3B.NX",
+   "shortname": "Siguldas CMAS",
+   "symbol": "0O61.IL",
    "typeDisp": "Equity"
   },
   {
-   "exchDisp": "BATS Trading",
-   "exchange": "BTS",
-   "longname": null,
-   "quoteType": "ETF",
-   "shortname": "Corgi Mag 7 ETF",
-   "symbol": "CMAG",
-   "typeDisp": "ETF"
-  },
-  {
-   "exchDisp": "Euronext",
-   "exchange": "ENX",
-   "longname": null,
+   "exchDisp": "BKK",
+   "exchange": "BKK",
+   "longname": "Chememan PCL",
    "quoteType": "EQUITY",
-   "shortname": null,
-   "symbol": "CMA2B.NX",
+   "shortname": "Chememan PCL",
+   "symbol": "CMAN-F.BK",
    "typeDisp": "Equity"
   },
   {
-   "exchDisp": "Toronto",
-   "exchange": "TOR",
-   "longname": "Hamilton Canadian Equity YIELD MAXIMIZER ETF",
-   "quoteType": "ETF",
-   "shortname": "HAMILTON CANADIAN EQTY YIELD MA",
-   "symbol": "CMAX.TO",
-   "typeDisp": "ETF"
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mapfre, S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.F",
+   "typeDisp": "Equity"
   },
   {
-   "exchDisp": "OTC Markets",
-   "exchange": "PNK",
-   "longname": "China Minsheng Banking Corp., Ltd.",
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mapfre, S.A.",
    "quoteType": "EQUITY",
-   "shortname": "China Minsheng Banking Corp., L",
-   "symbol": "CMAKY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMA.F",
    "typeDisp": "Equity"
   },
   {
    "exchDisp": "Munich",
    "exchange": "MUN",
-   "longname": "AS Siguldas Ciltslietu Un Maksligas Apseklosanas Stacija",
+   "longname": "Mapfre SA",
    "quoteType": "EQUITY",
-   "shortname": "Siguldas CMAS A/S             R",
-   "symbol": "W2I.MU",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.MU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTCM",
+   "exchange": "OTCM",
+   "longname": "China Minsheng Banking Corp., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "China Minsheng Banking Corp Ltd",
+   "symbol": "CMAKY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hanover",
+   "exchange": "HAN",
+   "longname": "Mapfre SA",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.HA",
    "typeDisp": "Equity"
   }
  ],

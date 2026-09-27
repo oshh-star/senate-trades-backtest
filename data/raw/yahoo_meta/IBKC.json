@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:38:53Z"
+ },
+ "queried_at": "2026-09-27T23:00:49Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "IA Clarington Inhance Growth SRI Portfolio Series F NL (244657A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "IBKCX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "IBKC"
+}

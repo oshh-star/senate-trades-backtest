@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1288963800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Global X Uranium ETF",
+  "shortName": "Global X Uranium ETF",
+  "symbol": "URA"
+ },
+ "queried_at": "2026-09-27T22:52:09Z",
+ "symbol": "URA"
+}

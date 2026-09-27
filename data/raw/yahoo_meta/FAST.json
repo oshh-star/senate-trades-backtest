@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 556464600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Fastenal Company",
+  "shortName": "Fastenal Company",
+  "symbol": "FAST"
+ },
+ "queried_at": "2026-09-27T22:35:40Z",
+ "symbol": "FAST"
+}

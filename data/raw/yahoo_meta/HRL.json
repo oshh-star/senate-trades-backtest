@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Hormel Foods Corporation",
+  "shortName": "Hormel Foods Corporation",
+  "symbol": "HRL"
+ },
+ "queried_at": "2026-09-27T22:38:29Z",
+ "symbol": "HRL"
+}

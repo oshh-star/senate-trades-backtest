@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 205680600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Helen of Troy Limited",
+  "shortName": "Helen of Troy Limited",
+  "symbol": "HELE"
+ },
+ "queried_at": "2026-09-27T22:38:09Z",
+ "symbol": "HELE"
+}

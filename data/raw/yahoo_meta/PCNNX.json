@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1524835800,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "PIMCO Investment Grade Credit Bond I-3",
+  "shortName": "PIMCO Investment Grade Credit B",
+  "symbol": "PCNNX"
+ },
+ "queried_at": "2026-09-27T22:45:38Z",
+ "symbol": "PCNNX"
+}

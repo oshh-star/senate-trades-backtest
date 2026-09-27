@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1559050200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kontoor Brands, Inc.",
+  "shortName": "Kontoor Brands, Inc.",
+  "symbol": "KTB"
+ },
+ "queried_at": "2026-09-27T22:41:03Z",
+ "symbol": "KTB"
+}

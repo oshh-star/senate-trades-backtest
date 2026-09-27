@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1005575400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Vanguard PRIMECAP Adm",
+  "shortName": "Vanguard PRIMECAP Fund Admiral ",
+  "symbol": "VPMAX"
+ },
+ "queried_at": "2026-09-27T22:52:56Z",
+ "symbol": "VPMAX"
+}

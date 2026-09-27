@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1623331800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "monday.com Ltd.",
+  "shortName": "monday.com Ltd.",
+  "symbol": "MNDY"
+ },
+ "queried_at": "2026-09-27T22:43:00Z",
+ "symbol": "MNDY"
+}

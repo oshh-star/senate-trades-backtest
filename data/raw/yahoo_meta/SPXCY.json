@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1344000600,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Singapore Exchange Limited",
+  "shortName": "Singapore Exchange Ltd.",
+  "symbol": "SPXCY"
+ },
+ "queried_at": "2026-09-27T22:49:48Z",
+ "symbol": "SPXCY"
+}

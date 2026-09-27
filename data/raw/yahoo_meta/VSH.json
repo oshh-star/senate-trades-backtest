@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Vishay Intertechnology, Inc.",
+  "shortName": "Vishay Intertechnology, Inc.",
+  "symbol": "VSH"
+ },
+ "queried_at": "2026-09-27T22:53:05Z",
+ "symbol": "VSH"
+}

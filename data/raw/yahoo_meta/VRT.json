@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1533216600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Vertiv Holdings Co",
+  "shortName": "Vertiv Holdings, LLC",
+  "symbol": "VRT"
+ },
+ "queried_at": "2026-09-27T22:53:01Z",
+ "symbol": "VRT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 594484200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Vodafone Group Public Limited Company",
+  "shortName": "Vodafone Group Plc",
+  "symbol": "VOD"
+ },
+ "queried_at": "2026-09-27T22:52:53Z",
+ "symbol": "VOD"
+}

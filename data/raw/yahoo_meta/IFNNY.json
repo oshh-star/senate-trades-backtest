@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 952957800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Infineon Technologies AG",
+  "shortName": "Infineon Technologies AG",
+  "symbol": "IFNNY"
+ },
+ "queried_at": "2026-09-27T22:39:11Z",
+ "symbol": "IFNNY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1451313000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Catalyst/Millburn Hedge Strategy I",
+  "shortName": "Catalyst/Millburn Hedge Strateg",
+  "symbol": "MBXIX"
+ },
+ "queried_at": "2026-09-27T22:42:28Z",
+ "symbol": "MBXIX"
+}

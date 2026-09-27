@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1600263000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Snowflake Inc.",
+  "shortName": "Snowflake Inc.",
+  "symbol": "SNOW"
+ },
+ "queried_at": "2026-09-27T22:49:32Z",
+ "symbol": "SNOW"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1164724200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Eaton Vance Tax-Managed Diversified Equity Income Fund",
+  "shortName": "Eaton Vance Tax-Managed Diversi",
+  "symbol": "ETY"
+ },
+ "queried_at": "2026-09-27T22:35:20Z",
+ "symbol": "ETY"
+}

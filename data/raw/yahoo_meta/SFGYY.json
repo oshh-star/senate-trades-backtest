@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1759757400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sony Financial Group Inc.",
+  "shortName": "Sony Financial Group Inc.",
+  "symbol": "SFGYY"
+ },
+ "queried_at": "2026-09-27T22:48:45Z",
+ "symbol": "SFGYY"
+}

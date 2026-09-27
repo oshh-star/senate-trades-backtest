@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 997709400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Vanguard US Growth Admiral",
+  "shortName": "Vanguard  U.S. Growth Fund Admi",
+  "symbol": "VWUAX"
+ },
+ "queried_at": "2026-09-27T22:53:17Z",
+ "symbol": "VWUAX"
+}

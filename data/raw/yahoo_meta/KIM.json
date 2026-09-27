@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 690820200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kimco Realty Corporation",
+  "shortName": "Kimco Realty Corporation (HC)",
+  "symbol": "KIM"
+ },
+ "queried_at": "2026-09-27T22:40:43Z",
+ "symbol": "KIM"
+}

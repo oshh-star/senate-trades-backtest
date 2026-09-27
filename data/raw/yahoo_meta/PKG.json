@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 949069800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Packaging Corporation of America",
+  "shortName": "Packaging Corporation of Americ",
+  "symbol": "PKG"
+ },
+ "queried_at": "2026-09-27T22:46:02Z",
+ "symbol": "PKG"
+}

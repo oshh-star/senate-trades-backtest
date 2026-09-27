@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 542644200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "America's Car-Mart, Inc.",
+  "shortName": "America's Car-Mart, Inc.",
+  "symbol": "CRMT"
+ },
+ "queried_at": "2026-09-27T22:32:21Z",
+ "symbol": "CRMT"
+}

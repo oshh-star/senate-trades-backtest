@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 967815000,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Stora Enso Oyj",
+  "shortName": "Stora Enso Oyj",
+  "symbol": "SEOAY"
+ },
+ "queried_at": "2026-09-27T22:48:44Z",
+ "symbol": "SEOAY"
+}

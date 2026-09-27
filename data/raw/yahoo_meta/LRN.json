@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1197556200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Stride, Inc.",
+  "shortName": "Stride, Inc.",
+  "symbol": "LRN"
+ },
+ "queried_at": "2026-09-27T22:41:53Z",
+ "symbol": "LRN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1569504600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Peloton Interactive, Inc.",
+  "shortName": "Peloton Interactive, Inc.",
+  "symbol": "PTON"
+ },
+ "queried_at": "2026-09-27T22:46:45Z",
+ "symbol": "PTON"
+}

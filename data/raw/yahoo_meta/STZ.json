@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 700842600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Constellation Brands, Inc.",
+  "shortName": "Constellation Brands, Inc.",
+  "symbol": "STZ"
+ },
+ "queried_at": "2026-09-27T22:50:12Z",
+ "symbol": "STZ"
+}

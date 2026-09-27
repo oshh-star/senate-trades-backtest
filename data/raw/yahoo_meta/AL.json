@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:27:15Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:27:15Z"
+ },
+ "queried_at": "2026-09-27T22:57:49Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "New York Commodity Exchange",

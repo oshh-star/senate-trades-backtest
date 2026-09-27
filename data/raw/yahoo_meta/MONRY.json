@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1723728600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Moncler S.p.A.",
+  "shortName": "Moncler S.P.A.",
+  "symbol": "MONRY"
+ },
+ "queried_at": "2026-09-27T22:43:03Z",
+ "symbol": "MONRY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1634909400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kyndryl Holdings, Inc.",
+  "shortName": "Kyndryl Holdings, Inc.",
+  "symbol": "KD"
+ },
+ "queried_at": "2026-09-27T22:40:33Z",
+ "symbol": "KD"
+}

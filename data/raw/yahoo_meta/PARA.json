@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1613140200,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Banzai International, Inc.",
+  "shortName": "Banzai International, Inc.",
+  "symbol": "PARA"
+ },
+ "queried_at": "2026-09-27T22:45:31Z",
+ "symbol": "PARA"
+}

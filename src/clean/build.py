@@ -42,6 +42,12 @@ BULK_PTR = 50
 FIRST_DAYS = 180
 SAME_DAY_CUTOFF = "15:30"
 WINDOW_VARIANTS = [3, 5, 10]
+# Yahoo's suffixes for non-US exchanges (e.g. LM09.SG = Stuttgart). A ticker carrying one is a
+# non-US listing even when Yahoo no longer knows the symbol. Share classes use "-" (BRK-B).
+FOREIGN_SUFFIXES = {"L", "IL", "PA", "AS", "SW", "SG", "TI", "BE", "MU", "F", "DE", "DU", "HM", "HA", "MX",
+                    "TO", "V", "CN", "NE", "HK", "T", "AX", "MI", "MC", "ST", "CO", "OL", "HE", "BR", "LS",
+                    "VI", "NZ", "SA", "KS", "KQ", "TW", "SS", "SZ", "NS", "BO", "JK", "SI", "BK", "IR", "PR",
+                    "WA", "IS", "TA", "JO", "SN", "BA", "KL", "AT", "ME", "IC", "RG", "VS", "TL"}
 REASONS = [
     ("FILER_UNMATCHED", "Filer not matched to a senator with high confidence"),
     ("DUPLICATE_AMENDMENT", "Duplicate: trade restated in an amendment (kept once, first disclosure datetime)"),
@@ -205,8 +211,7 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
     sec_hits = {}
     if sec_index is not None:
         for n in need["asset_name"].unique():
-            if not emb.get(n):
-                sec_hits[n] = sec_index.match_name(n)
+            sec_hits[n] = sec_index.match_name(n)
         symbols |= {t for t, _ in sec_hits.values() if t}
     meta_raw = yahoo_lookup(sorted(symbols)) if yahoo_lookup else {}
     meta = {s: yh.classify(meta_raw.get(s)) for s in symbols}
@@ -216,16 +221,18 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
         info = {"asset_name": n, "asset_type": " | ".join(sorted(need.loc[sel, "asset_type"].unique())),
                 "n_trades": int(sel.sum()), "n_trades_self_joint_in_window": int(
                     (sel & need["owner"].isin(cfg["universe"]["owners"]) & need["in_window"]).sum())}
+        info.update(candidate="", method="none", accepted=False, note="no SEC list loaded")
         if emb.get(n):
             t, rest = emb[n]
             ok, note = tk.verify_embedded(t, rest, meta.get(t), sec_index)
             info.update(candidate=t, method="embedded", accepted=ok, note=note)
-        elif n in sec_hits:
+        if not info["accepted"] and n in sec_hits:
             t, note = sec_hits[n]
-            ok = bool(t)
-            info.update(candidate=t, method="sec_name", accepted=ok, note=note)
-        else:
-            info.update(candidate="", method="none", accepted=False, note="no SEC list loaded")
+            if t or not emb.get(n):
+                info.update(candidate=t, method="sec_name", accepted=bool(t),
+                            note=note if not emb.get(n) else f"{info['note']}; then {note}")
+            else:
+                info["note"] += f"; then {note}"
         recovery.append(info)
         if info["accepted"]:
             idx = need.index[sel]
@@ -234,6 +241,8 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
             tr.loc[idx, "ticker_recovery_note"] = info["note"]
     recovery = pd.DataFrame(recovery, columns=["asset_name", "asset_type", "n_trades", "n_trades_self_joint_in_window",
                                                "candidate", "method", "accepted", "note"])
+
+    tr["reached_instrument_step"] = candidate & (tr["ticker"] != "")
 
     # ---- instrument classification
     cls = pd.DataFrame([meta.get(t, yh.classify(None)) if t else yh.classify(None) for t in tr["ticker"]], index=tr.index)
@@ -246,19 +255,24 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
     # Yahoo describes today's owner of the symbol. When its name shares no word with any eFD asset
     # name for that ticker (recycled symbol, e.g. FB is now a ProShares ETF, or a renamed company),
     # its classification is not trusted: the instrument is "unresolved" and Phase 3 resolves it.
-    words_by_ticker = tr[tr["ticker"] != ""].groupby("ticker")["asset_name"].apply(
-        lambda s: set().union(*(tk.words(x) for x in s)))
+    names_by_ticker = tr[tr["ticker"] != ""].groupby("ticker")["asset_name"].apply(lambda s: sorted(set(s)))
     tr["yahoo_name"] = cls["name"]
-    mismatch = {t: bool(words_by_ticker.get(t)) and not (words_by_ticker[t] & (
-        tk.words(m["name"]) | tk.words(m["short_name"]) | {t.lower()}))
-        for t, m in meta.items() if m["recognised"]}
-    tr["yahoo_name_mismatch"] = tr["ticker"].map(mismatch).fillna(False).astype(bool)
+    mismatch = {t: bool(names_by_ticker.get(t)) and not any(
+        tk.names_agree(n, m["name"]) or tk.names_agree(n, m["short_name"]) or t.lower() in tk.words(n, 1)
+        for n in names_by_ticker[t]) for t, m in meta.items() if m["recognised"] and t in names_by_ticker}
+    tr["yahoo_name_mismatch"] = [mismatch.get(t, False) for t in tr["ticker"]]
     mm = tr["yahoo_name_mismatch"]
     tr.loc[mm, "instrument_type"] = "unresolved"
     tr.loc[mm, "listing"] = "unknown"
     tr.loc[mm, "is_otc"] = False
     tr["is_etf"] = tr["instrument_type"] == "etf"
     tr["instrument_unresolved"] = tr["instrument_type"] == "unresolved"
+    suffix = tr["ticker"].str.extract(r"\.([A-Z]{1,2})$")[0]
+    tr["foreign_suffix"] = suffix.isin(FOREIGN_SUFFIXES)
+    tr["non_us"] = ((tr["listing"] == "non_us") & ~tr["instrument_unresolved"]) | tr["foreign_suffix"]
+    tr["instrument_status"] = np.select(
+        [tr["instrument_type"] == "mutual_fund", tr["instrument_type"] == "other", tr["non_us"]],
+        ["excluded: mutual fund", "excluded: other instrument type", "excluded: non-US listing"], "kept")
 
     # ---- reasons (first failing step)
     owners = cfg["universe"]["owners"]
@@ -272,7 +286,7 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
         ("NO_TICKER", tr["ticker"] == ""),
         ("MUTUAL_FUND", tr["instrument_type"] == "mutual_fund"),
         ("OTHER_INSTRUMENT", tr["instrument_type"] == "other"),
-        ("NON_US_LISTING", (tr["listing"] == "non_us") & ~tr["instrument_unresolved"]),
+        ("NON_US_LISTING", tr["non_us"]),
         ("ETF_EXCLUDED", tr["is_etf"] & (not include_etfs)),
         ("AMOUNT_UNPARSED", ~tr["amount_parsed"]),
         ("OWNER", ~tr["owner"].isin(owners)),
@@ -284,7 +298,8 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
     tr.loc[tr["reason_code"] == "ASSET_TYPE", "reason_detail"] = tr["asset_type"]
     tr.loc[tr["reason_code"] == "OWNER", "reason_detail"] = tr["owner"]
     tr.loc[tr["reason_code"] == "OTHER_INSTRUMENT", "reason_detail"] = tr["yahoo_type"]
-    tr.loc[tr["reason_code"] == "NON_US_LISTING", "reason_detail"] = tr["exchange"] + " " + tr["exchange_name"]
+    tr.loc[tr["reason_code"] == "NON_US_LISTING", "reason_detail"] = np.where(
+        tr["foreign_suffix"], "ticker suffix ." + tr["ticker"].str.split(".").str[-1], tr["exchange"] + " " + tr["exchange_name"])
     tr["in_scope"] = tr["reason_code"] == ""
     keep = tr["in_any_window"].copy()
     for code, c in conds:

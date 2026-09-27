@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Fujitsu Limited",
+  "shortName": "Fujitsu Ltd.",
+  "symbol": "FJTSY"
+ },
+ "queried_at": "2026-09-27T22:36:14Z",
+ "symbol": "FJTSY"
+}

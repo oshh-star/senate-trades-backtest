@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1039617000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Seagate Technology Holdings plc",
+  "shortName": "Seagate Technology Holdings PLC",
+  "symbol": "STX"
+ },
+ "queried_at": "2026-09-27T22:50:11Z",
+ "symbol": "STX"
+}

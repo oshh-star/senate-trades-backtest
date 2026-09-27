@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1422541800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Renault SA",
+  "shortName": "Renault SA",
+  "symbol": "RNLSY"
+ },
+ "queried_at": "2026-09-27T22:47:40Z",
+ "symbol": "RNLSY"
+}

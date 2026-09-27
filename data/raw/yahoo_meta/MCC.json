@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:29Z"
+ },
+ "queried_at": "2026-09-27T23:01:38Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "McCormick & Company, Incorporated",
+   "quoteType": "EQUITY",
+   "shortname": "McCormick & Company, Incorporat",
+   "symbol": "MKC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "McCormick & Company, Incorporated",
+   "quoteType": "EQUITY",
+   "shortname": "McCormick & Company, Incorporat",
+   "symbol": "MKC-V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Morocco Strategic Minerals Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "MOROCCO STRATEGIC MINERALS CORP",
+   "symbol": "MCC.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "McCoy Global Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "MCCOY GLOBAL INC",
+   "symbol": "MCB.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "MCCHIP RESOURCES INC",
+   "symbol": "MCS.NE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Canada Life Strategic Income Fund T5 FE (672569A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "MCCJX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Fundo De Investimento Imobiliario Maua Capital Recebiveis Imobiliarios",
+   "quoteType": "EQUITY",
+   "shortname": "FII MAUA    CI",
+   "symbol": "MCCI11.SA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MCC"
+}

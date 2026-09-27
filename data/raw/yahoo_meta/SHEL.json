@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 447949800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Shell plc",
+  "shortName": "Shell PLC",
+  "symbol": "SHEL"
+ },
+ "queried_at": "2026-09-27T22:48:54Z",
+ "symbol": "SHEL"
+}

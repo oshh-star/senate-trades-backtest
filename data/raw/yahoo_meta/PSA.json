@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 343405800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Public Storage",
+  "shortName": "Public Storage",
+  "symbol": "PSA"
+ },
+ "queried_at": "2026-09-27T22:46:33Z",
+ "symbol": "PSA"
+}

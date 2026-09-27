@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 928503000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "F5, Inc.",
+  "shortName": "F5, Inc.",
+  "symbol": "FFIV"
+ },
+ "queried_at": "2026-09-27T22:35:58Z",
+ "symbol": "FFIV"
+}

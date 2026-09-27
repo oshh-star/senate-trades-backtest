@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1471440600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Dell Technologies Inc.",
+  "shortName": "Dell Technologies Inc.",
+  "symbol": "DELL"
+ },
+ "queried_at": "2026-09-27T22:33:12Z",
+ "symbol": "DELL"
+}

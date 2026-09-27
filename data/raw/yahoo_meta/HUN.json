@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1108391400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Huntsman Corporation",
+  "shortName": "Huntsman Corporation",
+  "symbol": "HUN"
+ },
+ "queried_at": "2026-09-27T22:38:39Z",
+ "symbol": "HUN"
+}

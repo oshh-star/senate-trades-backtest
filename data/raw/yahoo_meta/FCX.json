@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 805383000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Freeport-McMoRan Inc.",
+  "shortName": "Freeport-McMoRan, Inc.",
+  "symbol": "FCX"
+ },
+ "queried_at": "2026-09-27T22:35:45Z",
+ "symbol": "FCX"
+}

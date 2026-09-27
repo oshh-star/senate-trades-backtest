@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1615386600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Roblox Corporation",
+  "shortName": "Roblox Corporation",
+  "symbol": "RBLX"
+ },
+ "queried_at": "2026-09-27T22:47:13Z",
+ "symbol": "RBLX"
+}

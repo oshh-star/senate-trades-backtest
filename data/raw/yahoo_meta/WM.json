@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 582989400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Waste Management, Inc.",
+  "shortName": "Waste Management, Inc.",
+  "symbol": "WM"
+ },
+ "queried_at": "2026-09-27T22:53:46Z",
+ "symbol": "WM"
+}

@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:31:11Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:11Z"
+ },
+ "queried_at": "2026-09-27T22:58:54Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "OTC Markets",
@@ -29,19 +40,19 @@
   {
    "exchDisp": "OTC Markets",
    "exchange": "PNK",
-   "longname": "TM Cerno Global Leaders A USD Inc",
+   "longname": "TM Cerno Pacific A USD Acc",
    "quoteType": "MUTUALFUND",
-   "shortname": "0P0001JK8M",
-   "symbol": "0P0001JK8M",
+   "shortname": "TM Cerno Pacific Fund A USD Acc",
+   "symbol": "0P0001N4JG",
    "typeDisp": "Fund"
   },
   {
    "exchDisp": "OTC Markets",
    "exchange": "PNK",
-   "longname": "TM Cerno Pacific A USD Acc",
+   "longname": "TM Cerno Global Leaders A USD Inc",
    "quoteType": "MUTUALFUND",
-   "shortname": "TM Cerno Pacific Fund A USD Acc",
-   "symbol": "0P0001N4JG",
+   "shortname": "0P0001JK8M",
+   "symbol": "0P0001JK8M",
    "typeDisp": "Fund"
   },
   {

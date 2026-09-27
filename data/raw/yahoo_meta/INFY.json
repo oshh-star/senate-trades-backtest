@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 921162600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Infosys Limited",
+  "shortName": "Infosys Limited",
+  "symbol": "INFY"
+ },
+ "queried_at": "2026-09-27T22:39:24Z",
+ "symbol": "INFY"
+}

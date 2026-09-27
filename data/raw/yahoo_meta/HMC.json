@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Honda Motor Co., Ltd.",
+  "shortName": "Honda Motor Company, Ltd.",
+  "symbol": "HMC"
+ },
+ "queried_at": "2026-09-27T22:38:19Z",
+ "symbol": "HMC"
+}

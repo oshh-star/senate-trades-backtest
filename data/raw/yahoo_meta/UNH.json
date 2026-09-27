@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 466867800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "UnitedHealth Group Incorporated",
+  "shortName": "UnitedHealth Group Incorporated",
+  "symbol": "UNH"
+ },
+ "queried_at": "2026-09-27T22:52:02Z",
+ "symbol": "UNH"
+}

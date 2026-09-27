@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1141655400,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Yara International ASA",
+  "shortName": "Yara International ASA",
+  "symbol": "YARIY"
+ },
+ "queried_at": "2026-09-27T22:54:34Z",
+ "symbol": "YARIY"
+}

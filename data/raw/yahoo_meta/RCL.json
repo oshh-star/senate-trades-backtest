@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 736003800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Royal Caribbean Cruises Ltd.",
+  "shortName": "Royal Caribbean Cruises Ltd.",
+  "symbol": "RCL"
+ },
+ "queried_at": "2026-09-27T22:47:14Z",
+ "symbol": "RCL"
+}

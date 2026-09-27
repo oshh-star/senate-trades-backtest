@@ -1,0 +1,60 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:53:32Z"
+ },
+ "queried_at": "2026-09-27T23:03:56Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": "BNP PARIBAS Easy ICAV - BNP Paribas Easy MSCI World UCITS ETF UCITS ETF EUR CAPITALISATION",
+   "quoteType": "ETF",
+   "shortname": "BNP Paribas Easy MSCI World UCI",
+   "symbol": "WETFE.PA",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Milan",
+   "exchange": "MIL",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "BNP Paribas Easy MSCI World UCI",
+   "symbol": "WETFE-ETFP.MI",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "BNP Paribas Easy ICAV - BNP Paribas Easy MSCI World UCITS ETF",
+   "quoteType": "ETF",
+   "shortname": "BNPP EASY MSCI WORLD UCITS",
+   "symbol": "WETF.SW",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "BNPP EASY MSCI WORLD UCITS",
+   "symbol": "WETF-USD.SW",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "WETF"
+}

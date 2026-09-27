@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:53:23Z"
+ },
+ "queried_at": "2026-09-27T23:03:54Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CIT: Balanced ESG Fund Fee Class I1",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "WBAAAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Wild Bunch AG",
+   "quoteType": "EQUITY",
+   "shortname": "Wild Bunch AG                 I",
+   "symbol": "WBAH.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CIT: Balanced Sustainable Fund R1",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "WBAABX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Weitz Conservative Allocation-Inv Cl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Balanced Fund - Investor Class",
+   "symbol": "WBALX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "WhiteBridge Network USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "WhiteBridge Network USD",
+   "symbol": "WBAI-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": "WILD BUNCH AG",
+   "quoteType": "EQUITY",
+   "shortname": "Wild Bunch AG                 I",
+   "symbol": "WBAH.HM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Weitz Conservative Allocation-Instl Cl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Balanced Fund - Institutional C",
+   "symbol": "WBAIX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "WBA"
+}

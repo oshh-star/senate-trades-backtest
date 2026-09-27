@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 730650600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Equity LifeStyle Properties, Inc.",
+  "shortName": "Equity Lifestyle Properties, In",
+  "symbol": "ELS"
+ },
+ "queried_at": "2026-09-27T22:34:41Z",
+ "symbol": "ELS"
+}

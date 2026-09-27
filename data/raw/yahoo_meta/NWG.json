@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1192714200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "NatWest Group plc",
+  "shortName": "NatWest Group plc",
+  "symbol": "NWG"
+ },
+ "queried_at": "2026-09-27T22:44:46Z",
+ "symbol": "NWG"
+}

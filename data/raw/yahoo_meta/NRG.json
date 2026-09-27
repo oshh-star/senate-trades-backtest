@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1070375400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "NRG Energy, Inc.",
+  "shortName": "NRG Energy, Inc.",
+  "symbol": "NRG"
+ },
+ "queried_at": "2026-09-27T22:44:22Z",
+ "symbol": "NRG"
+}

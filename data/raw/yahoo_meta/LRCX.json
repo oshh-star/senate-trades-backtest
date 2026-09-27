@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 452525400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Lam Research Corporation",
+  "shortName": "Lam Research Corporation",
+  "symbol": "LRCX"
+ },
+ "queried_at": "2026-09-27T22:41:51Z",
+ "symbol": "LRCX"
+}

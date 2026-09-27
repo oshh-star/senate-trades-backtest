@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1784295000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Two Harbors Investment Corp",
+  "shortName": "Two Harbors Investment Corp",
+  "symbol": "TWO"
+ },
+ "queried_at": "2026-09-27T22:51:40Z",
+ "symbol": "TWO"
+}

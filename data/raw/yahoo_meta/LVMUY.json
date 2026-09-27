@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138372200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "LVMH Mo\u00ebt Hennessy - Louis Vuitton, Soci\u00e9t\u00e9 Europ\u00e9enne",
+  "shortName": "LVMH-Moet Hennessy Louis Vuitto",
+  "symbol": "LVMUY"
+ },
+ "queried_at": "2026-09-27T22:42:05Z",
+ "symbol": "LVMUY"
+}

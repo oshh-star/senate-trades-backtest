@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 614611800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Gen Digital Inc.",
+  "shortName": "Gen Digital Inc.",
+  "symbol": "GEN"
+ },
+ "queried_at": "2026-09-27T22:37:05Z",
+ "symbol": "GEN"
+}

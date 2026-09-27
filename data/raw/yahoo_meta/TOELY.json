@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1784295000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Tokyo Electron Ltd",
+  "shortName": "Tokyo Electron Ltd.",
+  "symbol": "TOELY"
+ },
+ "queried_at": "2026-09-27T22:51:11Z",
+ "symbol": "TOELY"
+}

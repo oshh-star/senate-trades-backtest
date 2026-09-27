@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1213363800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Invesco NASDAQ Internet ETF",
+  "shortName": "Invesco Nasdaq Internet ETF",
+  "symbol": "PNQI"
+ },
+ "queried_at": "2026-09-27T22:46:13Z",
+ "symbol": "PNQI"
+}

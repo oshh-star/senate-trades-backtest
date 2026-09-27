@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1257949800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "VanEck Junior Gold Miners ETF",
+  "shortName": "VanEck Junior Gold Miners ETF",
+  "symbol": "GDXJ"
+ },
+ "queried_at": "2026-09-27T22:36:59Z",
+ "symbol": "GDXJ"
+}

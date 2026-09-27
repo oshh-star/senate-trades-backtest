@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1740061800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Vroom, Inc.",
+  "shortName": "Vroom, Inc.",
+  "symbol": "VRM"
+ },
+ "queried_at": "2026-09-27T22:52:58Z",
+ "symbol": "VRM"
+}

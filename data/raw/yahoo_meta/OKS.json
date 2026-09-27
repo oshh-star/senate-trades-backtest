@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:45:04Z"
+ },
+ "queried_at": "2026-09-27T23:02:13Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "Tapdi Oksijen \u00d6zel Saglik ve Egitim Hizmetleri Sanayi Ticaret A.S.",
+   "quoteType": "EQUITY",
+   "shortname": "Tapdi Oksijen Ozel Saglik ve Egitim Hizlmetleri Sanayi Ticaret AS",
+   "symbol": "TNZTP.IS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "OKS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1635946200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "USCF Gold Strategy Plus Income Fund",
+  "shortName": "USCF Gold Strategy Plus Income ",
+  "symbol": "USG"
+ },
+ "queried_at": "2026-09-27T22:52:15Z",
+ "symbol": "USG"
+}

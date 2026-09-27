@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1185456600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+  "shortName": "Vanguard FTSE Developed Markets",
+  "symbol": "VEA"
+ },
+ "queried_at": "2026-09-27T22:52:26Z",
+ "symbol": "VEA"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 315671400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Southwest Airlines Co.",
+  "shortName": "Southwest Airlines Company",
+  "symbol": "LUV"
+ },
+ "queried_at": "2026-09-27T22:42:04Z",
+ "symbol": "LUV"
+}

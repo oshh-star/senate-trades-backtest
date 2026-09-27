@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 996067800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Zimmer Biomet Holdings, Inc.",
+  "shortName": "Zimmer Biomet Holdings, Inc.",
+  "symbol": "ZBH"
+ },
+ "queried_at": "2026-09-27T22:54:39Z",
+ "symbol": "ZBH"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 699114600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Synopsys, Inc.",
+  "shortName": "Synopsys, Inc.",
+  "symbol": "SNPS"
+ },
+ "queried_at": "2026-09-27T22:49:33Z",
+ "symbol": "SNPS"
+}

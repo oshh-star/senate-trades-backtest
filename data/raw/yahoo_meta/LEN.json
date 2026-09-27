@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Lennar Corporation",
+  "shortName": "Lennar Corporation",
+  "symbol": "LEN"
+ },
+ "queried_at": "2026-09-27T22:41:22Z",
+ "symbol": "LEN"
+}

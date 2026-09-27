@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1329921000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ITOCHU Corporation",
+  "shortName": "Itochu Corp.",
+  "symbol": "ITOCF"
+ },
+ "queried_at": "2026-09-27T23:01:01Z",
+ "symbol": "ITOCF"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Carlisle Companies Incorporated",
+  "shortName": "Carlisle Companies Incorporated",
+  "symbol": "CSL"
+ },
+ "queried_at": "2026-09-27T22:32:32Z",
+ "symbol": "CSL"
+}

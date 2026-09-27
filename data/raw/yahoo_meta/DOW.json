@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1553088600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Dow Inc.",
+  "shortName": "Dow Inc.",
+  "symbol": "DOW"
+ },
+ "queried_at": "2026-09-27T22:33:50Z",
+ "symbol": "DOW"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1297434600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kinder Morgan, Inc.",
+  "shortName": "Kinder Morgan, Inc.",
+  "symbol": "KMI"
+ },
+ "queried_at": "2026-09-27T22:40:50Z",
+ "symbol": "KMI"
+}

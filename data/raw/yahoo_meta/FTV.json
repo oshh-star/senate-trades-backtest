@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1467725400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fortive Corporation",
+  "shortName": "Fortive Corporation",
+  "symbol": "FTV"
+ },
+ "queried_at": "2026-09-27T22:36:44Z",
+ "symbol": "FTV"
+}

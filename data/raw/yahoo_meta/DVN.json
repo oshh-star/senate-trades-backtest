@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 490887000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Devon Energy Corporation",
+  "shortName": "Devon Energy Corporation",
+  "symbol": "DVN"
+ },
+ "queried_at": "2026-09-27T22:34:13Z",
+ "symbol": "DVN"
+}

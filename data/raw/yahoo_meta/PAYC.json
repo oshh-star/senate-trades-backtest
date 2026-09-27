@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1397568600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Paycom Software, Inc.",
+  "shortName": "Paycom Software, Inc.",
+  "symbol": "PAYC"
+ },
+ "queried_at": "2026-09-27T22:45:32Z",
+ "symbol": "PAYC"
+}

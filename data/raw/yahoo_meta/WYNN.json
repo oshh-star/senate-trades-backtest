@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1035552600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Wynn Resorts, Limited",
+  "shortName": "Wynn Resorts, Limited",
+  "symbol": "WYNN"
+ },
+ "queried_at": "2026-09-27T22:54:09Z",
+ "symbol": "WYNN"
+}

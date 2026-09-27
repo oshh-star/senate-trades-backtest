@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 784477800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "McKesson Corporation",
+  "shortName": "McKesson Corporation",
+  "symbol": "MCK"
+ },
+ "queried_at": "2026-09-27T22:42:33Z",
+ "symbol": "MCK"
+}

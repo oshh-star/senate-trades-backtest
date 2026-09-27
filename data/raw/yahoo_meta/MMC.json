@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:55Z"
+ },
+ "queried_at": "2026-09-27T23:01:42Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Micro E-mini S&P MidCap 400 Fut",
+   "symbol": "MMC=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "AMG Veritas China N",
+   "quoteType": "MUTUALFUND",
+   "shortname": "AMG Managers Emerging Opportuni",
+   "symbol": "MMCFX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "NYLI MacKay California Muni Intermediate ETF",
+   "quoteType": "ETF",
+   "shortname": "NYLIM MacKay California Muni In",
+   "symbol": "MMCA",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Mag Mile Capital, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Morningstar US Mid Cap PR USD",
+   "symbol": "MMCP",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "ICE Futures",
+   "exchange": "NYB",
+   "longname": "MSCI EM ex China NTR Index Futu",
+   "quoteType": "FUTURE",
+   "shortname": "MSCI EM ex China NTR Index Futu",
+   "symbol": "MMCZ26.NYB",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "Marsh & McLennan Companies, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "MARSH & MCLENNAN CO INC",
+   "symbol": "MMCO.VI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Morgan Stanley Inst Discovery R6",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Morgan Stanley Institutional Fu",
+   "symbol": "MMCGX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "MMC"
+}

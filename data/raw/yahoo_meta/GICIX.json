@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1191245400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Goldman Sachs Intl Sm Cp Insghts Instl",
+  "shortName": "Goldman Sachs International Sma",
+  "symbol": "GICIX"
+ },
+ "queried_at": "2026-09-27T22:37:12Z",
+ "symbol": "GICIX"
+}

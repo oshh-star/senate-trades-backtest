@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1176989400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "T-Mobile US, Inc.",
+  "shortName": "T-Mobile US, Inc.",
+  "symbol": "TMUS"
+ },
+ "queried_at": "2026-09-27T22:51:10Z",
+ "symbol": "TMUS"
+}

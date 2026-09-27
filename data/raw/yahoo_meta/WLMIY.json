@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Wilmar International Limited",
+  "shortName": "Wilmar International, Ltd.",
+  "symbol": "WLMIY"
+ },
+ "queried_at": "2026-09-27T22:53:46Z",
+ "symbol": "WLMIY"
+}

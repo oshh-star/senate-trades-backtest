@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262961000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "abrdn Physical Palladium Shares ETF",
+  "shortName": "abrdn Physical Palladium Shares",
+  "symbol": "PALL"
+ },
+ "queried_at": "2026-09-27T22:45:28Z",
+ "symbol": "PALL"
+}

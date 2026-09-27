@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 623511000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "EOG Resources, Inc.",
+  "shortName": "EOG Resources, Inc.",
+  "symbol": "EOG"
+ },
+ "queried_at": "2026-09-27T22:34:52Z",
+ "symbol": "EOG"
+}

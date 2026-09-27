@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 688311000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ryman Hospitality Properties, Inc.",
+  "shortName": "Ryman Hospitality Properties, I",
+  "symbol": "RHP"
+ },
+ "queried_at": "2026-09-27T22:47:32Z",
+ "symbol": "RHP"
+}

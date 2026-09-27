@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1761571800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Qnity Electronics, Inc.",
+  "shortName": "Qnity Electronics, Inc.",
+  "symbol": "Q"
+ },
+ "queried_at": "2026-09-27T22:46:54Z",
+ "symbol": "Q"
+}

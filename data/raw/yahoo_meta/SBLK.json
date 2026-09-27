@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1196692200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Star Bulk Carriers Corp.",
+  "shortName": "Star Bulk Carriers Corp.",
+  "symbol": "SBLK"
+ },
+ "queried_at": "2026-09-27T22:48:24Z",
+ "symbol": "SBLK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1331731800,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "PGIM Jennison Global Opportunities A",
+  "shortName": "PGIM Jennison Global Opportunit",
+  "symbol": "PRJAX"
+ },
+ "queried_at": "2026-09-27T22:46:26Z",
+ "symbol": "PRJAX"
+}

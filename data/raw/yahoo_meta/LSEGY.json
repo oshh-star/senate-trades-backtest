@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "London Stock Exchange Group plc",
+  "shortName": "London Stock Exchange Group plc",
+  "symbol": "LSEGY"
+ },
+ "queried_at": "2026-09-27T22:41:55Z",
+ "symbol": "LSEGY"
+}

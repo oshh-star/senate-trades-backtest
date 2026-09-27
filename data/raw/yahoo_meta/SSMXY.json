@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1318858200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sysmex Corporation",
+  "shortName": "Sysmex Corp.",
+  "symbol": "SSMXY"
+ },
+ "queried_at": "2026-09-27T22:50:01Z",
+ "symbol": "SSMXY"
+}

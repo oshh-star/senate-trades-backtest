@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1443533400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "John Hancock Multifactor Mid Cap ETF",
+  "shortName": "John Hancock Multifactor Mid Ca",
+  "symbol": "JHMM"
+ },
+ "queried_at": "2026-09-27T22:40:09Z",
+ "symbol": "JHMM"
+}

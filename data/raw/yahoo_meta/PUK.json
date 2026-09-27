@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 962285400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Prudential plc",
+  "shortName": "Prudential Public Limited Compa",
+  "symbol": "PUK"
+ },
+ "queried_at": "2026-09-27T22:46:47Z",
+ "symbol": "PUK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1575469800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Sprott Uranium Miners ETF",
+  "shortName": "Sprott Uranium Miners ETF",
+  "symbol": "URNM"
+ },
+ "queried_at": "2026-09-27T22:52:12Z",
+ "symbol": "URNM"
+}

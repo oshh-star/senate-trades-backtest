@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1568899800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Datadog, Inc.",
+  "shortName": "Datadog, Inc.",
+  "symbol": "DDOG"
+ },
+ "queried_at": "2026-09-27T22:33:09Z",
+ "symbol": "DDOG"
+}

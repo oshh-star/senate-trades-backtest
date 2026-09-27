@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1075473000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Health Care Index Fund ETF Shares",
+  "shortName": "Vanguard Health Care ETF",
+  "symbol": "VHT"
+ },
+ "queried_at": "2026-09-27T22:52:35Z",
+ "symbol": "VHT"
+}

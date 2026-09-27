@@ -6,7 +6,18 @@
   },
   "status": 404
  },
- "queried_at": "2026-09-27T22:31:04Z",
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:04Z"
+ },
+ "queried_at": "2026-09-27T22:58:48Z",
+ "retried": true,
  "search": [
   {
    "exchDisp": "NYSE",
@@ -29,19 +40,19 @@
   {
    "exchDisp": "S\u00e3o Paulo",
    "exchange": "SAO",
-   "longname": null,
+   "longname": "Companhia CELG de Participa\u00e7\u00f5es S/A",
    "quoteType": "EQUITY",
    "shortname": "CELGPAR     ON",
-   "symbol": "GPAR3F.SA",
+   "symbol": "GPAR3.SA",
    "typeDisp": "Equity"
   },
   {
    "exchDisp": "S\u00e3o Paulo",
    "exchange": "SAO",
-   "longname": "Companhia CELG de Participa\u00e7\u00f5es S/A",
+   "longname": null,
    "quoteType": "EQUITY",
    "shortname": "CELGPAR     ON",
-   "symbol": "GPAR3.SA",
+   "symbol": "GPAR3F.SA",
    "typeDisp": "Equity"
   }
  ],

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 995376600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares Expanded Tech-Software Sector ETF",
+  "shortName": "iShares Expanded Tech-Software ",
+  "symbol": "IGV"
+ },
+ "queried_at": "2026-09-27T22:39:13Z",
+ "symbol": "IGV"
+}
