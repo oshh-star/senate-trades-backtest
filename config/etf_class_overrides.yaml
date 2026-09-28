@@ -1,0 +1,4 @@
+# K5: hand classification for ETFs whose class cannot be read from Yahoo's fund category or the eFD name.
+# Used before the automatic rules in src/clean/etf_class.py. class: equity | fixed_income | commodity | other
+overrides:
+  HIYS: {class: fixed_income, note: "Invesco High Yield Select ETF (a high-yield bond fund). Yahoo does not know the symbol and the eFD name is only the issuing trust ('Invesco Actively Managed Exchange-Traded Fund Trust')"}

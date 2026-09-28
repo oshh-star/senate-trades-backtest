@@ -49,6 +49,7 @@ analysis:
 universe:
   asset_classes: [common_stock, etf]   # options, bonds, crypto, mutual funds excluded
   include_etfs: true               # every trade carries is_etf; false = ETF-excluded variant
+  etf_classes: [equity]            # K5: equity ETFs only; V16 = [equity, fixed_income, commodity, other]
   exclude: [options, bonds, crypto, mutual_funds]
   owners: [Self, Joint]            # add Spouse, Child for the family-included variant
   keep_owner_field: true           # excluded owners stay in the raw cache and are counted by type
@@ -85,6 +86,8 @@ prices:
   calendar_symbol: SPY             # NYSE trading calendar = SPY's trading dates
   raw_dir: data/raw/prices/yahoo   # raw Yahoo chart responses (gzipped JSON), with download date
   ticker_renames: config/ticker_renames.yaml
+  repairs: config/price_repairs.yaml          # K6: hand-listed repairs of bad Yahoo prints (logged)
+  ledger_reasons: config/ledger_reasons.yaml  # K4: why each survivorship-ledger symbol has no prices
 
 factors:
   source: ken_french

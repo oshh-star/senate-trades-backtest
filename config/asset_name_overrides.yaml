@@ -7,15 +7,17 @@
 #             config/ticker_renames.yaml); if Yahoo does not know the symbol, SEC's company title is
 #             checked instead. An override that cannot be confirmed is NOT applied, and is listed in
 #             outputs/data_quality.md (Phase 2, section 4) and data/interim/asset_name_overrides_log.csv.
+#   ledger_only: true = K2 (Harry, 2026-09-28): the ticker is right but Yahoo's prices for it are never
+#             used (no Yahoo history, or a different security); the trades enter the survivorship ledger.
 overrides:
   - {contains: "glaxo wellcome", ticker: GSK, expect: "GSK", note: "Glaxo Wellcome -> GlaxoSmithKline -> GSK plc ADR (J5)"}
   - {contains: "rolls-royce", ticker: RYCEY, expect: "Rolls-Royce", note: "Rolls-Royce Holdings ADR (J5)"}
   - {contains: "rolls royce", ticker: RYCEY, expect: "Rolls-Royce", note: "Rolls-Royce Holdings ADR (J5)"}
   - {contains: "ishares tr russell 1000 etf", ticker: IWB, expect: "Russell 1000", note: "iShares Russell 1000 ETF (J5)"}
   - {equals: "starbuck", ticker: SBUX, expect: "Starbucks", note: "misspelt Starbucks (J5)"}
-  - {contains: "(wizey)", ticker: WIZEY, expect: "Wise", note: "Wise plc ADR (J5)"}
+  - {contains: "(wizey)", ticker: WIZEY, expect: "Wise", ledger_only: true, note: "Wise plc ADR (J5); K2: WSE is a different security, so no prices"}
   - {contains: "(murgy)", ticker: MURGY, expect: "Munchener", note: "Munich Re ADR; Yahoo uses the German name (J5)"}
-  - {contains: "(holx)", ticker: HOLX, expect: "Hologic", note: "Hologic, Inc. (J5)"}
+  - {contains: "(holx)", ticker: HOLX, expect: "Hologic", ledger_only: true, note: "Hologic, Inc. (J5); K2: taken private, no Yahoo prices"}
   - {contains: "(bk)", ticker: BK, expect: "Bank of New York Mellon", note: "BNY Mellon (J5)"}
   - {contains: "(pstg)", ticker: PSTG, expect: ["Pure Storage", "Everpure"], note: "Everpure, Inc., formerly Pure Storage (J5)"}
-  - {contains: "(kyocy)", ticker: KYOCY, expect: "Kyocera", note: "Kyocera ADR (J5)"}
+  - {contains: "(kyocy)", ticker: KYOCY, expect: "Kyocera", ledger_only: true, note: "Kyocera ADR (J5); K2: KYOAY is a different ADR programme, so no prices"}

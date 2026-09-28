@@ -1,0 +1,21 @@
+# K6 (Harry, 2026-09-28): repairs to Yahoo daily prices, applied by the prices stage (src/prices/repairs.py)
+# to BOTH close and adj_close before data/processed/prices.csv.gz is written. Every repair is logged, row by row,
+# in data/interim/price_repairs_log.csv, and the engine reports whether it falls inside a copied holding period.
+#   type: scale          multiply the prints dated from..to (inclusive) by `factor`. Used where Yahoo recorded a
+#                        split but kept prints at the other side's scale; the factor is the recorded split ratio.
+#   type: carry_forward  treat the prints dated from..to as missing: each takes the previous day's close and adj_close.
+# The evidence (the prints before and after, and Yahoo's recorded split) is in outputs/data_quality.md, Phase 3
+# section 5, and data/interim/price_large_moves.csv.
+repairs:
+  - {ticker: THLLY, type: scale, from: 2019-03-13, to: 2019-04-01, factor: 0.2,
+     note: "Yahoo split 5:1 on 2019-03-13; prints 2019-03-13..04-01 are 123.00 = 24.60 x 5 (the last pre-split close), so divided by 5"}
+  - {ticker: EVVTY, type: scale, from: 2019-06-06, to: 2019-06-07, factor: 0.40016006,
+     note: "Yahoo split 2499:1000 on 2019-06-06; prints 06-06 and 06-07 are 43.01 = 17.21 x 2.499 (the last pre-split close), so divided by 2.499"}
+  - {ticker: TRUMY, type: scale, from: 2019-04-15, to: 2019-04-15, factor: 0.5,
+     note: "Yahoo split 2:1 on 2019-04-15; the 2019-04-15 print is 28.46 = 14.23 x 2 (the previous close), so divided by 2"}
+  - {ticker: QABSY, type: scale, from: 2018-11-02, to: 2018-11-02, factor: 2.0,
+     note: "Yahoo split 2:1 on 2018-11-02; the 2018-11-02 print (11.32) is at half the scale of the rest of the series (19.33 before, 20.64 after), so multiplied by 2"}
+  - {ticker: LYSDY, type: carry_forward, from: 2017-12-04, to: 2017-12-04,
+     note: "Yahoo split 1:10 on 2017-12-04, but the ratio does not explain the 2017-12-04 print (0.55 between 1.90 and 1.65; x10 or /10 gives 5.50 or 0.055), so it is treated as missing"}
+  - {ticker: TGOPY, type: carry_forward, from: 2016-11-30, to: 2016-11-30,
+     note: "absurd print 0.0005 between 3.00 and 2.00 (a -99.98% day followed by +399,900%), treated as missing"}

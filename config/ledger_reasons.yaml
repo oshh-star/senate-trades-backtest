@@ -1,0 +1,193 @@
+# K4 (Harry, 2026-09-28): why each survivorship-ledger symbol has no usable Yahoo prices.
+# reason is one of: acquired for cash | acquired for stock | bankrupt | matured or liquidated fund | ticker issue | unknown
+# ("acquired for stock" includes cash-and-stock deals: the holder kept some equity exposure; the source says which.)
+# source: one line. "SEC 25-NSE <date>" = the exchange's delisting notice on SEC EDGAR (dates collected by
+# scripts/ledger_evidence.py into data/interim/ledger_sec_evidence.csv); deal terms are from the companies'
+# announcements. Written by Claude for Harry; the in-scope symbols (first block) were checked one by one,
+# the 2025-26 deals against the web (EA, MASI, AVB, LEG, CYBR, SSBK, HOLX, SQ). Symbols needed only by a
+# variant (second block) are from SEC evidence plus memory: treat them as less certain.
+reasons:
+  # ---------------------------------------------------------------- symbols with in-scope (headline) trades
+  X:      {reason: acquired for cash, source: "Nippon Steel bought U.S. Steel for $55.00 cash per share, closed 18 Jun 2025 (SEC 25-NSE 2025-06-18)"}
+  ECOM:   {reason: acquired for cash, source: "CommerceHub (Francisco Partners / Insight) bought ChannelAdvisor for $23.10 cash, Nov 2022 (SEC 25-NSE 2022-11-15)"}
+  WTT:    {reason: acquired for cash, source: "Maury Microwave bought Wireless Telecom Group for $2.13 cash, Aug 2023 (SEC 25-NSE 2023-08-04)"}
+  ATVI:   {reason: acquired for cash, source: "Microsoft bought Activision Blizzard for $95.00 cash, closed 13 Oct 2023 (SEC 25-NSE 2023-10-13)"}
+  SSBK:   {reason: acquired for stock, source: "FB Financial merger, 0.80 FBK shares per SSBK share, closed 1 Jul 2025 (SEC 25-NSE 2025-07-01; FB Financial release 1 Jul 2025)"}
+  PARA:   {reason: acquired for stock, source: "Skydance merger closed 7 Aug 2025: Class B holders elected $15.00 cash or 1 share of Paramount Skydance (PSKY), prorated (SEC 25-NSE 2025-08-07); Yahoo's PARA history now belongs to another company"}
+  WBA:    {reason: acquired for cash, source: "Sycamore Partners take-private, $11.45 cash plus a right to up to $3.00 from the VillageMD sale, closed 28 Aug 2025 (SEC 25-NSE 2025-08-28, SC 13E3)"}
+  GOGL:   {reason: acquired for stock, source: "Merged into CMB.Tech (0.95 CMBT share per GOGL share), Aug 2025 (SEC 25-NSE 2025-08-20); Yahoo's GOGL is now a 2x GOOGL ETF"}
+  NS:     {reason: acquired for stock, source: "Sunoco LP bought NuStar Energy, 0.400 SUN unit per NS unit, May 2024 (no SEC name match; company announcement)"}
+  IBDQ:   {reason: matured or liquidated fund, source: "iShares iBonds Dec 2025 Term Corporate ETF: a term fund that matured and was liquidated in December 2025"}
+  AHL-C:  {reason: unknown, source: "Aspen Insurance Holdings preferred depositary shares (AHL-PC); Aspen was bought by Sompo in 2025, what happened to this preferred series is not confirmed here. Also: a preferred share, not common stock"}
+  BKEP:   {reason: acquired for cash, source: "Ergon bought Blueknight Energy Partners' common units for $4.65 cash, Oct 2022 (company announcement; no SEC name match)"}
+  BKEPP:  {reason: acquired for cash, source: "Blueknight Series A preferred units, bought out for cash in the Ergon transaction, Oct 2022 (company announcement). Also: a preferred unit, not common stock"}
+  BRK:    {reason: ticker issue, source: "eFD name 'Bershire Hathaway Cdr [Cad Hedged]': a CAD-hedged Canadian Depositary Receipt on Cboe Canada, not BRK-B. Now excluded as NON_US_LISTING (config/ticker_renames.yaml non_us)"}
+  BSCP:   {reason: matured or liquidated fund, source: "Invesco BulletShares 2025 Corporate Bond ETF: a term fund that matured and was liquidated in December 2025"}
+  FUN:    {reason: acquired for stock, source: "Cedar Fair merged with Six Flags 1:1 into a new company that took the FUN symbol, 1 Jul 2024 (SEC 25-NSE 2024-07-02); Yahoo's FUN is the new company, so not used (E27)"}
+  RNWK:   {reason: acquired for cash, source: "Founder Rob Glaser took RealNetworks private for $1.05 cash, Dec 2022 (SEC 25-NSE 2022-12-22, SC 13E3)"}
+  TACO:   {reason: acquired for cash, source: "Jack in the Box bought Del Taco for $12.51 cash, Mar 2022 (SEC 25-NSE 2022-03-08); Yahoo's TACO is now a SPAC"}
+  TOELY:  {reason: ticker issue, source: "Tokyo Electron ADR still trades OTC (Yahoo's last market time 2026-09-24), but Yahoo returns an empty daily series (its 'first trade date' was reset to 2026-07-17, as for DFKCY, AVB, EA and LEG)"}
+  COLPAL: {reason: ticker issue, source: "eFD name 'COLGATE PALMOLIVE LTD.': COLPAL is Colgate-Palmolive (India) on the NSE. Now excluded as NON_US_LISTING (config/ticker_renames.yaml non_us)"}
+  CYBR:   {reason: acquired for stock, source: "Palo Alto Networks bought CyberArk for $45.00 cash plus 2.2005 PANW shares per share, closed 11 Feb 2026 (SEC 25-NSE 2026-02-11; PANW release)"}
+  EA:     {reason: acquired for cash, source: "PIF, Silver Lake and Affinity Partners took Electronic Arts private for $210.00 cash, closed 4 Aug 2026 (SEC 25-NSE 2026-08-04; EA release 4 Aug 2026). Yahoo keeps the symbol's metadata but no longer serves its history"}
+  LMST:   {reason: acquired for stock, source: "Peoples Bancorp bought Limestone Bancorp, 0.90 PEBO share per share, Apr 2023 (SEC 25-NSE 2023-05-01)"}
+  MASI:   {reason: acquired for cash, source: "Danaher bought Masimo for $180.00 cash per share, closed 10 Jun 2026 (SEC 25-NSE 2026-06-10; Masimo 8-K)"}
+  PXD:    {reason: acquired for stock, source: "ExxonMobil bought Pioneer Natural Resources, 2.3234 XOM shares per share, May 2024 (SEC 25-NSE 2024-05-03)"}
+  SQ:     {reason: ticker issue, source: "Block, Inc. changed its symbol SQ -> XYZ on 21 Jan 2025 (same company, same shares); now a rename in config/ticker_renames.yaml (K4), priced with XYZ"}
+  AVB:    {reason: acquired for stock, source: "NOT a rename: AvalonBay merged with Equity Residential (renamed Vivmark Residential, VMRK), 2.793 VMRK shares per AVB share, closed 17 Aug 2026 (SEC 25-NSE 2026-08-17; Vivmark 8-K). VMRK is Equity Residential's legal entity, so its history is not AvalonBay's"}
+  DFKCY:  {reason: ticker issue, source: "Daifuku ADR still trades OTC (Yahoo's last market time 2026-08-24), but Yahoo returns an empty daily series ('first trade date' reset to 2026-07-17)"}
+  EQC:    {reason: matured or liquidated fund, source: "Equity Commonwealth (a REIT) sold its properties and liquidated; delisted Dec 2024 into the EQC Liquidating Trust (SEC 25-NSE 2024-12-03)"}
+  HES:    {reason: acquired for stock, source: "Chevron bought Hess, 1.0250 CVX shares per share, closed 18 Jul 2025 (SEC 25-NSE 2025-07-18)"}
+  IBDO:   {reason: matured or liquidated fund, source: "iShares iBonds Dec 2023 Term Corporate ETF: a term fund that matured and was liquidated in December 2023"}
+  INST:   {reason: acquired for cash, source: "KKR took Instructure private for $23.60 cash, Nov 2024 (SEC 25-NSE 2024-11-13)"}
+  LEG:    {reason: acquired for stock, source: "Somnigroup bought Leggett & Platt, 0.1455 SGI share per share, closed 26 Aug 2026 (SEC 25-NSE 2026-08-27; Somnigroup release)"}
+  SIVB:   {reason: bankrupt, source: "SVB Financial Group: Silicon Valley Bank failed 10 Mar 2023, parent filed Chapter 11 17 Mar 2023 (SEC 25-NSE 2023-05-02)"}
+  VMW:    {reason: acquired for stock, source: "Broadcom bought VMware, holders elected $142.50 cash or 0.252 AVGO share (prorated about half each), closed 22 Nov 2023 (SEC 25-NSE 2023-11-22)"}
+  HIYS:   {reason: unknown, source: "Invesco High Yield Select ETF (first published record of Mullin's T10070, later corrected to PDBC). A bond fund: excluded as NON_EQUITY_ETF under K5 if Yahoo has no prices"}
+  WIZEY:  {reason: ticker issue, source: "Wise plc unsponsored ADR (OTC); Yahoo no longer knows the symbol. WSE is Wise Group plc's new US listing, a different security (K2)"}
+  HOLX:   {reason: acquired for cash, source: "Blackstone and TPG took Hologic private for $76.00 cash plus a CVR of up to $3.00, closed 7 Apr 2026 (SEC 25-NSE 2026-04-07; Hologic 8-K)"}
+  KYOCY:  {reason: ticker issue, source: "Kyocera ADR programme under KYOCY; Yahoo no longer knows it. KYOAY is a different ADR programme (K2)"}
+  # ---------------------------------------------------------------- symbols needed only by a variant (family owners, 10-year window, ...)
+  ABB:    {reason: ticker issue, source: "ABB delisted its ADSs from the NYSE voluntarily in May 2023 (SEC 25 2023-05-12); ADRs now trade OTC as ABBNY"}
+  AGN:    {reason: acquired for stock, source: "AbbVie bought Allergan for $120.30 cash plus 0.8660 ABBV share, May 2020 (SEC 25-NSE 2020-05-11)"}
+  AGU:    {reason: acquired for stock, source: "Agrium merged with PotashCorp into Nutrien, Jan 2018 (SEC 25-NSE 2018-01-02)"}
+  AJRD:   {reason: acquired for cash, source: "L3Harris bought Aerojet Rocketdyne for $58.00 cash, Jul 2023 (SEC 25-NSE 2023-07-28)"}
+  AL:     {reason: acquired for cash, source: "Sumitomo Corp / SMBC Aviation consortium bought Air Lease for $65.00 cash, 2026 (SEC 25-NSE 2026-04-08; filer now 'Sumisho Air Lease Corp')"}
+  ALTM:   {reason: acquired for cash, source: "Rio Tinto bought Arcadium Lithium for $5.85 cash, Mar 2025 (SEC 25-NSE 2025-03-06)"}
+  AMWD:   {reason: acquired for stock, source: "MasterBrand all-stock merger with American Woodmark, 2026 (SEC DEFM14A 2025-09-25, 25-NSE 2026-05-28)"}
+  ANDX:   {reason: acquired for stock, source: "MPLX bought Andeavor Logistics, units for units, Jul 2019 (SEC 25-NSE 2019-07-30)"}
+  AQFH:   {reason: unknown, source: "Aquesta Financial Holdings (OTC bank holding company); no exit filing on SEC EDGAR"}
+  ARNA:   {reason: acquired for cash, source: "Pfizer bought Arena Pharmaceuticals for $100.00 cash, Mar 2022 (SEC 25-NSE 2022-03-11)"}
+  AVP:    {reason: acquired for stock, source: "Natura &Co bought Avon Products for Natura shares, Jan 2020 (SEC 25-NSE 2020-01-06)"}
+  AY:     {reason: acquired for cash, source: "Energy Capital Partners bought Atlantica Sustainable Infrastructure for $22.00 cash, Dec 2024 (SEC 25-NSE 2024-12-12)"}
+  BBL:    {reason: acquired for stock, source: "BHP unified its dual listing: BHP Group Plc ADSs exchanged for BHP Group Ltd shares, Jan 2022 (SEC 25-NSE 2022-01-31)"}
+  BCR:    {reason: acquired for stock, source: "Becton Dickinson bought C. R. Bard for $222.93 cash plus 0.5077 BDX share, Dec 2017 (company announcement)"}
+  BERY:   {reason: acquired for stock, source: "Amcor bought Berry Global in an all-stock deal, Apr 2025 (SEC 25-NSE 2025-04-30)"}
+  BIVV:   {reason: acquired for cash, source: "Sanofi bought Bioverativ for $105.00 cash (tender offer), Mar 2018 (SEC 25-NSE 2018-03-08)"}
+  BPL:    {reason: acquired for cash, source: "IFM Investors bought Buckeye Partners for $41.50 cash, Nov 2019 (SEC 25-NSE 2019-11-01)"}
+  BRKB:   {reason: ticker issue, source: "eFD symbol for Berkshire Hathaway class B without the separator; now a hand rename BRKB -> BRK-B (config/ticker_renames.yaml)"}
+  CAB:    {reason: acquired for cash, source: "Bass Pro Shops bought Cabela's for $61.50 cash, Sep 2017 (SEC 25-NSE 2017-09-26)"}
+  CBS:    {reason: ticker issue, source: "CBS Corp absorbed Viacom and was renamed ViacomCBS (VIAC, Dec 2019), then Paramount Global (PARA, 2022), SEC CIK 813828; PARA itself is in this ledger"}
+  CCCS:   {reason: ticker issue, source: "CCC Intelligent Solutions trades as CCC; now a hand rename CCCS -> CCC (config/ticker_renames.yaml)"}
+  CELG:   {reason: acquired for stock, source: "Bristol-Myers Squibb bought Celgene for $50.00 cash plus 1 BMY share and a CVR, Nov 2019 (SEC 25-NSE 2019-11-20)"}
+  CEM:    {reason: unknown, source: "ClearBridge MLP and Midstream Fund (closed-end fund); believed merged into another ClearBridge fund, not confirmed; no SEC name match"}
+  CEQP:   {reason: acquired for stock, source: "Energy Transfer bought Crestwood Equity Partners, 2.07 ET units per unit, Nov 2023 (SEC 25-NSE 2023-11-03)"}
+  CERN:   {reason: acquired for cash, source: "Oracle bought Cerner for $95.00 cash (tender offer), Jun 2022 (SEC 25-NSE 2022-06-08)"}
+  CGNT:   {reason: acquired for cash, source: "Laborie Medical bought Cogentix Medical for $3.85 cash (tender offer), Apr 2018 (SEC 25-NSE 2018-04-23)"}
+  CLR:    {reason: acquired for cash, source: "Harold Hamm's family took Continental Resources private for $74.28 cash, Nov 2022 (SEC 25-NSE 2022-11-23, SC 13E3)"}
+  CMA:    {reason: acquired for stock, source: "Fifth Third bought Comerica in an all-stock deal, early 2026 (SEC 25-NSE 2026-02-02)"}
+  CNR:    {reason: acquired for cash, source: "Clayton, Dubilier & Rice bought the rest of Cornerstone Building Brands for $24.65 cash, Jul 2022 (SEC 25-NSE 2022-07-25)"}
+  CONE:   {reason: acquired for cash, source: "KKR and GIP bought CyrusOne for $90.50 cash, Mar 2022 (SEC 25-NSE 2022-03-25)"}
+  COUP:   {reason: acquired for cash, source: "Thoma Bravo bought Coupa Software for $81.00 cash, Feb 2023 (SEC 25-NSE 2023-02-28)"}
+  CSII:   {reason: acquired for cash, source: "Abbott bought Cardiovascular Systems for $20.00 cash, Apr 2023 (SEC 25-NSE 2023-04-27)"}
+  CTAA:   {reason: ticker issue, source: "Qwest Corp 7% notes due 2056: an exchange-listed bond (debt), not a stock; Yahoo's CTAA now belongs to another security"}
+  CTECBX: {reason: ticker issue, source: "a Guggenheim unit investment trust code, not a listed stock"}
+  CTXS:   {reason: acquired for cash, source: "Vista Equity and Elliott took Citrix private for $104.00 cash, Sep 2022 (SEC 25-NSE 2022-09-30)"}
+  CUTR:   {reason: bankrupt, source: "Cutera filed Chapter 11 in Mar 2025; equity cancelled (SEC 25 2025-03-20, 25-NSE 2025-07-16)"}
+  CVET:   {reason: acquired for cash, source: "CD&R and TPG took Covetrus private for $21.00 cash, Oct 2022 (SEC 25-NSE 2022-10-13)"}
+  DCP:    {reason: acquired for cash, source: "Phillips 66 bought DCP Midstream's public common units for $41.75 cash, Jun 2023 (SEC SC 13E3 2023-03-22)"}
+  DFS:    {reason: acquired for stock, source: "Capital One bought Discover, 1.0192 COF shares per share, May 2025 (SEC 25-NSE 2025-05-19)"}
+  DISH:   {reason: acquired for stock, source: "EchoStar bought DISH Network in an all-stock deal, Dec 2023 (SEC 25-NSE 2023-12-29)"}
+  DNKN:   {reason: acquired for cash, source: "Inspire Brands bought Dunkin' Brands for $106.50 cash, Dec 2020 (SEC 25-NSE 2020-12-15)"}
+  DPM:    {reason: acquired for cash, source: "DCP Midstream Partners (later DCP Midstream, LP): public units bought by Phillips 66 for $41.75 cash, Jun 2023"}
+  DVMT:   {reason: acquired for stock, source: "Dell Class V tracking stock exchanged for DELL Class C shares (1.8036) or cash, Dec 2018 (rename rejected by hand)"}
+  ENTL:   {reason: acquired for cash, source: "Stryker bought Entellus Medical for $24.00 cash, Feb 2018 (SEC 25-NSE 2018-02-28)"}
+  EQM:    {reason: acquired for stock, source: "Equitrans Midstream bought the EQM Midstream units it did not own for ETRN shares, Jun 2020 (SEC 25-NSE 2020-06-17)"}
+  ESRX:   {reason: acquired for stock, source: "Cigna bought Express Scripts for $48.75 cash plus 0.2434 CI share, Dec 2018 (SEC 25-NSE 2018-12-21)"}
+  ESV:    {reason: bankrupt, source: "Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11 (rename rejected by hand)"}
+  ETP:    {reason: acquired for stock, source: "Energy Transfer Partners merged into Energy Transfer (ETE, now ET) for units, Oct 2018"}
+  ETRN:   {reason: acquired for stock, source: "EQT bought Equitrans Midstream, 0.3504 EQT share per share, Jul 2024 (SEC 25-NSE 2024-07-22)"}
+  EV:     {reason: acquired for stock, source: "Morgan Stanley bought Eaton Vance for $28.25 cash plus 0.5833 MS share, Mar 2021 (SEC 25-NSE 2021-03-01)"}
+  EVOP:   {reason: acquired for cash, source: "Global Payments bought EVO Payments for $34.00 cash, Mar 2023 (SEC 25-NSE 2023-03-24)"}
+  FDC:    {reason: acquired for stock, source: "Fiserv bought First Data, 0.303 FISV share per share, Jul 2019 (SEC 25-NSE 2019-07-29)"}
+  FEYE:   {reason: acquired for cash, source: "FireEye renamed Mandiant (MNDT) in Oct 2021; Google bought Mandiant for $23.00 cash, Sep 2022 (SEC 25-NSE 2022-09-12)"}
+  FL:     {reason: acquired for cash, source: "Dick's Sporting Goods bought Foot Locker for $24.00 cash or 0.1168 DKS share at the holder's election, Sep 2025 (SEC 25-NSE 2025-09-08)"}
+  FPL:    {reason: matured or liquidated fund, source: "First Trust New Opportunities MLP & Energy Fund, closed-end fund liquidated 2024 (SEC 25-NSE 2024-05-06, N-8F 2024-08-05)"}
+  GAN:    {reason: acquired for cash, source: "Sega Sammy bought GAN Limited for $1.97 cash, May 2025 (SEC 25-NSE 2025-05-27)"}
+  GRUB:   {reason: acquired for stock, source: "Just Eat Takeaway.com bought Grubhub for its ADSs, Jun 2021 (SEC 25-NSE 2021-06-15)"}
+  HBI:    {reason: acquired for stock, source: "Gildan Activewear bought Hanesbrands for 0.102 GIL share plus $0.80 cash, Dec 2025 (SEC 25-NSE 2025-12-01)"}
+  HDS:    {reason: acquired for cash, source: "Home Depot bought HD Supply for $56.00 cash (tender offer), Dec 2020 (SEC 25-NSE 2020-12-28)"}
+  HYH:    {reason: unknown, source: "Halyard Health renamed Avanos Medical (AVNS) in 2018, same SEC CIK 1606498; Avanos was then acquired in 2026 (SEC DEFM14A 2026-06-10, 25-NSE 2026-07-27), terms not checked"}
+  IBKC:   {reason: acquired for stock, source: "First Horizon merger of equals, 4.584 FHN shares per IBKC share, Jul 2020 (SEC 25-NSE 2020-07-02)"}
+  IIN:    {reason: acquired for cash, source: "Altaris Capital bought IntriCon for $24.25 cash, May 2022 (SEC 25-NSE 2022-05-24)"}
+  IPHI:   {reason: acquired for stock, source: "Marvell bought Inphi for $66.00 cash plus 2.323 new Marvell shares, Apr 2021 (SEC 25-NSE 2021-04-20)"}
+  IRBT:   {reason: bankrupt, source: "iRobot filed Chapter 11 in Dec 2025 and was taken over by its lender; equity cancelled (SEC 25-NSE 2026-01-15; believed, not re-checked)"}
+  JNPR:   {reason: acquired for cash, source: "Hewlett Packard Enterprise bought Juniper Networks for $40.00 cash, Jul 2025 (SEC 25-NSE 2025-07-02)"}
+  JWN:    {reason: acquired for cash, source: "The Nordstrom family and Liverpool took Nordstrom private for $24.25 cash, May 2025 (SEC 25-NSE 2025-05-21, SC 13E3)"}
+  K:      {reason: acquired for cash, source: "Mars bought Kellanova (formerly Kellogg) for $83.50 cash, Dec 2025 (SEC 25-NSE 2025-12-11)"}
+  KL:     {reason: acquired for stock, source: "Agnico Eagle merger, 0.7935 AEM share per share, Feb 2022 (SEC 25-NSE 2022-02-09)"}
+  LAZR:   {reason: bankrupt, source: "Luminar Technologies filed Chapter 11 in Dec 2025 (SEC 25-NSE 2026-01-23; believed, not re-checked); Yahoo's LAZR now belongs to another company"}
+  LBRDK:  {reason: acquired for stock, source: "Charter Communications bought Liberty Broadband for Charter shares (0.236 CHTR per share); delisted Aug 2026 (SEC DEFM14A 2025-01-22, 25-NSE 2026-08-20)"}
+  LGF-B:  {reason: ticker issue, source: "Lions Gate separated Starz in May 2025; the old class B shares became shares of Lionsgate Studios (LION)"}
+  LLTC:   {reason: acquired for stock, source: "Analog Devices bought Linear Technology for $46.00 cash plus 0.2321 ADI share, Mar 2017"}
+  LMACU:  {reason: matured or liquidated fund, source: "Liberty Media Acquisition Corp (a SPAC) liquidated without a deal, Dec 2022 (SEC 25-NSE 2022-11-30)"}
+  LMRK:   {reason: acquired for cash, source: "DigitalBridge bought Landmark Infrastructure Partners for $16.50 cash, Dec 2021 (SEC 25-NSE 2021-12-22)"}
+  LSXMK:  {reason: acquired for stock, source: "Liberty SiriusXM tracking stock was exchanged for shares of the new Sirius XM Holdings, Sep 2024"}
+  LTRPA:  {reason: acquired for stock, source: "Tripadvisor bought Liberty TripAdvisor Holdings for Tripadvisor shares, Apr 2025"}
+  MANT:   {reason: acquired for cash, source: "Carlyle bought ManTech for $96.00 cash, Sep 2022 (SEC 25-NSE 2022-09-14)"}
+  MAXR:   {reason: acquired for cash, source: "Advent International bought Maxar Technologies for $53.00 cash, May 2023 (SEC 25-NSE 2023-05-03)"}
+  MCC:    {reason: ticker issue, source: "Medley Capital renamed PhenixFIN (PFX), SEC CIK 1490349, with a 1-for-20 reverse split, 2020"}
+  MDC:    {reason: acquired for cash, source: "Sekisui House bought M.D.C. Holdings for $63.00 cash, Apr 2024 (SEC 25-NSE 2024-04-19)"}
+  MMP:    {reason: acquired for stock, source: "ONEOK bought Magellan Midstream for $25.00 cash plus 0.6670 OKE share, Sep 2023 (SEC 25-NSE 2023-09-25)"}
+  MRO:    {reason: acquired for stock, source: "ConocoPhillips bought Marathon Oil, 0.255 COP share per share, Nov 2024 (SEC 25-NSE 2024-11-22)"}
+  MXIM:   {reason: acquired for stock, source: "Analog Devices bought Maxim Integrated, 0.630 ADI share per share, Aug 2021 (SEC 25-NSE 2021-08-26)"}
+  MYL:    {reason: acquired for stock, source: "Mylan combined with Pfizer's Upjohn into Viatris (VTRS), one share each, Nov 2020 (SEC 25-NSE 2020-11-16)"}
+  NFX:    {reason: acquired for stock, source: "Encana bought Newfield Exploration, 2.6719 ECA shares per share, Feb 2019 (SEC 25-NSE 2019-02-14)"}
+  NID:    {reason: matured or liquidated fund, source: "Nuveen Intermediate Duration Municipal Term Fund, a term closed-end fund, terminated 2023 (SEC 25-NSE 2023-03-31)"}
+  NKLA:   {reason: bankrupt, source: "Nikola filed Chapter 11 in Feb 2025 (SEC 25 2025-04-03)"}
+  NPSND:  {reason: ticker issue, source: "Naspers ADR (OTC); the symbol Yahoo uses is different (NPSNY)"}
+  NTRP:   {reason: acquired for stock, source: "Neurotrope merged with Metuchen Pharmaceuticals into Petros Pharmaceuticals, Dec 2020 (SEC 25-NSE 2020-12-02)"}
+  NUAN:   {reason: acquired for cash, source: "Microsoft bought Nuance for $56.00 cash, Mar 2022 (SEC 25-NSE 2022-03-04)"}
+  OKS:    {reason: acquired for stock, source: "ONEOK bought ONEOK Partners, 0.985 OKE share per unit, Jun 2017 (SEC 25-NSE 2017-07-03)"}
+  PDRDY:  {reason: ticker issue, source: "Pernod Ricard ADR (OTC); Yahoo has no data for this symbol"}
+  PHLD:   {reason: ticker issue, source: "Phillips Edison Grocery Center REIT: not exchange-listed until 2021, then as PECO"}
+  POT:    {reason: acquired for stock, source: "PotashCorp merged with Agrium into Nutrien, Jan 2018 (SEC 25-NSE 2018-01-02)"}
+  PSXP:   {reason: acquired for stock, source: "Phillips 66 bought Phillips 66 Partners, 0.50 PSX share per unit, Mar 2022 (SEC 25-NSE 2022-03-09)"}
+  PX:     {reason: acquired for stock, source: "Praxair merged with Linde AG into Linde plc, one share per share, Oct 2018 (SEC 25-NSE 2018-10-31)"}
+  QRTEA:  {reason: bankrupt, source: "Qurate Retail renamed QVC Group (2025); SEC now lists it as 'Old QVC Group' with symbol QVCAQ (Q = in bankruptcy), delisted 2026 (SEC 25-NSE 2026-06-08); believed, not re-checked"}
+  QRTEP:  {reason: bankrupt, source: "Qurate Retail 8% preferred; same issuer as QRTEA (SEC 25-NSE 2026-06-08); believed, not re-checked"}
+  RAI:    {reason: acquired for stock, source: "British American Tobacco bought Reynolds American for $29.44 cash plus 0.5260 BTI ADS, Jul 2017"}
+  RDS-A:  {reason: ticker issue, source: "Royal Dutch Shell A ADSs became Shell plc ADSs (SHEL) one for one when the share classes were unified, Jan 2022"}
+  RDS-B:  {reason: ticker issue, source: "Royal Dutch Shell B ADSs became Shell plc ADSs (SHEL) one for one when the share classes were unified, Jan 2022"}
+  RDSA:   {reason: ticker issue, source: "eFD's symbol for Royal Dutch Shell A (RDS-A); became SHEL, Jan 2022"}
+  REVB:   {reason: acquired for stock, source: "Sandy Spring Bancorp bought Revere Bank for SASR shares, Apr 2020; Yahoo's REVB now belongs to another company"}
+  RGC:    {reason: acquired for cash, source: "Cineworld bought Regal Entertainment for $23.00 cash, Mar 2018 (SEC 25-NSE 2018-03-01)"}
+  RHT:    {reason: acquired for cash, source: "IBM bought Red Hat for $190.00 cash, Jul 2019 (SEC 25-NSE 2019-07-09)"}
+  RSPP:   {reason: acquired for stock, source: "Concho Resources bought RSP Permian, 0.320 CXO share per share, Jul 2018 (SEC 25-NSE 2018-07-19)"}
+  RTN:    {reason: acquired for stock, source: "Raytheon merged with United Technologies into Raytheon Technologies (RTX), 2.3348 shares per share, Apr 2020 (SEC 25-NSE 2020-04-03)"}
+  RVNC:   {reason: acquired for cash, source: "Crown Laboratories bought Revance Therapeutics for $3.10 cash (tender offer), Feb 2025 (SEC 25-NSE 2025-02-06)"}
+  RYT:    {reason: ticker issue, source: "Invesco S&P 500 Equal Weight Technology ETF changed its symbol from RYT to RSPT in 2023"}
+  SAND:   {reason: acquired for stock, source: "Royal Gold bought Sandstorm Gold for RGLD shares, Oct 2025 (SEC 25-NSE 2025-10-20)"}
+  SCG:    {reason: acquired for stock, source: "Dominion Energy bought SCANA, 0.669 D share per share, Jan 2019 (SEC 25-NSE 2019-01-02)"}
+  SHLX:   {reason: acquired for cash, source: "Shell bought Shell Midstream Partners' public units for $15.85 cash, Oct 2022 (SEC 25-NSE 2022-10-19)"}
+  SI:     {reason: bankrupt, source: "Silvergate Capital wound down its bank in 2023 and filed Chapter 11 in Sep 2024 (SEC 25-NSE 2023-05-11)"}
+  SRCL:   {reason: acquired for cash, source: "Waste Management bought Stericycle for $62.00 cash, Nov 2024 (SEC 25-NSE 2024-11-04)"}
+  STI:    {reason: acquired for stock, source: "SunTrust merged with BB&T into Truist (TFC), 1.295 shares per share, Dec 2019 (SEC 25-NSE 2019-12-09)"}
+  TCP:    {reason: acquired for stock, source: "TC Energy bought TC PipeLines, 0.70 TRP share per unit, Mar 2021 (SEC 25-NSE 2021-03-03)"}
+  TCS:    {reason: bankrupt, source: "The Container Store filed Chapter 11 in Dec 2024; equity cancelled (SEC 25-NSE 2024-12-10)"}
+  TLLP:   {reason: acquired for stock, source: "Tesoro Logistics was renamed Andeavor Logistics (ANDX, 2017), which MPLX bought for units in Jul 2019"}
+  TRIT:   {reason: ticker issue, source: "Triterras was delisted from Nasdaq in 2022 for late filings and moved to OTC (SEC 25-NSE 2022-03-14)"}
+  TUP:    {reason: bankrupt, source: "Tupperware Brands filed Chapter 11 in Sep 2024 (SEC 25-NSE 2024-10-04)"}
+  TWO:    {reason: unknown, source: "Two Harbors Investment: merger approved in 2026 and common delisted Sep 2026 (SEC DEFM14A 2026-04-20, 25 2026-09-24); terms not checked"}
+  TWTR:   {reason: acquired for cash, source: "Elon Musk bought Twitter for $54.20 cash, Oct 2022 (SEC 25-NSE 2022-10-28)"}
+  TWX:    {reason: acquired for stock, source: "AT&T bought Time Warner for $53.75 cash plus AT&T shares, Jun 2018 (SEC 25-NSE 2018-06-15)"}
+  UN:     {reason: acquired for stock, source: "Unilever N.V. merged into Unilever PLC, one share per share, Nov 2020 (SEC 25-NSE 2020-11-30)"}
+  VGR:    {reason: acquired for cash, source: "Japan Tobacco bought Vector Group for $15.00 cash (tender offer), Oct 2024 (SEC 25-NSE 2024-10-07)"}
+  VIAB:   {reason: acquired for stock, source: "Viacom merged into CBS (ViacomCBS), 0.59625 share per share, Dec 2019 (SEC 25-NSE 2019-12-04)"}
+  VIAC:   {reason: ticker issue, source: "ViacomCBS renamed Paramount Global (PARA) in Feb 2022, SEC CIK 813828; PARA itself is in this ledger"}
+  VLP:    {reason: acquired for cash, source: "Valero bought Valero Energy Partners' public units for $42.25 cash, Jan 2019 (SEC 25-NSE 2019-01-10)"}
+  VSM:    {reason: acquired for cash, source: "Merck KGaA bought Versum Materials for $53.00 cash, Oct 2019 (SEC 25-NSE 2019-10-07)"}
+  WFM:    {reason: acquired for cash, source: "Amazon bought Whole Foods Market for $42.00 cash, Aug 2017 (SEC 25-NSE 2017-08-28)"}
+  WOOF:   {reason: acquired for cash, source: "Mars bought VCA for $93.00 cash, Sep 2017 (SEC 25-NSE 2017-09-12); Yahoo's WOOF is now Petco"}
+  WPX:    {reason: acquired for stock, source: "Devon Energy merger, 0.5165 DVN share per share, Jan 2021 (SEC 25-NSE 2021-01-07)"}
+  WPZ:    {reason: acquired for stock, source: "Williams bought Williams Partners, 1.494 WMB shares per unit, Aug 2018 (SEC 25-NSE 2018-08-14)"}
+  WRK:    {reason: acquired for stock, source: "WestRock combined with Smurfit Kappa into Smurfit WestRock, 1 share plus $5.00 cash, Jul 2024 (SEC 25-NSE 2024-07-08)"}
+  WTW:    {reason: bankrupt, source: "WW International (Weight Watchers): old equity cancelled in the 2025 Chapter 11 (rename rejected by hand)"}
+  XLNX:   {reason: acquired for stock, source: "AMD bought Xilinx, 1.7234 AMD shares per share, Feb 2022 (SEC 25-NSE 2022-02-14)"}
+  ZAYO:   {reason: acquired for cash, source: "DigitalBridge and EQT took Zayo private for $35.00 cash, Mar 2020 (SEC 25-NSE 2020-03-09)"}
+  ZNGA:   {reason: acquired for stock, source: "Take-Two bought Zynga for $3.50 cash plus $6.36 in TTWO shares, May 2022 (SEC 25-NSE 2022-05-23)"}
+  # ---------------------------------------------------------------- symbols named only by a first-published J3 record
+  BRY:    {reason: acquired for stock, source: "California Resources bought Berry Corporation in an all-stock deal, Dec 2025 (believed, not re-checked); named only by a record later corrected"}
+  BUNT:   {reason: matured or liquidated fund, source: "DB 3x German Bund Futures ETN: an exchange-traded note (debt, not a stock) that Deutsche Bank delisted and redeemed"}
+  NEE-PC: {reason: ticker issue, source: "FPL Group 5 7/8% preferred (a fixed-income security, not common stock), since redeemed"}
+  SOJA:   {reason: ticker issue, source: "The Southern Company junior subordinated notes 2015A (exchange-listed debt, not a stock), since redeemed"}

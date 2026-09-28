@@ -52,6 +52,8 @@ HEADER = """# Ticker renames and confirmed same-symbol name changes (Phase 3, st
 #   same_symbol: the company changed its name but kept the symbol; Yahoo's current name is trusted.
 #   rejected:    written by hand: same SEC company but NOT the same security (tracking stock exchanged,
 #                equity cancelled in bankruptcy, ...); never treated as a rename.
+#   non_us:      written by hand: a symbol that is a non-US listing although Yahoo cannot say so (e.g. a
+#                Canadian depositary receipt); excluded as NON_US_LISTING by the clean stage.
 # The clean stage reads this file (price_ticker, instrument type), so rerun `clean` after editing it.
 """
 
@@ -228,6 +230,7 @@ def write_renames(res: pd.DataFrame, path: Path = RENAMES) -> None:
     old = yaml.safe_load(path.read_text()) if path.exists() else {}
     old = old or {}
     rejected = old.get("rejected") or []
+    non_us = old.get("non_us") or []
     hand_r = [r for r in old.get("renames") or [] if r.get("hand")]
     hand_s = [r for r in old.get("same_symbol") or [] if r.get("hand")]
     ren = [{"old": r.ticker, "new": r.new_ticker, "effective_date": r.effective_date, "date_basis": r.date_basis,
@@ -238,23 +241,57 @@ def write_renames(res: pd.DataFrame, path: Path = RENAMES) -> None:
     hand_t = {r["ticker"] for r in hand_s}
     data = {"renames": hand_r + [r for r in ren if r["old"] not in hand_old],
             "same_symbol": hand_s + [r for r in same if r["ticker"] not in hand_t], "rejected": rejected}
+    if non_us:
+        data["non_us"] = non_us
     path.write_text(HEADER + yaml.safe_dump(data, sort_keys=False, width=200, allow_unicode=True))
 
 
-def ledger(cov: pd.DataFrame, trades: pd.DataFrame, res: pd.DataFrame) -> pd.DataFrame:
-    """Survivorship ledger: every price symbol a trade (any variant) needs that has no usable Yahoo
-    history (none at all, or a recycled symbol's), with in-scope trade count and midpoint dollars."""
+LEDGER_REASONS = Path("config/ledger_reasons.yaml")
+REASON_CODES = ["acquired for cash", "acquired for stock", "bankrupt", "matured or liquidated fund", "ticker issue", "unknown"]
+
+
+def load_ledger_reasons(path: Path = LEDGER_REASONS) -> dict[str, dict]:
+    """K4: symbol -> {reason, source}, hand-written in config/ledger_reasons.yaml."""
+    if not path.exists():
+        return {}
+    out = (yaml.safe_load(path.read_text()) or {}).get("reasons") or {}
+    bad = {k: v.get("reason") for k, v in out.items() if v.get("reason") not in REASON_CODES}
+    if bad:
+        raise ValueError(f"unknown ledger reason(s) in {path}: {bad}")
+    return {str(k): v for k, v in out.items()}
+
+
+def ledger(cov: pd.DataFrame, trades: pd.DataFrame, res: pd.DataFrame, records: pd.DataFrame | None = None,
+           reasons: dict[str, dict] | None = None) -> pd.DataFrame:
+    """Survivorship ledger: every price symbol a trade (any variant) or a J3 record needs that has no usable
+    Yahoo history (none at all, a recycled symbol's, or K2 ledger-only), with the in-scope (headline) records,
+    their trades and midpoint dollars, and the K4 reason and source."""
     gone = cov.loc[~cov["has_data"].astype(bool), ["ticker", "note"]].rename(columns={"ticker": "price_ticker", "note": "why"})
-    t = trades[trades["price_ticker"].isin(gone["price_ticker"])].copy()
-    s = t[t["in_scope"]]
-    g = s.groupby("price_ticker").agg(in_scope_trades=("trade_id", "size"), in_scope_midpoint_dollars=("amount_mid", "sum"),
-                                      first_trade=("transaction_date", "min"), last_trade=("transaction_date", "max"))
-    a = t.groupby("price_ticker").agg(all_variant_trades=("trade_id", "size"),
-                                      efd_tickers=("ticker", lambda x: " ".join(sorted(set(x)))),
-                                      efd_asset_names=("asset_name", lambda x: " | ".join(sorted(set(x))[:2])))
+    cols = ["trade_id", "price_ticker", "ticker", "asset_name"]
+    units = trades[cols]
+    if records is not None:
+        units = pd.concat([units, records[cols]], ignore_index=True)
+    units = units[units["price_ticker"].isin(gone["price_ticker"])]
+    a = units.groupby("price_ticker").agg(all_variant_trades=("trade_id", "nunique"),
+                                          efd_tickers=("ticker", lambda x: " ".join(sorted(set(x)))),
+                                          efd_asset_names=("asset_name", lambda x: " | ".join(sorted(set(x))[:2])))
+    if records is not None:
+        s = records[records["in_scope"] & records["price_ticker"].isin(gone["price_ticker"])]
+        g = s.groupby("price_ticker").agg(in_scope_trades=("trade_id", "nunique"), in_scope_records=("record_id", "size"),
+                                          in_scope_purchases=("transaction_type", lambda x: int((x == "Purchase").sum())),
+                                          in_scope_midpoint_dollars=("amount_mid", "sum"),
+                                          first_trade=("transaction_date", "min"), last_trade=("transaction_date", "max"))
+    else:
+        s = trades[trades["in_scope"] & trades["price_ticker"].isin(gone["price_ticker"])]
+        g = s.groupby("price_ticker").agg(in_scope_trades=("trade_id", "size"), in_scope_midpoint_dollars=("amount_mid", "sum"),
+                                          first_trade=("transaction_date", "min"), last_trade=("transaction_date", "max"))
     notes = dict(zip(res["ticker"], res["note"])) if len(res) else {}
     out = gone.join(a, on="price_ticker").join(g, on="price_ticker")
-    out = out[out["all_variant_trades"].notna()]
-    out[["in_scope_trades", "in_scope_midpoint_dollars"]] = out[["in_scope_trades", "in_scope_midpoint_dollars"]].fillna(0)
+    out = out[out["all_variant_trades"].notna()].copy()
+    num = [c for c in ("in_scope_trades", "in_scope_records", "in_scope_purchases", "in_scope_midpoint_dollars") if c in out]
+    out[num] = out[num].fillna(0)
     out["sec_resolution_note"] = out["price_ticker"].map(notes).fillna("")
+    reasons = reasons or {}
+    out["reason"] = out["price_ticker"].map(lambda t: (reasons.get(t) or {}).get("reason", "unknown"))
+    out["reason_source"] = out["price_ticker"].map(lambda t: (reasons.get(t) or {}).get("source", "not researched"))
     return out.sort_values(["in_scope_midpoint_dollars", "price_ticker"], ascending=[False, True]).reset_index(drop=True)

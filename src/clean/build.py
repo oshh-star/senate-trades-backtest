@@ -77,6 +77,7 @@ REASONS = [
     ("OTHER_INSTRUMENT", "Yahoo: neither equity, ETF nor mutual fund"),
     ("NON_US_LISTING", "Yahoo: not listed in the US"),
     ("ETF_EXCLUDED", "ETF, and universe.include_etfs is false"),
+    ("NON_EQUITY_ETF", "ETF that is not an equity fund (K5: bond, T-bill, commodity or other)"),
     ("AMOUNT_UNPARSED", "Amount string not understood"),
     ("OWNER", "Owner not in universe.owners"),
 ]
@@ -141,6 +142,13 @@ def load_same_symbol(path: Path = TICKER_RENAMES) -> set[str]:
     return {tk.normalise_ticker(r["ticker"]) for r in (yaml.safe_load(path.read_text()) or {}).get("same_symbol") or []}
 
 
+def load_non_us(path: Path = TICKER_RENAMES) -> dict[str, str]:
+    """Hand-classified non-US listings (e.g. a Canadian depositary receipt): ticker -> reason."""
+    if not path.exists():
+        return {}
+    return {tk.normalise_ticker(r["ticker"]): r.get("reason", "") for r in (yaml.safe_load(path.read_text()) or {}).get("non_us") or []}
+
+
 def price_symbol(ticker: str, renames: dict[str, dict]) -> str:
     """Follow renames (FB -> META) to the symbol whose price history Yahoo keeps."""
     seen = set()
@@ -164,6 +172,8 @@ def confirm_override(o: dict, meta: dict, sec_index, renames: dict) -> tuple[str
     """('yahoo' | 'sec' | '', note): is `expect` in the company name Yahoo (or SEC) gives the ticker?"""
     t = tk.normalise_ticker(o["ticker"])
     p = price_symbol(t, renames)
+    if o.get("ledger_only"):
+        return "hand", f"K2: ticker {t} confirmed by hand; its Yahoo prices are never used (survivorship ledger)"
     wants = [tk.fold(w) for w in ([o["expect"]] if isinstance(o["expect"], str) else o["expect"])]
     m = meta.get(p) or {}
     for n in (m.get("name", ""), m.get("short_name", "")):
@@ -232,7 +242,8 @@ def service_lookup(terms: pd.DataFrame):
 # ------------------------------------------------------------------ the filters, for either view
 def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_index,
              overrides: list[dict], renames: dict,
-             same_symbol: set[str] | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
+             same_symbol: set[str] | None = None, fund_lookup=None,
+             non_us_hand: dict[str, str] | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
     """Every scope attribute and reason code for the units in `u` (records or as-revised trades).
 
     `u` needs trade_id, bioguide_id, senator, UNIT_FIELDS, disclosure_datetime, disclosure_date.
@@ -347,11 +358,34 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     u.loc[mm, "listing"] = "unknown"
     u.loc[mm, "is_otc"] = False
     u["is_otc"] = u["is_otc"].astype(bool)
+    # K5: an instrument Yahoo cannot describe is an ETF when its eFD name says so ("... ETF",
+    # "Exchange-Traded Fund"), e.g. matured iBonds / BulletShares term funds
+    etf_name = u["asset_name"].str.contains(r"\bETF\b|exchange[- ]traded fund", case=False, regex=True)
+    u["etf_by_name"] = (u["instrument_type"] == "unresolved") & etf_name & (u["price_ticker"] != "")
+    u.loc[u["etf_by_name"], "instrument_type"] = "etf"
     u["is_etf"] = u["instrument_type"] == "etf"
+    from . import etf_class as ec
+    etf_syms = sorted(set(u.loc[u["is_etf"] & (u["price_ticker"] != ""), "price_ticker"]))
+    prof = fund_lookup(etf_syms) if fund_lookup else ec.lookup(etf_syms)
+    cls_of, hand = {}, ec.load_overrides()
+    for sym in etf_syms:
+        if sym in hand:
+            cls_of[sym] = (hand[sym]["class"], "by hand (config/etf_class_overrides.yaml)", (prof.get(sym) or {}).get("category", ""))
+            continue
+        pr = prof.get(sym) or {}
+        cat = pr.get("category", "")
+        nm = pr.get("long_name") or (meta.get(sym) or {}).get("name", "")
+        if not cat and not nm:
+            nm = u.loc[u["price_ticker"] == sym, "asset_name"].iloc[0]
+        cls_of[sym] = (*ec.classify_text(cat, nm), cat)
+    u["etf_class"] = [cls_of.get(p, ("", "", ""))[0] if e else "" for p, e in zip(u["price_ticker"], u["is_etf"])]
+    u["etf_class_method"] = [cls_of.get(p, ("", "", ""))[1] if e else "" for p, e in zip(u["price_ticker"], u["is_etf"])]
+    u["etf_category"] = [cls_of.get(p, ("", "", ""))[2] if e else "" for p, e in zip(u["price_ticker"], u["is_etf"])]
     u["instrument_unresolved"] = u["instrument_type"] == "unresolved"
     suffix = u["ticker"].str.extract(r"\.([A-Z]{1,2})$")[0]
     u["foreign_suffix"] = suffix.isin(FOREIGN_SUFFIXES)
-    u["non_us"] = ((u["listing"] == "non_us") & ~u["instrument_unresolved"]) | u["foreign_suffix"]
+    u["non_us_hand"] = u["ticker"].isin(set(non_us_hand or {}))
+    u["non_us"] = ((u["listing"] == "non_us") & ~u["instrument_unresolved"]) | u["foreign_suffix"] | u["non_us_hand"]
     u["instrument_status"] = np.select(
         [u["instrument_type"] == "mutual_fund", u["instrument_type"] == "other", u["non_us"]],
         ["excluded: mutual fund", "excluded: other instrument type", "excluded: non-US listing"], "kept")
@@ -359,6 +393,7 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     # ---- reasons (first failing step)
     owners = cfg["universe"]["owners"]
     include_etfs = bool(cfg["universe"]["include_etfs"])
+    etf_classes = set(cfg["universe"].get("etf_classes") or ec.CLASSES)
     conds = [
         ("OUTSIDE_SERVICE", ~u["in_service"]),
         ("OUTSIDE_WINDOW", ~u["in_window"]),
@@ -370,6 +405,7 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
         ("OTHER_INSTRUMENT", u["instrument_type"] == "other"),
         ("NON_US_LISTING", u["non_us"]),
         ("ETF_EXCLUDED", u["is_etf"] & (not include_etfs)),
+        ("NON_EQUITY_ETF", u["is_etf"] & ~u["etf_class"].isin(etf_classes)),
         ("AMOUNT_UNPARSED", ~u["amount_parsed"]),
         ("OWNER", ~u["owner"].isin(owners)),
     ]
@@ -380,12 +416,17 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     u.loc[u["reason_code"] == "ASSET_TYPE", "reason_detail"] = u["asset_type"]
     u.loc[u["reason_code"] == "OWNER", "reason_detail"] = u["owner"]
     u.loc[u["reason_code"] == "OTHER_INSTRUMENT", "reason_detail"] = u["yahoo_type"]
-    u.loc[u["reason_code"] == "NON_US_LISTING", "reason_detail"] = np.where(
-        u["foreign_suffix"], "ticker suffix ." + u["ticker"].str.split(".").str[-1], u["exchange"] + " " + u["exchange_name"])
+    nu = u["reason_code"] == "NON_US_LISTING"
+    u.loc[nu, "reason_detail"] = pd.Series(np.where(
+        u["foreign_suffix"], "ticker suffix ." + u["ticker"].str.split(".").str[-1], u["exchange"] + " " + u["exchange_name"]),
+        index=u.index)[nu]
+    hand = (u["reason_code"] == "NON_US_LISTING") & u["non_us_hand"]
+    u.loc[hand, "reason_detail"] = "by hand: " + u.loc[hand, "ticker"].map(non_us_hand or {})
+    u.loc[u["reason_code"] == "NON_EQUITY_ETF", "reason_detail"] = u["etf_class"] + ": " + u["etf_category"]
     u["in_scope"] = u["reason_code"] == ""
     keep = u["in_any_window"].copy()
     for code, c in conds:
-        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "OWNER"):
+        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "OWNER"):
             keep &= ~c
     u["in_trades_clean"] = keep
     return u, recovery, meta, pd.DataFrame(override_log)
@@ -394,12 +435,13 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
 # ------------------------------------------------------------------ main
 def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None,
           overrides: list[dict] | None = None, renames: dict | None = None,
-          same_symbol: set[str] | None = None) -> dict:
+          same_symbol: set[str] | None = None, fund_lookup=None, non_us_hand: dict[str, str] | None = None) -> dict:
     """Everything Phase 2 produces, as DataFrames. yahoo_lookup(symbols) -> {symbol: cached record}."""
     D = D or load_inputs()
     overrides = load_asset_overrides() if overrides is None else overrides
     renames = load_renames() if renames is None else renames
     same_symbol = load_same_symbol() if same_symbol is None else same_symbol
+    non_us_hand = load_non_us() if non_us_hand is None else non_us_hand
     rows, filings, paper = prepare(D)
     start, end = analysis_window(cfg)
     wins = windows(cfg)
@@ -436,7 +478,8 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None,
     rev = tr[["trade_id", "bioguide_id", "senator"] + UNIT_FIELDS].assign(
         view="as_revised", record_id="", disclosure_datetime=tr["first_datetime"], disclosure_date=tr["first_date_received"])
     both, recovery, meta, override_log = annotate(pd.concat([recs, rev], ignore_index=True), cfg, D["terms"],
-                                                  yahoo_lookup, sec_index, overrides, renames, same_symbol)
+                                                  yahoo_lookup, sec_index, overrides, renames, same_symbol,
+                                                  fund_lookup, non_us_hand)
     recs = both[both["view"] == "record"].reset_index(drop=True)
     rev = both[both["view"] == "as_revised"].set_index("trade_id")
 
@@ -502,6 +545,7 @@ def add_scope_flags(tr: pd.DataFrame) -> pd.DataFrame:
     tr["v5_etf"] = tr["is_etf"]
     tr["v6_family_owner"] = tr["owner"].isin(["Spouse", "Child"])
     tr["v13_otc"] = tr["is_otc"]
+    tr["v16_non_equity_etf"] = tr["is_etf"] & (tr.get("etf_class", pd.Series("equity", index=tr.index)) != "equity")
     return tr
 
 
@@ -510,7 +554,7 @@ CLEAN_COLUMNS = [
     "bioguide_id", "senator", "party", "state", "owner",
     "transaction_date", "disclosure_datetime", "disclosure_date", "disclosure_time", "filed_before_1530_et",
     "transaction_type", "ticker", "price_ticker", "renamed", "ticker_raw", "ticker_source", "asset_name", "asset_type",
-    "instrument_type", "is_etf", "exchange", "exchange_name", "listing", "is_otc", "instrument_unresolved",
+    "instrument_type", "is_etf", "etf_class", "etf_category", "etf_class_method", "exchange", "exchange_name", "listing", "is_otc", "instrument_unresolved",
     "yahoo_name", "yahoo_name_mismatch", "amount", "amount_lower", "amount_upper", "amount_mid", "amount_open_top",
     "filing_lag_days", "late_filing", "service_start", "days_since_service_start",
     "first_ptr_id", "first_is_amendment", "latest_ptr_id", "ptr_ids", "n_versions", "corrected_fields",
@@ -521,13 +565,13 @@ CLEAN_COLUMNS = [
     "ptr_n_in_scope", "bulk_ptr", "senator_n_in_scope", "senator_rank",
     "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
     "v1_tuberville", "v2_top5_senator", "v3_first_180d", "v4_bulk_ptr", "v5_etf", "v6_family_owner", "v13_otc",
-    "comment", "url",
+    "v16_non_equity_etf", "comment", "url",
 ]
 RECORD_COLUMNS = [
     "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
     "record_ptr_id", "changed_fields", "in_scope", "reason_code", "reason_detail", "bioguide_id", "senator", "owner",
     "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
-    "is_etf", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
+    "is_etf", "etf_class", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
     "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
 ]
 EXCLUSION_COLUMNS = [

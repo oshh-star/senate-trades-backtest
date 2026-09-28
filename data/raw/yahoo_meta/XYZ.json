@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1447943400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Block, Inc.",
+  "shortName": "Block, Inc.",
+  "symbol": "XYZ"
+ },
+ "queried_at": "2026-09-28T17:10:11Z",
+ "symbol": "XYZ"
+}

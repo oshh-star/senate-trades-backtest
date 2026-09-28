@@ -477,7 +477,7 @@ Tokyo Electron Ltd ADR (TOELY),Stock,1,1,TOELY,embedded,True,"embedded ticker TO
 Pan Pacific International Holdings Corporation ADR (DQJCY),Stock,1,1,DQJCY,embedded,True,"embedded ticker DQJCY; name words shared with Pan Pacific International Holdings Corporation/Pan Pac Intl Hldgs Corp.: pacific, pan"
 East Japan Railway Co ADR (EJPRY),Stock,1,1,EJPRY,embedded,True,"embedded ticker EJPRY; name words shared with East Japan Railway Company/East Japan Railway Co.: east, railway"
 Zurich Insurance Group Ltd Sponsored ADR (ZURVY),Stock,2,2,ZURVY,embedded,True,"embedded ticker ZURVY; name words shared with Zurich Insurance Group AG/Zurich Insurance Group Ltd: insurance, zurich"
-Wise plc Sponsored ADR (WIZEY),Stock,2,2,WSE,sec_name,True,J5 override '(wizey)' (NOT confirmed); then embedded ticker WIZEY not recognised by Yahoo; then SEC exact name match: Wise Group plc (CIK 2099039)
+Wise plc Sponsored ADR (WIZEY),Stock,2,2,WIZEY,override,True,J5 override '(wizey)' (hand)
 Unicredit SPA Unsponsored ADR (UNCRY),Stock,2,2,UNCRY,embedded,True,embedded ticker UNCRY; name words shared with UniCredit S.p.A./UniCredito Spa: unicredit
 Swisscom AG Sponsored ADR (SCMWY),Stock,2,2,SCMWY,embedded,True,embedded ticker SCMWY; name words shared with Swisscom AG/Swisscom AG/SWISSCOM AG: swisscom
 Schneider Electric SE Unsponsored ADR (SBGSY),Stock,2,2,SBGSY,embedded,True,"embedded ticker SBGSY; name words shared with Schneider Electric S.E./Schneider Electric SE: electric, schneider"
@@ -632,7 +632,7 @@ Legal & General Group plc Sponsored ADR (LGGNY),Stock,1,1,LGGNY,embedded,True,"e
 Lasertec Corporation ADR (LSRCY),Stock,1,1,LSRCY,embedded,True,embedded ticker LSRCY; name words shared with Lasertec Corporation/Lasertec Corp.: lasertec
 Land Secs Group plc ADR (LDSCY),Stock,1,1,LDSCY,embedded,True,embedded ticker LDSCY; name words shared with Land Securities Group Plc/Land Securities Group Plc.: land
 Lam Research Corporation (LRCX),Stock,1,1,LRCX,embedded,True,"embedded ticker LRCX; name words shared with Lam Research Corporation/Lam Research Corporation/LAM RESEARCH CORP: lam, lamresearchcorporation, research"
-Kyocera Corporation ADR Japan (KYOCY),Stock,1,1,KYOCY,embedded,False,"J5 override '(kyocy)' (NOT confirmed); then embedded ticker KYOCY not recognised by Yahoo; then SEC company CIK 57083 has several tickers: KYOAY, KYOCF"
+Kyocera Corporation ADR Japan (KYOCY),Stock,1,1,KYOCY,override,True,J5 override '(kyocy)' (hand)
 Kuehne & Nagel International AG ADR (KHNGY),Stock,1,1,KHNGY,embedded,True,"embedded ticker KHNGY; name words shared with Kuehne + Nagel International AG/Kuehne & Nagel International AG: kuehne, nagel"
 Kubota Corporation ADR Japan (KUBTY),Stock,1,1,KUBTY,embedded,True,embedded ticker KUBTY; name words shared with Kubota Corporation/Kubota Corp.: kubota
 Koninklijke Philips NV Sponsored ADR (PHG),Stock,1,1,PHG,embedded,True,"embedded ticker PHG; name words shared with Koninklijke Philips N.V./Koninklijke Philips N.V. NY Reg/KONINKLIJKE PHILIPS NV: koninklijke, philips"
@@ -789,7 +789,7 @@ Alstom ADR (ALSMY),Stock,1,1,ALSMY,embedded,True,embedded ticker ALSMY; name wor
 Allianz SE ADR (ALIZY),Stock,1,1,ALIZY,embedded,True,embedded ticker ALIZY; name words shared with Allianz SE/Allianz SE: allianz
 Loews Corporation (L),Stock,1,1,L,embedded,True,"embedded ticker L; name words shared with Loews Corporation/Loews Corporation/LOEWS CORP: loews, loewscorporation"
 Alfa Laval AB Sweden ADR (ALFVY),Stock,1,1,ALFVY,embedded,True,"embedded ticker ALFVY; name words shared with Alfa Laval AB (publ)/Alfa-Laval AB: ab, alfa, laval"
-"Hologic, Inc. (HOLX)",Stock,1,1,HOLX,embedded,False,J5 override '(holx)' (NOT confirmed); then embedded ticker HOLX not recognised by Yahoo; then no exact SEC name match
+"Hologic, Inc. (HOLX)",Stock,1,1,HOLX,override,True,J5 override '(holx)' (hand)
 "Everpure, Inc. Class A (PSTG)",Stock,1,1,PSTG,override,True,J5 override '(pstg)' (yahoo)
 Bank of New York Mellon Corp (BK),Stock,1,1,BK,override,True,J5 override '(bk)' (yahoo)
 LVMH Moet Hennessy Louis ADR (LVMUY),Stock,1,1,LVMUY,embedded,True,"embedded ticker LVMUY; name words shared with LVMH Moët Hennessy - Louis Vuitton, Société Européenne/LVMH-Moet Hennessy Louis Vuitto: hennessy, louis, lvmh, moet"

@@ -25,7 +25,6 @@ BKEP,"Blueknight Energy Partners L.P., L.L.C. - Common U",False,,delisted_or_unk
 BKEPP,Blueknight Energy Partners L.P. - Series A Preferr,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
 BLL,Ball Corporation,False,,rename,BALL,9389,BALL Corp,BALL Corp,,name unchanged; ticker change date not in SEC data,SEC CIK 9389 ('BALL Corp') used the name 'BALL Corp' and trades today as BALL; Yahoo's name for BALL: 'Ball Corporation'
 BPL,"Buckeye Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
-BRK,Bershire Hathaway Cdr [Cad Hedged],False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
 BRKB,Berkshire Hathaway Inc.,False,,delisted_or_unknown,,1067983,BERKSHIRE HATHAWAY INC,BERKSHIRE HATHAWAY INC,,,"SEC CIK 1067983 matches but has no single plain ticker (BRK-A, BRK-B)"
 BSCP,Invesco BulletShares 2025 Corporate Bond ETF,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
 CAB,Cabela's Incorporated,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
@@ -40,7 +39,6 @@ CHK,Chesapeake Energy Corporation,False,,rename,EXE,895126,EXPAND ENERGY Corp,CH
 CLR,"Continental Resources, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 CMA,Comerica Incorporated,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 CNR,"Cornerstone Building Brands, Inc.",True,"Core Natural Resources, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
-COLPAL,COLGATE PALMOLIVE LTD.,False,,delisted_or_unknown,,,,,,,not a US-style symbol (likely a non-US listing); no rename searched
 CONE,CyrusOne Inc - Common Stock | CyrusOne Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
 COUP,Coupa Software Incorporated | Coupa Software Incorporated - Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 CSII,"Cardiovascular Systems, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
