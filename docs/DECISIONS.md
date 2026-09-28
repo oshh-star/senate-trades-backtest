@@ -61,7 +61,6 @@ Config keys refer to config/config.yaml.
 | H1 | 2026-09-27 | Harry | **Jim Banks confirmed**: eFD's "Banks, James E." (filer "James Banks") is Jim Banks, bioguide B001299 (R-IN, Senate from 2025-01-03). Added to config/name_overrides.yaml | `data.name_overrides` | Resolves HANDOVER open question 1; the fuzzy matcher could not settle it under the "do not guess" rule. |
 | H2 | 2026-09-27 | Harry | **E03 to E08 confirmed as written** | as in E03 to E08 | Engineering interpretations reviewed and accepted. |
 | H3 | 2026-09-27 | Harry | **Headline strategy unchanged: copy every in-scope trade.** Robustness variants V1 to V12 are PRE-REGISTERED now, before any price or return has been computed (see "Pre-registered variants" below). Phase 2 builds the flags needed for V1 to V6 into data/processed/trades_clean.csv | none (variants table) | Fixing the list of robustness checks before seeing any result means none of them was chosen because of how it came out. |
-
 | H4 | 2026-09-27 | Harry | **SEC contact email** for the User-Agent: hoshea.mfa2027@london.edu (replaces the placeholder) | `scrape.contact_email` | SEC requires a contact in the User-Agent; used only for requests to www.sec.gov (company_tickers.json, cached in data/raw/sec/). |
 
 ## Engineering interpretations, Phase 2 (need Harry's confirmation)
@@ -78,6 +77,16 @@ Config keys refer to config/config.yaml.
 | E16 | 2026-09-27 | Claude (engineer) | **Waterfall order**: unmatched filer, duplicates, outside service, outside window, asset type, option name, exchange, no ticker, Yahoo instrument, (ETF if excluded), amount, owner. Owner is last so the OWNER step counts exactly the family trades V6 adds back. trades_clean.csv keeps every trade passing all filters except window and owner inside the 3/5/10-year windows, so all of V1-V12 are filters on one file | none (code) | One file serves every pre-registered variant; the waterfall stays additive. |
 | E17 | 2026-09-27 | Claude (engineer) | **Flag definitions.** `filing_lag_days` = first disclosure date minus transaction date; `late_filing` = lag > 45. `service_start` = first day of the continuous Senate spell containing the trade (terms less than 32 days apart are one spell), `v3_first_180d` = days 0-179. `ptr_n_in_scope` counts in-scope trades by the PTR where the trade was FIRST disclosed; `bulk_ptr` = 50 or more. `senator_rank` by in-scope trade count (ties alphabetical). `party` = party of the term covering the trade date. `filed_before_1530_et` for V9 uses the time received (E05) | none (code) | Precise, reproducible definitions for the pre-registered variants. |
 | E18 | 2026-09-27 | Claude (engineer) | **FIFO sale matching moves to Phase 4 (engine)**. Phase 2 delivers one row per trade with side, size and dates; matching sales to open copied positions is done where positions are held | `trades.matching` | Matching is position bookkeeping; the Phase 2 brief did not include it. |
+
+## Harry's decisions, Phase 3 start (2026-09-28)
+
+| # | Date | Who | Decision | Config key | Reason |
+|---|---|---|---|---|---|
+| J1 | 2026-09-28 | Harry | **E09 to E18 confirmed** as written | as in E09 to E18 | Engineering interpretations reviewed and accepted. |
+| J2 | 2026-09-28 | Harry | **AMBIGUOUS amendments (Capito 2022-01-21, Sullivan 2023-07-26 and all others): keep every trade, as now** | none (E11 rule) | A copier at the time saw the original lines; deleting them because of a later amendment would use future information. |
+| J3 | 2026-09-28 | Harry | **AS FIRST PUBLISHED (headline).** Replaces the corrected-fields part of the Phase 2 amendment rule (E11: "values from the latest version") for the headline. Every record enters the book at the moment it became public, with the values published at that moment. For a trade later corrected by an amendment, the ORIGINAL record takes effect at the original datetime; at the amendment datetime the copier (a) reverses the original copied action and (b) acts on the corrected record as a new disclosure. Scope filters (owner, asset type, window, ...) apply to each record's own values, so a correction from Spouse to Self enters the book only at the amendment datetime. trades_clean.csv carries the original value of every corrected field, the amendment datetime and a correction flag; data/processed/trade_records.csv lists every record. The Phase 4 engine implements the reversal | `data.amendment_values: as_first_published` | No look-ahead: a copier can only act on what was public at the time, including values later corrected. |
+| J4 | 2026-09-28 | Harry | **New pre-registered variants V13 (exclude OTC-traded names) and V14 ("as revised": corrected values at the original datetime, the old Phase 2 rule, to bound the effect of J3)**, registered before any return exists, at commit `8666206c4846b2d9e56ae7a3c25507bb456781f7` (main after the Phase 2 merge; see the table below) | variants table | Settled before any result, like V1-V12. |
+| J5 | 2026-09-28 | Harry | **Hand-written asset-name overrides** (config/asset_name_overrides.yaml): "Glaxo Wellcome" -> GSK, "Rolls-Royce" -> RYCEY, "Ishares TR Russell 1000 ETF" -> IWB, "starbuck" -> SBUX, and the names containing WIZEY, MURGY, HOLX, BK, PSTG, KYOCY. Each is confirmed against Yahoo's company name before use and logged; any that cannot be confirmed are listed | `data.asset_name_overrides` | Recovers trades the automatic rules (E13) left out, without guessing. |
 
 ## Pre-registered variants
 Registered 2026-09-27 by Harry (H3) at commit `622a455fb1ce39cf4e975635195d7f44182c1989` (main after the Phase 1
@@ -98,6 +107,8 @@ merge). At that commit no price, return or performance number of any kind had be
 | V10 | 2026-09-27 | Harry | Equal-weight portfolio, rebalanced at each filing date | `portfolio.weighting: equal` | 622a455 | pre-registered |
 | V11 | 2026-09-27 | Harry | 3-year window | `analysis.window_years: 3` | 622a455 | pre-registered |
 | V12 | 2026-09-27 | Harry | 10-year window | `analysis.window_years: 10` | 622a455 | pre-registered |
+| V13 | 2026-09-28 | Harry (J4) | Exclude OTC-traded names | drop rows with `is_otc` | 8666206 | pre-registered |
+| V14 | 2026-09-28 | Harry (J4) | "As revised": corrected values at the original datetime (the Phase 2 rule), to bound the effect of J3 | `data.amendment_values: as_revised` (uses `in_scope_as_revised` and the corrected values) | 8666206 | pre-registered |
 
 ## Variants run
 Every run with any non-default config value is logged here: date, who, what changed, commit, where the output is.
