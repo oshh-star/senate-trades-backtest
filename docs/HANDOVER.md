@@ -22,8 +22,8 @@ _Last updated: 2026-09-28, end of Phase 3 (Claude, for Harry)._
   1,278 with usable history. Raw responses and download dates in data/raw/prices/yahoo/. NYSE calendar
   2016-01-04 to 2026-08-31 (2,680 days).
 - **Coverage**: 96.1% of in-scope records (93.5% of midpoint dollars) have a price on the entry date. The gap is
-  the **survivorship ledger** (data/interim/survivorship_ledger.csv): 34 symbols with in-scope trades have no
-  usable Yahoo history (X, ECOM, ATVI, WBA, SSBK, PARA ...; about $5.6m of midpoint dollars).
+  the **survivorship ledger** (data/interim/survivorship_ledger.csv): 35 symbols with in-scope trades have no
+  usable Yahoo history (X, ECOM, ATVI, WBA, SSBK, PARA ...; 94 trades, about $5.6m of midpoint dollars).
 - **Factors**: Ken French daily 2015-01-02 to 2026-08-31 and monthly 2015-01 to 2026-08, in PERCENT.
 
 ## Exact next step
@@ -47,7 +47,7 @@ _Last updated: 2026-09-28, end of Phase 3 (Claude, for Harry)._
    different security from 2026), HOLX (Hologic, taken private; no Yahoo data), KYOCY (Kyocera ADR; Yahoo lists
    KYOAY, a different ADR programme). All three stay out (NO_TICKER). Harry: keep out, or add by hand to
    config/ticker_renames.yaml with `hand: true` if you want WSE / KYOAY prices used.
-2. **Survivorship ledger** (34 symbols with in-scope trades, 93 trades): the engine needs a rule for them until
+2. **Survivorship ledger** (35 symbols with in-scope trades, 94 trades): the engine needs a rule for them until
    CRSP arrives. Proposal: log and skip (the report counts them). US Steel (X, 22 trades, $1.7m) and
    ChannelAdvisor (ECOM, $1.2m) are the largest.
 3. **Yahoo data errors to watch** (outputs/data_quality.md, Phase 3 sections 5-6): some OTC ADRs show split
