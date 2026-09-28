@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1034775000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Fidelity Total Bond Fund",
+  "shortName": "Fidelity Total Bond",
+  "symbol": "FTBFX"
+ },
+ "queried_at": "2026-09-27T22:36:41Z",
+ "symbol": "FTBFX"
+}

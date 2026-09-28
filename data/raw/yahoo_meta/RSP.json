@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1051795800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Invesco S&P 500 Equal Weight ETF",
+  "shortName": "Invesco S&P 500 Equal Weight ET",
+  "symbol": "RSP"
+ },
+ "queried_at": "2026-09-27T22:47:58Z",
+ "symbol": "RSP"
+}

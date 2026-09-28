@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1242135000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "3i Group plc",
+  "shortName": "3i Group",
+  "symbol": "TGOPY"
+ },
+ "queried_at": "2026-09-27T22:50:54Z",
+ "symbol": "TGOPY"
+}

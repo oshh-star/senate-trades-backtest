@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1290090600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Booz Allen Hamilton Holding Corporation",
+  "shortName": "Booz Allen Hamilton Holding Cor",
+  "symbol": "BAH"
+ },
+ "queried_at": "2026-09-27T22:28:54Z",
+ "symbol": "BAH"
+}

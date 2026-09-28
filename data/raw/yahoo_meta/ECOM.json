@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:34:25Z"
+ },
+ "queried_at": "2026-09-27T22:59:51Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "EMERGE Commerce Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "EMERGE COMMERCE LTD",
+   "symbol": "ECOM.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "L&G-L&G Ecommerce Logistics   R",
+   "symbol": "ETLH.HM",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Economatica S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "ECONOMATICA ON      NM",
+   "symbol": "ECOM3.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Btab Ecommerce Group, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Btab Ecommerce Group, Inc.",
+   "symbol": "BBTT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CXE",
+   "exchange": "CXE",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "L&G Ecommerce Logistics UCITS E",
+   "symbol": "ECOGL.XC",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "L&G-L&G Ecommerce Logistics   R",
+   "symbol": "FETLH.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "L&G-L&G Ecommerce Logistics   R",
+   "symbol": "ETLH.DU",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "ECOM"
+}

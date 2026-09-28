@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ecolab Inc.",
+  "shortName": "Ecolab Inc.",
+  "symbol": "ECL"
+ },
+ "queried_at": "2026-09-27T22:34:24Z",
+ "symbol": "ECL"
+}

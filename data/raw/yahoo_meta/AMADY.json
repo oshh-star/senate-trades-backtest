@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1307367000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Amadeus IT Group, S.A.",
+  "shortName": "Amadeus IT Group SA",
+  "symbol": "AMADY"
+ },
+ "queried_at": "2026-09-27T22:27:30Z",
+ "symbol": "AMADY"
+}

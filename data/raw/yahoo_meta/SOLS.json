@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1760967000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Solstice Advanced Materials, Inc.",
+  "shortName": "Solstice Advanced Materials Inc",
+  "symbol": "SOLS"
+ },
+ "queried_at": "2026-09-27T22:49:38Z",
+ "symbol": "SOLS"
+}

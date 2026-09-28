@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1080657000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "abrdn Ultra Short Municipal Inc A",
+  "shortName": "Aberdeen Ultra Short Municipal ",
+  "symbol": "ATOAX"
+ },
+ "queried_at": "2026-09-27T22:28:30Z",
+ "symbol": "ATOAX"
+}

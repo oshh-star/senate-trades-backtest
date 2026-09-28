@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1282743000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Alerian MLP ETF",
+  "shortName": "Alerian MLP ETF",
+  "symbol": "AMLP"
+ },
+ "queried_at": "2026-09-27T22:27:41Z",
+ "symbol": "AMLP"
+}

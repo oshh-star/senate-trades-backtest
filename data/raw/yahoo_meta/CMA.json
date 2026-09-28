@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:46Z"
+ },
+ "queried_at": "2026-09-27T22:59:01Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "LTS",
+   "exchange": "LTS",
+   "longname": "Siguldas CMAS",
+   "quoteType": "EQUITY",
+   "shortname": "Siguldas CMAS",
+   "symbol": "0O61.IL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "BKK",
+   "exchange": "BKK",
+   "longname": "Chememan PCL",
+   "quoteType": "EQUITY",
+   "shortname": "Chememan PCL",
+   "symbol": "CMAN-F.BK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mapfre, S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mapfre, S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMA.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": "Mapfre SA",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.MU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTCM",
+   "exchange": "OTCM",
+   "longname": "China Minsheng Banking Corp., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "China Minsheng Banking Corp Ltd",
+   "symbol": "CMAKY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hanover",
+   "exchange": "HAN",
+   "longname": "Mapfre SA",
+   "quoteType": "EQUITY",
+   "shortname": "Mapfre SA",
+   "symbol": "CMAB.HA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CMA"
+}

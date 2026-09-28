@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1525440600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Construction Partners, Inc.",
+  "shortName": "Construction Partners, Inc.",
+  "symbol": "ROAD"
+ },
+ "queried_at": "2026-09-27T22:47:46Z",
+ "symbol": "ROAD"
+}

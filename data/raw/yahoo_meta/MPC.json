@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1308922200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Marathon Petroleum Corporation",
+  "shortName": "Marathon Petroleum Corporation",
+  "symbol": "MPC"
+ },
+ "queried_at": "2026-09-27T22:43:08Z",
+ "symbol": "MPC"
+}

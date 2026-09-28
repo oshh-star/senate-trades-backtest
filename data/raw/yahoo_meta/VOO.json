@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1284039000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard S&P 500 ETF",
+  "shortName": "Vanguard S&P 500 ETF",
+  "symbol": "VOO"
+ },
+ "queried_at": "2026-09-27T22:52:55Z",
+ "symbol": "VOO"
+}

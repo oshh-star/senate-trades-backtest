@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Clorox Company",
+  "shortName": "Clorox Company (The)",
+  "symbol": "CLX"
+ },
+ "queried_at": "2026-09-27T22:31:45Z",
+ "symbol": "CLX"
+}

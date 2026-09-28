@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1764167400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "OBIC Co.,Ltd.",
+  "shortName": "Obic Co. Ltd.",
+  "symbol": "OBICY"
+ },
+ "queried_at": "2026-09-27T22:44:56Z",
+ "symbol": "OBICY"
+}

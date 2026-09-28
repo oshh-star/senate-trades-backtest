@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Genuine Parts Company",
+  "shortName": "Genuine Parts Company",
+  "symbol": "GPC"
+ },
+ "queried_at": "2026-09-27T22:37:36Z",
+ "symbol": "GPC"
+}

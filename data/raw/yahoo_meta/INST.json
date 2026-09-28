@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:39:27Z"
+ },
+ "queried_at": "2026-09-27T23:00:55Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Texas Instruments Inc Stock Fut",
+   "symbol": "STXN0=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Texas Instruments Incorporated",
+   "quoteType": "EQUITY",
+   "shortname": "Texas Instruments Incorporated",
+   "symbol": "TXN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Veeco Instruments Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Veeco Instruments Inc.",
+   "symbol": "VECO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "PIMCO Income Instl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "PIMCO Income Fund Insti Class",
+   "symbol": "PIMIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard Institutional Index Instl Pl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Institutional Index Fu",
+   "symbol": "VIIIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard Institutional Index I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Institutional Index",
+   "symbol": "VINIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard MStar Growth Indx Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Index Trust - Growth I",
+   "symbol": "VIGIX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "INST"
+}

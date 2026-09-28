@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415370600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Freshpet, Inc.",
+  "shortName": "Freshpet, Inc.",
+  "symbol": "FRPT"
+ },
+ "queried_at": "2026-09-27T22:36:35Z",
+ "symbol": "FRPT"
+}

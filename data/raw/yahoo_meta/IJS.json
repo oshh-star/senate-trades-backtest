@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 964791000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares S&P Small-Cap 600 Value ETF",
+  "shortName": "iShares S&P SmallCap 600 Value ",
+  "symbol": "IJS"
+ },
+ "queried_at": "2026-09-27T22:39:21Z",
+ "symbol": "IJS"
+}

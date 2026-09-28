@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Entergy Corporation",
+  "shortName": "Entergy Corporation",
+  "symbol": "ETR"
+ },
+ "queried_at": "2026-09-27T22:35:16Z",
+ "symbol": "ETR"
+}

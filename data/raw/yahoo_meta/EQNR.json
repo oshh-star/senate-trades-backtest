@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 992871000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Equinor ASA",
+  "shortName": "Equinor ASA",
+  "symbol": "EQNR"
+ },
+ "queried_at": "2026-09-27T22:34:59Z",
+ "symbol": "EQNR"
+}

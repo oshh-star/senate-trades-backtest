@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1075473000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Utilities Index Fund ETF Shares",
+  "shortName": "Vanguard Utilities ETF",
+  "symbol": "VPU"
+ },
+ "queried_at": "2026-09-27T22:52:57Z",
+ "symbol": "VPU"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pentair plc",
+  "shortName": "Pentair plc.",
+  "symbol": "PNR"
+ },
+ "queried_at": "2026-09-27T22:46:14Z",
+ "symbol": "PNR"
+}

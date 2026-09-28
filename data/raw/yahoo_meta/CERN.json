@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:11Z"
+ },
+ "queried_at": "2026-09-27T22:58:54Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Cerno Future R USD Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Cerno Investment Funds ICAV - C",
+   "symbol": "0P0001PACY",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Cerno Select (Dubin) D USD H Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Cerno Investment Funds ICAV - C",
+   "symbol": "0P0001PACR",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "TM Cerno Pacific A USD Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "TM Cerno Pacific Fund A USD Acc",
+   "symbol": "0P0001N4JG",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "TM Cerno Global Leaders A USD Inc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001JK8M",
+   "symbol": "0P0001JK8M",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "TM Cerno Select B EUR Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001A8X6.F",
+   "symbol": "0P0001A8X6.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "TM Cerno Pacific E GBP Inc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001JCXA.L",
+   "symbol": "0P0001JCXA.L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Cerno Future B USD Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Cerno Investment Funds ICAV - C",
+   "symbol": "0P0001PACW",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "CERN"
+}

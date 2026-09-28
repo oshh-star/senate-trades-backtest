@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1168439400,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Intesa Sanpaolo S.p.A.",
+  "shortName": "Intesa Sanpaolo S.p.A.",
+  "symbol": "ISNPY"
+ },
+ "queried_at": "2026-09-27T22:39:42Z",
+ "symbol": "ISNPY"
+}

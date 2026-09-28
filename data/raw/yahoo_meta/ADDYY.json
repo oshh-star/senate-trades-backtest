@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1149082200,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "adidas AG",
+  "shortName": "adidas AG",
+  "symbol": "ADDYY"
+ },
+ "queried_at": "2026-09-27T22:26:43Z",
+ "symbol": "ADDYY"
+}

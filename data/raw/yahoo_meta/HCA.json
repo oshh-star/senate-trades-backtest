@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1299767400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "HCA Healthcare, Inc.",
+  "shortName": "HCA Healthcare, Inc.",
+  "symbol": "HCA"
+ },
+ "queried_at": "2026-09-27T22:38:01Z",
+ "symbol": "HCA"
+}

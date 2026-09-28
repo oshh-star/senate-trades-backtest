@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1612794600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cognyte Software Ltd.",
+  "shortName": "Cognyte Software Ltd.",
+  "symbol": "CGNT"
+ },
+ "queried_at": "2026-09-27T22:31:20Z",
+ "symbol": "CGNT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1357569000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "CaixaBank, S.A.",
+  "shortName": "Caixabank SA",
+  "symbol": "CAIXY"
+ },
+ "queried_at": "2026-09-27T22:30:37Z",
+ "symbol": "CAIXY"
+}

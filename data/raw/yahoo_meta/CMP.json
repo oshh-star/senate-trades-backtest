@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1071239400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Compass Minerals International, Inc.",
+  "shortName": "Compass Minerals Intl Inc",
+  "symbol": "CMP"
+ },
+ "queried_at": "2026-09-27T22:31:52Z",
+ "symbol": "CMP"
+}

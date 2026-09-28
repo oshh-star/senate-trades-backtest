@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138372200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Shiseido Company, Limited",
+  "shortName": "Shiseido Company, Ltd.",
+  "symbol": "SSDOY"
+ },
+ "queried_at": "2026-09-27T22:50:00Z",
+ "symbol": "SSDOY"
+}

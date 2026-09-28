@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 781450200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "RELX PLC",
+  "shortName": "RELX PLC PLC",
+  "symbol": "RELX"
+ },
+ "queried_at": "2026-09-27T22:47:24Z",
+ "symbol": "RELX"
+}

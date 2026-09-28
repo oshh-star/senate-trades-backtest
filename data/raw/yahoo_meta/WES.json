@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1355149800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Western Midstream Partners, LP",
+  "shortName": "Western Midstream Partners, LP",
+  "symbol": "WES"
+ },
+ "queried_at": "2026-09-27T22:53:31Z",
+ "symbol": "WES"
+}

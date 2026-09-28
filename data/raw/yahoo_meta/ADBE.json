@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 524323800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Adobe Inc.",
+  "shortName": "Adobe Inc.",
+  "symbol": "ADBE"
+ },
+ "queried_at": "2026-09-27T22:26:41Z",
+ "symbol": "ADBE"
+}

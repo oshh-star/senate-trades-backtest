@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Commerce Bancshares, Inc.",
+  "shortName": "Commerce Bancshares, Inc.",
+  "symbol": "CBSH"
+ },
+ "queried_at": "2026-09-27T22:30:48Z",
+ "symbol": "CBSH"
+}

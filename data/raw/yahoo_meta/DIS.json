@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Walt Disney Company",
+  "shortName": "Walt Disney Company (The)",
+  "symbol": "DIS"
+ },
+ "queried_at": "2026-09-27T22:33:28Z",
+ "symbol": "DIS"
+}

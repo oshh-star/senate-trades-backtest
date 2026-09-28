@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 852042600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Franklin Income Adv",
+  "shortName": "Franklin Income Fund Advisor Cl",
+  "symbol": "FRIAX"
+ },
+ "queried_at": "2026-09-27T22:36:34Z",
+ "symbol": "FRIAX"
+}

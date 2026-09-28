@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 551712600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The TJX Companies, Inc.",
+  "shortName": "TJX Companies, Inc. (The)",
+  "symbol": "TJX"
+ },
+ "queried_at": "2026-09-27T22:50:58Z",
+ "symbol": "TJX"
+}

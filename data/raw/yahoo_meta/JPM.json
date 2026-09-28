@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "JPMorgan Chase & Co.",
+  "shortName": "JP Morgan Chase & Co.",
+  "symbol": "JPM"
+ },
+ "queried_at": "2026-09-27T22:40:17Z",
+ "symbol": "JPM"
+}

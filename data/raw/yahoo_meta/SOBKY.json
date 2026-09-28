@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1553779800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "SoftBank Corp.",
+  "shortName": "Softbank Corp.",
+  "symbol": "SOBKY"
+ },
+ "queried_at": "2026-09-27T22:49:36Z",
+ "symbol": "SOBKY"
+}

@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:52:36Z"
+ },
+ "queried_at": "2026-09-27T23:03:42Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "Infraestructura Viable, S.A. de C.V.",
+   "quoteType": "EQUITY",
+   "shortname": "BANCO INVEX SA INSTITUCION DE B",
+   "symbol": "FVIA16.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Viabuilt Ventures Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "VIABUILT VENTURES INC",
+   "symbol": "VBVT",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "VIAB"
+}

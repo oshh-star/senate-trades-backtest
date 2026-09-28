@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1524144600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "GrafTech International Ltd.",
+  "shortName": "GrafTech International Ltd.",
+  "symbol": "EAF"
+ },
+ "queried_at": "2026-09-27T22:34:20Z",
+ "symbol": "EAF"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 185466600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The PNC Financial Services Group, Inc.",
+  "shortName": "PNC Financial Services Group, I",
+  "symbol": "PNC"
+ },
+ "queried_at": "2026-09-27T22:46:10Z",
+ "symbol": "PNC"
+}

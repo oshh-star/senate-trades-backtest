@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1753968600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Shoulder Innovations, Inc.",
+  "shortName": "Shoulder Innovations, Inc.",
+  "symbol": "SI"
+ },
+ "queried_at": "2026-09-27T22:49:00Z",
+ "symbol": "SI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 441642600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Canadian Pacific Kansas City Limited",
+  "shortName": "Canadian Pacific Kansas City Li",
+  "symbol": "CP"
+ },
+ "queried_at": "2026-09-27T22:32:13Z",
+ "symbol": "CP"
+}

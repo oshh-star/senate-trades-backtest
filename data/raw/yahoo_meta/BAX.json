@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 373041000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Baxter International Inc.",
+  "shortName": "Baxter International Inc.",
+  "symbol": "BAX"
+ },
+ "queried_at": "2026-09-27T22:29:00Z",
+ "symbol": "BAX"
+}

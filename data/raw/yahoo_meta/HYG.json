@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1176298200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares iBoxx $ High Yield Corporate Bond ETF",
+  "shortName": "iShares iBoxx $ High Yield Corp",
+  "symbol": "HYG"
+ },
+ "queried_at": "2026-09-27T22:38:44Z",
+ "symbol": "HYG"
+}

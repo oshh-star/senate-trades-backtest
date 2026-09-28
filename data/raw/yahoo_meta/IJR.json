@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 959347800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Core S&P Small-Cap ETF",
+  "shortName": "iShares Core S&P Small-Cap ETF",
+  "symbol": "IJR"
+ },
+ "queried_at": "2026-09-27T22:39:20Z",
+ "symbol": "IJR"
+}

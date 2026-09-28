@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:51:18Z"
+ },
+ "queried_at": "2026-09-27T23:03:30Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Janus Henderson Triton D",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Janus Henderson Triton Fund - D",
+   "symbol": "JANIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Triveni Turbine Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TRIVENI TURBINE LIMITED",
+   "symbol": "TRITURBINE.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Triton International Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Triton International Limited 8.",
+   "symbol": "TRTN-PB",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Tritax Big Box Ord",
+   "quoteType": "EQUITY",
+   "shortname": "TRITAX BIG BOX REIT PLC ORD 1P",
+   "symbol": "BBOX.L",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Janus Henderson Triton N",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Janus Henderson Triton Fund - N",
+   "symbol": "JGMNX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Triton International Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Triton International Limited 7.",
+   "symbol": "TRTN-PF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Janus Henderson Triton T",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Janus Henderson Triton Fund - T",
+   "symbol": "JATTX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "TRIT"
+}

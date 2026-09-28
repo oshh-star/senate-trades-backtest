@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 879431400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "JPMorgan Mid Cap Value L",
+  "shortName": "JPMorgan Mid Cap Value Fund Cla",
+  "symbol": "FLMVX"
+ },
+ "queried_at": "2026-09-27T22:36:17Z",
+ "symbol": "FLMVX"
+}

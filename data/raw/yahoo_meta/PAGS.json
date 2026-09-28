@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1516804200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "PagSeguro Digital Ltd.",
+  "shortName": "PagSeguro Digital Ltd.",
+  "symbol": "PAGS"
+ },
+ "queried_at": "2026-09-27T22:45:27Z",
+ "symbol": "PAGS"
+}

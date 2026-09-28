@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1432128600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Shopify Inc.",
+  "shortName": "Shopify Inc.",
+  "symbol": "SHOP"
+ },
+ "queried_at": "2026-09-27T22:48:57Z",
+ "symbol": "SHOP"
+}

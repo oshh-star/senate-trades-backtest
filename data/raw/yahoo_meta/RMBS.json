@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 863616600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Rambus Inc.",
+  "shortName": "Rambus, Inc.",
+  "symbol": "RMBS"
+ },
+ "queried_at": "2026-09-27T22:47:37Z",
+ "symbol": "RMBS"
+}

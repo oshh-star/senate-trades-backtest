@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1110465000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard FTSE Europe ETF",
+  "shortName": "Vanguard FTSEEuropean ETF",
+  "symbol": "VGK"
+ },
+ "queried_at": "2026-09-27T22:52:32Z",
+ "symbol": "VGK"
+}

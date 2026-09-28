@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:21Z"
+ },
+ "queried_at": "2026-09-27T23:01:34Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": "Masisa S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "MASISA S.A.",
+   "symbol": "MASISA.SN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Masivo Silver Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "MASIVO SILVER CORP",
+   "symbol": "MASS.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Stuttgart",
+   "exchange": "STU",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "Masi Agricola S.p.A.",
+   "symbol": "IT0004125677.SG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "Masi Agricola SpA",
+   "quoteType": "EQUITY",
+   "shortname": "Masi Agricola S.p.A.          A",
+   "symbol": "0CY.DU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Masivo Silver Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Masivo Silver Corp.           R",
+   "symbol": "R74.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "MIRAEAMC - MASILVER",
+   "symbol": "SILVERAG.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Santiago Stock Exchange",
+   "exchange": "SGO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "MASISA S.A.",
+   "symbol": "MASISA0.SN",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MASI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BP p.l.c.",
+  "shortName": "BP p.l.c.",
+  "symbol": "BP"
+ },
+ "queried_at": "2026-09-27T22:29:55Z",
+ "symbol": "BP"
+}

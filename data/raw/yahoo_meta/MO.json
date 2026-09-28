@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Altria Group, Inc.",
+  "shortName": "Altria Group, Inc.",
+  "symbol": "MO"
+ },
+ "queried_at": "2026-09-27T22:43:02Z",
+ "symbol": "MO"
+}

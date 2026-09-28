@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Charter Communications, Inc.",
+  "shortName": "Charter Communications, Inc.",
+  "symbol": "CHTR"
+ },
+ "queried_at": "2026-09-27T22:31:30Z",
+ "symbol": "CHTR"
+}

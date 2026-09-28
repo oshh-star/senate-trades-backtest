@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 819037800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "MSC Industrial Direct Co., Inc.",
+  "shortName": "MSC Industrial Direct Company, ",
+  "symbol": "MSM"
+ },
+ "queried_at": "2026-09-27T22:43:27Z",
+ "symbol": "MSM"
+}

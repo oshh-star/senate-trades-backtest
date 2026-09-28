@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1628170200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ardagh Metal Packaging S.A.",
+  "shortName": "Ardagh Metal Packaging S.A.",
+  "symbol": "AMBP"
+ },
+ "queried_at": "2026-09-27T22:27:32Z",
+ "symbol": "AMBP"
+}

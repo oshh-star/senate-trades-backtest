@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 185466600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Travelers Companies, Inc.",
+  "shortName": "The Travelers Companies, Inc.",
+  "symbol": "TRV"
+ },
+ "queried_at": "2026-09-27T22:51:23Z",
+ "symbol": "TRV"
+}

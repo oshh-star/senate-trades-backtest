@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Subaru Corporation",
+  "shortName": "Subaru Corporation",
+  "symbol": "FUJHY"
+ },
+ "queried_at": "2026-09-27T22:36:45Z",
+ "symbol": "FUJHY"
+}

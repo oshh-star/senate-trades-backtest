@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1241184600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds New World R-6",
+  "shortName": "New World Fund, Inc. Cl R-6",
+  "symbol": "RNWGX"
+ },
+ "queried_at": "2026-09-27T22:47:43Z",
+ "symbol": "RNWGX"
+}

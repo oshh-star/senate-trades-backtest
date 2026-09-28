@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1473859800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Goldman Sachs Access Treasury 0-1 Year ETF",
+  "shortName": "Goldman Sachs Access Treasury 0",
+  "symbol": "GBIL"
+ },
+ "queried_at": "2026-09-27T22:36:55Z",
+ "symbol": "GBIL"
+}

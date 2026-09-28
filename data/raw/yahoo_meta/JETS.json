@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1430400600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "U.S. Global Jets ETF",
+  "shortName": "U.S. Global Jets ETF",
+  "symbol": "JETS"
+ },
+ "queried_at": "2026-09-27T22:40:06Z",
+ "symbol": "JETS"
+}

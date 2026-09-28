@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1175520600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "PIMCO Income C",
+  "shortName": "PIMCO Income Fund Class C",
+  "symbol": "PONCX"
+ },
+ "queried_at": "2026-09-27T22:46:16Z",
+ "symbol": "PONCX"
+}

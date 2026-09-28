@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1178803800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AECOM",
+  "shortName": "AECOM",
+  "symbol": "ACM"
+ },
+ "queried_at": "2026-09-27T22:26:38Z",
+ "symbol": "ACM"
+}

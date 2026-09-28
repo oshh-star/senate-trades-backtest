@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1478007000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Howmet Aerospace Inc.",
+  "shortName": "Howmet Aerospace Inc.",
+  "symbol": "HWM"
+ },
+ "queried_at": "2026-09-27T22:38:41Z",
+ "symbol": "HWM"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1100874600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Monolithic Power Systems, Inc.",
+  "shortName": "Monolithic Power Systems, Inc.",
+  "symbol": "MPWR"
+ },
+ "queried_at": "2026-09-27T22:43:13Z",
+ "symbol": "MPWR"
+}

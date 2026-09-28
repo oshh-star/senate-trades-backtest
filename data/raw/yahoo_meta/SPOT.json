@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1522762200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Spotify Technology S.A.",
+  "shortName": "Spotify Technology S.A.",
+  "symbol": "SPOT"
+ },
+ "queried_at": "2026-09-27T22:49:47Z",
+ "symbol": "SPOT"
+}

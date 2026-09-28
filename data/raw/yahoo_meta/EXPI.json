@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:35:34Z"
+ },
+ "queried_at": "2026-09-27T23:00:09Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Expion Energy, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Expion Energy, Inc.",
+   "symbol": "XPON",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ GIDS",
+   "exchange": "NIM",
+   "longname": "OMX Copenhagen 25 Expiration In",
+   "quoteType": "INDEX",
+   "shortname": "OMX Copenhagen 25 Expiration In",
+   "symbol": "^OMXC25EXP",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "Stockholm",
+   "exchange": "STO",
+   "longname": "OMX Oslo 20 GI Expiration Index",
+   "quoteType": "INDEX",
+   "shortname": "OMX Oslo 20 GI Expiration Index",
+   "symbol": "^OMXO20GIEXP",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "Stockholm",
+   "exchange": "STO",
+   "longname": "OMX Helsinki 25 Expiration",
+   "quoteType": "INDEX",
+   "shortname": "OMX Helsinki 25 Expiration",
+   "symbol": "^OMXH25EXP",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "Johannesburg Stock Exchange",
+   "exchange": "JNB",
+   "longname": "FTSE/JSE Top 40 Expiry Index",
+   "quoteType": "INDEX",
+   "shortname": "FTSE/JSE Top 40 Expiry Index",
+   "symbol": "^J20X.JO",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "FTSEGlobal Index",
+   "exchange": "FGI",
+   "longname": "FTSE 250 ESG Risk-Adjusted Expi",
+   "quoteType": "INDEX",
+   "shortname": "FTSE 250 ESG Risk-Adjusted Expi",
+   "symbol": "MCXESGSP.FGI",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "FSI",
+   "longname": "FTSE 100 Expiry Index",
+   "quoteType": "INDEX",
+   "shortname": "FTSE 100 Expiry Index",
+   "symbol": "UKXSP.L",
+   "typeDisp": "Index"
+  }
+ ],
+ "symbol": "EXPI"
+}

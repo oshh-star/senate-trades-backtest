@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:36:20Z"
+ },
+ "queried_at": "2026-09-27T23:00:19Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Volatus Aerospace Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "VOLATUS AEROSPACE INC",
+   "symbol": "FLT.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Filtronic plc",
+   "quoteType": "EQUITY",
+   "shortname": "Filtronic PLC",
+   "symbol": "FLTCF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Franklin FTSE Taiwan ETF",
+   "quoteType": "ETF",
+   "shortname": "Franklin FTSE Taiwan ETF",
+   "symbol": "FLTW",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "VanEck IG Floating Rate ETF",
+   "quoteType": "ETF",
+   "shortname": "VanEck IG Floating Rate ETF",
+   "symbol": "FLTR",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Interm Muni Inc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Fidelity Intermediate Municipal",
+   "symbol": "FLTMX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Fidelity Limited Term Bond ETF",
+   "quoteType": "ETF",
+   "shortname": "Fidelity Limited Term Bond ETF",
+   "symbol": "FLTB",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "PPLUS Trust Series GSC-2 GSC 2 CT FL RT",
+   "quoteType": "EQUITY",
+   "shortname": "PPlus Tr GSC-2 Tr Ctf Fltg Rate",
+   "symbol": "PYT",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "FLT"
+}

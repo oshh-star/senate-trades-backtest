@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1096983000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Ares Capital Corporation",
+  "shortName": "Ares Capital Corporation",
+  "symbol": "ARCC"
+ },
+ "queried_at": "2026-09-27T22:28:09Z",
+ "symbol": "ARCC"
+}

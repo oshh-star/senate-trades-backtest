@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 554131800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Carnival Corporation Ltd.",
+  "shortName": "Carnival Corporation Ltd.",
+  "symbol": "CCL"
+ },
+ "queried_at": "2026-09-27T22:30:56Z",
+ "symbol": "CCL"
+}

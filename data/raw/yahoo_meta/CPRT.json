@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 763914600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Copart, Inc.",
+  "shortName": "Copart, Inc.",
+  "symbol": "CPRT"
+ },
+ "queried_at": "2026-09-27T22:32:15Z",
+ "symbol": "CPRT"
+}

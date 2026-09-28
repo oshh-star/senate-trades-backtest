@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1597671000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "QuantumScape Corporation",
+  "shortName": "QuantumScape Corporation",
+  "symbol": "QS"
+ },
+ "queried_at": "2026-09-27T22:47:06Z",
+ "symbol": "QS"
+}

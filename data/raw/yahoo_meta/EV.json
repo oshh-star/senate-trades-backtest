@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:35:21Z"
+ },
+ "queried_at": "2026-09-27T23:00:05Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Everpure, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Everpure, Inc.",
+   "symbol": "P",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Vertical Aerospace Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Vertical Aerospace Ltd.",
+   "symbol": "EVTL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Everspin Technologies, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Everspin Technologies, Inc.",
+   "symbol": "MRAM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "EVgo, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "EVgo Inc.",
+   "symbol": "EVGO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Eversource Energy",
+   "quoteType": "EQUITY",
+   "shortname": "Eversource Energy (D/B/A)",
+   "symbol": "ES",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Evolution Metals & Technologies Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Evolution Metals & Technologies",
+   "symbol": "EMAT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Evergy, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Evergy, Inc.",
+   "symbol": "EVRG",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "EV"
+}

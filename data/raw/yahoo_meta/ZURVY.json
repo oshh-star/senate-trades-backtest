@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1054819800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Zurich Insurance Group AG",
+  "shortName": "Zurich Insurance Group Ltd",
+  "symbol": "ZURVY"
+ },
+ "queried_at": "2026-09-27T22:54:46Z",
+ "symbol": "ZURVY"
+}

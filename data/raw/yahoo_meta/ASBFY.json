@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Associated British Foods plc",
+  "shortName": "Associated British Foods plc",
+  "symbol": "ASBFY"
+ },
+ "queried_at": "2026-09-27T22:28:19Z",
+ "symbol": "ASBFY"
+}

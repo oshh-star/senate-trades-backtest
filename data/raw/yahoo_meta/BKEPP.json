@@ -1,0 +1,23 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:29:36Z"
+ },
+ "queried_at": "2026-09-27T22:58:25Z",
+ "retried": true,
+ "search": [],
+ "symbol": "BKEPP"
+}

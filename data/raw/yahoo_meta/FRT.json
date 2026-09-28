@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Federal Realty Investment Trust",
+  "shortName": "Federal Realty Investment Trust",
+  "symbol": "FRT"
+ },
+ "queried_at": "2026-09-27T22:36:36Z",
+ "symbol": "FRT"
+}

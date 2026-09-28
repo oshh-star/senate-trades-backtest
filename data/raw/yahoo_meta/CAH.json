@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 428851800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cardinal Health, Inc.",
+  "shortName": "Cardinal Health, Inc.",
+  "symbol": "CAH"
+ },
+ "queried_at": "2026-09-27T22:30:35Z",
+ "symbol": "CAH"
+}

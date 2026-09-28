@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 378657000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Humana Inc.",
+  "shortName": "Humana Inc.",
+  "symbol": "HUM"
+ },
+ "queried_at": "2026-09-27T22:38:37Z",
+ "symbol": "HUM"
+}

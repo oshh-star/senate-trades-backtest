@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:40:46Z"
+ },
+ "queried_at": "2026-09-27T23:01:11Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "KLA Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "KLA Corporation",
+   "symbol": "KLAC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "Klarna Group plc",
+   "symbol": "KLAR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Klaviyo, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Klaviyo, Inc. Series A",
+   "symbol": "KVYO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Kulicke and Soffa Industries, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Kulicke and Soffa Industries, I",
+   "symbol": "KLIC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Kuala Lumpur Stock Exchange",
+   "exchange": "KLS",
+   "longname": "FTSE Bursa Malaysia KLCI",
+   "quoteType": "INDEX",
+   "shortname": "FTSE Bursa Malaysia KLCI",
+   "symbol": "^KLSE",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "KLX Energy Services Holdings, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "KLX Energy Services Holdings, I",
+   "symbol": "KLXE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Kailera Therapeutics, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Kailera Therapeutics, Inc.",
+   "symbol": "KLRA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "KL"
+}

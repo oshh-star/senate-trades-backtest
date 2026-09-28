@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1436362200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "VictoryShares US Large Cap High Div Volatility Wtd ETF",
+  "shortName": "VictoryShares US Large Cap High",
+  "symbol": "CDL"
+ },
+ "queried_at": "2026-09-27T22:30:58Z",
+ "symbol": "CDL"
+}

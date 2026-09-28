@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1518100200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Victory Capital Holdings, Inc.",
+  "shortName": "Victory Capital Holdings, Inc. ",
+  "symbol": "VCTR"
+ },
+ "queried_at": "2026-09-27T22:52:25Z",
+ "symbol": "VCTR"
+}

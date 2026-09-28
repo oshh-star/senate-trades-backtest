@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Applied Industrial Technologies, Inc.",
+  "shortName": "Applied Industrial Technologies",
+  "symbol": "AIT"
+ },
+ "queried_at": "2026-09-27T22:27:08Z",
+ "symbol": "AIT"
+}

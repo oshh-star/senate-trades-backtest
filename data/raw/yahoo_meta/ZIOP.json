@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:54:41Z"
+ },
+ "queried_at": "2026-09-27T23:04:19Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 100/100 DSC (152062A3)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPJX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian SRI Equity 75/75 (PS1) DSC (306946A3)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPWX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 100/100 (P) FE (465784A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPQX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 100/100 (PS1) CB (307195A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPOX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 100/100 FE (152062A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 100/100 (PS1) FE (307195A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPMX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "LON Canadian Stock Balanced 75/100 CB (152058A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZIOPBX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "ZIOP"
+}

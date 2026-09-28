@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:35:46Z"
+ },
+ "queried_at": "2026-09-27T23:00:11Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Select Tech Hardware",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Fidelity Select Computer Pt",
+   "symbol": "FDCPX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Capital Appreciation",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Fidelity Capital Trust Capital ",
+   "symbol": "FDCAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "FDCTech, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "FDCTech, Inc.",
+   "symbol": "FDCT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Fidelity Disruptive Communications ETF",
+   "quoteType": "ETF",
+   "shortname": "Fidelity Disruptive Communicati",
+   "symbol": "FDCF",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "BMO Core Plus Bond Fund Series A NL (408104A3)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FDCEX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "BMO Corporate Bond ETF Fund Advisor Series FE (756291A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FDCLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuveen NC Municipal Bond C",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuveen NC Municipal Bond Fd Cl ",
+   "symbol": "FDCCX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "FDC"
+}

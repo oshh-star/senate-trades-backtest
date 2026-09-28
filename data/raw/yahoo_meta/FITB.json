@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fifth Third Bancorp",
+  "shortName": "Fifth Third Bancorp",
+  "symbol": "FITB"
+ },
+ "queried_at": "2026-09-27T22:36:11Z",
+ "symbol": "FITB"
+}

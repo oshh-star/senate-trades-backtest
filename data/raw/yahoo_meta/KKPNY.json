@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 814455000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Koninklijke KPN N.V.",
+  "shortName": "Royal KPN NV",
+  "symbol": "KKPNY"
+ },
+ "queried_at": "2026-09-27T22:40:44Z",
+ "symbol": "KKPNY"
+}

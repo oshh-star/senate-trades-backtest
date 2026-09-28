@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1782826200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "EQUITY",
+  "longName": "Tema Photonics & Optical ETF",
+  "shortName": "Tema Photonics & Optical ETF",
+  "symbol": "LAZR"
+ },
+ "queried_at": "2026-09-27T22:41:13Z",
+ "symbol": "LAZR"
+}

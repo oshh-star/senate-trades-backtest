@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 696090600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Gilead Sciences, Inc.",
+  "shortName": "Gilead Sciences, Inc.",
+  "symbol": "GILD"
+ },
+ "queried_at": "2026-09-27T22:37:14Z",
+ "symbol": "GILD"
+}

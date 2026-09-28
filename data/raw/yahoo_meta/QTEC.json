@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146576600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust NASDAQ-100-Technology Sector Index Fund",
+  "shortName": "First Trust NASDAQ-100-Technolo",
+  "symbol": "QTEC"
+ },
+ "queried_at": "2026-09-27T22:47:07Z",
+ "symbol": "QTEC"
+}

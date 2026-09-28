@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:46Z"
+ },
+ "queried_at": "2026-09-27T22:58:44Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Commerce Bancshares, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Commerce Bancshares, Inc.",
+   "symbol": "CBSH",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "The Cannabist Company Holdings Inc.",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "CBSTQ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Franklin Templeton ICAV - Franklin Clearbridge Us Smaller Companies UCITS ETF",
+   "quoteType": "ETF",
+   "shortname": "FRANKLIN TEMPLETON ICAV FRANKLI",
+   "symbol": "CBSC.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Clough Select Equity ETF",
+   "quoteType": "ETF",
+   "shortname": "Clough Select Equity ETF",
+   "symbol": "CBSE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "China Changbaishan International Holdings Limited",
+   "quoteType": "EQUITY",
+   "shortname": "CHINA CBS INTL",
+   "symbol": "0989.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Central Bank Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "CENTRAL BANK CORPORATION",
+   "symbol": "CBSU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Columbia Select Mid Cap Growth Fund A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Columbia Fds Srs Tr I, Mid Cap ",
+   "symbol": "CBSAX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "CBS"
+}

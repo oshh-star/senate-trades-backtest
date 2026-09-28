@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:27:15Z"
+ },
+ "queried_at": "2026-09-27T22:57:49Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "New York Commodity Exchange",
+   "exchange": "CMX",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Aluminum Futures,Dec-2026",
+   "symbol": "ALI=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Alphabet Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Alphabet Inc.",
+   "symbol": "GOOG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Alphabet Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Alphabet Inc.",
+   "symbol": "GOOGL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Palo Alto Networks, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Palo Alto Networks, Inc.",
+   "symbol": "PANW",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Alibaba Group Holding Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Alibaba Group Holding Limited",
+   "symbol": "BABA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Algorand USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Algorand USD",
+   "symbol": "ALGO-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Henry Hub Natural Gas Look-Alik",
+   "symbol": "HH=F",
+   "typeDisp": "Futures"
+  }
+ ],
+ "symbol": "AL"
+}

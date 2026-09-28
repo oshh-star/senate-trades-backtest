@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 921076200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Invesco QQQ Trust",
+  "shortName": "Invesco QQQ Trust, Series 1",
+  "symbol": "QQQ"
+ },
+ "queried_at": "2026-09-27T22:47:00Z",
+ "symbol": "QQQ"
+}

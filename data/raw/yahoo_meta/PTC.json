@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 629130600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "PTC Inc.",
+  "shortName": "PTC Inc.",
+  "symbol": "PTC"
+ },
+ "queried_at": "2026-09-27T22:46:41Z",
+ "symbol": "PTC"
+}

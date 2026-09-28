@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1254922200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Verisk Analytics, Inc.",
+  "shortName": "Verisk Analytics, Inc.",
+  "symbol": "VRSK"
+ },
+ "queried_at": "2026-09-27T22:52:59Z",
+ "symbol": "VRSK"
+}

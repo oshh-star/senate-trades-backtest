@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1478788200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Lamb Weston Holdings, Inc.",
+  "shortName": "Lamb Weston Holdings, Inc.",
+  "symbol": "LW"
+ },
+ "queried_at": "2026-09-27T22:42:07Z",
+ "symbol": "LW"
+}

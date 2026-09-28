@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1066915800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "BAE Systems plc",
+  "shortName": "BAE Systems PLC",
+  "symbol": "BAESY"
+ },
+ "queried_at": "2026-09-27T22:28:53Z",
+ "symbol": "BAESY"
+}

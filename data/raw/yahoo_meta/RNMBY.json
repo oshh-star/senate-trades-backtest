@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1353940200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Rheinmetall AG",
+  "shortName": "Rheinmetall AG",
+  "symbol": "RNMBY"
+ },
+ "queried_at": "2026-09-27T22:47:41Z",
+ "symbol": "RNMBY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Weyerhaeuser Company",
+  "shortName": "Weyerhaeuser Company",
+  "symbol": "WY"
+ },
+ "queried_at": "2026-09-27T22:54:07Z",
+ "symbol": "WY"
+}

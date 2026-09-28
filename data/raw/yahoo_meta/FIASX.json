@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1033392600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Fidelity Advisor Intl Small Cap A",
+  "shortName": "Fidelity Advisor International ",
+  "symbol": "FIASX"
+ },
+ "queried_at": "2026-09-27T22:36:04Z",
+ "symbol": "FIASX"
+}

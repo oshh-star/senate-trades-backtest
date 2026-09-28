@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1196778600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street SPDR Bloomberg High Yield Bond ETF",
+  "shortName": "State Street SPDR Bloomberg Hig",
+  "symbol": "JNK"
+ },
+ "queried_at": "2026-09-27T22:40:14Z",
+ "symbol": "JNK"
+}

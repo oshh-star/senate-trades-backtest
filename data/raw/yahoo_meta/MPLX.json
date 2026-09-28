@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1351258200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "MPLX LP",
+  "shortName": "MPLX LP",
+  "symbol": "MPLX"
+ },
+ "queried_at": "2026-09-27T22:43:09Z",
+ "symbol": "MPLX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "PepsiCo, Inc.",
+  "shortName": "Pepsico, Inc.",
+  "symbol": "PEP"
+ },
+ "queried_at": "2026-09-27T22:45:48Z",
+ "symbol": "PEP"
+}

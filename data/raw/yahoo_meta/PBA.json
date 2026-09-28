@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1286371800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pembina Pipeline Corporation",
+  "shortName": "Pembina Pipeline Corp.",
+  "symbol": "PBA"
+ },
+ "queried_at": "2026-09-27T22:45:34Z",
+ "symbol": "PBA"
+}

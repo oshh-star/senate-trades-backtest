@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 979655400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Global Payments Inc.",
+  "shortName": "Global Payments Inc.",
+  "symbol": "GPN"
+ },
+ "queried_at": "2026-09-27T22:37:39Z",
+ "symbol": "GPN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1318599000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ubiquiti Inc.",
+  "shortName": "Ubiquiti Inc.",
+  "symbol": "UI"
+ },
+ "queried_at": "2026-09-27T22:51:56Z",
+ "symbol": "UI"
+}

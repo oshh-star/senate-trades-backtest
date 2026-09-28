@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1275399000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "PIMCO CommoditiesPLUS and Bond Alp I-2",
+  "shortName": "PIMCO CommoditiesPLUS\u00ae Strateg",
+  "symbol": "PCLPX"
+ },
+ "queried_at": "2026-09-27T22:45:37Z",
+ "symbol": "PCLPX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1238765400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Nordea Bank Abp",
+  "shortName": "Nordea Bank Abp",
+  "symbol": "NRDBY"
+ },
+ "queried_at": "2026-09-27T22:44:20Z",
+ "symbol": "NRDBY"
+}

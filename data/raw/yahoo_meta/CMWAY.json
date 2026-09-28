@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1270474200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Commonwealth Bank of Australia",
+  "shortName": "Commonwealth Bank of Australia",
+  "symbol": "CMWAY"
+ },
+ "queried_at": "2026-09-27T22:31:56Z",
+ "symbol": "CMWAY"
+}

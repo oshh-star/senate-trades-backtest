@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 430147800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cintas Corporation",
+  "shortName": "Cintas Corporation",
+  "symbol": "CTAS"
+ },
+ "queried_at": "2026-09-27T22:32:36Z",
+ "symbol": "CTAS"
+}

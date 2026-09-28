@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 779463000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Sirius XM Holdings Inc.",
+  "shortName": "SiriusXM Holdings Inc.",
+  "symbol": "SIRI"
+ },
+ "queried_at": "2026-09-27T22:49:04Z",
+ "symbol": "SIRI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1437053400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Ollie's Bargain Outlet Holdings, Inc.",
+  "shortName": "Ollie's Bargain Outlet Holdings",
+  "symbol": "OLLI"
+ },
+ "queried_at": "2026-09-27T22:45:08Z",
+ "symbol": "OLLI"
+}

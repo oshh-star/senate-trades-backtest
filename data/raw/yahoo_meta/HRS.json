@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:38:30Z"
+ },
+ "queried_at": "2026-09-27T23:00:41Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Chicago Board of Trade",
+   "exchange": "CBT",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Spring Wheat Futures,Dec-2026",
+   "symbol": "HRS=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Hood River Small-Cap Growth Retirement",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Hood River Small-Cap Growth Fun",
+   "symbol": "HRSIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Hood River Small-Cap Growth Instl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Hood River Small-Cap Growth Fun",
+   "symbol": "HRSMX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Toews Agility Shares Hedged Ris",
+   "symbol": "HRSK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Hood River Small-Cap Growth Investor",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Hood River Small Cap Growth Fun",
+   "symbol": "HRSRX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Haier Smart Home Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "HAIER SMART HOME CO LTD.",
+   "symbol": "HRSHF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Carillon Eagle Small Cap Growth A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Carillon Eagle Small Cap Growth",
+   "symbol": "HRSCX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "HRS"
+}

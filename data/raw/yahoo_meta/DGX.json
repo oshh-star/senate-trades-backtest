@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 850833000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Quest Diagnostics Incorporated",
+  "shortName": "Quest Diagnostics Incorporated",
+  "symbol": "DGX"
+ },
+ "queried_at": "2026-09-27T22:33:21Z",
+ "symbol": "DGX"
+}

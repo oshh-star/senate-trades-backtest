@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Thermo Fisher Scientific Inc.",
+  "shortName": "Thermo Fisher Scientific Inc",
+  "symbol": "TMO"
+ },
+ "queried_at": "2026-09-27T22:51:09Z",
+ "symbol": "TMO"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1191504600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Asahi Kasei Corporation",
+  "shortName": "Asahi Kaisei Corp.",
+  "symbol": "AHKSY"
+ },
+ "queried_at": "2026-09-27T22:27:02Z",
+ "symbol": "AHKSY"
+}

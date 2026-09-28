@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 324570600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "British American Tobacco p.l.c.",
+  "shortName": "British American Tobacco  Indus",
+  "symbol": "BTI"
+ },
+ "queried_at": "2026-09-27T22:30:15Z",
+ "symbol": "BTI"
+}

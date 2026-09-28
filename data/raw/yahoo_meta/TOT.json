@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1756906200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "EQUITY",
+  "longName": "Lionshares U.S. Equity Total Return ETF",
+  "shortName": "LionShares U.S. Equity Total Re",
+  "symbol": "TOT"
+ },
+ "queried_at": "2026-09-27T22:51:12Z",
+ "symbol": "TOT"
+}

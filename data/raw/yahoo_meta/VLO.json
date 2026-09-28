@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 379002600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Valero Energy Corporation",
+  "shortName": "Valero Energy Corporation",
+  "symbol": "VLO"
+ },
+ "queried_at": "2026-09-27T22:52:43Z",
+ "symbol": "VLO"
+}

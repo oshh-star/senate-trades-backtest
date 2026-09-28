@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 459091800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AMETEK, Inc.",
+  "shortName": "AMETEK, Inc.",
+  "symbol": "AME"
+ },
+ "queried_at": "2026-09-27T22:27:35Z",
+ "symbol": "AME"
+}

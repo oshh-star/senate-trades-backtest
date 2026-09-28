@@ -1,0 +1,78 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:44:37Z"
+ },
+ "queried_at": "2026-09-27T23:02:07Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Trimuda Nuansa Citra Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Trimuda Nuansa Citra Tbk.",
+   "symbol": "TNCA.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuance Mid Cap Value Z",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuance Mid Cap Value Fund, Z Cl",
+   "symbol": "NMVZX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuance Concentrated Value Investor",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuance Concentrated Value Fund ",
+   "symbol": "NCAVX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuance Mid Cap Value Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuance Mid Cap Value Fund  Inst",
+   "symbol": "NMVLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuance Concentrated Value Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuance Concentrated Value Fund ",
+   "symbol": "NCVLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuance Mid Cap Value Investor",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Nuance Mid Cap Value Fund Inves",
+   "symbol": "NMAVX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "NUAN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 958743000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Russell 1000 ETF",
+  "shortName": "iShares Russell 1000 ETF",
+  "symbol": "IWB"
+ },
+ "queried_at": "2026-09-27T22:39:53Z",
+ "symbol": "IWB"
+}

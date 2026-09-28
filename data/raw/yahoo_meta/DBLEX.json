@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1270560600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "DoubleLine Emerging Markets Fixed Inc I",
+  "shortName": "DoubleLine Emerging Markets Inc",
+  "symbol": "DBLEX"
+ },
+ "queried_at": "2026-09-27T22:33:03Z",
+ "symbol": "DBLEX"
+}

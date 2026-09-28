@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1671114600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "GE HealthCare Technologies Inc.",
+  "shortName": "GE HealthCare Technologies Inc.",
+  "symbol": "GEHC"
+ },
+ "queried_at": "2026-09-27T22:37:01Z",
+ "symbol": "GEHC"
+}

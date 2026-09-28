@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:36:15Z"
+ },
+ "queried_at": "2026-09-27T23:00:17Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Firefly Aerospace Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Firefly Aerospace Inc.",
+   "symbol": "FLY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Fluence Energy, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Fluence Energy, Inc.",
+   "symbol": "FLNC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Flowers Foods, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Flowers Foods, Inc.",
+   "symbol": "FLO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Flex Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Flex Ltd.",
+   "symbol": "FLEX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Flutter Entertainment plc",
+   "quoteType": "EQUITY",
+   "shortname": "Flutter Entertainment plc",
+   "symbol": "FLUT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Flagstar Bank, National Association",
+   "quoteType": "EQUITY",
+   "shortname": "Flagstar Bank, N.A.",
+   "symbol": "FLG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Six Flags Entertainment Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Six Flags Entertainment Corpora",
+   "symbol": "FUN",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "FL"
+}

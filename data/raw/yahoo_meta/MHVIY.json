@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1721050200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Mitsubishi Heavy Industries, Ltd.",
+  "shortName": "Mitsubishi Heavy Industries Ltd",
+  "symbol": "MHVIY"
+ },
+ "queried_at": "2026-09-27T22:42:47Z",
+ "symbol": "MHVIY"
+}

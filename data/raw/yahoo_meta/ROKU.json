@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1506605400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Roku, Inc.",
+  "shortName": "Roku, Inc.",
+  "symbol": "ROKU"
+ },
+ "queried_at": "2026-09-27T22:47:49Z",
+ "symbol": "ROKU"
+}

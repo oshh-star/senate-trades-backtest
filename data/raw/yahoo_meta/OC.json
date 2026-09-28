@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1162391400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Owens Corning",
+  "shortName": "Owens Corning Inc",
+  "symbol": "OC"
+ },
+ "queried_at": "2026-09-27T22:44:57Z",
+ "symbol": "OC"
+}

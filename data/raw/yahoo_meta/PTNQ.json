@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1434115800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Pacer Trendpilot 100 ETF",
+  "shortName": "Pacer Trendpilot 100 ETF",
+  "symbol": "PTNQ"
+ },
+ "queried_at": "2026-09-27T22:46:44Z",
+ "symbol": "PTNQ"
+}

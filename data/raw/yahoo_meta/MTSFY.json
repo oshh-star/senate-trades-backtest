@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1233844200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Mitsui Fudosan Co., Ltd.",
+  "shortName": "Mitsui Fudosan Co., Ltd.",
+  "symbol": "MTSFY"
+ },
+ "queried_at": "2026-09-27T22:43:34Z",
+ "symbol": "MTSFY"
+}

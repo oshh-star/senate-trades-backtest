@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1065533400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "XPO, Inc.",
+  "shortName": "XPO, Inc.",
+  "symbol": "XPO"
+ },
+ "queried_at": "2026-09-27T22:54:30Z",
+ "symbol": "XPO"
+}

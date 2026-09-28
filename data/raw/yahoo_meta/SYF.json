@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1406813400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Synchrony Financial",
+  "shortName": "Synchrony Financial",
+  "symbol": "SYF"
+ },
+ "queried_at": "2026-09-27T22:50:24Z",
+ "symbol": "SYF"
+}

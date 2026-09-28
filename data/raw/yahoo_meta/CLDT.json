@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1271424600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chatham Lodging Trust",
+  "shortName": "Chatham Lodging Trust (REIT)",
+  "symbol": "CLDT"
+ },
+ "queried_at": "2026-09-27T22:31:38Z",
+ "symbol": "CLDT"
+}

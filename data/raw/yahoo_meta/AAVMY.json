@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1565357400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ABN AMRO Bank N.V.",
+  "shortName": "Abn Amro BK N V",
+  "symbol": "AAVMY"
+ },
+ "queried_at": "2026-09-27T22:26:22Z",
+ "symbol": "AAVMY"
+}

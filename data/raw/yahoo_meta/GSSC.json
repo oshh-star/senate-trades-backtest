@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1499693400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Goldman Sachs ActiveBeta U.S. Small Cap Equity ETF",
+  "shortName": "GS ActiveBeta U.S. Small Cap Eq",
+  "symbol": "GSSC"
+ },
+ "queried_at": "2026-09-27T22:37:46Z",
+ "symbol": "GSSC"
+}

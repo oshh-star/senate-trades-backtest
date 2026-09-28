@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1554730200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Lasertec Corporation",
+  "shortName": "Lasertec Corp.",
+  "symbol": "LSRCF"
+ },
+ "queried_at": "2026-09-27T23:01:27Z",
+ "symbol": "LSRCF"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1408627800,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "ProShares MSCI EAFE Dividend Growers ETF",
+  "shortName": "ProShares MSCI EAFE Dividend Gr",
+  "symbol": "EFAD"
+ },
+ "queried_at": "2026-09-27T22:34:32Z",
+ "symbol": "EFAD"
+}

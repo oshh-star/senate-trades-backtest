@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 907162200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "JHancock Bond C",
+  "shortName": "John Hancock Bond Fund Cl C",
+  "symbol": "JHCBX"
+ },
+ "queried_at": "2026-09-27T22:40:07Z",
+ "symbol": "JHCBX"
+}

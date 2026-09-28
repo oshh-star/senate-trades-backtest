@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 806851800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "RenaissanceRe Holdings Ltd.",
+  "shortName": "RenaissanceRe Holdings Ltd.",
+  "symbol": "RNR"
+ },
+ "queried_at": "2026-09-27T22:47:42Z",
+ "symbol": "RNR"
+}

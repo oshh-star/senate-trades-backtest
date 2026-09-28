@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1205933400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Visa Inc.",
+  "shortName": "Visa Inc.",
+  "symbol": "V"
+ },
+ "queried_at": "2026-09-27T22:52:19Z",
+ "symbol": "V"
+}

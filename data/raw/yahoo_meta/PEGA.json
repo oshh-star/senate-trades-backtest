@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 837783000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Pegasystems Inc.",
+  "shortName": "Pegasystems Inc.",
+  "symbol": "PEGA"
+ },
+ "queried_at": "2026-09-27T22:45:46Z",
+ "symbol": "PEGA"
+}

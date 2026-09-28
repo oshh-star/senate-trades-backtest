@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 964791000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Russell 2000 Value ETF",
+  "shortName": "iShares Russell 2000 Value ETF",
+  "symbol": "IWN"
+ },
+ "queried_at": "2026-09-27T22:39:57Z",
+ "symbol": "IWN"
+}

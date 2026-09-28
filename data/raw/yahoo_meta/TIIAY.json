@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1060349400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Telecom Italia S.p.A.",
+  "shortName": "Telecom Italia S.p.A.",
+  "symbol": "TIIAY"
+ },
+ "queried_at": "2026-09-27T22:50:57Z",
+ "symbol": "TIIAY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 708701400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Primo Brands Corporation",
+  "shortName": "Primo Brands Corporation",
+  "symbol": "PRMB"
+ },
+ "queried_at": "2026-09-27T22:46:27Z",
+ "symbol": "PRMB"
+}

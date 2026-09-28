@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 774883800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Apartment Investment and Management Company",
+  "shortName": "Apartment Investment and Manage",
+  "symbol": "AIV"
+ },
+ "queried_at": "2026-09-27T22:27:09Z",
+ "symbol": "AIV"
+}

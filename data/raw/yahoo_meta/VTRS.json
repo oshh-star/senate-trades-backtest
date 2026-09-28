@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Viatris Inc.",
+  "shortName": "Viatris Inc.",
+  "symbol": "VTRS"
+ },
+ "queried_at": "2026-09-27T22:53:11Z",
+ "symbol": "VTRS"
+}

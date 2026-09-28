@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1169476200,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Celsius Holdings, Inc.",
+  "shortName": "Celsius Holdings, Inc.",
+  "symbol": "CELH"
+ },
+ "queried_at": "2026-09-27T22:31:06Z",
+ "symbol": "CELH"
+}

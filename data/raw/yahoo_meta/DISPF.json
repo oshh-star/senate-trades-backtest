@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1253107800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Disco Corporation",
+  "shortName": "Disco Corp.",
+  "symbol": "DISPF"
+ },
+ "queried_at": "2026-09-27T22:59:35Z",
+ "symbol": "DISPF"
+}

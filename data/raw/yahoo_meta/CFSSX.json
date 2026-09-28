@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1702305000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Column Small Cap Select",
+  "shortName": null,
+  "symbol": "CFSSX"
+ },
+ "queried_at": "2026-09-27T22:31:18Z",
+ "symbol": "CFSSX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1477575000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Lord Abbett Ultra Short Bond I",
+  "shortName": "Lord Abbett Ultra Short Bond Fu",
+  "symbol": "LUBYX"
+ },
+ "queried_at": "2026-09-27T22:42:02Z",
+ "symbol": "LUBYX"
+}

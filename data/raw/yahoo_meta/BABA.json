@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1411133400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Alibaba Group Holding Limited",
+  "shortName": "Alibaba Group Holding Limited",
+  "symbol": "BABA"
+ },
+ "queried_at": "2026-09-27T22:28:51Z",
+ "symbol": "BABA"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1545402600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Barry Callebaut AG",
+  "shortName": "Barry Callebaut AG",
+  "symbol": "BRRLY"
+ },
+ "queried_at": "2026-09-27T22:30:06Z",
+ "symbol": "BRRLY"
+}

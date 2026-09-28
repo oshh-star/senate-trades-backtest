@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1291732200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Targa Resources Corp.",
+  "shortName": "Targa Resources, Inc.",
+  "symbol": "TRGP"
+ },
+ "queried_at": "2026-09-27T22:51:16Z",
+ "symbol": "TRGP"
+}

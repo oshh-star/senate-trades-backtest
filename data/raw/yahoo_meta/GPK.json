@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 723997800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Graphic Packaging Holding Company",
+  "shortName": "Graphic Packaging Holding Compa",
+  "symbol": "GPK"
+ },
+ "queried_at": "2026-09-27T22:37:38Z",
+ "symbol": "GPK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Bayer Aktiengesellschaft",
+  "shortName": "Bayer A.G.",
+  "symbol": "BAYRY"
+ },
+ "queried_at": "2026-09-27T22:29:01Z",
+ "symbol": "BAYRY"
+}

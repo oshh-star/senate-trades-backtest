@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 315671400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Fidelity Contrafund",
+  "shortName": "Fidelity Contra Fund",
+  "symbol": "FCNTX"
+ },
+ "queried_at": "2026-09-27T22:35:43Z",
+ "symbol": "FCNTX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 864826200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Dean Mid Cap Value",
+  "shortName": "Dean Mid Cap Value Fund No-Load",
+  "symbol": "DALCX"
+ },
+ "queried_at": "2026-09-27T22:32:58Z",
+ "symbol": "DALCX"
+}

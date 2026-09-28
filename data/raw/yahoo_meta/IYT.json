@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1073053800,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares Transportation Average ETF",
+  "shortName": "iShares U.S. Transportation ETF",
+  "symbol": "IYT"
+ },
+ "queried_at": "2026-09-27T22:40:00Z",
+ "symbol": "IYT"
+}

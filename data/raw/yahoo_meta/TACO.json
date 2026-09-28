@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1749130200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Berto Acquisition Corp.",
+  "shortName": "Berto Acquisition Corp.",
+  "symbol": "TACO"
+ },
+ "queried_at": "2026-09-27T22:50:30Z",
+ "symbol": "TACO"
+}

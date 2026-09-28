@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 667751400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Glenmede Small Cap Equity Adv",
+  "shortName": "Glenmede Small Capitalization E",
+  "symbol": "GTCSX"
+ },
+ "queried_at": "2026-09-27T22:37:47Z",
+ "symbol": "GTCSX"
+}

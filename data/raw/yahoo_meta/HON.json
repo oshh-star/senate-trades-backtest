@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Honeywell International Inc.",
+  "shortName": "Honeywell International Inc.",
+  "symbol": "HON"
+ },
+ "queried_at": "2026-09-27T22:38:24Z",
+ "symbol": "HON"
+}

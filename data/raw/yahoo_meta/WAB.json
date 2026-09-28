@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 803309400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Westinghouse Air Brake Technologies Corporation",
+  "shortName": "Westinghouse Air Brake Technolo",
+  "symbol": "WAB"
+ },
+ "queried_at": "2026-09-27T22:53:20Z",
+ "symbol": "WAB"
+}

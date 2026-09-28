@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1617283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Compass, Inc.",
+  "shortName": "Compass, Inc.",
+  "symbol": "COMP"
+ },
+ "queried_at": "2026-09-27T22:59:06Z",
+ "symbol": "COMP"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:36:02Z"
+ },
+ "queried_at": "2026-09-27T23:00:15Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Brent Crude Oil Last Day Financ",
+   "symbol": "BZ=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "NY Harbor ULSD Financial Future",
+   "symbol": "MPX=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Natural Gas Last Day (Financial",
+   "symbol": "HHT=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Dutch TTF Natural Gas Financial",
+   "symbol": "TTG=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "E-mini Financial Select Sector ",
+   "symbol": "XAF=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "BTIC on E-mini Financial Select",
+   "symbol": "XFT=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Firefly Neuroscience, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Firefly Neuroscience, Inc.",
+   "symbol": "AIFF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "FI"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:50:37Z"
+ },
+ "queried_at": "2026-09-27T23:03:19Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "BlackRock TCP Capital Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "BlackRock TCP Capital Corp.",
+   "symbol": "TCPC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Transcoal Pacific Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Transcoal Pacific Tbk.",
+   "symbol": "TCPI.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "TransCanada PipeLines Limited 6",
+   "symbol": "TCPA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Singapore",
+   "exchange": "SES",
+   "longname": "CP ALL Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "t CP All TH SDR 1to1",
+   "symbol": "TCPD.SI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Thrivent Core Plus Bond ETF",
+   "quoteType": "ETF",
+   "shortname": "Thrivent Core Plus Bond ETF",
+   "symbol": "TCPB",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "TCPL Packaging Limited",
+   "quoteType": "EQUITY",
+   "shortname": "TCPL PACKAGING LIMITED",
+   "symbol": "TCPLPACK.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "BlackRock TCP Capital Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "BlackRock TCP Capital Corp.   R",
+   "symbol": "8TC.F",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "TCP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 770995800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Essex Property Trust, Inc.",
+  "shortName": "Essex Property Trust, Inc.",
+  "symbol": "ESS"
+ },
+ "queried_at": "2026-09-27T22:35:08Z",
+ "symbol": "ESS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Sun Hung Kai Properties Limited",
+  "shortName": "Sun Hung Kai Properties Ltd.",
+  "symbol": "SUHJY"
+ },
+ "queried_at": "2026-09-27T22:50:14Z",
+ "symbol": "SUHJY"
+}

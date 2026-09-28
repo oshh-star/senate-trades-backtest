@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "DTE Energy Company",
+  "shortName": "DTE Energy Company",
+  "symbol": "DTE"
+ },
+ "queried_at": "2026-09-27T22:34:05Z",
+ "symbol": "DTE"
+}

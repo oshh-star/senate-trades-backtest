@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 998919000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI EAFE ETF",
+  "shortName": "iShares MSCI EAFE ETF",
+  "symbol": "EFA"
+ },
+ "queried_at": "2026-09-27T22:34:31Z",
+ "symbol": "EFA"
+}

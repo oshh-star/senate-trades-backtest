@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322842600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Unilever PLC",
+  "shortName": "Unilever PLC",
+  "symbol": "UL"
+ },
+ "queried_at": "2026-09-27T22:51:57Z",
+ "symbol": "UL"
+}

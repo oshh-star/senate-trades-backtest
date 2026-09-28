@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:34:55Z"
+ },
+ "queried_at": "2026-09-27T22:59:53Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "Invesco EQQQ NASDAQ-100 UCITS ETF (CHF Hdg)",
+   "quoteType": "ETF",
+   "shortname": "Invesco EQQQ UCITS ETF CHF Hdg",
+   "symbol": "EQCH.SW",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Global X Enhanced All-Equity Asset Allocation Covered Call ETF CAD",
+   "quoteType": "ETF",
+   "shortname": "GLOBAL X ENH EQTY ASSET ALLOC C",
+   "symbol": "EQCL.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "GLOBAL X ALL-EQUITY ASSET ALLOC",
+   "symbol": "EQCC.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "GLOBAL X ENHANCED ALL-EQUITY A",
+   "symbol": "EQCL.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Mercer Passive Glb EqCCFA10H0.2200EURIE3",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001UTU0.F",
+   "symbol": "0P0001UTU0.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "Heptagon Kopernik Glb AllCp EqCCHHCHFAcc",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001YR3M.SW",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "CXE",
+   "exchange": "CXE",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Invesco EQQQ Nasdaq-100 UCITS E",
+   "symbol": "EQCHZ.XC",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "EQC"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1443533400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Goldman Sachs ActiveBeta Emerging Markets Equity ETF",
+  "shortName": "Goldman Sachs ActiveBeta Emergi",
+  "symbol": "GEM"
+ },
+ "queried_at": "2026-09-27T22:37:03Z",
+ "symbol": "GEM"
+}

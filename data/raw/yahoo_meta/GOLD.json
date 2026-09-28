@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1395063000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Gold.com, Inc.",
+  "shortName": "Gold.com, Inc.",
+  "symbol": "GOLD"
+ },
+ "queried_at": "2026-09-27T22:37:33Z",
+ "symbol": "GOLD"
+}

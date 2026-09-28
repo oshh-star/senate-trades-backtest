@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1284039000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Vanguard S&P Mid-Cap 400 Index Fund ETF Shares",
+  "shortName": "Vanguard S&P Mid-Cap 400 ETF",
+  "symbol": "IVOO"
+ },
+ "queried_at": "2026-09-27T22:39:49Z",
+ "symbol": "IVOO"
+}

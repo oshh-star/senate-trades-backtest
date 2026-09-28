@@ -103,5 +103,5 @@ oos:
 scrape:
   min_seconds_between_requests: 1.0
   user_agent: "LBS-CA01-senate-trades-backtest/0.1 (academic research; contact: {contact_email})"
-  contact_email: PLACEHOLDER_ASK_HARRY   # required before any SEC request
+  contact_email: hoshea.mfa2027@london.edu   # SEC requires a contact in the User-Agent (Harry, 2026-09-27)
   search_page_length: 100

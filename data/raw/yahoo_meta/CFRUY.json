@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Compagnie Financi\u00e8re Richemont SA",
+  "shortName": "Compagnie Financiere Richemont ",
+  "symbol": "CFRUY"
+ },
+ "queried_at": "2026-09-27T22:31:17Z",
+ "symbol": "CFRUY"
+}

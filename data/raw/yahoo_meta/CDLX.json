@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1518186600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Cardlytics, Inc.",
+  "shortName": "Cardlytics, Inc. Common Stock",
+  "symbol": "CDLX"
+ },
+ "queried_at": "2026-09-27T22:30:59Z",
+ "symbol": "CDLX"
+}

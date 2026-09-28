@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:28:45Z"
+ },
+ "queried_at": "2026-09-27T22:58:08Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Aya Gold & Silver Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Aya Gold & Silver Inc.",
+   "symbol": "AYA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Acuity Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Acuity Inc.",
+   "symbol": "AYI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Aya Gold & Silver Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AYA GOLD AND SILVER INC",
+   "symbol": "AYA.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Aytu BioPharma, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Aytu BioPharma, Inc.",
+   "symbol": "AYTU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Ayar Labs - Company Level",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "AYARZZX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Ayala Land, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AYALA LAND INC",
+   "symbol": "AYAAF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": "Ayvens",
+   "quoteType": "EQUITY",
+   "shortname": "AYVENS",
+   "symbol": "AYV.PA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "AY"
+}

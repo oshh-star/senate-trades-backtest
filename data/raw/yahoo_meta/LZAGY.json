@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1263997800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Lonza Group AG",
+  "shortName": "Lonza Group AG",
+  "symbol": "LZAGY"
+ },
+ "queried_at": "2026-09-27T22:42:12Z",
+ "symbol": "LZAGY"
+}

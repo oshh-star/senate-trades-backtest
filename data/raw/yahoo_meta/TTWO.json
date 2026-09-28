@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 861111000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Take-Two Interactive Software, Inc.",
+  "shortName": "Take-Two Interactive Software, ",
+  "symbol": "TTWO"
+ },
+ "queried_at": "2026-09-27T22:51:36Z",
+ "symbol": "TTWO"
+}

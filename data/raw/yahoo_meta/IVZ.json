@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 809357400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Invesco Ltd.",
+  "shortName": "Invesco Ltd",
+  "symbol": "IVZ"
+ },
+ "queried_at": "2026-09-27T22:39:52Z",
+ "symbol": "IVZ"
+}

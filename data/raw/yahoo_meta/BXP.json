@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 866640600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BXP, Inc.",
+  "shortName": "BXP, Inc.",
+  "symbol": "BXP"
+ },
+ "queried_at": "2026-09-27T22:30:24Z",
+ "symbol": "BXP"
+}

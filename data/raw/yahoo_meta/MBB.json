@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1174051800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "iShares MBS ETF",
+  "shortName": "iShares MBS ETF",
+  "symbol": "MBB"
+ },
+ "queried_at": "2026-09-27T22:42:26Z",
+ "symbol": "MBB"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1033479000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sodexo S.A.",
+  "shortName": "Sodexo",
+  "symbol": "SDXAY"
+ },
+ "queried_at": "2026-09-27T22:48:40Z",
+ "symbol": "SDXAY"
+}

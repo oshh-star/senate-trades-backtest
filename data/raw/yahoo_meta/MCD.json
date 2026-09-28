@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -110197800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "McDonald's Corporation",
+  "shortName": "McDonald's Corporation",
+  "symbol": "MCD"
+ },
+ "queried_at": "2026-09-27T22:42:31Z",
+ "symbol": "MCD"
+}

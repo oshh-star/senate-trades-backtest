@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:40:15Z"
+ },
+ "queried_at": "2026-09-27T23:01:02Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Juniper Green Energy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "JUNIPER GREEN ENERGY LTD",
+   "symbol": "JNPR.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Juniper Green Energy Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Juniper Green Energy Limited",
+   "symbol": "JNPR.BO",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "JNPR"
+}

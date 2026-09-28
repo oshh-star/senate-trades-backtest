@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146835800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Healthcare Providers ETF",
+  "shortName": "iShares U.S. Health Care Provid",
+  "symbol": "IHF"
+ },
+ "queried_at": "2026-09-27T22:39:15Z",
+ "symbol": "IHF"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1351085400,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares Core MSCI EAFE ETF",
+  "shortName": "iShares Core MSCI EAFE ETF",
+  "symbol": "IEFA"
+ },
+ "queried_at": "2026-09-27T22:39:05Z",
+ "symbol": "IEFA"
+}

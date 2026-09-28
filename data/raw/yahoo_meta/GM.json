@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1290090600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "General Motors Company",
+  "shortName": "General Motors Company",
+  "symbol": "GM"
+ },
+ "queried_at": "2026-09-27T22:37:22Z",
+ "symbol": "GM"
+}

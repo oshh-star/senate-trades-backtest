@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415802600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Amplify Cybersecurity ETF",
+  "shortName": "Amplify Cybersecurity ETF",
+  "symbol": "HACK"
+ },
+ "queried_at": "2026-09-27T22:37:51Z",
+ "symbol": "HACK"
+}

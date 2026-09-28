@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:26:28Z"
+ },
+ "queried_at": "2026-09-27T22:57:37Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "AbCellera Biologics Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "AbCellera Biologics Inc.",
+   "symbol": "ABCL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Ameris Bancorp",
+   "quoteType": "EQUITY",
+   "shortname": "Ameris Bancorp",
+   "symbol": "ABCB",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Agricultural Bank of China Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ABC",
+   "symbol": "1288.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Abcourt Mines Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Abcourt Mines Inc.",
+   "symbol": "ABMBF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Aditya Birla Capital Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ADITYA BIRLA CAPITAL LTD.",
+   "symbol": "ABCAPITAL.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Abcourt Mines Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Abcourt Mines Inc.",
+   "symbol": "ABI.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Absolutely Critical Resources Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "ABSOLUTELY CRITICAL RESOURCES C",
+   "symbol": "ABC.V",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ABC"
+}

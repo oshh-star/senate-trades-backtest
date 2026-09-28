@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 980865000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Align Technology, Inc.",
+  "shortName": "Align Technology, Inc.",
+  "symbol": "ALGN"
+ },
+ "queried_at": "2026-09-27T22:27:21Z",
+ "symbol": "ALGN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 752423400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Incyte Corporation",
+  "shortName": "Incyte Corporation",
+  "symbol": "INCY"
+ },
+ "queried_at": "2026-09-27T22:39:23Z",
+ "symbol": "INCY"
+}

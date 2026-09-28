@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:49:50Z"
+ },
+ "queried_at": "2026-09-27T23:03:12Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Chicago Mercantile Exchange",
+   "exchange": "CME",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "QUALCOMM Inc Stock Futures,Dec-",
+   "symbol": "SQCOM=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "ProShares UltraPro Short QQQ",
+   "quoteType": "ETF",
+   "shortname": "ProShares UltraPro Short QQQ",
+   "symbol": "SQQQ",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Bristol-Myers Squibb Company",
+   "quoteType": "EQUITY",
+   "shortname": "Bristol-Myers Squibb Company",
+   "symbol": "BMY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Pershing Square Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Pershing Square Inc.",
+   "symbol": "PS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Pershing Square USA, Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "PSUS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Sociedad Quimica y Minera S.A.",
+   "symbol": "SQM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Oxford Square Capital Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Oxford Square Capital Corp.",
+   "symbol": "OXSQ",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SQ"
+}

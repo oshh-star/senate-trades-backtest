@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1069770600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Gabelli Dividend & Income Trust",
+  "shortName": "Gabelli Dividend & Income Trust",
+  "symbol": "GDV"
+ },
+ "queried_at": "2026-09-27T22:36:58Z",
+ "symbol": "GDV"
+}

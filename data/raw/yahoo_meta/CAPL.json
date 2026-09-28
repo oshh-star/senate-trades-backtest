@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1351171800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "CrossAmerica Partners LP",
+  "shortName": "CrossAmerica Partners LP",
+  "symbol": "CAPL"
+ },
+ "queried_at": "2026-09-27T22:30:40Z",
+ "symbol": "CAPL"
+}

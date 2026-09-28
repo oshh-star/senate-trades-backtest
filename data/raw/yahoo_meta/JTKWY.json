@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1585143000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Just Eat Takeaway.com N.V.",
+  "shortName": "Just Eat Takeaway.com N.V.",
+  "symbol": "JTKWY"
+ },
+ "queried_at": "2026-09-27T22:40:21Z",
+ "symbol": "JTKWY"
+}

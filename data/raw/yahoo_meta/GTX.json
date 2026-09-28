@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1537191000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Garrett Motion Inc.",
+  "shortName": "Garrett Motion Inc.",
+  "symbol": "GTX"
+ },
+ "queried_at": "2026-09-27T22:37:48Z",
+ "symbol": "GTX"
+}

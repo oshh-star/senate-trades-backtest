@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1584624600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Carrier Global Corporation",
+  "shortName": "Carrier Global Corporation",
+  "symbol": "CARR"
+ },
+ "queried_at": "2026-09-27T22:30:42Z",
+ "symbol": "CARR"
+}

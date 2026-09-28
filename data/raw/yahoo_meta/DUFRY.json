@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1350567000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Avolta AG",
+  "shortName": "AVOLTA AG",
+  "symbol": "DUFRY"
+ },
+ "queried_at": "2026-09-27T22:34:08Z",
+ "symbol": "DUFRY"
+}

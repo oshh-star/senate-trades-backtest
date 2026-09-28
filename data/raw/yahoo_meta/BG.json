@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 996759000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bunge Global SA",
+  "shortName": "Bunge Limited",
+  "symbol": "BG"
+ },
+ "queried_at": "2026-09-27T22:29:17Z",
+ "symbol": "BG"
+}

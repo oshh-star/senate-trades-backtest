@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1663335000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Bondbloxx Bloomberg One Year Target Duration US Treasury ETF",
+  "shortName": "BondBloxx Bloomberg One Year Ta",
+  "symbol": "XONE"
+ },
+ "queried_at": "2026-09-27T22:54:28Z",
+ "symbol": "XONE"
+}

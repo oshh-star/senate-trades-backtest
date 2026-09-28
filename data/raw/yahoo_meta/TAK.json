@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Takeda Pharmaceutical Company Limited",
+  "shortName": "Takeda Pharmaceutical Company L",
+  "symbol": "TAK"
+ },
+ "queried_at": "2026-09-27T22:50:31Z",
+ "symbol": "TAK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1188999000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "VanEck Agribusiness ETF",
+  "shortName": "VanEck Agribusiness ETF",
+  "symbol": "MOO"
+ },
+ "queried_at": "2026-09-27T22:43:04Z",
+ "symbol": "MOO"
+}

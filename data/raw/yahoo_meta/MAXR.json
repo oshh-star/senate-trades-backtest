@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:24Z"
+ },
+ "queried_at": "2026-09-27T23:01:36Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Fundo De Investimentos Imobiliarios - Max Ret",
+   "quoteType": "EQUITY",
+   "shortname": "FII MAX RET CI",
+   "symbol": "MAXR11.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Canada Life Canadian Growth Fund Series I NL (748023A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "MAXRX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "MAXR"
+}

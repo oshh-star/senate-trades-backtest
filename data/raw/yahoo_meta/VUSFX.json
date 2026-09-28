@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1423578600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Vanguard Ultra-Short-Term Bond Admiral",
+  "shortName": "Vanguard Ultra-Short-Term Bond ",
+  "symbol": "VUSFX"
+ },
+ "queried_at": "2026-09-27T22:53:12Z",
+ "symbol": "VUSFX"
+}

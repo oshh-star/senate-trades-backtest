@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 990106200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "VanEck Retail ETF",
+  "shortName": "VanEck Retail ETF",
+  "symbol": "RTH"
+ },
+ "queried_at": "2026-09-27T22:48:01Z",
+ "symbol": "RTH"
+}

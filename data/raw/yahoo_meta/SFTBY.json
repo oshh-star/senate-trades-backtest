@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1297866600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "SoftBank Group Corp.",
+  "shortName": "Softbank Group Corp",
+  "symbol": "SFTBY"
+ },
+ "queried_at": "2026-09-27T22:48:47Z",
+ "symbol": "SFTBY"
+}

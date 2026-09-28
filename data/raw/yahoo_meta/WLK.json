@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1092317400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Westlake Corporation",
+  "shortName": "Westlake Corporation",
+  "symbol": "WLK"
+ },
+ "queried_at": "2026-09-27T22:53:44Z",
+ "symbol": "WLK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1607956200,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Siemens Energy AG",
+  "shortName": "Siemens Energy AG",
+  "symbol": "SMERY"
+ },
+ "queried_at": "2026-09-27T22:49:19Z",
+ "symbol": "SMERY"
+}

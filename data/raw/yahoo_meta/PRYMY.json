@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1331731800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Prysmian S.p.A.",
+  "shortName": "Prysmian S.P.A.",
+  "symbol": "PRYMY"
+ },
+ "queried_at": "2026-09-27T22:46:32Z",
+ "symbol": "PRYMY"
+}

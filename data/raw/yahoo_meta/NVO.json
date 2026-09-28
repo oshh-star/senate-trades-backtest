@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 357485400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Novo Nordisk A/S",
+  "shortName": "Novo Nordisk A/S",
+  "symbol": "NVO"
+ },
+ "queried_at": "2026-09-27T22:44:42Z",
+ "symbol": "NVO"
+}

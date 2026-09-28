@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1432042200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "South32 Limited",
+  "shortName": "South32 Ltd.",
+  "symbol": "SOUHY"
+ },
+ "queried_at": "2026-09-27T22:49:43Z",
+ "symbol": "SOUHY"
+}

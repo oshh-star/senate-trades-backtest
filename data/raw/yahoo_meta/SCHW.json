@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 559315800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Charles Schwab Corporation",
+  "shortName": "Charles Schwab Corporation (The",
+  "symbol": "SCHW"
+ },
+ "queried_at": "2026-09-27T22:48:34Z",
+ "symbol": "SCHW"
+}

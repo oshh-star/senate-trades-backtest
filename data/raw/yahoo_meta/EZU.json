@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 965050200,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares MSCI Eurozone ETF",
+  "shortName": "iShares MSCI Eurozone ETF",
+  "symbol": "EZU"
+ },
+ "queried_at": "2026-09-27T22:35:37Z",
+ "symbol": "EZU"
+}

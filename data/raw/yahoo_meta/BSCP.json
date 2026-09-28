@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:07Z"
+ },
+ "queried_at": "2026-09-27T22:58:36Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "BSCPAD USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "BSCPAD USD",
+   "symbol": "BSCPAD-USD",
+   "typeDisp": "Cryptocurrency"
+  }
+ ],
+ "symbol": "BSCP"
+}

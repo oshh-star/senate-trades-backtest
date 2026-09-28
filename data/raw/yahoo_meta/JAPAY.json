@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1412343000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Japan Tobacco Inc.",
+  "shortName": "Japan Tobacco",
+  "symbol": "JAPAY"
+ },
+ "queried_at": "2026-09-27T22:40:02Z",
+ "symbol": "JAPAY"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:47:09Z"
+ },
+ "queried_at": "2026-09-27T23:02:37Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Canadian National Railway Company",
+   "quoteType": "EQUITY",
+   "shortname": "Canadian National Railway Compa",
+   "symbol": "CNI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Canadian National Railway Company",
+   "quoteType": "EQUITY",
+   "shortname": "CANADIAN NATIONAL RAILWAY CO.",
+   "symbol": "CNR.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "FreightCar America, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Freightcar America, Inc.",
+   "symbol": "RAIL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Rain Enhancement Technologies Holdco, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Rain Enhancement Technologies H",
+   "symbol": "RAIN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Rail Vikas Nigam Limited",
+   "quoteType": "EQUITY",
+   "shortname": "RAIL VIKAS NIGAM LIMITED",
+   "symbol": "RVNL.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Rail Vision Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Rail Vision Ltd.",
+   "symbol": "RVSN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Indian Railway Finance Corporation Limited",
+   "quoteType": "EQUITY",
+   "shortname": "INDIAN RAILWAY FIN CORP L",
+   "symbol": "IRFC.NS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "RAI"
+}

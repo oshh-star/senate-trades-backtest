@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:43:43Z"
+ },
+ "queried_at": "2026-09-27T23:01:54Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "Cambria Micro And Smallcap Shareholder Yield ETF",
+   "quoteType": "ETF",
+   "shortname": "Cambria Micro and SmallCap Shar",
+   "symbol": "MYLD",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "The Planting Hope Company Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "The Planting Hope Company Inc.",
+   "symbol": "MYLKF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MYL"
+}

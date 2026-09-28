@@ -59,12 +59,18 @@ src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch, retries) a
 src/scrape/           Phase 1: legislators.py (service dates), listing.py, download.py (manifest),
                       parse.py (transactions_raw + validation), names.py, summary.py;
                       run by hand in chunks with: python -m src.scrape --years 2024 --steps listing download
+src/clean/             Phase 2: amendments.py (link, classify, de-duplicate), tickers.py (normalise,
+                      recover from names via SEC), yahoo.py (instrument type/exchange, cached),
+                      build.py (waterfall, flags), report.py (outputs, data_quality.md section)
+src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
 data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
 data/raw/legislators/ congress-legislators YAML (Senate service dates)
 data/raw/crsp/        CRSP daily CSV goes here once WRDS access is approved
+data/raw/yahoo_meta/  Yahoo instrument metadata per ticker (no prices); data/raw/sec/ SEC company_tickers.json
+data/processed/       trades_clean.csv (one row per trade + V1-V6 flags), tickers.csv, exclusions.csv
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
@@ -79,7 +85,7 @@ tests/                pytest suite (run: python -m pytest)
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
 | 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
-| 2 | Clean: parse, filter universe and owners, amendments, matching, exclusions log | Not started |
+| 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Not started |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Not started |
 | 5 | Metrics and benchmarks | Not started |

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 870960600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ArcelorMittal S.A.",
+  "shortName": "Arcelor Mittal NY Registry Shar",
+  "symbol": "MT"
+ },
+ "queried_at": "2026-09-27T22:43:30Z",
+ "symbol": "MT"
+}

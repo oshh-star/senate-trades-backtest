@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1473946200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Fidelity Dividend ETF for Rising Rates",
+  "shortName": "Fidelity Dividend ETF for Risin",
+  "symbol": "FDRR"
+ },
+ "queried_at": "2026-09-27T22:35:49Z",
+ "symbol": "FDRR"
+}

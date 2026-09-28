@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1288013400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Sonic Healthcare Limited",
+  "shortName": "Sonic Healthcare Ltd.",
+  "symbol": "SKHHY"
+ },
+ "queried_at": "2026-09-27T22:49:09Z",
+ "symbol": "SKHHY"
+}

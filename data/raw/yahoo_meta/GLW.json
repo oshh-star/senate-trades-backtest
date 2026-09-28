@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 378657000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Corning Incorporated",
+  "shortName": "Corning Incorporated",
+  "symbol": "GLW"
+ },
+ "queried_at": "2026-09-27T22:37:21Z",
+ "symbol": "GLW"
+}

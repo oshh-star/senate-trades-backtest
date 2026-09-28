@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1433856600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "IHI Corporation",
+  "shortName": "IHI Corp",
+  "symbol": "IHICY"
+ },
+ "queried_at": "2026-09-27T22:39:17Z",
+ "symbol": "IHICY"
+}

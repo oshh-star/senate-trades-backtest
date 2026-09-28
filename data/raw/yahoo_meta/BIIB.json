@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 685114200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Biogen Inc.",
+  "shortName": "Biogen Inc.",
+  "symbol": "BIIB"
+ },
+ "queried_at": "2026-09-27T22:29:25Z",
+ "symbol": "BIIB"
+}

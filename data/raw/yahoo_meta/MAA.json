@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 759767400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Mid-America Apartment Communities, Inc.",
+  "shortName": "Mid-America Apartment Communiti",
+  "symbol": "MAA"
+ },
+ "queried_at": "2026-09-27T22:42:15Z",
+ "symbol": "MAA"
+}

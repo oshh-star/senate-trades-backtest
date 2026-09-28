@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1246455000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Anheuser-Busch InBev SA/NV",
+  "shortName": "Anheuser-Busch Inbev SA Sponsor",
+  "symbol": "BUD"
+ },
+ "queried_at": "2026-09-27T22:30:17Z",
+ "symbol": "BUD"
+}

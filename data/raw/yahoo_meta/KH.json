@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": null,
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1281533400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "ECNQUOTE",
+  "longName": null,
+  "shortName": null,
+  "symbol": "KH"
+ },
+ "queried_at": "2026-09-27T22:40:40Z",
+ "symbol": "KH"
+}

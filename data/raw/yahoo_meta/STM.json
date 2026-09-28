@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 786897000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "STMicroelectronics N.V.",
+  "shortName": "STMicroelectronics N.V.",
+  "symbol": "STM"
+ },
+ "queried_at": "2026-09-27T22:50:09Z",
+ "symbol": "STM"
+}

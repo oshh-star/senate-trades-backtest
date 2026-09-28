@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 882196200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Goldman Sachs Emerging Markets Eq Instl",
+  "shortName": "Goldman Sachs Emerging Markets ",
+  "symbol": "GEMIX"
+ },
+ "queried_at": "2026-09-27T22:37:04Z",
+ "symbol": "GEMIX"
+}

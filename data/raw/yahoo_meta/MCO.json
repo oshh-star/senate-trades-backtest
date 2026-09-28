@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 783613800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Moody's Corporation",
+  "shortName": "Moody's Corporation",
+  "symbol": "MCO"
+ },
+ "queried_at": "2026-09-27T22:42:34Z",
+ "symbol": "MCO"
+}

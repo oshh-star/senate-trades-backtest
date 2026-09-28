@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 315671400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Vanguard US Growth Investor",
+  "shortName": "Vanguard U.S. Growth Fund",
+  "symbol": "VWUSX"
+ },
+ "queried_at": "2026-09-27T22:53:17Z",
+ "symbol": "VWUSX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 83597400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Walmart Inc.",
+  "shortName": "Walmart Inc.",
+  "symbol": "WMT"
+ },
+ "queried_at": "2026-09-27T22:53:49Z",
+ "symbol": "WMT"
+}

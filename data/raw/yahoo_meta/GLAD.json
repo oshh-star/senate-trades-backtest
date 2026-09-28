@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1028295000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Gladstone Capital Corporation",
+  "shortName": "Gladstone Capital Corporation",
+  "symbol": "GLAD"
+ },
+ "queried_at": "2026-09-27T22:37:17Z",
+ "symbol": "GLAD"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1539610200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Epiroc AB (publ)",
+  "shortName": "Epiroc Aktiebolag",
+  "symbol": "EPOAY"
+ },
+ "queried_at": "2026-09-27T22:34:54Z",
+ "symbol": "EPOAY"
+}

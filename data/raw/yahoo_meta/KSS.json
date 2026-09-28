@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 706282200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kohl's Corporation",
+  "shortName": "Kohl's Corporation",
+  "symbol": "KSS"
+ },
+ "queried_at": "2026-09-27T22:41:02Z",
+ "symbol": "KSS"
+}

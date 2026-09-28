@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1434115800,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Pacer Trendpilot US Mid Cap ETF",
+  "shortName": "Pacer Trendpilot US Mid Cap ETF",
+  "symbol": "PTMC"
+ },
+ "queried_at": "2026-09-27T22:46:43Z",
+ "symbol": "PTMC"
+}

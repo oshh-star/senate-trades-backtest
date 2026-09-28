@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 733069800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chubb Limited",
+  "shortName": "Chubb Limited",
+  "symbol": "CB"
+ },
+ "queried_at": "2026-09-27T22:30:44Z",
+ "symbol": "CB"
+}

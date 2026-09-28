@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1351085400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares Core MSCI Emerging Markets ETF",
+  "shortName": "iShares Core MSCI Emerging Mark",
+  "symbol": "IEMG"
+ },
+ "queried_at": "2026-09-27T22:39:07Z",
+ "symbol": "IEMG"
+}

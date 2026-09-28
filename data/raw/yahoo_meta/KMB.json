@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Kimberly-Clark Corporation",
+  "shortName": "Kimberly-Clark Corporation",
+  "symbol": "KMB"
+ },
+ "queried_at": "2026-09-27T22:40:49Z",
+ "symbol": "KMB"
+}

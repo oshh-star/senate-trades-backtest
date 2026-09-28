@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:54:01Z"
+ },
+ "queried_at": "2026-09-27T23:04:09Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Select Water Solutions, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Select Water Solutions, Inc.",
+   "symbol": "WTTR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "SSgA SPDR ETFs Europe II Public Limited Company - SPDR MSCI World Technology UCITS ETF",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "WTTHF",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "WisdomTree 3-7 Year Treasury Digital N/A",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "WTTSX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "WTTR Oct 2026 2.500 call",
+   "quoteType": "OPTION",
+   "shortname": "WTTR Oct 2026 2.500 call",
+   "symbol": "WTTR261016C00002500",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "WTTR Oct 2026 20.000 call",
+   "quoteType": "OPTION",
+   "shortname": "WTTR Oct 2026 20.000 call",
+   "symbol": "WTTR261016C00020000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "Elevate Uranium Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "Elevate Uranium Ltd.          R",
+   "symbol": "WTT0.DU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": null,
+   "quoteType": "OPTION",
+   "shortname": "WTTR Oct 2026 30.000 call",
+   "symbol": "WTTR261016C00030000",
+   "typeDisp": "Option"
+  }
+ ],
+ "symbol": "WTT"
+}

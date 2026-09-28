@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1308231000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Invesco S&P 500 GARP ETF",
+  "shortName": "Invesco S&P 500 GARP ETF",
+  "symbol": "SPGP"
+ },
+ "queried_at": "2026-09-27T22:49:46Z",
+ "symbol": "SPGP"
+}

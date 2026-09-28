@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:48:18Z"
+ },
+ "queried_at": "2026-09-27T23:03:01Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Sandisk Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Sandisk Corporation",
+   "symbol": "SNDK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Las Vegas Sands Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Las Vegas Sands Corp.",
+   "symbol": "LVS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "SandRidge Energy, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "SandRidge Energy, Inc.",
+   "symbol": "SD",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Smart Sand, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Smart Sand, Inc.",
+   "symbol": "SND",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Piper Sandler Companies",
+   "quoteType": "EQUITY",
+   "shortname": "Piper Sandler Companies",
+   "symbol": "PIPR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Sandisk Corporation",
+   "quoteType": "ETF",
+   "shortname": "SANDISK CDR (CAD HEDGED)",
+   "symbol": "SNDK.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "Sandoz Group AG",
+   "quoteType": "EQUITY",
+   "shortname": "SANDOZ GROUP N",
+   "symbol": "SDZ.SW",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SAND"
+}

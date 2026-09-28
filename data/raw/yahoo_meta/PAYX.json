@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 430752600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Paychex, Inc.",
+  "shortName": "Paychex, Inc.",
+  "symbol": "PAYX"
+ },
+ "queried_at": "2026-09-27T22:45:33Z",
+ "symbol": "PAYX"
+}

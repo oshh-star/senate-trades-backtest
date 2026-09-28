@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1111501800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ICL Group Ltd",
+  "shortName": "ICL Group Ltd.",
+  "symbol": "ICL"
+ },
+ "queried_at": "2026-09-27T22:38:58Z",
+ "symbol": "ICL"
+}

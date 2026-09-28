@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1098451800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "CubeSmart",
+  "shortName": "CubeSmart",
+  "symbol": "CUBE"
+ },
+ "queried_at": "2026-09-27T22:32:45Z",
+ "symbol": "CUBE"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1786368600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Kongsberg Gruppen ASA",
+  "shortName": "Kongsberg Gruppen ASA",
+  "symbol": "KBGGY"
+ },
+ "queried_at": "2026-09-27T22:40:32Z",
+ "symbol": "KBGGY"
+}

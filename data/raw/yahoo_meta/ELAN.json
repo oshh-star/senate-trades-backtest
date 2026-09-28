@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1537450200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Elanco Animal Health Incorporated",
+  "shortName": "Elanco Animal Health Incorporat",
+  "symbol": "ELAN"
+ },
+ "queried_at": "2026-09-27T22:34:39Z",
+ "symbol": "ELAN"
+}

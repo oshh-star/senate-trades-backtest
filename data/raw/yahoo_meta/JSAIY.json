@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1201703400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "J Sainsbury plc",
+  "shortName": "J Sainsbury plc",
+  "symbol": "JSAIY"
+ },
+ "queried_at": "2026-09-27T22:40:20Z",
+ "symbol": "JSAIY"
+}

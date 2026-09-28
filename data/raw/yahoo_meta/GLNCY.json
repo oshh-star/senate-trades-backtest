@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1328538600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Glencore plc",
+  "shortName": "Glencore Plc",
+  "symbol": "GLNCY"
+ },
+ "queried_at": "2026-09-27T22:37:19Z",
+ "symbol": "GLNCY"
+}

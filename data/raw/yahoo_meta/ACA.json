@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1541428200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Arcosa, Inc.",
+  "shortName": "Arcosa, Inc.",
+  "symbol": "ACA"
+ },
+ "queried_at": "2026-09-27T22:26:35Z",
+ "symbol": "ACA"
+}

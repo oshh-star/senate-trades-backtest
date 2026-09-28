@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1302874200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "STAG Industrial, Inc.",
+  "shortName": "Stag Industrial, Inc.",
+  "symbol": "STAG"
+ },
+ "queried_at": "2026-09-27T22:50:05Z",
+ "symbol": "STAG"
+}

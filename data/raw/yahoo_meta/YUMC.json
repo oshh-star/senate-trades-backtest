@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1476711000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Yum China Holdings, Inc.",
+  "shortName": "Yum China Holdings, Inc.",
+  "symbol": "YUMC"
+ },
+ "queried_at": "2026-09-27T22:54:36Z",
+ "symbol": "YUMC"
+}

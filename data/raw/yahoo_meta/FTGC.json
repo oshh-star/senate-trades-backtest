@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1382535000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust Global Tactical Commodity Strategy Fund",
+  "shortName": "First Trust Global Tactical Com",
+  "symbol": "FTGC"
+ },
+ "queried_at": "2026-09-27T22:36:42Z",
+ "symbol": "FTGC"
+}

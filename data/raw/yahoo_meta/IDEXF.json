@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1326810600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Industria de Dise\u00f1o Textil, S.A.",
+  "shortName": "Industria de Diseno Textil Indi",
+  "symbol": "IDEXF"
+ },
+ "queried_at": "2026-09-27T23:00:51Z",
+ "symbol": "IDEXF"
+}

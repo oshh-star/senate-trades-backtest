@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 339255000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Globe Life Inc.",
+  "shortName": "Globe Life Inc.",
+  "symbol": "GL"
+ },
+ "queried_at": "2026-09-27T22:37:16Z",
+ "symbol": "GL"
+}

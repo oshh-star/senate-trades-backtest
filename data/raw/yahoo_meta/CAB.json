@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:30Z"
+ },
+ "queried_at": "2026-09-27T22:58:42Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Cabaletta Bio, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Cabaletta Bio, Inc.",
+   "symbol": "CABA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Cable One, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Cable One, Inc.",
+   "symbol": "CABO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Optical Cable Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Optical Cable Corporation",
+   "symbol": "OCC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Cabot Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Cabot Corporation",
+   "symbol": "CBT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Cabral Gold Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "CABRAL GOLD INC",
+   "symbol": "CBR.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Asia Pacific Wire & Cable Corporation Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Asia Pacific Wire & Cable Corpo",
+   "symbol": "APWC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Madrid Stock Exchange CATS",
+   "exchange": "MCE",
+   "longname": "CaixaBank, S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "CAIXABANK, S.A.",
+   "symbol": "CABK.MC",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CAB"
+}

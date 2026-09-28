@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146835800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Pharmaceuticals ETF",
+  "shortName": "iShares U.S. Pharmaceutical ETF",
+  "symbol": "IHE"
+ },
+ "queried_at": "2026-09-27T22:39:14Z",
+ "symbol": "IHE"
+}

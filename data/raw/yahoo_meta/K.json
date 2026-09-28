@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:40:24Z"
+ },
+ "queried_at": "2026-09-27T23:01:06Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "KraneShares Actuator ETF",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "TORK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "The Coca-Cola Company",
+   "quoteType": "EQUITY",
+   "shortname": "Coca-Cola Company (The)",
+   "symbol": "KO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "USD/KRW",
+   "quoteType": "CURRENCY",
+   "shortname": "USD/KRW",
+   "symbol": "KRW=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "ICE Futures",
+   "exchange": "NYB",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "Coffee Dec 26",
+   "symbol": "KC=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "Chicago Board of Trade",
+   "exchange": "CBT",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "KC HRW Wheat Futures,Dec-2026",
+   "symbol": "KE=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "EUR/KRW",
+   "quoteType": "CURRENCY",
+   "shortname": "EUR/KRW",
+   "symbol": "EURKRW=X",
+   "typeDisp": "Currency"
+  },
+  {
+   "exchDisp": "CCY",
+   "exchange": "CCY",
+   "longname": "JPY/KRW",
+   "quoteType": "CURRENCY",
+   "shortname": "JPY/KRW",
+   "symbol": "JPYKRW=X",
+   "typeDisp": "Currency"
+  }
+ ],
+ "symbol": "K"
+}

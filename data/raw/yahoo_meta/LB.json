@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1719581400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "LandBridge Company LLC",
+  "shortName": "LandBridge Company LLC",
+  "symbol": "LB"
+ },
+ "queried_at": "2026-09-27T22:41:14Z",
+ "symbol": "LB"
+}

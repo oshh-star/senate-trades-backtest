@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1290609000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Pan Pacific International Holdings Corporation",
+  "shortName": "Pan Pac Intl Hldgs Corp.",
+  "symbol": "DQJCY"
+ },
+ "queried_at": "2026-09-27T22:33:57Z",
+ "symbol": "DQJCY"
+}

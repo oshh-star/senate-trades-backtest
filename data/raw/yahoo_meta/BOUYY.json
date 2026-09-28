@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1723728600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Bouygues SA",
+  "shortName": "Bouygues SA",
+  "symbol": "BOUYY"
+ },
+ "queried_at": "2026-09-27T22:29:53Z",
+ "symbol": "BOUYY"
+}

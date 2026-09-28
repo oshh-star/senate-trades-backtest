@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Deutsche Bank Aktiengesellschaft",
+  "shortName": "Deutsche Bank AG",
+  "symbol": "DB"
+ },
+ "queried_at": "2026-09-27T22:33:02Z",
+ "symbol": "DB"
+}

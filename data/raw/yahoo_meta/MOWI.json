@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:43:06Z"
+ },
+ "queried_at": "2026-09-27T23:01:46Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Oslo",
+   "exchange": "OSL",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "MOWI",
+   "symbol": "MOWI.OL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "Mowi ASA",
+   "symbol": "MHGVY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "Mowi ASA",
+   "symbol": "MNHVF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "Mowi ASA                      N",
+   "symbol": "PNDA.HM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "Mowi ASA                      N",
+   "symbol": "PND.HM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Moerus Worldwide Institutional",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Moerus Worldwide Value Fund - I",
+   "symbol": "MOWIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Stuttgart",
+   "exchange": "STU",
+   "longname": "Mowi ASA",
+   "quoteType": "EQUITY",
+   "shortname": "Mowi ASA",
+   "symbol": "PND.SG",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "MOWI"
+}

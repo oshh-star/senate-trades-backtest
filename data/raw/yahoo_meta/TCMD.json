@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1469712600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Tactile Systems Technology, Inc.",
+  "shortName": "Tactile Systems Technology, Inc",
+  "symbol": "TCMD"
+ },
+ "queried_at": "2026-09-27T22:50:36Z",
+ "symbol": "TCMD"
+}

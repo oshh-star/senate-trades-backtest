@@ -1,0 +1,60 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:04Z"
+ },
+ "queried_at": "2026-09-27T22:58:48Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "Bristol-Myers Squibb Company Ce",
+   "symbol": "CELG-RI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CI Global Value Fund (Series A units) LSC (843A3)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CELGX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Companhia CELG de Participa\u00e7\u00f5es S/A",
+   "quoteType": "EQUITY",
+   "shortname": "CELGPAR     ON",
+   "symbol": "GPAR3.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "CELGPAR     ON",
+   "symbol": "GPAR3F.SA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CELG"
+}

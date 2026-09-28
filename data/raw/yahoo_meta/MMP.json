@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:42:58Z"
+ },
+ "queried_at": "2026-09-27T23:01:44Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL EAFE Equity 75/75 (MMP) FE (869241A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAAGX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Canadian Core Bond 100/100 (MMP EGB) FE (869022A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAKIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Canadian Dividend 100/100 (MMP EGB) FE (869094A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAJOX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Canadian Fixed Income Balanced II 100/100 (MMP EGB) FE (869252A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAWHX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Visio Income Portfolio II 100/100 (MMP EGB) FE (869361A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAUDX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Canadian Equity Portfolio 100/100 (MMP EGB) FE (869319A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAUBX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "GWL Global Bond 75/75 (MMP) FE (869235A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "ZGAAFX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "MMP"
+}

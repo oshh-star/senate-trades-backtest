@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1310477400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Kering SA",
+  "shortName": "Kering SA",
+  "symbol": "PPRUY"
+ },
+ "queried_at": "2026-09-27T22:46:23Z",
+ "symbol": "PPRUY"
+}

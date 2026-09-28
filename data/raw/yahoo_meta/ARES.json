@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1399037400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ares Management Corporation",
+  "shortName": "Ares Management Corporation",
+  "symbol": "ARES"
+ },
+ "queried_at": "2026-09-27T22:28:11Z",
+ "symbol": "ARES"
+}

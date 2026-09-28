@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1132065000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "EQUITY",
+  "longName": "State Street SPDR Portfolio S&P 500 ETF",
+  "shortName": "State Street SPDR Portfolio S&P",
+  "symbol": "SPYM"
+ },
+ "queried_at": "2026-09-27T22:49:49Z",
+ "symbol": "SPYM"
+}

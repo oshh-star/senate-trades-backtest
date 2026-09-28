@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1049981400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "InterContinental Hotels Group PLC",
+  "shortName": "Intercontinental Hotels Group",
+  "symbol": "IHG"
+ },
+ "queried_at": "2026-09-27T22:39:16Z",
+ "symbol": "IHG"
+}

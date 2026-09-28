@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 705331800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Buckle, Inc.",
+  "shortName": "Buckle, Inc. (The)",
+  "symbol": "BKE"
+ },
+ "queried_at": "2026-09-27T22:29:33Z",
+ "symbol": "BKE"
+}

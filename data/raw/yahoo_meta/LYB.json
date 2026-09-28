@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1272461400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "LyondellBasell Industries N.V.",
+  "shortName": "LyondellBasell Industries NV",
+  "symbol": "LYB"
+ },
+ "queried_at": "2026-09-27T22:42:08Z",
+ "symbol": "LYB"
+}

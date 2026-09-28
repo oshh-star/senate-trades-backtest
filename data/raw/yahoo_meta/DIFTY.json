@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1287149400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daito Trust Construction Co.,Ltd.",
+  "shortName": "Daito Trust Construction Co.",
+  "symbol": "DIFTY"
+ },
+ "queried_at": "2026-09-27T22:33:26Z",
+ "symbol": "DIFTY"
+}

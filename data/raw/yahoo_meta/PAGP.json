@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1381930200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Plains GP Holdings, L.P.",
+  "shortName": "Plains GP Holdings, L.P.",
+  "symbol": "PAGP"
+ },
+ "queried_at": "2026-09-27T22:45:26Z",
+ "symbol": "PAGP"
+}

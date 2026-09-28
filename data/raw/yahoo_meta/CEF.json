@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "ASE",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 512922600,
+  "fullExchangeName": "NYSE American",
+  "instrumentType": "EQUITY",
+  "longName": "Sprott Physical Gold and Silver Trust",
+  "shortName": "\"Sprott Physical Gold and Silve",
+  "symbol": "CEF"
+ },
+ "queried_at": "2026-09-27T22:31:02Z",
+ "symbol": "CEF"
+}

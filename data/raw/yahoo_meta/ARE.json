@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 864826200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Alexandria Real Estate Equities, Inc.",
+  "shortName": "Alexandria Real Estate Equities",
+  "symbol": "ARE"
+ },
+ "queried_at": "2026-09-27T22:28:10Z",
+ "symbol": "ARE"
+}

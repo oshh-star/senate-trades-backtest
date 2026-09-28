@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:18Z"
+ },
+ "queried_at": "2026-09-27T22:58:38Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Baby Bunting Group Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BABY B FPO [BBN]",
+   "symbol": "BBN.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CXA",
+   "exchange": "CXA",
+   "longname": "Baby Bunting Group Limited",
+   "quoteType": "EQUITY",
+   "shortname": "BABY B FPO [BBN]",
+   "symbol": "BBN.XA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BUNT"
+}

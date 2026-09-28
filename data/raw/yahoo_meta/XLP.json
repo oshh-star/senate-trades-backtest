@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 914337000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street Consumer Staples Select Sector SPDR ETF",
+  "shortName": "State Street Consumer Staples S",
+  "symbol": "XLP"
+ },
+ "queried_at": "2026-09-27T22:54:20Z",
+ "symbol": "XLP"
+}

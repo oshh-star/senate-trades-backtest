@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1287149400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ASX Limited",
+  "shortName": "ASX, Ltd.",
+  "symbol": "ASXFY"
+ },
+ "queried_at": "2026-09-27T22:28:23Z",
+ "symbol": "ASXFY"
+}

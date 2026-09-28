@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415802600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Axalta Coating Systems Ltd.",
+  "shortName": "Axalta Coating Systems Ltd.",
+  "symbol": "AXTA"
+ },
+ "queried_at": "2026-09-27T22:28:44Z",
+ "symbol": "AXTA"
+}

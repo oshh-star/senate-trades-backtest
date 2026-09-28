@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 948724200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "AMG TimesSquare Small Cap Growth Z",
+  "shortName": "AMG TimesSquare Small Cap Growt",
+  "symbol": "TSCIX"
+ },
+ "queried_at": "2026-09-27T22:51:26Z",
+ "symbol": "TSCIX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1331731800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "A.P. M\u00f8ller - M\u00e6rsk A/S",
+  "shortName": "A.P. Moeller-Maersk A/S",
+  "symbol": "AMKBY"
+ },
+ "queried_at": "2026-09-27T22:27:39Z",
+ "symbol": "AMKBY"
+}

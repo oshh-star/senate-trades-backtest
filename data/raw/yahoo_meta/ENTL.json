@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1782221400,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Leverage Shares 2X Long ENTG Daily ETF",
+  "shortName": "Leverage Shares 2X Long ENTG Da",
+  "symbol": "ENTL"
+ },
+ "queried_at": "2026-09-27T22:34:50Z",
+ "symbol": "ENTL"
+}

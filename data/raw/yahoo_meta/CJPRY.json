@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262097000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Central Japan Railway Company",
+  "shortName": "Central Japan Railway Co.",
+  "symbol": "CJPRY"
+ },
+ "queried_at": "2026-09-27T22:31:34Z",
+ "symbol": "CJPRY"
+}

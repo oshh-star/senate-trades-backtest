@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1360938600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Invesco S&P SmallCap Low Volatility ETF",
+  "shortName": "Invesco S&P SmallCap Low Volati",
+  "symbol": "XSLV"
+ },
+ "queried_at": "2026-09-27T22:54:32Z",
+ "symbol": "XSLV"
+}

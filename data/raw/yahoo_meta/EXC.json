@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105197400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Exelon Corporation",
+  "shortName": "Exelon Corporation",
+  "symbol": "EXC"
+ },
+ "queried_at": "2026-09-27T22:35:28Z",
+ "symbol": "EXC"
+}

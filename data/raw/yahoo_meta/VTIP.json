@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1350394200,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Vanguard Short-Term Inflation-Protected Securities Index Fund ETF Shares",
+  "shortName": "Vanguard Short-Term Inflation-P",
+  "symbol": "VTIP"
+ },
+ "queried_at": "2026-09-27T22:53:09Z",
+ "symbol": "VTIP"
+}

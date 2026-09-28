@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 533226600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Coca-Cola Europacific Partners PLC",
+  "shortName": "Coca-Cola Europacific Partners ",
+  "symbol": "CCEP"
+ },
+ "queried_at": "2026-09-27T22:30:52Z",
+ "symbol": "CCEP"
+}

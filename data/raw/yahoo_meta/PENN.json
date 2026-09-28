@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 769959000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "PENN Entertainment, Inc.",
+  "shortName": "PENN Entertainment, Inc.",
+  "symbol": "PENN"
+ },
+ "queried_at": "2026-09-27T22:45:47Z",
+ "symbol": "PENN"
+}

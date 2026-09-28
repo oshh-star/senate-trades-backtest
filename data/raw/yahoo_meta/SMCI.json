@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1175175000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Super Micro Computer, Inc.",
+  "shortName": "Super Micro Computer, Inc.",
+  "symbol": "SMCI"
+ },
+ "queried_at": "2026-09-27T22:49:16Z",
+ "symbol": "SMCI"
+}

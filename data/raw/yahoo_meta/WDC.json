@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 278692200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Western Digital Corporation",
+  "shortName": "Western Digital Corporation",
+  "symbol": "WDC"
+ },
+ "queried_at": "2026-09-27T22:53:28Z",
+ "symbol": "WDC"
+}

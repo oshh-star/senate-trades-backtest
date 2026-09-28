@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1277818200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Tesla, Inc.",
+  "shortName": "Tesla, Inc.",
+  "symbol": "TSLA"
+ },
+ "queried_at": "2026-09-27T22:51:28Z",
+ "symbol": "TSLA"
+}

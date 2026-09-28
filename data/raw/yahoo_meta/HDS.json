@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:38:06Z"
+ },
+ "queried_at": "2026-09-27T23:00:34Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Hudson Technologies, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Hudson Technologies, Inc.",
+   "symbol": "HDSN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Northern Lights Fund Trust II - Hodges Small Cap Growth Fund",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "HDSAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Oslo",
+   "exchange": "OSL",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "Haltdalen Spb 23/27 FRN",
+   "symbol": "HDSB19-PRO.OL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "HDSN Nov 2026 5.000 put",
+   "quoteType": "OPTION",
+   "shortname": "HDSN Nov 2026 5.000 put",
+   "symbol": "HDSN261120P00005000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "HDSN Nov 2026 4.000 put",
+   "quoteType": "OPTION",
+   "shortname": "HDSN Nov 2026 4.000 put",
+   "symbol": "HDSN261120P00004000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "HDSN Feb 2027 10.000 call",
+   "quoteType": "OPTION",
+   "shortname": "HDSN Feb 2027 10.000 call",
+   "symbol": "HDSN270219C00010000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "HDSN Feb 2027 1.000 call",
+   "quoteType": "OPTION",
+   "shortname": "HDSN Feb 2027 1.000 call",
+   "symbol": "HDSN270219C00001000",
+   "typeDisp": "Option"
+  }
+ ],
+ "symbol": "HDS"
+}

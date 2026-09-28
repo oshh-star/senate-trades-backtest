@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1729517400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": null,
+  "shortName": "Nebius Group N.V.",
+  "symbol": "NBIS"
+ },
+ "queried_at": "2026-09-27T22:43:46Z",
+ "symbol": "NBIS"
+}

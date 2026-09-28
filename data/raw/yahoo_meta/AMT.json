@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 888589800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "American Tower Corporation",
+  "shortName": "American Tower Corporation (REI",
+  "symbol": "AMT"
+ },
+ "queried_at": "2026-09-27T22:27:43Z",
+ "symbol": "AMT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 378657000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Williams Companies, Inc.",
+  "shortName": "Williams Companies, Inc. (The)",
+  "symbol": "WMB"
+ },
+ "queried_at": "2026-09-27T22:53:47Z",
+ "symbol": "WMB"
+}

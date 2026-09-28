@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1488465000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Snap Inc.",
+  "shortName": "Snap Inc.",
+  "symbol": "SNAP"
+ },
+ "queried_at": "2026-09-27T22:49:28Z",
+ "symbol": "SNAP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 819037800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Hartford Insurance Group, Inc.",
+  "shortName": "The Hartford Insurance Group, I",
+  "symbol": "HIG"
+ },
+ "queried_at": "2026-09-27T22:38:15Z",
+ "symbol": "HIG"
+}

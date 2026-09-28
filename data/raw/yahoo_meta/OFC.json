@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:44:59Z"
+ },
+ "queried_at": "2026-09-27T23:02:11Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Global X ETF Series OFC - Global X China Semiconductor ETF",
+   "quoteType": "ETF",
+   "shortname": "GX CN SEMICON",
+   "symbol": "3191.HK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Global X Exchange Traded Funds Series OFC - Global X HSI Covered Call Active ETF",
+   "quoteType": "ETF",
+   "shortname": "A GX HSICC",
+   "symbol": "3419.HK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "China Asset Management (Hong Kong) Limited - Select OFC Bitcoin ETF Fund",
+   "quoteType": "ETF",
+   "shortname": "CAM BTC-R",
+   "symbol": "83042.HK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Global X Exchange Traded Funds Series OFC - Global X MSCI Asia Pacific ex Japan ETF",
+   "quoteType": "ETF",
+   "shortname": "GX APAC-U",
+   "symbol": "9064.HK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "OneFootball Credits USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "OneFootball Credits USD",
+   "symbol": "OFC39851-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "OFC7H.NX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Euronext",
+   "exchange": "ENX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "OFC8H.NX",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "OFC"
+}

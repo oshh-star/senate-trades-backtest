@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1536845400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Janus Henderson Mortgage-Backed Securities ETF",
+  "shortName": "Janus Henderson Mortgage-Backed",
+  "symbol": "JMBS"
+ },
+ "queried_at": "2026-09-27T22:40:11Z",
+ "symbol": "JMBS"
+}

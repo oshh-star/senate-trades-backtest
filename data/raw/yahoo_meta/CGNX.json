@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 616944600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cognex Corporation",
+  "shortName": "Cognex Corporation",
+  "symbol": "CGNX"
+ },
+ "queried_at": "2026-09-27T22:31:21Z",
+ "symbol": "CGNX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 862839000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ventas, Inc.",
+  "shortName": "Ventas, Inc.",
+  "symbol": "VTR"
+ },
+ "queried_at": "2026-09-27T22:53:10Z",
+ "symbol": "VTR"
+}

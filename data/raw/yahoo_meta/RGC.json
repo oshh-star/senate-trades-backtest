@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1626442200,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Regencell Bioscience Holdings Limited",
+  "shortName": "Regencell Bioscience Holdings L",
+  "symbol": "RGC"
+ },
+ "queried_at": "2026-09-27T22:47:28Z",
+ "symbol": "RGC"
+}

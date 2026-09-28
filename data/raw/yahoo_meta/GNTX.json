@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 377879400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Gentex Corporation",
+  "shortName": "Gentex Corporation",
+  "symbol": "GNTX"
+ },
+ "queried_at": "2026-09-27T22:37:31Z",
+ "symbol": "GNTX"
+}

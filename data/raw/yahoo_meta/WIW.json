@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1077719400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Western Asset Inflation-Linked Opportunities & Income Fund",
+  "shortName": "Western Asset Inflation-Linked ",
+  "symbol": "WIW"
+ },
+ "queried_at": "2026-09-27T22:53:42Z",
+ "symbol": "WIW"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1481207400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "ACS, Actividades de Construcci\u00f3n y Servicios, S.A.",
+  "shortName": "ACS Actividades De Construccion",
+  "symbol": "ACSAY"
+ },
+ "queried_at": "2026-09-27T22:26:40Z",
+ "symbol": "ACSAY"
+}

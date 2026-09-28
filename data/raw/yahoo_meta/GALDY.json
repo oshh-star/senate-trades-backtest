@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1723728600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Galderma Group AG",
+  "shortName": "GALDERMA GROUP AG",
+  "symbol": "GALDY"
+ },
+ "queried_at": "2026-09-27T22:36:51Z",
+ "symbol": "GALDY"
+}

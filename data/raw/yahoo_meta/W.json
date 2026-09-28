@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1412256600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Wayfair Inc.",
+  "shortName": "Wayfair Inc.",
+  "symbol": "W"
+ },
+ "queried_at": "2026-09-27T22:53:19Z",
+ "symbol": "W"
+}

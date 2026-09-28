@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Deutsche Lufthansa AG",
+  "shortName": "Deutsche Lufthansa AG",
+  "symbol": "DLAKY"
+ },
+ "queried_at": "2026-09-27T22:33:34Z",
+ "symbol": "DLAKY"
+}

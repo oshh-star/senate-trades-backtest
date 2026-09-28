@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1778506200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Wise Group plc",
+  "shortName": "Wise Group plc",
+  "symbol": "WSE"
+ },
+ "queried_at": "2026-09-27T23:04:08Z",
+ "symbol": "WSE"
+}

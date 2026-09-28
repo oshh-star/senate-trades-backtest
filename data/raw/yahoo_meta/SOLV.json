@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1711459800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Solventum Corporation",
+  "shortName": "Solventum Corporation",
+  "symbol": "SOLV"
+ },
+ "queried_at": "2026-09-27T22:49:39Z",
+ "symbol": "SOLV"
+}

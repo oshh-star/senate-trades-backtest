@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "EUR",
+  "exchangeName": "PAR",
+  "exchangeTimezoneName": "Europe/Paris",
+  "firstTradeDate": 1785740400,
+  "fullExchangeName": "Paris",
+  "instrumentType": "EQUITY",
+  "longName": "Yieldmax MSTR Option Income Strategy ETC",
+  "shortName": "Yieldmax MSTR Option Income Str",
+  "symbol": "MSTY.PA"
+ },
+ "queried_at": "2026-09-27T22:43:29Z",
+ "symbol": "MSTY.PA"
+}

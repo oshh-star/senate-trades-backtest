@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1561555800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BlackRock Science and Technology Term Trust",
+  "shortName": "BlackRock Science and Technolog",
+  "symbol": "BSTZ"
+ },
+ "queried_at": "2026-09-27T22:30:12Z",
+ "symbol": "BSTZ"
+}

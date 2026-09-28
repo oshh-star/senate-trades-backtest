@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1141050600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Grupo Aeroportuario del Pac\u00edfico, S.A.B. de C.V.",
+  "shortName": "Grupo Aeroportuario Del Pacific",
+  "symbol": "PAC"
+ },
+ "queried_at": "2026-09-27T22:45:25Z",
+ "symbol": "PAC"
+}

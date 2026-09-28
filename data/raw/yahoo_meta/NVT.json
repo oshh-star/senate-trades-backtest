@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1524576600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "nVent Electric plc",
+  "shortName": "nVent Electric plc",
+  "symbol": "NVT"
+ },
+ "queried_at": "2026-09-27T22:44:44Z",
+ "symbol": "NVT"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1474464600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "The Trade Desk, Inc.",
+  "shortName": "The Trade Desk, Inc.",
+  "symbol": "TTD"
+ },
+ "queried_at": "2026-09-27T22:51:32Z",
+ "symbol": "TTD"
+}

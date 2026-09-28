@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1560346200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "CrowdStrike Holdings, Inc.",
+  "shortName": "CrowdStrike Holdings, Inc.",
+  "symbol": "CRWD"
+ },
+ "queried_at": "2026-09-27T22:32:27Z",
+ "symbol": "CRWD"
+}

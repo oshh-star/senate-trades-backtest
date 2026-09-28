@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Caterpillar Inc.",
+  "shortName": "Caterpillar, Inc.",
+  "symbol": "CAT"
+ },
+ "queried_at": "2026-09-27T22:30:43Z",
+ "symbol": "CAT"
+}

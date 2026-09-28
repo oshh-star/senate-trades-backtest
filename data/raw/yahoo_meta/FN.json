@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1277472600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fabrinet",
+  "shortName": "Fabrinet",
+  "symbol": "FN"
+ },
+ "queried_at": "2026-09-27T22:36:24Z",
+ "symbol": "FN"
+}

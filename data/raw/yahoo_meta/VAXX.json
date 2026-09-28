@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1636641000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Vaxxinity, Inc.",
+  "shortName": "Vaxxinity, Inc.",
+  "symbol": "VAXX"
+ },
+ "queried_at": "2026-09-27T22:52:23Z",
+ "symbol": "VAXX"
+}

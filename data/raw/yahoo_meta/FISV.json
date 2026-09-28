@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 528039000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Fiserv, Inc.",
+  "shortName": "Fiserv, Inc.",
+  "symbol": "FISV"
+ },
+ "queried_at": "2026-09-27T22:36:10Z",
+ "symbol": "FISV"
+}

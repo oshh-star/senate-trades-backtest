@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146835800,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Regional Banks ETF",
+  "shortName": "iShares U.S. Regional Banks ETF",
+  "symbol": "IAT"
+ },
+ "queried_at": "2026-09-27T22:38:48Z",
+ "symbol": "IAT"
+}

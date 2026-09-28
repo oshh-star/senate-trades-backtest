@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1142433000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Toray Industries, Inc.",
+  "shortName": "Toray Industries Inc.",
+  "symbol": "TRYIY"
+ },
+ "queried_at": "2026-09-27T22:51:24Z",
+ "symbol": "TRYIY"
+}

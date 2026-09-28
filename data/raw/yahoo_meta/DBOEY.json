@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Deutsche B\u00f6rse AG",
+  "shortName": "Deutsche Boerse AG",
+  "symbol": "DBOEY"
+ },
+ "queried_at": "2026-09-27T22:33:04Z",
+ "symbol": "DBOEY"
+}

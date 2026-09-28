@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1784295000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daifuku Co Ltd",
+  "shortName": "Daifuku Co., Ltd.",
+  "symbol": "DFKCY"
+ },
+ "queried_at": "2026-09-27T22:33:14Z",
+ "symbol": "DFKCY"
+}

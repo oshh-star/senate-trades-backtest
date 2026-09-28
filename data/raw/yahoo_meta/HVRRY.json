@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Hannover R\u00fcck SE",
+  "shortName": "Hannover Re",
+  "symbol": "HVRRY"
+ },
+ "queried_at": "2026-09-27T22:38:40Z",
+ "symbol": "HVRRY"
+}

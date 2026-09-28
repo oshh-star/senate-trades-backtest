@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 823185000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Iron Mountain Incorporated",
+  "shortName": "Iron Mountain Incorporated (Del",
+  "symbol": "IRM"
+ },
+ "queried_at": "2026-09-27T22:39:39Z",
+ "symbol": "IRM"
+}

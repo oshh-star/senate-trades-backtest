@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1178199000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Delta Air Lines, Inc.",
+  "shortName": "Delta Air Lines, Inc.",
+  "symbol": "DAL"
+ },
+ "queried_at": "2026-09-27T22:32:57Z",
+ "symbol": "DAL"
+}

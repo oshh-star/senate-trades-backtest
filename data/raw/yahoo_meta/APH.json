@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 689610600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Amphenol Corporation",
+  "shortName": "Amphenol Corporation",
+  "symbol": "APH"
+ },
+ "queried_at": "2026-09-27T22:28:02Z",
+ "symbol": "APH"
+}

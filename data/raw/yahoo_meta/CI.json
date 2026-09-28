@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 386433000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Cigna Group",
+  "shortName": "The Cigna Group",
+  "symbol": "CI"
+ },
+ "queried_at": "2026-09-27T22:31:31Z",
+ "symbol": "CI"
+}

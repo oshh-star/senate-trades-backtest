@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 898263000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Cognizant Technology Solutions Corporation",
+  "shortName": "Cognizant Technology Solutions ",
+  "symbol": "CTSH"
+ },
+ "queried_at": "2026-09-27T22:32:41Z",
+ "symbol": "CTSH"
+}

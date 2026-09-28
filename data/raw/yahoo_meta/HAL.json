@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Halliburton Company",
+  "shortName": "Halliburton Company",
+  "symbol": "HAL"
+ },
+ "queried_at": "2026-09-27T22:37:53Z",
+ "symbol": "HAL"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1610116200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Disco Corporation",
+  "shortName": "Disco Corp.",
+  "symbol": "DSCSY"
+ },
+ "queried_at": "2026-09-27T22:34:00Z",
+ "symbol": "DSCSY"
+}

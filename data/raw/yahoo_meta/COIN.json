@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1618407000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Coinbase Global, Inc.",
+  "shortName": "Coinbase Global, Inc.",
+  "symbol": "COIN"
+ },
+ "queried_at": "2026-09-27T22:32:01Z",
+ "symbol": "COIN"
+}

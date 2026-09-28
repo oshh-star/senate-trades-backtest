@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 706282200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Boston Scientific Corporation",
+  "shortName": "Boston Scientific Corporation",
+  "symbol": "BSX"
+ },
+ "queried_at": "2026-09-27T22:30:13Z",
+ "symbol": "BSX"
+}

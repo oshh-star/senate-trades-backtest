@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:40Z"
+ },
+ "queried_at": "2026-09-27T22:59:39Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Digimarc Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Digimarc Corporation",
+   "symbol": "DMRC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Avenue Supermarts Limited",
+   "quoteType": "EQUITY",
+   "shortname": "AVENUE SUPERMARTS LIMITED",
+   "symbol": "DMART.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "DiaMedica Therapeutics Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "DiaMedica Therapeutics Inc.",
+   "symbol": "DMAC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Dorchester Minerals, L.P.",
+   "quoteType": "EQUITY",
+   "shortname": "Dorchester Minerals, L.P.",
+   "symbol": "DMLP",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Diamond INR",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Diamond INR",
+   "symbol": "DMD-INR",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "DMC Global Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "DMC Global Inc.",
+   "symbol": "BOOM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "BNY Mellon Municipal Bond Infrastructure Fund, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Dreyfus Municipal Bond Infrastr",
+   "symbol": "DMB",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "DM"
+}

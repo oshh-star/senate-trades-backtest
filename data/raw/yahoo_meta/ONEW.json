@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1581085800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "OneWater Marine Inc.",
+  "shortName": "OneWater Marine Inc.",
+  "symbol": "ONEW"
+ },
+ "queried_at": "2026-09-27T22:45:12Z",
+ "symbol": "ONEW"
+}

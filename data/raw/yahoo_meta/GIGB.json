@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1496928600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Goldman Sachs Access Investment Grade Corporate Bond ETF",
+  "shortName": "Goldman Sachs Access Investment",
+  "symbol": "GIGB"
+ },
+ "queried_at": "2026-09-27T22:37:13Z",
+ "symbol": "GIGB"
+}

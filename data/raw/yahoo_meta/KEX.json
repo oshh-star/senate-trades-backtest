@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Kirby Corporation",
+  "shortName": "Kirby Corporation",
+  "symbol": "KEX"
+ },
+ "queried_at": "2026-09-27T22:40:36Z",
+ "symbol": "KEX"
+}

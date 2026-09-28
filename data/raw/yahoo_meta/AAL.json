@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1127827800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "American Airlines Group Inc.",
+  "shortName": "American Airlines Group, Inc.",
+  "symbol": "AAL"
+ },
+ "queried_at": "2026-09-27T22:26:21Z",
+ "symbol": "AAL"
+}

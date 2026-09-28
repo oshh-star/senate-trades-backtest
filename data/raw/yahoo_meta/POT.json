@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:46:18Z"
+ },
+ "queried_at": "2026-09-27T23:02:23Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Intrepid Potash, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Intrepid Potash, Inc",
+   "symbol": "IPI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Buffalo Potash Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "BUFFALO POTASH CORPORATION",
+   "symbol": "BUFF.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE MKT",
+   "exchange": "ASE",
+   "longname": "Brazil Potash Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Brazil Potash Corp.",
+   "symbol": "GRO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Millennial Potash Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "MILLENNIAL POTASH CORP",
+   "symbol": "MLP.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Buffalo Potash Corp.",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "BLPTF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CDNX",
+   "exchange": "VAN",
+   "longname": "Gensource Potash Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "GENSOURCE POTASH CORPORATION",
+   "symbol": "GSP.V",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Potomac Defensive Bull - Instl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Conquer Risk Defensive Bull Fun",
+   "symbol": "CRDBX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "POT"
+}

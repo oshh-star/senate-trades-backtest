@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1397223000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Farmland Partners Inc.",
+  "shortName": "Farmland Partners Inc.",
+  "symbol": "FPI"
+ },
+ "queried_at": "2026-09-27T22:36:29Z",
+ "symbol": "FPI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1087997400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Salesforce, Inc.",
+  "shortName": "Salesforce, Inc.",
+  "symbol": "CRM"
+ },
+ "queried_at": "2026-09-27T22:32:20Z",
+ "symbol": "CRM"
+}

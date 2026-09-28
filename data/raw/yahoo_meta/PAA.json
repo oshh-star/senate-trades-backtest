@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 911399400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Plains All American Pipeline, L.P.",
+  "shortName": "Plains All American Pipeline, L",
+  "symbol": "PAA"
+ },
+ "queried_at": "2026-09-27T22:45:23Z",
+ "symbol": "PAA"
+}

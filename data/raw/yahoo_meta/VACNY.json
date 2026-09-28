@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1610116200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "VAT Group AG",
+  "shortName": "VAT Group AG",
+  "symbol": "VACNY"
+ },
+ "queried_at": "2026-09-27T22:52:21Z",
+ "symbol": "VACNY"
+}

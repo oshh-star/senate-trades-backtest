@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1567517400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "UPM-Kymmene Oyj",
+  "shortName": "UPM-Kymmene Corp.",
+  "symbol": "UPMMY"
+ },
+ "queried_at": "2026-09-27T22:52:07Z",
+ "symbol": "UPMMY"
+}

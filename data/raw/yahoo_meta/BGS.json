@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1179927000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "B&G Foods, Inc.",
+  "shortName": "B&G Foods, Inc.",
+  "symbol": "BGS"
+ },
+ "queried_at": "2026-09-27T22:29:18Z",
+ "symbol": "BGS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Eli Lilly and Company",
+  "shortName": "Eli Lilly and Company",
+  "symbol": "LLY"
+ },
+ "queried_at": "2026-09-27T22:41:36Z",
+ "symbol": "LLY"
+}

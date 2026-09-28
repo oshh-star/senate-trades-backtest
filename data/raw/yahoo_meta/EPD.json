@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 901632600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Enterprise Products Partners L.P.",
+  "shortName": "Enterprise Products Partners L.",
+  "symbol": "EPD"
+ },
+ "queried_at": "2026-09-27T22:34:53Z",
+ "symbol": "EPD"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1243863000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Genmab A/S",
+  "shortName": "Genmab A/S",
+  "symbol": "GMAB"
+ },
+ "queried_at": "2026-09-27T22:37:23Z",
+ "symbol": "GMAB"
+}

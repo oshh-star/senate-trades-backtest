@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1474551000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "e.l.f. Beauty, Inc.",
+  "shortName": "e.l.f. Beauty, Inc.",
+  "symbol": "ELF"
+ },
+ "queried_at": "2026-09-27T22:34:40Z",
+ "symbol": "ELF"
+}

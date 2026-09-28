@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1193751000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Vestas Wind Systems A/S",
+  "shortName": "Vestas Wind Systems A/S",
+  "symbol": "VWDRY"
+ },
+ "queried_at": "2026-09-27T22:53:14Z",
+ "symbol": "VWDRY"
+}

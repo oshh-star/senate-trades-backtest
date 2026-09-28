@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1386599400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Volkswagen AG",
+  "shortName": "Volkswagen AG",
+  "symbol": "VWAPY"
+ },
+ "queried_at": "2026-09-27T22:53:13Z",
+ "symbol": "VWAPY"
+}

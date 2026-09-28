@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 816618600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Waters Corporation",
+  "shortName": "Waters Corporation",
+  "symbol": "WAT"
+ },
+ "queried_at": "2026-09-27T22:53:22Z",
+ "symbol": "WAT"
+}

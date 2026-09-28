@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:44:24Z"
+ },
+ "queried_at": "2026-09-27T23:02:05Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Norfolk Southern Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Norfolk Southern Corporation",
+   "symbol": "NSC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Nestl\u00e9 S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "Nestle S.A.",
+   "symbol": "NSRGY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "National Stock Exchange of Ind",
+   "symbol": "NSE.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Nissan Motor Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Nissan Motor Co., Ltd.",
+   "symbol": "NSANY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Neostellar Capital Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "Neostellar Capital Corp.",
+   "symbol": "NSLR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Insight Enterprises, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Insight Enterprises, Inc.",
+   "symbol": "NSIT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Northern Star Resources Limited",
+   "quoteType": "EQUITY",
+   "shortname": "NTH STAR FPO [NST]",
+   "symbol": "NST.AX",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "NS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1075991400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Assurant, Inc.",
+  "shortName": "Assurant, Inc.",
+  "symbol": "AIZ"
+ },
+ "queried_at": "2026-09-27T22:27:10Z",
+ "symbol": "AIZ"
+}

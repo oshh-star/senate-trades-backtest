@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1201703400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "SGS SA",
+  "shortName": "SGS SA",
+  "symbol": "SGSOY"
+ },
+ "queried_at": "2026-09-27T22:48:51Z",
+ "symbol": "SGSOY"
+}

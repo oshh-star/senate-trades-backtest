@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:00Z"
+ },
+ "queried_at": "2026-09-27T22:58:32Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Berkshire Hathaway Inc. New",
+   "symbol": "BRK-B",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Berkshire Hathaway Inc.",
+   "symbol": "BRK-A",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Bruker Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Bruker Corporation",
+   "symbol": "BRKR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Vienna",
+   "exchange": "VIE",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BERKSHIRE HATHAWAY INC",
+   "symbol": "BRKB.VI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "YieldMax BRK.B Option Income Strategy ETF",
+   "quoteType": "ETF",
+   "shortname": "YieldMax BRK.B Option Income St",
+   "symbol": "BRKC",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Direxion Daily BRKB Bull 2X ETF",
+   "symbol": "BRKU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "AQS",
+   "exchange": "AQS",
+   "longname": "Brooks Macdonald Group PLC",
+   "quoteType": "EQUITY",
+   "shortname": "BROOKS MACDONALD G",
+   "symbol": "BRK.AQ",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BRK"
+}

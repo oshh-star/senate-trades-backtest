@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1524835800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "DocuSign, Inc.",
+  "shortName": "DocuSign, Inc.",
+  "symbol": "DOCU"
+ },
+ "queried_at": "2026-09-27T22:33:48Z",
+ "symbol": "DOCU"
+}

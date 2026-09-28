@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 879172200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "FirstEnergy Corp.",
+  "shortName": "FirstEnergy Corp.",
+  "symbol": "FE"
+ },
+ "queried_at": "2026-09-27T22:35:53Z",
+ "symbol": "FE"
+}

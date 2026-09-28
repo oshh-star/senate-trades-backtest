@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1406295000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Advanced Drainage Systems, Inc.",
+  "shortName": "Advanced Drainage Systems, Inc.",
+  "symbol": "WMS"
+ },
+ "queried_at": "2026-09-27T22:53:49Z",
+ "symbol": "WMS"
+}

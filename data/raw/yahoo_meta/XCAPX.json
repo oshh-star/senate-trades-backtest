@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1268058600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "ACAP Strategic Fund",
+  "shortName": "ACAP Strategic Fund",
+  "symbol": "XCAPX"
+ },
+ "queried_at": "2026-09-27T22:54:13Z",
+ "symbol": "XCAPX"
+}

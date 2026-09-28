@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1557495000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Uber Technologies, Inc.",
+  "shortName": "Uber Technologies, Inc.",
+  "symbol": "UBER"
+ },
+ "queried_at": "2026-09-27T22:51:49Z",
+ "symbol": "UBER"
+}

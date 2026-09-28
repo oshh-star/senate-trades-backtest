@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1013610600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "GameStop Corp.",
+  "shortName": "GameStop Corporation",
+  "symbol": "GME"
+ },
+ "queried_at": "2026-09-27T22:37:24Z",
+ "symbol": "GME"
+}

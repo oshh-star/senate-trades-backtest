@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1229524200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "KDDI Corporation",
+  "shortName": "KDDI Corp.",
+  "symbol": "KDDIY"
+ },
+ "queried_at": "2026-09-27T22:40:34Z",
+ "symbol": "KDDIY"
+}

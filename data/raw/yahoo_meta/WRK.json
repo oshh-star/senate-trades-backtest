@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:53:56Z"
+ },
+ "queried_at": "2026-09-27T23:04:06Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "CXE",
+   "exchange": "CXE",
+   "longname": "TheWorks plc",
+   "quoteType": "EQUITY",
+   "shortname": "TheWorks PLC",
+   "symbol": "WRKSL.XC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Wrkr Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "WRKRLTD FPO [WRK]",
+   "symbol": "WRK.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "TheWorks plc",
+   "quoteType": "EQUITY",
+   "shortname": "THEWORKS PLC ORD 1P",
+   "symbol": "WRKS.L",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "Wrapped Rocket Lab Tokenized Stock (xStock) USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "Wrapped Rocket Lab Tokenized Stock (xStock) USD",
+   "symbol": "WRKLBX-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "CXA",
+   "exchange": "CXA",
+   "longname": "Wrkr Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "WRKRLTD FPO [WRK]",
+   "symbol": "WRK.XA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Wrkr Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "wrkr Ltd.                     R",
+   "symbol": "I0P0.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Workrise - Company Level",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "WRKEZZX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "WRK"
+}

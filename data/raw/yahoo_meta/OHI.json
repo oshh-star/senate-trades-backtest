@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 713194200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Omega Healthcare Investors, Inc.",
+  "shortName": "Omega Healthcare Investors, Inc",
+  "symbol": "OHI"
+ },
+ "queried_at": "2026-09-27T22:45:02Z",
+ "symbol": "OHI"
+}

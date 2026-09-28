@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105283800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chemed Corporation",
+  "shortName": "Chemed Corp",
+  "symbol": "CHE"
+ },
+ "queried_at": "2026-09-27T22:31:23Z",
+ "symbol": "CHE"
+}

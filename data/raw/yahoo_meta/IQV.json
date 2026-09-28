@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1368106200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "IQVIA Holdings Inc.",
+  "shortName": "IQVIA Holdings, Inc.",
+  "symbol": "IQV"
+ },
+ "queried_at": "2026-09-27T22:39:35Z",
+ "symbol": "IQV"
+}

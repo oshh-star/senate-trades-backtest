@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 105715800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sysco Corporation",
+  "shortName": "Sysco Corporation",
+  "symbol": "SYY"
+ },
+ "queried_at": "2026-09-27T22:50:27Z",
+ "symbol": "SYY"
+}

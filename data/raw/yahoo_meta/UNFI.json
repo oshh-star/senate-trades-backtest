@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 846858600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "United Natural Foods, Inc.",
+  "shortName": "United Natural Foods, Inc.",
+  "symbol": "UNFI"
+ },
+ "queried_at": "2026-09-27T22:52:01Z",
+ "symbol": "UNFI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1151069400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "First Trust Dow Jones Internet Index Fund",
+  "shortName": "First Trust DJ Internet Index F",
+  "symbol": "FDN"
+ },
+ "queried_at": "2026-09-27T22:35:48Z",
+ "symbol": "FDN"
+}

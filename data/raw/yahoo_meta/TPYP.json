@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1435671000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "ETF",
+  "longName": "Tortoise North American Pipeline Fund",
+  "shortName": "Tortoise North American Pipelin",
+  "symbol": "TPYP"
+ },
+ "queried_at": "2026-09-27T22:51:14Z",
+ "symbol": "TPYP"
+}

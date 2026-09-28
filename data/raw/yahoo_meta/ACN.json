@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 995549400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Accenture plc",
+  "shortName": "Accenture plc",
+  "symbol": "ACN"
+ },
+ "queried_at": "2026-09-27T22:26:39Z",
+ "symbol": "ACN"
+}

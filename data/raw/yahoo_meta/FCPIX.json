@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 878308200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Fidelity Advisor Intl Cap App I",
+  "shortName": "Fidelity Advisor International ",
+  "symbol": "FCPIX"
+ },
+ "queried_at": "2026-09-27T22:35:44Z",
+ "symbol": "FCPIX"
+}

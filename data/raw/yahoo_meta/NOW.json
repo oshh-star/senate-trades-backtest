@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1340976600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ServiceNow, Inc.",
+  "shortName": "ServiceNow, Inc.",
+  "symbol": "NOW"
+ },
+ "queried_at": "2026-09-27T22:44:13Z",
+ "symbol": "NOW"
+}

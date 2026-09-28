@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:49:53Z"
+ },
+ "queried_at": "2026-09-27T23:03:14Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "CXE",
+   "exchange": "CXE",
+   "longname": "SigmaRoc plc",
+   "quoteType": "EQUITY",
+   "shortname": "SigmaRoc PLC",
+   "symbol": "SRCL.XC",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SRCL"
+}

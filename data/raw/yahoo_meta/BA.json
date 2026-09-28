@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Boeing Company",
+  "shortName": "Boeing Company (The)",
+  "symbol": "BA"
+ },
+ "queried_at": "2026-09-27T22:28:50Z",
+ "symbol": "BA"
+}

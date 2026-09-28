@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 727453800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Match Group, Inc.",
+  "shortName": "Match Group, Inc.",
+  "symbol": "MTCH"
+ },
+ "queried_at": "2026-09-27T22:43:32Z",
+ "symbol": "MTCH"
+}

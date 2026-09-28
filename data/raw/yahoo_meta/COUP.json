@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:32:10Z"
+ },
+ "queried_at": "2026-09-27T22:59:09Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Coupang, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Coupang, Inc.",
+   "symbol": "CPNG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "PIMCO 25+ Year Zero Coupon U.S. Treasury Index Exchange-Traded Fund",
+   "quoteType": "ETF",
+   "shortname": "PIMCO 25  Year Zero Coupon U.S.",
+   "symbol": "ZROZ",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBC Extendible Coupons 4.10% Flex GIC, series 300 DSC (836424A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBANKXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "TD TSM Equity-Linked Autocallable Coupon Buffer Notes - Series 64 NL (880136A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "TDFDBXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBC Extendible Coupons 4.20% Flex GIC, series 299 DSC (836423A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBANJXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "NBC Extendible Coupons 4.15% Flex GIC series 478 DSC (858266A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "NBANCXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "TD Canada Energy Select 95 AR Index-Linked Autocallable Coupon Notes - Series 3599 NL (880264A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "THZDLXX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "COUP"
+}

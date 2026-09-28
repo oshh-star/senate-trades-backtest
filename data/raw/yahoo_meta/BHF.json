@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1500298200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Brighthouse Financial, Inc.",
+  "shortName": "Brighthouse Financial, Inc.",
+  "symbol": "BHF"
+ },
+ "queried_at": "2026-09-27T22:29:19Z",
+ "symbol": "BHF"
+}

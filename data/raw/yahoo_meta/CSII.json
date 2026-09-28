@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:32:30Z"
+ },
+ "queried_at": "2026-09-27T22:59:11Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Copeland International Small Cap I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Columbia Small Cap Index Fd Cl ",
+   "symbol": "CSIIX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "CSII"
+}

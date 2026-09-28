@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1723728600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Signature Bank",
+  "shortName": "Signature Bank (New York, NY)",
+  "symbol": "SBNY"
+ },
+ "queried_at": "2026-09-27T22:48:25Z",
+ "symbol": "SBNY"
+}

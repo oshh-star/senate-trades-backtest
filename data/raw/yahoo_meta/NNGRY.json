@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "NN Group N.V.",
+  "shortName": "NN Group NV",
+  "symbol": "NNGRY"
+ },
+ "queried_at": "2026-09-27T22:44:09Z",
+ "symbol": "NNGRY"
+}

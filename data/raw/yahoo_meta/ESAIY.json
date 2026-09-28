@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1675348200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Eisai Co., Ltd.",
+  "shortName": "Eisai Co., Ltd.",
+  "symbol": "ESAIY"
+ },
+ "queried_at": "2026-09-27T22:35:03Z",
+ "symbol": "ESAIY"
+}

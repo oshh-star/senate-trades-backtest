@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1150464600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "WisdomTree International SmallCap Dividend Fund",
+  "shortName": "WisdomTree International SmallC",
+  "symbol": "DLS"
+ },
+ "queried_at": "2026-09-27T22:33:39Z",
+ "symbol": "DLS"
+}

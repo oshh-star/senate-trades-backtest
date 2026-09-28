@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "American Express Company",
+  "shortName": "American Express Company",
+  "symbol": "AXP"
+ },
+ "queried_at": "2026-09-27T22:28:42Z",
+ "symbol": "AXP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1099665000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "MarketAxess Holdings Inc.",
+  "shortName": "MarketAxess Holdings, Inc.",
+  "symbol": "MKTX"
+ },
+ "queried_at": "2026-09-27T22:42:53Z",
+ "symbol": "MKTX"
+}

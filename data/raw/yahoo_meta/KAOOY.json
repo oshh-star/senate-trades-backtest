@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1079447400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Kao Corporation",
+  "shortName": "Kao Corp.",
+  "symbol": "KAOOY"
+ },
+ "queried_at": "2026-09-27T22:40:26Z",
+ "symbol": "KAOOY"
+}

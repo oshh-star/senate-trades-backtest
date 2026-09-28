@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 993043800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Fidelity National Information Services, Inc.",
+  "shortName": "Fidelity National Information S",
+  "symbol": "FIS"
+ },
+ "queried_at": "2026-09-27T22:36:09Z",
+ "symbol": "FIS"
+}

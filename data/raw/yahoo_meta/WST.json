@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "West Pharmaceutical Services, Inc.",
+  "shortName": "West Pharmaceutical Services, I",
+  "symbol": "WST"
+ },
+ "queried_at": "2026-09-27T22:53:59Z",
+ "symbol": "WST"
+}

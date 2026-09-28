@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 932131800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "HSBC Holdings plc",
+  "shortName": "HSBC Holdings, plc.",
+  "symbol": "HSBC"
+ },
+ "queried_at": "2026-09-27T22:38:32Z",
+ "symbol": "HSBC"
+}

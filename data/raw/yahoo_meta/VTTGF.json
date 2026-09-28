@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1544625000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "VAT Group AG",
+  "shortName": "VAT Group AG",
+  "symbol": "VTTGF"
+ },
+ "queried_at": "2026-09-27T23:03:52Z",
+ "symbol": "VTTGF"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:36:30Z"
+ },
+ "queried_at": "2026-09-27T23:00:21Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Premium Fixed Income Private Pool Series I FE (117699A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Premium Fixed Income Private Pool Series I U$ FE (319615A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLBX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Small Cap America Class Series F NL (235673A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLPX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Premium Tactical Fixed Income Private Pool Series I ISC (306025A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLFX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Small Cap America Class Series A LSC (2603A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLJX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Small Cap America Class Series B U$ FE (319614A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLOX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Fidelity Small Cap America Class Series F5 U$ NL (321052A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "FPLSX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "FPL"
+}

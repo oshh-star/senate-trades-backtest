@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "3M Company",
+  "shortName": "3M Company",
+  "symbol": "MMM"
+ },
+ "queried_at": "2026-09-27T22:42:57Z",
+ "symbol": "MMM"
+}

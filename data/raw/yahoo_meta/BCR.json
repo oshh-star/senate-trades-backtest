@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:29:07Z"
+ },
+ "queried_at": "2026-09-27T22:58:12Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "BioCryst Pharmaceuticals, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BioCryst Pharmaceuticals, Inc.",
+   "symbol": "BCRX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Amundi EUR Corporate Bond Active UCITS ETF Acc",
+   "quoteType": "ETF",
+   "shortname": "Am.ETF II-Am.EUR Co.Bd Ac.ETF B",
+   "symbol": "BCRP.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Mexico",
+   "exchange": "MEX",
+   "longname": "BioCryst Pharmaceuticals, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BIOCRYST PHARMACEUTICALS INC",
+   "symbol": "BCRX.MX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OQX",
+   "exchange": "OQX",
+   "longname": "BlueOne Technologies, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "BlueOne Card Inc.",
+   "symbol": "BCRD",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Amundi Global Corporate Bond Active UCITS ETF Acc",
+   "quoteType": "ETF",
+   "shortname": "Amu.ETF ICAV-A.Gl.C.Bd Act.ETFB",
+   "symbol": "BCRB.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OPR",
+   "exchange": "OPR",
+   "longname": "BCRX Mar 2027 8.000 call",
+   "quoteType": "OPTION",
+   "shortname": "BCRX Mar 2027 8.000 call",
+   "symbol": "BCRX270319C00008000",
+   "typeDisp": "Option"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Am.ETF II-Am.EUR Co.Bd Ac.ETF B",
+   "symbol": "BCRP.HM",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "BCR"
+}

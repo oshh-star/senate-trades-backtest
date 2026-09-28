@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1415111400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Liberty Broadband Corporation",
+  "shortName": "Liberty Broadband Corporation",
+  "symbol": "LBRDA"
+ },
+ "queried_at": "2026-09-27T22:41:15Z",
+ "symbol": "LBRDA"
+}

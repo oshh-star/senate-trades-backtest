@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1123248600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Baidu, Inc.",
+  "shortName": "Baidu, Inc.",
+  "symbol": "BIDU"
+ },
+ "queried_at": "2026-09-27T22:29:22Z",
+ "symbol": "BIDU"
+}

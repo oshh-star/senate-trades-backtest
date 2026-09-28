@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1348147800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Sunoco LP",
+  "shortName": "Sunoco LP",
+  "symbol": "SUN"
+ },
+ "queried_at": "2026-09-27T22:50:15Z",
+ "symbol": "SUN"
+}

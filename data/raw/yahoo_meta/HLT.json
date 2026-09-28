@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1386858600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Hilton Worldwide Holdings Inc.",
+  "shortName": "Hilton Worldwide Holdings Inc.",
+  "symbol": "HLT"
+ },
+ "queried_at": "2026-09-27T22:38:18Z",
+ "symbol": "HLT"
+}

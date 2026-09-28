@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:51Z"
+ },
+ "queried_at": "2026-09-27T22:59:43Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "DPM Metals Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "DPM METALS INC",
+   "symbol": "DPM.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "DPM Metals Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "DPM Metals Inc.",
+   "symbol": "DPMLF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Finreon World Eq Econ Exposure (Pen) DPM",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Finreon World Eq Econ Exposure ",
+   "symbol": "0P0001Q63H",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Diploma PLC",
+   "quoteType": "EQUITY",
+   "shortname": "Diploma Plc.",
+   "symbol": "DPMAY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "VSE",
+   "exchange": "VSE",
+   "longname": "PetroVietnam Fertilizer and Chemicals Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "PETROVIETNAM FERT & CHEMICAL",
+   "symbol": "DPM.VN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Stuttgart",
+   "exchange": "STU",
+   "longname": "Sumitomo Pharma Co Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "Sumitomo Dainippon Pharma Co.",
+   "symbol": "DPM.SG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "Sumitomo Pharma Co Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "Sumitomo Pharma Co. Ltd.      R",
+   "symbol": "DPM.DU",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "DPM"
+}

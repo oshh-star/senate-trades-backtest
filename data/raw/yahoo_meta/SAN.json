@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 554650200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Banco Santander, S.A.",
+  "shortName": "Banco Santander, S.A. Sponsored",
+  "symbol": "SAN"
+ },
+ "queried_at": "2026-09-27T22:48:17Z",
+ "symbol": "SAN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1445261400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Hewlett Packard Enterprise Company",
+  "shortName": "Hewlett Packard Enterprise Comp",
+  "symbol": "HPE"
+ },
+ "queried_at": "2026-09-27T22:38:26Z",
+ "symbol": "HPE"
+}

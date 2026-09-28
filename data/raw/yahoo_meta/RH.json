@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1351863000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "RH",
+  "shortName": "RH",
+  "symbol": "RH"
+ },
+ "queried_at": "2026-09-27T22:47:29Z",
+ "symbol": "RH"
+}

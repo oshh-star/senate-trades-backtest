@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1139236200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street SPDR S&P Biotech ETF",
+  "shortName": "State Street SPDR S&P Biotech E",
+  "symbol": "XBI"
+ },
+ "queried_at": "2026-09-27T22:54:12Z",
+ "symbol": "XBI"
+}

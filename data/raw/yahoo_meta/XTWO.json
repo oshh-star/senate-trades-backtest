@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1663594200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Bondbloxx Bloomberg Two Year Target Duration US Treasury ETF",
+  "shortName": "BondBloxx Bloomberg Two Year Ta",
+  "symbol": "XTWO"
+ },
+ "queried_at": "2026-09-27T22:54:32Z",
+ "symbol": "XTWO"
+}

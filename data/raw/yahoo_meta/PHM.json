@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "PulteGroup, Inc.",
+  "shortName": "PulteGroup, Inc.",
+  "symbol": "PHM"
+ },
+ "queried_at": "2026-09-27T22:45:59Z",
+ "symbol": "PHM"
+}

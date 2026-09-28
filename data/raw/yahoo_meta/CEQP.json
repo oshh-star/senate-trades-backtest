@@ -1,0 +1,51 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:31:09Z"
+ },
+ "queried_at": "2026-09-27T22:58:52Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "CI Equity+ Asset Allocation ETF",
+   "quoteType": "ETF",
+   "shortname": "CI EQUITY ASSET ALLOCATION ETF ",
+   "symbol": "CEQP.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "CI EQUITY PLUS ASSET ALLOCATION",
+   "symbol": "CEQP.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CI High Yield Bond Corporate Class (Series A shares) LSC (300080A2)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CEQPX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "CEQP"
+}

@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:51:02Z"
+ },
+ "queried_at": "2026-09-27T23:03:26Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Nuveen Lifecycle Index 2050 Premier",
+   "quoteType": "MUTUALFUND",
+   "shortname": "TIAA-CREF Lifecycle Index 2050 ",
+   "symbol": "TLLPX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "TLLP"
+}

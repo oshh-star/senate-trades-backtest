@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1214400600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Japan Exchange Group, Inc.",
+  "shortName": "Japan Exchange Group, Inc.",
+  "symbol": "OSCUF"
+ },
+ "queried_at": "2026-09-27T23:02:15Z",
+ "symbol": "OSCUF"
+}

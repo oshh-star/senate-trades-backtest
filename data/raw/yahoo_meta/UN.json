@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1783431000,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Corgi UNH 2x Daily ETF",
+  "shortName": "Corgi UNH 2x Daily ETF",
+  "symbol": "UN"
+ },
+ "queried_at": "2026-09-27T22:51:59Z",
+ "symbol": "UN"
+}

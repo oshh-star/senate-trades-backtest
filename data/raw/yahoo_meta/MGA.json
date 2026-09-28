@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 465831000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Magna International Inc.",
+  "shortName": "Magna International, Inc.",
+  "symbol": "MGA"
+ },
+ "queried_at": "2026-09-27T22:42:44Z",
+ "symbol": "MGA"
+}

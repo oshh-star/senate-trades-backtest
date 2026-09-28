@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1454509800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Editas Medicine, Inc.",
+  "shortName": "Editas Medicine, Inc.",
+  "symbol": "EDIT"
+ },
+ "queried_at": "2026-09-27T22:34:27Z",
+ "symbol": "EDIT"
+}

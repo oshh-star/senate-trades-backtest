@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1420036200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ALPS Medical Breakthroughs ETF",
+  "shortName": "ALPS Medical Breakthroughs ETF",
+  "symbol": "SBIO"
+ },
+ "queried_at": "2026-09-27T22:48:23Z",
+ "symbol": "SBIO"
+}

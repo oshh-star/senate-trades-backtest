@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1208957400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "American Water Works Company, Inc.",
+  "shortName": "American Water Works Company, I",
+  "symbol": "AWK"
+ },
+ "queried_at": "2026-09-27T22:28:39Z",
+ "symbol": "AWK"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1168353000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Airbus SE",
+  "shortName": "Airbus SE",
+  "symbol": "EADSY"
+ },
+ "queried_at": "2026-09-27T22:34:19Z",
+ "symbol": "EADSY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1425047400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Hartford Multifactor Developed Markets (ex-US) ETF",
+  "shortName": "Hartford Multifactor Developed ",
+  "symbol": "RODM"
+ },
+ "queried_at": "2026-09-27T22:47:47Z",
+ "symbol": "RODM"
+}

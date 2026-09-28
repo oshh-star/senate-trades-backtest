@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:48:11Z"
+ },
+ "queried_at": "2026-09-27T23:02:59Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Rhythm Pharmaceuticals, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Rhythm Pharmaceuticals, Inc.",
+   "symbol": "RYTM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "RYTHM, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "RYTHM, Inc.",
+   "symbol": "RYM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Rydex Technology Inv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Rydex Series Trust Technology F",
+   "symbol": "RYTIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Rydex S&P 500 2x Strategy H",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Rydex S&P 500 2x Strategy Fund ",
+   "symbol": "RYTNX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Royce Small-Cap Total Return Invmt",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Royce Total Return Fund Investm",
+   "symbol": "RYTRX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "RTX Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "RAYTHEONTECHDRN",
+   "symbol": "RYTT34.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Rydex Inverse S&P 500 2x Strategy A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Rydex Dynamic Fds, Inverse Dyna",
+   "symbol": "RYTMX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "RYT"
+}

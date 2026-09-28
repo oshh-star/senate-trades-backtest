@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1434115800,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Pacer Trendpilot US Large Cap ETF",
+  "shortName": "Pacer Trendpilot US Large Cap E",
+  "symbol": "PTLC"
+ },
+ "queried_at": "2026-09-27T22:46:42Z",
+ "symbol": "PTLC"
+}

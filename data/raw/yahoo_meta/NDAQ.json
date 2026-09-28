@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1025530200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Nasdaq, Inc.",
+  "shortName": "Nasdaq, Inc.",
+  "symbol": "NDAQ"
+ },
+ "queried_at": "2026-09-27T22:43:50Z",
+ "symbol": "NDAQ"
+}

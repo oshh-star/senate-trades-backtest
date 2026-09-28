@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Hong Kong Exchanges and Clearing Limited",
+  "shortName": "Hong Kong Exchange & Clearing L",
+  "symbol": "HKXCY"
+ },
+ "queried_at": "2026-09-27T22:38:16Z",
+ "symbol": "HKXCY"
+}

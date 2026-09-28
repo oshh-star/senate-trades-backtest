@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 907767000,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Swisscom AG",
+  "shortName": "Swisscom AG",
+  "symbol": "SCMWY"
+ },
+ "queried_at": "2026-09-27T22:48:36Z",
+ "symbol": "SCMWY"
+}

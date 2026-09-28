@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Suncor Energy Inc.",
+  "shortName": "Suncor Energy  Inc.",
+  "symbol": "SU"
+ },
+ "queried_at": "2026-09-27T22:50:13Z",
+ "symbol": "SU"
+}

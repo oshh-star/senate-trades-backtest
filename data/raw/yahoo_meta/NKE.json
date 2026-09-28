@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 344615400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "NIKE, Inc.",
+  "shortName": "Nike, Inc.",
+  "symbol": "NKE"
+ },
+ "queried_at": "2026-09-27T22:44:03Z",
+ "symbol": "NKE"
+}

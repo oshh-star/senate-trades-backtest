@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1217597400,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds Capital Inc Bldr F-2",
+  "shortName": "Capital Income Builder Cl F-2 S",
+  "symbol": "CAIFX"
+ },
+ "queried_at": "2026-09-27T22:30:36Z",
+ "symbol": "CAIFX"
+}

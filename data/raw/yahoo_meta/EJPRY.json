@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1212067800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "East Japan Railway Company",
+  "shortName": "East Japan Railway Co.",
+  "symbol": "EJPRY"
+ },
+ "queried_at": "2026-09-27T22:34:37Z",
+ "symbol": "EJPRY"
+}

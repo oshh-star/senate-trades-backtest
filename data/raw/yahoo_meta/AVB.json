@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1784295000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AvalonBay Communities Inc",
+  "shortName": "AvalonBay Communities, Inc.",
+  "symbol": "AVB"
+ },
+ "queried_at": "2026-09-27T22:28:33Z",
+ "symbol": "AVB"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 894029400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Amkor Technology, Inc.",
+  "shortName": "Amkor Technology, Inc.",
+  "symbol": "AMKR"
+ },
+ "queried_at": "2026-09-27T22:27:40Z",
+ "symbol": "AMKR"
+}

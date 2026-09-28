@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 824394600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Daiwa House Industry Co., Ltd.",
+  "shortName": "Daiwa House Industry Co. Ltd.",
+  "symbol": "DWAHY"
+ },
+ "queried_at": "2026-09-27T22:34:14Z",
+ "symbol": "DWAHY"
+}

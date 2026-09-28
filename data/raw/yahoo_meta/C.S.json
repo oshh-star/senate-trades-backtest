@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:30:28Z"
+ },
+ "queried_at": "2026-09-27T22:58:40Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "UBS(Irl)ETF-UBS C.S&P500 U.ETFR",
+   "symbol": "FUBU9.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "UBS Core S&P 500 UCITS ETF hEUR acc",
+   "quoteType": "ETF",
+   "shortname": "UBS(Irl)ETF-UBS C.S&P500 U.ETFR",
+   "symbol": "UEQD.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "State Street SPDR S&P U.S. Communication Services Select Sector UCITS ETF",
+   "quoteType": "ETF",
+   "shortname": "SSEE2-ST.S.SP US C.S.S.S.UE   R",
+   "symbol": "ZPDK.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "SSGA S.ETF.EI-SPDR B.US C.SC. R",
+   "symbol": "FSPPU.DE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Tokyo Stock Exchange",
+   "exchange": "JPX",
+   "longname": "C.S. Lumber Co., Inc",
+   "quoteType": "EQUITY",
+   "shortname": "C.S. LUMBER CO INC",
+   "symbol": "7808.T",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "SSGA S.ETF.EI-SPDR B.US C.SC. R",
+   "symbol": "SPPU.DU",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "UBS(Irl)ETF-UBS C.S&P500 U.ETFR",
+   "symbol": "UBU9.HM",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "C.S"
+}

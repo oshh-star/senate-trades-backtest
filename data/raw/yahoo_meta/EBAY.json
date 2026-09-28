@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 906643800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "eBay Inc.",
+  "shortName": "eBay Inc.",
+  "symbol": "EBAY"
+ },
+ "queried_at": "2026-09-27T22:34:21Z",
+ "symbol": "EBAY"
+}

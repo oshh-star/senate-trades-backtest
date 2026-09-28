@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 729527400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Artivion, Inc.",
+  "shortName": "Artivion, Inc.",
+  "symbol": "AORT"
+ },
+ "queried_at": "2026-09-27T22:27:56Z",
+ "symbol": "AORT"
+}

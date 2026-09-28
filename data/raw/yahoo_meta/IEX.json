@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 612797400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "IDEX Corporation",
+  "shortName": "IDEX Corporation",
+  "symbol": "IEX"
+ },
+ "queried_at": "2026-09-27T22:39:08Z",
+ "symbol": "IEX"
+}

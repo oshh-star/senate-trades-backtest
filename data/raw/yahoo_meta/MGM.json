@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 578583000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "MGM Resorts International",
+  "shortName": "MGM Resorts International",
+  "symbol": "MGM"
+ },
+ "queried_at": "2026-09-27T22:42:46Z",
+ "symbol": "MGM"
+}

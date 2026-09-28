@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1606833000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Humacyte, Inc.",
+  "shortName": "Humacyte, Inc.",
+  "symbol": "HUMA"
+ },
+ "queried_at": "2026-09-27T22:38:38Z",
+ "symbol": "HUMA"
+}

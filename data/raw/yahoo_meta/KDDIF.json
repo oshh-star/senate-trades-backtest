@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1433856600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "KDDI Corporation",
+  "shortName": "KDDI Corp.",
+  "symbol": "KDDIF"
+ },
+ "queried_at": "2026-09-27T23:01:10Z",
+ "symbol": "KDDIF"
+}

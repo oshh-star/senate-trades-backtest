@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1097242200,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares China Large-Cap ETF",
+  "shortName": "iShares China Large-Cap ETF",
+  "symbol": "FXI"
+ },
+ "queried_at": "2026-09-27T22:36:50Z",
+ "symbol": "FXI"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 876403800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Taiwan Semiconductor Manufacturing Company Limited",
+  "shortName": "Taiwan Semiconductor Manufactur",
+  "symbol": "TSM"
+ },
+ "queried_at": "2026-09-27T22:51:29Z",
+ "symbol": "TSM"
+}

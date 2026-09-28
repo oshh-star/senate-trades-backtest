@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "National Presto Industries, Inc.",
+  "shortName": "National Presto Industries, Inc",
+  "symbol": "NPK"
+ },
+ "queried_at": "2026-09-27T22:44:14Z",
+ "symbol": "NPK"
+}

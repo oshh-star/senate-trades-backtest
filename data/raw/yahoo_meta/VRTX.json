@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 680362200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Vertex Pharmaceuticals Incorporated",
+  "shortName": "Vertex Pharmaceuticals Incorpor",
+  "symbol": "VRTX"
+ },
+ "queried_at": "2026-09-27T22:53:02Z",
+ "symbol": "VRTX"
+}

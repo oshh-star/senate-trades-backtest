@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 463411800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Skyworks Solutions, Inc.",
+  "shortName": "Skyworks Solutions, Inc.",
+  "symbol": "SWKS"
+ },
+ "queried_at": "2026-09-27T22:50:22Z",
+ "symbol": "SWKS"
+}

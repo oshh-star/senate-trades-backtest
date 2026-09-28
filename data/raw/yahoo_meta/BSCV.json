@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1631799000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Invesco BulletShares 2031 Corporate Bond ETF",
+  "shortName": "Invesco BulletShares 2031 Corpo",
+  "symbol": "BSCV"
+ },
+ "queried_at": "2026-09-27T22:30:10Z",
+ "symbol": "BSCV"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Diodes Incorporated",
+  "shortName": "Diodes Incorporated",
+  "symbol": "DIOD"
+ },
+ "queried_at": "2026-09-27T22:33:27Z",
+ "symbol": "DIOD"
+}

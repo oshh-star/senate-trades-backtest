@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1159795800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Western Union Company",
+  "shortName": "Western Union Company (The)",
+  "symbol": "WU"
+ },
+ "queried_at": "2026-09-27T22:54:04Z",
+ "symbol": "WU"
+}

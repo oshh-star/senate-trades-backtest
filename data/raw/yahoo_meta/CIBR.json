@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1436275800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust NASDAQ Cybersecurity ETF",
+  "shortName": "First Trust NASDAQ Cybersecurit",
+  "symbol": "CIBR"
+ },
+ "queried_at": "2026-09-27T22:31:32Z",
+ "symbol": "CIBR"
+}

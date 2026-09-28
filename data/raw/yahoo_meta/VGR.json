@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:52:33Z"
+ },
+ "queried_at": "2026-09-27T23:03:40Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Vanguard Growth ETF Portfolio",
+   "quoteType": "ETF",
+   "shortname": "VANGUARD GROWTH ETF PORTFOLIO",
+   "symbol": "VGRO.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Virtus Silvant Growth Opportunities ETF",
+   "quoteType": "ETF",
+   "shortname": "Virtus Silvant Growth Opportuni",
+   "symbol": "VGRO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "JPMorgan US Value A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "JPMorgan Growth and Income Fund",
+   "symbol": "VGRIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard Global ex-US Real Est Idx Adm",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Global ex-U.S. Real Es",
+   "symbol": "VGRLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "VANGUARD GROWTH ETF PORTFOLIO",
+   "symbol": "VGRO.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "VALIC Company I Global Real Estate",
+   "quoteType": "MUTUALFUND",
+   "shortname": "VALIC Company I, Real Estate Fu",
+   "symbol": "VGREX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "FII VGRH    CI",
+   "symbol": "VGRH11.SA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "VGR"
+}

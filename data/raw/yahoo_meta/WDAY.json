@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1350048600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Workday, Inc.",
+  "shortName": "Workday, Inc.",
+  "symbol": "WDAY"
+ },
+ "queried_at": "2026-09-27T22:53:27Z",
+ "symbol": "WDAY"
+}

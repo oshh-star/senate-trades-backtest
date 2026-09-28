@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 937229400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Avient Corporation",
+  "shortName": "Avient Corporation",
+  "symbol": "AVNT"
+ },
+ "queried_at": "2026-09-27T22:28:35Z",
+ "symbol": "AVNT"
+}

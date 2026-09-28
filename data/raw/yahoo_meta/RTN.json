@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:48:02Z"
+ },
+ "queried_at": "2026-09-27T23:02:55Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Russell Inv Tax-Managed Intl Eq S",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Tax-Managed International Equit",
+   "symbol": "RTNSX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "RattanIndia Power Limited",
+   "quoteType": "EQUITY",
+   "shortname": "RATTANINDIA POWER LIMITED",
+   "symbol": "RTNPOWER.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Rio Tinto Group",
+   "quoteType": "EQUITY",
+   "shortname": "Rio Tinto Ltd.",
+   "symbol": "RTNTF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Medlst MBS Ttl Rtn Inv",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Semper MBS Total Return Fund - ",
+   "symbol": "SEMPX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Medlst MBS Ttl Rtn Inst",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Medalist Partners MBS Total Ret",
+   "symbol": "SEMMX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Russell Inv Tax-Managed Intl Eq C",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Tax-Managed International Equit",
+   "symbol": "RTNCX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "SWC (LU) BF Cmtt Glbl Abs Rtn GTH CHF",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P00011K8V.SW",
+   "symbol": "0P00011K8V.SW",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "RTN"
+}

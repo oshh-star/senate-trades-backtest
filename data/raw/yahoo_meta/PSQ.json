@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1150896600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ProShares Short QQQ",
+  "shortName": "ProShares Short QQQ",
+  "symbol": "PSQ"
+ },
+ "queried_at": "2026-09-27T22:46:35Z",
+ "symbol": "PSQ"
+}

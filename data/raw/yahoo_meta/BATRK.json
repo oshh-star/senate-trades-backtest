@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1460986200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Atlanta Braves Holdings, Inc.",
+  "shortName": "Atlanta Braves Holdings, Inc. -",
+  "symbol": "BATRK"
+ },
+ "queried_at": "2026-09-27T22:28:59Z",
+ "symbol": "BATRK"
+}

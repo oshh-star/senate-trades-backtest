@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1146835800,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "iShares U.S. Aerospace & Defense ETF",
+  "shortName": "iShares U.S. Aerospace & Defens",
+  "symbol": "ITA"
+ },
+ "queried_at": "2026-09-27T22:39:46Z",
+ "symbol": "ITA"
+}

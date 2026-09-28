@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1607524200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "DoorDash, Inc.",
+  "shortName": "DoorDash, Inc.",
+  "symbol": "DASH"
+ },
+ "queried_at": "2026-09-27T22:33:00Z",
+ "symbol": "DASH"
+}

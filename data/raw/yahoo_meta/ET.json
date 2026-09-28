@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1138977000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Energy Transfer LP",
+  "shortName": "Energy Transfer LP",
+  "symbol": "ET"
+ },
+ "queried_at": "2026-09-27T22:35:11Z",
+ "symbol": "ET"
+}

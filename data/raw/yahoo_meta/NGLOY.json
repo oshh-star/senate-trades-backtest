@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1423751400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Anglo American plc",
+  "shortName": "Anglo American plc",
+  "symbol": "NGLOY"
+ },
+ "queried_at": "2026-09-27T22:43:58Z",
+ "symbol": "NGLOY"
+}

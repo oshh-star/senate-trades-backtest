@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1000819800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Advantest Corporation",
+  "shortName": "Advantest Corp.",
+  "symbol": "ATEYY"
+ },
+ "queried_at": "2026-09-27T22:28:24Z",
+ "symbol": "ATEYY"
+}

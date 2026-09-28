@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1511274600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Cellnex Telecom, S.A.",
+  "shortName": "Cellnex Telecom SA",
+  "symbol": "CLLNY"
+ },
+ "queried_at": "2026-09-27T22:31:40Z",
+ "symbol": "CLLNY"
+}

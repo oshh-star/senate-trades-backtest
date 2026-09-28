@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1265639400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Telia Company AB (publ)",
+  "shortName": "Telia Company AB",
+  "symbol": "TLSNY"
+ },
+ "queried_at": "2026-09-27T22:51:04Z",
+ "symbol": "TLSNY"
+}

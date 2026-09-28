@@ -1,0 +1,51 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:47:33Z"
+ },
+ "queried_at": "2026-09-27T23:02:47Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Resonance Health Limited",
+   "quoteType": "EQUITY",
+   "shortname": "RESONANCE FPO [RHT]",
+   "symbol": "RHT.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "RH Tactical Outlook ETF",
+   "quoteType": "ETF",
+   "shortname": "RH Tactical Outlook ETF",
+   "symbol": "RHTX",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "CXA",
+   "exchange": "CXA",
+   "longname": "Resonance Health Limited",
+   "quoteType": "EQUITY",
+   "shortname": "RESONANCE FPO [RHT]",
+   "symbol": "RHT.XA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "RHT"
+}

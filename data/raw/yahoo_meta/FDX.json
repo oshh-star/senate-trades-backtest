@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 261239400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "FedEx Corporation",
+  "shortName": "FedEx Corporation",
+  "symbol": "FDX"
+ },
+ "queried_at": "2026-09-27T22:35:52Z",
+ "symbol": "FDX"
+}

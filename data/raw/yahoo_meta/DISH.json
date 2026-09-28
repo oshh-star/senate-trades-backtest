@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:33:31Z"
+ },
+ "queried_at": "2026-09-27T22:59:33Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Dish TV India Limited",
+   "quoteType": "EQUITY",
+   "shortname": "DISH TV INDIA LTD.",
+   "symbol": "DISHTV.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Dishman Carbogen Amcis Limited",
+   "quoteType": "EQUITY",
+   "shortname": "DISHMAN CARBO AMCIS LTD",
+   "symbol": "DCAL.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Dishman Carbogen Amcis Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Dishman Carbogen Amcis Limited",
+   "symbol": "DCAL.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Swiss",
+   "exchange": "EBS",
+   "longname": "Federated Hermes US Smid Eq L2 CHF DisH",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001NVAN.SW",
+   "symbol": "0P0001NVAN.SW",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "Disha Resources Limited",
+   "quoteType": "EQUITY",
+   "shortname": "DISHA RESOURCES LIMITED",
+   "symbol": "DRL.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Federated Hermes US Smid Eq F EUR DisH",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001KH9S.F",
+   "symbol": "0P0001KH9S.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "Schroder ISF Global Eq Yld A DisHKDMF",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0000ZVKH.HK",
+   "symbol": "0P0000ZVKH.HK",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "DISH"
+}

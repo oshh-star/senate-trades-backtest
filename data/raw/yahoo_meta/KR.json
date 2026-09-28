@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "The Kroger Co.",
+  "shortName": "Kroger Company (The)",
+  "symbol": "KR"
+ },
+ "queried_at": "2026-09-27T22:41:00Z",
+ "symbol": "KR"
+}

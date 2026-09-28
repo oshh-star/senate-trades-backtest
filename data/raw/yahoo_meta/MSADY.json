@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1199370600,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "MS&AD Insurance Group Holdings, Inc.",
+  "shortName": "MS&AD Insurance Group Holdings,",
+  "symbol": "MSADY"
+ },
+ "queried_at": "2026-09-27T22:43:22Z",
+ "symbol": "MSADY"
+}

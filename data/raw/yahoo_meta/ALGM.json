@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1603978200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Allegro MicroSystems, Inc.",
+  "shortName": "Allegro MicroSystems, Inc.",
+  "symbol": "ALGM"
+ },
+ "queried_at": "2026-09-27T22:27:20Z",
+ "symbol": "ALGM"
+}

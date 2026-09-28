@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1150464600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "WisdomTree U.S. Total Dividend Fund",
+  "shortName": "WisdomTree U.S. Total Dividend ",
+  "symbol": "DTD"
+ },
+ "queried_at": "2026-09-27T22:34:04Z",
+ "symbol": "DTD"
+}

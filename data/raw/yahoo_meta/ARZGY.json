@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1256563800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Assicurazioni Generali S.p.A.",
+  "shortName": "Assicurazioni Generali Spa",
+  "symbol": "ARZGY"
+ },
+ "queried_at": "2026-09-27T22:28:17Z",
+ "symbol": "ARZGY"
+}

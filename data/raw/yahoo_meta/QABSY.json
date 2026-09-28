@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1404221400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Qantas Airways Limited",
+  "shortName": "Qantas Airways Ltd.",
+  "symbol": "QABSY"
+ },
+ "queried_at": "2026-09-27T22:46:55Z",
+ "symbol": "QABSY"
+}

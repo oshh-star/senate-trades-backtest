@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1092663000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Extra Space Storage Inc.",
+  "shortName": "Extra Space Storage Inc",
+  "symbol": "EXR"
+ },
+ "queried_at": "2026-09-27T22:35:36Z",
+ "symbol": "EXR"
+}

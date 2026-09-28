@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1181223000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Bunzl plc",
+  "shortName": "Bunzl plc",
+  "symbol": "BZLFY"
+ },
+ "queried_at": "2026-09-27T22:30:26Z",
+ "symbol": "BZLFY"
+}

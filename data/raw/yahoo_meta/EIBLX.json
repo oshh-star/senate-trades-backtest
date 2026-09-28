@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 980865000,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Eaton Vance Floating Rate I",
+  "shortName": "Eaton Vance Floating Rate Fund ",
+  "symbol": "EIBLX"
+ },
+ "queried_at": "2026-09-27T22:34:35Z",
+ "symbol": "EIBLX"
+}

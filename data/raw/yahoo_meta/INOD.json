@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 744989400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Innodata Inc.",
+  "shortName": "Innodata Inc.",
+  "symbol": "INOD"
+ },
+ "queried_at": "2026-09-27T22:39:26Z",
+ "symbol": "INOD"
+}

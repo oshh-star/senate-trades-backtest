@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 802963800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pan American Silver Corp.",
+  "shortName": "Pan American Silver Corp.",
+  "symbol": "PAAS"
+ },
+ "queried_at": "2026-09-27T22:45:24Z",
+ "symbol": "PAAS"
+}

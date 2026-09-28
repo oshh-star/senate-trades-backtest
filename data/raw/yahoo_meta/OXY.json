@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 378657000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Occidental Petroleum Corporation",
+  "shortName": "Occidental Petroleum Corporatio",
+  "symbol": "OXY"
+ },
+ "queried_at": "2026-09-27T22:45:22Z",
+ "symbol": "OXY"
+}

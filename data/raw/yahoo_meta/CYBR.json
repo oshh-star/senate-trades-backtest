@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:32:53Z"
+ },
+ "queried_at": "2026-09-27T22:59:23Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Evolve Cyber Security Index Fund - Hedged Units",
+   "quoteType": "ETF",
+   "shortname": "EVOLVE CYBER SECURITY INDEX HGD",
+   "symbol": "CYBR.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT ITSEC Asia Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "ITSEC Asia Tbk.",
+   "symbol": "CYBR.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shanghai",
+   "exchange": "SHH",
+   "longname": "Cybrid Technologies Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "CYBRID TECHNOLOGIES INC",
+   "symbol": "603212.SS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Evolve Cyber Security Index Fund - UnHedged Units",
+   "quoteType": "ETF",
+   "shortname": "EVOLVE CYBER SECURITY INDEX UH ",
+   "symbol": "CYBR-B.TO",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Rize UCITS ICAV - Rize Cybersecurity Data Privacy ETF",
+   "quoteType": "ETF",
+   "shortname": "ARK INVEST UCITS ICAV RIZE CYBE",
+   "symbol": "CYBR.L",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Tel Aviv",
+   "exchange": "TLV",
+   "longname": "Palo Alto Networks, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "PALO ALTO NETWORKS",
+   "symbol": "CYBR.TA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "CYBRO USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "CYBRO USD",
+   "symbol": "CYBRO-USD",
+   "typeDisp": "Cryptocurrency"
+  }
+ ],
+ "symbol": "CYBR"
+}

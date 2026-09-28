@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1039185000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "CME Group Inc.",
+  "shortName": "CME Group Inc.",
+  "symbol": "CME"
+ },
+ "queried_at": "2026-09-27T22:31:50Z",
+ "symbol": "CME"
+}

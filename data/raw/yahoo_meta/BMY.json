@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bristol-Myers Squibb Company",
+  "shortName": "Bristol-Myers Squibb Company",
+  "symbol": "BMY"
+ },
+ "queried_at": "2026-09-27T22:29:48Z",
+ "symbol": "BMY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1342445400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ALPS Sector Dividend Dogs ETF",
+  "shortName": "ALPS Sector Dividend Dogs ETF",
+  "symbol": "SDOG"
+ },
+ "queried_at": "2026-09-27T22:48:38Z",
+ "symbol": "SDOG"
+}

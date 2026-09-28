@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1423146600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "ProShares Russell 2000 Dividend Growers ETF",
+  "shortName": "ProShares Russell 2000 Dividend",
+  "symbol": "SMDV"
+ },
+ "queried_at": "2026-09-27T22:49:17Z",
+ "symbol": "SMDV"
+}

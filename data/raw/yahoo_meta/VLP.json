@@ -1,0 +1,78 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:52:44Z"
+ },
+ "queried_at": "2026-09-27T23:03:46Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "LIT",
+   "exchange": "LIT",
+   "longname": "AB Vilkyskiu pienine",
+   "quoteType": "EQUITY",
+   "shortname": "Vilkyskiu Pienine",
+   "symbol": "VLP1L.VS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Safra Manager VLP FIM C Priv IE",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001NRNZ.SA",
+   "symbol": "0P0001NRNZ.SA",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Virtus Duff & Phelps Sel MLP & Engy A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Virtus Duff & Phelps Select MLP",
+   "symbol": "VLPAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Voestalpine AG",
+   "quoteType": "EQUITY",
+   "shortname": "Voestalpine AG",
+   "symbol": "VLPNY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Virtus Duff & Phelps Sel MLP & Engy I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Virtus Duff & Phelps Select MLP",
+   "symbol": "VLPIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Voestalpine AG",
+   "quoteType": "EQUITY",
+   "shortname": "VOESTALPINE AG",
+   "symbol": "VLPNF",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "VLP"
+}

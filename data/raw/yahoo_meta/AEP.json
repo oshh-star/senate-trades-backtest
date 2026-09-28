@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -252322200,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "American Electric Power Company, Inc.",
+  "shortName": "American Electric Power Company",
+  "symbol": "AEP"
+ },
+ "queried_at": "2026-09-27T22:26:50Z",
+ "symbol": "AEP"
+}

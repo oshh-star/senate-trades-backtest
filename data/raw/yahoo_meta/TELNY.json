@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 976285800,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Telenor ASA",
+  "shortName": "Telenor ASA",
+  "symbol": "TELNY"
+ },
+ "queried_at": "2026-09-27T22:50:46Z",
+ "symbol": "TELNY"
+}

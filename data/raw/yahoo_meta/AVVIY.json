@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1256045400,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "Aviva plc",
+  "shortName": "Aviva Plc",
+  "symbol": "AVVIY"
+ },
+ "queried_at": "2026-09-27T22:28:38Z",
+ "symbol": "AVVIY"
+}

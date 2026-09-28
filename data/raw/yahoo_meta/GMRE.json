@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:37:25Z"
+ },
+ "queried_at": "2026-09-27T23:00:26Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Apollo Diversified Real Estate Fund",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Griffin Institutional Access Re",
+   "symbol": "GMREX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "GMRE"
+}

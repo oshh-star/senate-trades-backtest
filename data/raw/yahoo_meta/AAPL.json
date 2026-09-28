@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 345479400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Apple Inc.",
+  "shortName": "Apple Inc.",
+  "symbol": "AAPL"
+ },
+ "queried_at": "2026-09-27T22:25:15Z",
+ "symbol": "AAPL"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 938784600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BlackRock, Inc.",
+  "shortName": "BlackRock, Inc.",
+  "symbol": "BLK"
+ },
+ "queried_at": "2026-09-27T22:29:40Z",
+ "symbol": "BLK"
+}

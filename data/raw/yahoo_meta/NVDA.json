@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 917015400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "NVIDIA Corporation",
+  "shortName": "NVIDIA Corporation",
+  "symbol": "NVDA"
+ },
+ "queried_at": "2026-09-27T22:44:41Z",
+ "symbol": "NVDA"
+}

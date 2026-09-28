@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1193319000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Ulta Beauty, Inc.",
+  "shortName": "Ulta Beauty, Inc.",
+  "symbol": "ULTA"
+ },
+ "queried_at": "2026-09-27T22:51:58Z",
+ "symbol": "ULTA"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1514903400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Nutrien Ltd.",
+  "shortName": "Nutrien Ltd.",
+  "symbol": "NTR"
+ },
+ "queried_at": "2026-09-27T22:44:31Z",
+ "symbol": "NTR"
+}

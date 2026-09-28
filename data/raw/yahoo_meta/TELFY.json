@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 550503000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Telef\u00f3nica, S.A.",
+  "shortName": "Telefonica S.A.",
+  "symbol": "TELFY"
+ },
+ "queried_at": "2026-09-27T22:50:45Z",
+ "symbol": "TELFY"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Dominion Energy, Inc.",
+  "shortName": "Dominion Energy, Inc.",
+  "symbol": "D"
+ },
+ "queried_at": "2026-09-27T22:32:56Z",
+ "symbol": "D"
+}

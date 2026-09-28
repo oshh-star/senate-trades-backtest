@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 670602600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "AutoZone, Inc.",
+  "shortName": "AutoZone, Inc.",
+  "symbol": "AZO"
+ },
+ "queried_at": "2026-09-27T22:28:49Z",
+ "symbol": "AZO"
+}

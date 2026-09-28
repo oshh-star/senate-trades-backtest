@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 849105000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Genesis Energy, L.P.",
+  "shortName": "Genesis Energy, L.P.",
+  "symbol": "GEL"
+ },
+ "queried_at": "2026-09-27T22:37:02Z",
+ "symbol": "GEL"
+}

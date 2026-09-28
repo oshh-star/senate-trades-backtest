@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 848327400,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "United Overseas Bank Limited",
+  "shortName": "United Overseas Bank Ltd.",
+  "symbol": "UOVEY"
+ },
+ "queried_at": "2026-09-27T22:52:06Z",
+ "symbol": "UOVEY"
+}

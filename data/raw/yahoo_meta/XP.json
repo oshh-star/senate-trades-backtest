@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1576074600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "XP Inc.",
+  "shortName": "XP Inc.",
+  "symbol": "XP"
+ },
+ "queried_at": "2026-09-27T22:54:28Z",
+ "symbol": "XP"
+}

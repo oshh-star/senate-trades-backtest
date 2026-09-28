@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 885393000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "W. P. Carey Inc.",
+  "shortName": "W. P. Carey Inc. REIT",
+  "symbol": "WPC"
+ },
+ "queried_at": "2026-09-27T22:53:51Z",
+ "symbol": "WPC"
+}

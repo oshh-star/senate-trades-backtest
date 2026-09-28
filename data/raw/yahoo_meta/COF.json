@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 784996200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Capital One Financial Corporation",
+  "shortName": "Capital One Financial Corporati",
+  "symbol": "COF"
+ },
+ "queried_at": "2026-09-27T22:31:59Z",
+ "symbol": "COF"
+}

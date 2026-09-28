@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 964791000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Illumina, Inc.",
+  "shortName": "Illumina, Inc.",
+  "symbol": "ILMN"
+ },
+ "queried_at": "2026-09-27T22:39:22Z",
+ "symbol": "ILMN"
+}

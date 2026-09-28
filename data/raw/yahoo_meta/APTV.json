@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1321540200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Aptiv PLC",
+  "shortName": "Aptiv PLC",
+  "symbol": "APTV"
+ },
+ "queried_at": "2026-09-27T22:28:05Z",
+ "symbol": "APTV"
+}

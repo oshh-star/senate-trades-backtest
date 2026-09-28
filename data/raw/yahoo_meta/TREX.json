@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 923578200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Trex Company, Inc.",
+  "shortName": "Trex Company, Inc.",
+  "symbol": "TREX"
+ },
+ "queried_at": "2026-09-27T22:51:15Z",
+ "symbol": "TREX"
+}

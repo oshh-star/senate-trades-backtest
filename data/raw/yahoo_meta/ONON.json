@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1631712600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "On Holding AG",
+  "shortName": "On Holding AG",
+  "symbol": "ONON"
+ },
+ "queried_at": "2026-09-27T22:45:13Z",
+ "symbol": "ONON"
+}

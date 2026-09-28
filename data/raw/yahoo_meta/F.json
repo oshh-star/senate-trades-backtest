@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ford Motor Company",
+  "shortName": "Ford Motor Company",
+  "symbol": "F"
+ },
+ "queried_at": "2026-09-27T22:35:38Z",
+ "symbol": "F"
+}

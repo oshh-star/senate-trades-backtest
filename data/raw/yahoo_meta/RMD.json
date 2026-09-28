@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 802099800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ResMed Inc.",
+  "shortName": "ResMed Inc.",
+  "symbol": "RMD"
+ },
+ "queried_at": "2026-09-27T22:47:38Z",
+ "symbol": "RMD"
+}

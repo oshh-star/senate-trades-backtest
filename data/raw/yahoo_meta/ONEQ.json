@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1065015000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "Fidelity Nasdaq Composite Index ETF",
+  "shortName": "Fidelity Nasdaq Composite Index",
+  "symbol": "ONEQ"
+ },
+ "queried_at": "2026-09-27T22:45:11Z",
+ "symbol": "ONEQ"
+}

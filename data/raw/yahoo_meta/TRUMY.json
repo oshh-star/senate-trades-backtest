@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Terumo Corporation",
+  "shortName": "Terumo Corp.",
+  "symbol": "TRUMY"
+ },
+ "queried_at": "2026-09-27T22:51:22Z",
+ "symbol": "TRUMY"
+}

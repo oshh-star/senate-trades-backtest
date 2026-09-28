@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1414762200,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "ARK Innovation ETF",
+  "shortName": "ARK Innovation ETF",
+  "symbol": "ARKK"
+ },
+ "queried_at": "2026-09-27T22:28:13Z",
+ "symbol": "ARKK"
+}

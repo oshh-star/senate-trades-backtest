@@ -19,7 +19,7 @@ gary c|peters,Gary C,Peters,"Peters, Gary (Senator)",Senator,77,2016-02-12,2026-
 jacklyn s|rosen,Jacklyn S,Rosen,"Rosen, Jacky (Senator)",Senator,7,2019-05-09,2023-01-11,R000608,Jacky Rosen,exact,high,1.0,,
 james conley|justice,James Conley,"Justice, II","Justice II, James Conley (Senator)",Senator,1,2025-10-10,2025-10-10,J000312,James C. Justice,exact,high,1.0,,
 james m|inhofe,James M,Inhofe,"Inhofe, James M. (Senator) | Senator",Former Senator,62,2016-01-11,2021-01-15,I000024,James M. Inhofe,exact,high,1.0,,
-james|banks,James,Banks,"Banks, James E. (Senator)",Senator,5,2025-03-10,2026-06-07,B001299,Jim Banks,fuzzy,low,0.8,James Lankford (L000575) 0.720,
+james|banks,James,Banks,"Banks, James E. (Senator)",Senator,5,2025-03-10,2026-06-07,B001299,Jim Banks,override,high,,,"eFD ""Banks, James E."" is Jim Banks (R-IN, Senate from 2025-01-03); confirmed by Harry 2026-09-27 (H1)"
 jd|vance,JD,Vance,"Vance, J.D. (Senator)",Former Senator,2,2023-09-29,2023-10-23,V000137,J.D. Vance,exact,high,1.0,,
 jeanne|shaheen,Jeanne,Shaheen,"Shaheen, Jeanne (Senator)",Senator,3,2016-05-23,2020-08-10,S001181,Jeanne Shaheen,exact,high,1.0,,
 jefferson b|sessions,Jefferson B,"Sessions, III","Sessions, Jefferson B. III (Senator)",Candidate,5,2016-01-05,2016-09-12,S001141,Jeff Sessions,exact,high,1.0,,

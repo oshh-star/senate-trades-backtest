@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": -244546200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "RTX Corporation",
+  "shortName": "RTX Corporation",
+  "symbol": "RTX"
+ },
+ "queried_at": "2026-09-27T22:48:05Z",
+ "symbol": "RTX"
+}

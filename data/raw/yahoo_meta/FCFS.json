@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 676560600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "FirstCash Holdings, Inc.",
+  "shortName": "FirstCash Holdings, Inc.",
+  "symbol": "FCFS"
+ },
+ "queried_at": "2026-09-27T22:35:42Z",
+ "symbol": "FCFS"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1555594200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pinterest, Inc.",
+  "shortName": "Pinterest, Inc.",
+  "symbol": "PINS"
+ },
+ "queried_at": "2026-09-27T22:46:01Z",
+ "symbol": "PINS"
+}

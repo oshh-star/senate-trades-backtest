@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1558704600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Corteva, Inc.",
+  "shortName": "Corteva, Inc.",
+  "symbol": "CTVA"
+ },
+ "queried_at": "2026-09-27T22:32:42Z",
+ "symbol": "CTVA"
+}

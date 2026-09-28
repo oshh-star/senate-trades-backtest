@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1519828200,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Shionogi & Co., Ltd.",
+  "shortName": "Shionogi & Co. Ltd.",
+  "symbol": "SGIOF"
+ },
+ "queried_at": "2026-09-27T23:03:06Z",
+ "symbol": "SGIOF"
+}

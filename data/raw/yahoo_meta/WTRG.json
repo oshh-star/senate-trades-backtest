@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Essential Utilities, Inc.",
+  "shortName": "Essential Utilities, Inc.",
+  "symbol": "WTRG"
+ },
+ "queried_at": "2026-09-27T22:54:01Z",
+ "symbol": "WTRG"
+}

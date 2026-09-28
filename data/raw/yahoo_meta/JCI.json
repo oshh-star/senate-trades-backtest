@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 559834200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Johnson Controls International plc",
+  "shortName": "Johnson Controls International ",
+  "symbol": "JCI"
+ },
+ "queried_at": "2026-09-27T22:40:04Z",
+ "symbol": "JCI"
+}

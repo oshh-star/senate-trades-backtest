@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 751901400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Regency Centers Corporation",
+  "shortName": "Regency Centers Corporation",
+  "symbol": "REG"
+ },
+ "queried_at": "2026-09-27T22:47:22Z",
+ "symbol": "REG"
+}

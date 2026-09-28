@@ -1,0 +1,51 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:27:27Z"
+ },
+ "queried_at": "2026-09-27T22:57:51Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Altitude Minerals Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ALTMIN LTD FPO [ATT]",
+   "symbol": "ATT.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": "TME Pharma N.V.",
+   "quoteType": "EQUITY",
+   "shortname": "TME PHARMA",
+   "symbol": "ALTME.PA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "CXA",
+   "exchange": "CXA",
+   "longname": "Altitude Minerals Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "ALTMIN LTD FPO [ATT]",
+   "symbol": "ATT.XA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ALTM"
+}

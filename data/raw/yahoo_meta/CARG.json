@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1507815000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "CarGurus, Inc.",
+  "shortName": "CarGurus, Inc.",
+  "symbol": "CARG"
+ },
+ "queried_at": "2026-09-27T22:30:41Z",
+ "symbol": "CARG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1344864600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "First Guaranty Bancshares, Inc.",
+  "shortName": "First Guaranty Bancshares, Inc.",
+  "symbol": "FGBI"
+ },
+ "queried_at": "2026-09-27T22:35:59Z",
+ "symbol": "FGBI"
+}

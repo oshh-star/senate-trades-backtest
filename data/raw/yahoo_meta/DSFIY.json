@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OQX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1723728600,
+  "fullExchangeName": "OTC Markets OTCQX",
+  "instrumentType": "EQUITY",
+  "longName": "DSM-Firmenich AG",
+  "shortName": "DSM Firmenich AG",
+  "symbol": "DSFIY"
+ },
+ "queried_at": "2026-09-27T22:34:02Z",
+ "symbol": "DSFIY"
+}

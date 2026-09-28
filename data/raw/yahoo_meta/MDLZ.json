@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 992439000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Mondelez International, Inc.",
+  "shortName": "Mondelez International, Inc.",
+  "symbol": "MDLZ"
+ },
+ "queried_at": "2026-09-27T22:42:37Z",
+ "symbol": "MDLZ"
+}

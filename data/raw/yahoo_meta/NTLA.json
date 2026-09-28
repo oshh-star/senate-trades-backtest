@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1462541400,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "Intellia Therapeutics, Inc.",
+  "shortName": "Intellia Therapeutics, Inc.",
+  "symbol": "NTLA"
+ },
+ "queried_at": "2026-09-27T22:44:30Z",
+ "symbol": "NTLA"
+}

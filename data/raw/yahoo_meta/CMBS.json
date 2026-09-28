@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1329402600,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "iShares CMBS ETF",
+  "shortName": "iShares CMBS Bond ETF",
+  "symbol": "CMBS"
+ },
+ "queried_at": "2026-09-27T22:31:48Z",
+ "symbol": "CMBS"
+}

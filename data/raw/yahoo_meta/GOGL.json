@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "BTS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1782480600,
+  "fullExchangeName": "Cboe US",
+  "instrumentType": "ETF",
+  "longName": "Corgi GOOGL 2x Daily ETF",
+  "shortName": "Corgi GOOGL 2x Daily ETF",
+  "symbol": "GOGL"
+ },
+ "queried_at": "2026-09-27T22:37:32Z",
+ "symbol": "GOGL"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1262701800,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "Erste Group Bank AG",
+  "shortName": "Erste Group Bank AG",
+  "symbol": "EBKDY"
+ },
+ "queried_at": "2026-09-27T22:34:23Z",
+ "symbol": "EBKDY"
+}

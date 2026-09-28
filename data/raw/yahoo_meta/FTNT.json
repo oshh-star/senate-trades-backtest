@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1258554600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Fortinet, Inc.",
+  "shortName": "Fortinet, Inc.",
+  "symbol": "FTNT"
+ },
+ "queried_at": "2026-09-27T22:36:43Z",
+ "symbol": "FTNT"
+}

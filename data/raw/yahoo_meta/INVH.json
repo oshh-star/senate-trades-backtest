@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1485959400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Invitation Homes Inc.",
+  "shortName": "Invitation Homes Inc.",
+  "symbol": "INVH"
+ },
+ "queried_at": "2026-09-27T22:39:31Z",
+ "symbol": "INVH"
+}

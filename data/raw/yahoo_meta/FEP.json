@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1303824600,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "ETF",
+  "longName": "First Trust Europe AlphaDEX Fund",
+  "shortName": "First Trust Europe AlphaDEX Fun",
+  "symbol": "FEP"
+ },
+ "queried_at": "2026-09-27T22:35:55Z",
+ "symbol": "FEP"
+}

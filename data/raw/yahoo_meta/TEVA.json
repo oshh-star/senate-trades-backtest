@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 382717800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Teva Pharmaceutical Industries Limited",
+  "shortName": "Teva Pharmaceutical Industries ",
+  "symbol": "TEVA"
+ },
+ "queried_at": "2026-09-27T22:50:48Z",
+ "symbol": "TEVA"
+}

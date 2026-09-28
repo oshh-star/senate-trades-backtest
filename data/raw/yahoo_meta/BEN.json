@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 433171800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Franklin Templeton Inc.",
+  "shortName": "Franklin Templeton, Inc.",
+  "symbol": "BEN"
+ },
+ "queried_at": "2026-09-27T22:29:13Z",
+ "symbol": "BEN"
+}

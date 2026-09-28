@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:37:59Z"
+ },
+ "queried_at": "2026-09-27T23:00:32Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Harvard Bioscience, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Harvard Bioscience, Inc.",
+   "symbol": "HBIO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Hedgeye Hedged Bitcoin ETF",
+   "symbol": "HBIT",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Harbor Short Term Treasury ETF",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "HBIL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "HBIS Resources Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "HBISRC",
+   "symbol": "000923.SZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Hills Bancorporation",
+   "quoteType": "EQUITY",
+   "shortname": "Hills Bancorporation",
+   "symbol": "HBIA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NEO",
+   "exchange": "NEO",
+   "longname": "Harvest Bitcoin Enhanced Income ETF - Class A Units",
+   "quoteType": "ETF",
+   "shortname": "HARVEST BITCOIN ENHANCED INCOME",
+   "symbol": "HBIX.NE",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "HBIS Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "HEBEI STEEL CORP.",
+   "symbol": "000709.SZ",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "HBI"
+}

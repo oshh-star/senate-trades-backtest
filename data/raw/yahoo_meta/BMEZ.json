@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1580308200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BlackRock Health Sciences Term Trust",
+  "shortName": "BlackRock Health Sciences Trust",
+  "symbol": "BMEZ"
+ },
+ "queried_at": "2026-09-27T22:29:43Z",
+ "symbol": "BMEZ"
+}

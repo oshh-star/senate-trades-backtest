@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:53:06Z"
+ },
+ "queried_at": "2026-09-27T23:03:50Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard MStar Small Cap Index Admiral",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Small Cap Index Fd Adm",
+   "symbol": "VSMAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "VS MEDIA Holdings Limited",
+   "quoteType": "EQUITY",
+   "shortname": "VS Media Holdings Limited",
+   "symbol": "VSME",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard LifeStrategy 60/40 Inv Shrs",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Lifestrategy Moderate ",
+   "symbol": "VSMGX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard MStar Total Stk Mkt Idx Inst Pl",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard Total Stock Market Ind",
+   "symbol": "VSMPX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Invesco Small Cap Value Y",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Invesco Small Cap Value Class Y",
+   "symbol": "VSMIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Amsterdam",
+   "exchange": "AMS",
+   "longname": "Vanguard Funds PLC - Vanguard FTSE Global Small-Cap UCITS ETF USD Acc",
+   "quoteType": "ETF",
+   "shortname": "Vanguard FTSE Global Small-Cap ",
+   "symbol": "VSML.AS",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Vanguard S&P Small-Cap 600 Index I",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Vanguard S&P SmallCap 600 Index",
+   "symbol": "VSMSX",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "VSM"
+}

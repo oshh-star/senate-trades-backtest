@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1494250200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Nuance Mid Cap Value Z",
+  "shortName": "Nuance Mid Cap Value Fund, Z Cl",
+  "symbol": "NMVZX"
+ },
+ "queried_at": "2026-09-27T22:44:08Z",
+ "symbol": "NMVZX"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 755879400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Simon Property Group, Inc.",
+  "shortName": "Simon Property Group, Inc.",
+  "symbol": "SPG"
+ },
+ "queried_at": "2026-09-27T22:49:44Z",
+ "symbol": "SPG"
+}

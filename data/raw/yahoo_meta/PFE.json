@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 76253400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Pfizer Inc.",
+  "shortName": "Pfizer, Inc.",
+  "symbol": "PFE"
+ },
+ "queried_at": "2026-09-27T22:45:50Z",
+ "symbol": "PFE"
+}

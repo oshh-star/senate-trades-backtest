@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 766157400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Eagle Materials Inc.",
+  "shortName": "Eagle Materials Inc",
+  "symbol": "EXP"
+ },
+ "queried_at": "2026-09-27T22:35:30Z",
+ "symbol": "EXP"
+}

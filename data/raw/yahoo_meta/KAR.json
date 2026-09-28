@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-27T22:40:27Z"
+ },
+ "queried_at": "2026-09-27T23:01:08Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Karman Holdings Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Karman Holdings Inc.",
+   "symbol": "KRMN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Karyopharm Therapeutics Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Karyopharm Therapeutics Inc.",
+   "symbol": "KPTI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Karat Packaging Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Karat Packaging Inc.",
+   "symbol": "KRT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Kardigan, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Kardigan, Inc.",
+   "symbol": "KARD",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE MKT",
+   "exchange": "ASE",
+   "longname": "Kartoon Studios Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Kartoon Studios, Inc.",
+   "symbol": "TOON",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Karooooo Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "Karooooo Ltd.",
+   "symbol": "KARO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "KraneShares Electric Vehicles and Future Mobility Index ETF",
+   "quoteType": "ETF",
+   "shortname": "KraneShares Electric Vehicles a",
+   "symbol": "KARS",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "KAR"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1476883800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "CRISPR Therapeutics AG",
+  "shortName": "CRISPR Therapeutics AG",
+  "symbol": "CRSP"
+ },
+ "queried_at": "2026-09-27T22:32:25Z",
+ "symbol": "CRSP"
+}

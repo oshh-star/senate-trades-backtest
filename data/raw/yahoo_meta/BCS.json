@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 526656600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Barclays PLC",
+  "shortName": "Barclays PLC",
+  "symbol": "BCS"
+ },
+ "queried_at": "2026-09-27T22:29:09Z",
+ "symbol": "BCS"
+}

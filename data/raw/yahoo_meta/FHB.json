@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1470403800,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "First Hawaiian, Inc.",
+  "shortName": "First Hawaiian, Inc.",
+  "symbol": "FHB"
+ },
+ "queried_at": "2026-09-27T22:36:01Z",
+ "symbol": "FHB"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1181827800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "TE Connectivity plc",
+  "shortName": "TE Connectivity plc",
+  "symbol": "TEL"
+ },
+ "queried_at": "2026-09-27T22:50:44Z",
+ "symbol": "TEL"
+}

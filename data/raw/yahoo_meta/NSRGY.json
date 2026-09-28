@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 847895400,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Nestl\u00e9 S.A.",
+  "shortName": "Nestle S.A.",
+  "symbol": "NSRGY"
+ },
+ "queried_at": "2026-09-27T22:25:20Z",
+ "symbol": "NSRGY"
+}

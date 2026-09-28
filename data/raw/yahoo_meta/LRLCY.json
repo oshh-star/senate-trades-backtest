@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PNK",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1176903000,
+  "fullExchangeName": "OTC Markets OTCPK",
+  "instrumentType": "EQUITY",
+  "longName": "L'Or\u00e9al S.A.",
+  "shortName": "L'Oreal Co.",
+  "symbol": "LRLCY"
+ },
+ "queried_at": "2026-09-27T22:41:52Z",
+ "symbol": "LRLCY"
+}

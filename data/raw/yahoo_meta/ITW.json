@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 100881000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Illinois Tool Works Inc.",
+  "shortName": "Illinois Tool Works Inc.",
+  "symbol": "ITW"
+ },
+ "queried_at": "2026-09-27T22:39:48Z",
+ "symbol": "ITW"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1376400600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Independence Realty Trust, Inc.",
+  "shortName": "Independence Realty Trust, Inc.",
+  "symbol": "IRT"
+ },
+ "queried_at": "2026-09-27T22:39:40Z",
+ "symbol": "IRT"
+}

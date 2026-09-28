@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1751031000,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "WW International, Inc.",
+  "shortName": "WW International, Inc.",
+  "symbol": "WW"
+ },
+ "queried_at": "2026-09-27T22:54:05Z",
+ "symbol": "WW"
+}
