@@ -1479,7 +1479,7 @@ Every in-scope record without an entry price (92; also `data/interim/price_missi
 
 ### 4. Price series that end before the window end while a copied position may be open
 
-In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (0 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Proposed engine rule (E20, for Harry): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
+In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (0 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
 
 _None._
 

@@ -25,9 +25,10 @@ one command (`python run_all.py`) must rebuild every number.
   corrected record at the amendment's datetime ("as revised" is variant V14). Raw downloads are cached in data/raw/ and committed.
 - **Analysis window (A06)**: ends 2026-08-31 (Ken French data ends there). `analysis.window_years`
   (default 5, i.e. disclosures 2021-09-01 to 2026-08-31, 60 months; 3 and 10 are a one-line change).
-- **Universe**: US common stocks **and US-listed ETFs** (every trade flagged `is_etf`;
-  `universe.include_etfs: false` is the ETF-excluded variant). Options, bonds, crypto and mutual
-  funds are excluded.
+- **Universe**: US common stocks **and US-listed EQUITY ETFs** (K5: every ETF is classed equity,
+  fixed_income, commodity or other from Yahoo's fund category; `universe.etf_classes: [equity]`; V16 keeps
+  all). Every trade is flagged `is_etf`; `universe.include_etfs: false` is the ETF-excluded variant (V5).
+  Options, bonds, crypto and mutual funds are excluded.
 - **Owners**: `universe.owners: [Self, Joint]`. Spouse and Child trades stay in the raw cache and
   are counted by owner type in the exclusions log; adding them is a one-line variant.
 - **Sizing**: midpoint of the disclosed range (open top band uses its lower bound). Variants:
@@ -38,6 +39,9 @@ one command (`python run_all.py`) must rebuild every number.
   regardless of owner. Sale (Full) closes it; Sale (Partial) sells the midpoint amount, capped at
   the holding. Sales of anything we do not hold (for example, bought before the window) are ignored
   and logged. No shorting. Exchanges are ignored and logged. Open positions are marked at the last price.
+  A series that ends early closes the lot at its last price (E20, K1). Symbols with no usable prices
+  (the survivorship ledger, data/interim/survivorship_ledger.csv, with a reason for each) are logged and
+  skipped until CRSP arrives (K3); V15 fills their purchases with SPY.
 - **Senator vs copier**: every trade's return is also measured from the transaction date. The gap
   between the two is a core result.
 - **Portfolio**: calendar-time, daily; dollar-weighted average return of open positions (equal-weight
@@ -63,12 +67,20 @@ src/scrape/           Phase 1: legislators.py (service dates), listing.py, downl
 src/clean/             Phase 2: amendments.py (link, classify, de-duplicate), tickers.py (normalise,
                       recover from names via SEC), yahoo.py (instrument type/exchange, cached),
                       build.py (waterfall, flags), report.py (outputs, data_quality.md section)
-src/prices/           Phase 3: resolve.py (renames via SEC company histories), yahoo_prices.py (download,
-                      parse), french.py (factors), checks.py (sanity checks, survivorship ledger)
+src/prices/           Phase 3: resolve.py (renames via SEC company histories, survivorship ledger), yahoo_prices.py
+                      (download, parse), repairs.py (K6), french.py (factors), checks.py (sanity checks)
+src/clean/etf_class.py  K5: ETF asset class from Yahoo's fund category (cached in data/raw/yahoo_fund/)
+src/engine/           Phase 4: events.py (entry dates, sizing, ordering, variant filters), book.py (FIFO lots,
+                      J3 reversals, series ending early), portfolio.py (series A and B), panel.py (event
+                      study panel), diagnostics.py (data_quality.md section, chart, worked examples)
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 config/asset_name_overrides.yaml   hand-written asset name -> ticker (J5), confirmed against Yahoo
-config/ticker_renames.yaml   renames (FB -> META), same-symbol name changes, hand-rejected cases
+config/ticker_renames.yaml   renames (FB -> META, SQ -> XYZ), same-symbol name changes, hand-rejected cases,
+                      hand non-US listings (BRK CDR, COLPAL), hand recycled symbols (USG)
+config/ledger_reasons.yaml   K4: why each survivorship-ledger symbol has no prices, with a one-line source
+config/price_repairs.yaml    K6: repairs to bad Yahoo prints (logged in data/interim/price_repairs_log.csv)
+config/etf_class_overrides.yaml   K5: hand ETF classes (HIYS)
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
 data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
@@ -78,13 +90,16 @@ data/raw/yahoo_meta/  Yahoo instrument metadata per ticker (no prices); data/raw
 data/raw/prices/yahoo/  raw Yahoo daily price responses (gzipped JSON, with download date); data/raw/french/ factor zips
 data/processed/       trades_clean.csv (one row per trade + variant flags), trade_records.csv (J3 records),
                       tickers.csv, exclusions.csv, prices.csv.gz (not committed: rebuilt by the prices stage),
-                      dividends.csv, splits.csv, trading_calendar.csv, factors_daily.csv, factors_monthly.csv
+                      dividends.csv, splits.csv, trading_calendar.csv, factors_daily.csv, factors_monthly.csv,
+                      lots.csv, daily_book.csv, event_panel.csv, engine_events.csv, engine_metadata.json (Phase 4)
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
+outputs/phase4_worked_examples.md   three copied lots traced step by step (Phase 4)
 docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
+scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand; cached in data/raw/sec/filings/
 tests/                pytest suite (run: python -m pytest)
 ```
 
@@ -95,7 +110,7 @@ tests/                pytest suite (run: python -m pytest)
 | 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
-| 4 | Engine: trade-level and calendar-time portfolio returns | Not started |
+| 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Not started |
 | 6 | Robustness and mechanism tests (variants, OOS) | Not started |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
