@@ -1,0 +1,192 @@
+# Ticker renames and confirmed same-symbol name changes (Phase 3, step 1).
+# Written by `python run_all.py --only prices` (src/prices/resolve.py) from SEC EDGAR company histories
+# and checked against Yahoo's company names; entries can also be added by hand (say so in `source`).
+#   renames:     a trade under `old` uses the price history of `new` (same company, same SEC CIK).
+#   same_symbol: the company changed its name but kept the symbol; Yahoo's current name is trusted.
+#   rejected:    written by hand: same SEC company but NOT the same security (tracking stock exchanged,
+#                equity cancelled in bankruptcy, ...); never treated as a rename.
+# The clean stage reads this file (price_ticker, instrument type), so rerun `clean` after editing it.
+renames:
+- old: ABC
+  new: COR
+  effective_date: '2023-08-15'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1140859: SEC CIK 1140859 (''Cencora, Inc.'') used the name ''AMERISOURCEBERGEN CORP'' and trades today as COR; Yahoo''s name for COR: ''Cencora, Inc.'''
+- old: ANTM
+  new: ELV
+  effective_date: '2004-11-30'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1156039: SEC CIK 1156039 (''Elevance Health, Inc.'') used the name ''ANTHEM INC'' and trades today as ELV; Yahoo''s name for ELV: ''Elevance Health, Inc.'''
+- old: BIF
+  new: STEW
+  effective_date: '2022-04-26'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 102426: SEC CIK 102426 (''SRH Total Return Fund, Inc.'') used the name ''BOULDER GROWTH & INCOME FUND'' and trades today as STEW; Yahoo''s name for STEW: ''SRH Total Return Fund,
+    Inc.'''
+- old: BK
+  new: BNY
+  effective_date: ''
+  date_basis: name unchanged; ticker change date not in SEC data
+  source: 'SEC EDGAR CIK 1390777: SEC CIK 1390777 (''Bank of New York Mellon Corp'') used the name ''Bank of New York Mellon Corp'' and trades today as BNY; Yahoo''s name for BNY: ''The Bank of New York
+    Mellon Corporation'''
+- old: BLL
+  new: BALL
+  effective_date: ''
+  date_basis: name unchanged; ticker change date not in SEC data
+  source: 'SEC EDGAR CIK 9389: SEC CIK 9389 (''BALL Corp'') used the name ''BALL Corp'' and trades today as BALL; Yahoo''s name for BALL: ''Ball Corporation'''
+- old: CHK
+  new: EXE
+  effective_date: '2024-09-26'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 895126: SEC CIK 895126 (''EXPAND ENERGY Corp'') used the name ''CHESAPEAKE ENERGY CORP'' and trades today as EXE; Yahoo''s name for EXE: ''Expand Energy Corporation'''
+- old: CTL
+  new: LUMN
+  effective_date: '2021-01-20'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 18926: SEC CIK 18926 (''Lumen Technologies, Inc.'') used the name ''CENTURYLINK, INC'' and trades today as LUMN; Yahoo''s name for LUMN: ''Lumen Technologies, Inc.'''
+- old: DGNR
+  new: CCC
+  effective_date: '2021-07-29'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1818201: SEC CIK 1818201 (''CCC Intelligent Solutions Holdings Inc.'') used the name ''Dragoneer Growth Opportunities Corp.'' and trades today as CCC; Yahoo''s name for CCC: ''CCC
+    Intelligent Solutions Holdings Inc.'''
+- old: DISCA
+  new: WBD
+  effective_date: '2018-03-05'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1437107: SEC CIK 1437107 (''Warner Bros. Discovery, Inc.'') used the name ''Discovery Communications, Inc.'' and trades today as WBD; Yahoo''s name for WBD: ''Warner Bros. Discovery,
+    Inc.'''
+- old: DLPH
+  new: APTV
+  effective_date: '2017-11-29'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1521332: SEC CIK 1521332 (''Aptiv PLC'') used the name ''Delphi Automotive PLC'' and trades today as APTV; Yahoo''s name for APTV: ''Aptiv PLC'''
+- old: DPS
+  new: KDP
+  effective_date: '2018-07-02'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1418135: SEC CIK 1418135 (''Keurig Dr Pepper Inc.'') used the name ''Dr Pepper Snapple Group, Inc.'' and trades today as KDP; Yahoo''s name for KDP: ''Keurig Dr Pepper Inc.'''
+- old: DWDP
+  new: DD
+  effective_date: '2019-05-31'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1666700: SEC CIK 1666700 (''DuPont de Nemours, Inc.'') used the name ''DowDuPont Inc.'' and trades today as DD; Yahoo''s name for DD: ''DuPont de Nemours, Inc.'''
+- old: ETE
+  new: ET
+  effective_date: '2018-09-18'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1276187: SEC CIK 1276187 (''Energy Transfer LP'') used the name ''Energy Transfer Equity, L.P.'' and trades today as ET; Yahoo''s name for ET: ''Energy Transfer LP'''
+- old: EXPI
+  new: AGNT
+  effective_date: '2026-06-01'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1495932: SEC CIK 1495932 (''AGNT, Inc.'') used the name ''EXP World Holdings, Inc.'' and trades today as AGNT; Yahoo''s name for AGNT: ''AGNT, Inc'''
+- old: FB
+  new: META
+  effective_date: '2021-10-27'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1326801: SEC CIK 1326801 (''Meta Platforms, Inc.'') used the name ''Facebook Inc'' and trades today as META; Yahoo''s name for META: ''Meta Platforms, Inc.'''
+- old: FI
+  new: FISV
+  effective_date: ''
+  date_basis: name unchanged; ticker change date not in SEC data
+  source: 'SEC EDGAR CIK 798354: SEC CIK 798354 (''FISERV INC'') used the name ''FISERV INC'' and trades today as FISV; Yahoo''s name for FISV: ''Fiserv, Inc.'''
+- old: FLT
+  new: CPAY
+  effective_date: '2024-03-14'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1175454: SEC CIK 1175454 (''CORPAY, INC.'') used the name ''FLEETCOR TECHNOLOGIES INC'' and trades today as CPAY; Yahoo''s name for CPAY: ''Corpay, Inc.'''
+- old: GMRE
+  new: XRN
+  effective_date: '2026-01-26'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1533615: SEC CIK 1533615 (''Chiron Real Estate Inc.'') used the name ''Global Medical REIT Inc.'' and trades today as XRN; Yahoo''s name for XRN: ''Chiron Real Estate Inc.'''
+- old: HRS
+  new: LHX
+  effective_date: '2019-06-25'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 202058: SEC CIK 202058 (''L3HARRIS TECHNOLOGIES, INC. /DE/'') used the name ''HARRIS CORP /DE/'' and trades today as LHX; Yahoo''s name for LHX: ''L3Harris Technologies, Inc.'''
+- old: KAR
+  new: OPLN
+  effective_date: '2023-05-12'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1395942: SEC CIK 1395942 (''OPENLANE, Inc.'') used the name ''KAR Auction Services, Inc.'' and trades today as OPLN; Yahoo''s name for OPLN: ''OPENLANE, Inc.'''
+- old: LB
+  new: BBWI
+  effective_date: '2013-03-22'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 701985: SEC CIK 701985 (''Bath & Body Works, Inc.'') used the name ''LIMITED BRANDS INC'' and trades today as BBWI; Yahoo''s name for BBWI: ''Bath & Body Works, Inc.'''
+- old: MMC
+  new: MRSH
+  effective_date: '2005-01-31'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 62709: SEC CIK 62709 (''MARSH & MCLENNAN COMPANIES, INC.'') used the name ''MARSH & MCLENNAN COMPANIES INC'' and trades today as MRSH; Yahoo''s name for MRSH: ''Marsh & McLennan
+    Companies, Inc.'''
+- old: MPW
+  new: MPT
+  effective_date: ''
+  date_basis: name unchanged; ticker change date not in SEC data
+  source: 'SEC EDGAR CIK 1287865: SEC CIK 1287865 (''MEDICAL PROPERTIES TRUST INC'') used the name ''MEDICAL PROPERTIES TRUST INC'' and trades today as MPT; Yahoo''s name for MPT: ''Medical Properties Trust,
+    Inc.'''
+- old: OFC
+  new: CDP
+  effective_date: '1998-01-22'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 860546: SEC CIK 860546 (''COPT DEFENSE PROPERTIES'') used the name ''CORPORATE OFFICE PROPERTIES TRUST INC'' and trades today as CDP; Yahoo''s name for CDP: ''COPT Defense Properties'''
+- old: PCLN
+  new: BKNG
+  effective_date: '2018-02-16'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1075531: SEC CIK 1075531 (''Booking Holdings Inc.'') used the name ''Priceline Group Inc.'' and trades today as BKNG; Yahoo''s name for BKNG: ''Booking Holdings Inc.'''
+- old: PKI
+  new: RVTY
+  effective_date: '2023-04-14'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 31791: SEC CIK 31791 (''REVVITY, INC.'') used the name ''PERKINELMER INC'' and trades today as RVTY; Yahoo''s name for RVTY: ''Revvity, Inc.'''
+- old: PSTG
+  new: P
+  effective_date: ''
+  date_basis: name unchanged; ticker change date not in SEC data
+  source: 'SEC EDGAR CIK 1474432: SEC CIK 1474432 (''Everpure, Inc.'') used the name ''Everpure, Inc.'' and trades today as P; Yahoo''s name for P: ''Everpure, Inc.'''
+- old: TMK
+  new: GL
+  effective_date: '2019-08-02'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 320335: SEC CIK 320335 (''GLOBE LIFE INC.'') used the name ''TORCHMARK CORP'' and trades today as GL; Yahoo''s name for GL: ''Globe Life Inc.'''
+- old: UTX
+  new: RTX
+  effective_date: '2020-04-06'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 101829: SEC CIK 101829 (''RTX Corp'') used the name ''UNITED TECHNOLOGIES CORP /DE/'' and trades today as RTX; Yahoo''s name for RTX: ''RTX Corporation'''
+- old: WETF
+  new: WT
+  effective_date: '2022-11-04'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 880631: SEC CIK 880631 (''WisdomTree, Inc.'') used the name ''WisdomTree Investments, Inc.'' and trades today as WT; Yahoo''s name for WT: ''WisdomTree, Inc.'''
+- old: XON
+  new: PGEN
+  effective_date: '2020-01-22'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1356090: SEC CIK 1356090 (''PRECIGEN, INC.'') used the name ''INTREXON CORP'' and trades today as PGEN; Yahoo''s name for PGEN: ''Precigen, Inc.'''
+- old: ZIOP
+  new: TCRT
+  effective_date: '2022-01-04'
+  date_basis: 'SEC: end of former name'
+  source: 'SEC EDGAR CIK 1107421: SEC CIK 1107421 (''Alaunos Therapeutics, Inc.'') used the name ''ZIOPHARM ONCOLOGY INC'' and trades today as TCRT; Yahoo''s name for TCRT: ''Alaunos Therapeutics, Inc.'''
+same_symbol:
+- ticker: RUM
+  cik: '1830081'
+  source: 'SEC EDGAR CIK 1830081: SEC CIK 1830081 has used the name ''Rumble Inc.''; Yahoo''s name for RUM (''RUM Group Inc.'') is the company''s current name'
+- ticker: SLB
+  cik: '87347'
+  source: 'SEC EDGAR CIK 87347: SEC CIK 87347 has used the name ''SCHLUMBERGER LIMITED/NV''; Yahoo''s name for SLB (''SLB N.V.'') is the company''s current name'
+- ticker: UHAL
+  cik: '4457'
+  source: 'SEC EDGAR CIK 4457: SEC CIK 4457 has used the name ''AMERCO /NV/''; Yahoo''s name for UHAL (''U-Haul Holding Company'') is the company''s current name'
+rejected:
+- ticker: DVMT
+  reason: Dell Class V tracking stock, exchanged in Dec 2018 for DELL Class C shares (ratio 1.8036) or cash; not the same security as DELL
+- ticker: ESV
+  reason: Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity
+- ticker: WTW
+  reason: Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity

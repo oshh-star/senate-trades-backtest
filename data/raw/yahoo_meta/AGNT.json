@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1518013800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "AGNT, Inc",
+  "shortName": "AGNT, Inc.",
+  "symbol": "AGNT"
+ },
+ "queried_at": "2026-09-28T14:53:22Z",
+ "symbol": "AGNT"
+}

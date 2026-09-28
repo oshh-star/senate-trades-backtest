@@ -7,11 +7,13 @@ from pathlib import Path
 import pandas as pd
 
 from src.quality import write_section
-from .build import CLEAN_COLUMNS, EXCLUSION_COLUMNS, REASONS, parse_amount
+from .build import CLEAN_COLUMNS, EXCLUSION_COLUMNS, REASONS, RECORD_COLUMNS, parse_amount
 
 PROCESSED = Path("data/processed")
 INTERIM = Path("data/interim")
 TRADES_CLEAN = PROCESSED / "trades_clean.csv"
+TRADE_RECORDS = PROCESSED / "trade_records.csv"
+OVERRIDES_LOG = INTERIM / "asset_name_overrides_log.csv"
 TICKERS = PROCESSED / "tickers.csv"
 EXCLUSIONS = PROCESSED / "exclusions.csv"
 AMENDMENTS = INTERIM / "amendments.csv"
@@ -39,7 +41,7 @@ def ticker_table(tr: pd.DataFrame) -> pd.DataFrame:
         "efd_asset_names": g["asset_name"].agg(lambda s: " | ".join(s.value_counts().index[:3])),
         "ticker_sources": g["ticker_source"].agg(lambda s: " ".join(sorted(set(s)))),
     })
-    first = g[["instrument_status", "instrument_type", "yahoo_type", "exchange", "exchange_name", "listing", "is_etf", "is_otc",
+    first = g[["price_ticker", "renamed", "instrument_status", "instrument_type", "yahoo_type", "exchange", "exchange_name", "listing", "is_etf", "is_otc",
                "instrument_unresolved", "yahoo_name_mismatch", "yahoo_name"]].first()
     return t.join(first).reset_index().sort_values("ticker")
 
@@ -84,6 +86,10 @@ def run_report(cfg: dict, R: dict) -> None:
     PROCESSED.mkdir(parents=True, exist_ok=True)
     clean = tr[tr["in_trades_clean"]].sort_values(["disclosure_datetime", "trade_id"])
     clean[CLEAN_COLUMNS].to_csv(TRADES_CLEAN, index=False)
+    recs = R["records"]
+    recs[recs["in_trades_clean"]].sort_values(["disclosure_datetime", "record_id"])[RECORD_COLUMNS].to_csv(
+        TRADE_RECORDS, index=False)
+    R["overrides"].to_csv(OVERRIDES_LOG, index=False)
     tickers = ticker_table(tr)
     tickers.to_csv(TICKERS, index=False)
     excl = rows[~((rows["role"] == "first_report") & rows["trade_id"].map(tr.set_index("trade_id")["in_scope"]).fillna(False).astype(bool))]
@@ -165,6 +171,26 @@ def run_report(cfg: dict, R: dict) -> None:
           f"- Trades touched by an AMBIGUOUS amendment: {int(tr['amendment_ambiguous'].sum()):,} "
           f"(in scope: **{int((tr['amendment_ambiguous'] & tr['in_scope']).sum()):,}**). Rule applied: keep every "
           "version's trades once (a trade missing from the amendment is NOT deleted). Flag: `amendment_ambiguous`.", ""]
+    corr_t = tr[tr["corrected"] & tr["in_trades_clean"]]
+    both = tr["in_scope"] & tr["in_scope_as_revised"]
+    j3_only = tr["in_scope"] & ~tr["in_scope_as_revised"]
+    v14_only = ~tr["in_scope"] & tr["in_scope_as_revised"]
+    multi = recs[recs["in_trades_clean"] & (recs["n_records"] > 1)]
+    pattern = corr_t.assign(orig=corr_t["orig_record_in_scope"].map({True: "original in scope", False: "original out"}),
+                            late=corr_t["latest_record_in_scope"].map({True: "correction in scope", False: "correction out"}))
+    pattern = pd.crosstab(pattern["orig"], pattern["late"]) if len(pattern) else pd.DataFrame()
+    L += ["**As first published (J3, headline) vs as revised (V14).** A trade corrected by an amendment has two or "
+          "more records: the original, effective at the first disclosure, and each corrected version, effective at "
+          "its amendment's datetime (only changes of owner, date, asset, asset type, type or amount make a new record; "
+          "a reworded asset name does not). Each record passes the filters on its own values and date. "
+          "`data/processed/trade_records.csv` lists every record for the engine.", "",
+          f"- Trades in trades_clean.csv with more than one record: **{len(corr_t):,}**, "
+          f"{len(multi):,} records; {int((corr_t['n_records'] > 2).sum())} trades have three or more records.",
+          f"- In scope under both rules: {int(both.sum()):,}; only as first published (J3): {int(j3_only.sum()):,}; "
+          f"only as revised (V14): {int(v14_only.sum()):,}. Headline (J3) in-scope trades: **{int(tr['in_scope'].sum()):,}**; "
+          f"as revised: **{int(tr['in_scope_as_revised'].sum()):,}**.", "",
+          "Corrected trades by which of their records is in scope:", "",
+          md(pattern, index=True) if len(pattern) else "_None._", ""]
     amb = amend[amend["class"] == "AMBIGUOUS"].copy()
     amb["in_window"] = amb["date_received"].between(start.isoformat(), end.isoformat())
     L += ["AMBIGUOUS amendments (for Harry):", "",
@@ -190,6 +216,9 @@ def run_report(cfg: dict, R: dict) -> None:
           f"({int(acc['n_trades_self_joint_in_window'].sum())} Self/Joint in the default window). Not recovered: "
           f"**{len(rej)}** names, {int(rej['n_trades'].sum())} trades ({int(rej['n_trades_self_joint_in_window'].sum())} "
           "Self/Joint in window); these are NO_TICKER exclusions. Full list: `data/interim/ticker_recovery.csv`.", "",
+          "Hand-written overrides (J5, `config/asset_name_overrides.yaml`; applied only when Yahoo's, or failing "
+          "that SEC's, company name for the ticker confirms it):", "",
+          md(R["overrides"][["contains", "ticker", "confirmed_by", "note", "matched_asset_names"]]), "",
           "Recovered:", "", md(acc[["asset_name", "candidate", "method", "n_trades", "n_trades_self_joint_in_window", "note"]]), "",
           "Not recovered, Self/Joint in the default window (for Harry):", "",
           md(rej[rej["n_trades_self_joint_in_window"] > 0][["asset_name", "asset_type", "candidate", "n_trades_self_joint_in_window", "note"]]), ""]

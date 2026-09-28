@@ -19,16 +19,29 @@ Waterfall (every raw row ends in exactly one place; the first failing step is it
 
 data/processed/trades_clean.csv holds every unique trade that passes steps 1-3 and 5-11 and was
 disclosed inside the 3-, 5- or 10-year window, whatever the owner, so every pre-registered variant
-(V1-V12) is a filter on this file. `in_scope` marks the headline sample for the current config.
+(V1-V14) is a filter on this file. `in_scope` marks the headline sample for the current config.
+
+Two views of every trade go through exactly the same filters (J3):
+  records     ("as first published", the headline): each published version of a trade with the
+              values published at that moment, effective at its own datetime. A trade is in scope
+              when at least one of its records is; its reason code otherwise is its first record's.
+              data/processed/trade_records.csv lists every record, for the engine.
+  as revised  (variant V14): the latest values at the first disclosure datetime (the Phase 2 rule),
+              in columns `in_scope_as_revised` / `reason_code_as_revised`.
+Hand-written asset-name overrides (J5, config/asset_name_overrides.yaml) and ticker renames
+(config/ticker_renames.yaml; a trade under an old symbol is priced with the new symbol,
+`price_ticker`) are applied to both views.
 """
 from __future__ import annotations
 
 import copy
 import datetime as dt
 import re
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from src.config import analysis_window
 from src.scrape.names import filer_key
@@ -42,6 +55,8 @@ BULK_PTR = 50
 FIRST_DAYS = 180
 SAME_DAY_CUTOFF = "15:30"
 WINDOW_VARIANTS = [3, 5, 10]
+ASSET_OVERRIDES = Path("config/asset_name_overrides.yaml")
+TICKER_RENAMES = Path("config/ticker_renames.yaml")
 # Yahoo's suffixes for non-US exchanges (e.g. LM09.SG = Stuttgart). A ticker carrying one is a
 # non-US listing even when Yahoo no longer knows the symbol. Share classes use "-" (BRK-B).
 FOREIGN_SUFFIXES = {"L", "IL", "PA", "AS", "SW", "SG", "TI", "BE", "MU", "F", "DE", "DU", "HM", "HA", "MX",
@@ -68,6 +83,9 @@ REASONS = [
 _RANGE = re.compile(r"^\$([\d,]+)\s*-\s*\$([\d,]+)$")
 _OVER = re.compile(r"^(?:over|more than)\s*\$([\d,]+)\+?$|^\$([\d,]+)\s*\+$", re.I)
 _OPTION = re.compile(r"\b(call|calls|put|puts)\b|\boptions?\b.*\b(strike|expir\w*|exp)\b|\$\d+(\.\d+)?\s*(c|p)\b", re.I)
+# The fields each view carries into the filters.
+UNIT_FIELDS = ["owner", "transaction_date_iso", "ticker", "ticker_raw", "asset_name", "asset_type",
+               "transaction_type", "amount", "comment"]
 
 
 def parse_amount(text: str) -> dict:
@@ -97,6 +115,67 @@ def windows(cfg: dict) -> dict[str, tuple[dt.date, dt.date]]:
         c["analysis"]["window_years"] = y
         out[f"in_window_{y}y"] = analysis_window(c)
     return out
+
+
+# ------------------------------------------------------------------ hand-written config files
+def load_asset_overrides(path: Path = ASSET_OVERRIDES) -> list[dict]:
+    """J5: [{contains, ticker, expect, note}]. `contains` is matched case-insensitively inside the
+    eFD asset name; `expect` must appear in Yahoo's (or, failing that, SEC's) name for the ticker."""
+    if not path.exists():
+        return []
+    return (yaml.safe_load(path.read_text()) or {}).get("overrides") or []
+
+
+def load_renames(path: Path = TICKER_RENAMES) -> dict[str, dict]:
+    """old ticker -> {new, effective_date, source, ...} from config/ticker_renames.yaml."""
+    if not path.exists():
+        return {}
+    items = (yaml.safe_load(path.read_text()) or {}).get("renames") or []
+    return {tk.normalise_ticker(r["old"]): {**r, "new": tk.normalise_ticker(r["new"])} for r in items}
+
+
+def load_same_symbol(path: Path = TICKER_RENAMES) -> set[str]:
+    """Tickers whose company changed its name but kept the symbol (confirmed via SEC history)."""
+    if not path.exists():
+        return set()
+    return {tk.normalise_ticker(r["ticker"]) for r in (yaml.safe_load(path.read_text()) or {}).get("same_symbol") or []}
+
+
+def price_symbol(ticker: str, renames: dict[str, dict]) -> str:
+    """Follow renames (FB -> META) to the symbol whose price history Yahoo keeps."""
+    seen = set()
+    while ticker in renames and ticker not in seen:
+        seen.add(ticker)
+        ticker = renames[ticker]["new"]
+    return ticker
+
+
+def override_label(o: dict) -> str:
+    return o.get("contains") or f"= {o.get('equals')}"
+
+
+def override_matches(o: dict, asset_name: str) -> bool:
+    if "equals" in o:
+        return asset_name.strip().lower() == str(o["equals"]).strip().lower()
+    return str(o["contains"]).lower() in asset_name.lower()
+
+
+def confirm_override(o: dict, meta: dict, sec_index, renames: dict) -> tuple[str, str]:
+    """('yahoo' | 'sec' | '', note): is `expect` in the company name Yahoo (or SEC) gives the ticker?"""
+    t = tk.normalise_ticker(o["ticker"])
+    p = price_symbol(t, renames)
+    wants = [tk.fold(w) for w in ([o["expect"]] if isinstance(o["expect"], str) else o["expect"])]
+    m = meta.get(p) or {}
+    for n in (m.get("name", ""), m.get("short_name", "")):
+        if n and any(w in tk.fold(n) for w in wants):
+            return "yahoo", f"Yahoo name for {p}: {n}"
+    if sec_index is not None:
+        for s in (t, p):
+            r = sec_index.by_ticker.get(s)
+            if r and any(w in tk.fold(r["title"]) for w in wants):
+                return "sec", f"Yahoo has no matching name for {p}; SEC title for {s}: {r['title']}"
+    got = m.get("name") or m.get("short_name") or "(Yahoo does not know the symbol)"
+    return "", f"not confirmed: expected '{o['expect']}', Yahoo name for {p}: {got}"
 
 
 # ------------------------------------------------------------------ loading
@@ -150,15 +229,180 @@ def service_lookup(terms: pd.DataFrame):
     return find
 
 
-# ------------------------------------------------------------------ main
-def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -> dict:
-    """Everything Phase 2 produces, as DataFrames. yahoo_lookup(symbols) -> {symbol: cached record}."""
+# ------------------------------------------------------------------ the filters, for either view
+def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_index,
+             overrides: list[dict], renames: dict,
+             same_symbol: set[str] | None = None) -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
+    """Every scope attribute and reason code for the units in `u` (records or as-revised trades).
+
+    `u` needs trade_id, bioguide_id, senator, UNIT_FIELDS, disclosure_datetime, disclosure_date.
+    Returns (u annotated, ticker recovery table, Yahoo classification per symbol, J5 override log).
+    """
     from . import yahoo as yh
-    D = D or load_inputs()
-    rows, filings, paper = prepare(D)
+    u = u.reset_index(drop=True).copy()
     start, end = analysis_window(cfg)
     wins = windows(cfg)
     union_start = min(s for s, _ in wins.values())
+
+    find = service_lookup(terms)
+    sv = pd.DataFrame([find(b, d) for b, d in zip(u["bioguide_id"], u["transaction_date_iso"])])
+    u = pd.concat([u, sv], axis=1)
+    u["transaction_date"] = u["transaction_date_iso"]
+    u["disclosure_time"] = u["disclosure_datetime"].str[11:16]
+    u["filed_before_1530_et"] = (u["disclosure_time"] != "") & (u["disclosure_time"] < SAME_DAY_CUTOFF)
+    tdate = pd.to_datetime(u["transaction_date"], errors="coerce")
+    u["filing_lag_days"] = (pd.to_datetime(u["disclosure_date"]) - tdate).dt.days
+    u["late_filing"] = u["filing_lag_days"] > LATE_DAYS
+    u["days_since_service_start"] = (tdate - pd.to_datetime(u["service_start"], errors="coerce")).dt.days
+    for col, (ws, we) in wins.items():
+        u[col] = (u["disclosure_date"] >= ws.isoformat()) & (u["disclosure_date"] <= we.isoformat())
+    u["in_window"] = (u["disclosure_date"] >= start.isoformat()) & (u["disclosure_date"] <= end.isoformat())
+    u["in_any_window"] = (u["disclosure_date"] >= union_start.isoformat()) & (u["disclosure_date"] <= end.isoformat())
+    u = pd.concat([u, pd.DataFrame([parse_amount(a) for a in u["amount"]])], axis=1)
+    u["option_in_name"] = u["asset_type"].isin(STOCK_TYPES) & u["asset_name"].map(is_option_name)
+
+    # ---- tickers: recovery from the asset name for units that could still be in scope
+    candidate = (u["in_service"] & u["in_any_window"] & u["asset_type"].isin(STOCK_TYPES)
+                 & ~u["option_in_name"] & (u["transaction_type"] != "Exchange"))
+    u["ticker_source"] = np.where(u["ticker"] != "", "efd", "")
+    u["ticker_recovery_note"] = ""
+    need = u[candidate & (u["ticker"] == "")]
+    names = list(need["asset_name"].unique())
+    ovr = {n: next((o for o in overrides if override_matches(o, n)), None) for n in names}
+    emb = {n: tk.embedded_candidate(n) for n in names}
+    sec_hits = {n: sec_index.match_name(n) for n in names} if sec_index is not None else {}
+    symbols = set(u.loc[candidate & (u["ticker"] != ""), "ticker"]) | {c[0] for c in emb.values() if c}
+    symbols |= {t for t, _ in sec_hits.values() if t}
+    symbols |= {tk.normalise_ticker(o["ticker"]) for o in overrides}
+    symbols |= {price_symbol(s, renames) for s in list(symbols)}
+    meta_raw = yahoo_lookup(sorted(symbols)) if yahoo_lookup else {}
+    meta = {s: yh.classify(meta_raw.get(s)) for s in symbols}
+
+    override_log = []
+    for o in overrides:
+        conf, note = confirm_override(o, meta, sec_index, renames)
+        hits = [n for n in names if ovr.get(n) is o]
+        override_log.append({"contains": override_label(o), "ticker": tk.normalise_ticker(o["ticker"]),
+                             "expect": o["expect"], "confirmed_by": conf, "note": note,
+                             "matched_asset_names": " | ".join(hits), "source_note": o.get("note", "")})
+    ovr_conf = {r["contains"]: r["confirmed_by"] for r in override_log}   # keyed by label
+
+    recovery = []
+    for n in names:
+        sel = need["asset_name"] == n
+        ids = need.loc[sel, "trade_id"]
+        info = {"asset_name": n, "asset_type": " | ".join(sorted(need.loc[sel, "asset_type"].unique())),
+                "n_trades": int(ids.nunique()), "n_trades_self_joint_in_window": int(need.loc[
+                    sel & need["owner"].isin(cfg["universe"]["owners"]) & need["in_window"], "trade_id"].nunique()),
+                "candidate": "", "method": "none", "accepted": False, "note": "no SEC list loaded"}
+        if ovr.get(n):
+            o = ovr[n]
+            lab = override_label(o)
+            ok = bool(ovr_conf[lab])
+            info.update(candidate=tk.normalise_ticker(o["ticker"]), method="override", accepted=ok,
+                        note=f"J5 override '{lab}' ({ovr_conf[lab] or 'NOT confirmed'})")
+        if not info["accepted"] and emb.get(n):
+            t, rest = emb[n]
+            ok, note = tk.verify_embedded(t, rest, meta.get(t), sec_index)
+            info.update(candidate=t, method="embedded", accepted=ok,
+                        note=note if info["method"] == "none" else f"{info['note']}; then {note}")
+        if not info["accepted"] and n in sec_hits:
+            t, note = sec_hits[n]
+            if t or info["method"] == "none":
+                info.update(candidate=t, method="sec_name", accepted=bool(t),
+                            note=note if info["method"] == "none" else f"{info['note']}; then {note}")
+            else:
+                info["note"] += f"; then {note}"
+        recovery.append(info)
+        if info["accepted"]:
+            idx = need.index[sel]
+            u.loc[idx, "ticker"] = info["candidate"]
+            u.loc[idx, "ticker_source"] = info["method"]
+            u.loc[idx, "ticker_recovery_note"] = info["note"]
+    recovery = pd.DataFrame(recovery, columns=["asset_name", "asset_type", "n_trades", "n_trades_self_joint_in_window",
+                                               "candidate", "method", "accepted", "note"])
+    u["reached_instrument_step"] = candidate & (u["ticker"] != "")
+
+    # ---- instrument classification, from the symbol whose prices we use (after renames)
+    u["price_ticker"] = [price_symbol(t, renames) if t else "" for t in u["ticker"]]
+    u["renamed"] = (u["price_ticker"] != u["ticker"]) & (u["ticker"] != "")
+    none = yh.classify(None)
+    cls = pd.DataFrame([meta.get(p, none) if p else none for p in u["price_ticker"]], index=u.index)
+    for c_out, c_in in [("instrument_type", "instrument_type"), ("yahoo_type", "yahoo_type"), ("exchange", "exchange"),
+                        ("exchange_name", "exchange_name"), ("listing", "listing"), ("is_otc", "is_otc"),
+                        ("yahoo_name", "name")]:
+        u[c_out] = cls[c_in]
+    # Yahoo describes today's owner of a symbol. When its name shares no word with any eFD asset
+    # name for that ticker (recycled symbol, e.g. FB is now a ProShares ETF, or a renamed company),
+    # its classification is not trusted: "unresolved". A confirmed rename (ticker_renames.yaml,
+    # checked by name history) or a confirmed J5 override is trusted instead.
+    names_by_ticker = u[u["ticker"] != ""].groupby("ticker")["asset_name"].apply(lambda s: sorted(set(s)))
+    mismatch = {t: bool(names_by_ticker.get(t)) and not any(
+        tk.names_agree(n, m["name"]) or tk.names_agree(n, m["short_name"]) or tk.ticker_in_name(t, n)
+        for n in names_by_ticker[t]) for t, m in meta.items() if m["recognised"] and t in names_by_ticker}
+    trusted = u["renamed"] | (u["ticker_source"] == "override") | u["ticker"].isin(same_symbol or set())
+    u["yahoo_name_mismatch"] = pd.Series([mismatch.get(t, False) for t in u["ticker"]], index=u.index) & ~trusted
+    mm = u["yahoo_name_mismatch"]
+    u.loc[mm, "instrument_type"] = "unresolved"
+    u.loc[mm, "listing"] = "unknown"
+    u.loc[mm, "is_otc"] = False
+    u["is_otc"] = u["is_otc"].astype(bool)
+    u["is_etf"] = u["instrument_type"] == "etf"
+    u["instrument_unresolved"] = u["instrument_type"] == "unresolved"
+    suffix = u["ticker"].str.extract(r"\.([A-Z]{1,2})$")[0]
+    u["foreign_suffix"] = suffix.isin(FOREIGN_SUFFIXES)
+    u["non_us"] = ((u["listing"] == "non_us") & ~u["instrument_unresolved"]) | u["foreign_suffix"]
+    u["instrument_status"] = np.select(
+        [u["instrument_type"] == "mutual_fund", u["instrument_type"] == "other", u["non_us"]],
+        ["excluded: mutual fund", "excluded: other instrument type", "excluded: non-US listing"], "kept")
+
+    # ---- reasons (first failing step)
+    owners = cfg["universe"]["owners"]
+    include_etfs = bool(cfg["universe"]["include_etfs"])
+    conds = [
+        ("OUTSIDE_SERVICE", ~u["in_service"]),
+        ("OUTSIDE_WINDOW", ~u["in_window"]),
+        ("ASSET_TYPE", ~u["asset_type"].isin(STOCK_TYPES)),
+        ("OPTION_IN_NAME", u["option_in_name"]),
+        ("EXCHANGE", u["transaction_type"] == "Exchange"),
+        ("NO_TICKER", u["ticker"] == ""),
+        ("MUTUAL_FUND", u["instrument_type"] == "mutual_fund"),
+        ("OTHER_INSTRUMENT", u["instrument_type"] == "other"),
+        ("NON_US_LISTING", u["non_us"]),
+        ("ETF_EXCLUDED", u["is_etf"] & (not include_etfs)),
+        ("AMOUNT_UNPARSED", ~u["amount_parsed"]),
+        ("OWNER", ~u["owner"].isin(owners)),
+    ]
+    u["reason_code"] = ""
+    for code, c in conds:
+        u.loc[(u["reason_code"] == "") & c, "reason_code"] = code
+    u["reason_detail"] = ""
+    u.loc[u["reason_code"] == "ASSET_TYPE", "reason_detail"] = u["asset_type"]
+    u.loc[u["reason_code"] == "OWNER", "reason_detail"] = u["owner"]
+    u.loc[u["reason_code"] == "OTHER_INSTRUMENT", "reason_detail"] = u["yahoo_type"]
+    u.loc[u["reason_code"] == "NON_US_LISTING", "reason_detail"] = np.where(
+        u["foreign_suffix"], "ticker suffix ." + u["ticker"].str.split(".").str[-1], u["exchange"] + " " + u["exchange_name"])
+    u["in_scope"] = u["reason_code"] == ""
+    keep = u["in_any_window"].copy()
+    for code, c in conds:
+        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "OWNER"):
+            keep &= ~c
+    u["in_trades_clean"] = keep
+    return u, recovery, meta, pd.DataFrame(override_log)
+
+
+# ------------------------------------------------------------------ main
+def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None,
+          overrides: list[dict] | None = None, renames: dict | None = None,
+          same_symbol: set[str] | None = None) -> dict:
+    """Everything Phase 2 produces, as DataFrames. yahoo_lookup(symbols) -> {symbol: cached record}."""
+    D = D or load_inputs()
+    overrides = load_asset_overrides() if overrides is None else overrides
+    renames = load_renames() if renames is None else renames
+    same_symbol = load_same_symbol() if same_symbol is None else same_symbol
+    rows, filings, paper = prepare(D)
+    start, end = analysis_window(cfg)
+    wins = windows(cfg)
 
     # ---- 1-2: unmatched rows, then amendments and de-duplication
     matched = rows[rows["bioguide_id"] != ""]
@@ -175,156 +419,69 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None) -
     order = ["AMBIGUOUS", "UNLINKED", "FULL_RESTATEMENT", "ADDITIVE"]
     tr["amendment_class"] = tr["amendment_classes"].map(lambda s: next((c for c in order if c in s), ""))
     tr["amendment_ambiguous"] = tr["amendment_classes"].map(lambda s: "AMBIGUOUS" in s)
-    tr = tr.drop(columns=["amendment_classes"])
     url_of = dict(zip(filings["ptr_id"], filings["url"]))
     tr["url"] = tr["first_ptr_id"].map(url_of)
 
-    # ---- trade-level attributes
-    find = service_lookup(D["terms"])
-    sv = pd.DataFrame([find(b, d) for b, d in zip(tr["bioguide_id"], tr["transaction_date_iso"])])
-    tr = pd.concat([tr, sv], axis=1)
-    tr["transaction_date"] = tr["transaction_date_iso"]
+    # ---- the two views
+    recs = []
+    for t in book.trades:
+        n = len(t["records"])
+        for k, r in enumerate(t["records"], 1):
+            recs.append({**{f: r[f] for f in UNIT_FIELDS}, "trade_id": t["trade_id"], "bioguide_id": t["bioguide_id"],
+                         "senator": t["senator"], "record_id": f"{t['trade_id']}.{k}", "record_no": k, "n_records": n,
+                         "disclosure_datetime": r["effective_datetime"], "disclosure_date": r["effective_date"],
+                         "record_ptr_id": r["record_ptr_id"], "changed_fields": r["changed_fields"],
+                         "superseded_datetime": t["records"][k]["effective_datetime"] if k < n else ""})
+    recs = pd.DataFrame(recs).assign(view="record")
+    rev = tr[["trade_id", "bioguide_id", "senator"] + UNIT_FIELDS].assign(
+        view="as_revised", record_id="", disclosure_datetime=tr["first_datetime"], disclosure_date=tr["first_date_received"])
+    both, recovery, meta, override_log = annotate(pd.concat([recs, rev], ignore_index=True), cfg, D["terms"],
+                                                  yahoo_lookup, sec_index, overrides, renames, same_symbol)
+    recs = both[both["view"] == "record"].reset_index(drop=True)
+    rev = both[both["view"] == "as_revised"].set_index("trade_id")
+
+    # ---- trade table: as-revised attributes, J3 scope from the records
+    record_only = ["view", "record_id", "record_no", "n_records", "record_ptr_id", "changed_fields", "superseded_datetime"]
+    rev = rev.drop(columns=[c for c in record_only if c in rev.columns])
+    tr = tr.drop(columns=[c for c in rev.columns if c in tr.columns]).join(rev, on="trade_id")
+    tr = tr.rename(columns={"in_scope": "in_scope_as_revised", "reason_code": "reason_code_as_revised",
+                            "reason_detail": "reason_detail_as_revised"})
+    g = recs.groupby("trade_id")
+    first = recs[recs["record_no"] == 1].set_index("trade_id")
+    last = recs.sort_values("record_no").groupby("trade_id").last()
+    tr["n_records"] = tr["trade_id"].map(g.size())
+    tr["corrected"] = tr["n_records"] > 1
+    tr["correction_datetime"] = np.where(tr["corrected"], tr["trade_id"].map(last["disclosure_datetime"]), "")
+    tr["correction_ptr_id"] = np.where(tr["corrected"], tr["trade_id"].map(last["record_ptr_id"]), "")
+    for f in ["owner", "transaction_date", "ticker", "asset_name", "asset_type", "transaction_type", "amount"]:
+        tr[f"orig_{f}"] = tr["trade_id"].map(first[f])
+    tr["orig_record_in_scope"] = tr["trade_id"].map(first["in_scope"])
+    tr["latest_record_in_scope"] = tr["trade_id"].map(last["in_scope"])
+    tr["in_scope"] = tr["trade_id"].map(g["in_scope"].any())
+    tr["reason_code"] = np.where(tr["in_scope"], "", tr["trade_id"].map(first["reason_code"]))
+    tr["reason_detail"] = np.where(tr["in_scope"], "", tr["trade_id"].map(first["reason_detail"]))
+    tr["in_trades_clean"] = tr["in_trades_clean"] | tr["trade_id"].map(g["in_trades_clean"].any())
     tr["disclosure_datetime"] = tr["first_datetime"]
     tr["disclosure_date"] = tr["first_date_received"]
-    tr["disclosure_time"] = tr["disclosure_datetime"].str[11:16]
-    tr["filed_before_1530_et"] = (tr["disclosure_time"] != "") & (tr["disclosure_time"] < SAME_DAY_CUTOFF)
-    tdate = pd.to_datetime(tr["transaction_date"], errors="coerce")
-    tr["filing_lag_days"] = (pd.to_datetime(tr["disclosure_date"]) - tdate).dt.days
-    tr["late_filing"] = tr["filing_lag_days"] > LATE_DAYS
-    tr["days_since_service_start"] = (tdate - pd.to_datetime(tr["service_start"], errors="coerce")).dt.days
-    for col, (ws, we) in wins.items():
-        tr[col] = (tr["disclosure_date"] >= ws.isoformat()) & (tr["disclosure_date"] <= we.isoformat())
-    tr["in_window"] = (tr["disclosure_date"] >= start.isoformat()) & (tr["disclosure_date"] <= end.isoformat())
-    tr["in_any_window"] = (tr["disclosure_date"] >= union_start.isoformat()) & (tr["disclosure_date"] <= end.isoformat())
-    amt = pd.DataFrame([parse_amount(a) for a in tr["amount"]])
-    tr = pd.concat([tr, amt], axis=1)
-    tr["option_in_name"] = tr["asset_type"].isin(STOCK_TYPES) & tr["asset_name"].map(is_option_name)
-
-    # ---- tickers: recovery from the asset name for rows that could still be in scope
-    candidate = (tr["in_service"] & tr["in_any_window"] & tr["asset_type"].isin(STOCK_TYPES)
-                 & ~tr["option_in_name"] & (tr["transaction_type"] != "Exchange"))
-    tr["ticker_source"] = np.where(tr["ticker"] != "", "efd", "")
-    tr["ticker_recovery_note"] = ""
-    need = tr[candidate & (tr["ticker"] == "")]
-    emb = {n: tk.embedded_candidate(n) for n in need["asset_name"].unique()}
-    symbols = set(tr.loc[candidate & (tr["ticker"] != ""), "ticker"]) | {c[0] for c in emb.values() if c}
-    sec_hits = {}
-    if sec_index is not None:
-        for n in need["asset_name"].unique():
-            sec_hits[n] = sec_index.match_name(n)
-        symbols |= {t for t, _ in sec_hits.values() if t}
-    meta_raw = yahoo_lookup(sorted(symbols)) if yahoo_lookup else {}
-    meta = {s: yh.classify(meta_raw.get(s)) for s in symbols}
-    recovery = []
-    for n in need["asset_name"].unique():
-        sel = need["asset_name"] == n
-        info = {"asset_name": n, "asset_type": " | ".join(sorted(need.loc[sel, "asset_type"].unique())),
-                "n_trades": int(sel.sum()), "n_trades_self_joint_in_window": int(
-                    (sel & need["owner"].isin(cfg["universe"]["owners"]) & need["in_window"]).sum())}
-        info.update(candidate="", method="none", accepted=False, note="no SEC list loaded")
-        if emb.get(n):
-            t, rest = emb[n]
-            ok, note = tk.verify_embedded(t, rest, meta.get(t), sec_index)
-            info.update(candidate=t, method="embedded", accepted=ok, note=note)
-        if not info["accepted"] and n in sec_hits:
-            t, note = sec_hits[n]
-            if t or not emb.get(n):
-                info.update(candidate=t, method="sec_name", accepted=bool(t),
-                            note=note if not emb.get(n) else f"{info['note']}; then {note}")
-            else:
-                info["note"] += f"; then {note}"
-        recovery.append(info)
-        if info["accepted"]:
-            idx = need.index[sel]
-            tr.loc[idx, "ticker"] = info["candidate"]
-            tr.loc[idx, "ticker_source"] = info["method"]
-            tr.loc[idx, "ticker_recovery_note"] = info["note"]
-    recovery = pd.DataFrame(recovery, columns=["asset_name", "asset_type", "n_trades", "n_trades_self_joint_in_window",
-                                               "candidate", "method", "accepted", "note"])
-
-    tr["reached_instrument_step"] = candidate & (tr["ticker"] != "")
-
-    # ---- instrument classification
-    cls = pd.DataFrame([meta.get(t, yh.classify(None)) if t else yh.classify(None) for t in tr["ticker"]], index=tr.index)
-    tr["instrument_type"] = cls["instrument_type"]
-    tr["yahoo_type"] = cls["yahoo_type"]
-    tr["exchange"] = cls["exchange"]
-    tr["exchange_name"] = cls["exchange_name"]
-    tr["listing"] = cls["listing"]
-    tr["is_otc"] = cls["is_otc"]
-    # Yahoo describes today's owner of the symbol. When its name shares no word with any eFD asset
-    # name for that ticker (recycled symbol, e.g. FB is now a ProShares ETF, or a renamed company),
-    # its classification is not trusted: the instrument is "unresolved" and Phase 3 resolves it.
-    names_by_ticker = tr[tr["ticker"] != ""].groupby("ticker")["asset_name"].apply(lambda s: sorted(set(s)))
-    tr["yahoo_name"] = cls["name"]
-    mismatch = {t: bool(names_by_ticker.get(t)) and not any(
-        tk.names_agree(n, m["name"]) or tk.names_agree(n, m["short_name"]) or t.lower() in tk.words(n, 1)
-        for n in names_by_ticker[t]) for t, m in meta.items() if m["recognised"] and t in names_by_ticker}
-    tr["yahoo_name_mismatch"] = [mismatch.get(t, False) for t in tr["ticker"]]
-    mm = tr["yahoo_name_mismatch"]
-    tr.loc[mm, "instrument_type"] = "unresolved"
-    tr.loc[mm, "listing"] = "unknown"
-    tr.loc[mm, "is_otc"] = False
-    tr["is_etf"] = tr["instrument_type"] == "etf"
-    tr["instrument_unresolved"] = tr["instrument_type"] == "unresolved"
-    suffix = tr["ticker"].str.extract(r"\.([A-Z]{1,2})$")[0]
-    tr["foreign_suffix"] = suffix.isin(FOREIGN_SUFFIXES)
-    tr["non_us"] = ((tr["listing"] == "non_us") & ~tr["instrument_unresolved"]) | tr["foreign_suffix"]
-    tr["instrument_status"] = np.select(
-        [tr["instrument_type"] == "mutual_fund", tr["instrument_type"] == "other", tr["non_us"]],
-        ["excluded: mutual fund", "excluded: other instrument type", "excluded: non-US listing"], "kept")
-
-    # ---- reasons (first failing step)
-    owners = cfg["universe"]["owners"]
-    include_etfs = bool(cfg["universe"]["include_etfs"])
-    conds = [
-        ("OUTSIDE_SERVICE", ~tr["in_service"]),
-        ("OUTSIDE_WINDOW", ~tr["in_window"]),
-        ("ASSET_TYPE", ~tr["asset_type"].isin(STOCK_TYPES)),
-        ("OPTION_IN_NAME", tr["option_in_name"]),
-        ("EXCHANGE", tr["transaction_type"] == "Exchange"),
-        ("NO_TICKER", tr["ticker"] == ""),
-        ("MUTUAL_FUND", tr["instrument_type"] == "mutual_fund"),
-        ("OTHER_INSTRUMENT", tr["instrument_type"] == "other"),
-        ("NON_US_LISTING", tr["non_us"]),
-        ("ETF_EXCLUDED", tr["is_etf"] & (not include_etfs)),
-        ("AMOUNT_UNPARSED", ~tr["amount_parsed"]),
-        ("OWNER", ~tr["owner"].isin(owners)),
-    ]
-    tr["reason_code"] = ""
-    for code, c in conds:
-        tr.loc[(tr["reason_code"] == "") & c, "reason_code"] = code
-    tr["reason_detail"] = ""
-    tr.loc[tr["reason_code"] == "ASSET_TYPE", "reason_detail"] = tr["asset_type"]
-    tr.loc[tr["reason_code"] == "OWNER", "reason_detail"] = tr["owner"]
-    tr.loc[tr["reason_code"] == "OTHER_INSTRUMENT", "reason_detail"] = tr["yahoo_type"]
-    tr.loc[tr["reason_code"] == "NON_US_LISTING", "reason_detail"] = np.where(
-        tr["foreign_suffix"], "ticker suffix ." + tr["ticker"].str.split(".").str[-1], tr["exchange"] + " " + tr["exchange_name"])
-    tr["in_scope"] = tr["reason_code"] == ""
-    keep = tr["in_any_window"].copy()
-    for code, c in conds:
-        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "OWNER"):
-            keep &= ~c
-    tr["in_trades_clean"] = keep
-
-    # ---- flags that depend on the in-scope sample (recomputed by add_scope_flags for any config)
     tr = add_scope_flags(tr)
+    recs["in_trades_clean"] = recs["trade_id"].map(tr.set_index("trade_id")["in_trades_clean"])
 
-    # ---- row-level exclusions
+    # ---- row-level exclusions (J3 reasons)
     rows_x = rows.merge(rowmap, on="row_id", how="left")
     rows_x["reason_code"] = np.select(
         [rows_x["bioguide_id"] == "", rows_x["role"] == "restated_in_amendment", rows_x["role"] == "repeated_from_other_filing"],
         ["FILER_UNMATCHED", "DUPLICATE_AMENDMENT", "DUPLICATE_REFILED"], "")
-    first = rows_x["role"] == "first_report"
+    first_row = rows_x["role"] == "first_report"
     tmap = tr.set_index("trade_id")
-    rows_x.loc[first, "reason_code"] = rows_x.loc[first, "trade_id"].map(tmap["reason_code"])
+    rows_x.loc[first_row, "reason_code"] = rows_x.loc[first_row, "trade_id"].map(tmap["reason_code"])
     rows_x["reason_detail"] = ""
-    rows_x.loc[first, "reason_detail"] = rows_x.loc[first, "trade_id"].map(tmap["reason_detail"])
+    rows_x.loc[first_row, "reason_detail"] = rows_x.loc[first_row, "trade_id"].map(tmap["reason_detail"])
     rows_x.loc[rows_x["role"].isin(["restated_in_amendment", "repeated_from_other_filing"]), "reason_detail"] = \
         "same trade as " + rows_x["trade_id"].fillna("") + " (" + rows_x["match_pass"].fillna("") + ")"
-    rows_x["kept_in_trades_clean"] = first & rows_x["trade_id"].map(tmap["in_trades_clean"]).fillna(False).astype(bool)
-    return {"rows": rows_x, "trades": tr, "amendments": amend, "corrections": corrections, "recovery": recovery,
-            "meta": meta, "links": links, "filings": filings, "paper": paper, "window": (start, end), "windows": wins}
+    rows_x["kept_in_trades_clean"] = first_row & rows_x["trade_id"].map(tmap["in_trades_clean"]).fillna(False).astype(bool)
+    return {"rows": rows_x, "trades": tr, "records": recs, "amendments": amend, "corrections": corrections,
+            "recovery": recovery, "overrides": override_log, "meta": meta, "links": links, "filings": filings,
+            "paper": paper, "window": (start, end), "windows": wins, "renames": renames}
 
 
 def add_scope_flags(tr: pd.DataFrame) -> pd.DataFrame:
@@ -344,21 +501,34 @@ def add_scope_flags(tr: pd.DataFrame) -> pd.DataFrame:
     tr["v4_bulk_ptr"] = tr["bulk_ptr"]
     tr["v5_etf"] = tr["is_etf"]
     tr["v6_family_owner"] = tr["owner"].isin(["Spouse", "Child"])
+    tr["v13_otc"] = tr["is_otc"]
     return tr
 
 
 CLEAN_COLUMNS = [
-    "trade_id", "in_scope", "reason_code", "bioguide_id", "senator", "party", "state", "owner",
+    "trade_id", "in_scope", "reason_code", "in_scope_as_revised", "reason_code_as_revised",
+    "bioguide_id", "senator", "party", "state", "owner",
     "transaction_date", "disclosure_datetime", "disclosure_date", "disclosure_time", "filed_before_1530_et",
-    "transaction_type", "ticker", "ticker_raw", "ticker_source", "asset_name", "asset_type",
+    "transaction_type", "ticker", "price_ticker", "renamed", "ticker_raw", "ticker_source", "asset_name", "asset_type",
     "instrument_type", "is_etf", "exchange", "exchange_name", "listing", "is_otc", "instrument_unresolved",
     "yahoo_name", "yahoo_name_mismatch", "amount", "amount_lower", "amount_upper", "amount_mid", "amount_open_top",
     "filing_lag_days", "late_filing", "service_start", "days_since_service_start",
     "first_ptr_id", "first_is_amendment", "latest_ptr_id", "ptr_ids", "n_versions", "corrected_fields",
-    "amendment_class", "amendment_ambiguous", "ptr_n_in_scope", "bulk_ptr", "senator_n_in_scope", "senator_rank",
+    "amendment_class", "amendment_ambiguous",
+    "corrected", "n_records", "correction_datetime", "correction_ptr_id", "orig_owner", "orig_transaction_date",
+    "orig_ticker", "orig_asset_name", "orig_asset_type", "orig_transaction_type", "orig_amount",
+    "orig_record_in_scope", "latest_record_in_scope",
+    "ptr_n_in_scope", "bulk_ptr", "senator_n_in_scope", "senator_rank",
     "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
-    "v1_tuberville", "v2_top5_senator", "v3_first_180d", "v4_bulk_ptr", "v5_etf", "v6_family_owner",
+    "v1_tuberville", "v2_top5_senator", "v3_first_180d", "v4_bulk_ptr", "v5_etf", "v6_family_owner", "v13_otc",
     "comment", "url",
+]
+RECORD_COLUMNS = [
+    "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
+    "record_ptr_id", "changed_fields", "in_scope", "reason_code", "reason_detail", "bioguide_id", "senator", "owner",
+    "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
+    "is_etf", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
+    "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
 ]
 EXCLUSION_COLUMNS = [
     "row_id", "ptr_id", "senator", "bioguide_id", "filer_name", "date_received", "is_amendment", "transaction_date_iso",

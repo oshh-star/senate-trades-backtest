@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1260541800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "OPENLANE, Inc.",
+  "shortName": "OPENLANE, Inc.",
+  "symbol": "OPLN"
+ },
+ "queried_at": "2026-09-28T14:54:21Z",
+ "symbol": "OPLN"
+}

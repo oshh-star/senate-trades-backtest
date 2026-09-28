@@ -1,0 +1,12 @@
+contains,ticker,expect,confirmed_by,note,matched_asset_names,source_note
+glaxo wellcome,GSK,GSK,yahoo,Yahoo name for GSK: GSK plc,Glaxo Wellcome plc ADR (GSK),Glaxo Wellcome -> GlaxoSmithKline -> GSK plc ADR (J5)
+rolls-royce,RYCEY,Rolls-Royce,yahoo,Yahoo name for RYCEY: Rolls-Royce Holdings plc,ROLLS-ROYCE HOLDINGS PLC SPONSORED ADR | ROLLS-ROYCE HOLDINGS PLC ADR,Rolls-Royce Holdings ADR (J5)
+rolls royce,RYCEY,Rolls-Royce,yahoo,Yahoo name for RYCEY: Rolls-Royce Holdings plc,Rolls Royce Holdings plc Sponsored ADR (RYCEY),Rolls-Royce Holdings ADR (J5)
+ishares tr russell 1000 etf,IWB,Russell 1000,yahoo,Yahoo name for IWB: iShares Russell 1000 ETF,Ishares TR Russell 1000 ETF,iShares Russell 1000 ETF (J5)
+= starbuck,SBUX,Starbucks,yahoo,Yahoo name for SBUX: Starbucks Corporation,starbuck,misspelt Starbucks (J5)
+(wizey),WIZEY,Wise,,"not confirmed: expected 'Wise', Yahoo name for WIZEY: (Yahoo does not know the symbol)",Wise plc Sponsored ADR (WIZEY),Wise plc ADR (J5)
+(murgy),MURGY,Munchener,yahoo,Yahoo name for MURGY: Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München,Munich Re Group ADR (MURGY),Munich Re ADR; Yahoo uses the German name (J5)
+(holx),HOLX,Hologic,,"not confirmed: expected 'Hologic', Yahoo name for HOLX: (Yahoo does not know the symbol)","Hologic, Inc. (HOLX)","Hologic, Inc. (J5)"
+(bk),BK,Bank of New York Mellon,yahoo,Yahoo name for BNY: The Bank of New York Mellon Corporation,Bank of New York Mellon Corp (BK),BNY Mellon (J5)
+(pstg),PSTG,"['Pure Storage', 'Everpure']",yahoo,"Yahoo name for P: Everpure, Inc.","Everpure, Inc. Class A (PSTG)","Everpure, Inc., formerly Pure Storage (J5)"
+(kyocy),KYOCY,Kyocera,,"not confirmed: expected 'Kyocera', Yahoo name for KYOCY: (Yahoo does not know the symbol)",Kyocera Corporation ADR Japan (KYOCY),Kyocera ADR (J5)

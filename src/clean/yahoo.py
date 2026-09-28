@@ -51,18 +51,21 @@ class Throttle:
         self.last = time.time()
 
 
-def _get(session, url, throttle, tries=4):
+def _get(session, url, throttle, tries=6, timeout=30):
+    """GET with retries. Yahoo answers 429 (too many requests) in bursts: wait 15 s, 30 s, 60 s, ..."""
     for k in range(tries):
         throttle.wait()
         try:
-            r = session.get(url, timeout=30)
+            r = session.get(url, timeout=timeout)
             if r.status_code in (429, 500, 502, 503, 504):
                 raise requests.HTTPError(f"HTTP {r.status_code}")
             return r
-        except requests.RequestException:
+        except requests.RequestException as e:
             if k == tries - 1:
                 raise
-            time.sleep(2 ** (k + 1))
+            wait = 15 * 2 ** k if "429" in str(e) else 2 ** (k + 1)
+            print(f"  [yahoo] {e}; waiting {wait}s", flush=True)
+            time.sleep(wait)
 
 
 def fetch(sym: str, session, throttle) -> dict:

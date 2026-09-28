@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1620048600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Valaris Limited",
+  "shortName": "Valaris Limited",
+  "symbol": "VAL"
+ },
+ "queried_at": "2026-09-28T14:53:20Z",
+ "symbol": "VAL"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1292423400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Corpay, Inc.",
+  "shortName": "Corpay, Inc.",
+  "symbol": "CPAY"
+ },
+ "queried_at": "2026-09-28T14:53:25Z",
+ "symbol": "CPAY"
+}

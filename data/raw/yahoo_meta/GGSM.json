@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "OID",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1333632600,
+  "fullExchangeName": "OTC Markets OTCID",
+  "instrumentType": "EQUITY",
+  "longName": "Gold and GemStone Mining Inc.",
+  "shortName": "Gold and GemStone Mining Inc.",
+  "symbol": "GGSM"
+ },
+ "queried_at": "2026-09-28T14:50:34Z",
+ "symbol": "GGSM"
+}

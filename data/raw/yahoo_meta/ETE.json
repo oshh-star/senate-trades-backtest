@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-28T14:50:32Z"
+ },
+ "queried_at": "2026-09-28T14:52:34Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "Eternal Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ETERNAL LIMITED",
+   "symbol": "ETERNAL.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Athens",
+   "exchange": "ATH",
+   "longname": "National Bank of Greece S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "NATIONAL BANK OF GREECE S.A.",
+   "symbol": "ETE.AT",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Taiwan",
+   "exchange": "TAI",
+   "longname": "Eternal Precision Mechanics Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "ETERNAL PRECISION MECHANICS CO ",
+   "symbol": "7795.TW",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Paris",
+   "exchange": "PAR",
+   "longname": "Euronext Transatlantic ESG Scre",
+   "quoteType": "INDEX",
+   "shortname": "Euronext Transatlantic ESG Scre",
+   "symbol": "ETESP.PA",
+   "typeDisp": "Index"
+  },
+  {
+   "exchDisp": "CCC",
+   "exchange": "CCC",
+   "longname": "EternaFi Agents USD",
+   "quoteType": "CRYPTOCURRENCY",
+   "shortname": "EternaFi Agents USD",
+   "symbol": "AINFT-USD",
+   "typeDisp": "Cryptocurrency"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "Eternal Asia Supply Chain Management Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "EA",
+   "symbol": "002183.SZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Tokyo Stock Exchange",
+   "exchange": "JPX",
+   "longname": "Eternal Hospitality Group Co.,Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "ETERNAL HOSPITALITY GROUP CO LT",
+   "symbol": "3193.T",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ETE"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "SRH Total Return Fund, Inc.",
+  "shortName": null,
+  "symbol": "STEW"
+ },
+ "queried_at": "2026-09-28T14:53:04Z",
+ "symbol": "STEW"
+}

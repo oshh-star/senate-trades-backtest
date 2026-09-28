@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1612967400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Expand Energy Corporation",
+  "shortName": "Expand Energy Corporation",
+  "symbol": "EXE"
+ },
+ "queried_at": "2026-09-28T14:53:09Z",
+ "symbol": "EXE"
+}

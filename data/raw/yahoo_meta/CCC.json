@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1601904600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "CCC Intelligent Solutions Holdings Inc.",
+  "shortName": "CCC Intelligent Solutions Holdi",
+  "symbol": "CCC"
+ },
+ "queried_at": "2026-09-28T14:53:14Z",
+ "symbol": "CCC"
+}

@@ -49,6 +49,12 @@ matches). Other linked filings (usually a later original that re-reported some o
 are used for pairing but not for the classification.
 The mechanical rule is the same for every class (union of the versions, de-duplicated, latest
 values, first datetime); AMBIGUOUS families are flagged on every trade so they can be reviewed.
+
+Records (J3, "as first published"). Each trade also keeps the list of RECORDS it went through: the
+first published values, effective at the first disclosure datetime, and one more record for each
+amendment that changed owner, transaction date, asset, asset type, transaction type or amount,
+effective at that amendment's datetime. The headline book acts on records; the trade's latest
+values at its first datetime are the "as revised" view (pre-registered variant V14).
 """
 from __future__ import annotations
 
@@ -74,6 +80,12 @@ CORRECTION_PASSES = [
 NEEDS_RESTATEMENT = {"type", "asset_replaced"}
 # Fields compared to decide whether a pairing corrected anything.
 COMPARED = ["owner", "transaction_date_iso", "ticker", "asset_name", "asset_type", "transaction_type", "amount"]
+# J3 (as first published): a change in any of these makes a NEW RECORD, effective at the amendment's
+# datetime. A change only in the wording of the asset name (same asset identity) does not.
+RECORD_FIELDS = ["owner", "transaction_date_iso", "asset_id", "asset_type", "transaction_type", "amount"]
+# Values each record carries.
+VALUE_FIELDS = ["owner", "transaction_date_iso", "ticker", "ticker_raw", "asset_name", "asset_name_norm", "asset_id",
+                "asset_type", "transaction_type", "is_sale", "amount", "comment"]
 
 
 def norm_name(text: str) -> str:
@@ -143,7 +155,10 @@ class TradeBook:
              "first_datetime": filing["datetime_received"], "first_date_received": filing["date_received"],
              "first_is_amendment": bool(filing["is_amendment"]), "ptr_ids": [filing["ptr_id"]],
              "row_ids": [row["row_id"]], "latest_ptr_id": filing["ptr_id"], "corrected_fields": set(),
-             "amendment_classes": set()}
+             "amendment_classes": set(),
+             "records": [{**{f: row[f] for f in VALUE_FIELDS}, "effective_datetime": filing["datetime_received"],
+                          "effective_date": filing["date_received"], "record_ptr_id": filing["ptr_id"],
+                          "changed_fields": ""}]}
         self.trades.append(t)
         self.by_senator[row["bioguide_id"]].append(i)
         self.row_map.append({"row_id": row["row_id"], "trade_id": t["trade_id"], "role": "first_report",
@@ -160,6 +175,15 @@ class TradeBook:
                 t["corrected_fields"].add(f)
             for f in COMPARED + ["asset_id", "asset_name_norm", "is_sale", "ticker_raw", "comment"]:
                 t[f] = row[f]
+            last = t["records"][-1]
+            record_changes = [f for f in RECORD_FIELDS if last[f] != row[f]]
+            if record_changes:
+                t["records"].append({**{f: row[f] for f in VALUE_FIELDS},
+                                     "effective_datetime": filing["datetime_received"],
+                                     "effective_date": filing["date_received"], "record_ptr_id": filing["ptr_id"],
+                                     "changed_fields": " ".join(record_changes)})
+            else:                                  # wording only: same record, latest wording
+                last.update({f: row[f] for f in VALUE_FIELDS})
         if filing["ptr_id"] not in t["ptr_ids"]:
             t["ptr_ids"].append(filing["ptr_id"])
         t["row_ids"].append(row["row_id"])

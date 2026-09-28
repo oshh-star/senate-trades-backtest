@@ -32,6 +32,8 @@ data:
     files: [legislators-current.yaml, legislators-historical.yaml]
     terms_from: 2010-01-01         # data/interim/senate_terms.csv keeps terms ending on or after this
   name_overrides: config/name_overrides.yaml   # hand-checked eFD filer name -> bioguide_id
+  asset_name_overrides: config/asset_name_overrides.yaml   # J5: hand-written asset name -> ticker
+  amendment_values: as_first_published   # J3 headline; as_revised = variant V14
   record_time_received: true       # A07: date AND time received ("Filed ... @ time" on the PTR page)
   paper_filings: exclude_and_log   # scanned filings cannot be parsed
   amendments: keep_latest_and_log_replaced
@@ -77,6 +79,12 @@ prices:
   price_source: yahoo              # yahoo | crsp (CRSP CSV in data/raw/crsp/, robustness check)
   fallback_source: stooq           # Stooq was unreachable from the cloud on 2026-09-27
   crsp_dir: data/raw/crsp
+  start: 2016-01-01                # daily history downloaded for every ticker in trades_clean.csv
+  end: 2026-08-31                  # = analysis.window_end
+  extra_symbols: [SPY, NANC, KRUZ, "GBPUSD=X"]   # benchmarks and the sterling-investor check
+  calendar_symbol: SPY             # NYSE trading calendar = SPY's trading dates
+  raw_dir: data/raw/prices/yahoo   # raw Yahoo chart responses (gzipped JSON), with download date
+  ticker_renames: config/ticker_renames.yaml
 
 factors:
   source: ken_french

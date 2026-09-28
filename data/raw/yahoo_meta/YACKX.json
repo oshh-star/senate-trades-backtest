@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 710083800,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "AMG Yacktman I",
+  "shortName": "AMG Yacktman Fund - Class I",
+  "symbol": "YACKX"
+ },
+ "queried_at": "2026-09-28T14:50:43Z",
+ "symbol": "YACKX"
+}
