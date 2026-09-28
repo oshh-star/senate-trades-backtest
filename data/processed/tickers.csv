@@ -1390,7 +1390,7 @@ URI,2,2,1,2020-04-16,2026-03-27,2020-05-08,2026-07-21,"United Rentals, Inc. | Un
 URNM,3,3,3,2025-02-25,2025-10-03,2025-03-06,2025-11-15,Sprott Uranium Miners ETF,efd,URNM,False,kept,etf,ETF,PCX,NYSEArca,us_exchange,True,False,False,False,Sprott Uranium Miners ETF
 USB,25,25,2,2016-09-23,2023-12-14,2016-10-11,2024-01-17,U.S. Bancorp | U.S. Bancorp Common Stock | USB-U.S. Bancorp,efd,USB,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,U.S. Bancorp
 USFR,1,1,0,2023-12-28,2023-12-28,2024-01-26,2024-01-26,Wisdomtree Floating Rate Treasury Fund,efd,USFR,False,kept,etf,ETF,PCX,NYSEArca,us_exchange,True,False,False,False,WisdomTree Floating Rate Treasury Fund
-USG,14,14,0,2016-09-01,2018-06-06,2016-09-30,2018-07-06,USG Corporation,efd,USG,False,kept,etf,ETF,PCX,NYSEArca,us_exchange,True,False,False,False,USCF Gold Strategy Plus Income Fund
+USG,14,14,0,2016-09-01,2018-06-06,2016-09-30,2018-07-06,USG Corporation,efd,USG,False,kept,unresolved,ETF,PCX,NYSEArca,unknown,False,False,True,True,USCF Gold Strategy Plus Income Fund
 USIG,1,1,0,2025-04-15,2025-04-15,2025-05-15,2025-05-15,iShares Broad USD Investment Grade Corporate Bond,efd,USIG,False,kept,etf,ETF,NGM,NasdaqGM,us_exchange,True,False,False,False,iShares Broad USD Investment Grade Corporate Bond ETF
 UTX,6,6,0,2017-03-16,2020-04-14,2017-03-21,2020-05-01,United Technologies Corporation | Raytheon Technologies Corporation,efd,RTX,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,RTX Corporation
 V,26,26,5,2017-08-31,2026-03-27,2017-09-06,2026-07-21,Visa Inc. | Visa Inc,efd sec_name,V,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Visa Inc.

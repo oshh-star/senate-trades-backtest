@@ -863,7 +863,7 @@ Excluded by Yahoo classification (in-window trades):
 | NON_US_LISTING   | COLPAL   |        2 |                                                     |            | COLGATE PALMOLIVE LTD.                                                                |
 | OTHER_INSTRUMENT | KH       |        1 |                                                     | NYSE       | KH                                                                                    |
 
-Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **168** tickers, 83 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
+Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **169** tickers, 83 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
 
 | ticker   |   n_in_scope | first_trade_date   | last_trade_date   | yahoo_name_mismatch   | yahoo_name                                  | efd_asset_names                                                                                                                                                                 |
 |:---------|-------------:|:-------------------|:------------------|:----------------------|:--------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1015,6 +1015,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | TWTR     |            0 | 2017-05-24         | 2017-05-24        | False                 |                                             | Twitter, Inc.                                                                                                                                                                   |
 | TWX      |            0 | 2017-03-16         | 2018-05-04        | False                 |                                             | Time Warner Inc.                                                                                                                                                                |
 | UN       |            0 | 2017-03-16         | 2020-04-14        | True                  | Corgi UNH 2x Daily ETF                      | Unilever N.V. | The Unilever Group                                                                                                                                              |
+| USG      |            0 | 2016-09-01         | 2018-06-06        | True                  | USCF Gold Strategy Plus Income Fund         | USG Corporation                                                                                                                                                                 |
 | VGR      |            0 | 2019-05-02         | 2019-05-02        | False                 |                                             | Vector Group Ltd.                                                                                                                                                               |
 | VIAB     |            0 | 2016-11-07         | 2017-02-10        | False                 |                                             | Viacom, Inc.                                                                                                                                                                    |
 | VIAC     |            0 | 2020-02-21         | 2020-04-14        | False                 |                                             | ViacomCBS Inc.                                                                                                                                                                  |
@@ -1178,7 +1179,7 @@ Every ETF (Yahoo instrument type ETF, or an eFD name that says ETF when Yahoo ca
 
 | etf_class    |   ETF symbols (all variants) |   Trades, Self/Joint in window |   Midpoint $ |
 |:-------------|-----------------------------:|-------------------------------:|-------------:|
-| commodity    |                            7 |                             26 |      991,013 |
+| commodity    |                            6 |                             26 |      991,013 |
 | equity       |                          118 |                            119 |    4,118,560 |
 | fixed_income |                           32 |                            122 |    1,611,561 |
 | other        |                            1 |                             22 |    1,140,011 |
@@ -1193,7 +1194,6 @@ Non-equity ETF symbols:
 | commodity    | PDBC           | Commodities Broad Basket            | category  |        3 | Invesco Optimum Yield Diversified Commodity S |
 | commodity    | PPLT           | Commodities Focused                 | category  |        5 | abrdn Physical Platinum Shares ETF            |
 | commodity    | SLV            | Commodities Focused                 | category  |        4 | iShares Silver Trust                          |
-| commodity    | USG            | Commodities Focused                 | category  |       14 | USG Corporation                               |
 | fixed_income | AGZ            | Short Government                    | category  |        6 | iShares Agency Bond ETF                       |
 | fixed_income | BIV            | Intermediate Core Bond              | category  |        1 | Vanguard Intermediate-Term Bond Index Fund ET |
 | fixed_income | BSCP           |                                     | fund name |        1 | Invesco BulletShares 2025 Corporate Bond ETF  |
@@ -1288,7 +1288,7 @@ Rejected by hand (same SEC company, not the same security):
 | ESV      | Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity                       |
 | WTW      | Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity                       |
 
-**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 176 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 32 of them have in-scope trades (89 trades, $5,487,045 at midpoints). CRSP (A04) is the fix.
+**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 177 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 32 of them have in-scope trades (89 trades, $5,487,045 at midpoints). CRSP (A04) is the fix.
 
 | price_ticker   | efd_asset_names                     |   in_scope_trades |   in_scope_purchases |   in_scope_midpoint_dollars | first_trade   | last_trade   | reason                     | reason_source                                                                                                                                                                                                                                                      |
 |:---------------|:------------------------------------|------------------:|---------------------:|----------------------------:|:--------------|:-------------|:---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1325,14 +1325,14 @@ Rejected by hand (same SEC company, not the same security):
 | SIVB           | SVB Financial Group | SVB Financial |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | bankrupt                   | SVB Financial Group: Silicon Valley Bank failed 10 Mar 2023, parent filed Chapter 11 17 Mar 2023 (SEC 25-NSE 2023-05-02)                                                                                                                                           |
 | VMW            | VMware, Inc. | Vmware, Inc. Common  |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | acquired for stock         | Broadcom bought VMware, holders elected $142.50 cash or 0.252 AVGO share (prorated about half each), closed 22 Nov 2023 (SEC 25-NSE 2023-11-22)                                                                                                                    |
 
-Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 13, acquired for stock 12, ticker issue 4, unknown 1, matured or liquidated fund 1, bankrupt 1; for all 176 ledger symbols: acquired for stock 68, acquired for cash 60, ticker issue 19, bankrupt 12, unknown 10, matured or liquidated fund 7. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
+Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 13, acquired for stock 12, ticker issue 4, unknown 1, matured or liquidated fund 1, bankrupt 1; for all 177 ledger symbols: acquired for stock 69, acquired for cash 61, ticker issue 21, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
 
 ### 2. Price download and repairs
 
-- Symbols requested: **1457**; with data: **1280**; without: 177. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- Symbols requested: **1457**; with data: **1279**; without: 178. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
 - K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,214,176 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,212,966 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
@@ -1582,3 +1582,141 @@ _None._
 - Monthly: 2015-01 to 2026-08 (140 months), `data/processed/factors_monthly.csv`.
 - Columns mkt_rf_pct, smb_pct, hml_pct, rf_pct, mom_pct. **Units: percent** (1.00 = 1%), also stated in each file's `units` column; divide by 100 before use. Raw zips and download dates: `data/raw/french/`.
 - NYSE calendar days without a daily factor row: 0; factor days not in the calendar (from 2016-01-04): 0.
+
+## Phase 4: engine (in-sample only)
+
+_Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-02-29** (627 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._
+
+### 1. Events and what the book did with them
+
+884 events: in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
+
+| action                                                            |   events |    dollars |
+|:------------------------------------------------------------------|---------:|-----------:|
+| bought                                                            |      413 | 13,553,206 |
+| ignored: nothing held                                             |      307 | 16,010,654 |
+| sold all                                                          |      101 |  3,860,203 |
+| sold part                                                         |       37 |  2,595,989 |
+| skipped: survivorship ledger (no usable prices)                   |       22 |  1,786,511 |
+| ignored: nothing held (earlier copied lots already closed)        |        3 |     73,002 |
+| reversal: nothing to undo (the corrected record was not acted on) |        2 |          0 |
+| reversal: sold what was still held of the corrected purchase      |        1 |      8,032 |
+
+### 2. Records not copied
+
+- **Survivorship ledger** (K3, logged and skipped until CRSP): 22 purchases, $1,786,511 at midpoints. V15 (pre-registered, not run) fills them with SPY.
+- **No price on the entry date** (series exists): 0.
+
+| action                                          | price_ticker   |   purchases |   dollars |
+|:------------------------------------------------|:---------------|------------:|----------:|
+| skipped: survivorship ledger (no usable prices) | X              |           5 |   875,002 |
+| skipped: survivorship ledger (no usable prices) | ECOM           |           5 |   465,502 |
+| skipped: survivorship ledger (no usable prices) | ATVI           |           1 |   175,000 |
+| skipped: survivorship ledger (no usable prices) | PARA           |           2 |   107,501 |
+| skipped: survivorship ledger (no usable prices) | SSBK           |           1 |    75,000 |
+| skipped: survivorship ledger (no usable prices) | WBA            |           5 |    64,502 |
+| skipped: survivorship ledger (no usable prices) | MASI           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
+
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 310 of 448 sale records (69%), by senator:
+
+| senator              |   sales_ignored |   dollars |
+|:---------------------|----------------:|----------:|
+| Tommy Tuberville     |             155 | 4,796,078 |
+| Dan Sullivan         |              48 |   506,524 |
+| Jerry Moran          |              27 |   240,514 |
+| Bill Hagerty         |              18 | 4,509,509 |
+| Sheldon Whitehouse   |              14 |   277,007 |
+| Markwayne Mullin     |              11 |    88,006 |
+| John W. Hickenlooper |              11 | 3,700,006 |
+| Shelley Moore Capito |               6 |    72,503 |
+| Deb Fischer          |               4 |   166,002 |
+| John Boozman         |               3 |    48,502 |
+| Gary C. Peters       |               3 |    91,002 |
+| Mark R. Warner       |               3 |   625,002 |
+| Lindsey Graham       |               1 |    32,500 |
+| John Thune           |               1 |    32,500 |
+| J.D. Vance           |               1 |    75,000 |
+| Maria Cantwell       |               1 |    32,500 |
+| Rick Scott           |               1 |   750,000 |
+| Tammy Duckworth      |               1 |    32,500 |
+| Thom Tillis          |               1 |     8,000 |
+
+### 3. Open lots and capital deployed
+
+![open lots and capital](figures/phase4_open_lots_capital.png)
+
+| measure                           |   min |    median |       max |
+|:----------------------------------|------:|----------:|----------:|
+| Open lots at the close            |     0 |       101 |       275 |
+| Capital deployed at the close ($) |     0 | 2,863,230 | 8,606,892 |
+
+Days with no open lot (series A earns RF): 6 of 627. Days without a Ken French RF value: 0.
+
+### 4. Holding periods and exits
+
+Closed lot pieces (every exit except the end-of-window mark; a partial sale closes a piece of a lot):
+
+|   lot pieces |   p25 trading days |   median trading days |   p75 trading days |   p25 calendar days |   median calendar days |   p75 calendar days |
+|-------------:|-------------------:|----------------------:|-------------------:|--------------------:|-----------------------:|--------------------:|
+|          192 |                 64 |                   131 |                232 |                  91 |                    189 |                 337 |
+
+| exit_reason   |   pieces |   lots |   entry_dollars |     pnl |
+|:--------------|---------:|-------:|----------------:|--------:|
+| end of window |      251 |    251 |       7,328,041 | 971,883 |
+| reversal      |        1 |      1 |           8,000 |      31 |
+| senator sale  |      191 |    166 |       6,217,165 | 239,027 |
+
+**Still held on the last in-sample day (2024-02-29)**: 251 lots, 54.1% of all dollars ever invested (at cost; $7,328,041 of $13,553,206), marked at $8,299,924.
+
+### 5. Reconciliation (lot P&L against the daily book)
+
+- Sum of lot P&L: **$1,210,941.02**.
+- Sum of daily book P&L (units x daily change in adjusted close): $1,210,941.02; difference **$-0.000000**.
+- Series A return x capital at the prior close, summed: $1,210,941.02; difference $-0.000000.
+- Series B: final NAV - K - interest earned on cash = $1,210,941.02; difference $-0.000000. K = **$7,755,441.79**; interest on idle cash $219,755.09; lowest cash balance $207,365.97 (never negative by construction).
+
+### 6. K6 price repairs and copied holding periods
+
+| ticker   |   rows | first      | last       | in_sample   | inside_holding   |
+|:---------|-------:|:-----------|:-----------|:------------|:-----------------|
+| EVVTY    |      2 | 2019-06-06 | 2019-06-07 | False       | False            |
+| LYSDY    |      1 | 2017-12-04 | 2017-12-04 | False       | False            |
+| QABSY    |      1 | 2018-11-02 | 2018-11-02 | False       | False            |
+| TGOPY    |      1 | 2016-11-30 | 2016-11-30 | False       | False            |
+| THLLY    |     14 | 2019-03-13 | 2019-04-01 | False       | False            |
+| TRUMY    |      1 | 2019-04-15 | 2019-04-15 | False       | False            |
+
+Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
+
+### 7. Trade-level panel: N per horizon
+
+`data/processed/event_panel.csv`: 883 in-scope purchase and sale records; 69 without a price on the entry date. Horizons that run past the last in-sample day are censored.
+
+| side     |   horizon_days |   N_from_entry |   N_from_transaction |   censored_entry |   no_price |
+|:---------|---------------:|---------------:|---------------------:|-----------------:|-----------:|
+| purchase |              5 |            413 |                  413 |                0 |         22 |
+| purchase |             21 |            413 |                  413 |                0 |         22 |
+| purchase |             63 |            386 |                  388 |               27 |         22 |
+| purchase |            126 |            231 |                  232 |              182 |         22 |
+| purchase |            252 |            157 |                  161 |              256 |         22 |
+| sale     |              5 |            401 |                  401 |                0 |         47 |
+| sale     |             21 |            359 |                  401 |               42 |         47 |
+| sale     |             63 |            312 |                  314 |               89 |         47 |
+| sale     |            126 |            227 |                  262 |              174 |         47 |
+| sale     |            252 |            189 |                  191 |              212 |         47 |
+
+### 8. In-sample annualised return and volatility, identical dates
+
+Daily returns 2021-09-01 to 2024-02-29 (627 days); annualised return = (product of 1 + r)^(252/N) - 1, volatility = daily standard deviation x sqrt(252). Nothing else yet: no Sharpe ratios, alphas or variants (Phases 5 and 6).
+
+| series                                   | annualised return   | annualised volatility   |
+|:-----------------------------------------|:--------------------|:------------------------|
+| A: return on capital deployed (headline) | 7.61%               | 29.34%                  |
+| B: fixed pot (K = $7,755,442)            | 7.04%               | 10.14%                  |
+| SPY (total return)                       | 6.46%               | 18.40%                  |
+
+### 9. Worked examples
+
+Three lots traced step by step in `outputs/phase4_worked_examples.md`.

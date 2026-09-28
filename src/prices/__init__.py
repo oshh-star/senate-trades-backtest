@@ -87,7 +87,8 @@ def recycled_symbols() -> dict[str, str]:
         return {}
     r = pd.read_csv(RESOLUTION, keep_default_na=False)
     r = r[(r["outcome"] == "delisted_or_unknown") & (r["yahoo_recognised"].astype(str) == "True")]
-    return dict(zip(r["ticker"], r["yahoo_name"]))
+    from src.clean.build import load_recycled
+    return {**dict(zip(r["ticker"], r["yahoo_name"])), **{t: f"hand: {why}" for t, why in load_recycled().items()}}
 
 
 def build_step(cfg: dict) -> dict:

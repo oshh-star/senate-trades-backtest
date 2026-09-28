@@ -149,6 +149,13 @@ def load_non_us(path: Path = TICKER_RENAMES) -> dict[str, str]:
     return {tk.normalise_ticker(r["ticker"]): r.get("reason", "") for r in (yaml.safe_load(path.read_text()) or {}).get("non_us") or []}
 
 
+def load_recycled(path: Path = TICKER_RENAMES) -> dict[str, str]:
+    """Hand-listed recycled symbols: Yahoo describes another security (ticker -> reason)."""
+    if not path.exists():
+        return {}
+    return {tk.normalise_ticker(r["ticker"]): r.get("reason", "") for r in (yaml.safe_load(path.read_text()) or {}).get("recycled") or []}
+
+
 def price_symbol(ticker: str, renames: dict[str, dict]) -> str:
     """Follow renames (FB -> META) to the symbol whose price history Yahoo keeps."""
     seen = set()
@@ -353,6 +360,7 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
         for n in names_by_ticker[t]) for t, m in meta.items() if m["recognised"] and t in names_by_ticker}
     trusted = u["renamed"] | (u["ticker_source"] == "override") | u["ticker"].isin(same_symbol or set())
     u["yahoo_name_mismatch"] = pd.Series([mismatch.get(t, False) for t in u["ticker"]], index=u.index) & ~trusted
+    u["yahoo_name_mismatch"] |= u["ticker"].isin(set(load_recycled()))
     mm = u["yahoo_name_mismatch"]
     u.loc[mm, "instrument_type"] = "unresolved"
     u.loc[mm, "listing"] = "unknown"

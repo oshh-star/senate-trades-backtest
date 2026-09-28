@@ -191,3 +191,4 @@ reasons:
   BUNT:   {reason: matured or liquidated fund, source: "DB 3x German Bund Futures ETN: an exchange-traded note (debt, not a stock) that Deutsche Bank delisted and redeemed"}
   NEE-PC: {reason: ticker issue, source: "FPL Group 5 7/8% preferred (a fixed-income security, not common stock), since redeemed"}
   SOJA:   {reason: ticker issue, source: "The Southern Company junior subordinated notes 2015A (exchange-listed debt, not a stock), since redeemed"}
+  USG:    {reason: acquired for cash, source: "Knauf bought USG Corporation for $44.50 cash (including a $0.50 special dividend), Apr 2019; Yahoo's USG is now a gold fund (hand-listed as recycled)"}

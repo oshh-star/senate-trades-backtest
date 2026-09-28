@@ -5,6 +5,8 @@
 #   same_symbol: the company changed its name but kept the symbol; Yahoo's current name is trusted.
 #   rejected:    written by hand: same SEC company but NOT the same security (tracking stock exchanged,
 #                equity cancelled in bankruptcy, ...); never treated as a rename.
+#   recycled:    written by hand: Yahoo's history for the symbol belongs to another security although the eFD name
+#                contains the symbol (so the automatic name check passes); no prices, survivorship ledger.
 #   non_us:      written by hand: a symbol that is a non-US listing although Yahoo cannot say so (e.g. a
 #                Canadian depositary receipt); excluded as NON_US_LISTING by the clean stage.
 # The clean stage reads this file (price_ticker, instrument type), so rerun `clean` after editing it.
@@ -216,3 +218,6 @@ non_us:
   reason: 'eFD asset name "Bershire Hathaway Cdr [Cad Hedged]": a Canadian Depositary Receipt (CAD-hedged) listed on Cboe Canada under BRK, not the US class B shares (BRK-B); K4'
 - ticker: COLPAL
   reason: 'eFD asset name "COLGATE PALMOLIVE LTD.": COLPAL is the NSE (India) symbol of Colgate-Palmolive (India) Ltd, not the US company (CL); K4'
+recycled:
+- ticker: USG
+  reason: eFD "USG Corporation" (the building-materials company, bought by Knauf for cash in 2019); Yahoo's USG is now "USCF Gold Strategy Plus Income Fund"

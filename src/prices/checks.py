@@ -236,7 +236,7 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          f"In-scope purchases whose symbol HAS a Yahoo series that ends before {end} ({len(early)} senator-ticker pairs; "
          "symbols with no usable history at all are in the survivorship ledger, section 1; "
          f"`{EARLY_END}`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before "
-         "the series ends (a rough check; FIFO matching is Phase 4). **Proposed engine rule (E20, for Harry): close the "
+         "the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the "
          "position at the last available price and hold the proceeds at the risk-free rate until the window ends.**", "",
          md(early), "",
          "### 5. Daily moves beyond +/-50% (split-adjusted close)", "",

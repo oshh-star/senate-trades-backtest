@@ -52,6 +52,8 @@ HEADER = """# Ticker renames and confirmed same-symbol name changes (Phase 3, st
 #   same_symbol: the company changed its name but kept the symbol; Yahoo's current name is trusted.
 #   rejected:    written by hand: same SEC company but NOT the same security (tracking stock exchanged,
 #                equity cancelled in bankruptcy, ...); never treated as a rename.
+#   recycled:    written by hand: Yahoo's history for the symbol belongs to another security although the eFD name
+#                contains the symbol (so the automatic name check passes); no prices, survivorship ledger.
 #   non_us:      written by hand: a symbol that is a non-US listing although Yahoo cannot say so (e.g. a
 #                Canadian depositary receipt); excluded as NON_US_LISTING by the clean stage.
 # The clean stage reads this file (price_ticker, instrument type), so rerun `clean` after editing it.
@@ -231,6 +233,7 @@ def write_renames(res: pd.DataFrame, path: Path = RENAMES) -> None:
     old = old or {}
     rejected = old.get("rejected") or []
     non_us = old.get("non_us") or []
+    recycled = old.get("recycled") or []
     hand_r = [r for r in old.get("renames") or [] if r.get("hand")]
     hand_s = [r for r in old.get("same_symbol") or [] if r.get("hand")]
     ren = [{"old": r.ticker, "new": r.new_ticker, "effective_date": r.effective_date, "date_basis": r.date_basis,
@@ -243,6 +246,8 @@ def write_renames(res: pd.DataFrame, path: Path = RENAMES) -> None:
             "same_symbol": hand_s + [r for r in same if r["ticker"] not in hand_t], "rejected": rejected}
     if non_us:
         data["non_us"] = non_us
+    if recycled:
+        data["recycled"] = recycled
     path.write_text(HEADER + yaml.safe_dump(data, sort_keys=False, width=200, allow_unicode=True))
 
 
