@@ -1,170 +1,175 @@
-ticker,efd_asset_names,yahoo_recognised,yahoo_name,outcome,new_ticker,cik,sec_name,matched_sec_name,effective_date,date_basis,note,in_scope_trades,in_scope_midpoint_dollars,first_trade,last_trade,all_variant_trades
-X,United States Steel Corporation | United States Steel Corporation Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",22.0,1678011.0,2021-10-18,2023-10-11,23.0
-ECOM,ChannelAdvisor Corporation | ChannelAdvisor Corporation Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",6.0,1215503.0,2022-03-08,2022-09-07,10.0
-WTT,Wireless Telecom Group Inc,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,750000.5,2023-08-15,2023-08-15,3.0
-ATVI,"Activision Blizzard, Inc - Common Stock | Activision Blizzard, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",2.0,350001.0,2022-11-08,2023-04-26,4.0
-SSBK,"Southern States Bancshares, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",15.0,345507.5,2021-08-12,2024-04-30,15.0
-PARA,Paramount Global - Class B Common Stock | Paramount Global Cl B,True,"Banzai International, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",4.0,315002.0,2023-09-18,2024-05-10,4.0
-WBA,"Walgreens Boots Alliance, Inc. | Walgreens Boots Alliance, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",7.0,172003.5,2022-01-12,2024-04-30,13.0
-GOGL,Golden Ocean Group Limited - Common Stock,True,Corgi GOOGL 2x Daily ETF,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",2.0,150001.0,2024-02-27,2024-04-30,2.0
-NS,Nustar Energy L.P. Common Units,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,75000.5,2021-12-29,2021-12-29,1.0
-IBDQ,Dec 2025 Term Corp Ishares Ibonds ETF | iShares iBonds Dec 2025 Term Corporate ETF,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",2.0,65001.0,2022-06-30,2025-12-18,2.0
-AHL-C,Aspen Insurance Holdings Ltd [Ahl/Pc],False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,32500.5,2025-01-02,2025-01-02,1.0
-BKEP,"Blueknight Energy Partners L.P., L.L.C. - Common U",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,32500.5,2021-12-29,2021-12-29,1.0
-BKEPP,Blueknight Energy Partners L.P. - Series A Preferr,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,32500.5,2022-08-19,2022-08-19,1.0
-BRK,Bershire Hathaway Cdr [Cad Hedged],False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,32500.5,2025-02-13,2025-02-13,1.0
-BSCP,Invesco BulletShares 2025 Corporate Bond ETF,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,32500.5,2025-12-17,2025-12-17,1.0
-FUN,"Cedar Fair, L.P. Common Stock",True,Six Flags Entertainment Corporation,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",1.0,32500.5,2022-01-13,2022-01-13,1.0
-RNWK,"RealNetworks, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,32500.5,2022-12-28,2022-12-28,1.0
-COLPAL,COLGATE PALMOLIVE LTD.,False,,delisted_or_unknown,,,,,,,not a US-style symbol (likely a non-US listing); no rename searched,2.0,16001.0,2025-04-08,2025-10-09,2.0
-CYBR,CyberArk Software Ltd. - Ordinary Shares,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",2.0,16001.0,2024-01-04,2024-12-18,4.0
-LMST,"Limestone Bancorp, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",2.0,16001.0,2022-03-30,2023-04-03,2.0
-MASI,Masimo Corporation - Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",2.0,16001.0,2022-03-30,2022-10-05,2.0
-PXD,Pioneer Natural Resources Company | Pioneer Natural Resources Company Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",2.0,16001.0,2023-01-10,2023-08-22,2.0
-SQ,"Block, Inc. Class A Common Stock, | Square, Inc. | Square, Inc. Class A Common Stock",False,,delisted_or_unknown,,1512673,"Block, Inc.","Block, Inc.",,,"SEC CIK 1512673 matches but has no single plain ticker (BSQKZ, XYZ)",2.0,16001.0,2022-04-11,2023-09-20,9.0
-EQC,Equity Commonwealth,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,8000.5,2024-12-13,2024-12-13,1.0
-HES,Hess Corp,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,8000.5,2024-03-28,2024-03-28,1.0
-IBDO,iShares iBonds Dec 2023 Term Corporate ETF,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",1.0,8000.5,2022-06-30,2022-06-30,1.0
-INST,"Instructure Holdings Inc | Instructure Holdings, Inc. Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,8000.5,2023-12-22,2023-12-22,3.0
-SIVB,SVB Financial Group | SVB Financial Group - Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,8000.5,2022-03-30,2022-03-30,2.0
-VMW,"VMware, Inc. | Vmware, Inc. Common stock, Class A",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",1.0,8000.5,2022-03-30,2022-03-30,2.0
-ABB,ABB Ltd,False,,delisted_or_unknown,,1091587,ABB LTD,ABB LTD,,,"SEC CIK 1091587 matches but has no single plain ticker (ABBNY, ABLZF)",0.0,0.0,,,1.0
-AGN,Allergan plc,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,9.0
-AGU,Agrium Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-AJRD,"Aerojet Rocketdyne Holdings, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-AL,Air Lease Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-ALTM,Arcadium Lithium Plc,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-AMWD,American Woodmark Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-ANDX,Andeavor Logistics LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-AQFH,"Aquesta Financial Holdings, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-ARNA,"Arena Pharmaceuticals, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,8.0
-AVP,"Avon Products, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,7.0
-AY,Atlantica Sustainable Infrastructure plc | Atlantica Sustainable Infrastructure plc - Ordinar | Atlantica Yield Plc,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-BBL,BHP Billiton plc,False,,delisted_or_unknown,,811809,BHP Group Ltd,BHP BILLITON LTD,,,"SEC CIK 811809 matches but has no single plain ticker (BHP, BHPLF)",0.0,0.0,,,2.0
-BCR,"C. R. Bard, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,3.0
-BERY,"Berry Global Group, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-BIVV,Bioverativ Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-BPL,"Buckeye Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,8.0
-BRKB,Berkshire Hathaway Inc.,False,,delisted_or_unknown,,1067983,BERKSHIRE HATHAWAY INC,BERKSHIRE HATHAWAY INC,,,"SEC CIK 1067983 matches but has no single plain ticker (BRK-A, BRK-B)",0.0,0.0,,,2.0
-CAB,Cabela's Incorporated,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-CBS,CBS Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,14.0
-CCCS,CCC Intelligent Solutions Holdings Inc. Common Sto,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-CELG,Celgene Corporation | Celgene Corporation (NASDAQ),False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,14.0
-CEM,ClearBridge MLP and Midstream Fund Inc. Common Sto,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-CEQP,Crestwood Equity Partners LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-CERN,Cerner Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-CGNT,"Cogentix Medical, Inc.",True,Cognyte Software Ltd.,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-CLR,"Continental Resources, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-CMA,Comerica Incorporated,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-CNR,"Cornerstone Building Brands, Inc.",True,"Core Natural Resources, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-CONE,CyrusOne Inc - Common Stock | CyrusOne Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-COUP,Coupa Software Incorporated | Coupa Software Incorporated - Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-CSII,"Cardiovascular Systems, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-CTAA,Qwest Corp. NT 7% 2056,True,ClearThink 1 Acquisition Corp.,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-CTECBX,"CTECBX Company: Guggenheim Investments (Chicago, IL) Description: Guggenheim Investments is the global asset management and investment advisory division of Guggenheim Partners",False,,delisted_or_unknown,,,,,,,not a US-style symbol (likely a non-US listing); no rename searched,0.0,0.0,,,1.0
-CTXS,"Citrix Systems, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-CUTR,"Cutera, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-CVET,"Covetrus, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-DCP,"DCP Midstream, LP",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-DFS,Discover Financial Services,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-DISH,DISH Network Corporation | DISH-DISH Network Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,7.0
-DNKN,"Dunkin' Brands Group, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-DPM,DCP Midstream Partners LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-DVMT,Dell Technologies Inc.,False,,delisted_or_unknown,,,,,,,"rename rejected by hand: Dell Class V tracking stock, exchanged in Dec 2018 for DELL Class C shares (ratio 1.8036) or cash; not the same security as DELL",0.0,0.0,,,2.0
-ENTL,"Entellus Medical, Inc.",True,Leverage Shares 2X Long ENTG Daily ETF,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-EQM,"EQM Midstream Partners, LP | EQT Midstream Partners, LP",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-ESRX,Express Scripts Holding Company,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-ESV,Ensco plc (NYSE),False,,delisted_or_unknown,,,,,,,rename rejected by hand: Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity,0.0,0.0,,,1.0
-ETP,"Energy Transfer Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-ETRN,Equitrans Midstream Corp,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-EV,Eaton Vance Corp.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-EVOP,"EVO Payments, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-FDC,First Data Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,66.0
-FEYE,"FireEye, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,41.0
-FL,"Foot Locker, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-FPL,First Trust New Opportunities MLP & Energy Fund,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-GAN,GAN Limited,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-GRUB,Grubhub Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-HBI,Hanesbrands Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,40.0
-HDS,"HD Supply Holdings, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-HOLX,"Hologic, Inc. | Hologic, Inc. (HOLX) | Hologic, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-HYH,"Halyard Health, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-IBKC,IberiaBank Corp. (NASDAQ),False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-IIN,IntriCon Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-IPHI,Inphi Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 4 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-IRBT,iRobot Corporation | iRobot Corporation - Common Stock,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,6.0
-JNPR,"Juniper Networks, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-JWN,"Nordstrom, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-K,Kellanova | Kellogg Company,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-KL,Kirkland Lake Gold Ltd.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-KYOCY,Kyocera Corporation ADR Japan (KYOCY),False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,
-LAZR,Luminar Technologies Inc,True,Tema Photonics & Optical ETF,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-LGF-B,Lions Gate Entertainment Corp.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,36.0
-LLTC,Linear Technology Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-LMACU,Liberty Media Acquisition Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-LMRK,Landmark Infrastructure Partners LP | Landmark Infrastructure Partners LP - Common Units,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-LSXMK,Liberty Media Corporation - Series C Liberty Siriu,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,10.0
-LTRPA,"Liberty TripAdvisor Holdings, Inc. - Series A Comm",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-MANT,ManTech International Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-MAXR,Maxar Technologies Inc | Maxar Technologies Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-MCC,Medley Capital Corporation,False,,delisted_or_unknown,,1490349,PhenixFIN Corp,Medley Capital Corp,,,"SEC CIK 1490349 matches but has no single plain ticker (PFX, PFXNZ)",0.0,0.0,,,1.0
-MDC,"M.D.C. Holdings, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-MMP,"Magellan Midstream Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-MRO,Marathon Oil Corp,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-MXIM,"Maxim Integrated Products, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-MYL,Mylan N.V.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-NFX,Newfield Exploration Company,True,Corgi NFLX 2x Daily ETF,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-NID,Nuveen Intermediate Duration Municipal Term Fund C,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-NKLA,Nikola Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-NPSND,Naspers Limited,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-NTRP,"Neurotrope, Inc.",True,"NextTrip, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-NUAN,"Nuance Communications, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-OKS,"ONEOK Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-PDRDY,Pernod Ricard SA,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,2.0
-PHLD,PHILLIPS EDISON GR,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-POT,Potash Corporation of Saskatchewan Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-PSXP,Phillips 66 Partners LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-PX,"Praxair Inc. | Praxair, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-QRTEA,"Qurate Retail, Inc. | Qurate Retail, Inc. - Series A Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-QRTEP,"Qurate Retail, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-RAI,Reynolds American Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-RDS-A,Royal Dutch Shell plc,False,,delisted_or_unknown,,1306965,Shell plc,Royal Dutch Shell plc,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)",0.0,0.0,,,1.0
-RDS-B,Royal Dutch Shell plc,False,,delisted_or_unknown,,1306965,Shell plc,Royal Dutch Shell plc,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)",0.0,0.0,,,8.0
-RDSA,Royal Dutch Shell Plc,False,,delisted_or_unknown,,1306965,Shell plc,Royal Dutch Shell plc,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)",0.0,0.0,,,1.0
-REVB,Revere Bank,True,"Revelation Biosciences, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,20.0
-RGC,Regal Entertainment Group,True,Regencell Bioscience Holdings Limited,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-RHT,"Red Hat, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-RSPP,"RSP Permian, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-RTN,Raytheon Company,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,7.0
-RVNC,"Revance Therapeutics, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-RYT,Guggenheim S&P 500 Eq Wt Technology ETF,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)",0.0,0.0,,,1.0
-SAND,Sandstorm Gold Ltd. Ordinary Shares (Canada),False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-SCG,SCANA Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-SHLX,"Shell Midstream Partners, L.P.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,8.0
-SI,Silvergate Capital Corporation | Silvergate Capital Corporation Class A Common Stoc,True,"Shoulder Innovations, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-SRCL,"Stericycle, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-STI,"SunTrust Banks, Inc.",True,"Solidion Technology, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-TCP,"TC PipeLines, LP",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-TCS,"The Container Store Group, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-TLLP,Tesoro Logistics LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-TRIT,"Triterras, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-TUP,Tupperware Brands Corporation,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-TWTR,"Twitter, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-TWX,Time Warner Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,3.0
-UN,The Unilever Group | Unilever N.V.,True,Corgi UNH 2x Daily ETF,delisted_or_unknown,,217410,UNILEVER PLC,UNILEVER PLC,,,"SEC CIK 217410 matches but has no single plain ticker (UL, UNLYF)",0.0,0.0,,,5.0
-VFC,V.F. Corporation | V.F. Corporation Common Stock,True,V.F. Corporation,delisted_or_unknown,,103379,V F CORP,V F CORP,,,SEC CIK 103379 still lists VFC; Yahoo has no usable record,0.0,0.0,,,8.0
-VGR,Vector Group Ltd.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
-VIAB,"Viacom, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-VIAC,ViacomCBS Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,7.0
-VLP,Valero Energy Partners LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,5.0
-VSM,"Versum Materials, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,22.0
-WFM,"Whole Foods Market, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,15.0
-WIZEY,Wise plc Sponsored ADR (WIZEY),False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name",0.0,0.0,,,
-WOOF,VCA Inc.,True,"Petco Health and Wellness Company, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,7.0
-WPX,"WPX Energy, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,31.0
-WPZ,Williams Partners L.P.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-WRK,WestRock Company,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-WTW,"Weight Watchers International, Inc.",True,Willis Towers Watson Public Limited Company,delisted_or_unknown,,,,,,,rename rejected by hand: Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity,0.0,0.0,,,10.0
-XLNX,"Xilinx, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,4.0
-ZAYO,"Zayo Group Holdings, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,2.0
-ZNGA,Zynga Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name",0.0,0.0,,,1.0
+price_ticker,why,all_variant_trades,efd_tickers,efd_asset_names,in_scope_trades,in_scope_midpoint_dollars,first_trade,last_trade,sec_resolution_note
+X,no Yahoo price history,23.0,X,United States Steel Corporation | United States Steel Corporation Common Stock,22.0,1678011.0,2021-10-18,2023-10-11,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ECOM,no Yahoo price history,10.0,ECOM,ChannelAdvisor Corporation | ChannelAdvisor Corporation Common Stock,6.0,1215503.0,2022-03-08,2022-09-07,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+WTT,no Yahoo price history,3.0,WTT,Wireless Telecom Group Inc,1.0,750000.5,2023-08-15,2023-08-15,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ATVI,no Yahoo price history,4.0,ATVI,"Activision Blizzard, Inc - Common Stock | Activision Blizzard, Inc.",2.0,350001.0,2022-11-08,2023-04-26,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SSBK,no Yahoo price history,15.0,SSBK,"Southern States Bancshares, Inc. - Common Stock",15.0,345507.5,2021-08-12,2024-04-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+PARA,"recycled symbol: Yahoo's history is 'Banzai International, Inc.', another company; not used",4.0,PARA,Paramount Global - Class B Common Stock | Paramount Global Cl B,4.0,315002.0,2023-09-18,2024-05-10,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+WBA,no Yahoo price history,13.0,WBA,"Walgreens Boots Alliance, Inc. | Walgreens Boots Alliance, Inc. - Common Stock",7.0,172003.5,2022-01-12,2024-04-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+GOGL,"recycled symbol: Yahoo's history is 'Corgi GOOGL 2x Daily ETF', another company; not used",2.0,GOGL,Golden Ocean Group Limited - Common Stock,2.0,150001.0,2024-02-27,2024-04-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+NS,no Yahoo price history,1.0,NS,Nustar Energy L.P. Common Units,1.0,75000.5,2021-12-29,2021-12-29,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+IBDQ,no Yahoo price history,2.0,IBDQ,Dec 2025 Term Corp Ishares Ibonds ETF | iShares iBonds Dec 2025 Term Corporate ETF,2.0,65001.0,2022-06-30,2025-12-18,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+AHL-C,no Yahoo price history,1.0,AHL-C,Aspen Insurance Holdings Ltd [Ahl/Pc],1.0,32500.5,2025-01-02,2025-01-02,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+BKEP,no Yahoo price history,1.0,BKEP,"Blueknight Energy Partners L.P., L.L.C. - Common U",1.0,32500.5,2021-12-29,2021-12-29,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+BKEPP,no Yahoo price history,1.0,BKEPP,Blueknight Energy Partners L.P. - Series A Preferr,1.0,32500.5,2022-08-19,2022-08-19,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+BRK,no Yahoo price history,1.0,BRK,Bershire Hathaway Cdr [Cad Hedged],1.0,32500.5,2025-02-13,2025-02-13,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+BSCP,no Yahoo price history,1.0,BSCP,Invesco BulletShares 2025 Corporate Bond ETF,1.0,32500.5,2025-12-17,2025-12-17,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+FUN,"recycled symbol: Yahoo's history is 'Six Flags Entertainment Corporation', another company; not used",1.0,FUN,"Cedar Fair, L.P. Common Stock",1.0,32500.5,2022-01-13,2022-01-13,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+RNWK,no Yahoo price history,1.0,RNWK,"RealNetworks, Inc. - Common Stock",1.0,32500.5,2022-12-28,2022-12-28,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TACO,"recycled symbol: Yahoo's history is 'Berto Acquisition Corp.', another company; not used",1.0,TACO,"Del Taco Restaurants, Inc. - Common Stock",1.0,32500.5,2022-03-09,2022-03-09,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TOELY,no Yahoo price history; Yahoo's last market time 2026-09-24,1.0,TOELY,Tokyo Electron Ltd ADR (TOELY),1.0,32500.5,2026-03-30,2026-03-30,
+COLPAL,no Yahoo price history,2.0,COLPAL,COLGATE PALMOLIVE LTD.,2.0,16001.0,2025-04-08,2025-10-09,not a US-style symbol (likely a non-US listing); no rename searched
+CYBR,no Yahoo price history,4.0,CYBR,CyberArk Software Ltd. - Ordinary Shares,2.0,16001.0,2024-01-04,2024-12-18,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+EA,no Yahoo price history; Yahoo's last market time 2026-08-04,5.0,EA,Electronic Arts Inc | Electronic Arts Inc.,2.0,16001.0,2026-03-27,2026-03-30,
+LMST,no Yahoo price history,2.0,LMST,"Limestone Bancorp, Inc. - Common Stock",2.0,16001.0,2022-03-30,2023-04-03,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MASI,no Yahoo price history,2.0,MASI,Masimo Corporation - Common Stock,2.0,16001.0,2022-03-30,2022-10-05,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+PXD,no Yahoo price history,2.0,PXD,Pioneer Natural Resources Company | Pioneer Natural Resources Company Common Stock,2.0,16001.0,2023-01-10,2023-08-22,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SQ,no Yahoo price history,9.0,SQ,"Block, Inc. Class A Common Stock, | Square, Inc.",2.0,16001.0,2022-04-11,2023-09-20,"SEC CIK 1512673 matches but has no single plain ticker (BSQKZ, XYZ)"
+AVB,no Yahoo price history; Yahoo's last market time 2026-08-14,1.0,AVB,"AvalonBay Communities, Inc. Common Stock",1.0,8000.5,2026-03-27,2026-03-27,
+DFKCY,no Yahoo price history; Yahoo's last market time 2026-08-24,1.0,DFKCY,Daifuku Co Ltd ADR (DFKCY),1.0,8000.5,2026-03-30,2026-03-30,
+EQC,no Yahoo price history,1.0,EQC,Equity Commonwealth,1.0,8000.5,2024-12-13,2024-12-13,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+HES,no Yahoo price history,1.0,HES,Hess Corp,1.0,8000.5,2024-03-28,2024-03-28,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+IBDO,no Yahoo price history,1.0,IBDO,iShares iBonds Dec 2023 Term Corporate ETF,1.0,8000.5,2022-06-30,2022-06-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+INST,no Yahoo price history,3.0,INST,"Instructure Holdings Inc | Instructure Holdings, Inc. Common Stock",1.0,8000.5,2023-12-22,2023-12-22,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+LEG,no Yahoo price history; Yahoo's last market time 2026-08-26,1.0,LEG,Leggett & Platt Inc,1.0,8000.5,2024-10-31,2024-10-31,
+SIVB,no Yahoo price history,2.0,SIVB,SVB Financial Group | SVB Financial Group - Common Stock,1.0,8000.5,2022-03-30,2022-03-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+VMW,no Yahoo price history,2.0,VMW,"VMware, Inc. | Vmware, Inc. Common stock, Class A",1.0,8000.5,2022-03-30,2022-03-30,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ABB,no Yahoo price history,1.0,ABB,ABB Ltd,0.0,0.0,,,"SEC CIK 1091587 matches but has no single plain ticker (ABBNY, ABLZF)"
+AGN,no Yahoo price history,9.0,AGN,Allergan plc,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+AGU,no Yahoo price history,1.0,AGU,Agrium Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AJRD,no Yahoo price history,2.0,AJRD,"Aerojet Rocketdyne Holdings, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AL,no Yahoo price history,1.0,AL,Air Lease Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ALTM,no Yahoo price history,1.0,ALTM,Arcadium Lithium Plc,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AMWD,no Yahoo price history,2.0,AMWD,American Woodmark Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ANDX,no Yahoo price history,3.0,ANDX,Andeavor Logistics LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AQFH,no Yahoo price history,2.0,AQFH,"Aquesta Financial Holdings, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ARNA,no Yahoo price history,8.0,ARNA,"Arena Pharmaceuticals, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AVP,no Yahoo price history,7.0,AVP,"Avon Products, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+AY,no Yahoo price history,3.0,AY,Atlantica Sustainable Infrastructure plc | Atlantica Sustainable Infrastructure plc - Ordinar,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+BBL,no Yahoo price history,2.0,BBL,BHP Billiton plc,0.0,0.0,,,"SEC CIK 811809 matches but has no single plain ticker (BHP, BHPLF)"
+BCR,no Yahoo price history,3.0,BCR,"C. R. Bard, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+BERY,no Yahoo price history,2.0,BERY,"Berry Global Group, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+BIVV,no Yahoo price history,1.0,BIVV,Bioverativ Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+BPL,no Yahoo price history,8.0,BPL,"Buckeye Partners, L.P.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+BRKB,no Yahoo price history,2.0,BRKB,Berkshire Hathaway Inc.,0.0,0.0,,,"SEC CIK 1067983 matches but has no single plain ticker (BRK-A, BRK-B)"
+CAB,no Yahoo price history,5.0,CAB,Cabela's Incorporated,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CBS,no Yahoo price history,14.0,CBS,CBS Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+CCCS,no Yahoo price history,1.0,CCCS,CCC Intelligent Solutions Holdings Inc. Common Sto,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+CELG,no Yahoo price history,14.0,CELG,Celgene Corporation | Celgene Corporation (NASDAQ),0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CEM,no Yahoo price history,1.0,CEM,ClearBridge MLP and Midstream Fund Inc. Common Sto,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+CEQP,no Yahoo price history,2.0,CEQP,Crestwood Equity Partners LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+CERN,no Yahoo price history,4.0,CERN,Cerner Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CGNT,"recycled symbol: Yahoo's history is 'Cognyte Software Ltd.', another company; not used",4.0,CGNT,"Cogentix Medical, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CLR,no Yahoo price history,3.0,CLR,"Continental Resources, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CMA,no Yahoo price history,2.0,CMA,Comerica Incorporated,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CNR,"recycled symbol: Yahoo's history is 'Core Natural Resources, Inc.', another company; not used",1.0,CNR,"Cornerstone Building Brands, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CONE,no Yahoo price history,4.0,CONE,CyrusOne Inc - Common Stock | CyrusOne Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+COUP,no Yahoo price history,5.0,COUP,Coupa Software Incorporated | Coupa Software Incorporated - Common Stock,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CSII,no Yahoo price history,2.0,CSII,"Cardiovascular Systems, Inc. - Common Stock",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+CTAA,"recycled symbol: Yahoo's history is 'ClearThink 1 Acquisition Corp.', another company; not used",1.0,CTAA,Qwest Corp. NT 7% 2056,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+CTECBX,no Yahoo price history,1.0,CTECBX,"CTECBX Company: Guggenheim Investments (Chicago, IL) Description: Guggenheim Investments is the global asset management and investment advisory division of Guggenheim Partners",0.0,0.0,,,not a US-style symbol (likely a non-US listing); no rename searched
+CTXS,no Yahoo price history,2.0,CTXS,"Citrix Systems, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CUTR,no Yahoo price history,3.0,CUTR,"Cutera, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+CVET,no Yahoo price history,1.0,CVET,"Covetrus, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+DCP,no Yahoo price history,3.0,DCP,"DCP Midstream, LP",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+DFS,no Yahoo price history,4.0,DFS,Discover Financial Services,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+DISH,no Yahoo price history,7.0,DISH,DISH Network Corporation | DISH-DISH Network Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+DNKN,no Yahoo price history,5.0,DNKN,"Dunkin' Brands Group, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+DPM,no Yahoo price history,1.0,DPM,DCP Midstream Partners LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+DVMT,no Yahoo price history,2.0,DVMT,Dell Technologies Inc.,0.0,0.0,,,"rename rejected by hand: Dell Class V tracking stock, exchanged in Dec 2018 for DELL Class C shares (ratio 1.8036) or cash; not the same security as DELL"
+ENTL,"recycled symbol: Yahoo's history is 'Leverage Shares 2X Long ENTG Daily ETF', another company; not used",1.0,ENTL,"Entellus Medical, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+EQM,no Yahoo price history,5.0,EQM,"EQM Midstream Partners, LP | EQT Midstream Partners, LP",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ESRX,no Yahoo price history,3.0,ESRX,Express Scripts Holding Company,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ESV,no Yahoo price history,1.0,ESV,Ensco plc (NYSE),0.0,0.0,,,rename rejected by hand: Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity
+ETP,no Yahoo price history,2.0,ETP,"Energy Transfer Partners, L.P.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+ETRN,no Yahoo price history,2.0,ETRN,Equitrans Midstream Corp,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+EV,no Yahoo price history,2.0,EV,Eaton Vance Corp.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+EVOP,no Yahoo price history,2.0,EVOP,"EVO Payments, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+FDC,no Yahoo price history,66.0,FDC,First Data Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+FEYE,no Yahoo price history,41.0,FEYE,"FireEye, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+FL,no Yahoo price history,1.0,FL,"Foot Locker, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+FPL,no Yahoo price history,1.0,FPL,First Trust New Opportunities MLP & Energy Fund,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+GAN,no Yahoo price history,1.0,GAN,GAN Limited,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+GRUB,no Yahoo price history,1.0,GRUB,Grubhub Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+HBI,no Yahoo price history,40.0,HBI,Hanesbrands Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+HDS,no Yahoo price history,1.0,HDS,"HD Supply Holdings, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+HOLX,no Yahoo price history,5.0,HOLX,"Hologic, Inc. | Hologic, Inc. - Common Stock",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+HYH,no Yahoo price history,2.0,HYH,"Halyard Health, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+IBKC,no Yahoo price history,2.0,IBKC,IberiaBank Corp. (NASDAQ),0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+IIN,no Yahoo price history,1.0,IIN,IntriCon Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+IPHI,no Yahoo price history,2.0,IPHI,Inphi Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 4 unlisted CIK(s) with the name"
+IRBT,no Yahoo price history,6.0,IRBT,iRobot Corporation | iRobot Corporation - Common Stock,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+JNPR,no Yahoo price history,1.0,JNPR,"Juniper Networks, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+JWN,no Yahoo price history,1.0,JWN,"Nordstrom, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+K,no Yahoo price history,5.0,K,Kellanova | Kellogg Company,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+KL,no Yahoo price history,1.0,KL,Kirkland Lake Gold Ltd.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+LAZR,"recycled symbol: Yahoo's history is 'Tema Photonics & Optical ETF', another company; not used",2.0,LAZR,Luminar Technologies Inc,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+LBRDK,no Yahoo price history; Yahoo's last market time 2026-08-19,16.0,LBRDK,Liberty Broadband Corporation - Class C Common Sto | Liberty Broadband Corporation - Class C Common Stock,0.0,0.0,,,
+LGF-B,no Yahoo price history,36.0,LGF-B,Lions Gate Entertainment Corp.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+LLTC,no Yahoo price history,1.0,LLTC,Linear Technology Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+LMACU,no Yahoo price history,1.0,LMACU,Liberty Media Acquisition Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+LMRK,no Yahoo price history,3.0,LMRK,Landmark Infrastructure Partners LP | Landmark Infrastructure Partners LP - Common Units,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+LSXMK,no Yahoo price history,10.0,LSXMK,Liberty Media Corporation - Series C Liberty Siriu,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+LTRPA,no Yahoo price history,1.0,LTRPA,"Liberty TripAdvisor Holdings, Inc. - Series A Comm",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+MANT,no Yahoo price history,3.0,MANT,ManTech International Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MAXR,no Yahoo price history,3.0,MAXR,Maxar Technologies Inc | Maxar Technologies Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MCC,no Yahoo price history,1.0,MCC,Medley Capital Corporation,0.0,0.0,,,"SEC CIK 1490349 matches but has no single plain ticker (PFX, PFXNZ)"
+MDC,no Yahoo price history,1.0,MDC,"M.D.C. Holdings, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MMP,no Yahoo price history,4.0,MMP,"Magellan Midstream Partners, L.P.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MRO,no Yahoo price history,1.0,MRO,Marathon Oil Corp,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+MXIM,no Yahoo price history,2.0,MXIM,"Maxim Integrated Products, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+MYL,no Yahoo price history,5.0,MYL,Mylan N.V.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+NFX,"recycled symbol: Yahoo's history is 'Corgi NFLX 2x Daily ETF', another company; not used",1.0,NFX,Newfield Exploration Company,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+NID,no Yahoo price history,1.0,NID,Nuveen Intermediate Duration Municipal Term Fund C,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+NKLA,no Yahoo price history,2.0,NKLA,Nikola Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+NPSND,no Yahoo price history,1.0,NPSND,Naspers Limited,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+NTRP,"recycled symbol: Yahoo's history is 'NextTrip, Inc.', another company; not used",1.0,NTRP,"Neurotrope, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+NUAN,no Yahoo price history,2.0,NUAN,"Nuance Communications, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+OKS,no Yahoo price history,1.0,OKS,"ONEOK Partners, L.P.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+PDRDY,no Yahoo price history,2.0,PDRDY,Pernod Ricard SA,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+PHLD,no Yahoo price history,1.0,PHLD,PHILLIPS EDISON GR,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+POT,no Yahoo price history,1.0,POT,Potash Corporation of Saskatchewan Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+PSXP,no Yahoo price history,4.0,PSXP,Phillips 66 Partners LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+PX,no Yahoo price history,3.0,PX,"Praxair Inc. | Praxair, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+QRTEA,no Yahoo price history,2.0,QRTEA,"Qurate Retail, Inc. | Qurate Retail, Inc. - Series A Common Stock",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+QRTEP,no Yahoo price history,1.0,QRTEP,"Qurate Retail, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+RAI,no Yahoo price history,2.0,RAI,Reynolds American Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+RDS-A,no Yahoo price history,1.0,RDS-A,Royal Dutch Shell plc,0.0,0.0,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)"
+RDS-B,no Yahoo price history,8.0,RDS-B,Royal Dutch Shell plc,0.0,0.0,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)"
+RDSA,no Yahoo price history,1.0,RDSA,Royal Dutch Shell Plc,0.0,0.0,,,"SEC CIK 1306965 matches but has no single plain ticker (RYDAF, SHEL)"
+REVB,"recycled symbol: Yahoo's history is 'Revelation Biosciences, Inc.', another company; not used",20.0,REVB,Revere Bank,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+RGC,"recycled symbol: Yahoo's history is 'Regencell Bioscience Holdings Limited', another company; not used",2.0,RGC,Regal Entertainment Group,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+RHT,no Yahoo price history,3.0,RHT,"Red Hat, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+RSPP,no Yahoo price history,2.0,RSPP,"RSP Permian, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+RTN,no Yahoo price history,7.0,RTN,Raytheon Company,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+RVNC,no Yahoo price history,1.0,RVNC,"Revance Therapeutics, Inc. - Common Stock",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+RYT,no Yahoo price history,1.0,RYT,Guggenheim S&P 500 Eq Wt Technology ETF,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer)"
+SAND,no Yahoo price history,1.0,SAND,Sandstorm Gold Ltd. Ordinary Shares (Canada),0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SCG,no Yahoo price history,1.0,SCG,SCANA Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SHLX,no Yahoo price history,8.0,SHLX,"Shell Midstream Partners, L.P.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SI,"recycled symbol: Yahoo's history is 'Shoulder Innovations, Inc.', another company; not used",2.0,SI,Silvergate Capital Corporation | Silvergate Capital Corporation Class A Common Stoc,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+SRCL,no Yahoo price history,1.0,SRCL,"Stericycle, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+STI,"recycled symbol: Yahoo's history is 'Solidion Technology, Inc.', another company; not used",2.0,STI,"SunTrust Banks, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TCP,no Yahoo price history,3.0,TCP,"TC PipeLines, LP",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TCS,no Yahoo price history,2.0,TCS,"The Container Store Group, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TLLP,no Yahoo price history,1.0,TLLP,Tesoro Logistics LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TRIT,no Yahoo price history,2.0,TRIT,"Triterras, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TUP,no Yahoo price history,2.0,TUP,Tupperware Brands Corporation,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TWO,no Yahoo price history; Yahoo's last market time 2026-08-24,1.0,TWO,Two Harbors Investment Corp.,0.0,0.0,,,
+TWTR,no Yahoo price history,2.0,TWTR,"Twitter, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TWX,no Yahoo price history,3.0,TWX,Time Warner Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 3 unlisted CIK(s) with the name"
+UN,"recycled symbol: Yahoo's history is 'Corgi UNH 2x Daily ETF', another company; not used",5.0,UN,The Unilever Group | Unilever N.V.,0.0,0.0,,,"SEC CIK 217410 matches but has no single plain ticker (UL, UNLYF)"
+VGR,no Yahoo price history,1.0,VGR,Vector Group Ltd.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+VIAB,no Yahoo price history,2.0,VIAB,"Viacom, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+VIAC,no Yahoo price history,7.0,VIAC,ViacomCBS Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+VLP,no Yahoo price history,5.0,VLP,Valero Energy Partners LP,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+VSM,no Yahoo price history,22.0,VSM,"Versum Materials, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+WFM,no Yahoo price history,15.0,WFM,"Whole Foods Market, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+WOOF,"recycled symbol: Yahoo's history is 'Petco Health and Wellness Company, Inc.', another company; not used",7.0,WOOF,VCA Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+WPX,no Yahoo price history,31.0,WPX,"WPX Energy, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+WPZ,no Yahoo price history,2.0,WPZ,Williams Partners L.P.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+WRK,no Yahoo price history,2.0,WRK,WestRock Company,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
+WTW,"recycled symbol: Yahoo's history is 'Willis Towers Watson Public Limited Company', another company; not used",10.0,WTW,"Weight Watchers International, Inc.",0.0,0.0,,,rename rejected by hand: Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity
+XLNX,no Yahoo price history,4.0,XLNX,"Xilinx, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ZAYO,no Yahoo price history,2.0,ZAYO,"Zayo Group Holdings, Inc.",0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+ZNGA,no Yahoo price history,1.0,ZNGA,Zynga Inc.,0.0,0.0,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"

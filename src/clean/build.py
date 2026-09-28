@@ -338,7 +338,7 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     # checked by name history) or a confirmed J5 override is trusted instead.
     names_by_ticker = u[u["ticker"] != ""].groupby("ticker")["asset_name"].apply(lambda s: sorted(set(s)))
     mismatch = {t: bool(names_by_ticker.get(t)) and not any(
-        tk.names_agree(n, m["name"]) or tk.names_agree(n, m["short_name"]) or t.lower() in tk.words(n, 1)
+        tk.names_agree(n, m["name"]) or tk.names_agree(n, m["short_name"]) or tk.ticker_in_name(t, n)
         for n in names_by_ticker[t]) for t, m in meta.items() if m["recognised"] and t in names_by_ticker}
     trusted = u["renamed"] | (u["ticker_source"] == "override") | u["ticker"].isin(same_symbol or set())
     u["yahoo_name_mismatch"] = pd.Series([mismatch.get(t, False) for t in u["ticker"]], index=u.index) & ~trusted

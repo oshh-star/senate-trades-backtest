@@ -5,13 +5,13 @@ per-ticker daily returns exist only inside the sanity checks (src/prices/checks.
 Steps (python run_all.py --only prices; each is resumable from the caches in data/raw/):
   1. resolve   renames / same-symbol name changes from SEC company histories -> config/ticker_renames.yaml;
                if that file changes, the clean stage is rerun so price_ticker and instrument types follow;
-               survivorship ledger -> data/interim/survivorship_ledger.csv
   2. download  Yahoo daily history, prices.start..prices.end, for every price_ticker in trades_clean.csv
                (all variants) plus prices.extra_symbols -> data/raw/prices/yahoo/
   3. build     data/processed/prices.csv.gz (date, ticker, close, adj_close, volume), dividends.csv,
                splits.csv, trading_calendar.csv (SPY's dates), price_coverage.csv (one row per symbol)
   4. factors   data/processed/factors_daily.csv and factors_monthly.csv (percent)
-  5. checks    Phase 3 section of outputs/data_quality.md
+  5. checks    survivorship ledger (every symbol without usable prices) -> data/interim/survivorship_ledger.csv;
+               Phase 3 section of outputs/data_quality.md
 """
 from __future__ import annotations
 
@@ -57,11 +57,6 @@ def resolve_step(cfg: dict) -> pd.DataFrame:
     if rv.RENAMES.read_text() != before:
         print("  [resolve] config/ticker_renames.yaml changed: rerunning the clean stage")
         clean.run(cfg)
-    trades = pd.read_csv(TRADES_CLEAN, keep_default_na=False, dtype={"ticker": str})
-    trades["in_scope"] = trades["in_scope"].astype(str) == "True"
-    trades["amount_mid"] = pd.to_numeric(trades["amount_mid"])
-    led = rv.ledger(res, trades)
-    led.to_csv(rv.LEDGER, index=False)
     print(f"  [resolve] {len(res)} tickers checked: " + ", ".join(f"{k} {v}" for k, v in res["outcome"].value_counts().items()))
     return res
 
@@ -73,16 +68,37 @@ def download_step(cfg: dict, commit_every: int = 0, on_batch=None) -> dict:
                        float(cfg["scrape"]["min_seconds_between_requests"]), commit_every, on_batch)
 
 
+def recycled_symbols() -> dict[str, str]:
+    """Symbols whose Yahoo history belongs to ANOTHER company than the one the senators traded
+    (Yahoo knows the symbol, but its name matches no eFD name and no rename was confirmed)."""
+    from .resolve import RESOLUTION
+    if not RESOLUTION.exists():
+        return {}
+    r = pd.read_csv(RESOLUTION, keep_default_na=False)
+    r = r[(r["outcome"] == "delisted_or_unknown") & (r["yahoo_recognised"].astype(str) == "True")]
+    return dict(zip(r["ticker"], r["yahoo_name"]))
+
+
 def build_step(cfg: dict) -> dict:
     from . import yahoo_prices as yp
     p = cfg["prices"]
     end = p["end"].isoformat()
+    recycled = recycled_symbols()
     frames, divs, spls, cov = [], [], [], []
     for sym in symbols_needed(cfg):
         rec = yp.read_cached(yp.cache_path(Path(p["raw_dir"]), sym))
         d = yp.parse(rec) if rec else yp.parse({})
         px = d["prices"][d["prices"]["date"] <= end]
-        cov.append({"ticker": sym, "has_data": len(px) > 0, "first_date": px["date"].min() if len(px) else "",
+        meta = (((rec or {}).get("body") or {}).get("chart") or {}).get("result") or [{}]
+        rmt = (meta[0] or {}).get("meta", {}).get("regularMarketTime") if meta and meta[0] else None
+        note = ""
+        if sym in recycled:
+            note = f"recycled symbol: Yahoo's history is {recycled[sym]!r}, another company; not used"
+            px = px.iloc[0:0]
+            d["dividends"], d["splits"] = d["dividends"].iloc[0:0], d["splits"].iloc[0:0]
+        elif not len(px):
+            note = "no Yahoo price history" + (f"; Yahoo's last market time {pd.Timestamp(rmt, unit='s'):%Y-%m-%d}" if rmt else "")
+        cov.append({"ticker": sym, "note": note, "has_data": len(px) > 0, "first_date": px["date"].min() if len(px) else "",
                     "last_date": px["date"].max() if len(px) else "", "n_days": len(px),
                     "downloaded_at": (rec or {}).get("downloaded_at", ""), "http_status": (rec or {}).get("status", ""),
                     "yahoo_type": d["meta"].get("instrumentType", ""), "exchange": d["meta"].get("exchangeName", ""),

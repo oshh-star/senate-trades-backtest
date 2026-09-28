@@ -1,62 +1,61 @@
 # Handover
 
 ## Current state
-_Last updated: 2026-09-27, end of Phase 2 (Claude, for Harry)._
+_Last updated: 2026-09-28, end of Phase 3 (Claude, for Harry)._
 
-- **Phase 2 (clean) is done.** Run it with `python run_all.py --only clean` (about 10 seconds, fully
-  offline from the caches in data/raw/). Tests: `python -m pytest` (95 pass). No prices, returns or
-  performance numbers exist anywhere yet.
-- **Decisions**: H1 (Jim Banks = B001299, override added), H2 (E03-E08 confirmed), H3 (headline unchanged;
-  V1-V12 pre-registered at commit 622a455, logged in commit 184009a), H4 (SEC contact email). Engineering
-  interpretations **E09-E18 need Harry's confirmation** (DECISIONS.md).
-- **Headline sample: 2,502 in-scope trades** (1,514 purchases, 988 sales; 284 ETF trades) from 31
-  senators, disclosed 2021-09-01 to 2026-08-31. Waterfall from the 14,558 raw rows, amendments,
-  tickers, concentration, filing lags and variant counts: outputs/data_quality.md, "Phase 2".
-- **Outputs**: data/processed/trades_clean.csv (8,380 rows: every trade in the 3/5/10-year windows that
-  passes every filter except window and owner; `in_scope` marks the headline sample; flags for V1-V6 and V9),
-  data/processed/tickers.csv (1,522 tickers checked with Yahoo), data/processed/exclusions.csv (every raw
-  row that is not an in-scope trade, with a reason code). Audit files in data/interim/: amendments.csv,
-  amendment_corrections.csv, ticker_recovery.csv, amount_strings.csv.
-- **Amendments**: 155 electronic amendments: 97 full restatements, 4 additive, 40 AMBIGUOUS (2 received in
-  the default window), 14 unlinked (all amend pre-2016 reports). 2,182 duplicate rows removed. No in-scope
-  trade exists only in an amendment; 32 in-scope trades carry an amendment's correction (original datetime kept).
-- **Concentration**: Tuberville 29.1% of trades, Alan Armstrong 27.9% (one PTR of 698 trades, filed
-  2026-07-21, median lag 113 days: his onboarding portfolio), Boozman 15.5%, Mullin 12.9%, Whitehouse 3.2%.
-  Top 5 = 88.7% of trades.
-- **Caches added**: data/raw/sec/company_tickers.json; data/raw/yahoo_meta/ (1,560 symbols, descriptive
-  fields only, no prices).
+- **Phase 3 (prices) is done.** `python run_all.py --only clean prices` rebuilds everything offline from the
+  caches in about 2.5 minutes. Tests: `python -m pytest` (106 pass). No trade-level or portfolio-level return
+  exists anywhere; per-ticker daily returns appear only inside the price sanity checks.
+- **Decisions**: J1-J5 logged (2026-09-28). V13 (exclude OTC) and V14 (as revised) pre-registered at commit
+  8666206 (main after the Phase 2 merge), logged in commit c5582bc. Engineering interpretations **E19-E27 need
+  Harry's confirmation**; E20 (series that end early) is a proposed engine rule.
+- **J3 (as first published)** is implemented in the clean stage: data/processed/trade_records.csv has one row per
+  published record (2,540 in-scope records for **2,513 in-scope trades**; 2,511 under "as revised", V14).
+  trades_clean.csv carries orig_* values, `corrected`, `correction_datetime`, `in_scope_as_revised`, `price_ticker`.
+- **J5**: 8 of the 11 override lines confirmed against Yahoo's name (GSK, RYCEY x2, IWB, SBUX, MURGY, BK via BNY,
+  PSTG via P). Not confirmed: WIZEY, HOLX, KYOCY (Yahoo no longer knows the symbols; no confirmed successor).
+  In-scope trades went from 2,502 to 2,513 (+9 from J5, +2 from J3).
+- **Renames**: 32 confirmed through SEC company histories (e.g. FB -> META, ANTM -> ELV, BK -> BNY, PSTG -> P,
+  PCLN -> BKNG), 3 same-symbol name changes (RUM, SLB, UHAL), 3 rejected by hand (DVMT, ESV, WTW).
+  config/ticker_renames.yaml.
+- **Prices**: 1,453 symbols requested (every price_ticker in trades_clean.csv plus SPY, NANC, KRUZ, GBPUSD=X);
+  1,278 with usable history. Raw responses and download dates in data/raw/prices/yahoo/. NYSE calendar
+  2016-01-04 to 2026-08-31 (2,680 days).
+- **Coverage**: 96.1% of in-scope records (93.5% of midpoint dollars) have a price on the entry date. The gap is
+  the **survivorship ledger** (data/interim/survivorship_ledger.csv): 34 symbols with in-scope trades have no
+  usable Yahoo history (X, ECOM, ATVI, WBA, SSBK, PARA ...; about $5.6m of midpoint dollars).
+- **Factors**: Ken French daily 2015-01-02 to 2026-08-31 and monthly 2015-01 to 2026-08, in PERCENT.
 
 ## Exact next step
-1. **Harry**: confirm E09-E18, and decide the 2 in-window AMBIGUOUS amendments (Capito 2022-01-21,
-   Sullivan 2023-07-26; see Open questions 1).
-2. **On or after 1 October 2026**: run `python run_all.py --only scrape clean` once to finalise the 2026
-   listing, and commit. (It cannot change the default window, which ends 2026-08-31.)
-3. **Phase 3: prices.** For every ticker in data/processed/tickers.csv with an in-scope or variant trade:
-   resolve the 206 `instrument_unresolved` tickers (renames such as FB -> META, delistings), then download
-   adjusted daily closes (yfinance; CRSP CSV when WRDS is approved) and Ken French daily and monthly factors
-   (3 factors + momentum, US RF) to 2026-08-31. Also the benchmarks' prices (SPY, NANC, KRUZ).
-4. **Phase 4** starts with FIFO sale matching (moved from Phase 2, E18).
+1. **Harry**: confirm E19-E27 (especially the E20 rule for series that end early), and decide WIZEY, HOLX and
+   KYOCY (Open questions 1).
+2. **Phase 4: engine.** From data/processed/trade_records.csv (J3) build copied positions: FIFO sale matching
+   (E18), J3 reversals at correction datetimes, entry at the adjusted close on the first trading day after
+   disclosure (D11), trades in the survivorship ledger logged and skipped (until CRSP), E20 for series that end
+   early; then the trade-level returns (disclosure and transaction dates, D14) and the daily calendar-time
+   portfolio (D15), in-sample only until the OOS firewall is lifted.
+
+## Pre-submission checklist (before Monday 19 October 2026, 23:59)
+- [ ] **On or after 1 October 2026**: run `python run_all.py --only scrape clean` once to finalise the 2026
+      listing (PTRs received up to 30 September), then `python run_all.py --only prices` and commit.
+- [ ] If WRDS access arrives: add the CRSP daily CSV to data/raw/crsp/ and run the CRSP robustness check (A04).
+- [ ] Every variant run is logged in DECISIONS.md "Variants run" (the professor asks how many were tried).
+- [ ] `python run_all.py` rebuilds every number from the committed caches.
 
 ## Open questions
-1. **AMBIGUOUS amendments (40; 2 in the default window).** These repeat some but not all trades of the report
-   they amend. Rule applied for now: keep every version's trades once (nothing deleted); trades flagged
-   `amendment_ambiguous` (18 in scope). In the window: Capito 2022-01-21 (repeats 4 of 5 trades; 1 not
-   repeated) and Sullivan 2023-07-26 (repeats 17 of 41; the 24 not repeated are Child trades, 3 copies of the
-   same 8 purchases). Harry: keep (current rule) or treat missing lines as withdrawn?
-2. **Tickers not recovered** (47 Self/Joint trades in the default window; list in data_quality.md section 4):
-   mostly private placements, T-bills and structured notes (correctly out), plus some ADRs whose ticker is
-   in the name but Yahoo no longer knows it or names it differently (WIZEY, GSK "Glaxo Wellcome", MURGY,
-   HOLX, BK, PSTG). Phase 3 can revisit these with price histories.
-3. **Recycled symbols.** 206 tickers are `instrument_unresolved` (Yahoo does not know them, or Yahoo's
-   current name shares no word with the eFD name; e.g. FB is now a ProShares ETF). 104 in-scope trades.
-   Phase 3 must map them (renames) or mark them delisted.
-4. **OTC names are kept** (`is_otc`: 303 tickers, 309 in-scope trades, mostly foreign ADRs). Harry: keep in
-   the headline, or make "exclude OTC" a (new, to be logged) variant?
-5. **Alan Armstrong's onboarding PTR** (698 trades, 27.9% of the sample, all filed 113 days after the
-   trades on median). It is excluded by V3 (first 180 days) and V4 (bulk PTR). Worth a sentence in the report.
-6. **WRDS access requested 27 Sep 2026, awaiting approval** (A04).
-7. **Stooq and theunitedstates.io are unreachable** from the cloud; not needed on the current plan.
-8. **Timing.** The listing's report title date can be one day later than the date received (UTC); we key on
+1. **J5 overrides not confirmed**: WIZEY (Wise plc ADR; Yahoo lists the new US listing WSE, "Wise Group plc", a
+   different security from 2026), HOLX (Hologic, taken private; no Yahoo data), KYOCY (Kyocera ADR; Yahoo lists
+   KYOAY, a different ADR programme). All three stay out (NO_TICKER). Harry: keep out, or add by hand to
+   config/ticker_renames.yaml with `hand: true` if you want WSE / KYOAY prices used.
+2. **Survivorship ledger** (34 symbols with in-scope trades, 93 trades): the engine needs a rule for them until
+   CRSP arrives. Proposal: log and skip (the report counts them). US Steel (X, 22 trades, $1.7m) and
+   ChannelAdvisor (ECOM, $1.2m) are the largest.
+3. **Yahoo data errors to watch** (outputs/data_quality.md, Phase 3 sections 5-6): some OTC ADRs show split
+   moves Yahoo did not adjust (THLLY, QABSY, TRUMY, EVVTY, LYSDY) and one absurd print (TGOPY, 2016-11-30).
+   43 symbols, mostly OTC ADRs, have an unchanged close on over 20% of days. V13 (exclude OTC) bounds this.
+4. **WRDS access requested 27 Sep 2026, awaiting approval** (A04).
+5. **Stooq and theunitedstates.io are unreachable** from the cloud; not needed on the current plan.
+6. **Timing.** The listing's report title date can be one day later than the date received (UTC); we key on
    the date received and the time from the PTR page (E05).
 
 ## How to hand over

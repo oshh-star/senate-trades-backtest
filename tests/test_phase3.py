@@ -119,3 +119,10 @@ def test_daily_checks_flag_moves_staleness_and_gaps():
     st = out["stale"].set_index("ticker")
     assert st.loc["A", "zero_return_days"] == 2 and st.loc["B", "zero_share"] == 1.0
     assert out["gaps"]["missing_trading_days"].tolist() == [7]
+
+
+def test_ticker_in_name_is_case_sensitive():
+    from src.clean.tickers import ticker_in_name
+    assert ticker_in_name("TACO", "Taco Co (TACO)") and ticker_in_name("AAPL", "AAPL-Apple Inc.")
+    assert not ticker_in_name("TACO", "Del Taco Restaurants, Inc.")
+    assert not ticker_in_name("BK", "BKNG Holdings")

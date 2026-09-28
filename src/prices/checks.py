@@ -60,7 +60,8 @@ def coverage(recs: pd.DataFrame, prices: pd.DataFrame, cal: pd.Series, spans: pd
     s = s.drop(columns=["has"]).merge(spans, left_on="price_ticker", right_index=True, how="left")
     s["why_missing"] = np.select(
         [s["has_entry_price"], s["first_date"].isna(), s["entry_date"] < s["first_date"], s["entry_date"] > s["last_date"]],
-        ["", "no Yahoo data for the symbol", "series starts after the entry date", "series ends before the entry date"],
+        ["", "no usable Yahoo history (survivorship ledger)", "series starts after the entry date",
+         "series ends before the entry date"],
         "no price on that date (gap)")
     return s
 
@@ -114,9 +115,11 @@ def daily_checks(prices: pd.DataFrame, splits: pd.DataFrame, cal: pd.Series) -> 
         near.append(" ".join(sp["ratio"].astype(str)) if len(sp) else "")
     big["split_nearby"] = near
     reverts = (np.sign(big["ret_close"]) != np.sign(big["next_ret_close"])) & (big["next_ret_close"].abs() > MOVE_LIMIT / (1 + MOVE_LIMIT))
+    distribution = big["ret_adj"].abs() <= MOVE_LIMIT
     big["explanation"] = np.select(
-        [big["split_nearby"] != "", reverts],
-        ["split within 5 days (" + big["split_nearby"] + "); Yahoo's close should already be split-adjusted",
+        [big["split_nearby"] != "", distribution, reverts],
+        ["split " + big["split_nearby"] + " within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)",
+         "adjusted close moves less than 50%: a special dividend or distribution",
          "reverses the next day (likely a bad print)"], "unexplained (no split on record)")
     # staleness
     st = g.apply(lambda d: pd.Series({"days": len(d), "zero_return_days": int((d["close"].diff() == 0).sum()),
@@ -142,21 +145,26 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
     otc = dict(zip(tickers["price_ticker"], tickers["is_otc"].astype(str) == "True"))
     spans = cov.set_index("ticker")[["first_date", "last_date"]].replace("", np.nan)
     splits = pd.read_csv("data/processed/splits.csv", keep_default_na=False)
+    from .resolve import LEDGER, ledger
     res = pd.read_csv("data/interim/ticker_resolution.csv", keep_default_na=False)
-    led = pd.read_csv("data/interim/survivorship_ledger.csv", keep_default_na=False)
+    tr_all = pd.read_csv("data/processed/trades_clean.csv", keep_default_na=False, low_memory=False, dtype={"ticker": str})
+    tr_all["in_scope"] = tr_all["in_scope"].astype(str) == "True"
+    tr_all["amount_mid"] = pd.to_numeric(tr_all["amount_mid"], errors="coerce")
+    led = ledger(cov, tr_all, res)
+    led.to_csv(LEDGER, index=False)
     ren = yaml.safe_load(Path(cfg["prices"]["ticker_renames"]).read_text()) or {}
 
     s = coverage(recs, prices, cal, spans)
     miss = s[~s["has_entry_price"]]
     miss[["record_id", "senator", "ticker", "price_ticker", "asset_name", "transaction_type", "disclosure_date",
           "entry_date", "amount_mid", "why_missing", "first_date", "last_date"]].to_csv(MISSING_ENTRY, index=False)
-    early = early_endings(s, spans, end)
+    early = early_endings(s[s["price_ticker"].isin(spans.index[spans["last_date"].notna()])], spans, end)
     early.to_csv(EARLY_END, index=False)
     # the sanity checks look at every symbol a trade (any variant) or benchmark uses
     dc = daily_checks(prices, splits, cal)
     big, st, gaps, bad = dc["large"], dc["stale"], dc["gaps"], dc["bad"]
     big.to_csv(LARGE_MOVES, index=False)
-    st["is_otc"] = st["ticker"].map(otc).fillna(False)
+    st["is_otc"] = st["ticker"].map(lambda t: otc.get(t, False))
     st.to_csv(STALE, index=False)
     gaps.to_csv(GAPS, index=False)
     in_scope_px = set(s["price_ticker"])
@@ -170,7 +178,7 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
     s_tr = pd.read_csv("data/processed/trades_clean.csv", keep_default_na=False, low_memory=False,
                        usecols=["ticker", "in_scope"])
     n_ren = s_tr[(s_tr["in_scope"].astype(str) == "True") & s_tr["ticker"].isin(set(ren_t.get("old", [])))].shape[0]
-    led_s = led[pd.to_numeric(led["in_scope_trades"]) > 0]
+    led_s = led[led["in_scope_trades"] > 0]
 
     L = ["## Phase 3: prices", "",
          f"_Stage `prices` of `python run_all.py`. Yahoo daily history {cfg['prices']['start']} to {end} for every "
@@ -188,12 +196,13 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          f"Same symbol, company renamed ({len(same_t)}): " + (", ".join(same_t["ticker"]) if len(same_t) else "none") + ".", "",
          "Rejected by hand (same SEC company, not the same security):", "",
          md(rej_t) if len(rej_t) else "_None._", "",
-         f"**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): {len(led)} tickers with no usable Yahoo data "
-         f"and no confirmed rename; {len(led_s)} of them have in-scope trades "
-         f"({int(pd.to_numeric(led_s['in_scope_trades']).sum())} trades, "
-         f"${pd.to_numeric(led_s['in_scope_midpoint_dollars']).sum():,.0f} at midpoints). CRSP (A04) is the fix.", "",
-         md(led_s[["ticker", "efd_asset_names", "in_scope_trades", "in_scope_midpoint_dollars", "first_trade", "last_trade", "note"]]
-            .assign(efd_asset_names=led_s["efd_asset_names"].str[:45], note=led_s["note"].str[:70])), "",
+         f"**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): {len(led)} price symbols needed by some trade "
+         f"(any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled "
+         f"symbols whose history now belongs to another company); {len(led_s)} of them have in-scope trades "
+         f"({int(led_s['in_scope_trades'].sum())} trades, ${led_s['in_scope_midpoint_dollars'].sum():,.0f} at midpoints). "
+         "CRSP (A04) is the fix.", "",
+         md(led_s[["price_ticker", "efd_asset_names", "in_scope_trades", "in_scope_midpoint_dollars", "first_trade",
+                   "last_trade", "why"]].assign(efd_asset_names=led_s["efd_asset_names"].str[:40], why=led_s["why"].str[:75])), "",
          "### 2. Price download", "",
          f"- Symbols requested: **{len(cov)}**; with data: **{int(cov['has_data'].sum())}**; without: "
          f"{int((~cov['has_data']).sum())}. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.",
@@ -213,7 +222,8 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          md(miss[["senator", "ticker", "price_ticker", "transaction_type", "disclosure_date", "entry_date", "amount_mid",
                   "why_missing"]].sort_values(["why_missing", "senator", "disclosure_date"])), "",
          "### 4. Price series that end before the window end while a copied position may be open", "",
-         f"In-scope purchases whose symbol's Yahoo series ends before {end} ({len(early)} senator-ticker pairs; "
+         f"In-scope purchases whose symbol HAS a Yahoo series that ends before {end} ({len(early)} senator-ticker pairs; "
+         "symbols with no usable history at all are in the survivorship ledger, section 1; "
          f"`{EARLY_END}`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before "
          "the series ends (a rough check; FIFO matching is Phase 4). **Proposed engine rule (E20, for Harry): close the "
          "position at the last available price and hold the proceeds at the risk-free rate until the window ends.**", "",
@@ -221,11 +231,12 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          "### 5. Daily moves beyond +/-50% (split-adjusted close)", "",
          f"{len(big)} moves in {big['ticker'].nunique() if len(big) else 0} symbols; "
          f"{int((big['explanation'].str.startswith('unexplained')).sum()) if len(big) else 0} unexplained; "
-         f"{int(big['ticker'].isin(in_scope_px).sum()) if len(big) else 0} in symbols with in-scope trades (`{LARGE_MOVES}`).", "",
-         md(big.assign(ret_close=big["ret_close"].map(pct), ret_adj=big["ret_adj"].map(pct),
+         f"{int(big['ticker'].isin(in_scope_px).sum()) if len(big) else 0} in symbols with in-scope trades, listed below "
+         f"(all of them: `{LARGE_MOVES}`). Genuine news moves (earnings, March 2020, meme stocks) also appear as "
+         "'unexplained': the check only rules out splits and one-day bad prints.", "",
+         md(big[big["ticker"].isin(in_scope_px)].assign(ret_close=big["ret_close"].map(pct), ret_adj=big["ret_adj"].map(pct),
                        next_ret_close=big["next_ret_close"].map(pct),
-                       in_scope_symbol=big["ticker"].isin(in_scope_px))[
-             ["ticker", "prev_date", "date", "close", "ret_close", "ret_adj", "next_ret_close", "in_scope_symbol", "explanation"]]
+                       )[["ticker", "prev_date", "date", "close", "ret_close", "ret_adj", "next_ret_close", "explanation"]]
             .sort_values(["explanation", "ticker"], ascending=[False, True])), "",
          f"### 6. Staleness: share of days with an unchanged close (tickers above {STALE_LIMIT:.0%})", "",
          md(st[st["zero_share"] > STALE_LIMIT].assign(zero_share=lambda d: d["zero_share"].map(pct),

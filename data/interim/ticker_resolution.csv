@@ -169,6 +169,7 @@ SQ,"Block, Inc. Class A Common Stock, | Square, Inc. | Square, Inc. Class A Comm
 SRCL,"Stericycle, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 SSBK,"Southern States Bancshares, Inc. - Common Stock",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 STI,"SunTrust Banks, Inc.",True,"Solidion Technology, Inc.",delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
+TACO,"Del Taco Restaurants, Inc. - Common Stock",True,Berto Acquisition Corp.,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 TCP,"TC PipeLines, LP",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 TCS,"The Container Store Group, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 TLLP,Tesoro Logistics LP,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
@@ -180,7 +181,6 @@ TWX,Time Warner Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company wit
 UHAL,AMERCO,True,U-Haul Holding Company,same_symbol,,4457,U-Haul Holding Co /NV/,AMERCO /NV/,2022-12-16,SEC: end of former name,SEC CIK 4457 has used the name 'AMERCO /NV/'; Yahoo's name for UHAL ('U-Haul Holding Company') is the company's current name
 UN,The Unilever Group | Unilever N.V.,True,Corgi UNH 2x Daily ETF,delisted_or_unknown,,217410,UNILEVER PLC,UNILEVER PLC,,,"SEC CIK 217410 matches but has no single plain ticker (UL, UNLYF)"
 UTX,Raytheon Technologies Corporation | United Technologies Corporation,False,,rename,RTX,101829,RTX Corp,UNITED TECHNOLOGIES CORP /DE/,2020-04-06,SEC: end of former name,SEC CIK 101829 ('RTX Corp') used the name 'UNITED TECHNOLOGIES CORP /DE/' and trades today as RTX; Yahoo's name for RTX: 'RTX Corporation'
-VFC,V.F. Corporation | V.F. Corporation Common Stock,True,V.F. Corporation,delisted_or_unknown,,103379,V F CORP,V F CORP,,,SEC CIK 103379 still lists VFC; Yahoo has no usable record
 VGR,Vector Group Ltd.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"
 VIAB,"Viacom, Inc.",False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 2 unlisted CIK(s) with the name"
 VIAC,ViacomCBS Inc.,False,,delisted_or_unknown,,,,,,,"no listed SEC company with this name (delisted, acquired, or not an SEC filer); 1 unlisted CIK(s) with the name"

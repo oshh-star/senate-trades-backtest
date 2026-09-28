@@ -140,7 +140,7 @@ def resolve(trades: pd.DataFrame, sec_index: tk.SecIndex, yahoo_lookup, sec: Sec
     for t in tickers:
         m = meta.get(t, yh.classify(None))
         ok = m["recognised"] and (agree(names[t], m["name"]) or agree(names[t], m["short_name"])
-                                  or any(t.lower() in tk.words(n, 1) for n in names[t]))
+                                  or any(tk.ticker_in_name(t, n) for n in names[t]))
         if not ok:
             todo.append(t)
     by_cik = {}
@@ -241,12 +241,20 @@ def write_renames(res: pd.DataFrame, path: Path = RENAMES) -> None:
     path.write_text(HEADER + yaml.safe_dump(data, sort_keys=False, width=200, allow_unicode=True))
 
 
-def ledger(res: pd.DataFrame, trades: pd.DataFrame) -> pd.DataFrame:
-    gone = res[res["outcome"] == "delisted_or_unknown"]
-    s = trades[trades["in_scope"]]
-    g = s.groupby("ticker").agg(in_scope_trades=("trade_id", "size"), in_scope_midpoint_dollars=("amount_mid", "sum"),
-                                first_trade=("transaction_date", "min"), last_trade=("transaction_date", "max"))
-    a = trades.groupby("ticker").agg(all_variant_trades=("trade_id", "size"))
-    out = gone.join(g, on="ticker").join(a, on="ticker")
+def ledger(cov: pd.DataFrame, trades: pd.DataFrame, res: pd.DataFrame) -> pd.DataFrame:
+    """Survivorship ledger: every price symbol a trade (any variant) needs that has no usable Yahoo
+    history (none at all, or a recycled symbol's), with in-scope trade count and midpoint dollars."""
+    gone = cov.loc[~cov["has_data"].astype(bool), ["ticker", "note"]].rename(columns={"ticker": "price_ticker", "note": "why"})
+    t = trades[trades["price_ticker"].isin(gone["price_ticker"])].copy()
+    s = t[t["in_scope"]]
+    g = s.groupby("price_ticker").agg(in_scope_trades=("trade_id", "size"), in_scope_midpoint_dollars=("amount_mid", "sum"),
+                                      first_trade=("transaction_date", "min"), last_trade=("transaction_date", "max"))
+    a = t.groupby("price_ticker").agg(all_variant_trades=("trade_id", "size"),
+                                      efd_tickers=("ticker", lambda x: " ".join(sorted(set(x)))),
+                                      efd_asset_names=("asset_name", lambda x: " | ".join(sorted(set(x))[:2])))
+    notes = dict(zip(res["ticker"], res["note"])) if len(res) else {}
+    out = gone.join(a, on="price_ticker").join(g, on="price_ticker")
+    out = out[out["all_variant_trades"].notna()]
     out[["in_scope_trades", "in_scope_midpoint_dollars"]] = out[["in_scope_trades", "in_scope_midpoint_dollars"]].fillna(0)
-    return out.sort_values(["in_scope_midpoint_dollars", "ticker"], ascending=[False, True])
+    out["sec_resolution_note"] = out["price_ticker"].map(notes).fillna("")
+    return out.sort_values(["in_scope_midpoint_dollars", "price_ticker"], ascending=[False, True]).reset_index(drop=True)

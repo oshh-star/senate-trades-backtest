@@ -60,13 +60,22 @@ def words(text: str, min_len: int = 3) -> set[str]:
     return {w for w in re.sub(r"[^a-z0-9]+", " ", fold(text)).split() if w not in STOP and len(w) >= min_len}
 
 
+def ticker_in_name(ticker: str, name: str) -> bool:
+    """The eFD asset name writes the ticker itself, in capitals, as a separate token ("AAPL - Apple",
+    "... (WIZEY)"). "Del Taco Restaurants" does NOT contain the ticker TACO."""
+    return bool(ticker) and re.search(rf"(?<![A-Za-z0-9]){re.escape(ticker)}(?![A-Za-z0-9])", name or "") is not None
+
+
 def names_agree(a: str, b: str) -> set[str]:
     """Distinctive words the two names share. Also counts a word of 4+ letters of one name found
     inside the other name written without spaces ("Fuji Film" / "FUJIFILM", "Heidelbergcement" /
-    "Heidelberg Materials")."""
+    "Heidelberg Materials"), and names that are identical once punctuation and spaces are removed
+    ("V.F. Corporation")."""
     wa, wb = words(a, 2), words(b, 2)
     common = wa & wb
     sa, sb = re.sub(r"[^a-z0-9]", "", fold(a)), re.sub(r"[^a-z0-9]", "", fold(b))
+    if sa and sa == sb:
+        common.add(sa)
     common |= {w for w in wa if len(w) >= 4 and w in sb} | {w for w in wb if len(w) >= 4 and w in sa}
     return common
 

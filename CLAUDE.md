@@ -20,8 +20,9 @@ one command (`python run_all.py`) must rebuild every number.
   with the date AND time received. **Scope (A05)**: a transaction is in scope if and only if its
   transaction date falls within that person's Senate service (unitedstates/congress-legislators
   dates, data/interim/senate_terms.csv); the eFD filer-type label is today's status and is not used.
-  Paper filings are logged (senator, date, link) and excluded. Amendments: keep the latest version
-  and log the replaced originals. Raw downloads are cached in data/raw/ and committed.
+  Paper filings are logged (senator, date, link) and excluded. Amendments (J3): every record enters
+  the book AS FIRST PUBLISHED at its own datetime; a later correction reverses it and acts on the
+  corrected record at the amendment's datetime ("as revised" is variant V14). Raw downloads are cached in data/raw/ and committed.
 - **Analysis window (A06)**: ends 2026-08-31 (Ken French data ends there). `analysis.window_years`
   (default 5, i.e. disclosures 2021-09-01 to 2026-08-31, 60 months; 3 and 10 are a one-line change).
 - **Universe**: US common stocks **and US-listed ETFs** (every trade flagged `is_etf`;
@@ -62,15 +63,22 @@ src/scrape/           Phase 1: legislators.py (service dates), listing.py, downl
 src/clean/             Phase 2: amendments.py (link, classify, de-duplicate), tickers.py (normalise,
                       recover from names via SEC), yahoo.py (instrument type/exchange, cached),
                       build.py (waterfall, flags), report.py (outputs, data_quality.md section)
+src/prices/           Phase 3: resolve.py (renames via SEC company histories), yahoo_prices.py (download,
+                      parse), french.py (factors), checks.py (sanity checks, survivorship ledger)
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
+config/asset_name_overrides.yaml   hand-written asset name -> ticker (J5), confirmed against Yahoo
+config/ticker_renames.yaml   renames (FB -> META), same-symbol name changes, hand-rejected cases
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
 data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
 data/raw/legislators/ congress-legislators YAML (Senate service dates)
 data/raw/crsp/        CRSP daily CSV goes here once WRDS access is approved
 data/raw/yahoo_meta/  Yahoo instrument metadata per ticker (no prices); data/raw/sec/ SEC company_tickers.json
-data/processed/       trades_clean.csv (one row per trade + V1-V6 flags), tickers.csv, exclusions.csv
+data/raw/prices/yahoo/  raw Yahoo daily price responses (gzipped JSON, with download date); data/raw/french/ factor zips
+data/processed/       trades_clean.csv (one row per trade + variant flags), trade_records.csv (J3 records),
+                      tickers.csv, exclusions.csv, prices.csv.gz (not committed: rebuilt by the prices stage),
+                      dividends.csv, splits.csv, trading_calendar.csv, factors_daily.csv, factors_monthly.csv
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
@@ -86,7 +94,7 @@ tests/                pytest suite (run: python -m pytest)
 | 0 | Set-up and environment checks | Done (2026-09-27) |
 | 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
-| 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Not started |
+| 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Not started |
 | 5 | Metrics and benchmarks | Not started |
 | 6 | Robustness and mechanism tests (variants, OOS) | Not started |
