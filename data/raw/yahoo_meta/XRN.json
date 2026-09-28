@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1467293400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Chiron Real Estate Inc.",
+  "shortName": "Chiron Real Estate Inc.",
+  "symbol": "XRN"
+ },
+ "queried_at": "2026-09-28T14:53:27Z",
+ "symbol": "XRN"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 386519400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Bath & Body Works, Inc.",
+  "shortName": "Bath & Body Works, Inc.",
+  "symbol": "BBWI"
+ },
+ "queried_at": "2026-09-28T14:54:24Z",
+ "symbol": "BBWI"
+}

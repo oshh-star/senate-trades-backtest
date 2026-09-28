@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NCM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1124890200,
+  "fullExchangeName": "NasdaqCM",
+  "instrumentType": "EQUITY",
+  "longName": "Alaunos Therapeutics, Inc.",
+  "shortName": "Alaunos Therapeutics, Inc.",
+  "symbol": "TCRT"
+ },
+ "queried_at": "2026-09-28T14:54:55Z",
+ "symbol": "TCRT"
+}

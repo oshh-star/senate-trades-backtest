@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "MXN",
+  "exchangeName": "MEX",
+  "exchangeTimezoneName": "America/Mexico_City",
+  "firstTradeDate": 1054211400,
+  "fullExchangeName": "Mexico",
+  "instrumentType": "EQUITY",
+  "longName": "International Business Machines Corporation",
+  "shortName": "INTERNATIONAL BUS MACH CORP",
+  "symbol": "IBM.MX"
+ },
+ "queried_at": "2026-09-28T14:50:37Z",
+ "symbol": "IBM.MX"
+}

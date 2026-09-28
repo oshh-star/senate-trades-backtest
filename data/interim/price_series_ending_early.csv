@@ -1,0 +1,924 @@
+senator,price_ticker,ticker,asset_name,purchases,midpoint_$,first_purchase_disclosed,last_price_date,full_sale_disclosed_before_last_price
+Tommy Tuberville,PYPL,PYPL,"PayPal Holdings, Inc. - Common Stock",13,2180506.5,2022-03-11,(no data),False
+Tommy Tuberville,QCOM,QCOM,QUALCOMM Incorporated - Common Stock,8,1166004.0,2022-07-13,(no data),False
+David McCormick,BITB,BITB,Bitwise Bitcoin ETF,22,1140011.0,2025-03-05,(no data),False
+Tommy Tuberville,CLF,CLF,Cleveland-Cliffs Inc. Common Stock,18,1051509.0,2021-12-10,(no data),False
+Tommy Tuberville,INTC,INTC,Intel Corporation - Common Stock,11,1006005.5,2021-11-10,(no data),False
+Tommy Tuberville,X,X,United States Steel Corporation Common Stock,5,875002.5,2021-11-10,(no data),False
+Tommy Tuberville,MSFT,MSFT,Microsoft Corporation - Common Stock,3,782501.5,2022-10-12,(no data),False
+Markwayne Mullin,MSFT,MSFT,Microsoft Corp,5,665502.5,2023-10-12,(no data),False
+Tommy Tuberville,ECOM,ECOM,ChannelAdvisor Corporation Common Stock,5,465502.5,2022-04-08,(no data),False
+Tommy Tuberville,F,F,Ford Motor Company Common Stock,4,415002.0,2022-12-14,(no data),False
+Markwayne Mullin,PDBC,PDBC,Invesco Optimum Yield Diversified Commodity S,2,407501.0,2025-08-12,(no data),False
+Markwayne Mullin,HIYS,HIYS,Invesco Actively Managed Exchange-Traded Fund,1,375000.5,2024-12-03,(no data),False
+Tommy Tuberville,CLX,CLX,Clorox Company (The) Common Stock,2,350001.0,2023-10-13,(no data),False
+Tommy Tuberville,GOLD,GOLD,Barrick Gold Corporation Common Stock (BC),8,314004.0,2022-02-14,(no data),False
+Tommy Tuberville,CVX,CVX,Chevron Corporation Common Stock,3,258001.5,2022-02-14,(no data),False
+Tommy Tuberville,TXN,TXN,Texas Instruments Incorporated - Common Stock,2,250001.0,2023-10-13,(no data),False
+Markwayne Mullin,NVDA,NVDA,NVIDIA Corporation - Common Stock,4,248002.0,2023-10-12,(no data),False
+Markwayne Mullin,GOOGL,GOOGL,Alphabet Cl A,3,215501.5,2023-10-12,(no data),False
+Ashley Moody,NVDA,NVDA,NVDA,2,207501.0,2025-04-20,(no data),False
+Markwayne Mullin,META,META,"Meta Platforms, Inc. - Class A Common Stock",4,190502.0,2023-10-12,(no data),False
+Tommy Tuberville,SCCO,SCCO,Southern Copper Corporation Common Stock,2,183001.0,2021-12-10,(no data),False
+Markwayne Mullin,COF,COF,Capital One Financial Corp,3,182501.5,2025-04-13,(no data),False
+Markwayne Mullin,LRCX,LRCX,Lam Research Corp,5,180502.5,2023-10-12,(no data),False
+Ashley Moody,LLY,LLY,LLY,1,175000.5,2025-03-22,(no data),False
+Ashley Moody,SMCI,SMCI,SMCI,1,175000.5,2025-04-20,(no data),False
+John W. Hickenlooper,INTU,INTU,Intuit Inc. - Common Stock,1,175000.5,2025-10-06,(no data),False
+John W. Hickenlooper,PANW,PANW,"Palo Alto Networks, Inc. Common Stock",1,175000.5,2025-10-06,(no data),False
+John W. Hickenlooper,UBER,UBER,"Uber Technologies, Inc. Common Stock",1,175000.5,2026-02-06,(no data),False
+Markwayne Mullin,EZU,EZU,iShares MSCI Eurozone ETF,1,175000.5,2024-12-19,(no data),False
+Markwayne Mullin,IEFA,IEFA,iShares Core MSCI EAFE ETF,1,175000.5,2024-12-19,(no data),False
+Tommy Tuberville,ATVI,ATVI,"Activision Blizzard, Inc - Common Stock",1,175000.5,2022-12-14,(no data),False
+Tommy Tuberville,LPX,LPX,Louisiana-Pacific Corporation Common Stock,1,175000.5,2023-10-13,(no data),False
+Tommy Tuberville,KMB,KMB,Kimberly-Clark Corporation Common Stock,4,172502.0,2023-04-12,(no data),False
+Tommy Tuberville,SSYS,SSYS,"Stratasys, Ltd. - Common Stock",6,164003.0,2021-09-08,(no data),False
+Markwayne Mullin,VLO,VLO,Valero Energy Corporation Common Stock,2,150001.0,2023-10-12,(no data),False
+Tommy Tuberville,SSBK,SSBK,"Southern States Bancshares, Inc. - Common Sto",2,150001.0,2021-09-08,(no data),False
+Markwayne Mullin,CVX,CVX,Chevron Corp,4,148002.0,2023-10-12,(no data),False
+Markwayne Mullin,LLY,LLY,Eli Lilly and Company,4,148002.0,2023-10-12,(no data),False
+Markwayne Mullin,UNH,UNH,Unitedhealth Group Inc,4,148002.0,2023-10-12,(no data),False
+Tommy Tuberville,PARA,PARA,Paramount Global - Class B Common Stock,3,140001.5,2023-10-13,(no data),False
+Tommy Tuberville,HUMA,HUMA,"Humacyte, Inc. - Common Stock",8,137504.0,2022-04-08,(no data),False
+Tommy Tuberville,NU,NU,Nu Holdings Ltd. Class A Ordinary Shares,8,137504.0,2022-04-08,(no data),False
+Markwayne Mullin,ZTS,ZTS,Zoetis Inc. Class A Common Stock,4,123502.0,2023-10-12,(no data),False
+Markwayne Mullin,GS,GS,"Goldman Sachs Group, Inc. (The) Common Stock",6,121503.0,2023-10-12,(no data),False
+Markwayne Mullin,JPM,JPM,JP Morgan Chase & Co. Common Stock,3,115501.5,2023-10-12,(no data),False
+Markwayne Mullin,MA,MA,Mastercard Inc,3,115501.5,2023-10-12,(no data),False
+Markwayne Mullin,LRN,LRN,Stride Inc,5,113502.5,2024-11-08,(no data),False
+Ashley Moody,HWM,HWM,Howmet Aerospace Inc,2,107501.0,2025-02-21,(no data),False
+Markwayne Mullin,ISRG,ISRG,"Intuitive Surgical, Inc. - Common Stock",2,107501.0,2025-10-01,(no data),False
+Markwayne Mullin,LPLA,LPLA,Lpl Financial Holdings,2,107501.0,2025-02-27,(no data),False
+Tommy Tuberville,KR,KR,Kroger Company (The) Common Stock,2,107501.0,2023-10-13,(no data),False
+Markwayne Mullin,COP,COP,ConocoPhillips Common Stock,4,105502.0,2023-10-12,(no data),False
+Markwayne Mullin,IQV,IQV,Iqvia Holdings Inc,3,97501.5,2024-09-19,(no data),False
+Markwayne Mullin,TMO,TMO,Thermo Fisher Scientific Inc,3,97501.5,2023-10-12,(no data),False
+Tommy Tuberville,KEY,KEY,KeyCorp Common Stock,6,97003.0,2022-04-08,(no data),False
+Tommy Tuberville,WBA,WBA,"Walgreens Boots Alliance, Inc. - Common Stock",6,97003.0,2022-02-14,(no data),False
+John Boozman,TBLL,TBLL,Invesco Short Term Treasury ETF,8,88504.0,2024-10-18,(no data),False
+Alan Armstrong,GOOG,GOOG,Alphabet Inc. - Class C Capital Stock,2,83001.0,2026-07-21,(no data),False
+Alan Armstrong,NVDA,NVDA,NVIDIA Corporation - Common Stock,2,83001.0,2026-07-21,(no data),False
+John Boozman,XFIV,XFIV,BondBloxx Bloomberg Five Year Target Duration,2,83001.0,2026-06-16,(no data),False
+Markwayne Mullin,IEMG,IEMG,iShares Core MSCI Emerging Markets ETF,2,83001.0,2024-12-19,(no data),False
+Alan Armstrong,BRK-B,BRK-B,Berkshire Hathaway Inc. New Common Stock,1,75000.5,2026-07-21,(no data),False
+Ashley Moody,MU,MU,Micron Technology,1,75000.5,2025-02-21,(no data),False
+John W. Hickenlooper,ETN,ETN,"Eaton Corporation, PLC Ordinary Shares",1,75000.5,2026-02-06,(no data),False
+Markwayne Mullin,KLAC,KLAC,KLA Corporation - Common Stock,1,75000.5,2023-10-12,(no data),False
+Thomas R. Carper,ICLN,ICLN,Global Clean Energy Ishares ETF,1,75000.5,2024-03-29,(no data),False
+Tommy Tuberville,GOGL,GOGL,Golden Ocean Group Limited - Common Stock,1,75000.5,2024-03-15,(no data),False
+Tommy Tuberville,MUB,MUB,iShares National Muni Bond ETF,1,75000.5,2022-09-15,(no data),False
+Tommy Tuberville,SBLK,SBLK,Star Bulk Carriers Corp. - Common Shares,1,75000.5,2024-03-15,(no data),False
+Tommy Tuberville,USIG,USIG,iShares Broad USD Investment Grade Corporate ,1,75000.5,2025-05-15,(no data),False
+Tommy Tuberville,XOM,XOM,Exxon Mobil Corporation Common Stock,1,75000.5,2022-11-10,(no data),False
+Markwayne Mullin,BSX,BSX,Boston Scientific Corp,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,CAT,CAT,"Caterpillar, Inc. Common Stock",3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,COST,COST,Costco Wholesale Corporation - Common Stock,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,CRM,CRM,"Salesforce, Inc. Common Stock",3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,CSX,CSX,CSX Corporation - Common Stock,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,DE,DE,Deere & Company,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,ELV,ELV,"Elevance Health, Inc. Common Stock",3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,HD,HD,"Home Depot, Inc. (The) Common Stock",3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,HLT,HLT,Hilton Worldwide Holdings Inc. Common Stock,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,ICE,ICE,Intercontinental Exchange,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,KO,KO,Coca-Cola Company,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,RTX,RTX,RTX Corporation Common Stock,3,73001.5,2023-10-12,(no data),False
+Markwayne Mullin,TXN,TXN,Texas Instruments Incorporated - Common Stock,3,73001.5,2023-10-12,(no data),False
+Jerry Moran,BRK-B,BRK-B,Berkshire Hathaway Cl B,6,72503.0,2024-01-17,(no data),False
+Lindsey Graham,USFR,USFR,Wisdomtree Floating Rate Treasury Fund,2,65001.0,2024-01-26,(no data),False
+Markwayne Mullin,C,C,Citigroup Inc,2,65001.0,2026-02-04,(no data),False
+Markwayne Mullin,CRS,CRS,Carpenter Technology Corporation Common Stock,2,65001.0,2026-02-04,(no data),False
+Markwayne Mullin,FCFS,FCFS,"FirstCash Holdings, Inc. - Common Stock",2,65001.0,2026-02-04,(no data),False
+Markwayne Mullin,INTU,INTU,Intuit Inc. - Common Stock,2,65001.0,2025-10-01,(no data),False
+Markwayne Mullin,LHX,LHX,L3Harris Technologies Inc,2,65001.0,2025-02-27,(no data),False
+Markwayne Mullin,MCK,MCK,McKesson Corporation Common Stock,2,65001.0,2026-02-04,(no data),False
+Markwayne Mullin,MPWR,MPWR,"Monolithic Power Systems, Inc. - Common Stock",2,65001.0,2026-02-04,(no data),False
+Markwayne Mullin,TJX,TJX,"TJX Companies, Inc. (The) Common Stock",2,65001.0,2024-09-19,(no data),False
+Markwayne Mullin,VSEC,VSEC,VSE Corporation - Common Stock,2,65001.0,2026-02-04,(no data),False
+Sheldon Whitehouse,LLY,LLY,Eli Lilly and Company,2,65001.0,2023-10-17,(no data),False
+Tommy Tuberville,HPQ,HPQ,HP Inc. Common Stock,2,65001.0,2023-11-16,(no data),False
+John Boozman,FTGC,FTGC,First Trust Global Tactical Commodity Strateg,5,64502.5,2024-10-18,(no data),False
+John Boozman,GOOGL,GOOGL,Alphabet Inc. - Class A Common Stock,5,64502.5,2024-08-06,(no data),False
+John Boozman,IEF,IEF,iShares 7-10 Year Treasury Bond ETF,5,64502.5,2024-10-18,(no data),False
+Tommy Tuberville,MMM,MMM,3M Company Common Stock,5,64502.5,2022-02-14,(no data),False
+John Boozman,GIGB,GIGB,Goldman Sachs Access Investment Grade Corpora,8,64004.0,2024-06-05,(no data),False
+John Boozman,JMBS,JMBS,Janus Henderson Mortgage-Backed Securities ET,8,64004.0,2023-12-12,(no data),False
+John Boozman,MSFT,MSFT,Microsoft Corp,8,64004.0,2024-07-11,(no data),False
+John Boozman,SPYM,SPYM,State Street SPDR Portfolio S&P 500 ETF,4,56502.0,2026-01-13,(no data),False
+John Boozman,VEA,VEA,Vanguard FTSE Developed Markets ETF,4,56502.0,2024-07-11,(no data),False
+John Boozman,TLH,TLH,iShares 10-20 Year Treasury Bond ETF,7,56003.5,2023-12-12,(no data),False
+John Boozman,IEI,IEI,iShares 3-7 Year Treasury Bond ETF,3,48501.5,2024-10-18,(no data),False
+Tommy Tuberville,UAA,UAA,"Under Armour, Inc. Class A Common Stock",3,48501.5,2023-02-14,(no data),False
+John Boozman,CMBS,CMBS,iShares CMBS Bond ETF,6,48003.0,2024-10-18,(no data),False
+John Boozman,MBB,MBB,iShares MBS ETF,6,48003.0,2023-12-12,(no data),False
+John Boozman,SCHP,SCHP,Schwab U.S. TIPS ETF,6,48003.0,2024-07-11,(no data),False
+Tommy Tuberville,FGBI,FGBI,"First Guaranty Bancshares, Inc. - Common Stoc",6,48003.0,2022-04-08,(no data),False
+Alan Armstrong,BHP,BHP,BHP Group Limited (BHP),2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,GS,GS,"Goldman Sachs Group, Inc. (The) Common Stock",2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,JNJ,JNJ,Johnson & Johnson Common Stock,2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,MSFT,MSFT,Microsoft Corporation - Common Stock,2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,NVS,NVS,Novartis AG Common Stock,2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,RYCEY,RYCEY,Rolls Royce Holdings plc Sponsored ADR (RYCEY,2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,SAN,SAN,"Banco Santander, S.A. Sponsored ADR (Spain)",2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,SAP,SAP,SAP SE Sponsored ADR (SAP),2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,SBGSY,SBGSY,Schneider Electric SE Unsponsored ADR (SBGSY),2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,TSLA,TSLA,"Tesla, Inc. - Common Stock",2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,UNCRY,UNCRY,Unicredit SPA Unsponsored ADR (UNCRY),2,40501.0,2026-07-21,(no data),False
+Alan Armstrong,ZURVY,ZURVY,Zurich Insurance Group Ltd Sponsored ADR (ZUR,2,40501.0,2026-07-21,(no data),False
+Gary C. Peters,O,O,Realty Income Corporation Common Stock,2,40501.0,2023-04-12,(no data),False
+John Boozman,EIPI,EIPI,First Trust Exchange-Traded Fund VIII FT Ener,2,40501.0,2025-11-15,(no data),False
+John Boozman,XTWO,XTWO,BondBloxx Bloomberg Two Year Target Duration ,2,40501.0,2026-03-06,(no data),False
+Markwayne Mullin,BLK,BLK,"BlackRock, Inc. Common Stock",2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,BRK-B,BRK-B,Berkshire Hathaway Cl B,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,CMCSA,CMCSA,Comcast Corporation - Class A Common Stock,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,CMG,CMG,Chipotle Mexican Grill,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,COHR,COHR,Coherent Corp,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,CRDO,CRDO,Credo Technology Group Holding Ltd,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,DELL,DELL,Dell Technologies Inc. Class C Common Stock,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,EMR,EMR,Emerson Electric Company,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,EW,EW,Edwards Lifesciences Corporation Common Stock,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,FISV,FI,"Fiserv, Inc. Common Stock",2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,HON,HON,Honeywell International Inc,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,IRM,IRM,Iron Mountain Inc,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,MTZ,MTZ,Mastec Inc,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,NKE,NKE,Nike Inc,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,NOW,NOW,"ServiceNow, Inc. Common Stock",2,40501.0,2025-10-01,(no data),False
+Markwayne Mullin,PANW,PANW,"Palo Alto Networks, Inc. - Common Stock",2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,PEP,PEP,Pepsico Inc,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,PG,PG,Procter & Gamble Company,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,PRMB,PRMB,Primo Brands Corporation Cl A,2,40501.0,2025-01-31,(no data),False
+Markwayne Mullin,SBUX,SBUX,Starbucks Corporation - Common Stock,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,SHW,SHW,Sherwin-Williams Company,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,SPGI,SPGI,S&P Global Inc. Common Stock,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,STZ,STZ,"Constellation Brands, Inc. Common Stock",2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,UNP,UNP,Union Pacific Corporation Common Stock,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,V,V,Visa Inc,2,40501.0,2023-10-12,(no data),False
+Markwayne Mullin,WAB,WAB,Wabtec Corp,2,40501.0,2025-01-31,(no data),False
+Sheldon Whitehouse,TSLA,TSLA,"Tesla, Inc. - Common Stock",2,40501.0,2022-03-16,(no data),False
+John Boozman,META,META,Meta Platforms Inc,5,40002.5,2025-05-14,(no data),False
+John Boozman,NVDA,NVDA,Nvidia Corp,5,40002.5,2025-02-08,(no data),False
+Alan Armstrong,BNPQY,BNPQY,BNP Paribas SA ADR (BNPQY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,BTI,BTI,"British American Tobacco Industries, p.l.c. C",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,C,C,"Citigroup, Inc. Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,CMWAY,CMWAY,Commonwealth Bank Australia Sponsored ADR (CM,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,CSCO,CSCO,"Cisco Systems, Inc. - Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,DBOEY,DBOEY,Deutsche Boerse ADR (DBOEY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,DBSDY,DBSDY,DBS Group Holdings Ltd Sponsored ADR (DBSDY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,DTEGY,DTEGY,Deutsche Telekom AG DE Sponsored ADR (DTEGY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,EADSY,EADSY,Airbus SE (EADSY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,GE,GE,GE Aerospace Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,GSK,GSK,Glaxo Wellcome plc ADR (GSK),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,HSBC,HSBC,"HSBC Holdings, plc. Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,HTHIY,HTHIY,Hitachi Ltd ADR Japan (HTHIY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,ISNPY,ISNPY,Intesa Sanpaolo Sponsored ADR (ISNPY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,KO,KO,Coca-Cola Company (The) Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,LRLCY,LRLCY,Loreal Company ADR France (LRLCY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,META,META,"Meta Platforms, Inc. - Class A Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,MFG,MFG,"Mizuho Financial Group, Inc. Sponosred ADR (J",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,MHVIY,MHVIY,Mitsubishi Heavy Industries Ltd ADR (MHVIY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,MITSY,MITSY,Mitsui & Co Ltd ADR Japan (MITSY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,MTSUY,MTSUY,Mitsubishi Corporation ADR (MTSUY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,MU,MU,"Micron Technology, Inc. - Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,NABZY,NABZY,National Australia Bank Ltd Sponsored ADR (NA,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,NFLX,NFLX,"Netflix, Inc. - Common Stock",1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,NSRGY,NSRGY,Nestle SA Sponsored ADR (NSRGY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,NVO,NVO,Novo Nordisk A/S Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,ORCL,ORCL,Oracle Corporation Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,PLTR,PLTR,Palantir Technologies Inc. - Class A Common S,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,RHHBY,RHHBY,Roche Holdings Ltd Sponsored ADR (RHHBY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,RIO,RIO,Rio Tinto Plc Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,RTX,RTX,RTX Corporation Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SAFRY,SAFRY,Safran SA ADR (SAFRY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SIEGY,SIEGY,Siemens AG Sponsored ADR (SIEGY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SMERY,SMERY,Siemens Energy AG Sponsored ADR (SMERY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SMFG,SMFG,Sumitomo Mitsui Financial Group Inc Unsponsor,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SNY,SNY,Sanofi - American Depositary Shares,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,SONY,SONY,Sony Group Corporation American Depositary Sh,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,T,T,AT&T Inc.,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,TM,TM,Toyota Motor Corporation Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,TOELY,TOELY,Tokyo Electron Ltd ADR (TOELY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,UBS,UBS,UBS Group AG Registered Ordinary Shares,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,UL,UL,Unilever PLC (UL),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,UNH,UNH,UnitedHealth Group Incorporated Common Stock ,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,UNP,UNP,Union Pacific Corporation Common Stock,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,V,V,Visa Inc.,1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,VCISY,VCISY,Vinci S.A. ADR (VCISY),1,32500.5,2026-07-21,(no data),False
+Alan Armstrong,WFAFY,WFAFY,Wesfarmers Ltd Unsponsored ADR (WFAFY),1,32500.5,2026-07-21,(no data),False
+Ashley Moody,ET,ET,ET,1,32500.5,2025-05-13,(no data),False
+Ashley Moody,JPM,JPM,JPM,1,32500.5,2025-05-13,(no data),False
+Dan Sullivan,MSFT,MSFT,Microsoft Corporation - Common Stock,1,32500.5,2022-12-21,(no data),False
+Gary C. Peters,PEP,PEP,"PEP - PepsiCo, Inc. - Common Stock",1,32500.5,2026-05-11,(no data),False
+Gary C. Peters,SWK,SWK,Stanley Black & Decker Inc,1,32500.5,2026-01-20,(no data),False
+Gary C. Peters,WPC,WPC,W. P. Carey Inc. REIT,1,32500.5,2026-01-20,(no data),False
+John Boozman,SCZ,SCZ,iShares MSCI EAFE Small-Cap ETF,1,32500.5,2024-05-07,(no data),False
+Lindsey Graham,BSCQ,BSCQ,Invesco BulletShares 2026 Corporate Bond ETF,1,32500.5,2026-01-06,(no data),False
+Lindsey Graham,BSCV,BSCV,Invesco BulletShares 2031 Corporate Bond ETF,1,32500.5,2025-07-14,(no data),False
+Lindsey Graham,IBDQ,IBDQ,iShares iBonds Dec 2025 Term Corporate ETF,1,32500.5,2022-07-13,(no data),False
+Lindsey Graham,XONE,XONE,Boxx One Year Target Duration ETF,1,32500.5,2025-07-14,(no data),False
+Markwayne Mullin,DHR,DHR,Danaher Corporation Common Stock,1,32500.5,2023-10-12,(no data),False
+Markwayne Mullin,PH,PH,Parker-Hannifin Corporation Common Stock,1,32500.5,2024-07-12,(no data),False
+Markwayne Mullin,PM,PM,Philip Morris International Inc,1,32500.5,2025-02-27,(no data),False
+Markwayne Mullin,PNR,PNR,Pentair plc. Ordinary Share,1,32500.5,2025-12-05,(no data),False
+Markwayne Mullin,TMUS,TMUS,T-Mobile US,1,32500.5,2023-10-12,(no data),False
+Sheldon Whitehouse,COHR,COHR,Coherent Corp. Common Stock,1,32500.5,2026-07-08,(no data),False
+Sheldon Whitehouse,NVS,NVS,Novartis Ag ADR,1,32500.5,2023-10-17,(no data),False
+Sheldon Whitehouse,TGT,TGT,Target Corporation Common Stock,1,32500.5,2022-03-16,(no data),False
+Tommy Tuberville,DHS,DHS,Wisdomtree U.S. High Dividend Fund,1,32500.5,2022-09-15,(no data),False
+Tommy Tuberville,EVT,EVT,Eaton Vance Tax Advantaged Dividend Income Fu,1,32500.5,2022-07-13,(no data),False
+Tommy Tuberville,IDV,IDV,iShares International Select Dividend ETF,1,32500.5,2022-09-15,(no data),False
+Tommy Tuberville,OC,OC,Owens Corning Inc Common Stock New,1,32500.5,2022-09-15,(no data),False
+Tommy Tuberville,OXY,OXY,Occidental Petroleum Corporation Common Stock,1,32500.5,2023-06-15,(no data),False
+Tommy Tuberville,RSP,RSP,Invesco S&P 500 Equal Weight ETF,1,32500.5,2022-09-15,(no data),False
+Tommy Tuberville,XLP,XLP,SPDR Select Sector Fund - Consumer Staples,1,32500.5,2026-01-15,(no data),False
+Tommy Tuberville,XLU,XLU,SPDR Select Sector Fund - Utilities,1,32500.5,2026-01-15,(no data),False
+Tommy Tuberville,XLV,XLV,SPDR Select Sector Fund - Health Care,1,32500.5,2026-01-15,(no data),False
+John Boozman,PALL,PALL,abrdn Physical Palladium Shares ETF,4,32002.0,2024-01-08,(no data),False
+John Boozman,SHY,SHY,iShares 1-3 Year Treasury Bond ETF,4,32002.0,2023-12-12,(no data),False
+John Boozman,TLT,TLT,20+ Year Treas Bond Ishares ETF,4,32002.0,2023-12-12,(no data),False
+Tommy Tuberville,PFE,PFE,"Pfizer, Inc. Common Stock",4,32002.0,2022-02-14,(no data),False
+Jerry Moran,GOOG,GOOG,Alphabet Cl C,3,24001.5,2025-06-18,(no data),False
+John Boozman,GEM,GEM,Goldman Sachs ActiveBeta Emerging Markets Equ,3,24001.5,2024-07-11,(no data),False
+John Boozman,PYPL,PYPL,Paypal Holdings,3,24001.5,2025-12-08,(no data),False
+Sheldon Whitehouse,KO,KO,Coca-Cola Company,3,24001.5,2024-01-18,(no data),False
+Tommy Tuberville,CFG,CFG,"Citizens Financial Group, Inc. Common Stock",3,24001.5,2022-04-08,(no data),False
+Tommy Tuberville,FITB,FITB,Fifth Third Bancorp - Common Stock,3,24001.5,2022-04-08,(no data),False
+Tommy Tuberville,VCTR,VCTR,"Victory Capital Holdings, Inc. - Common Stock",3,24001.5,2022-11-10,(no data),False
+Tommy Tuberville,VZ,VZ,Verizon Communications Inc. Common Stock,3,24001.5,2022-02-14,(no data),False
+Alan Armstrong,CFRUY,CFRUY,Compagnie Financiere Richemont AG ADR (CFRUY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,CIEN,CIEN,Ciena Corporation Common Stock,2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,CRRFY,CRRFY,Carrefour SA Sponsored ADR (CRRFY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,DGX,DGX,Quest Diagnostics Incorporated Common Stock,2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,DSDVY,DSDVY,DSV A/S ADR (DSDVY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,EA,EA,Electronic Arts Inc. - Common Stock,2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,GLNCY,GLNCY,Glencore plc Unsponsored ADR (GLNCY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,HEINY,HEINY,Heineken NV Sponsored ADR (HEINY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,KKPNY,KKPNY,Royal KPN N.V. Sponsored ADR (KKPNY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,LRCX,LRCX,Lam Research Corporation (LRCX),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,ORLY,ORLY,"O'Reilly Automotive, Inc. - Common Stock",2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,SCHW,SCHW,Charles Schwab Corporation (The) Common Stock,2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,SCMWY,SCMWY,Swisscom AG Sponsored ADR (SCMWY),2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,WELL,WELL,Welltower Inc. Common Stock,2,16001.0,2026-07-21,(no data),False
+Alan Armstrong,WSE,WSE,Wise plc Sponsored ADR (WIZEY),2,16001.0,2026-07-21,(no data),False
+Dan Sullivan,CHD,CHD,"Church & Dwight Company, Inc. Common Stock",2,16001.0,2023-03-16,(no data),False
+Dan Sullivan,ZTS,ZTS,Zoetis Inc. Class A Common Stock,2,16001.0,2022-12-21,(no data),False
+Gary C. Peters,CAG,CAG,"ConAgra Brands, Inc. Common Stock",2,16001.0,2021-12-07,(no data),False
+Gary C. Peters,VZ,VZ,VZ,2,16001.0,2021-12-07,(no data),False
+John Boozman,CEG,CEG,Constellation Energy Corporation - Common Sto,2,16001.0,2026-05-08,(no data),False
+John Boozman,ETN,ETN,Eaton Corp,2,16001.0,2025-10-10,(no data),False
+John Boozman,HD,HD,Home Depot,2,16001.0,2025-06-14,(no data),False
+John Boozman,IVV,IVV,iShares Core S&P 500 ETF,2,16001.0,2024-10-18,(no data),False
+John Boozman,LITP,LITP,Sprott Lithium Miners ETF,2,16001.0,2025-03-06,(no data),False
+John Boozman,LLY,LLY,Eli Lilly and Company,2,16001.0,2025-09-12,(no data),False
+John Boozman,MA,MA,Mastercard Incorporated Common Stock,2,16001.0,2025-02-08,(no data),False
+John Boozman,MSI,MSI,"Motorola Solutions, Inc. Common Stock",2,16001.0,2024-08-06,(no data),False
+John Boozman,PPLT,PPLT,abrdn Physical Platinum Shares ETF,2,16001.0,2024-01-08,(no data),False
+John Boozman,UNH,UNH,Unitedhealth Group Inc,2,16001.0,2025-05-14,(no data),False
+John Boozman,VNQI,VNQI,Vanguard Global ex-U.S. Real Estate ETF,2,16001.0,2025-09-12,(no data),False
+Tommy Tuberville,CBSH,CBSH,"Commerce Bancshares, Inc. - Common Stock",2,16001.0,2023-05-11,(no data),False
+Tommy Tuberville,CSCO,CSCO,"Cisco Systems, Inc. - Common Stock",2,16001.0,2022-02-14,(no data),False
+Tommy Tuberville,MPWR,MPWR,"Monolithic Power Systems, Inc. - Common Stock",2,16001.0,2021-10-15,(no data),False
+Tommy Tuberville,MRSH,MMC,"Marsh & McLennan Companies, Inc. Common Stock",2,16001.0,2022-04-08,(no data),False
+Tommy Tuberville,NFLX,NFLX,"Netflix, Inc. - Common Stock",2,16001.0,2021-10-15,(no data),False
+Tommy Tuberville,ODFL,ODFL,"Old Dominion Freight Line, Inc. - Common Stoc",2,16001.0,2024-05-15,(no data),False
+Tommy Tuberville,PHM,PHM,"PulteGroup, Inc. Common Stock",2,16001.0,2022-11-10,(no data),False
+Tommy Tuberville,RF,RF,Regions Financial Corporation Common Stock,2,16001.0,2022-04-08,(no data),False
+Tommy Tuberville,RMD,RMD,ResMed Inc. Common Stock,2,16001.0,2022-04-08,(no data),False
+Tommy Tuberville,RYCEY,RYCEY,ROLLS-ROYCE HOLDINGS PLC SPONSORED ADR,2,16001.0,2024-04-15,(no data),False
+Alan Armstrong,AVB,AVB,"AvalonBay Communities, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BDX,BDX,"Becton, Dickinson and Company Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BEN,BEN,"Franklin Resources, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BG,BG,Bunge Limited Common Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BHKLY,BHKLY,Boc Hong Kong Holdings Ltd Sponsored ADR (BHK,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BIIB,BIIB,Biogen Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BKNG,BKNG,Booking Holdings Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BKNIY,BKNIY,Bankinter SA Sponsored ADR (BKNIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BMWKY,BMWKY,Bayerische Motors Werke AG ADR (BMWKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BMY,BMY,Bristol-Myers Squibb Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BNTGY,BNTGY,Brenntag Se Unsponsored ADR (BNTGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BNY,BK,Bank of New York Mellon Corp (BK),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BOUYY,BOUYY,Bouygues SA ADR (BOUYY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BR,BR,"Broadridge Financial Solutions, Inc. Common S",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BRDCY,BRDCY,Bridgestone Corporation Ltd ADR Japan (BRDCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BRO,BRO,"Brown & Brown, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BRRLY,BRRLY,Barry Callebaut AG Unsponsored ADR (BRRLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BSX,BSX,Boston Scientific Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BTDPY,BTDPY,Barratt Redrow plc ADR (BTDPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BUD,BUD,Anheuser-Busch Inbev SA Sponsored ADR (Belgiu,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BVVBY,BVVBY,Bureau Veritas SA Unsponsored ADR (BVVBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BX,BX,Blackstone Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BXBLY,BXBLY,Brambles Ltd Sponsored ADR (BXBLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BXP,BXP,"BXP, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,BZLFY,BZLFY,Bunzl plc New Sponsored ADR (BZLFY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CABGY,CABGY,Carlsberg AS Sponsored ADR (CABGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CAG,CAG,"ConAgra Brands, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CAH,CAH,"Cardinal Health, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CAIXY,CAIXY,Caixabank Unsponsored ADR (CAIXY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CAJPY,CAJPY,Canon Inc ADR Japan Sponsored (CAJPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CB,CB,Chubb Limited Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CBOE,CBOE,"Cboe Global Markets, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CCEP,CCEP,Coca-Cola Europacific Partners plc - Ordinary,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CCHGY,CCHGY,Coca-Cola HBC AG ADR (CCHGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CCI,CCI,Crown Castle Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CCL,CCL,Carnival Corporation Ltd. Common Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CCOEY,CCOEY,Capcom Co Ltd Unsponsored ADR (CCOEY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CF,CF,"CF Industries Holdings, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CGEMY,CGEMY,Capgemini SE Unsponsored (CGEMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CHEOY,CHEOY,Cochlear Ltd ADR (CHEOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CHGCY,CHGCY,Chugai Pharmaceutical Ltd DDR (CHGCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CHKP,CHKP,Check Point Software Technologies Ltd. - Ordi,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CHTR,CHTR,"Charter Communications, Inc. - Class A Common",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CI,CI,The Cigna Group Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CJPRY,CJPRY,Central Japan RAI ADR (CJPRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CKHUY,CKHUY,CK Hutchison Holdings Ltd Unsponsored ADR (CK,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CLLNY,CLLNY,Cellnex Telecom SAU Unsponsored ADR (CLLNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CLPBY,CLPBY,Coloplast AS Sponsored ADR (CLPBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CMCSA,CMCSA,Comcast Corporation - Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CME,CME,CME Group Inc. - Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CMPGY,CMPGY,Compass Group plc Sponsored ADR (CMPGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CMSQY,CMSQY,Computershare Ltd Sponsored ADR (CMSQY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CODYY,CODYY,Compagnie de Saint-Gobain ADR (CODYY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,COF,COF,Capital One Financial Corporation Common Stoc,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,COIN,COIN,"Coinbase Global, Inc. - Class A Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,COO,COO,"The Cooper Companies, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,COR,COR,"Cencora, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,COST,COST,Costco Wholesale Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CPB,CPB,The Campbell's Company - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CPRT,CPRT,"Copart, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CPT,CPT,Camden Property Trust Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CRARY,CRARY,Credit Agricole SA ADR (CRARY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CRM,CRM,"Salesforce, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CRZBY,CRZBY,Commerzbank AG Sponsored ADR (CRZBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CSLLY,CSLLY,CSL Ltd Sponsored ADR (CSLLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CSX,CSX,CSX Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CTSH,CTSH,Cognizant Technology Solutions Corporation - ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CTVA,CTVA,"Corteva, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,CVS,CVS,CVS Health Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DANOY,DANOY,Danone Sponsored ADR (DANOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DASTY,DASTY,Dassault Systems SA Sponsored ADR (DASTY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DB,DB,Deutsche Bank AG Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DDOG,DDOG,"Datadog, Inc. - Class A Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DE,DE,Deere & Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DELL,DELL,Dell Technologies Inc. Class C Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DEO,DEO,Diageo plc Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DFKCY,DFKCY,Daifuku Co Ltd ADR (DFKCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DHLGY,DHLGY,Deutsche Post AG Sponsored ADR (DHLGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DHR,DHR,Danaher Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DIFTY,DIFTY,Daito Trust Construction Sponsored ADR (DIFTY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DIS,DIS,Walt Disney Company (The) Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DKILY,DKILY,Daikin Industries Ltd ADR (DKILY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DLAKY,DLAKY,Deutsche Lufthansa AG Sponsored ADR (DLAKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DLICY,DLICY,Daiichi Life Holdings Inc Unsponsored ADR (DL,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DLR,DLR,"Digital Realty Trust, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DNBBY,DNBBY,DNB BK ASA Sponsored ADR (DNBBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DNKEY,DNKEY,Danske Bank A/S Sponsored ADR (DNKEY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DNZOY,DNZOY,Denso Corporation ADR (DNZOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DOC,DOC,"Healthpeak Properties, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DOV,DOV,Dover Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DOW,DOW,Dow Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DPZ,DPZ,Domino's Pizza Inc - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DQJCY,DQJCY,Pan Pacific International Holdings Corporatio,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DRI,DRI,"Darden Restaurants, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DRPRY,DRPRY,Dr. Ing. h.c. F. Porsche AG Unsponsored ADR (,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DSCSY,DSCSY,Disco Corporation Unsponsored ADR (DSCSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DSFIY,DSFIY,DSM Firmenich AG Sponsored ADR (DSFIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DSNKY,DSNKY,Daiichi Sankyo Co Ltd Sponsored ADR (DSNKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DTRUY,DTRUY,Daimler Truck Holding AG Sponsored ADR (DTRUY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DUFRY,DUFRY,Avolta AG ADR (DUFRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DVA,DVA,DaVita Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,DWAHY,DWAHY,Daiwa House Industries Ltd ADR Japan (DWAHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EBAY,EBAY,eBay Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EBCOY,EBCOY,Ebara Corporation ADR (EBCOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EBKDY,EBKDY,Erste Group Bank AG Sponsored ADR (EBKDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EG,EG,"Everest Group, Ltd. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EJPRY,EJPRY,East Japan Railway Co ADR (EJPRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ELV,ELV,"Elevance Health, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EME,EME,"EMCOR Group, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EMR,EMR,Emerson Electric Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EPOAY,EPOAY,Epiroc Aktiebolag Class A Sponsored ADR (EPOA,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ERIC,ERIC,Ericsson - ADR (ERIC),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ESAIY,ESAIY,Eisai Co Ltd ADR (ESAIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ESLOY,ESLOY,Essilorluxottica ADR (ESLOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ESLT,ESLT,Elbit Systems Ltd. - Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ESS,ESS,"Essex Property Trust, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ETN,ETN,"Eaton Corporation, PLC Ordinary Shares",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EVVTY,EVVTY,Evolution AB Unsponsored ADR (EVVTY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EW,EW,Edwards Lifesciences Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EXPD,EXPD,"Expeditors International of Washington, Inc. ",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,EXPGY,EXPGY,Experian plc Sponsored ADR (EXPGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,F,F,Ford Motor Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FANUY,FANUY,Fanuc Corporation ADR (FANUY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FCX,FCX,"Freeport-McMoRan, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FDX,FDX,FedEx Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FFIV,FFIV,"F5, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FICO,FICO,Fair Isaac Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FINMY,FINMY,Leonardo SPA ADR (FINMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FIS,FIS,"Fidelity National Information Services, Inc. ",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FISV,FISV,"Fiserv, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FIX,FIX,"Comfort Systems USA, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FJTSY,FJTSY,Fujitsu Ltd ADR New Japan (FJTSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FMS,FMS,Fresenius Medical Care AG (FMS),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FOXA,FOXA,Fox Corporation - Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FRCOY,FRCOY,Fast Retailing Co Ltd ADR (FRCOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FRT,FRT,Federal Realty Investment Trust Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FSLR,FSLR,"First Solar, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FSNUY,FSNUY,Fresenius SE & Company Sponsored ADR (FSNUY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FSUGY,FSUGY,Fortescue Metals Group Ltd Sponsored ADR (FSU,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FTNT,FTNT,"Fortinet, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FTV,FTV,Fortive Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FUJHY,FUJHY,Subaru Corporation Unsponsored ADR (FUJHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,FUJIY,FUJIY,Fuji Film Holding Corporation ADR (FUJIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GALDY,GALDY,Galderma Group AG Sponsored ADR (GALDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GBERY,GBERY,Geberit AG ADR (GBERY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GD,GD,General Dynamics Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GDDY,GDDY,GoDaddy Inc. Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GEHC,GEHC,GE HealthCare Technologies Inc. - Common Stoc,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GEN,GEN,Gen Digital Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GILD,GILD,"Gilead Sciences, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GIS,GIS,"General Mills, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GL,GL,Globe Life Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GM,GM,General Motors Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GMAB,GMAB,Genmab A/S - American Depositary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GPC,GPC,Genuine Parts Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GPN,GPN,Global Payments Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,GVDNY,GVDNY,Givaudan SA ADR (GVDNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HAGHY,HAGHY,Hensoldt AG ADR (HAGHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HALMY,HALMY,Halma plc Unsponsored ADR (HALMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HAS,HAS,"Hasbro, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HBAN,HBAN,Huntington Bancshares Incorporated - Common S,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HCA,HCA,"HCA Healthcare, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HCMLY,HCMLY,Holcim Ltd Sponsored ADR (HCMLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HDLMY,HDLMY,Heidelbergcement AG ADR Sponsored (HDLMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HENKY,HENKY,Henkel AG & Co KGAA Sponsored ADR (HENKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HENOY,HENOY,Henkel AG & Company KGAA PFD Sponsored ADR (H,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HESAY,HESAY,Hermes International SCA ADR (HESAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HIG,HIG,"The Hartford Insurance Group, Inc. Common Sto",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HKXCY,HKXCY,Hong Kong Exchanges & Clearing Ltd ADR (HKXCY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HLN,HLN,Haleon plc Sponsored ADR (HLN),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HLT,HLT,Hilton Worldwide Holdings Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HMC,HMC,"Honda Motor Company, Ltd. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HNNMY,HNNMY,Hennes & Mauritz AB ADR (HNNMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HOCPY,HOCPY,Hoya Corporation Sponsored ADR (HOCPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HON,HON,Honeywell International Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HOOD,HOOD,"Robinhood Markets, Inc. - Class A Common Stoc",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HPE,HPE,Hewlett Packard Enterprise Company Common Sto,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HPQ,HPQ,HP Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HSY,HSY,The Hershey Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HUBB,HUBB,Hubbell Inc Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HUM,HUM,Humana Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HVRRY,HVRRY,Hannover Rueck SE Sponsored ADR (HVRRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HWM,HWM,Howmet Aerospace Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,HXGBY,HXGBY,Hexagon AB Unsponsored ADR (HXGBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IBM,IBM,International Business Machines Corporation C,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ICAGY,ICAGY,International Consolidated Airlines Group Spo,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ICE,ICE,Intercontinental Exchange Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ICL,ICL,ICL Group Ltd. Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IDEXY,IDEXY,Industria De Diseno Textil Inditex ADR (IDEXY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IFJPY,IFJPY,Informa plc Sponsored ADR (IFJPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IFNNY,IFNNY,Infineon Technologies ADR (IFNNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IHG,IHG,Intercontinental Hotels Group American (IHG),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IHICY,IHICY,IHI Corporation Unsponsored ADR (IHICY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ING,ING,"ING Group, N.V. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,INTC,INTC,Intel Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,INTU,INTU,Intuit Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,INVH,INVH,Invitation Homes Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ISMAY,ISMAY,Indra Sistemas ADR (ISMAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ISRG,ISRG,"Intuitive Surgical, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ISUZY,ISUZY,Isuzu Motor Company Ltd ADR (ISUZY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ITOCY,ITOCY,Itochu Corporation ADR Japan (ITOCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,IX,IX,ORIX Corporation American Depositary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JAPAY,JAPAY,Japan Tobacco Inc Unsponsored ADR (JAPAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JBAXY,JBAXY,Julius Baer Group Ltd ADR (JBAXY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JMHLY,JMHLY,Jardine Matheson Holdings Unsponsored ADR (JM,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JPXGY,JPXGY,Japan Exchange Group Inc Unsponsored ADR (JPX,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JRONY,JRONY,Jeronimo Martins SGPS SA ADR (JRONY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,JSAIY,JSAIY,J. Sainsbury plc Sponsored ADR (JSAIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KAOOY,KAOOY,Kao Corporation Unsponsored ADR (KAOOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KBCSY,KBCSY,KBC Group NV ADR (KBCSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KBGGY,KBGGY,Kongsberg Gruppen ASA ADR (KBGGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KDDIY,KDDIY,KDDI Corporation ADR (KDDIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KDP,KDP,Keurig Dr Pepper Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KEY,KEY,KeyCorp Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KGFHY,KGFHY,Kingfisher plc Sponsored ADR (KGFHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KHC,KHC,The Kraft Heinz Company - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KHNGY,KHNGY,Kuehne & Nagel International AG ADR (KHNGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KIM,KIM,Kimco Realty Corporation (HC) Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KKR,KKR,KKR & Co. Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KLAC,KLAC,KLA Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KMB,KMB,Kimberly-Clark Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KMTUY,KMTUY,Komatsu Ltd Sponsored ADR (KMTUY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KNBWY,KNBWY,Kirin Holdings Ltd Sponsored ADR (KNBWY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KNRRY,KNRRY,Knorr-Bremse Unsponsored ADR (KNRRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KNYJY,KNYJY,Kone Oyj ADR (KNYJY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KUBTY,KUBTY,Kubota Corporation ADR Japan (KUBTY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KVUE,KVUE,Kenvue Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KWHIY,KWHIY,Kawaski Heavy Industries Sponsored ADR (KWHIY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,KXIAY,KXIAY,Kioxia Holdings Corporation ADR (KXIAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,L,L,Loews Corporation (L),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LDSCY,LDSCY,Land Secs Group plc ADR (LDSCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LEN,LEN,Lennar Corporation Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LGGNY,LGGNY,Legal & General Group plc Sponsored ADR (LGGN,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LGRDY,LGRDY,Legrand SA Unsponsored ADR (LGRDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LH,LH,Labcorp Holdings Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LHX,LHX,"L3Harris Technologies, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LITE,LITE,Lumentum Holdings Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LMT,LMT,Lockheed Martin Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LOGI,LOGI,Logitech International S.A. - Registered Shar,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LOW,LOW,"Lowe's Companies, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LSEGY,LSEGY,London Stock Exchange Group Sponsored ADR (LS,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LSRCY,LSRCY,Lasertec Corporation ADR (LSRCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LYB,LYB,LyondellBasell Industries NV Ordinary Shares ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LYG,LYG,Lloyds Banking Group Plc American Depositary ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LYSDY,LYSDY,Lynas Rare Earths Ltd Sponsored ADR (LYSDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LYV,LYV,"Live Nation Entertainment, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,LZAGY,LZAGY,Lonza Group AG ADR (LZAGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MAA,MAA,"Mid-America Apartment Communities, Inc. Commo",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MAR,MAR,Marriott International - Class A Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MARUY,MARUY,Marubeni Corporation ADR Japan (MARUY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MBGYY,MBGYY,Mercedes-Benz Group AG Unsponsored ADR (MBGYY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MCD,MCD,McDonald's Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MCHP,MCHP,Microchip Technology Incorporated - Common St,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MCK,MCK,McKesson Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MDT,MDT,Medtronic plc. Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MET,MET,"MetLife, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MGDDY,MGDDY,Michelin Compagnie Generale ADR (MGDDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MGM,MGM,MGM Resorts International Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MIELY,MIELY,Mitsubishi Electric Corporation ADR Japan (MI,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MITEY,MITEY,Mitsubishi Estate Ltd ADR (MITEY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MMM,MMM,3M Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MNDY,MNDY,monday.com Ltd. - Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MO,MO,"Altria Group, Inc.",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MONRY,MONRY,Moncler SPA Unsponsored ADR (MONRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MOS,MOS,Mosaic Company (The) Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MQBKY,MQBKY,Macquarie Group Ltd Unsponsored ADR (MQBKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MRAAY,MRAAY,Murata MFG Co Ltd ADR (MRAAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MS,MS,Morgan Stanley Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MSADY,MSADY,MS&AD Insurance Group Holdings ADR (MSADY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MSCI,MSCI,MSCI Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MSI,MSI,"Motorola Solutions, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MSLOY,MSLOY,Mitsui Osk Lines Ltd Unsponsored ADR (MSLOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MT,MT,Arcelor Mittal NY Registry Shares NEW,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MTSFY,MTSFY,Mitsui Fudosan Co Ltd ADR (MTSFY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,MURGY,MURGY,Munich Re Group ADR (MURGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NBIS,NBIS,Nebius Group N.V. - Class A Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NCBDY,NCBDY,Bandai Namco Holdings Inc ADR (NCBDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NEM,NEM,Newmont Corporation,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NEXOY,NEXOY,Nexon Company Ltd Unsponsored ADR (NEXOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NGLOY,NGLOY,Anglo American plc Sponsored ADR (NGLOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NHYDY,NHYDY,Norsk Hydro A.S. New Norway Sponsored ADR (NH,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NICE,NICE,NICE Ltd - (NICE),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NKE,NKE,"Nike, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NMR,NMR,Nomura Holdings Inc ADR American Depositary S,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NNGRY,NNGRY,NN Group NV Unsponsored ADR (NNGRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NOC,NOC,Northrop Grumman Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NOK,NOK,Nokia Corporation Sponsored American Deposita,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NPNYY,NPNYY,Nippon Yusen Kabushiki Sponsored ADR (NPNYY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NPSCY,NPSCY,Nippon Steel Corporation Unsponsored ADR (NPS,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NRDBY,NRDBY,Nordea BK ABP Sponsored ADR (NRDBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NRILY,NRILY,Nomura Research Institute Ltd ADR (NRILY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NSC,NSC,Norfolk Southern Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NTDOY,NTDOY,Nintendo Ltd ADR Japan (NTDOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NTTYY,NTTYY,NTT Inc Sponsored ADR (NTTYY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NUE,NUE,Nucor Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NVZMY,NVZMY,Novonesis B ADR (NVZMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NWG,NWG,NatWest Group plc (NWG),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,NXPI,NXPI,NXP Semiconductors N.V. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,O,O,Realty Income Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OBICY,OBICY,Obic Co Ltd ADR (OBICY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OLCLY,OLCLY,Oriental Land Co Ltd Unsponsored ADR (OLCLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OMC,OMC,Omnicom Group Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ORANY,ORANY,Orange Sponsored ADR (ORANY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ORKLY,ORKLY,Orkla ASA Sponsored ADR (ORKLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OTIS,OTIS,Otis Worldwide Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OTSKY,OTSKY,Otsuka Holdings Co Ltd Unsponsored ADR (OTSKY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,OVCHY,OVCHY,Overseas-Chinese Bank ADR (OVCHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PANW,PANW,"Palo Alto Networks, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PCAR,PCAR,PACCAR Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PCRHY,PCRHY,Panasonic Corporation ADR (PCRHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PEP,PEP,"PepsiCo, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PFG,PFG,Principal Financial Group Inc - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PH,PH,Parker-Hannifin Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PHG,PHG,Koninklijke Philips NV Sponsored ADR (PHG),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PM,PM,Philip Morris International Inc Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PNDRY,PNDRY,Pandora A/S ADR (PNDRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,POOL,POOL,Pool Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PPRUY,PPRUY,Kering SA Unsponosred ADR (PPRUY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PRNDY,PRNDY,Pernod Ricard SA Sponsored ADR (PRNDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PROSY,PROSY,Prosus NV Sponsored ADR (PROSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PRYMY,PRYMY,Prysmian SPA ADR (PRYMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PSA,PSA,Public Storage Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PSO,PSO,"Pearson, Plc Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PTC,PTC,PTC Inc. - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PUBGY,PUBGY,Publicis Groupe S.A. New Sponsored ADR (PUBGY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PUK,PUK,Prudential plc ADR United Kingdom (PUK),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PWR,PWR,"Quanta Services, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,PYPL,PYPL,"PayPal Holdings, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,Q,Q,"Qnity Electronics, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,QABSY,QABSY,Qantas Airways Ltd Sponsored ADR (QABSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,QBIEY,QBIEY,QBE Insurance Group Ltd Sponsored ADR (QBIEY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,QCOM,QCOM,QUALCOMM Incorporated - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RACE,RACE,Ferrari N.V. Common Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RBGLY,RBGLY,Reckitt Benckiser Group plc Sponsored ADR (RB,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RCL,RCL,Royal Caribbean Cruises Ltd. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RCRUY,RCRUY,Recruit Holdings Co Ltd Unsponsored ADR (RCRU,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,REG,REG,Regency Centers Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,REGN,REGN,"Regeneron Pharmaceuticals, Inc. - Common Stoc",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RELX,RELX,RELX plc (RELX),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RMD,RMD,ResMed Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RNECY,RNECY,Renesas Electronic Corp ADR (RNECY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RNLSY,RNLSY,Renault SA Unsponsored ADR (RNLSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RNMBY,RNMBY,Rheinmetall AG ADR (RNMBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ROP,ROP,"Roper Technologies, Inc. - Common Stock (ROP)",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RSG,RSG,"Republic Services, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RSHGY,RSHGY,Resona Holdings Inc ADR (RSHGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RTO,RTO,Rentokil Initial plc (RTO),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,RYAAY,RYAAY,Ryanair Holdings plc (RYAAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SAABY,SAABY,Saab AB ADR (SAABY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SAXPY,SAXPY,Sampo OYJ ADR (SAXPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SBUX,SBUX,Starbucks Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SCBFY,SCBFY,Standard Chartered plc ADR (SCBFY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SCGLY,SCGLY,Societe Generale France Sponsored ADR (SCGLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SDVKY,SDVKY,Sandvik AB Sponsored ADR (SDVKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SDXAY,SDXAY,Sodexo ADR (SDXAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SDZNY,SDZNY,Sandoz Group AG Sponsored ADR (SDZNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SE,SE,Sea Limited (SE),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SEOAY,SEOAY,Stora Enso Oyj ADR (SEOAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SFGYY,SFGYY,Sony Financial Group Inc Sponsored ADR (SFGYY,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SFTBY,SFTBY,Softbank Group Corp ADR (SFTBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SGAPY,SGAPY,Singapore Telecom Ltd New Sponsored ADR (SGAP,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SGIOY,SGIOY,Shionogi & Co Ltd ADR (SGIOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SGPYY,SGPYY,Sage Group plc Unsponsored ADR (SGPYY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SGSOY,SGSOY,SGS SA ADR Unsponsored (SGSOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SHECY,SHECY,Shin Etsu Chemical Co Ltd ADR (SHECY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SINGY,SINGY,Singapore Airlines Ltd ADR (SINGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SJM,SJM,The J.M. Smucker Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SKBSY,SKBSY,Skanska AB Sponsored ADR (SKBSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SKHHY,SKHHY,Sonic Healthcare Ltd Sponsored ADR (SKHHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SKHSY,SKHSY,Sekisui House Ltd Sponsored ADR (SKHSY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMCAY,SMCAY,SMC Corp Sponsored ADR (SMCAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMGZY,SMGZY,Smiths Group plc Sponsored ADR (SMGZY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMMYY,SMMYY,Sumitomo Metal Mining Co Ltd Unsponsored ADR ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMNNY,SMNNY,Shimano Inc Unsponsored ADR (SMNNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMPNY,SMPNY,Sompo Holdings Inc Unsponsored ADR (SMPNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SMTOY,SMTOY,Sumitomo Electric Industries Ltd ADR Japan (S,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SNA,SNA,Snap-On Incorporated Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SNDK,SNDK,Sandisk Corporation - Common Stock When-Issue,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SNN,SNN,"Smith & Nephew SNATS, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SNPS,SNPS,"Synopsys, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SOBKY,SOBKY,Softbank Corp Unsponsored ADR (SOBKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SOLV,SOLV,Solventum Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SOMLY,SOMLY,Secom Ltd ADR Japan (SOMLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SONVY,SONVY,Sonova Holding AG ADR (SONVY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SOUHY,SOUHY,South32 Ltd Sponsored ADR (SOUHY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SPG,SPG,"Simon Property Group, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SPGI,SPGI,S&P Global Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SPOT,SPOT,Spotify Technology S.A. Ordinary Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SPXCY,SPXCY,Singapore Exchange Ltd ADR (SPXCY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SSDOY,SSDOY,Shiseido Co Ltd Sponsored ADR Japan (SSDOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SSMXY,SSMXY,Sysmex Corporation Unsponsored ADR (SSMXY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SSREY,SSREY,Swiss Re Ltd Sponsored ADR (SSREY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,STLA,STLA,Stellantis N.V. Common Shares,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,STLD,STLD,"Steel Dynamics, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,STM,STM,STMicroelectronics N.V. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,STX,STX,Seagate Technology Holdings PLC - Ordinary Sh,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,STZ,STZ,"Constellation Brands, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SUHJY,SUHJY,Sun Hung Kai Properties Ltd Sponsored ADR (SU,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SUTNY,SUTNY,Sumitomo Mitsui Trust Group Inc Sponsored ADR,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SVNDY,SVNDY,Seven & I Holdings Co Ltd ADR (SVNDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SVNLY,SVNLY,Svenska Handelbanken AB ADR (SVNLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SWDBY,SWDBY,Swedbank AB ADR (SWDBY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SWGAY,SWGAY,Swatch Group AG ADR (SWGAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SWKS,SWKS,"Skyworks Solutions, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SWRAY,SWRAY,Swire Pacific Ltd Sponsored ADR (SWRAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SYF,SYF,Synchrony Financial Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SYIEY,SYIEY,Symrise AG ADR (SYIEY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,SZKMY,SZKMY,Suzuki Motor Corporation Ltd ADR (SZKMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TAK,TAK,Takeda Pharmaceutical Company Limited (TAK),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TAP,TAP,Molson Coors Beverage Company Class B Common ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TDG,TDG,Transdigm Group Incorporated Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TELFY,TELFY,Telefonica SA Sponsored ADR (TELFY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TELNY,TELNY,Telenor ASA ADR (TELNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TER,TER,"Teradyne, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TEVA,TEVA,Teva Pharmaceutical Industries Limited Americ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TFC,TFC,Truist Financial Corporation Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TGOPY,TGOPY,3I Group PLC (TGOPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,THLLY,THLLY,Thales Unsponsored ADR (THLLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TIIAY,TIIAY,Telecom Italia SPA Sponsored (TIIAY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TKOMY,TKOMY,Tokio Marine Holdings Inc Sponsored (TKOMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TLGPY,TLGPY,Telstra Group Ltd Sponsored ADR (TLGPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TLSNY,TLSNY,Telia Co AB ADR (TLSNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TMO,TMO,Thermo Fisher Scientific Inc Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TPR,TPR,"Tapestry, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TRUMY,TRUMY,Terumo Corporation ADR (TRUMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TRV,TRV,"The Travelers Companies, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TRYIY,TRYIY,Toray Industries ADR Japan (TRYIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TSCDY,TSCDY,Tesco Stores Holdings (TSCDY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TTDKY,TTDKY,TDK Corp ADR Japan (TTDKY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TTNDY,TTNDY,Techtronic Industries Sponsored ADR Hong Kong,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TTWO,TTWO,"Take-Two Interactive Software, Inc. - Common ",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TXN,TXN,Texas Instruments Incorporated - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,TXT,TXT,Textron Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UBER,UBER,"Uber Technologies, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UCBJY,UCBJY,UCB SA ADR (UCBJY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UDR,UDR,"UDR, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UHS,UHS,"Universal Health Services, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UNICY,UNICY,Unicharm Corporation Sponsored ADR (UNICY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UNVGY,UNVGY,Universal Music Group ADR (UNVGY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UOVEY,UOVEY,United Overseas Bank Ltd Sponsored ADR Singap,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UPMMY,UPMMY,UPM Kymmene Corporation ADR (UPMMY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,UPS,UPS,"United Parcel Service, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,URI,URI,"United Rentals, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VACNY,VACNY,VAT Group AG Unsponsored ADR (VACNY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VICI,VICI,VICI Properties Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VLVLY,VLVLY,Volvo AB-A Unsponsored ADR (VLVLY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VOD,VOD,Vodafone Group Plc (VOD),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VONOY,VONOY,Vonovia SE ADR (VONOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VRSK,VRSK,"Verisk Analytics, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VRSN,VRSN,"VeriSign, Inc. - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VRT,VRT,"Vertiv Holdings, LLC Class A Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VRTX,VRTX,Vertex Pharmaceuticals Incorporated - Common ,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VTR,VTR,"Ventas, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VWAPY,VWAPY,Volkswagen AG Unsponsored ADR (VWAPY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VWDRY,VWDRY,Vestas Wind Systems A/S ADR (VWDRY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,VZ,VZ,Verizon Communications Inc. Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WAB,WAB,Westinghouse Air Brake Technologies Corporati,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WBD,WBD,"Warner Bros. Discovery, Inc. - Series A Commo",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WDAY,WDAY,"Workday, Inc. - Class A Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WDC,WDC,Western Digital Corporation - Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WFC,WFC,Wells Fargo & Company Common Stock,1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WLMIY,WLMIY,Wilmar International Ltd AADR (WLMIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WTKWY,WTKWY,Wolters Kluwer NV Sponsored ADR (WTKWY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,WYNN,WYNN,"Wynn Resorts, Limited - Common Stock",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,YAHOY,YAHOY,LY Corporation ADR (YAHOY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,YARIY,YARIY,Yara International ASA Sponsored ADR (YARIY),1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,YUM,YUM,"Yum! Brands, Inc.",1,8000.5,2026-07-21,(no data),False
+Alan Armstrong,ZBH,ZBH,"Zimmer Biomet Holdings, Inc. Common Stock",1,8000.5,2026-07-21,(no data),False
+Ashley Moody,GENI,GENI,GENI,1,8000.5,2025-03-22,(no data),False
+Cynthia M. Lummis,J,J,Jacobs Engineering Group Inc. Common Stock,1,8000.5,2021-10-07,(no data),False
+Dan Sullivan,GOOG,GOOG,Alphabet Inc. - Class C Capital Stock,1,8000.5,2023-03-16,(no data),False
+Dan Sullivan,LRCX,LRCX,Lam Research Corporation - Common Stock,1,8000.5,2022-12-21,(no data),False
+Dan Sullivan,TJX,TJX,"TJX Companies, Inc. (The) Common Stock",1,8000.5,2022-12-21,(no data),False
+Dan Sullivan,TMO,TMO,Thermo Fisher Scientific Inc Common Stock,1,8000.5,2022-12-21,(no data),False
+Gary C. Peters,CDP,OFC,Corporate Office Properties Trust Common Stoc,1,8000.5,2021-12-07,(no data),False
+Gary C. Peters,FSK,FSK,FS KKR Capital Corp. Common Stock,1,8000.5,2022-05-16,(no data),False
+Gary C. Peters,HBAN,HBAN,Huntington Bancshares Incorporated - Common S,1,8000.5,2022-01-08,(no data),False
+Gary C. Peters,IBM,IBM,International Business Machines Corporation C,1,8000.5,2022-01-08,(no data),False
+Gary C. Peters,IFF,IFF,"Internationa Flavors & Fragrances, Inc. Commo",1,8000.5,2023-06-30,(no data),False
+Gary C. Peters,KHC,KHC,The Kraft Heinz Company - Common Stock,1,8000.5,2026-06-11,(no data),False
+Gary C. Peters,SJM,SJM,SJM - The J.M. Smucker Company Common Stock,1,8000.5,2026-05-11,(no data),False
+Gary C. Peters,T,T,AT&T Inc.,1,8000.5,2026-07-02,(no data),False
+Gary C. Peters,TFC,TFC,Truist Financial Corporation Common Stock,1,8000.5,2023-04-12,(no data),False
+Jerry Moran,BNY,BK,The Bank of New York Mellon Corporation Commo,1,8000.5,2022-01-21,(no data),False
+Jerry Moran,CI,CI,Cigna Corporation Common Stock,1,8000.5,2022-01-21,(no data),False
+Jerry Moran,CMCSA,CMCSA,Comcast Corporation - Class A Common Stock,1,8000.5,2022-01-21,(no data),False
+Jerry Moran,CSCO,CSCO,"Cisco Systems, Inc. - Common Stock",1,8000.5,2022-01-21,(no data),False
+Jerry Moran,KMB,KMB,Kimberly-Clark Corporation Common Stock,1,8000.5,2022-01-21,(no data),False
+Jerry Moran,PFE,PFE,"Pfizer, Inc. Common Stock",1,8000.5,2022-01-21,(no data),False
+Jerry Moran,PII,PII,Polaris Inc. Common Stock,1,8000.5,2022-01-21,(no data),False
+Jerry Moran,VZ,VZ,Verizon Communications Inc. Common Stock,1,8000.5,2022-01-21,(no data),False
+Jim Banks,SBUX,SBUX,starbuck,1,8000.5,2025-08-10,(no data),False
+John Boozman,BRK-B,BRK-B,BRK-B - Berkshire Hathaway Inc Class B,1,8000.5,2025-08-06,(no data),False
+John Boozman,BSX,BSX,Boston Scientific Corp,1,8000.5,2025-03-06,(no data),False
+John Boozman,CAT,CAT,Caterpillar Inc,1,8000.5,2026-02-15,(no data),False
+John Boozman,CBOE,CBOE,"Cboe Global Markets, Inc. Common Stock",1,8000.5,2026-08-20,(no data),False
+John Boozman,COLPAL,COLPAL,COLGATE PALMOLIVE LTD.,1,8000.5,2025-05-14,(no data),False
+John Boozman,COST,COST,Costco Wholesale,1,8000.5,2025-11-15,(no data),False
+John Boozman,CRM,CRM,Salesforce Inc,1,8000.5,2025-02-08,(no data),False
+John Boozman,CVS,CVS,CVS Corp,1,8000.5,2026-02-15,(no data),False
+John Boozman,CVX,CVX,Chevron Corporation Common Stock,1,8000.5,2026-08-17,(no data),False
+John Boozman,DIS,DIS,Walt Disney Company,1,8000.5,2026-02-15,(no data),False
+John Boozman,DVN,DVN,Devon Energy Corporation Common Stock,1,8000.5,2026-05-08,(no data),False
+John Boozman,DXCM,DXCM,Dexcom Inc,1,8000.5,2026-02-15,(no data),False
+John Boozman,ECL,ECL,Ecolab Inc,1,8000.5,2025-03-06,(no data),False
+John Boozman,EL,EL,"Estee Lauder Companies, Inc. (The) Common Sto",1,8000.5,2026-08-17,(no data),False
+John Boozman,EMB,EMB,iShares J.P. Morgan USD Emerging Markets Bond,1,8000.5,2026-03-06,(no data),False
+John Boozman,GBIL,GBIL,Goldman Sachs Access Treasury 0-1 Year ETF,1,8000.5,2026-06-16,(no data),False
+John Boozman,GE,GE,General Electric Company,1,8000.5,2025-08-06,(no data),False
+John Boozman,HYG,HYG,iShares iBoxx $ High Yield Corporate Bond ETF,1,8000.5,2025-05-14,(no data),False
+John Boozman,IGV,IGV,iShares Expanded Tech-Software Sector ETF,1,8000.5,2026-07-13,(no data),False
+John Boozman,IJR,IJR,iShares Core S&P Small-Cap ETF,1,8000.5,2026-01-13,(no data),False
+John Boozman,IVW,IVW,iShares S&P 500 Growth ETF,1,8000.5,2026-01-13,(no data),False
+John Boozman,IWM,IWM,iShares Russell 2000 ETF,1,8000.5,2025-09-12,(no data),False
+John Boozman,KR,KR,Kroger Company (The) Common Stock,1,8000.5,2026-03-06,(no data),False
+John Boozman,MDY,MDY,S&P Midcap 400 SPDR,1,8000.5,2025-12-08,(no data),False
+John Boozman,NFLX,NFLX,Netflix Inc,1,8000.5,2026-02-15,(no data),False
+John Boozman,NRG,NRG,"NRG Energy, Inc. Common Stock",1,8000.5,2025-02-08,(no data),False
+John Boozman,NTAP,NTAP,"NetApp, Inc. - Common Stock",1,8000.5,2026-03-06,(no data),False
+John Boozman,ORCL,ORCL,Oracle Corp,1,8000.5,2025-05-14,(no data),False
+John Boozman,PFE,PFE,Pfizer Inc,1,8000.5,2024-01-08,(no data),False
+John Boozman,PLTR,PLTR,Palantir Technologies Inc. - Class A Common S,1,8000.5,2026-06-16,(no data),False
+John Boozman,RTX,RTX,Raytheon Technologies Corp,1,8000.5,2025-06-14,(no data),False
+John Boozman,SMCI,SMCI,Super Micro Computer,1,8000.5,2026-01-13,(no data),False
+John Boozman,TPYP,TPYP,Tortoise Capital Series Trust Tortoise North ,1,8000.5,2026-02-15,(no data),False
+John Boozman,UBER,UBER,"Uber Technologies, Inc. Common Stock",1,8000.5,2026-03-06,(no data),False
+John Boozman,URNM,URNM,Sprott Uranium Miners ETF,1,8000.5,2025-03-06,(no data),False
+John Boozman,V,V,Visa Inc,1,8000.5,2026-02-15,(no data),False
+John Boozman,VWO,VWO,Vanguard FTSE Emerging Markets ETF,1,8000.5,2025-12-08,(no data),False
+John Boozman,WFC,WFC,Wells Fargo & Company,1,8000.5,2026-01-13,(no data),False
+John Boozman,WMT,WMT,Walmart Inc,1,8000.5,2025-08-06,(no data),False
+John Boozman,XOM,XOM,Exxon Mobil Corp,1,8000.5,2026-02-15,(no data),False
+John Kennedy,NLY,NLY,Annaly Capital Management Inc Company: Annaly,1,8000.5,2025-05-08,(no data),False
+Lindsey Graham,IBDO,IBDO,iShares iBonds Dec 2023 Term Corporate ETF,1,8000.5,2022-07-13,(no data),False
+Markwayne Mullin,BMI,BMI,"Badger Meter, Inc. Common Stock",1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,CYBR,CYBR,CyberArk Software Ltd. - Ordinary Shares,1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,ELF,ELF,E.L.F. Beauty Inc,1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,ETN,ETN,Eaton Corp,1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,FRPT,FRPT,"Freshpet, Inc. - Common Stock",1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,OLLI,OLLI,"Ollie's Bargain Outlet Holdings, Inc. - Commo",1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,SFM,SFM,Sprouts Farmers Market,1,8000.5,2024-01-26,(no data),False
+Markwayne Mullin,VNQ,VNQ,Vanguard Real Estate ETF,1,8000.5,2025-01-03,(no data),False
+Patrick J. Toomey,SPG,SPG,"Simon Property Group, Inc. Common Stock",1,8000.5,2021-11-15,(no data),False
+Sheldon Whitehouse,CCI,CCI,Crown Castle Inc,1,8000.5,2024-06-06,(no data),False
+Sheldon Whitehouse,CELH,CELH,Celsius Holdings Inc,1,8000.5,2023-12-07,(no data),False
+Sheldon Whitehouse,GH,GH,Guardant Health Inc,1,8000.5,2025-12-01,(no data),False
+Sheldon Whitehouse,GS,GS,"Goldman Sachs Group, Inc. (The) Common Stock",1,8000.5,2024-07-16,(no data),False
+Sheldon Whitehouse,HD,HD,Home Depot,1,8000.5,2024-07-16,(no data),False
+Sheldon Whitehouse,HSY,HSY,Hershey Foods Corp,1,8000.5,2025-12-01,(no data),False
+Sheldon Whitehouse,KVUE,KVUE,Kenvue Inc,1,8000.5,2023-10-17,(no data),False
+Sheldon Whitehouse,MSFT,MSFT,Microsoft Corp,1,8000.5,2024-07-16,(no data),False
+Sheldon Whitehouse,MU,MU,"Micron Technology, Inc. - Common Stock",1,8000.5,2026-07-08,(no data),False
+Sheldon Whitehouse,VZ,VZ,Verizon Communications Inc,1,8000.5,2023-10-17,(no data),False
+Tommy Tuberville,BKE,BKE,"Buckle, Inc. (The) Common Stock",1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,BMO,BMO,Bank of Montreal,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,BMY,BMY,Bristol-Myers Squibb Company Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,BRO,BRO,"Brown & Brown, Inc. Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,CABO,CABO,"Cable One, Inc. Common Stock",1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,CDNS,CDNS,"Cadence Design Systems, Inc. - Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,CROX,CROX,"Crocs, Inc. - Common Stock",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,CRUS,CRUS,"Cirrus Logic, Inc. - Common Stock",1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,CTAS,CTAS,Cintas Corporation - Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,DECK,DECK,Deckers Outdoor Corporation Common Stock,1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,DEO,DEO,Diageo plc Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,DHI,DHI,"D.R. Horton, Inc. Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,DIOD,DIOD,Diodes Incorporated - Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,DOW,DOW,Dow Inc. Common Stock,1,8000.5,2022-02-14,(no data),False
+Tommy Tuberville,DQ,DQ,DAQO New Energy Corp. American Depositary Sha,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,EL,EL,"Estee Lauder Companies, Inc. (The) Common Sto",1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,ELS,ELS,"Equity Lifestyle Properties, Inc. Common Stoc",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,ETSY,ETSY,"Etsy, Inc. - Common Stock",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,EXP,EXP,Eagle Materials Inc Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,EXR,EXR,Extra Space Storage Inc Common Stock,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,FTNT,FTNT,"Fortinet, Inc. - Common Stock",1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,GFI,GFI,Gold Fields Limited American Depositary Share,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,GGG,GGG,Graco Inc. Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,GILD,GILD,"Gilead Sciences, Inc. - Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,GIS,GIS,"General Mills, Inc. Common Stock",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,GLPI,GLPI,"Gaming and Leisure Properties, Inc. - Common ",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,GNRC,GNRC,Generac Holdlings Inc. Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,GNTX,GNTX,Gentex Corporation - Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,GOOG,GOOG,Alphabet Inc. - Class C Capital Stock,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,GRMN,GRMN,Garmin Ltd. - Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,GSK,GSK,GSK plc American Depositary Shares (Each repr,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,HON,HON,Honeywell International Inc. - Common Stock,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,IBM,IBM,International Business Machines Corporat,1,8000.5,2022-02-14,(no data),False
+Tommy Tuberville,IDXX,IDXX,"IDEXX Laboratories, Inc. - Common Stock",1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,INTU,INTU,Intuit Inc. - Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,IT,IT,"Gartner, Inc. Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,ITW,ITW,Illinois Tool Works Inc. Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,JKHY,JKHY,"Jack Henry & Associates, Inc. - Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,JNJ,JNJ,Johnson & Johnson Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,KEYS,KEYS,Keysight Technologies Inc. Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,KLAC,KLAC,KLA Corporation - Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,KO,KO,Coca-Cola Company (The) Common Stock,1,8000.5,2022-02-14,(no data),False
+Tommy Tuberville,LMST,LMST,"Limestone Bancorp, Inc. - Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,LSCC,LSCC,Lattice Semiconductor Corporation - Common St,1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,LULU,LULU,lululemon athletica inc. - Common Stock,1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,MASI,MASI,Masimo Corporation - Common Stock,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,MCHP,MCHP,Microchip Technology Incorporated - Common St,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,MCO,MCO,Moody's Corporation Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,META,META,"Meta Platforms, Inc. - Class A Common Stock",1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,MKSI,MKSI,"MKS Instruments, Inc. - Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,MNST,MNST,Monster Beverage Corporation - Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,MRK,MRK,"Merck & Company, Inc. Common Stock (new)",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,MSI,MSI,"Motorola Solutions, Inc. Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,NDAQ,NDAQ,"Nasdaq, Inc. - Common Stock",1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,NDSN,NDSN,Nordson Corporation - Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,NOC,NOC,Northrop Grumman Corporation Common Stock,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,NSC,NSC,Norfolk Southern Corporation Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,NTES,NTES,Netease Inc ADR,1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,NVDA,NVDA,NVIDIA Corporation - Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,NXPI,NXPI,NXP Semiconductors N.V. - Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,PAC,PAC,"Grupo Aeroportuario Del Pacifico, S.A. B. de ",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,PAM,PAM,Pampa Energia S.A. Pampa Energia S.A.,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,PAYC,PAYC,"Paycom Software, Inc. Common Stock",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,PG,PG,Procter & Gamble Company (The) Common Stock,1,8000.5,2021-10-15,(no data),False
+Tommy Tuberville,QLYS,QLYS,"Qualys, Inc. - Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,QSR,QSR,Restaurant Brands International Inc,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,RACE,RACE,Ferrari N.V. Common Shares,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,REGN,REGN,"Regeneron Pharmaceuticals, Inc. - Common Stoc",1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,RELX,RELX,RELX PLC PLC American Depositary Shares (Each,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,RH,RH,RH Common Stock,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,ROK,ROK,"Rockwell Automation, Inc. Common Stock",1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,RRC,RRC,Range Resources Corporation Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,SCI,SCI,Service Corporation International Common Stoc,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,SKY,SKY,Skyline Champion Corporation Common Stock,1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,SNPS,SNPS,"Synopsys, Inc. - Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,SOLV,SOLV,Solventum Corporation Common Stock,1,8000.5,2024-06-14,(no data),False
+Tommy Tuberville,SSD,SSD,"Simpson Manufacturing Company, Inc. Common St",1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,SWKS,SWKS,"Skyworks Solutions, Inc. - Common Stock",1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,TEL,TEL,Te Connectivity Ltd,1,8000.5,2024-05-15,(no data),False
+Tommy Tuberville,TMO,TMO,Thermo Fisher Scientific Inc Common Stock,1,8000.5,2022-04-08,(no data),False
+Tommy Tuberville,TREX,TREX,"Trex Company, Inc. Common Stock",1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,TSLA,TSLA,"Tesla, Inc. - Common Stock",1,8000.5,2023-05-11,(no data),False
+Tommy Tuberville,VRTX,VRTX,Vertex Pharmaceuticals Incorporated - Common ,1,8000.5,2022-11-10,(no data),False
+Tommy Tuberville,WMS,WMS,"Advanced Drainage Systems, Inc. Common Stock",1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,WU,WU,Western Union Company (The) Common Stock,1,8000.5,2023-11-16,(no data),False
+Tommy Tuberville,XP,XP,XP Inc. - Class A Common Stock,1,8000.5,2023-05-11,(no data),False

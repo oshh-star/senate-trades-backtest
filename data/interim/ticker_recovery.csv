@@ -1,4 +1,12 @@
 asset_name,asset_type,n_trades,n_trades_self_joint_in_window,candidate,method,accepted,note
+INTC-Intel Corporation (NASDAQ),Stock,1,0,INTC,embedded,True,embedded ticker INTC; name words shared with Intel Corporation/Intel Corporation/INTEL CORP: intel
+AAPL-Apple Inc. (NASDAQ),Stock,1,0,AAPL,embedded,True,embedded ticker AAPL; name words shared with Apple Inc./Apple Inc./Apple Inc.: apple
+PFE-Pfizer Inc.,Stock,2,0,PFE,embedded,True,"embedded ticker PFE; name words shared with Pfizer Inc./Pfizer, Inc./PFIZER INC: pfizer"
+"GS-The Goldman Sachs Group, Inc.",Stock,1,0,GS,embedded,True,"embedded ticker GS; name words shared with The Goldman Sachs Group, Inc./Goldman Sachs Group, Inc. (The)/GOLDMAN SACHS GROUP INC: goldman, sachs"
+OKE-ONEOK Inc.,Stock,1,0,OKE,embedded,True,"embedded ticker OKE; name words shared with ONEOK, Inc./ONEOK, Inc./ONEOK INC /NEW/: oneok"
+STT-State Street Corporation,Stock,1,0,STT,embedded,True,"embedded ticker STT; name words shared with State Street Corporation/State Street Corporation/STATE STREET CORP: state, street"
+Textainer Group Holdings,Stock,1,0,,sec_name,False,no exact SEC name match
+SPDR S&P Bank ETF,Stock,1,0,,sec_name,False,no exact SEC name match
 Calamos Asset Mgmt Cl A,Stock,1,0,,sec_name,False,no exact SEC name match
 Convergys,Stock,1,0,,sec_name,False,no exact SEC name match
 Owens & Minor Inc,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -129,7 +137,6 @@ GE-General Electric Company,Stock,1,0,GE,embedded,True,"embedded ticker GE; name
 INTC-Intel Corporation,Stock,1,0,INTC,embedded,True,embedded ticker INTC; name words shared with Intel Corporation/Intel Corporation/INTEL CORP: intel
 Johnson and Johnson,Stock,1,0,JNJ,sec_name,True,SEC exact name match: JOHNSON & JOHNSON (CIK 200406)
 MSFT-Microsoft Corporation,Stock,1,0,MSFT,embedded,True,embedded ticker MSFT; name words shared with Microsoft Corporation/Microsoft Corporation/MICROSOFT CORP: microsoft
-PFE-Pfizer Inc.,Stock,1,0,PFE,embedded,True,"embedded ticker PFE; name words shared with Pfizer Inc./Pfizer, Inc./PFIZER INC: pfizer"
 Ishares China Large Cap ETF,Other,3,0,,sec_name,False,no exact SEC name match
 S&P 500 Index Fund,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares SP Smallcap 600 Index,Other,1,0,,sec_name,False,no exact SEC name match
@@ -176,6 +183,7 @@ Iron Mountain,Stock,3,0,IRM,sec_name,True,SEC exact name match: IRON MOUNTAIN IN
 "HCEB Ballantyne, LLC Company: HCEB Ballantyne, LLC (Englewood, CO) Description: Real Estate",Other,1,0,,sec_name,False,no exact SEC name match
 "Wal-Mart Stores, Inc.",Stock,1,0,,sec_name,False,no exact SEC name match
 Ishares S&P Smll-Cap 600 Value,Other,1,0,,sec_name,False,no exact SEC name match
+Ishares MSCI SP Small Cap Index,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares Core S&P Small Cap ETF,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares MSCI India Sm Cap,Other,1,0,,sec_name,False,no exact SEC name match
 ETFMG Prime Mobile Payments,Other,1,0,,sec_name,False,no exact SEC name match
@@ -273,6 +281,7 @@ Fifth Third Bancorp,Stock,1,0,FITB,sec_name,True,SEC exact name match: FIFTH THI
 Tyson Foods,Stock,1,0,TSN,sec_name,True,"SEC exact name match: TYSON FOODS, INC. (CIK 100493)"
 Amazon,Stock,5,0,AMZN,sec_name,True,SEC exact name match: AMAZON COM INC (CIK 1018724)
 Alps ETF Trust Alps Medical,Other,1,0,,sec_name,False,no exact SEC name match
+S&P 500 Index Fd,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares Core S&P 500 ETF,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares MSCI India Small Cap,Other,1,0,,sec_name,False,no exact SEC name match
 Victoryshares US 500 Volatility,Other,1,0,,sec_name,False,no exact SEC name match
@@ -338,6 +347,7 @@ Southern Cmpy Bond,Stock,1,0,,sec_name,False,no exact SEC name match
 PHLD - Phillips Edison Grocery Center REIT I,Stock,3,2,PHLD,embedded,False,embedded ticker PHLD not recognised by Yahoo; then no exact SEC name match
 GMSYX - GOLDMAN SACHS SM MD CAP GROWTH I,Other,2,0,GMSYX,embedded,False,embedded ticker GMSYX not recognised by Yahoo; then no exact SEC name match
 "EMSG LLC Company: EMSG LLC (Rockville, MD) Description: Secured Debt",Other,1,0,,sec_name,False,no exact SEC name match
+ACAP STRAGIC INTERVAL,Other,1,0,,sec_name,False,no exact SEC name match
 msft,Stock,1,0,,sec_name,False,no exact SEC name match
 Walmart Inc.,Stock,1,0,WMT,sec_name,True,SEC exact name match: Walmart Inc. (CIK 104169)
 aapl,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -403,14 +413,15 @@ Wells Fargo & Company Common Stock,Stock,1,0,,sec_name,False,no exact SEC name m
 "T-Mobile US, Inc. - Common Stock",Stock,1,1,T,embedded,False,"embedded ticker T but its name (AT&T Inc./AT&T Inc./AT&T INC.) shares no word with 'Mobile US, Inc. - Common Stock'; then SEC company CIK 1283699 has several tickers: TMUS, TMUSI, TMUSL, TMUSZ"
 "181-Fairhope Ave 2023, LLC Company: 181-Fairhope Ave 2023, LLC (Daphne, AL) Description: Investment and development of real property in Alabama",Other,1,0,,sec_name,False,no exact SEC name match
 FWONK - Formula One Group,Stock,1,0,FWONK,embedded,True,"embedded ticker FWONK; name words shared with Formula One Group/Liberty Media Corporation - Ser/Liberty Media Corp: formula, one"
-ROLLS-ROYCE HOLDINGS PLC SPONSORED ADR,Stock,2,2,ROLLS,embedded,False,embedded ticker ROLLS not recognised by Yahoo; then no exact SEC name match
-Ishares TR Russell 1000 ETF,Stock,1,1,,sec_name,False,no exact SEC name match
+ROLLS-ROYCE HOLDINGS PLC SPONSORED ADR,Stock,2,2,RYCEY,override,True,J5 override 'rolls-royce' (yahoo)
+Ishares TR Russell 1000 ETF,Stock,1,1,IWB,override,True,J5 override 'ishares tr russell 1000 etf' (yahoo)
 Pimco Commodities Plus Strategy Fund Class,Stock,2,2,,sec_name,False,no exact SEC name match
-ROLLS-ROYCE HOLDINGS PLC ADR,Stock,3,3,ROLLS,embedded,False,embedded ticker ROLLS not recognised by Yahoo; then no exact SEC name match
+ROLLS-ROYCE HOLDINGS PLC ADR,Stock,3,3,RYCEY,override,True,J5 override 'rolls-royce' (yahoo)
 CARR - Carrier Global Corp,Stock,1,1,CARR,embedded,True,"embedded ticker CARR; name words shared with Carrier Global Corporation/Carrier Global Corporation/CARRIER GLOBAL Corp: carrier, global"
 "euNetworks Group Limited Company: euNetworks Group Limited (London, England) Description: Bandwidth infrastructure services",Other,1,1,,sec_name,False,no exact SEC name match
 Nestle ADR,Stock,1,1,,sec_name,False,no exact SEC name match
 Otis Worldwide Corporation Common Stock,Stock,1,1,OTIS,sec_name,True,SEC exact name match: Otis Worldwide Corp (CIK 1781335)
+Invesco Actively Managed Exchange Traded,Stock,1,1,,sec_name,False,no exact SEC name match
 VANGUARD INDEX FDS VANGUARD MID-CAP ETF,Stock,1,1,,sec_name,False,no exact SEC name match
 AMAT,Stock,2,2,AMAT,embedded,True,"asset name is the bare ticker AMAT; Yahoo: Applied Materials, Inc."
 Meta Platforms Inc,Stock,1,0,META,sec_name,True,"SEC exact name match: Meta Platforms, Inc. (CIK 1326801)"
@@ -429,12 +440,13 @@ ET,Stock,1,1,ET,embedded,True,asset name is the bare ticker ET; Yahoo: Energy Tr
 JPM,Stock,1,1,JPM,embedded,True,asset name is the bare ticker JPM; Yahoo: JPMorgan Chase & Co.
 ARCC,Stock,1,1,ARCC,embedded,True,asset name is the bare ticker ARCC; Yahoo: Ares Capital Corporation
 SDZNY - Sandoz Group AG,Stock,1,1,SDZNY,embedded,True,embedded ticker SDZNY; name words shared with Sandoz Group AG/Sandoz Group AG: sandoz
+Broadcom Inc. - Common Stock,Stock,1,1,AVGO,sec_name,True,SEC exact name match: Broadcom Inc. (CIK 1730168)
 RBLX,Stock,1,1,RBLX,embedded,True,asset name is the bare ticker RBLX; Yahoo: Roblox Corporation
 US Treasury Bill (912797NX1) MATURED,Other,1,1,,sec_name,False,no exact SEC name match
 US Treasury Bill 25U DUE 10/16/25,Other,1,1,,sec_name,False,no exact SEC name match
 JPMORGAN CHASE & CO,Stock,1,0,,sec_name,False,"SEC company CIK 19617 has several tickers: AMJB, JPM, JPM-PC, JPM-PD, JPM-PJ, JPM-PK, JPM-PL, JPM-PM, VYLD"
 BRK-B - Berkshire Hathaway Inc Class B,Stock,1,1,BRK-B,embedded,True,"embedded ticker BRK-B; name words shared with Berkshire Hathaway Inc./Berkshire Hathaway Inc. New/BERKSHIRE HATHAWAY INC: berkshire, hathaway"
-starbuck,Stock,1,1,,sec_name,False,no exact SEC name match
+starbuck,Stock,1,1,SBUX,override,True,J5 override '= starbuck' (yahoo)
 US Treasury Bill26U S T Bill Due 1/1/26,Other,1,1,,sec_name,False,no exact SEC name match
 "GS Finance Corp. Trigger Autocallable Contingent Yield Note Company: GS Finance Corp. (New York, NY) Description: Equity Index-Linked Note",Other,1,1,,sec_name,False,no exact SEC name match
 Citigroup Inc New (C),Stock,1,0,C,embedded,True,"embedded ticker C; name words shared with Citigroup Inc./Citigroup, Inc./CITIGROUP INC: citigroup"
@@ -465,13 +477,13 @@ Tokyo Electron Ltd ADR (TOELY),Stock,1,1,TOELY,embedded,True,"embedded ticker TO
 Pan Pacific International Holdings Corporation ADR (DQJCY),Stock,1,1,DQJCY,embedded,True,"embedded ticker DQJCY; name words shared with Pan Pacific International Holdings Corporation/Pan Pac Intl Hldgs Corp.: pacific, pan"
 East Japan Railway Co ADR (EJPRY),Stock,1,1,EJPRY,embedded,True,"embedded ticker EJPRY; name words shared with East Japan Railway Company/East Japan Railway Co.: east, railway"
 Zurich Insurance Group Ltd Sponsored ADR (ZURVY),Stock,2,2,ZURVY,embedded,True,"embedded ticker ZURVY; name words shared with Zurich Insurance Group AG/Zurich Insurance Group Ltd: insurance, zurich"
-Wise plc Sponsored ADR (WIZEY),Stock,2,2,WSE,sec_name,True,embedded ticker WIZEY not recognised by Yahoo; then SEC exact name match: Wise Group plc (CIK 2099039)
+Wise plc Sponsored ADR (WIZEY),Stock,2,2,WSE,sec_name,True,J5 override '(wizey)' (NOT confirmed); then embedded ticker WIZEY not recognised by Yahoo; then SEC exact name match: Wise Group plc (CIK 2099039)
 Unicredit SPA Unsponsored ADR (UNCRY),Stock,2,2,UNCRY,embedded,True,embedded ticker UNCRY; name words shared with UniCredit S.p.A./UniCredito Spa: unicredit
 Swisscom AG Sponsored ADR (SCMWY),Stock,2,2,SCMWY,embedded,True,embedded ticker SCMWY; name words shared with Swisscom AG/Swisscom AG/SWISSCOM AG: swisscom
 Schneider Electric SE Unsponsored ADR (SBGSY),Stock,2,2,SBGSY,embedded,True,"embedded ticker SBGSY; name words shared with Schneider Electric S.E./Schneider Electric SE: electric, schneider"
 SAP SE Sponsored ADR (SAP),Stock,1,1,SAP,embedded,True,embedded ticker SAP; name words shared with SAP SE/SAP  SE/SAP SE: sap
 Royal KPN N.V. Sponsored ADR (KKPNY),Stock,2,2,KKPNY,embedded,True,"embedded ticker KKPNY; name words shared with Koninklijke KPN N.V./Royal KPN NV: kpn, royal"
-Rolls Royce Holdings plc Sponsored ADR (RYCEY),Stock,2,2,RYCEY,embedded,True,"embedded ticker RYCEY; name words shared with Rolls-Royce Holdings plc/Rolls Royce Holdings plc: rolls, royce"
+Rolls Royce Holdings plc Sponsored ADR (RYCEY),Stock,2,2,RYCEY,override,True,J5 override 'rolls royce' (yahoo)
 Henkel AG & Co KGAA Sponsored ADR (HENKY),Stock,1,1,HENKY,embedded,True,"embedded ticker HENKY; name words shared with Henkel AG & Co. KGaA/Henkel AG & Co. KGAA: henkel, kgaa"
 Heineken NV Sponsored ADR (HEINY),Stock,2,2,HEINY,embedded,True,embedded ticker HEINY; name words shared with Heineken N.V./Heineken N.V.: heineken
 Glencore plc Unsponsored ADR (GLNCY),Stock,2,2,GLNCY,embedded,True,embedded ticker GLNCY; name words shared with Glencore plc/Glencore Plc: glencore
@@ -595,7 +607,7 @@ Nestle SA Sponsored ADR (NSRGY),Stock,1,1,NSRGY,embedded,True,embedded ticker NS
 NatWest Group plc (NWG),Stock,1,1,NWG,embedded,True,embedded ticker NWG; name words shared with NatWest Group plc/NatWest Group plc/NatWest Group plc: natwest
 National Australia Bank Ltd Sponsored ADR (NABZY),Stock,1,1,NABZY,embedded,True,"embedded ticker NABZY; name words shared with National Australia Bank Limited/National Australia Bank Ltd. (V: australia, bank, national"
 Murata MFG Co Ltd ADR (MRAAY),Stock,1,1,MRAAY,embedded,True,"embedded ticker MRAAY; name words shared with Murata Manufacturing Co., Ltd./Murata Manufacturing Inc.: murata"
-Munich Re Group ADR (MURGY),Stock,1,1,MURGY,embedded,False,embedded ticker MURGY but its name (Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München/Muenchener Rueckver Ges) shares no word with 'Munich Re Group ADR'; then no exact SEC name match
+Munich Re Group ADR (MURGY),Stock,1,1,MURGY,override,True,J5 override '(murgy)' (yahoo)
 MS&AD Insurance Group Holdings ADR (MSADY),Stock,1,1,MSADY,embedded,True,"embedded ticker MSADY; name words shared with MS&AD Insurance Group Holdings, Inc./MS&AD Insurance Group Holdings,: ad, insurance, ms"
 Moncler SPA Unsponsored ADR (MONRY),Stock,1,1,MONRY,embedded,True,embedded ticker MONRY; name words shared with Moncler S.p.A./Moncler S.P.A.: moncler
 Mitsui Osk Lines Ltd Unsponsored ADR (MSLOY),Stock,1,1,MSLOY,embedded,True,"embedded ticker MSLOY; name words shared with Mitsui O.S.K. Lines, Ltd./Mitsui O.S.K. Lines Ltd.: lines, mitsui"
@@ -620,7 +632,7 @@ Legal & General Group plc Sponsored ADR (LGGNY),Stock,1,1,LGGNY,embedded,True,"e
 Lasertec Corporation ADR (LSRCY),Stock,1,1,LSRCY,embedded,True,embedded ticker LSRCY; name words shared with Lasertec Corporation/Lasertec Corp.: lasertec
 Land Secs Group plc ADR (LDSCY),Stock,1,1,LDSCY,embedded,True,embedded ticker LDSCY; name words shared with Land Securities Group Plc/Land Securities Group Plc.: land
 Lam Research Corporation (LRCX),Stock,1,1,LRCX,embedded,True,"embedded ticker LRCX; name words shared with Lam Research Corporation/Lam Research Corporation/LAM RESEARCH CORP: lam, research"
-Kyocera Corporation ADR Japan (KYOCY),Stock,1,1,KYOCY,embedded,False,"embedded ticker KYOCY not recognised by Yahoo; then SEC company CIK 57083 has several tickers: KYOAY, KYOCF"
+Kyocera Corporation ADR Japan (KYOCY),Stock,1,1,KYOCY,embedded,False,"J5 override '(kyocy)' (NOT confirmed); then embedded ticker KYOCY not recognised by Yahoo; then SEC company CIK 57083 has several tickers: KYOAY, KYOCF"
 Kuehne & Nagel International AG ADR (KHNGY),Stock,1,1,KHNGY,embedded,True,"embedded ticker KHNGY; name words shared with Kuehne + Nagel International AG/Kuehne & Nagel International AG: kuehne, nagel"
 Kubota Corporation ADR Japan (KUBTY),Stock,1,1,KUBTY,embedded,True,embedded ticker KUBTY; name words shared with Kubota Corporation/Kubota Corp.: kubota
 Koninklijke Philips NV Sponsored ADR (PHG),Stock,1,1,PHG,embedded,True,"embedded ticker PHG; name words shared with Koninklijke Philips N.V./Koninklijke Philips N.V. NY Reg/KONINKLIJKE PHILIPS NV: koninklijke, philips"
@@ -681,7 +693,7 @@ Heidelbergcement AG ADR Sponsored (HDLMY),Stock,1,1,HDLMY,embedded,True,embedded
 Hannover Rueck SE Sponsored ADR (HVRRY),Stock,1,1,HVRRY,embedded,True,embedded ticker HVRRY; name words shared with Hannover Rück SE/Hannover Re: hannover
 Halma plc Unsponsored ADR (HALMY),Stock,1,1,HALMY,embedded,True,embedded ticker HALMY; name words shared with Halma plc/Halma PLC: halma
 Haleon plc Sponsored ADR (HLN),Stock,1,1,HLN,embedded,True,embedded ticker HLN; name words shared with Haleon plc/Haleon plc/Haleon plc: haleon
-Glaxo Wellcome plc ADR (GSK),Stock,1,1,GSK,embedded,False,embedded ticker GSK but its name (GSK plc/GSK plc/GSK plc) shares no word with 'Glaxo Wellcome plc ADR'; then no exact SEC name match
+Glaxo Wellcome plc ADR (GSK),Stock,1,1,GSK,override,True,J5 override 'glaxo wellcome' (yahoo)
 Givaudan SA ADR (GVDNY),Stock,1,1,GVDNY,embedded,True,embedded ticker GVDNY; name words shared with Givaudan SA/Givaudan SA: givaudan
 Geberit AG ADR (GBERY),Stock,1,1,GBERY,embedded,True,embedded ticker GBERY; name words shared with Geberit AG/Geberit AG: geberit
 Galderma Group AG Sponsored ADR (GALDY),Stock,1,1,GALDY,embedded,True,embedded ticker GALDY; name words shared with Galderma Group AG/GALDERMA GROUP AG/Galderma Group AG/ADR: galderma
@@ -777,7 +789,7 @@ Alstom ADR (ALSMY),Stock,1,1,ALSMY,embedded,True,embedded ticker ALSMY; name wor
 Allianz SE ADR (ALIZY),Stock,1,1,ALIZY,embedded,True,embedded ticker ALIZY; name words shared with Allianz SE/Allianz SE: allianz
 Loews Corporation (L),Stock,1,1,L,embedded,True,embedded ticker L; name words shared with Loews Corporation/Loews Corporation/LOEWS CORP: loews
 Alfa Laval AB Sweden ADR (ALFVY),Stock,1,1,ALFVY,embedded,True,"embedded ticker ALFVY; name words shared with Alfa Laval AB (publ)/Alfa-Laval AB: ab, alfa, laval"
-"Hologic, Inc. (HOLX)",Stock,1,1,HOLX,embedded,False,embedded ticker HOLX not recognised by Yahoo; then no exact SEC name match
-"Everpure, Inc. Class A (PSTG)",Stock,1,1,P,sec_name,True,"embedded ticker PSTG not recognised by Yahoo; then SEC exact name match: Everpure, Inc. (CIK 1474432)"
-Bank of New York Mellon Corp (BK),Stock,1,1,BNY,sec_name,True,embedded ticker BK not recognised by Yahoo; then SEC exact name match: Bank of New York Mellon Corp (CIK 1390777)
+"Hologic, Inc. (HOLX)",Stock,1,1,HOLX,embedded,False,J5 override '(holx)' (NOT confirmed); then embedded ticker HOLX not recognised by Yahoo; then no exact SEC name match
+"Everpure, Inc. Class A (PSTG)",Stock,1,1,PSTG,override,True,J5 override '(pstg)' (yahoo)
+Bank of New York Mellon Corp (BK),Stock,1,1,BK,override,True,J5 override '(bk)' (yahoo)
 LVMH Moet Hennessy Louis ADR (LVMUY),Stock,1,1,LVMUY,embedded,True,"embedded ticker LVMUY; name words shared with LVMH Moët Hennessy - Louis Vuitton, Société Européenne/LVMH-Moet Hennessy Louis Vuitto: hennessy, louis, lvmh, moet"

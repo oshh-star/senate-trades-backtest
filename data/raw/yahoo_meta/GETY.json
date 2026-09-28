@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1600695000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Getty Images Holdings, Inc.",
+  "shortName": "Getty Images Holdings, Inc.",
+  "symbol": "GETY"
+ },
+ "queried_at": "2026-09-28T14:54:47Z",
+ "symbol": "GETY"
+}

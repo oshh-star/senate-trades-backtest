@@ -254,7 +254,7 @@ def test_scope_flags():
                        "bioguide_id": ["T000278"] * n + ["X1", "X2", "T000278"],
                        "senator": ["Tuberville"] * n + ["Ann", "Bob", "Tuberville"],
                        "days_since_service_start": [0, 179, 180] + [1000] * (n + 0),
-                       "is_etf": False, "owner": ["Self"] * (n + 2) + ["Spouse"]})
+                       "is_etf": False, "is_otc": False, "owner": ["Self"] * (n + 2) + ["Spouse"]})
     f = add_scope_flags(tr)
     assert f["bulk_ptr"].tolist() == [True] * n + [False, False, True]   # 60 in-scope trades in BIG
     assert f.loc[0, "senator_rank"] == 1 and f.loc[n, "senator_rank"] == 2 and f.loc[n + 1, "senator_rank"] == 3

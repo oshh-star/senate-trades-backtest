@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-28T14:50:31Z"
+ },
+ "queried_at": "2026-09-28T14:52:32Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Berkshire Hathaway Inc.       R",
+   "symbol": "BRYN.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Segall Bryant & Hamill Mun Opps Ret",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Segall Bryant & Hamill Municipa",
+   "symbol": "WTTAX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Berkshire Hathaway Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Berkshire Hathaway Inc.       R",
+   "symbol": "BRYN.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Copenhagen",
+   "exchange": "CPH",
+   "longname": "Harboes Bryggeri A/S",
+   "quoteType": "EQUITY",
+   "shortname": "Harboes Bryggeri B A/S",
+   "symbol": "HARB-B.CO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Kopparbergs Bryggeri AB (publ)",
+   "quoteType": "EQUITY",
+   "shortname": "Kopparbergs Bryggeri AB       N",
+   "symbol": "F0H.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Bryn Resources Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Bryn Resources, Inc.",
+   "symbol": "BRYN",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "IST",
+   "exchange": "IST",
+   "longname": "Borusan Yatirim ve Pazarlama A.S.",
+   "quoteType": "EQUITY",
+   "shortname": "BORUSAN YAT. PAZ.",
+   "symbol": "BRYAT.IS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BRY"
+}

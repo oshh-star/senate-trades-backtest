@@ -1,0 +1,42 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-28T14:50:41Z"
+ },
+ "queried_at": "2026-09-28T14:52:39Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "BOA SAFRA   ON      NM",
+   "symbol": "SOJA3F.SA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Boa Safra Sementes S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "BOA SAFRA   ON      NM",
+   "symbol": "SOJA3.SA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SOJA"
+}

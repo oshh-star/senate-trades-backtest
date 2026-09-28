@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 694189800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "COPT Defense Properties",
+  "shortName": "COPT Defense Properties",
+  "symbol": "CDP"
+ },
+ "queried_at": "2026-09-28T14:54:29Z",
+ "symbol": "CDP"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1023456600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds New World R-1",
+  "shortName": "American Funds - New World Fund",
+  "symbol": "RNWAX"
+ },
+ "queried_at": "2026-09-28T14:50:40Z",
+ "symbol": "RNWAX"
+}

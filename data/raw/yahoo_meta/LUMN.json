@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Lumen Technologies, Inc.",
+  "shortName": "Lumen Technologies, Inc.",
+  "symbol": "LUMN"
+ },
+ "queried_at": "2026-09-28T14:53:13Z",
+ "symbol": "LUMN"
+}
