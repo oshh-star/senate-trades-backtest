@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Alliant Energy Corporation",
+  "shortName": "Alliant Energy Corporation",
+  "symbol": "LNT"
+ },
+ "queried_at": "2026-09-29T09:33:33Z",
+ "symbol": "LNT"
+}

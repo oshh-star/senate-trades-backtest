@@ -1,11 +1,161 @@
 asset_name,asset_type,n_trades,n_trades_self_joint_in_window,candidate,method,accepted,note
+MCD - McDonald's Corp (NYSE),Stock,1,0,NYSE,embedded,False,embedded ticker NYSE not recognised by Yahoo; then no exact SEC name match
+Weight Watchers Intl Inc,Stock,3,0,,sec_name,False,no exact SEC name match
+Under Armour Inc Cl A,Stock,2,0,,sec_name,False,"SEC company CIK 1336917 has several tickers: UA, UAA"
+WPX,Stock,3,0,WPX,embedded,False,embedded ticker WPX not recognised by Yahoo; then no exact SEC name match
+SE,Stock,3,0,SE,embedded,True,asset name is the bare ticker SE; Yahoo: Sea Limited
+KMI,Stock,2,0,KMI,embedded,True,"asset name is the bare ticker KMI; Yahoo: Kinder Morgan, Inc."
+VZ,Stock,2,1,VZ,embedded,True,asset name is the bare ticker VZ; Yahoo: Verizon Communications Inc.
+IP,Stock,1,0,IP,embedded,True,asset name is the bare ticker IP; Yahoo: International Paper Company
+ABBV,Stock,1,0,ABBV,embedded,True,asset name is the bare ticker ABBV; Yahoo: AbbVie Inc.
+CRMT,Stock,2,0,CRMT,embedded,True,"asset name is the bare ticker CRMT; Yahoo: America's Car-Mart, Inc."
+LNT,Stock,5,0,LNT,embedded,True,asset name is the bare ticker LNT; Yahoo: Alliant Energy Corporation
+LQDT,Stock,2,0,LQDT,embedded,True,"asset name is the bare ticker LQDT; Yahoo: Liquidity Services, Inc."
+KN,Stock,3,0,KN,embedded,True,asset name is the bare ticker KN; Yahoo: Knowles Corporation
+WMT,Stock,12,0,WMT,embedded,True,asset name is the bare ticker WMT; Yahoo: Walmart Inc.
+MOS,Stock,3,0,MOS,embedded,True,asset name is the bare ticker MOS; Yahoo: The Mosaic Company
+WLK,Stock,3,0,WLK,embedded,True,asset name is the bare ticker WLK; Yahoo: Westlake Corporation
+GE,Stock,7,0,GE,embedded,True,asset name is the bare ticker GE; Yahoo: GE Aerospace
+LYV,Stock,4,0,LYV,embedded,True,"asset name is the bare ticker LYV; Yahoo: Live Nation Entertainment, Inc."
+Potash Corp of Saskatchewan Inc POT,Stock,1,0,,sec_name,False,no exact SEC name match
+NCR Corp New NCR,Stock,1,0,,sec_name,False,no exact SEC name match
+Fireeye Inc FEYE,Stock,1,0,,sec_name,False,no exact SEC name match
+Claymore Trust 2 Guggenheim Shipping SEA,Stock,1,0,,sec_name,False,no exact SEC name match
+Affiliated Managers Group AMG,Stock,1,0,,sec_name,False,no exact SEC name match
+GUGGENHEIM S&P RYT,Stock,1,0,,sec_name,False,no exact SEC name match
+FACTORSHARES TR PUREFUNDS ISE CYBER SEC HACK,Stock,1,0,,sec_name,False,no exact SEC name match
+ISHARES IAI,Stock,1,0,,sec_name,False,no exact SEC name match
+aapl,Stock,2,0,,sec_name,False,no exact SEC name match
+nflx,Stock,2,0,,sec_name,False,no exact SEC name match
+FANG,Stock,1,0,FANG,embedded,True,"asset name is the bare ticker FANG; Yahoo: Diamondback Energy, Inc."
+CLR,Stock,1,0,CLR,embedded,False,embedded ticker CLR not recognised by Yahoo; then no exact SEC name match
+CPN,Stock,1,0,CPN,embedded,False,embedded ticker CPN not recognised by Yahoo; then no exact SEC name match
 INTC-Intel Corporation (NASDAQ),Stock,1,0,INTC,embedded,True,embedded ticker INTC; name words shared with Intel Corporation/Intel Corporation/INTEL CORP: intel
 AAPL-Apple Inc. (NASDAQ),Stock,1,0,AAPL,embedded,True,embedded ticker AAPL; name words shared with Apple Inc./Apple Inc./Apple Inc.: apple
+"Fischer, Rounds & Assoc., Inc (Insurance/Real Estate Agency, Pierre, SD)",Stock,1,0,,sec_name,False,no exact SEC name match
+US Bancorp,Stock,1,0,USB,sec_name,True,SEC exact name match: US BANCORP DE (CIK 36104)
+TJX Cos Inc,Stock,1,0,,sec_name,False,no exact SEC name match
+Phillips 66,Stock,1,0,PSX,sec_name,True,SEC exact name match: Phillips 66 (CIK 1534701)
+Nestle SA,Stock,1,0,,sec_name,False,no exact SEC name match
+DANAHER Corp,Stock,1,0,DHR,sec_name,True,SEC exact name match: DANAHER CORP /DE/ (CIK 313616)
+AON PLC,Stock,1,0,AON,sec_name,True,SEC exact name match: Aon plc (CIK 315293)
+Accenture PLC,Stock,1,0,ACN,sec_name,True,SEC exact name match: Accenture plc (CIK 1467373)
+Qualcomm Inc,Stock,3,1,QCOM,sec_name,True,SEC exact name match: QUALCOMM INC/DE (CIK 804328)
+Home Depot Inc,Stock,1,0,HD,sec_name,True,"SEC exact name match: HOME DEPOT, INC. (CIK 354950)"
+ConocoPhillips,Stock,1,0,COP,sec_name,True,SEC exact name match: CONOCOPHILLIPS (CIK 1163165)
+Canadian Pacific Railway LTD,Stock,1,0,,sec_name,False,no exact SEC name match
+Borgwarner Inc,Stock,1,0,BWA,sec_name,True,SEC exact name match: BORGWARNER INC (CIK 908255)
+Wells Fargo CO,Stock,1,0,,sec_name,False,no exact SEC name match
+VISA INC - A,Stock,1,0,V,sec_name,True,SEC exact name match: VISA INC. (CIK 1403161)
+Hershey Co,Stock,1,0,HSY,sec_name,True,SEC exact name match: HERSHEY CO (CIK 47111)
+Dunkin Brands Group Inc,Stock,1,0,,sec_name,False,no exact SEC name match
+ESV,Stock,2,0,ESV,embedded,False,embedded ticker ESV not recognised by Yahoo; then no exact SEC name match
+AMLP,Stock,1,0,AMLP,embedded,True,asset name is the bare ticker AMLP; Yahoo: Alerian MLP ETF
+DBP,Stock,1,0,DBP,embedded,True,asset name is the bare ticker DBP; Yahoo: Invesco DB Precious Metals Fund
+GLD,Stock,1,0,GLD,embedded,True,asset name is the bare ticker GLD; Yahoo: SPDR Gold Shares
+QCOM,Stock,2,0,QCOM,embedded,True,asset name is the bare ticker QCOM; Yahoo: QUALCOMM Incorporated
+WBA,Stock,1,0,WBA,embedded,False,embedded ticker WBA not recognised by Yahoo; then no exact SEC name match
+ACN,Stock,1,0,ACN,embedded,True,asset name is the bare ticker ACN; Yahoo: Accenture plc
+Walt Disney Co Hldg,Stock,1,0,,sec_name,False,no exact SEC name match
+Boeing Co,Stock,2,0,BA,sec_name,True,SEC exact name match: BOEING CO (CIK 12927)
+Lincoln Naitonal Corp,Stock,1,0,,sec_name,False,no exact SEC name match
+Tyco Intl PLC,Stock,1,0,,sec_name,False,no exact SEC name match
+E I Dupont de Nemours,Stock,2,0,,sec_name,False,no exact SEC name match
+Verizon Communications,Stock,1,0,VZ,sec_name,True,SEC exact name match: VERIZON COMMUNICATIONS INC (CIK 732712)
+Cisco Company,Stock,1,0,,sec_name,False,no exact SEC name match
+3M Company,Stock,1,0,MMM,sec_name,True,SEC exact name match: 3M CO (CIK 66740)
+Ameren Corp,Stock,1,0,AEE,sec_name,True,SEC exact name match: AMEREN CORP (CIK 1002910)
+Enersis S.A. Amer Dep shrs,Stock,1,0,,sec_name,False,no exact SEC name match
+Clearbridge American Energy MLP Fund,Stock,1,0,,sec_name,False,no exact SEC name match
+Blackrock Global Opportunity Equity Tr,Stock,1,0,,sec_name,False,no exact SEC name match
+Dominion Resources,Stock,2,0,,sec_name,False,no exact SEC name match
+Blackrock Res & Comm Strat Tr,Stock,1,0,,sec_name,False,no exact SEC name match
+Northern Tier Energy LP,Stock,1,0,,sec_name,False,no exact SEC name match
+CSCO,Stock,2,0,CSCO,embedded,True,"asset name is the bare ticker CSCO; Yahoo: Cisco Systems, Inc."
+PM,Stock,2,0,PM,embedded,True,asset name is the bare ticker PM; Yahoo: Philip Morris International Inc.
+Nordea Bank AB,Stock,2,0,,sec_name,False,no exact SEC name match
+United States Treasury Note Company: United States Treasury Note,Other,1,0,,sec_name,False,no exact SEC name match
 PFE-Pfizer Inc.,Stock,2,0,PFE,embedded,True,"embedded ticker PFE; name words shared with Pfizer Inc./Pfizer, Inc./PFIZER INC: pfizer, pfizerinc"
+Met Life Inc,Stock,1,0,,sec_name,False,no exact SEC name match
+Precision Castparts Corp,Stock,7,0,,sec_name,False,no exact SEC name match
 "GS-The Goldman Sachs Group, Inc.",Stock,1,0,GS,embedded,True,"embedded ticker GS; name words shared with The Goldman Sachs Group, Inc./Goldman Sachs Group, Inc. (The)/GOLDMAN SACHS GROUP INC: goldman, sachs, thegoldmansachsgroupinc"
+New Jersey Resources,Stock,1,0,NJR,sec_name,True,SEC exact name match: NEW JERSEY RESOURCES CORP (CIK 356309)
+"Class C Shares of Under Armour, Inc.",Stock,1,0,,sec_name,False,"SEC company CIK 1336917 has several tickers: UA, UAA"
+BAC - Bank of America Corporation,Stock,1,0,BAC,embedded,True,"embedded ticker BAC; name words shared with Bank of America Corporation/Bank of America Corporation/BANK OF AMERICA CORP /DE/: bank, bankofamericacorporation"
 OKE-ONEOK Inc.,Stock,1,0,OKE,embedded,True,"embedded ticker OKE; name words shared with ONEOK, Inc./ONEOK, Inc./ONEOK INC /NEW/: oneok, oneokinc"
 STT-State Street Corporation,Stock,1,0,STT,embedded,True,"embedded ticker STT; name words shared with State Street Corporation/State Street Corporation/STATE STREET CORP: state, statestreetcorporation, street"
+Hannon Armstrong Sustainable Infrastructure,Stock,1,0,,sec_name,False,no exact SEC name match
+Universal Health Realty Inc Tr,Stock,1,0,,sec_name,False,no exact SEC name match
+"3600 Management LLC Company: 3600 Management LLC (Knoxville, Tennessee) Description: Commercial Rental",Other,1,0,,sec_name,False,no exact SEC name match
+MSFT,Stock,2,0,MSFT,embedded,True,asset name is the bare ticker MSFT; Yahoo: Microsoft Corporation
+JNJ,Stock,2,0,JNJ,embedded,True,asset name is the bare ticker JNJ; Yahoo: Johnson & Johnson
+BMY,Stock,1,0,BMY,embedded,True,asset name is the bare ticker BMY; Yahoo: Bristol-Myers Squibb Company
+GILD,Stock,3,0,GILD,embedded,True,"asset name is the bare ticker GILD; Yahoo: Gilead Sciences, Inc."
+BIIB,Stock,2,0,BIIB,embedded,True,asset name is the bare ticker BIIB; Yahoo: Biogen Inc.
+NFLX,Stock,1,0,NFLX,embedded,True,"asset name is the bare ticker NFLX; Yahoo: Netflix, Inc."
+PEP,Stock,2,0,PEP,embedded,True,"asset name is the bare ticker PEP; Yahoo: PepsiCo, Inc."
+CY,Stock,1,0,CY,embedded,False,embedded ticker CY not recognised by Yahoo; then no exact SEC name match
+TJX,Stock,1,0,TJX,embedded,True,"asset name is the bare ticker TJX; Yahoo: The TJX Companies, Inc."
+GPRO,Stock,1,0,GPRO,embedded,True,"asset name is the bare ticker GPRO; Yahoo: GoPro, Inc."
+"Bird Dog LLU, LLC Company: Bird Dog LLU, LLC (Sioux Falls, SD) Description: Marketing Company",Other,1,0,,sec_name,False,no exact SEC name match
+SPDR Euro Stoxx 50 ETF,Other,2,0,,sec_name,False,no exact SEC name match
+Ishares MSCI EAFE ETF,Other,2,0,,sec_name,False,no exact SEC name match
+SPDR S&P 500 ETF,Other | Stock,3,0,SPY,sec_name,True,SEC exact name match: SPDR S&P 500 ETF TRUST (CIK 884394)
+Ishares MSCI Emerging Mkts ETF,Other,2,0,,sec_name,False,no exact SEC name match
+First Trust DJ Internet IDX,Other,1,0,,sec_name,False,no exact SEC name match
+Welltower Inc,Stock,1,0,WELL,sec_name,True,SEC exact name match: WELLTOWER INC. (CIK 766704)
+Baxter Intl,Stock,1,0,BAX,sec_name,True,SEC exact name match: BAXTER INTERNATIONAL INC (CIK 10456)
+Under Armour Class A,Stock,1,0,,sec_name,False,"SEC company CIK 1336917 has several tickers: UA, UAA"
+PDL Biopharma Inc,Stock,1,0,,sec_name,False,no exact SEC name match
+Testainer Group Holdings,Stock,1,0,,sec_name,False,no exact SEC name match
 Textainer Group Holdings,Stock,1,0,,sec_name,False,no exact SEC name match
+Under Armour Class C,Stock,1,0,,sec_name,False,"SEC company CIK 1336917 has several tickers: UA, UAA"
+Dupont,Stock,1,0,,sec_name,False,no exact SEC name match
+Alaska State General Obligation Bond,Other,1,0,,sec_name,False,no exact SEC name match
+CVC,Stock,4,0,CVC,embedded,False,embedded ticker CVC not recognised by Yahoo; then no exact SEC name match
+WFM,Stock,10,0,WFM,embedded,False,embedded ticker WFM not recognised by Yahoo; then no exact SEC name match
+Barclays Bank PLC Linked to Basket of Indices,Other,1,0,,sec_name,False,no exact SEC name match
+AVP,Stock,3,0,AVP,embedded,False,embedded ticker AVP not recognised by Yahoo; then no exact SEC name match
+SPY,Stock,2,0,SPY,embedded,True,asset name is the bare ticker SPY; Yahoo: State Street SPDR S&P 500 ETF Trust
+DVN,Stock,4,0,DVN,embedded,True,asset name is the bare ticker DVN; Yahoo: Devon Energy Corporation
+BAX,Stock,2,0,BAX,embedded,True,asset name is the bare ticker BAX; Yahoo: Baxter International Inc.
+ADT,Stock,2,0,ADT,embedded,True,asset name is the bare ticker ADT; Yahoo: ADT Inc.
+USG,Stock,2,0,USG,embedded,True,asset name is the bare ticker USG; Yahoo: USCF Gold Strategy Plus Income Fund
+DISCA,Stock,3,0,DISCA,embedded,False,embedded ticker DISCA not recognised by Yahoo; then no exact SEC name match
+CBS,Stock,2,0,CBS,embedded,False,embedded ticker CBS not recognised by Yahoo; then no exact SEC name match
+AXLL,Stock,2,0,AXLL,embedded,False,embedded ticker AXLL not recognised by Yahoo; then no exact SEC name match
+PG,Stock,1,0,PG,embedded,True,asset name is the bare ticker PG; Yahoo: The Procter & Gamble Company
+VIAB,Stock,1,0,VIAB,embedded,False,embedded ticker VIAB not recognised by Yahoo; then no exact SEC name match
+XOM,Stock,1,0,XOM,embedded,True,asset name is the bare ticker XOM; Yahoo: ExxonMobil Holdings Corporation
+COP,Stock,1,0,COP,embedded,True,asset name is the bare ticker COP; Yahoo: ConocoPhillips
+ANTM,Stock,1,0,ANTM,embedded,False,embedded ticker ANTM not recognised by Yahoo; then no exact SEC name match
+KO,Stock,1,0,KO,embedded,True,asset name is the bare ticker KO; Yahoo: The Coca-Cola Company
+SYK,Stock,1,0,SYK,embedded,True,asset name is the bare ticker SYK; Yahoo: Stryker Corporation
+FOXA,Stock,1,0,FOXA,embedded,True,asset name is the bare ticker FOXA; Yahoo: Fox Corporation
+CHRW,Stock,1,0,CHRW,embedded,True,"asset name is the bare ticker CHRW; Yahoo: C.H. Robinson Worldwide, Inc."
+SYY,Stock,1,0,SYY,embedded,True,asset name is the bare ticker SYY; Yahoo: Sysco Corporation
+Sigma-Aldrich Corp CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+WFC,Stock,2,0,WFC,embedded,True,asset name is the bare ticker WFC; Yahoo: Wells Fargo & Company
+BK,Stock,3,0,BK,embedded,False,embedded ticker BK not recognised by Yahoo; then no exact SEC name match
+CLX,Stock,1,0,CLX,embedded,True,asset name is the bare ticker CLX; Yahoo: The Clorox Company
+USB,Stock,1,0,USB,embedded,True,asset name is the bare ticker USB; Yahoo: U.S. Bancorp
+FOX,Stock,1,0,FOX,embedded,True,asset name is the bare ticker FOX; Yahoo: Fox Corporation
+ORCL,Stock,1,0,ORCL,embedded,True,asset name is the bare ticker ORCL; Yahoo: Oracle Corporation
+UN,Stock,1,0,UN,embedded,True,asset name is the bare ticker UN; Yahoo: Corgi UNH 2x Daily ETF
+BCR,Stock,1,0,BCR,embedded,False,embedded ticker BCR not recognised by Yahoo; then no exact SEC name match
+Tesoro Logistics CMN,Stock,2,0,,sec_name,False,no exact SEC name match
+Deere & Co CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+Cabela's Inc CMN,Stock,4,0,,sec_name,False,no exact SEC name match
+Westlake Chemical Corp CMN,Stock,2,0,,sec_name,False,no exact SEC name match
+Tesoro Logistics LP CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+Viacom Inc CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+21st Century Fox CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+Aaron Rents Inc CMN,Stock,1,0,,sec_name,False,no exact SEC name match
+PAGP,Stock,2,0,PAGP,embedded,True,"asset name is the bare ticker PAGP; Yahoo: Plains GP Holdings, L.P."
+PKI,Stock,1,0,PKI,embedded,False,embedded ticker PKI not recognised by Yahoo; then no exact SEC name match
+Vontobel: Non-U.S. Equity LLC - Class 2 Company: Vontobel Asset Mgmt Description: Investment Fund,Other,1,0,,sec_name,False,no exact SEC name match
+AXP,Stock,1,0,AXP,embedded,True,asset name is the bare ticker AXP; Yahoo: American Express Company
+PSX,Stock,1,0,PSX,embedded,True,asset name is the bare ticker PSX; Yahoo: Phillips 66
 SPDR S&P Bank ETF,Stock,1,0,,sec_name,False,no exact SEC name match
 Calamos Asset Mgmt Cl A,Stock,1,0,,sec_name,False,no exact SEC name match
 Convergys,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -54,10 +204,8 @@ WOOF - VCA Inc.,Stock,1,0,WOOF,embedded,False,"embedded ticker WOOF but its name
 Preospect Capital Group,Stock,1,0,,sec_name,False,no exact SEC name match
 TMO - Thermo Fisher Scientific Inc.,Stock,1,0,TMO,embedded,True,"embedded ticker TMO; name words shared with Thermo Fisher Scientific Inc./Thermo Fisher Scientific Inc/THERMO FISHER SCIENTIFIC INC.: fisher, scientific, thermo, thermofisherscientificinc"
 "NBL-Noble Energy, Inc.",Stock,1,0,NBL,embedded,False,embedded ticker NBL not recognised by Yahoo; then no exact SEC name match
-Dominion Resources,Stock,1,0,,sec_name,False,no exact SEC name match
 Vanguard Consumer DSC ETF,Other,1,0,,sec_name,False,no exact SEC name match
 Under Armour,Stock,1,0,,sec_name,False,"SEC company CIK 1336917 has several tickers: UA, UAA"
-Weight Watchers Intl Inc,Stock,1,0,,sec_name,False,no exact SEC name match
 KKR & Co LP,Stock,1,0,,sec_name,False,"SEC company CIK 1404912 has several tickers: KKR, KKR-PD, KKRS, KKRT"
 PDL Biopharma,Stock,1,0,,sec_name,False,no exact SEC name match
 Shaw Communications,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -108,10 +256,8 @@ Diageo PLC Sponsored ADR,Stock,1,0,,sec_name,False,"SEC company CIK 835403 has s
 Honeywell Intl Inc,Stock,1,0,HON,sec_name,True,SEC exact name match: HONEYWELL INTERNATIONAL INC (CIK 773840)
 Packaging Corp of America,Stock,1,0,PKG,sec_name,True,SEC exact name match: PACKAGING CORP OF AMERICA (CIK 75677)
 Altria Corp,Stock,1,0,MO,sec_name,True,"SEC exact name match: ALTRIA GROUP, INC. (CIK 764180)"
-Ishares MSCI Emerging Mkts ETF,Other,1,0,,sec_name,False,no exact SEC name match
 Axis Capital Holdings Ltd,Stock,1,0,AXS,sec_name,True,SEC exact name match: AXIS CAPITAL HOLDINGS LTD (CIK 1214816)
 Medical Properties Trust Inc,Stock,1,0,MPT,sec_name,True,SEC exact name match: MEDICAL PROPERTIES TRUST INC (CIK 1287865)
-Ishares MSCI EAFE ETF,Other,1,0,,sec_name,False,no exact SEC name match
 Powershares Aerospace and Defense ETF,Other,3,0,,sec_name,False,no exact SEC name match
 ETN - Eaton Corporation plc,Stock,1,0,ETN,embedded,True,"embedded ticker ETN; name words shared with Eaton Corporation plc/Eaton Corporation, PLC/Eaton Corp plc: eaton, eatoncorporationplc"
 Zoetis Corp,Stock,1,0,ZTS,sec_name,True,SEC exact name match: Zoetis Inc. (CIK 1555280)
@@ -141,7 +287,6 @@ Ishares China Large Cap ETF,Other,3,0,,sec_name,False,no exact SEC name match
 S&P 500 Index Fund,Other,1,0,,sec_name,False,no exact SEC name match
 Ishares SP Smallcap 600 Index,Other,1,0,,sec_name,False,no exact SEC name match
 Kraneshares CSI China Internet ETF,Other,1,0,,sec_name,False,no exact SEC name match
-SPDR Euro Stoxx 50 ETF,Other,1,0,,sec_name,False,no exact SEC name match
 SPDR Gold Tr Gold Shs,Other | Stock,3,0,,sec_name,False,no exact SEC name match
 Vaneck Vectors Junior Gold Minors,Other,1,0,,sec_name,False,no exact SEC name match
 Wisdom Tree Us Small Cap QA Dividend Growth Fd,Other,1,0,,sec_name,False,no exact SEC name match
@@ -177,7 +322,6 @@ BOFA FINANCE LLC LINKED TO BASKET OF INDICES Description: Equity Index-Linked No
 "Pharma Partners, LLC Company: Pharma Partners, LLC (Englewood, CO) Description: The LLC funds research and clinical trials on a new class of drugs, metalloporphyrins. The lead drugs are BMX-010 and BMX-001.",Other,1,0,,sec_name,False,no exact SEC name match
 "West Virginia Growth Investment LLC Company: Care 24/7 (Knoxville, Tennessee) Description: A health care service and technology company that coordinates and explains treatment recommendations for patients with serious illnesses.",Other,1,0,,sec_name,False,no exact SEC name match
 PFS,Stock,1,0,PFS,embedded,True,"asset name is the bare ticker PFS; Yahoo: Provident Financial Services, Inc."
-ESV,Stock,1,0,ESV,embedded,False,embedded ticker ESV not recognised by Yahoo; then no exact SEC name match
 Seagate Technology,Stock,2,0,STX,sec_name,True,SEC exact name match: Seagate Technology Holdings plc (CIK 1137789)
 Iron Mountain,Stock,3,0,IRM,sec_name,True,SEC exact name match: IRON MOUNTAIN INC (CIK 1020569)
 "HCEB Ballantyne, LLC Company: HCEB Ballantyne, LLC (Englewood, CO) Description: Real Estate",Other,1,0,,sec_name,False,no exact SEC name match
@@ -237,7 +381,6 @@ CVS Health,Stock,1,0,CVS,sec_name,True,SEC exact name match: CVS HEALTH Corp (CI
 Revere Bank,Stock,1,0,,sec_name,False,no exact SEC name match
 "Amadeus IT Group, S.A.",Stock,1,0,,sec_name,False,no exact SEC name match
 "Amazon.com, Inc.",Stock,1,0,AMZN,sec_name,True,SEC exact name match: AMAZON COM INC (CIK 1018724)
-GILD,Stock,2,0,GILD,embedded,True,"asset name is the bare ticker GILD; Yahoo: Gilead Sciences, Inc."
 Knight-Swift Transportation Holdings,Stock,1,0,KNX,sec_name,True,SEC exact name match: Knight-Swift Transportation Holdings Inc. (CIK 1492691)
 Danaher Corp,Stock,1,0,DHR,sec_name,True,SEC exact name match: DANAHER CORP /DE/ (CIK 313616)
 Tellus Corp,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -250,7 +393,6 @@ tgt,Stock,1,0,,sec_name,False,no exact SEC name match
 Hewlett Packard Enterprises,Stock,1,0,,sec_name,False,no exact SEC name match
 Analog Devices,Stock,2,0,ADI,sec_name,True,SEC exact name match: ANALOG DEVICES INC (CIK 6281)
 Hexcel Corp,Stock,1,0,HXL,sec_name,True,SEC exact name match: HEXCEL CORP /DE/ (CIK 717605)
-Qualcomm Inc,Stock,2,1,QCOM,sec_name,True,SEC exact name match: QUALCOMM INC/DE (CIK 804328)
 Scotts Miracle Grow,Stock,1,0,,sec_name,False,no exact SEC name match
 Banco Latinoamerican De Comercio Exterior S.A.,Stock,1,0,,sec_name,False,no exact SEC name match
 Western Asset inflation Linked Opportunity & Income Fd,Stock,1,0,,sec_name,False,no exact SEC name match
@@ -350,7 +492,6 @@ GMSYX - GOLDMAN SACHS SM MD CAP GROWTH I,Other,2,0,GMSYX,embedded,False,embedded
 ACAP STRAGIC INTERVAL,Other,1,0,,sec_name,False,no exact SEC name match
 msft,Stock,1,0,,sec_name,False,no exact SEC name match
 Walmart Inc.,Stock,1,0,WMT,sec_name,True,SEC exact name match: Walmart Inc. (CIK 104169)
-aapl,Stock,1,0,,sec_name,False,no exact SEC name match
 ba,Stock,1,0,,sec_name,False,no exact SEC name match
 zm,Stock,1,0,,sec_name,False,no exact SEC name match
 "EB 480 Sprague, LLC Company: EB 480 Sprague, LLC (Dedham, MA) Description: Real Estate",Other,1,0,,sec_name,False,no exact SEC name match
@@ -375,9 +516,7 @@ WFC - Wells Fargo & Company,Stock,1,0,WFC,embedded,True,"embedded ticker WFC; na
 Quest Diagnostics Incorporated Common Stock,Stock,1,1,DGX,sec_name,True,SEC exact name match: QUEST DIAGNOSTICS INC (CIK 1022079)
 "Dyson Capital Series Fund, LLC Company: Dyson Capital Series Fund, LLC (Alexandria, VA) Description: Holding Company - Private Equity",Other,1,1,,sec_name,False,no exact SEC name match
 "NationsBuilders Insurance Services, Inc. Company: NationsBuilders Insurance Services, Inc. (Atlanta, GA) Description: Insurance",Other,2,2,,sec_name,False,no exact SEC name match
-PM,Stock,1,0,PM,embedded,True,asset name is the bare ticker PM; Yahoo: Philip Morris International Inc.
 ACAP Strategic Interval Common,Other,1,0,,sec_name,False,no exact SEC name match
-VZ,Stock,1,1,VZ,embedded,True,asset name is the bare ticker VZ; Yahoo: Verizon Communications Inc.
 Goldman Sachs Small-Mid Cap Growth,Other,1,0,,sec_name,False,no exact SEC name match
 Fidelity Advisor Focused Emerging Markets,Other,1,0,,sec_name,False,no exact SEC name match
 UnitedHealth Group Incorporated Common Stock (DE),Stock,1,0,UNH,sec_name,True,embedded ticker DE but its name (Deere & Company/Deere & Company/DEERE & CO) shares no word with 'UnitedHealth Group Incorporated Common Stock'; then SEC exact name match: UNITEDHEALTH GROUP INC (CIK 731766)
@@ -401,7 +540,6 @@ Verizon Communications Inc. Common Stock,Stock,1,1,VZ,sec_name,True,SEC exact na
 SIEGY,Stock,1,1,SIEGY,embedded,True,asset name is the bare ticker SIEGY; Yahoo: Siemens Aktiengesellschaft
 JTKWY - Just Eat Takeaway.com NV - ADR,Stock,1,0,JTKWY,embedded,True,"embedded ticker JTKWY; name words shared with Just Eat Takeaway.com N.V./Just Eat Takeaway.com N.V.: eat, just, takeaway"
 AXAHY,Stock,1,1,AXAHY,embedded,True,asset name is the bare ticker AXAHY; Yahoo: AXA SA
-WFC,Stock,1,0,WFC,embedded,True,asset name is the bare ticker WFC; Yahoo: Wells Fargo & Company
 wells fargo,Stock,1,0,,sec_name,False,no exact SEC name match
 chevron,Stock,1,0,CVX,sec_name,True,SEC exact name match: CHEVRON CORP (CIK 93410)
 Wells Fargo & Company Common Stock,Stock,1,0,,sec_name,False,no exact SEC name match

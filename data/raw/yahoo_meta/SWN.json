@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:43Z"
+ },
+ "queried_at": "2026-09-29T09:35:45Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Schwab Tax-Free Bond",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Schwab Tax-Free Bond Fund\u2122\",",
+   "symbol": "SWNTX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Southwestern Medical Solutions, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "SOUTHWESTERN MEDICAL SOLUTIONS ",
+   "symbol": "SWNM",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Stuttgart",
+   "exchange": "STU",
+   "longname": "Southwest Airlines Co",
+   "quoteType": "EQUITY",
+   "shortname": "Southwest Airlines Co.",
+   "symbol": "SWN.SG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Schwab Target 2050",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Schwab Target 2050 Fd",
+   "symbol": "SWNRX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "XETRA",
+   "exchange": "GER",
+   "longname": "Southwest Airlines Co.",
+   "quoteType": "EQUITY",
+   "shortname": "SOUTHWEST AIRLINES CO.        R",
+   "symbol": "SWN.DE",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": "Southwest Airlines Co",
+   "quoteType": "EQUITY",
+   "shortname": "SOUTHWEST AIRLINES CO.        R",
+   "symbol": "SWN.MU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Southwest Airlines Co.",
+   "quoteType": "EQUITY",
+   "shortname": "SOUTHWEST AIRLINES CO.        R",
+   "symbol": "SWN.F",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SWN"
+}

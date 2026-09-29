@@ -276,11 +276,14 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
         u[col] = (u["disclosure_date"] >= ws.isoformat()) & (u["disclosure_date"] <= we.isoformat())
     u["in_window"] = (u["disclosure_date"] >= start.isoformat()) & (u["disclosure_date"] <= end.isoformat())
     u["in_any_window"] = (u["disclosure_date"] >= union_start.isoformat()) & (u["disclosure_date"] <= end.isoformat())
+    # Phase 5A.2: instruments are classified for every disclosure from the scrape start, so the warm-up (L2) of any
+    # window, including the 10-year window's (from 2016-01-01), has fully classified records
+    u["in_class_range"] = (u["disclosure_date"] >= cfg["data"]["scrape_start"].isoformat()) & (u["disclosure_date"] <= end.isoformat())
     u = pd.concat([u, pd.DataFrame([parse_amount(a) for a in u["amount"]])], axis=1)
     u["option_in_name"] = u["asset_type"].isin(STOCK_TYPES) & u["asset_name"].map(is_option_name)
 
     # ---- tickers: recovery from the asset name for units that could still be in scope
-    candidate = (u["in_service"] & u["in_any_window"] & u["asset_type"].isin(STOCK_TYPES)
+    candidate = (u["in_service"] & u["in_class_range"] & u["asset_type"].isin(STOCK_TYPES)
                  & ~u["option_in_name"] & (u["transaction_type"] != "Exchange"))
     u["ticker_source"] = np.where(u["ticker"] != "", "efd", "")
     u["ticker_recovery_note"] = ""
@@ -432,12 +435,14 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     u.loc[hand, "reason_detail"] = "by hand: " + u.loc[hand, "ticker"].map(non_us_hand or {})
     u.loc[u["reason_code"] == "NON_EQUITY_ETF", "reason_detail"] = u["etf_class"] + ": " + u["etf_category"]
     u["in_scope"] = u["reason_code"] == ""
-    # L2 warm-up: every filter except the window (valid only inside the classified range, in_any_window)
+    # L2 warm-up: every filter except the window; and (price request, V6) every filter except the window and the owner
     ex = pd.Series(True, index=u.index)
     for code, c in conds:
-        if code != "OUTSIDE_WINDOW":
+        if code not in ("OUTSIDE_WINDOW", "OWNER"):
             ex &= ~c
-    u["in_scope_ex_window"] = ex & u["in_any_window"]
+    owner_ok = dict(conds)["OWNER"]
+    u["in_scope_ex_window_owner"] = ex & u["in_class_range"]
+    u["in_scope_ex_window"] = ex & ~owner_ok & u["in_class_range"]
     keep = u["in_any_window"].copy()
     for code, c in conds:
         if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "OWNER"):
@@ -584,7 +589,7 @@ CLEAN_COLUMNS = [
 ]
 RECORD_COLUMNS = [
     "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
-    "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "reason_code", "reason_detail", "bioguide_id",
+    "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "in_scope_ex_window_owner", "reason_code", "reason_detail", "bioguide_id",
     "senator", "owner", "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
     "is_etf", "etf_class", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
     "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",

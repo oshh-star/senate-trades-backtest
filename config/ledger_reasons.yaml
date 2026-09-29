@@ -186,6 +186,28 @@ reasons:
   XLNX:   {reason: acquired for stock, source: "AMD bought Xilinx, 1.7234 AMD shares per share, Feb 2022 (SEC 25-NSE 2022-02-14)"}
   ZAYO:   {reason: acquired for cash, source: "DigitalBridge and EQT took Zayo private for $35.00 cash, Mar 2020 (SEC 25-NSE 2020-03-09)"}
   ZNGA:   {reason: acquired for stock, source: "Take-Two bought Zynga for $3.50 cash plus $6.36 in TTWO shares, May 2022 (SEC 25-NSE 2022-05-23)"}
+  # ---------------------------------------------------------------- symbols needed only by the 10-year window's warm-up (5A.2)
+  # Disclosures from 2016-01-01 to 2016-08-31, added when the clean stage was extended to the scrape start (2026-09-29).
+  # From SEC evidence (data/interim/ledger_sec_evidence.csv) plus memory of the deals: less certain, like the block above.
+  AAN:    {reason: ticker issue, source: "Aaron's, Inc. became PROG Holdings (PRG) in the Nov 2020 separation (SEC 25-NSE 2020-10-19 for the old CIK); the AAN symbol passed to the spun-off Aaron's Company, taken private for $10.10 cash in Oct 2024 (SEC 25-NSE 2024-10-04)"}
+  ACE:    {reason: ticker issue, source: "ACE Limited bought Chubb in Jan 2016 and took the Chubb Limited name and the CB symbol (SEC CIK 896159, now CB): same company, new ticker"}
+  AXLL:   {reason: acquired for cash, source: "Westlake Chemical bought Axiall for $33.00 cash, Aug 2016 (SEC 25-NSE 2016-08-31)"}
+  BBU:    {reason: ticker issue, source: "Brookfield Business Partners L.P.: the units were delisted in Mar 2026 in a reorganisation into Brookfield Business Corporation (BBUC) (SEC 25-NSE 2026-03-31); Yahoo serves no BBU history"}
+  CIT:    {reason: acquired for stock, source: "First Citizens BancShares bought CIT Group for 0.062 FCNCA shares per CIT share, Jan 2022 (SEC 25-NSE 2022-01-04)"}
+  CMCSK:  {reason: ticker issue, source: "Comcast Class A Special shares (CMCSK) were reclassified 1:1 into Class A (CMCSA) in Nov 2015: same company, now CMCSA"}
+  CPGX:   {reason: acquired for cash, source: "TransCanada bought Columbia Pipeline Group for $25.50 cash, Jul 2016 (SEC 25-NSE 2016-07-01)"}
+  CVC:    {reason: acquired for cash, source: "Altice bought Cablevision Systems for $34.90 cash, Jun 2016 (SEC 15-12B 2016-07-06)"}
+  HOT:    {reason: acquired for stock, source: "Marriott bought Starwood Hotels for 0.92 MAR share plus $21.00 cash per share (after a Vistana spin-off), Sep 2016 (SEC 25-NSE 2016-09-23)"}
+  IRET:   {reason: ticker issue, source: "Investors Real Estate Trust renamed itself Centerspace (CSR) in Dec 2021 (SEC CIK 798359, now CSR): same company, new ticker"}
+  ITC:    {reason: acquired for stock, source: "Fortis bought ITC Holdings for $22.57 cash plus 0.752 FTS share per share, Oct 2016 (SEC 25-NSE 2016-10-14)"}
+  KLXI:   {reason: acquired for cash, source: "Boeing bought KLX Inc. for $63.00 cash, Oct 2018 (SEC 25-NSE 2018-10-09)"}
+  NCR:    {reason: ticker issue, source: "NCR Corporation split in Oct 2023: it became NCR Voyix (VYX) and spun off NCR Atleos (NATL) (SEC CIK 70866, now VYX): the old NCR history sits under VYX"}
+  NGLS:   {reason: acquired for stock, source: "Targa Resources Corp bought the Targa Resources Partners common units for 0.62 TRGP share each, Feb 2016 (SEC DEFM14A 2016-01-11; its preferred units stayed listed until 2020)"}
+  SHPG:   {reason: acquired for stock, source: "Takeda bought Shire for $30.33 cash plus Takeda ADSs per Shire share, Jan 2019 (SEC 25-NSE 2019-01-08)"}
+  SWN:    {reason: acquired for stock, source: "Chesapeake bought Southwestern Energy for 0.0867 CHK share per SWN share, forming Expand Energy (EXE), Oct 2024 (SEC 25-NSE 2024-10-01)"}
+  UA-C:   {reason: ticker issue, source: "Under Armour Class C shares: Yahoo lists them as UA (the Class A shares are UAA); 'UA-C' is not a Yahoo symbol"}
+  WTR:    {reason: ticker issue, source: "Aqua America renamed itself Essential Utilities (WTRG) in Feb 2019 (SEC CIK 78128, now WTRG): same company, new ticker"}
+  XLS-WI: {reason: ticker issue, source: "Exelis when-issued ('ex-distribution') shares around the 2014 Vectrus spin-off; Exelis was bought by Harris for cash and stock in May 2015. Not a regular listing"}
   # ---------------------------------------------------------------- symbols named only by a first-published J3 record
   BRY:    {reason: acquired for stock, source: "California Resources bought Berry Corporation in an all-stock deal, Dec 2025 (believed, not re-checked); named only by a record later corrected"}
   BUNT:   {reason: matured or liquidated fund, source: "DB 3x German Bund Futures ETN: an exchange-traded note (debt, not a stock) that Deutsche Bank delisted and redeemed"}

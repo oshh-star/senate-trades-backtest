@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:35Z"
+ },
+ "queried_at": "2026-09-29T09:35:40Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "NCR Voyix Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "NCR Voyix Corporation",
+   "symbol": "VYX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "NCR Atleos Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "NCR Atleos Corporation",
+   "symbol": "NATL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Nocera, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Nocera, Inc.",
+   "symbol": "NCRA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "NCR Atleos Corp",
+   "quoteType": "EQUITY",
+   "shortname": "NCR Atleos Corp.              R",
+   "symbol": "Y2G.DU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Neuberger Core Bond Inst",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Neuberger Berman Core Bond Inst",
+   "symbol": "NCRLX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Munich",
+   "exchange": "MUN",
+   "longname": "NCR Corp",
+   "quoteType": "EQUITY",
+   "shortname": "NCR Voyix Corp.               R",
+   "symbol": "NCR1.MU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "NCR Voyix Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "NCR CORP NCR ORD SHS",
+   "symbol": "0K45.L",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "NCR"
+}

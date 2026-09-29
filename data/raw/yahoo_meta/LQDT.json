@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1141050600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Liquidity Services, Inc.",
+  "shortName": "Liquidity Services, Inc.",
+  "symbol": "LQDT"
+ },
+ "queried_at": "2026-09-29T09:33:34Z",
+ "symbol": "LQDT"
+}

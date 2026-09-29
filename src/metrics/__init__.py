@@ -33,6 +33,7 @@ TABLES = Path("outputs/tables")
 FIGS = Path("outputs/figures")
 RESULTS = TABLES / "phase5_insample_results"
 EVENTS = TABLES / "phase5_event_study"
+DRIFT = TABLES / "phase5_predisclosure_drift"
 FIG_CUM = FIGS / "phase5_cumulative_value.png"
 FIG_DD = FIGS / "phase5_drawdowns.png"
 FACTORS = ["mkt_rf", "smb", "hml", "mom"]
@@ -174,6 +175,7 @@ def run(cfg: dict) -> dict:
     # ---- the event study
     hz = list(cfg["portfolio"]["event_study_horizons"])
     evt = es.table(I["panel"], hz)
+    drift = es.drift_table(I["panel"])
 
     # ---- write everything
     TABLES.mkdir(parents=True, exist_ok=True)
@@ -184,6 +186,8 @@ def run(cfg: dict) -> dict:
     RESULTS.with_suffix(".md").write_text(results_md(tab, res, k, I, gbp, ov_months, base))
     evt.to_csv(EVENTS.with_suffix(".csv"), index=False)
     EVENTS.with_suffix(".md").write_text(events_md(evt, I, hz))
+    drift.to_csv(DRIFT.with_suffix(".csv"), index=False)
+    DRIFT.with_suffix(".md").write_text(drift_md(drift, I))
     mret = pd.DataFrame({"rf": rf_m, **{c: F[c] for c in FACTORS}, **{f"r_{s}": M[s] for s in
                          ("A", "B", "SPY", "RM_A", "RM_B", "EW", "A_GBP", "SPY_GBP")},
                          "r_NANC": M["NANC"], "r_KRUZ": M["KRUZ"], "turnover_A": turnover_m["A"], "turnover_B": turnover_m["B"]})
@@ -348,6 +352,28 @@ def events_md(evt: pd.DataFrame, I: dict, hz: list[int]) -> str:
         L += [f"## {'Purchases' if side == 'purchase' else 'Sales'}", "",
               q.drop(columns=["side"]).to_markdown(index=False), ""]
     return "\n".join(L)
+
+
+def drift_md(d: pd.DataFrame, I: dict) -> str:
+    v = d.copy()
+    for c in ("mean SPY-adjusted drift", "median SPY-adjusted drift", "mean stock return", "mean SPY return",
+              "mean cost to the copier", "share of events against the copier"):
+        v[c] = v[c].map(lambda x: f"{x:.2%}")
+    for c in ("t (clustered by entry month)", "t (iid)"):
+        v[c] = v[c].map(lambda x: f"{x:.2f}")
+    v["median lag (trading days)"] = v["median lag (trading days)"].map(lambda x: f"{x:.0f}")
+    return "\n".join([
+        f"# Phase 5: pre-disclosure drift ({I['label']}, entry dates {I['first']} to {I['last_day']})", "",
+        "_What the disclosure lag costs a copier: the stock's return minus SPY's from the close on the TRANSACTION date "
+        "(the senator's trade; the first trading day on or after it) to the close on the ENTRY date (the first trading day "
+        "after the disclosure, when the copier acts). Every in-scope purchase and sale record with an in-sample entry date "
+        "and prices on both dates counts once. t-statistics cluster by calendar month of entry. From "
+        "`data/processed/event_panel.csv` (column gap_x)._", "",
+        "**Sign convention.** The drift is the stock's move, whatever the side. For a PURCHASE a positive drift means the "
+        "price ran up before the copier could buy (a cost). For a SALE a negative drift means the price fell before the "
+        "copier could sell (a cost). \"Mean cost to the copier\" flips the sign for sales so that positive always means "
+        "the lag hurt the copier.", "",
+        v.to_markdown(index=False), ""])
 
 
 # ------------------------------------------------------------------ figures

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:17Z"
+ },
+ "queried_at": "2026-09-29T09:35:29Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Cypherpunk Technologies Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Cypherpunk Technologies Inc.",
+   "symbol": "CYPH",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Cybin D/B/A Helus Pharma",
+   "quoteType": "EQUITY",
+   "shortname": "Cybin Inc.",
+   "symbol": "HELP",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "First Trust NASDAQ Cybersecurity ETF",
+   "quoteType": "ETF",
+   "shortname": "First Trust NASDAQ Cybersecurit",
+   "symbol": "CIBR",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Global X Cybersecurity ETF",
+   "quoteType": "ETF",
+   "shortname": "Global X Cybersecurity ETF",
+   "symbol": "BUG",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Amplify Cybersecurity ETF",
+   "quoteType": "ETF",
+   "shortname": "Amplify Cybersecurity ETF",
+   "symbol": "HACK",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "CytoDyn Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "CytoDyn Inc.",
+   "symbol": "CYDY",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Cycurion, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Cycurion, Inc.",
+   "symbol": "CYCU",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CY"
+}

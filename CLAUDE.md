@@ -34,7 +34,9 @@ one command (`python run_all.py`) must rebuild every number.
 - **Sizing**: midpoint of the disclosed range (open top band uses its lower bound). Variants:
   lower_bound, equal_dollar.
 - **Prices**: adjusted close on the first trading day AFTER the disclosure (date received).
-  Variant: same-day close. `prices.price_source: yahoo | crsp` (CRSP is a robustness check).
+  Variant: same-day close. **Source hierarchy (M2)**: `prices.sources: [crsp, manual, yahoo]`, CRSP first, then a
+  Bloomberg/FactSet export (data/raw/manual_prices/, docs/PRICE_REQUEST.md), then Yahoo, merged day by day; V18 = Yahoo
+  only. V15 (SPY fill) is a bound, never the headline. OOS stays locked until the price hole is filled (M3).
 - **Matching**: a sale is matched FIFO to that senator's open copied positions in the same ticker,
   regardless of owner. Sale (Full) closes it; Sale (Partial) sells the midpoint amount, capped at
   the holding. Sales of anything we do not hold (for example, bought before the window) are ignored
@@ -70,7 +72,9 @@ src/clean/             Phase 2: amendments.py (link, classify, de-duplicate), ti
                       recover from names via SEC), yahoo.py (instrument type/exchange, cached),
                       build.py (waterfall, flags), report.py (outputs, data_quality.md section)
 src/prices/           Phase 3: resolve.py (renames via SEC company histories, survivorship ledger), yahoo_prices.py
-                      (download, parse), repairs.py (K6), french.py (factors), checks.py (sanity checks)
+                      (download, parse), repairs.py (K6), french.py (factors), checks.py (sanity checks);
+                      5A.2 (M2): crsp.py (WRDS export), manual.py (terminal exports), sources.py (hierarchy merge,
+                      overlap validation, dates needed)
 src/clean/etf_class.py  K5: ETF asset class from Yahoo's fund category (cached in data/raw/yahoo_fund/)
 src/engine/           Phase 4: events.py (entry dates, sizing, ordering, variant filters), book.py (FIFO lots,
                       J3 reversals, series ending early), portfolio.py (series A and B), panel.py (event
@@ -108,6 +112,8 @@ docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
 scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand; cached in data/raw/sec/filings/
+scripts/price_request.py  writes docs/PRICE_REQUEST.md and docs/crsp_tickers_*.txt (M2), by hand after the prices stage
+data/raw/manual_prices/  Bloomberg/FactSet CSVs (date, close, total_return_index) and SOURCES.md (who, where, when)
 tests/                pytest suite (run: python -m pytest)
 ```
 
@@ -119,7 +125,7 @@ tests/                pytest suite (run: python -m pytest)
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
-| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study |
+| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request; **waiting on terminal/CRSP prices** |
 | 6 | Robustness and mechanism tests (variants, OOS) | Not started |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 

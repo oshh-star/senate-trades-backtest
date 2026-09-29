@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:49Z"
+ },
+ "queried_at": "2026-09-29T09:35:49Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Essential Utilities, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Essential Utilities, Inc.",
+   "symbol": "WTRG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "Wis.Tr.ICAV-WT N.Ec.Re.Est.ETFR",
+   "symbol": "WTRE.HM",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Regnan Sust Wtr & Waste S2 GBP Acc",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "0P0001YIHX.L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Schroder ISF Glbl Sust Fd & Wtr AAccGBPH",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001PK4W.L",
+   "symbol": "0P0001PK4W.L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "Schroder ISF Glbl Sust Fd & Wtr CGBPAccH",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001N7US.L",
+   "symbol": "0P0001N7US.L",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Allspring Core Bond R6",
+   "quoteType": "MUTUALFUND",
+   "shortname": "WF Core Bond Fd R6",
+   "symbol": "WTRIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "WisdomTree New Economy Real Estate ETF",
+   "quoteType": "ETF",
+   "shortname": "WisdomTree New Economy Real Est",
+   "symbol": "WTRE",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "WTR"
+}

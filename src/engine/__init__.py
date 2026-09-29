@@ -89,11 +89,9 @@ def run(cfg: dict) -> dict:
     days = [d for d in mk["calendar"] if d >= first]
     units = evm.load_units(cfg)
     if w_months > 0:
-        from src.clean.build import windows
-        classified_from = min(s for s, _ in windows(cfg).values()).isoformat()
+        classified_from = cfg["data"]["scrape_start"].isoformat()        # the clean stage classifies from here
         if w_start < classified_from:
-            raise ValueError(f"The warm-up starts {w_start}, before {classified_from}: the clean stage classifies "
-                             "instruments only inside the 3/5/10-year windows. Extend its range first (see HANDOVER.md).")
+            raise ValueError(f"The warm-up starts {w_start}, before the scrape start {classified_from}.")
         units = evm.add_warmup(units, w_start, first)
     ev_all = evm.build_events(units, mk["calendar_all"], cfg, last_entry=last_day)
     keep = (ev_all["entry_date"] >= first) | (ev_all["disclosure_date"] >= w_start) if w_months > 0 \

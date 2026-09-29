@@ -90,7 +90,9 @@ engine:
                                    #   returns are measured from the window's first day. V17 (empty start): 0
 
 prices:
-  price_source: yahoo              # yahoo | crsp (CRSP CSV in data/raw/crsp/, robustness check)
+  sources: [crsp, manual, yahoo]   # M2: best actual source first, day by day (V18: [yahoo]). manual = terminal
+                                   #   exports (Bloomberg / FactSet) in manual_dir; see docs/PRICE_REQUEST.md
+  manual_dir: data/raw/manual_prices
   fallback_source: stooq           # Stooq was unreachable from the cloud on 2026-09-27
   crsp_dir: data/raw/crsp
   start: 2016-01-01                # daily history downloaded for every ticker in trades_clean.csv

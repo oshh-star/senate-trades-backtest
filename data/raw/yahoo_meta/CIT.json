@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:06Z"
+ },
+ "queried_at": "2026-09-29T09:35:19Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Citigroup Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Citigroup, Inc.",
+   "symbol": "C",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Citizens Financial Group, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Citizens Financial Group, Inc.",
+   "symbol": "CFG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Canadian Pacific Kansas City Limited",
+   "quoteType": "EQUITY",
+   "shortname": "Canadian Pacific Kansas City Li",
+   "symbol": "CP",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Citius Pharmaceuticals, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Citius Pharmaceuticals, Inc.",
+   "symbol": "CTXR",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Singapore",
+   "exchange": "SES",
+   "longname": "City Developments Limited",
+   "quoteType": "EQUITY",
+   "shortname": "CityDev",
+   "symbol": "C09.SI",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "First Citizens BancShares, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "First Citizens BancShares, Inc.",
+   "symbol": "FCNCA",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE MKT",
+   "exchange": "ASE",
+   "longname": "CitroTech Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "CitroTech Inc.",
+   "symbol": "CITR",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "CIT"
+}

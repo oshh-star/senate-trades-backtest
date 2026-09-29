@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1403789400,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "GoPro, Inc.",
+  "shortName": "GoPro, Inc.",
+  "symbol": "GPRO"
+ },
+ "queried_at": "2026-09-29T09:33:23Z",
+ "symbol": "GPRO"
+}

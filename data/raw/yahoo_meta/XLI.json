@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 914337000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "State Street Industrial Select Sector SPDR ETF",
+  "shortName": "State Street Industrial Select ",
+  "symbol": "XLI"
+ },
+ "queried_at": "2026-09-29T09:33:51Z",
+ "symbol": "XLI"
+}

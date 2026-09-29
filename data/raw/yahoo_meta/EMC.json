@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1684157400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Global X Emerging Markets Great Consumer ETF",
+  "shortName": "Global X Emerging Markets Great",
+  "symbol": "EMC"
+ },
+ "queried_at": "2026-09-29T09:33:20Z",
+ "symbol": "EMC"
+}

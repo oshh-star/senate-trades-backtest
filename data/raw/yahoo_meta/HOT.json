@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:24Z"
+ },
+ "queried_at": "2026-09-29T09:35:31Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "Hotchkis & Wiley Mid-Cap Value Fund ETF Class",
+   "quoteType": "EQUITY",
+   "shortname": null,
+   "symbol": "HWMV",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "New York Commodity Exchange",
+   "exchange": "CMX",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "U.S. Midwest Domestic Hot-Rolle",
+   "symbol": "HRC=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "New York Commodity Exchange",
+   "exchange": "CMX",
+   "longname": null,
+   "quoteType": "FUTURE",
+   "shortname": "North European Hot-Rolled Coil ",
+   "symbol": "EHR=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NY Mercantile",
+   "exchange": "NYM",
+   "longname": "Nasdaq US Small Cap Specialty R",
+   "quoteType": "FUTURE",
+   "shortname": "NY Harbor ULSD TAS,Nov-2026",
+   "symbol": "HOT=F",
+   "typeDisp": "Futures"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Park Hotels & Resorts Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Park Hotels & Resorts Inc.",
+   "symbol": "PK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Hyatt Hotels Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Hyatt Hotels Corporation",
+   "symbol": "H",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NMS",
+   "longname": "Host Hotels & Resorts, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Host Hotels & Resorts, Inc.",
+   "symbol": "HST",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "HOT"
+}

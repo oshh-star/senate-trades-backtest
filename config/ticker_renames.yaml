@@ -221,3 +221,5 @@ non_us:
 recycled:
 - ticker: USG
   reason: eFD "USG Corporation" (the building-materials company, bought by Knauf for cash in 2019); Yahoo's USG is now "USCF Gold Strategy Plus Income Fund"
+- ticker: UN
+  reason: eFD "Unilever N.V." (the Dutch Unilever share, unified into Unilever PLC, UL, in November 2020); Yahoo's UN is now "Corgi UNH 2x Daily ETF" (hand-listed 2026-09-29, E44)

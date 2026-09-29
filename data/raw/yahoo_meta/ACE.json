@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:32:54Z"
+ },
+ "queried_at": "2026-09-29T09:35:12Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NCM",
+   "longname": "Adicet Bio, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Adicet Bio, Inc.",
+   "symbol": "ACET",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Jakarta",
+   "exchange": "JKT",
+   "longname": "PT Aspirasi Hidup Indonesia Tbk",
+   "quoteType": "EQUITY",
+   "shortname": "Aspirasi Hidup Indonesia Tbk.",
+   "symbol": "ACES.JK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Taiwan",
+   "exchange": "TAI",
+   "longname": "Acer Incorporated",
+   "quoteType": "EQUITY",
+   "shortname": "ACER INC",
+   "symbol": "2353.TW",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "ALPS Clean Energy ETF",
+   "quoteType": "ETF",
+   "shortname": "ALPS Clean Energy ETF",
+   "symbol": "ACES",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Accel Entertainment, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Accel Entertainment, Inc.",
+   "symbol": "ACEL",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Invesco Equity and Income A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "Invesco Equity and  Income Fund",
+   "symbol": "ACEIX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Madrid Stock Exchange CATS",
+   "exchange": "MCE",
+   "longname": "Acerinox, S.A.",
+   "quoteType": "EQUITY",
+   "shortname": "ACERINOX, S.A.",
+   "symbol": "ACX.MC",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ACE"
+}
