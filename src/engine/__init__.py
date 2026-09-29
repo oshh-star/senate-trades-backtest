@@ -58,8 +58,8 @@ def warmup_start(cfg: dict, first: str) -> tuple[str, float, bool]:
     f = dt.date.fromisoformat(first)
     if months <= 0:
         return first, 0.0, False
-    k = f.year * 12 + f.month - 1 - months
-    w = dt.date(k // 12, k % 12 + 1, min(f.day, 28))
+    from src.metrics.benchmarks import months_back
+    w = dt.date.fromisoformat(months_back(first, months))
     scrape = cfg["data"]["scrape_start"]
     limited = w < scrape
     w = max(w, scrape)

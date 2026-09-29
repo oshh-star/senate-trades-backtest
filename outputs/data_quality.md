@@ -1763,3 +1763,37 @@ Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, ap
 | Same, each lot dropped after its SEC Form 25 delisting date | 2.5%    | 32.7%    | 68.3%     | 2022-10-11    |
 | Ledger cost basis still held ($)                            | 180,004 | 603,006  | 1,593,510 | 2022-08-16    |
 | Ledger lots still held                                      | 8       | 12       | 21        | 2022-08-16    |
+
+## Phase 5: metrics and benchmarks (in-sample only)
+
+_Stage `metrics`. Sample in-sample 2021-09-01 to 2024-02-29; prices and factors cut there. Results: `outputs/tables/phase5_insample_results.md`, `outputs/tables/phase5_event_study.md`._
+
+### 1. Senate universe (equal weight): members and symbols left out
+
+Members per month: min 48, median 76, max 135. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 181 symbol-months, 15 symbols. Month by month in `data/processed/universe_members.csv`.
+
+| symbol   |   months left out |
+|:---------|------------------:|
+| X        |                26 |
+| ECOM     |                24 |
+| WBA      |                20 |
+| LMST     |                12 |
+| SSBK     |                12 |
+| ATVI     |                12 |
+| MASI     |                12 |
+| JNPR     |                11 |
+| CNR      |                11 |
+| VMW      |                11 |
+| SIVB     |                11 |
+| QRTEP    |                 8 |
+| VRM      |                 6 |
+| PARA     |                 4 |
+| CYBR     |                 1 |
+
+### 2. NANC and KRUZ
+
+Both launched 2023-02-07; in-sample months with a full month of returns: 12 (2023-03 to 2024-02). Yahoo serves no history for KRUZ (renamed GOP on 2025-03-21), so KRUZ is priced with GOP (E34).
+
+### 3. Event study sample
+
+883 in-scope purchase and sale records with an in-sample entry date; 69 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last in-sample day (N per row in the event study table).
