@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:29Z"
+ },
+ "queried_at": "2026-09-29T09:35:35Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "ITC Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ITC LTD",
+   "symbol": "ITC.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "ITC Hotels Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ITC HOTELS LIMITED",
+   "symbol": "ITCHOTELS.NS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "ITC Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ITC LTD.",
+   "symbol": "ITC.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Bombay",
+   "exchange": "BSE",
+   "longname": "ITC Hotels Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ITC Hotels Limited",
+   "symbol": "ITCHOTELS.BO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "LUX",
+   "exchange": "LUX",
+   "longname": null,
+   "quoteType": "EQUITY",
+   "shortname": "ITC        GDR",
+   "symbol": "ITC-USD.LU",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hong Kong",
+   "exchange": "HKG",
+   "longname": "ITC Properties Group Limited",
+   "quoteType": "EQUITY",
+   "shortname": "ITC NEOCLOUD",
+   "symbol": "0199.HK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Investec Group",
+   "quoteType": "EQUITY",
+   "shortname": "Investec Ltd.",
+   "symbol": "ITCFY",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "ITC"
+}

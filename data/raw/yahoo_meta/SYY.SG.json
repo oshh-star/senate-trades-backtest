@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "EUR",
+  "exchangeName": "STU",
+  "exchangeTimezoneName": "Europe/Berlin",
+  "firstTradeDate": 1198825200,
+  "fullExchangeName": "Stuttgart",
+  "instrumentType": "EQUITY",
+  "longName": "Sysco Corp",
+  "shortName": "Sysco Corp.",
+  "symbol": "SYY.SG"
+ },
+ "queried_at": "2026-09-29T09:33:45Z",
+ "symbol": "SYY.SG"
+}

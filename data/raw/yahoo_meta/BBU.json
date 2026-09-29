@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:03Z"
+ },
+ "queried_at": "2026-09-29T09:35:17Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Brookfield Business Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "Brookfield Business Corporation",
+   "symbol": "BBUC",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "JPMorgan BetaBuilders U.S. Equity ETF",
+   "quoteType": "ETF",
+   "shortname": "JPMorgan BetaBuilders U.S. Equi",
+   "symbol": "BBUS",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NGM",
+   "longname": "GraniteShares 2x Long BB Daily ETF",
+   "quoteType": "ETF",
+   "shortname": "GRANITESHARES 2X LONG BB DAILY ",
+   "symbol": "BBUL",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "Toronto",
+   "exchange": "TOR",
+   "longname": "Brookfield Business Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "BROOKFIELD BUSINESS CORPORATION",
+   "symbol": "BBUC.TO",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Hamburg",
+   "exchange": "HAM",
+   "longname": null,
+   "quoteType": "ETF",
+   "shortname": "JPM ETFs(I)-BB US Equity      R",
+   "symbol": "BBUS.HM",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "OID",
+   "exchange": "OID",
+   "longname": "Bebuzee Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Bebuzee Inc.",
+   "symbol": "BBUZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "S\u00e3o Paulo",
+   "exchange": "SAO",
+   "longname": "Global X Funds",
+   "quoteType": "EQUITY",
+   "shortname": "GX CYBERSECTDRE",
+   "symbol": "BBUG39.SA",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "BBU"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1350048600,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Diamondback Energy, Inc.",
+  "shortName": "Diamondback Energy, Inc.",
+  "symbol": "FANG"
+ },
+ "queried_at": "2026-09-29T09:33:21Z",
+ "symbol": "FANG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 745248600,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "BorgWarner Inc.",
+  "shortName": "BorgWarner Inc.",
+  "symbol": "BWA"
+ },
+ "queried_at": "2026-09-29T09:33:05Z",
+ "symbol": "BWA"
+}

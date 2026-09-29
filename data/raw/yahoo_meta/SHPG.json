@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:41Z"
+ },
+ "queried_at": "2026-09-29T09:35:43Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NSE",
+   "exchange": "NSI",
+   "longname": "The Great Eastern Shipping Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "THE GE SHPG.LTD",
+   "symbol": "GESHIP.NS",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "SHPG"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 308410200,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "American Funds Tax-Exempt Bond A",
+  "shortName": "American Fds, The Tax-Exempt Bo",
+  "symbol": "AFTEX"
+ },
+ "queried_at": "2026-09-29T09:32:59Z",
+ "symbol": "AFTEX"
+}

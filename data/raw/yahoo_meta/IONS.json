@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NMS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 674487000,
+  "fullExchangeName": "NasdaqGS",
+  "instrumentType": "EQUITY",
+  "longName": "Ionis Pharmaceuticals, Inc.",
+  "shortName": "Ionis Pharmaceuticals, Inc.",
+  "symbol": "IONS"
+ },
+ "queried_at": "2026-09-29T09:33:26Z",
+ "symbol": "IONS"
+}

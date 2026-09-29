@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1250775000,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "ProShares Short 20+ Year Treasury",
+  "shortName": "ProShares Short 20+ Year Treasu",
+  "symbol": "TBF"
+ },
+ "queried_at": "2026-09-29T09:33:46Z",
+ "symbol": "TBF"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:32:52Z"
+ },
+ "queried_at": "2026-09-29T09:35:10Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "Amsterdam",
+   "exchange": "AMS",
+   "longname": "Wereldhave N.V.",
+   "quoteType": "EQUITY",
+   "shortname": "WERELDHAVE Gewone aandelen",
+   "symbol": "WHA.AS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "Zwitserleven Wereld Aandelenfonds",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0000CNW9.F",
+   "symbol": "0P0000CNW9.F",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Morgan Stanley Bank, N.A. Point to Point CD AANCTXX",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "AANCTXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "Aroundtown SA",
+   "quoteType": "EQUITY",
+   "shortname": "Aroundtown SA",
+   "symbol": "AANNF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "Goldman Sachs Bank USA Capped Point to Point CD AANLGXX",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "AANLGXX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "American Funds 2060 Trgt Date Retire A",
+   "quoteType": "MUTUALFUND",
+   "shortname": "American Funds 2060 Target Date",
+   "symbol": "AANTX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "1895 Wereld Aandelen Enhanced Indx D Inc",
+   "quoteType": "MUTUALFUND",
+   "shortname": "0P0001IT6X.F",
+   "symbol": "0P0001IT6X.F",
+   "typeDisp": "Fund"
+  }
+ ],
+ "symbol": "AAN"
+}

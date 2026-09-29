@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 883751400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Ameren Corporation",
+  "shortName": "Ameren Corporation",
+  "symbol": "AEE"
+ },
+ "queried_at": "2026-09-29T09:32:58Z",
+ "symbol": "AEE"
+}

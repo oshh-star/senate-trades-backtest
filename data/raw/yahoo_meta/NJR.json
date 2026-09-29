@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 322151400,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "New Jersey Resources Corporation",
+  "shortName": "NewJersey Resources Corporation",
+  "symbol": "NJR"
+ },
+ "queried_at": "2026-09-29T09:33:39Z",
+ "symbol": "NJR"
+}

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NAS",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 407514600,
+  "fullExchangeName": "Nasdaq",
+  "instrumentType": "MUTUALFUND",
+  "longName": "Permanent Portfolio Permanent I",
+  "shortName": "Permanent Portfolio Class I",
+  "symbol": "PRPFX"
+ },
+ "queried_at": "2026-09-29T09:33:40Z",
+ "symbol": "PRPFX"
+}

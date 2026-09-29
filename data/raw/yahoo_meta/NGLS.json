@@ -1,0 +1,33 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:38Z"
+ },
+ "queried_at": "2026-09-29T09:35:42Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "London",
+   "exchange": "LSE",
+   "longname": "CoreShares Natural Gas ETC",
+   "quoteType": "EQUITY",
+   "shortname": "LEVERAGE SHARES PUBLIC LIMITED ",
+   "symbol": "NGLS.L",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "NGLS"
+}

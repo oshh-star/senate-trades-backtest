@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 99153000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Cummins Inc.",
+  "shortName": "Cummins Inc.",
+  "symbol": "CMI"
+ },
+ "queried_at": "2026-09-29T09:33:10Z",
+ "symbol": "CMI"
+}

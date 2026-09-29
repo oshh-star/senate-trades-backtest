@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "PCX",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1168007400,
+  "fullExchangeName": "NYSEArca",
+  "instrumentType": "ETF",
+  "longName": "Invesco DB Precious Metals Fund",
+  "shortName": "Invesco DB Precious Metals Fund",
+  "symbol": "DBP"
+ },
+ "queried_at": "2026-09-29T09:33:19Z",
+ "symbol": "DBP"
+}

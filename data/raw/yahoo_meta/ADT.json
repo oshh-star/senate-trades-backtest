@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1516372200,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "ADT Inc.",
+  "shortName": "ADT Inc.",
+  "symbol": "ADT"
+ },
+ "queried_at": "2026-09-29T09:32:55Z",
+ "symbol": "ADT"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:47Z"
+ },
+ "queried_at": "2026-09-29T09:35:48Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "OTC Markets",
+   "exchange": "PNK",
+   "longname": "UAV Corp.",
+   "quoteType": "EQUITY",
+   "shortname": "UAV CORP.",
+   "symbol": "UMAV",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shenzhen",
+   "exchange": "SHZ",
+   "longname": "Aerospace CH UAV Co.,Ltd",
+   "quoteType": "EQUITY",
+   "shortname": "NANYANG TECH",
+   "symbol": "002389.SZ",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Tokyo Stock Exchange",
+   "exchange": "JPX",
+   "longname": "UACJ Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "UACJ CORPORATION",
+   "symbol": "5741.T",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Shanghai",
+   "exchange": "SHH",
+   "longname": "AVIC (Chengdu)UAS Co., Ltd.",
+   "quoteType": "EQUITY",
+   "shortname": "AVIC (CHENGDU) UAS CO LTD",
+   "symbol": "688297.SS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Korea",
+   "exchange": "KSC",
+   "longname": "UANGEL Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "UANGEL",
+   "symbol": "072130.KS",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Frankfurt",
+   "exchange": "FRA",
+   "longname": "UACJ Corporation",
+   "quoteType": "EQUITY",
+   "shortname": "UACJ Corp.                    R",
+   "symbol": "F4M.F",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Dusseldorf Stock Exchange",
+   "exchange": "DUS",
+   "longname": "UACJ Corp",
+   "quoteType": "EQUITY",
+   "shortname": "UACJ Corp.                    R",
+   "symbol": "F4M.DU",
+   "typeDisp": "Equity"
+  }
+ ],
+ "symbol": "UA-C"
+}

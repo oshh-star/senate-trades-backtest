@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1381411800,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Antero Resources Corporation",
+  "shortName": "Antero Resources Corporation",
+  "symbol": "AR"
+ },
+ "queried_at": "2026-09-29T09:33:00Z",
+ "symbol": "AR"
+}

@@ -1,0 +1,87 @@
+{
+ "chart_error": {
+  "error": {
+   "code": "Not Found",
+   "description": "No data found, symbol may be delisted"
+  },
+  "status": 404
+ },
+ "first_attempt": {
+  "chart_error": {
+   "error": {
+    "code": "Not Found",
+    "description": "No data found, symbol may be delisted"
+   },
+   "status": 404
+  },
+  "queried_at": "2026-09-29T09:33:13Z"
+ },
+ "queried_at": "2026-09-29T09:35:26Z",
+ "retried": true,
+ "search": [
+  {
+   "exchDisp": "NYSE",
+   "exchange": "NYQ",
+   "longname": "Coupang, Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Coupang, Inc.",
+   "symbol": "CPNG",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "SET",
+   "exchange": "SET",
+   "longname": "Central Pattana Public Company Limited",
+   "quoteType": "EQUITY",
+   "shortname": "CPN_CENTRAL PATTANA",
+   "symbol": "CPN.BK",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "Australian",
+   "exchange": "ASX",
+   "longname": "Caspin Resources Limited",
+   "quoteType": "EQUITY",
+   "shortname": "CASPIN FPO [CPN]",
+   "symbol": "CPN.AX",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NASDAQ",
+   "exchange": "NAS",
+   "longname": "CI Global Leaders Corporate Class (Series F shares) NL (295481A4)",
+   "quoteType": "MUTUALFUND",
+   "shortname": null,
+   "symbol": "CPNOX",
+   "typeDisp": "Fund"
+  },
+  {
+   "exchDisp": "OQB",
+   "exchange": "OQB",
+   "longname": "Euro Sun Mining Inc.",
+   "quoteType": "EQUITY",
+   "shortname": "Euro Sun Mining Inc.",
+   "symbol": "CPNFF",
+   "typeDisp": "Equity"
+  },
+  {
+   "exchDisp": "NYSEArca",
+   "exchange": "PCX",
+   "longname": "Calamos Nasdaq-100 Structured Alt Protection ETF - December",
+   "quoteType": "ETF",
+   "shortname": "Calamos Nasdaq-100 Structured A",
+   "symbol": "CPNQ",
+   "typeDisp": "ETF"
+  },
+  {
+   "exchDisp": "BATS Trading",
+   "exchange": "BTS",
+   "longname": "Tradr 2X Long CPNG Daily ETF",
+   "quoteType": "ETF",
+   "shortname": "Tradr 2X Long CPNG Daily ETF",
+   "symbol": "CPNX",
+   "typeDisp": "ETF"
+  }
+ ],
+ "symbol": "CPN"
+}
