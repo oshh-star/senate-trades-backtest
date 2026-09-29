@@ -5,8 +5,31 @@
 #   same_symbol: the company changed its name but kept the symbol; Yahoo's current name is trusted.
 #   rejected:    written by hand: same SEC company but NOT the same security (tracking stock exchanged,
 #                equity cancelled in bankruptcy, ...); never treated as a rename.
+#   recycled:    written by hand: Yahoo's history for the symbol belongs to another security although the eFD name
+#                contains the symbol (so the automatic name check passes); no prices, survivorship ledger.
+#   non_us:      written by hand: a symbol that is a non-US listing although Yahoo cannot say so (e.g. a
+#                Canadian depositary receipt); excluded as NON_US_LISTING by the clean stage.
 # The clean stage reads this file (price_ticker, instrument type), so rerun `clean` after editing it.
 renames:
+- old: SQ
+  new: XYZ
+  effective_date: '2025-01-21'
+  date_basis: ticker change date (NYSE), from the company
+  hand: true
+  source: 'K4 (Harry, 2026-09-28): Block, Inc. (formerly Square, Inc.; SEC CIK 1512673, which lists XYZ today) changed its NYSE symbol from SQ to XYZ effective 21 January 2025; same company, same shares.
+    Block press release 9 Jan 2025 (investors.block.xyz)'
+- old: BRKB
+  new: BRK-B
+  effective_date: ''
+  date_basis: 'not a rename: eFD wrote the class B symbol without its separator'
+  hand: true
+  source: eFD asset name "Berkshire Hathaway Inc." with ticker BRKB = Berkshire Hathaway class B (SEC CIK 1067983 lists BRK-B and BRK-A); Yahoo writes the class suffix as BRK-B
+- old: CCCS
+  new: CCC
+  effective_date: ''
+  date_basis: 'not a rename: eFD used a symbol the company never traded under'
+  hand: true
+  source: eFD asset name "CCC Intelligent Solutions Holdings Inc. Common Stock"; the company (SEC CIK 1818201) trades as CCC on NYSE (see the DGNR -> CCC rename)
 - old: ABC
   new: COR
   effective_date: '2023-08-15'
@@ -190,3 +213,11 @@ rejected:
   reason: Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity
 - ticker: WTW
   reason: Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity
+non_us:
+- ticker: BRK
+  reason: 'eFD asset name "Bershire Hathaway Cdr [Cad Hedged]": a Canadian Depositary Receipt (CAD-hedged) listed on Cboe Canada under BRK, not the US class B shares (BRK-B); K4'
+- ticker: COLPAL
+  reason: 'eFD asset name "COLGATE PALMOLIVE LTD.": COLPAL is the NSE (India) symbol of Colgate-Palmolive (India) Ltd, not the US company (CL); K4'
+recycled:
+- ticker: USG
+  reason: eFD "USG Corporation" (the building-materials company, bought by Knauf for cash in 2019); Yahoo's USG is now "USCF Gold Strategy Plus Income Fund"

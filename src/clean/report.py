@@ -291,6 +291,9 @@ def run_report(cfg: dict, R: dict) -> None:
               ("V6", "Add Spouse and Child trades", len(fam), "added (Spouse "
                f"{int((fam['owner'] == 'Spouse').sum())}, Child {int((fam['owner'] == 'Child').sum())})"),
               ("V9", "Same-day entry (filed before 15:30 ET)", int(s["filed_before_1530_et"].sum()), "enter same day")]
+    v16 = clean_rows[clean_rows["in_window"] & clean_rows["owner"].isin(cfg["universe"]["owners"])
+                     & (clean_rows["reason_code"] == "NON_EQUITY_ETF")]
+    vrows.append(("V16", "Add non-equity ETFs (bond, T-bill, commodity, other)", len(v16), "added"))
     for y in (3, 10):
         c = f"in_window_{y}y"
         n = int((clean_rows[c] & clean_rows["owner"].isin(cfg["universe"]["owners"])).sum())
@@ -298,6 +301,26 @@ def run_report(cfg: dict, R: dict) -> None:
     L += ["### 9. Rows each pre-registered variant flag touches", "",
           f"Relative to the {len(s):,} in-scope trades. V7, V8 and V10 change sizing or weighting only.", "",
           md(pd.DataFrame(vrows, columns=["Variant", "Change", "Trades", "Effect"])), ""]
+    # 10. K5: ETF classes
+    e = tr[tr["in_trades_clean"] & tr["is_etf"]]
+    ew = e[e["in_window"] & e["owner"].isin(cfg["universe"]["owners"])]
+    by_cls = pd.DataFrame({"ETF symbols (all variants)": e.groupby("etf_class")["price_ticker"].nunique(),
+                           "Trades, Self/Joint in window": ew.groupby("etf_class").size(),
+                           "Midpoint $": ew.groupby("etf_class")["amount_mid"].sum()}).fillna(0).reset_index()
+    syms = (e.groupby(["etf_class", "price_ticker"]).agg(category=("etf_category", "first"), method=("etf_class_method", "first"),
+                                                         trades=("trade_id", "size"), name=("asset_name", "first"))
+            .reset_index())
+    syms = syms[syms["etf_class"] != "equity"].assign(name=lambda d: d["name"].str[:45])
+    L += ["### 10. ETF asset classes (K5: the headline keeps equity ETFs only)", "",
+          f"Every ETF (Yahoo instrument type ETF, or an eFD name that says ETF when Yahoo cannot describe the symbol) "
+          f"is classified from Yahoo's fund category (cached in `data/raw/yahoo_fund/`), else from its fund name "
+          f"(rules in `src/clean/etf_class.py`). Classes kept in the headline: {cfg['universe'].get('etf_classes')}. "
+          f"Non-equity ETF trades carry reason NON_EQUITY_ETF and stay in trades_clean.csv for V16.", "",
+          md(by_cls), "", "Non-equity ETF symbols:", "", md(syms), ""]
+    unsure = e[e["etf_class_method"].str.startswith("default") | e["etf_class_method"].str.startswith("fund name: no")]
+    if len(unsure):
+        L += ["ETFs classified as equity only because no category was found and the name has no bond, commodity or "
+              "other keyword: " + ", ".join(sorted(unsure["price_ticker"].unique())) + ".", ""]
     write_section(2, L)
     print(f"  [clean] {len(rows):,} raw rows -> {len(tr):,} unique trades -> {len(s):,} in scope; "
           f"{len(clean):,} rows in {TRADES_CLEAN}; {len(excl):,} in {EXCLUSIONS}; {len(tickers):,} tickers")

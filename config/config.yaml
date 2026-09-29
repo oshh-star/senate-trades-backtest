@@ -49,6 +49,7 @@ analysis:
 universe:
   asset_classes: [common_stock, etf]   # options, bonds, crypto, mutual funds excluded
   include_etfs: true               # every trade carries is_etf; false = ETF-excluded variant
+  etf_classes: [equity]            # K5: equity ETFs only; V16 = [equity, fixed_income, commodity, other]
   exclude: [options, bonds, crypto, mutual_funds]
   owners: [Self, Joint]            # add Spouse, Child for the family-included variant
   keep_owner_field: true           # excluded owners stay in the raw cache and are counted by type
@@ -64,6 +65,9 @@ trades:
   unmatched_sales: ignore_and_log  # no shorting; includes stock bought before the window
   exchanges: ignore_and_log
   open_at_window_end: mark_to_last_price
+  series_ends_early: close_at_last_price     # E20, confirmed by K1
+  equal_dollar_amount: 15000       # V8 only: dollars per purchase (and per partial sale)
+  same_day_cutoff_et: "15:30"      # V9 only: filings timestamped before this enter at that day's close
   also_compute_transaction_date_returns: true  # senator's return vs copier's return
 
 # ---------------------------------------------------------------- PORTFOLIO
@@ -75,6 +79,14 @@ portfolio:
   event_study_horizons: [5, 21, 63, 126, 252]   # trading days
   returns: total_usd               # dividend-adjusted adjusted close, USD
 
+# ---------------------------------------------------------------- ENGINE (Phase 4)
+engine:
+  ledger_trades: skip              # K3: skip | spy_fill (V15: ledger purchases earn SPY's return)
+  drop_flags: []                   # trades_clean.csv flag columns whose trades are dropped: V1 [v1_tuberville],
+                                   #   V3 [v3_first_180d], V4 [bulk_ptr], V13 [v13_otc]
+  drop_senator_ranks: []           # V2: [k] drops the senator ranked k by in-scope trade count
+  sample: in_sample                # in_sample | full (full needs the OOS firewall open)
+
 prices:
   price_source: yahoo              # yahoo | crsp (CRSP CSV in data/raw/crsp/, robustness check)
   fallback_source: stooq           # Stooq was unreachable from the cloud on 2026-09-27
@@ -85,6 +97,8 @@ prices:
   calendar_symbol: SPY             # NYSE trading calendar = SPY's trading dates
   raw_dir: data/raw/prices/yahoo   # raw Yahoo chart responses (gzipped JSON), with download date
   ticker_renames: config/ticker_renames.yaml
+  repairs: config/price_repairs.yaml          # K6: hand-listed repairs of bad Yahoo prints (logged)
+  ledger_reasons: config/ledger_reasons.yaml  # K4: why each survivorship-ledger symbol has no prices
 
 factors:
   source: ken_french

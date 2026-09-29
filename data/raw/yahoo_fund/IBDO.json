@@ -1,0 +1,11 @@
+{
+ "category": "",
+ "error": "{'code': 'Not Found', 'description': 'Quote not found for symbol: IBDO'}",
+ "family": "",
+ "legal_type": "",
+ "long_name": "",
+ "queried_at": "2026-09-28T17:19:53Z",
+ "quote_type": "",
+ "status": 404,
+ "symbol": "IBDO"
+}

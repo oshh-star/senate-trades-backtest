@@ -121,13 +121,14 @@ Each row is removed at the FIRST step it fails, in this order. Steps 1-2 count r
 | 6      | ASSET_TYPE          | eFD asset type is not Stock or Other                                             | 1356      |   3924 |
 | 7      | OPTION_IN_NAME      | Asset name shows a call/put option                                               | 33        |   3891 |
 | 8      | EXCHANGE            | Exchange transaction (not a purchase or sale)                                    | 24        |   3867 |
-| 9      | NO_TICKER           | No ticker, and none recovered from the asset name                                | 236       |   3631 |
-| 10     | MUTUAL_FUND         | Yahoo: mutual fund                                                               | 65        |   3566 |
-| 11     | OTHER_INSTRUMENT    | Yahoo: neither equity, ETF nor mutual fund                                       | 1         |   3565 |
-| 12     | NON_US_LISTING      | Yahoo: not listed in the US                                                      | 0         |   3565 |
-| 13     | AMOUNT_UNPARSED     | Amount string not understood                                                     | 0         |   3565 |
-| 14     | OWNER               | Owner not in universe.owners                                                     | 1052      |   2513 |
-|        |                     | = IN-SCOPE TRADES (headline sample)                                              |           |   2513 |
+| 9      | NO_TICKER           | No ticker, and none recovered from the asset name                                | 235       |   3632 |
+| 10     | MUTUAL_FUND         | Yahoo: mutual fund                                                               | 65        |   3567 |
+| 11     | OTHER_INSTRUMENT    | Yahoo: neither equity, ETF nor mutual fund                                       | 1         |   3566 |
+| 12     | NON_US_LISTING      | Yahoo: not listed in the US                                                      | 3         |   3563 |
+| 13     | NON_EQUITY_ETF      | ETF that is not an equity fund (K5: bond, T-bill, commodity or other)            | 187       |   3376 |
+| 14     | AMOUNT_UNPARSED     | Amount string not understood                                                     | 0         |   3376 |
+| 15     | OWNER               | Owner not in universe.owners                                                     | 1034      |   2342 |
+|        |                     | = IN-SCOPE TRADES (headline sample)                                              |           |   2342 |
 
 Owner type by reason (A01: Spouse and Child trades are counted, not silently dropped):
 
@@ -140,11 +141,13 @@ Owner type by reason (A01: Spouse and Child trades are counted, not silently dro
 | ASSET_TYPE          |      88 |     434 |    382 |      452 |
 | OPTION_IN_NAME      |       0 |       0 |     33 |        0 |
 | EXCHANGE            |       0 |       7 |      8 |        9 |
-| NO_TICKER           |      17 |       6 |     32 |      181 |
+| NO_TICKER           |      17 |       7 |     30 |      181 |
 | MUTUAL_FUND         |       0 |      24 |      7 |       34 |
 | OTHER_INSTRUMENT    |       0 |       0 |      0 |        1 |
-| OWNER               |      39 |       0 |      0 |    1,013 |
-| (in scope)          |       0 |   1,423 |  1,090 |        0 |
+| NON_US_LISTING      |       0 |       3 |      0 |        0 |
+| NON_EQUITY_ETF      |       0 |     123 |     46 |       18 |
+| OWNER               |      39 |       0 |      0 |      995 |
+| (in scope)          |       0 |   1,296 |  1,046 |        0 |
 | Total               |     289 |   6,247 |  2,763 |    5,259 |
 
 ASSET_TYPE detail (in-window trades only; earlier steps took the rest):
@@ -160,11 +163,13 @@ ASSET_TYPE detail (in-window trades only; earlier steps took the rest):
 
 OTHER_INSTRUMENT / NON_US_LISTING detail (Yahoo type or exchange):
 
-| reason_code      | reason_detail   |   Trades |
-|:-----------------|:----------------|---------:|
-| OTHER_INSTRUMENT | ECNQUOTE        |        1 |
+| reason_code      | reason_detail                                                                                                                                                                   |   Trades |
+|:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------:|
+| NON_US_LISTING   | by hand: eFD asset name "Bershire Hathaway Cdr [Cad Hedged]": a Canadian Depositary Receipt (CAD-hedged) listed on Cboe Canada under BRK, not the US class B shares (BRK-B); K4 |        1 |
+| NON_US_LISTING   | by hand: eFD asset name "COLGATE PALMOLIVE LTD.": COLPAL is the NSE (India) symbol of Colgate-Palmolive (India) Ltd, not the US company (CL); K4                                |        2 |
+| OTHER_INSTRUMENT | ECNQUOTE                                                                                                                                                                        |        1 |
 
-Rows excluded from the headline sample but kept in trades_clean.csv for pre-registered variants: OUTSIDE_WINDOW 4,844, OWNER 1,052 (OUTSIDE_WINDOW rows there fall inside the 3- or 10-year window; OWNER rows are the V6 family trades).
+Rows excluded from the headline sample but kept in trades_clean.csv for pre-registered variants: OUTSIDE_WINDOW 4,844, OWNER 1,034, NON_EQUITY_ETF 187, NO_TICKER 1 (OUTSIDE_WINDOW rows there fall inside the 3- or 10-year window; OWNER rows are the V6 family trades).
 
 ### 2. Amendments
 
@@ -179,16 +184,16 @@ Rows excluded from the headline sample but kept in trades_clean.csv for pre-regi
 
 - Duplicate rows removed: **2,182** (2,158 restated in an amendment, 24 repeated from an unrelated earlier filing). Several identical lines inside one filing are separate trades and are kept.
 - Trades that exist ONLY in an amendment (dated by the amendment, no look-ahead): **438** (in scope: **0**).
-- Trades whose fields an amendment corrected (corrected value used, original datetime kept): **179** (in scope: **34**); with a substantive change (owner, date, ticker, type or amount): **170** (in scope: **34**). By field (`data/interim/amendment_corrections.csv`):
+- Trades whose fields an amendment corrected (corrected value used, original datetime kept): **179** (in scope: **29**); with a substantive change (owner, date, ticker, type or amount): **170** (in scope: **29**). By field (`data/interim/amendment_corrections.csv`):
 
 | field                |   trades |   in_scope_trades |
 |:---------------------|---------:|------------------:|
 | amount               |        6 |                 1 |
-| asset_name           |       46 |                 8 |
+| asset_name           |       46 |                 4 |
 | asset_type           |        8 |                 0 |
 | owner                |       38 |                 2 |
-| ticker               |       34 |                 9 |
-| transaction_date_iso |       28 |                 3 |
+| ticker               |       34 |                 5 |
+| transaction_date_iso |       28 |                 2 |
 | transaction_type     |       79 |                19 |
 
 - UNLINKED amendments (14): no earlier electronic filing found. Reason: 14 original predates the scrape start. Their rows count as first disclosed by the amendment.
@@ -197,14 +202,14 @@ Rows excluded from the headline sample but kept in trades_clean.csv for pre-regi
 **As first published (J3, headline) vs as revised (V14).** A trade corrected by an amendment has two or more records: the original, effective at the first disclosure, and each corrected version, effective at its amendment's datetime (only changes of owner, date, asset, asset type, type or amount make a new record; a reworded asset name does not). Each record passes the filters on its own values and date. `data/processed/trade_records.csv` lists every record for the engine.
 
 - Trades in trades_clean.csv with more than one record: **131**, 267 records; 5 trades have three or more records.
-- In scope under both rules: 2,511; only as first published (J3): 2; only as revised (V14): 0. Headline (J3) in-scope trades: **2,513**; as revised: **2,511**.
+- In scope under both rules: 2,340; only as first published (J3): 2; only as revised (V14): 0. Headline (J3) in-scope trades: **2,342**; as revised: **2,340**.
 
 Corrected trades by which of their records is in scope:
 
 | orig              |   correction in scope |   correction out |
 |:------------------|----------------------:|-----------------:|
-| original in scope |                    27 |                2 |
-| original out      |                     1 |              101 |
+| original in scope |                    23 |                2 |
+| original out      |                     1 |              105 |
 
 AMBIGUOUS amendments (for Harry):
 
@@ -268,9 +273,9 @@ Every distinct amount string in the raw rows and how it was parsed (open top ban
 
 ### 4. Tickers
 
-- Unique tickers checked with Yahoo (3/5/10-year windows, any owner): **1,522**; kept 1,464; with at least one in-scope trade 982. Status by ticker: kept 1464, excluded: mutual fund 51, excluded: non-US listing 6, excluded: other instrument type 1.
+- Unique tickers checked with Yahoo (3/5/10-year windows, any owner): **1,523**; kept 1,463; with at least one in-scope trade 949. Status by ticker: kept 1463, excluded: mutual fund 51, excluded: non-US listing 8, excluded: other instrument type 1.
 - Rows with a raw ticker changed by normalisation (case, spaces, share class BRK.B -> BRK-B): 23.
-- Missing-ticker asset names recovered: **490** names, 544 trades (381 Self/Joint in the default window). Not recovered: **304** names, 544 trades (39 Self/Joint in window); these are NO_TICKER exclusions. Full list: `data/interim/ticker_recovery.csv`.
+- Missing-ticker asset names recovered: **492** names, 546 trades (383 Self/Joint in the default window). Not recovered: **302** names, 542 trades (37 Self/Joint in window); these are NO_TICKER exclusions. Full list: `data/interim/ticker_recovery.csv`.
 
 Hand-written overrides (J5, `config/asset_name_overrides.yaml`; applied only when Yahoo's, or failing that SEC's, company name for the ticker confirms it):
 
@@ -281,12 +286,12 @@ Hand-written overrides (J5, `config/asset_name_overrides.yaml`; applied only whe
 | rolls royce                 | RYCEY    | yahoo          | Yahoo name for RYCEY: Rolls-Royce Holdings plc                                               | Rolls Royce Holdings plc Sponsored ADR (RYCEY)                        |
 | ishares tr russell 1000 etf | IWB      | yahoo          | Yahoo name for IWB: iShares Russell 1000 ETF                                                 | Ishares TR Russell 1000 ETF                                           |
 | = starbuck                  | SBUX     | yahoo          | Yahoo name for SBUX: Starbucks Corporation                                                   | starbuck                                                              |
-| (wizey)                     | WIZEY    |                | not confirmed: expected 'Wise', Yahoo name for WIZEY: (Yahoo does not know the symbol)       | Wise plc Sponsored ADR (WIZEY)                                        |
+| (wizey)                     | WIZEY    | hand           | K2: ticker WIZEY confirmed by hand; its Yahoo prices are never used (survivorship ledger)    | Wise plc Sponsored ADR (WIZEY)                                        |
 | (murgy)                     | MURGY    | yahoo          | Yahoo name for MURGY: Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München | Munich Re Group ADR (MURGY)                                           |
-| (holx)                      | HOLX     |                | not confirmed: expected 'Hologic', Yahoo name for HOLX: (Yahoo does not know the symbol)     | Hologic, Inc. (HOLX)                                                  |
+| (holx)                      | HOLX     | hand           | K2: ticker HOLX confirmed by hand; its Yahoo prices are never used (survivorship ledger)     | Hologic, Inc. (HOLX)                                                  |
 | (bk)                        | BK       | yahoo          | Yahoo name for BNY: The Bank of New York Mellon Corporation                                  | Bank of New York Mellon Corp (BK)                                     |
 | (pstg)                      | PSTG     | yahoo          | Yahoo name for P: Everpure, Inc.                                                             | Everpure, Inc. Class A (PSTG)                                         |
-| (kyocy)                     | KYOCY    |                | not confirmed: expected 'Kyocera', Yahoo name for KYOCY: (Yahoo does not know the symbol)    | Kyocera Corporation ADR Japan (KYOCY)                                 |
+| (kyocy)                     | KYOCY    | hand           | K2: ticker KYOCY confirmed by hand; its Yahoo prices are never used (survivorship ledger)    | Kyocera Corporation ADR Japan (KYOCY)                                 |
 
 Recovered:
 
@@ -468,7 +473,7 @@ Recovered:
 | Pan Pacific International Holdings Corporation ADR (DQJCY)                       | DQJCY       | embedded |          1 |                               1 | embedded ticker DQJCY; name words shared with Pan Pacific International Holdings Corporation/Pan Pac Intl Hldgs Corp.: pacific, pan                                                                             |
 | East Japan Railway Co ADR (EJPRY)                                                | EJPRY       | embedded |          1 |                               1 | embedded ticker EJPRY; name words shared with East Japan Railway Company/East Japan Railway Co.: east, railway                                                                                                  |
 | Zurich Insurance Group Ltd Sponsored ADR (ZURVY)                                 | ZURVY       | embedded |          2 |                               2 | embedded ticker ZURVY; name words shared with Zurich Insurance Group AG/Zurich Insurance Group Ltd: insurance, zurich                                                                                           |
-| Wise plc Sponsored ADR (WIZEY)                                                   | WSE         | sec_name |          2 |                               2 | J5 override '(wizey)' (NOT confirmed); then embedded ticker WIZEY not recognised by Yahoo; then SEC exact name match: Wise Group plc (CIK 2099039)                                                              |
+| Wise plc Sponsored ADR (WIZEY)                                                   | WIZEY       | override |          2 |                               2 | J5 override '(wizey)' (hand)                                                                                                                                                                                    |
 | Unicredit SPA Unsponsored ADR (UNCRY)                                            | UNCRY       | embedded |          2 |                               2 | embedded ticker UNCRY; name words shared with UniCredit S.p.A./UniCredito Spa: unicredit                                                                                                                        |
 | Swisscom AG Sponsored ADR (SCMWY)                                                | SCMWY       | embedded |          2 |                               2 | embedded ticker SCMWY; name words shared with Swisscom AG/Swisscom AG/SWISSCOM AG: swisscom                                                                                                                     |
 | Schneider Electric SE Unsponsored ADR (SBGSY)                                    | SBGSY       | embedded |          2 |                               2 | embedded ticker SBGSY; name words shared with Schneider Electric S.E./Schneider Electric SE: electric, schneider                                                                                                |
@@ -623,6 +628,7 @@ Recovered:
 | Lasertec Corporation ADR (LSRCY)                                                 | LSRCY       | embedded |          1 |                               1 | embedded ticker LSRCY; name words shared with Lasertec Corporation/Lasertec Corp.: lasertec                                                                                                                     |
 | Land Secs Group plc ADR (LDSCY)                                                  | LDSCY       | embedded |          1 |                               1 | embedded ticker LDSCY; name words shared with Land Securities Group Plc/Land Securities Group Plc.: land                                                                                                        |
 | Lam Research Corporation (LRCX)                                                  | LRCX        | embedded |          1 |                               1 | embedded ticker LRCX; name words shared with Lam Research Corporation/Lam Research Corporation/LAM RESEARCH CORP: lam, lamresearchcorporation, research                                                         |
+| Kyocera Corporation ADR Japan (KYOCY)                                            | KYOCY       | override |          1 |                               1 | J5 override '(kyocy)' (hand)                                                                                                                                                                                    |
 | Kuehne & Nagel International AG ADR (KHNGY)                                      | KHNGY       | embedded |          1 |                               1 | embedded ticker KHNGY; name words shared with Kuehne + Nagel International AG/Kuehne & Nagel International AG: kuehne, nagel                                                                                    |
 | Kubota Corporation ADR Japan (KUBTY)                                             | KUBTY       | embedded |          1 |                               1 | embedded ticker KUBTY; name words shared with Kubota Corporation/Kubota Corp.: kubota                                                                                                                           |
 | Koninklijke Philips NV Sponsored ADR (PHG)                                       | PHG         | embedded |          1 |                               1 | embedded ticker PHG; name words shared with Koninklijke Philips N.V./Koninklijke Philips N.V. NY Reg/KONINKLIJKE PHILIPS NV: koninklijke, philips                                                               |
@@ -779,6 +785,7 @@ Recovered:
 | Allianz SE ADR (ALIZY)                                                           | ALIZY       | embedded |          1 |                               1 | embedded ticker ALIZY; name words shared with Allianz SE/Allianz SE: allianz                                                                                                                                    |
 | Loews Corporation (L)                                                            | L           | embedded |          1 |                               1 | embedded ticker L; name words shared with Loews Corporation/Loews Corporation/LOEWS CORP: loews, loewscorporation                                                                                               |
 | Alfa Laval AB Sweden ADR (ALFVY)                                                 | ALFVY       | embedded |          1 |                               1 | embedded ticker ALFVY; name words shared with Alfa Laval AB (publ)/Alfa-Laval AB: ab, alfa, laval                                                                                                               |
+| Hologic, Inc. (HOLX)                                                             | HOLX        | override |          1 |                               1 | J5 override '(holx)' (hand)                                                                                                                                                                                     |
 | Everpure, Inc. Class A (PSTG)                                                    | PSTG        | override |          1 |                               1 | J5 override '(pstg)' (yahoo)                                                                                                                                                                                    |
 | Bank of New York Mellon Corp (BK)                                                | BK          | override |          1 |                               1 | J5 override '(bk)' (yahoo)                                                                                                                                                                                      |
 | LVMH Moet Hennessy Louis ADR (LVMUY)                                             | LVMUY       | embedded |          1 |                               1 | embedded ticker LVMUY; name words shared with LVMH Moët Hennessy - Louis Vuitton, Société Européenne/LVMH-Moet Hennessy Louis Vuitto: hennessy, louis, lvmh, moet                                               |
@@ -817,8 +824,6 @@ Not recovered, Self/Joint in the default window (for Harry):
 | West Deptford Energy Holdings, LLC Company: West Deptford Energy Holdings, LLC (New York, NY) Description: Energy Company                                                                                      | Other        |             |                               1 | no exact SEC name match                                                                                                                                                                                                                                                                            |
 | Contour Venture Partners V, LP Company: Contour Venture Partners V, LP (Princeton, NJ) Description: Limited partnership for the purpose of making early stage equity investments.                              | Other        |             |                               1 | no exact SEC name match                                                                                                                                                                                                                                                                            |
 | Hall Ward Energy Fund II, LP Company: Hall Ward Energy Fund II, LP (Oklahoma City, OK) Description: Limited Partnership with the purpose of investing in non-operating working interests in oil and gas wells. | Other        |             |                               1 | no exact SEC name match                                                                                                                                                                                                                                                                            |
-| Kyocera Corporation ADR Japan (KYOCY)                                                                                                                                                                          | Stock        | KYOCY       |                               1 | J5 override '(kyocy)' (NOT confirmed); then embedded ticker KYOCY not recognised by Yahoo; then SEC company CIK 57083 has several tickers: KYOAY, KYOCF                                                                                                                                            |
-| Hologic, Inc. (HOLX)                                                                                                                                                                                           | Stock        | HOLX        |                               1 | J5 override '(holx)' (NOT confirmed); then embedded ticker HOLX not recognised by Yahoo; then no exact SEC name match                                                                                                                                                                              |
 
 Excluded by Yahoo classification (in-window trades):
 
@@ -854,9 +859,11 @@ Excluded by Yahoo classification (in-window trades):
 | MUTUAL_FUND      | VWUAX    |        1 | Vanguard US Growth Admiral                          | Nasdaq     | Vanguard U.S. Growth Fund Admiral Shares                                              |
 | MUTUAL_FUND      | VWUSX    |        1 | Vanguard US Growth Investor                         | Nasdaq     | Vanguard U.S. Growth Fund                                                             |
 | MUTUAL_FUND      | WWSYX    |        3 | Westwood Quality SmallCap Fund Ultra                | Nasdaq     | Westwood Quality Smallcap Fund - Ultra Shares                                         |
+| NON_US_LISTING   | BRK      |        1 |                                                     |            | Bershire Hathaway Cdr [Cad Hedged]                                                    |
+| NON_US_LISTING   | COLPAL   |        2 |                                                     |            | COLGATE PALMOLIVE LTD.                                                                |
 | OTHER_INSTRUMENT | KH       |        1 |                                                     | NYSE       | KH                                                                                    |
 
-Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **173** tickers, 88 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
+Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **169** tickers, 83 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
 
 | ticker   |   n_in_scope | first_trade_date   | last_trade_date   | yahoo_name_mismatch   | yahoo_name                                  | efd_asset_names                                                                                                                                                                 |
 |:---------|-------------:|:-------------------|:------------------|:----------------------|:--------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -883,12 +890,9 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | BKEP     |            1 | 2021-12-29         | 2021-12-29        | False                 |                                             | Blueknight Energy Partners L.P., L.L.C. - Common U                                                                                                                              |
 | BKEPP    |            1 | 2022-08-19         | 2022-08-19        | False                 |                                             | Blueknight Energy Partners L.P. - Series A Preferr                                                                                                                              |
 | BPL      |            0 | 2016-12-13         | 2019-09-18        | False                 |                                             | Buckeye Partners, L.P.                                                                                                                                                          |
-| BRK      |            1 | 2025-02-13         | 2025-02-13        | False                 |                                             | Bershire Hathaway Cdr [Cad Hedged]                                                                                                                                              |
-| BRKB     |            0 | 2017-03-02         | 2018-12-06        | False                 |                                             | Berkshire Hathaway Inc.                                                                                                                                                         |
-| BSCP     |            1 | 2025-12-17         | 2025-12-17        | False                 |                                             | Invesco BulletShares 2025 Corporate Bond ETF                                                                                                                                    |
+| BRK      |            0 | 2025-02-13         | 2025-02-13        | False                 |                                             | Bershire Hathaway Cdr [Cad Hedged]                                                                                                                                              |
 | CAB      |            0 | 2016-10-06         | 2016-11-15        | False                 |                                             | Cabela's Incorporated                                                                                                                                                           |
 | CBS      |            0 | 2018-01-18         | 2019-11-12        | False                 |                                             | CBS Corporation                                                                                                                                                                 |
-| CCCS     |            0 | 2023-04-28         | 2023-04-28        | False                 |                                             | CCC Intelligent Solutions Holdings Inc. Common Sto                                                                                                                              |
 | CELG     |            0 | 2015-07-02         | 2019-10-01        | False                 |                                             | Celgene Corporation | Celgene Corporation (NASDAQ)                                                                                                                              |
 | CEM      |            0 | 2021-12-21         | 2021-12-21        | False                 |                                             | ClearBridge MLP and Midstream Fund Inc. Common Sto                                                                                                                              |
 | CEQP     |            0 | 2019-05-28         | 2020-04-07        | False                 |                                             | Crestwood Equity Partners LP                                                                                                                                                    |
@@ -897,7 +901,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | CLR      |            0 | 2018-05-03         | 2019-04-16        | False                 |                                             | Continental Resources, Inc.                                                                                                                                                     |
 | CMA      |            0 | 2017-03-16         | 2017-06-15        | False                 |                                             | Comerica Incorporated                                                                                                                                                           |
 | CNR      |            0 | 2021-03-29         | 2021-03-29        | True                  | Core Natural Resources, Inc.                | Cornerstone Building Brands, Inc.                                                                                                                                               |
-| COLPAL   |            2 | 2025-04-08         | 2025-10-09        | False                 |                                             | COLGATE PALMOLIVE LTD.                                                                                                                                                          |
+| COLPAL   |            0 | 2025-04-08         | 2025-10-09        | False                 |                                             | COLGATE PALMOLIVE LTD.                                                                                                                                                          |
 | CONE     |            0 | 2020-08-21         | 2021-11-26        | False                 |                                             | CyrusOne Inc. | CyrusOne Inc - Common Stock                                                                                                                                     |
 | COUP     |            0 | 2020-06-17         | 2022-11-11        | False                 |                                             | Coupa Software Incorporated | Coupa Software Incorporated - Common Stock                                                                                                        |
 | CSII     |            0 | 2023-04-05         | 2023-04-05        | False                 |                                             | Cardiovascular Systems, Inc. - Common Stock                                                                                                                                     |
@@ -934,10 +938,8 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | HBI      |            0 | 2017-04-20         | 2020-11-20        | False                 |                                             | Hanesbrands Inc.                                                                                                                                                                |
 | HDS      |            0 | 2016-11-15         | 2016-11-15        | False                 |                                             | HD Supply Holdings, Inc.                                                                                                                                                        |
 | HES      |            1 | 2024-03-28         | 2024-03-28        | False                 |                                             | Hess Corp                                                                                                                                                                       |
-| HOLX     |            0 | 2016-12-01         | 2023-01-11        | False                 |                                             | Hologic, Inc. | Hologic, Inc. - Common Stock                                                                                                                                    |
+| HOLX     |            1 | 2016-12-01         | 2026-03-27        | False                 |                                             | Hologic, Inc. | Hologic, Inc. - Common Stock | Hologic, Inc. (HOLX)                                                                                                             |
 | HYH      |            0 | 2016-08-22         | 2016-08-23        | False                 |                                             | Halyard Health, Inc.                                                                                                                                                            |
-| IBDO     |            1 | 2022-06-30         | 2022-06-30        | False                 |                                             | iShares iBonds Dec 2023 Term Corporate ETF                                                                                                                                      |
-| IBDQ     |            2 | 2022-06-30         | 2025-12-18        | False                 |                                             | iShares iBonds Dec 2025 Term Corporate ETF | Dec 2025 Term Corp Ishares Ibonds ETF                                                                                              |
 | IBKC     |            0 | 2015-05-06         | 2015-05-07        | False                 |                                             | IberiaBank Corp. (NASDAQ)                                                                                                                                                       |
 | IIN      |            0 | 2018-07-26         | 2018-07-26        | False                 |                                             | IntriCon Corporation                                                                                                                                                            |
 | INST     |            1 | 2023-01-03         | 2024-01-04        | False                 |                                             | Instructure Holdings, Inc. Common Stock | Instructure Holdings Inc                                                                                                              |
@@ -947,6 +949,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | JWN      |            0 | 2016-11-14         | 2016-11-14        | False                 |                                             | Nordstrom, Inc.                                                                                                                                                                 |
 | K        |            0 | 2017-09-27         | 2025-12-11        | False                 |                                             | Kellogg Company | Kellanova                                                                                                                                                     |
 | KL       |            0 | 2020-02-04         | 2020-02-04        | False                 |                                             | Kirkland Lake Gold Ltd.                                                                                                                                                         |
+| KYOCY    |            1 | 2026-03-30         | 2026-03-30        | False                 |                                             | Kyocera Corporation ADR Japan (KYOCY)                                                                                                                                           |
 | LAZR     |            0 | 2025-06-26         | 2025-12-24        | True                  | Tema Photonics & Optical ETF                | Luminar Technologies Inc                                                                                                                                                        |
 | LGF-B    |            0 | 2018-11-09         | 2020-04-14        | False                 |                                             | Lions Gate Entertainment Corp.                                                                                                                                                  |
 | LLTC     |            0 | 2017-03-14         | 2017-03-14        | False                 |                                             | Linear Technology Corporation                                                                                                                                                   |
@@ -995,13 +998,11 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | RSPP     |            0 | 2017-06-26         | 2017-11-13        | False                 |                                             | RSP Permian, Inc.                                                                                                                                                               |
 | RTN      |            0 | 2017-03-16         | 2020-04-02        | False                 |                                             | Raytheon Company                                                                                                                                                                |
 | RVNC     |            0 | 2023-10-04         | 2023-10-04        | False                 |                                             | Revance Therapeutics, Inc. - Common Stock                                                                                                                                       |
-| RYT      |            0 | 2018-03-09         | 2018-03-09        | False                 |                                             | Guggenheim S&P 500 Eq Wt Technology ETF                                                                                                                                         |
 | SAND     |            0 | 2023-01-11         | 2023-01-11        | False                 |                                             | Sandstorm Gold Ltd. Ordinary Shares (Canada)                                                                                                                                    |
 | SCG      |            0 | 2017-08-22         | 2017-08-22        | False                 |                                             | SCANA Corporation                                                                                                                                                               |
 | SHLX     |            0 | 2018-02-05         | 2020-04-15        | False                 |                                             | Shell Midstream Partners, L.P.                                                                                                                                                  |
 | SI       |            0 | 2020-11-20         | 2022-01-31        | True                  | Shoulder Innovations, Inc.                  | Silvergate Capital Corporation | Silvergate Capital Corporation Class A Common Stoc                                                                                             |
 | SIVB     |            1 | 2021-03-29         | 2022-03-30        | False                 |                                             | SVB Financial Group | SVB Financial Group - Common Stock                                                                                                                        |
-| SQ       |            2 | 2018-12-28         | 2023-09-20        | False                 |                                             | Square, Inc. | Block, Inc. Class A Common Stock, | Square, Inc. Class A Common Stock                                                                                            |
 | SRCL     |            0 | 2016-12-01         | 2016-12-01        | False                 |                                             | Stericycle, Inc.                                                                                                                                                                |
 | SSBK     |           15 | 2021-08-12         | 2024-04-30        | False                 |                                             | Southern States Bancshares, Inc. - Common Stock                                                                                                                                 |
 | STI      |            0 | 2017-03-16         | 2017-06-15        | True                  | Solidion Technology, Inc.                   | SunTrust Banks, Inc.                                                                                                                                                            |
@@ -1014,6 +1015,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | TWTR     |            0 | 2017-05-24         | 2017-05-24        | False                 |                                             | Twitter, Inc.                                                                                                                                                                   |
 | TWX      |            0 | 2017-03-16         | 2018-05-04        | False                 |                                             | Time Warner Inc.                                                                                                                                                                |
 | UN       |            0 | 2017-03-16         | 2020-04-14        | True                  | Corgi UNH 2x Daily ETF                      | Unilever N.V. | The Unilever Group                                                                                                                                              |
+| USG      |            0 | 2016-09-01         | 2018-06-06        | True                  | USCF Gold Strategy Plus Income Fund         | USG Corporation                                                                                                                                                                 |
 | VGR      |            0 | 2019-05-02         | 2019-05-02        | False                 |                                             | Vector Group Ltd.                                                                                                                                                               |
 | VIAB     |            0 | 2016-11-07         | 2017-02-10        | False                 |                                             | Viacom, Inc.                                                                                                                                                                    |
 | VIAC     |            0 | 2020-02-21         | 2020-04-14        | False                 |                                             | ViacomCBS Inc.                                                                                                                                                                  |
@@ -1022,6 +1024,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | VSM      |            0 | 2016-11-07         | 2017-11-16        | False                 |                                             | Versum Materials, Inc.                                                                                                                                                          |
 | WBA      |            7 | 2017-03-16         | 2024-04-30        | False                 |                                             | Walgreens Boots Alliance, Inc. - Common Stock | Walgreens Boots Alliance, Inc.                                                                                                  |
 | WFM      |            0 | 2016-09-07         | 2017-08-17        | False                 |                                             | Whole Foods Market, Inc.                                                                                                                                                        |
+| WIZEY    |            2 | 2026-03-30         | 2026-03-31        | False                 |                                             | Wise plc Sponsored ADR (WIZEY)                                                                                                                                                  |
 | WOOF     |            0 | 2017-02-01         | 2017-03-14        | True                  | Petco Health and Wellness Company, Inc.     | VCA Inc.                                                                                                                                                                        |
 | WPX      |            0 | 2016-09-01         | 2020-04-14        | False                 |                                             | WPX Energy, Inc.                                                                                                                                                                |
 | WPZ      |            0 | 2016-08-11         | 2016-09-13        | False                 |                                             | Williams Partners L.P.                                                                                                                                                          |
@@ -1038,40 +1041,40 @@ OTC-traded tickers (kept, `is_otc`): 304 tickers, 315 in-scope trades.
 
 ### 5. Concentration by senator (in-scope trades)
 
-31 senators, 2,513 trades, $91,589,756 at range midpoints.
+31 senators, 2,342 trades, $87,814,671 at range midpoints.
 
 By trade count:
 
 |   rank | senator              | party      |   trades |    dollars | share_trades   | share_dollars   | cum_share_trades   |
 |-------:|:---------------------|:-----------|---------:|-----------:|:---------------|:----------------|:-------------------|
-|      1 | Tommy Tuberville     | Republican |      734 | 28,619,367 | 29.2%          | 31.2%           | 29.2%              |
-|      2 | Alan Armstrong       | Republican |      700 | 24,635,350 | 27.9%          | 26.9%           | 57.1%              |
-|      3 | John Boozman         | Republican |      387 |  3,695,694 | 15.4%          | 4.0%            | 72.5%              |
-|      4 | Markwayne Mullin     | Republican |      326 | 13,109,663 | 13.0%          | 14.3%           | 85.4%              |
-|      5 | Sheldon Whitehouse   | Democrat   |       81 |  1,666,040 | 3.2%           | 1.8%            | 88.7%              |
-|      6 | Dan Sullivan         | Republican |       68 |    807,034 | 2.7%           | 0.9%            | 91.4%              |
-|      7 | Jerry Moran          | Republican |       56 |    521,528 | 2.2%           | 0.6%            | 93.6%              |
-|      8 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.3%           | 0.5%            | 94.9%              |
-|      9 | David McCormick      | Republican |       24 |  4,148,012 | 1.0%           | 4.5%            | 95.8%              |
-|     10 | Ashley Moody         | Republican |       23 |  1,926,512 | 0.9%           | 2.1%            | 96.7%              |
-|     11 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 4.9%            | 97.5%              |
-|     12 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.1%            | 98.2%              |
-|     13 | Lindsey Graham       | Republican |       10 |    300,505 | 0.4%           | 0.3%            | 98.6%              |
-|     14 | Shelley Moore Capito | Republican |        6 |     72,503 | 0.2%           | 0.1%            | 98.9%              |
-|     15 | Jim Banks            | Republican |        5 |     40,002 | 0.2%           | 0.0%            | 99.1%              |
-|     16 | Deb Fischer          | Republican |        4 |    166,002 | 0.2%           | 0.2%            | 99.2%              |
-|     17 | Mark R. Warner       | Democrat   |        3 |    625,002 | 0.1%           | 0.7%            | 99.4%              |
-|     18 | Bernie Moreno        | Republican |        2 |    207,501 | 0.1%           | 0.2%            | 99.4%              |
-|     19 | Marco Rubio          | Republican |        2 |     16,001 | 0.1%           | 0.0%            | 99.5%              |
-|     20 | Cynthia M. Lummis    | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.6%              |
-|     21 | J.D. Vance           | Republican |        1 |     75,000 | 0.0%           | 0.1%            | 99.6%              |
-|     22 | James C. Justice     | Republican |        1 |    375,000 | 0.0%           | 0.4%            | 99.6%              |
-|     23 | John Kennedy         | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.7%              |
-|     24 | John Thune           | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.7%              |
-|     25 | Katie Boyd Britt     | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.8%              |
+|      1 | Tommy Tuberville     | Republican |      732 | 28,469,366 | 31.3%          | 32.4%           | 31.3%              |
+|      2 | Alan Armstrong       | Republican |      702 | 24,651,351 | 30.0%          | 28.1%           | 61.2%              |
+|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.7%          | 14.0%           | 75.0%              |
+|      4 | John Boozman         | Republican |      251 |  2,277,626 | 10.7%          | 2.6%            | 85.7%              |
+|      5 | Sheldon Whitehouse   | Democrat   |       81 |  1,666,040 | 3.5%           | 1.9%            | 89.2%              |
+|      6 | Dan Sullivan         | Republican |       68 |    807,034 | 2.9%           | 0.9%            | 92.1%              |
+|      7 | Jerry Moran          | Republican |       56 |    521,528 | 2.4%           | 0.6%            | 94.4%              |
+|      8 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.4%           | 0.5%            | 95.8%              |
+|      9 | Ashley Moody         | Republican |       23 |  1,926,512 | 1.0%           | 2.2%            | 96.8%              |
+|     10 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 5.1%            | 97.6%              |
+|     11 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.3%            | 98.4%              |
+|     12 | Shelley Moore Capito | Republican |        6 |     72,503 | 0.3%           | 0.1%            | 98.7%              |
+|     13 | Jim Banks            | Republican |        5 |     40,002 | 0.2%           | 0.0%            | 98.9%              |
+|     14 | Deb Fischer          | Republican |        4 |    166,002 | 0.2%           | 0.2%            | 99.1%              |
+|     15 | Mark R. Warner       | Democrat   |        3 |    625,002 | 0.1%           | 0.7%            | 99.2%              |
+|     16 | Bernie Moreno        | Republican |        2 |    207,501 | 0.1%           | 0.2%            | 99.3%              |
+|     17 | David McCormick      | Republican |        2 |  3,008,001 | 0.1%           | 3.4%            | 99.4%              |
+|     18 | Marco Rubio          | Republican |        2 |     16,001 | 0.1%           | 0.0%            | 99.4%              |
+|     19 | Cynthia M. Lummis    | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.5%              |
+|     20 | J.D. Vance           | Republican |        1 |     75,000 | 0.0%           | 0.1%            | 99.5%              |
+|     21 | James C. Justice     | Republican |        1 |    375,000 | 0.0%           | 0.4%            | 99.6%              |
+|     22 | John Kennedy         | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.6%              |
+|     23 | John Thune           | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.7%              |
+|     24 | Katie Boyd Britt     | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.7%              |
+|     25 | Lindsey Graham       | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.7%              |
 |     26 | Maria Cantwell       | Democrat   |        1 |     32,500 | 0.0%           | 0.0%            | 99.8%              |
 |     27 | Patrick J. Toomey    | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 99.8%              |
-|     28 | Rick Scott           | Republican |        1 |    750,000 | 0.0%           | 0.8%            | 99.9%              |
+|     28 | Rick Scott           | Republican |        1 |    750,000 | 0.0%           | 0.9%            | 99.9%              |
 |     29 | Tammy Duckworth      | Democrat   |        1 |     32,500 | 0.0%           | 0.0%            | 99.9%              |
 |     30 | Thom Tillis          | Republican |        1 |      8,000 | 0.0%           | 0.0%            | 100.0%             |
 |     31 | Thomas R. Carper     | Democrat   |        1 |     75,000 | 0.0%           | 0.1%            | 100.0%             |
@@ -1080,29 +1083,29 @@ By midpoint dollars:
 
 |   rank | senator              | party      |   trades |    dollars | share_trades   | share_dollars   | cum_share_dollars   |
 |-------:|:---------------------|:-----------|---------:|-----------:|:---------------|:----------------|:--------------------|
-|      1 | Tommy Tuberville     | Republican |      734 | 28,619,367 | 29.2%          | 31.2%           | 31.2%               |
-|      2 | Alan Armstrong       | Republican |      700 | 24,635,350 | 27.9%          | 26.9%           | 58.1%               |
-|      3 | Markwayne Mullin     | Republican |      326 | 13,109,663 | 13.0%          | 14.3%           | 72.5%               |
-|      4 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.1%            | 77.5%               |
-|      5 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 4.9%            | 82.4%               |
-|      6 | David McCormick      | Republican |       24 |  4,148,012 | 1.0%           | 4.5%            | 87.0%               |
-|      7 | John Boozman         | Republican |      387 |  3,695,694 | 15.4%          | 4.0%            | 91.0%               |
-|      8 | Ashley Moody         | Republican |       23 |  1,926,512 | 0.9%           | 2.1%            | 93.1%               |
-|      9 | Sheldon Whitehouse   | Democrat   |       81 |  1,666,040 | 3.2%           | 1.8%            | 94.9%               |
-|     10 | Dan Sullivan         | Republican |       68 |    807,034 | 2.7%           | 0.9%            | 95.8%               |
-|     11 | Rick Scott           | Republican |        1 |    750,000 | 0.0%           | 0.8%            | 96.6%               |
-|     12 | Mark R. Warner       | Democrat   |        3 |    625,002 | 0.1%           | 0.7%            | 97.3%               |
-|     13 | Jerry Moran          | Republican |       56 |    521,528 | 2.2%           | 0.6%            | 97.9%               |
-|     14 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.3%           | 0.5%            | 98.4%               |
-|     15 | James C. Justice     | Republican |        1 |    375,000 | 0.0%           | 0.4%            | 98.8%               |
-|     16 | Lindsey Graham       | Republican |       10 |    300,505 | 0.4%           | 0.3%            | 99.1%               |
-|     17 | Bernie Moreno        | Republican |        2 |    207,501 | 0.1%           | 0.2%            | 99.4%               |
-|     18 | Deb Fischer          | Republican |        4 |    166,002 | 0.2%           | 0.2%            | 99.5%               |
-|     19 | J.D. Vance           | Republican |        1 |     75,000 | 0.0%           | 0.1%            | 99.6%               |
-|     20 | Thomas R. Carper     | Democrat   |        1 |     75,000 | 0.0%           | 0.1%            | 99.7%               |
-|     21 | Shelley Moore Capito | Republican |        6 |     72,503 | 0.2%           | 0.1%            | 99.8%               |
-|     22 | Jim Banks            | Republican |        5 |     40,002 | 0.2%           | 0.0%            | 99.8%               |
-|     23 | John Thune           | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.9%               |
+|      1 | Tommy Tuberville     | Republican |      732 | 28,469,366 | 31.3%          | 32.4%           | 32.4%               |
+|      2 | Alan Armstrong       | Republican |      702 | 24,651,351 | 30.0%          | 28.1%           | 60.5%               |
+|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.7%          | 14.0%           | 74.5%               |
+|      4 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.3%            | 79.8%               |
+|      5 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 5.1%            | 84.9%               |
+|      6 | David McCormick      | Republican |        2 |  3,008,001 | 0.1%           | 3.4%            | 88.3%               |
+|      7 | John Boozman         | Republican |      251 |  2,277,626 | 10.7%          | 2.6%            | 90.9%               |
+|      8 | Ashley Moody         | Republican |       23 |  1,926,512 | 1.0%           | 2.2%            | 93.1%               |
+|      9 | Sheldon Whitehouse   | Democrat   |       81 |  1,666,040 | 3.5%           | 1.9%            | 95.0%               |
+|     10 | Dan Sullivan         | Republican |       68 |    807,034 | 2.9%           | 0.9%            | 95.9%               |
+|     11 | Rick Scott           | Republican |        1 |    750,000 | 0.0%           | 0.9%            | 96.8%               |
+|     12 | Mark R. Warner       | Democrat   |        3 |    625,002 | 0.1%           | 0.7%            | 97.5%               |
+|     13 | Jerry Moran          | Republican |       56 |    521,528 | 2.4%           | 0.6%            | 98.1%               |
+|     14 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.4%           | 0.5%            | 98.6%               |
+|     15 | James C. Justice     | Republican |        1 |    375,000 | 0.0%           | 0.4%            | 99.1%               |
+|     16 | Bernie Moreno        | Republican |        2 |    207,501 | 0.1%           | 0.2%            | 99.3%               |
+|     17 | Deb Fischer          | Republican |        4 |    166,002 | 0.2%           | 0.2%            | 99.5%               |
+|     18 | J.D. Vance           | Republican |        1 |     75,000 | 0.0%           | 0.1%            | 99.6%               |
+|     19 | Thomas R. Carper     | Democrat   |        1 |     75,000 | 0.0%           | 0.1%            | 99.7%               |
+|     20 | Shelley Moore Capito | Republican |        6 |     72,503 | 0.3%           | 0.1%            | 99.7%               |
+|     21 | Jim Banks            | Republican |        5 |     40,002 | 0.2%           | 0.0%            | 99.8%               |
+|     22 | John Thune           | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.8%               |
+|     23 | Lindsey Graham       | Republican |        1 |     32,500 | 0.0%           | 0.0%            | 99.9%               |
 |     24 | Maria Cantwell       | Democrat   |        1 |     32,500 | 0.0%           | 0.0%            | 99.9%               |
 |     25 | Tammy Duckworth      | Democrat   |        1 |     32,500 | 0.0%           | 0.0%            | 99.9%               |
 |     26 | Marco Rubio          | Republican |        2 |     16,001 | 0.1%           | 0.0%            | 100.0%              |
@@ -1116,13 +1119,13 @@ By midpoint dollars:
 
 | Group               |   Trades |   Median lag (days) |   75th pct |   95th pct | Share over 45 days   |
 |:--------------------|---------:|--------------------:|-----------:|-----------:|:---------------------|
-| All in-scope trades |     2513 |                  32 |        113 |        116 | 28.6%                |
-| Tommy Tuberville    |      734 |                  31 |         38 |         42 | 0.0%                 |
-| Alan Armstrong      |      700 |                 113 |        116 |        116 | 99.9%                |
-| John Boozman        |      387 |                  26 |         35 |         42 | 2.3%                 |
-| Markwayne Mullin    |      326 |                  29 |         29 |         34 | 0.6%                 |
+| All in-scope trades |     2342 |                  33 |        113 |        116 | 30.6%                |
+| Tommy Tuberville    |      732 |                  31 |         38 |         42 | 0.0%                 |
+| Alan Armstrong      |      702 |                 113 |        116 |        116 | 99.9%                |
+| Markwayne Mullin    |      322 |                  29 |         29 |         34 | 0.6%                 |
+| John Boozman        |      251 |                  25 |         32 |         42 | 1.6%                 |
 | Sheldon Whitehouse  |       81 |                  27 |         29 |         42 | 4.9%                 |
-| All other senators  |      285 |                  27 |         32 |         39 | 1.8%                 |
+| All other senators  |      254 |                  27 |         34 |         39 | 2.0%                 |
 
 ### 7. Paper filings inside the default window (trades we cannot see)
 
@@ -1142,32 +1145,90 @@ By midpoint dollars:
 | year   |   Purchases |   Sales |   Purchases (no ETFs) |   Sales (no ETFs) |   Total |   Total (no ETFs) |
 |:-------|------------:|--------:|----------------------:|------------------:|--------:|------------------:|
 | 2021   |          29 |      35 |                    29 |                35 |      64 |                64 |
-| 2022   |         133 |     150 |                   126 |               144 |     283 |               270 |
-| 2023   |         253 |     172 |                   247 |               165 |     425 |               412 |
-| 2024   |         114 |     293 |                    75 |               265 |     407 |               340 |
-| 2025   |         192 |     183 |                   129 |               131 |     375 |               260 |
-| 2026   |         798 |     161 |                   756 |               126 |     959 |               882 |
-| Total  |       1,519 |     994 |                 1,362 |               866 |   2,513 |             2,228 |
+| 2022   |         130 |     149 |                   124 |               144 |     279 |               268 |
+| 2023   |         248 |     166 |                   247 |               165 |     414 |               412 |
+| 2024   |          87 |     287 |                    75 |               265 |     374 |               340 |
+| 2025   |         139 |     162 |                   128 |               129 |     301 |               257 |
+| 2026   |         771 |     139 |                   758 |               124 |     910 |               882 |
+| Total  |       1,404 |     938 |                 1,361 |               862 |   2,342 |             2,223 |
 
 ### 9. Rows each pre-registered variant flag touches
 
-Relative to the 2,513 in-scope trades. V7, V8 and V10 change sizing or weighting only.
+Relative to the 2,342 in-scope trades. V7, V8 and V10 change sizing or weighting only.
 
-| Variant   | Change                                 |   Trades | Effect                             |
-|:----------|:---------------------------------------|---------:|:-----------------------------------|
-| V1        | Exclude Tuberville                     |      734 | removed                            |
-| V2.1      | Leave out #1 Tommy Tuberville          |      734 | removed                            |
-| V2.2      | Leave out #2 Alan Armstrong            |      700 | removed                            |
-| V2.3      | Leave out #3 John Boozman              |      387 | removed                            |
-| V2.4      | Leave out #4 Markwayne Mullin          |      326 | removed                            |
-| V2.5      | Leave out #5 Sheldon Whitehouse        |       81 | removed                            |
-| V3        | Exclude first 180 days of service      |      746 | removed                            |
-| V4        | Exclude PTRs with 50+ in-scope trades  |     1111 | removed (8 PTRs)                   |
-| V5        | Exclude ETFs                           |      285 | removed                            |
-| V6        | Add Spouse and Child trades            |     1054 | added (Spouse 1015, Child 39)      |
-| V9        | Same-day entry (filed before 15:30 ET) |     1241 | enter same day                     |
-| V11       | 3-year window                          |     2003 | trades in that window (Self/Joint) |
-| V12       | 10-year window                         |     5458 | trades in that window (Self/Joint) |
+| Variant   | Change                                               |   Trades | Effect                             |
+|:----------|:-----------------------------------------------------|---------:|:-----------------------------------|
+| V1        | Exclude Tuberville                                   |      732 | removed                            |
+| V2.1      | Leave out #1 Tommy Tuberville                        |      732 | removed                            |
+| V2.2      | Leave out #2 Alan Armstrong                          |      702 | removed                            |
+| V2.3      | Leave out #3 Markwayne Mullin                        |      322 | removed                            |
+| V2.4      | Leave out #4 John Boozman                            |      251 | removed                            |
+| V2.5      | Leave out #5 Sheldon Whitehouse                      |       81 | removed                            |
+| V3        | Exclude first 180 days of service                    |      730 | removed                            |
+| V4        | Exclude PTRs with 50+ in-scope trades                |     1113 | removed (8 PTRs)                   |
+| V5        | Exclude ETFs                                         |      119 | removed                            |
+| V6        | Add Spouse and Child trades                          |     1054 | added (Spouse 1015, Child 39)      |
+| V9        | Same-day entry (filed before 15:30 ET)               |     1120 | enter same day                     |
+| V16       | Add non-equity ETFs (bond, T-bill, commodity, other) |      169 | added                              |
+| V11       | 3-year window                                        |     2002 | trades in that window (Self/Joint) |
+| V12       | 10-year window                                       |     5457 | trades in that window (Self/Joint) |
+
+### 10. ETF asset classes (K5: the headline keeps equity ETFs only)
+
+Every ETF (Yahoo instrument type ETF, or an eFD name that says ETF when Yahoo cannot describe the symbol) is classified from Yahoo's fund category (cached in `data/raw/yahoo_fund/`), else from its fund name (rules in `src/clean/etf_class.py`). Classes kept in the headline: ['equity']. Non-equity ETF trades carry reason NON_EQUITY_ETF and stay in trades_clean.csv for V16.
+
+| etf_class    |   ETF symbols (all variants) |   Trades, Self/Joint in window |   Midpoint $ |
+|:-------------|-----------------------------:|-------------------------------:|-------------:|
+| commodity    |                            6 |                             26 |      991,013 |
+| equity       |                          118 |                            119 |    4,118,560 |
+| fixed_income |                           32 |                            122 |    1,611,561 |
+| other        |                            1 |                             22 |    1,140,011 |
+
+Non-equity ETF symbols:
+
+| etf_class    | price_ticker   | category                            | method    |   trades | name                                          |
+|:-------------|:---------------|:------------------------------------|:----------|---------:|:----------------------------------------------|
+| commodity    | FTGC           | Commodities Broad Basket            | category  |        8 | First Trust Global Tactical Commodity Strateg |
+| commodity    | GLD            | Commodities Focused                 | category  |       14 | SPDR Gold Shares                              |
+| commodity    | PALL           | Commodities Focused                 | category  |        6 | abrdn Physical Palladium Shares ETF           |
+| commodity    | PDBC           | Commodities Broad Basket            | category  |        3 | Invesco Optimum Yield Diversified Commodity S |
+| commodity    | PPLT           | Commodities Focused                 | category  |        5 | abrdn Physical Platinum Shares ETF            |
+| commodity    | SLV            | Commodities Focused                 | category  |        4 | iShares Silver Trust                          |
+| fixed_income | AGZ            | Short Government                    | category  |        6 | iShares Agency Bond ETF                       |
+| fixed_income | BIV            | Intermediate Core Bond              | category  |        1 | Vanguard Intermediate-Term Bond Index Fund ET |
+| fixed_income | BSCP           |                                     | fund name |        1 | Invesco BulletShares 2025 Corporate Bond ETF  |
+| fixed_income | BSCQ           | Target Maturity                     | category  |        1 | Invesco BulletShares 2026 Corporate Bond ETF  |
+| fixed_income | BSCV           | Target Maturity                     | category  |        1 | Invesco BulletShares 2031 Corporate Bond ETF  |
+| fixed_income | CMBS           | Securitized Bond - Focused          | category  |       10 | iShares CMBS Bond ETF                         |
+| fixed_income | EMB            | Emerging Markets Bond               | category  |        1 | iShares J.P. Morgan USD Emerging Markets Bond |
+| fixed_income | GBIL           | Ultrashort Bond                     | category  |       21 | Goldman Sachs Access Treasury 0-1 Year ETF    |
+| fixed_income | GIGB           | Corporate Bond                      | category  |       11 | Goldman Sachs Access Investment Grade Corpora |
+| fixed_income | HYG            | High Yield Bond                     | category  |        2 | iShares iBoxx $ High Yield Corporate Bond ETF |
+| fixed_income | IBDO           |                                     | fund name |        1 | iShares iBonds Dec 2023 Term Corporate ETF    |
+| fixed_income | IBDQ           |                                     | fund name |        2 | iShares iBonds Dec 2025 Term Corporate ETF    |
+| fixed_income | IEF            | Long Government                     | category  |        8 | iShares 7-10 Year Treasury Bond ETF           |
+| fixed_income | IEI            | Intermediate Government             | category  |        4 | iShares 3-7 Year Treasury Bond ETF            |
+| fixed_income | IGHG           | Nontraditional Bond                 | category  |        2 | ProShares Investment Grade-Interest Rate Hedg |
+| fixed_income | JMBS           | Government Mortgage-Backed Bond     | category  |       11 | Janus Henderson Mortgage-Backed Securities ET |
+| fixed_income | JNK            | High Yield Bond                     | category  |        2 | SPDR Bloomberg Barclays High Yield Bond ETF   |
+| fixed_income | MBB            | Government Mortgage-Backed Bond     | category  |        9 | iShares MBS ETF                               |
+| fixed_income | MUB            | Muni National Interm                | category  |        1 | iShares National Muni Bond ETF                |
+| fixed_income | PCY            | Emerging Markets Bond               | category  |        1 | PowerShares Emerging Markets Sov Dbt ETF (NYS |
+| fixed_income | SCHP           | Inflation-Protected Bond            | category  |        8 | Schwab U.S. TIPS ETF                          |
+| fixed_income | SHY            | Short Government                    | category  |        9 | iShares 1-3 Year Treasury Bond (NYSEArca)     |
+| fixed_income | TBLL           | Ultrashort Bond                     | category  |       12 | Invesco Short Term Treasury ETF               |
+| fixed_income | TBT            | Trading--Inverse Debt               | category  |        2 | ProShares UltraShort 20+ Year Treasury        |
+| fixed_income | TLH            | Long Government                     | category  |        7 | iShares 10-20 Year Treasury Bond ETF          |
+| fixed_income | TLT            | Long Government                     | category  |        6 | 20+ Year Treas Bond Ishares ETF               |
+| fixed_income | USFR           | Ultrashort Bond                     | category  |        1 | Wisdomtree Floating Rate Treasury Fund        |
+| fixed_income | USIG           | Corporate Bond                      | category  |        1 | iShares Broad USD Investment Grade Corporate  |
+| fixed_income | VTIP           | Short-Term Inflation-Protected Bond | category  |        1 | Vanguard Short-Term Inflation-Protected Secur |
+| fixed_income | XFIV           | Intermediate Government             | category  |        2 | BondBloxx Bloomberg Five Year Target Duration |
+| fixed_income | XONE           | Short Government                    | category  |        1 | Boxx One Year Target Duration ETF             |
+| fixed_income | XTWO           | Short Government                    | category  |        2 | BondBloxx Bloomberg Two Year Target Duration  |
+| other        | BITB           | Digital Assets                      | category  |       22 | Bitwise Bitcoin ETF                           |
+
+ETFs classified as equity only because no category was found and the name has no bond, commodity or other keyword: RYT.
 
 ## Phase 3: prices
 
@@ -1175,44 +1236,47 @@ _Stage `prices` of `python run_all.py`. Yahoo daily history 2016-01-01 to 2026-0
 
 ### 1. Ticker resolution (renames and the survivorship ledger)
 
-204 eFD tickers had no usable Yahoo record, or a Yahoo name matching no eFD name. Outcomes: delisted_or_unknown 169, rename 32, same_symbol 3. Renames and same-symbol name changes are confirmed through SEC EDGAR company histories (same CIK, a current or former SEC name equal to the eFD name) and Yahoo's name for the new symbol (`config/ticker_renames.yaml`, rules in `src/prices/resolve.py`).
+202 eFD tickers had no usable Yahoo record, or a Yahoo name matching no eFD name. Outcomes: delisted_or_unknown 167, rename 32, same_symbol 3. Renames and same-symbol name changes are confirmed through SEC EDGAR company histories (same CIK, a current or former SEC name equal to the eFD name) and Yahoo's name for the new symbol (`config/ticker_renames.yaml`, rules in `src/prices/resolve.py`).
 
-Renames (32; 17 in-scope trades use one):
+Renames (35; 19 in-scope trades use one):
 
-| old   | new   | effective_date   | date_basis                                         |
-|:------|:------|:-----------------|:---------------------------------------------------|
-| ABC   | COR   | 2023-08-15       | SEC: end of former name                            |
-| ANTM  | ELV   | 2004-11-30       | SEC: end of former name                            |
-| BIF   | STEW  | 2022-04-26       | SEC: end of former name                            |
-| BK    | BNY   |                  | name unchanged; ticker change date not in SEC data |
-| BLL   | BALL  |                  | name unchanged; ticker change date not in SEC data |
-| CHK   | EXE   | 2024-09-26       | SEC: end of former name                            |
-| CTL   | LUMN  | 2021-01-20       | SEC: end of former name                            |
-| DGNR  | CCC   | 2021-07-29       | SEC: end of former name                            |
-| DISCA | WBD   | 2018-03-05       | SEC: end of former name                            |
-| DLPH  | APTV  | 2017-11-29       | SEC: end of former name                            |
-| DPS   | KDP   | 2018-07-02       | SEC: end of former name                            |
-| DWDP  | DD    | 2019-05-31       | SEC: end of former name                            |
-| ETE   | ET    | 2018-09-18       | SEC: end of former name                            |
-| EXPI  | AGNT  | 2026-06-01       | SEC: end of former name                            |
-| FB    | META  | 2021-10-27       | SEC: end of former name                            |
-| FI    | FISV  |                  | name unchanged; ticker change date not in SEC data |
-| FLT   | CPAY  | 2024-03-14       | SEC: end of former name                            |
-| GMRE  | XRN   | 2026-01-26       | SEC: end of former name                            |
-| HRS   | LHX   | 2019-06-25       | SEC: end of former name                            |
-| KAR   | OPLN  | 2023-05-12       | SEC: end of former name                            |
-| LB    | BBWI  | 2013-03-22       | SEC: end of former name                            |
-| MMC   | MRSH  | 2005-01-31       | SEC: end of former name                            |
-| MPW   | MPT   |                  | name unchanged; ticker change date not in SEC data |
-| OFC   | CDP   | 1998-01-22       | SEC: end of former name                            |
-| PCLN  | BKNG  | 2018-02-16       | SEC: end of former name                            |
-| PKI   | RVTY  | 2023-04-14       | SEC: end of former name                            |
-| PSTG  | P     |                  | name unchanged; ticker change date not in SEC data |
-| TMK   | GL    | 2019-08-02       | SEC: end of former name                            |
-| UTX   | RTX   | 2020-04-06       | SEC: end of former name                            |
-| WETF  | WT    | 2022-11-04       | SEC: end of former name                            |
-| XON   | PGEN  | 2020-01-22       | SEC: end of former name                            |
-| ZIOP  | TCRT  | 2022-01-04       | SEC: end of former name                            |
+| old   | new   | effective_date   | date_basis                                                       |
+|:------|:------|:-----------------|:-----------------------------------------------------------------|
+| SQ    | XYZ   | 2025-01-21       | ticker change date (NYSE), from the company                      |
+| BRKB  | BRK-B |                  | not a rename: eFD wrote the class B symbol without its separator |
+| CCCS  | CCC   |                  | not a rename: eFD used a symbol the company never traded under   |
+| ABC   | COR   | 2023-08-15       | SEC: end of former name                                          |
+| ANTM  | ELV   | 2004-11-30       | SEC: end of former name                                          |
+| BIF   | STEW  | 2022-04-26       | SEC: end of former name                                          |
+| BK    | BNY   |                  | name unchanged; ticker change date not in SEC data               |
+| BLL   | BALL  |                  | name unchanged; ticker change date not in SEC data               |
+| CHK   | EXE   | 2024-09-26       | SEC: end of former name                                          |
+| CTL   | LUMN  | 2021-01-20       | SEC: end of former name                                          |
+| DGNR  | CCC   | 2021-07-29       | SEC: end of former name                                          |
+| DISCA | WBD   | 2018-03-05       | SEC: end of former name                                          |
+| DLPH  | APTV  | 2017-11-29       | SEC: end of former name                                          |
+| DPS   | KDP   | 2018-07-02       | SEC: end of former name                                          |
+| DWDP  | DD    | 2019-05-31       | SEC: end of former name                                          |
+| ETE   | ET    | 2018-09-18       | SEC: end of former name                                          |
+| EXPI  | AGNT  | 2026-06-01       | SEC: end of former name                                          |
+| FB    | META  | 2021-10-27       | SEC: end of former name                                          |
+| FI    | FISV  |                  | name unchanged; ticker change date not in SEC data               |
+| FLT   | CPAY  | 2024-03-14       | SEC: end of former name                                          |
+| GMRE  | XRN   | 2026-01-26       | SEC: end of former name                                          |
+| HRS   | LHX   | 2019-06-25       | SEC: end of former name                                          |
+| KAR   | OPLN  | 2023-05-12       | SEC: end of former name                                          |
+| LB    | BBWI  | 2013-03-22       | SEC: end of former name                                          |
+| MMC   | MRSH  | 2005-01-31       | SEC: end of former name                                          |
+| MPW   | MPT   |                  | name unchanged; ticker change date not in SEC data               |
+| OFC   | CDP   | 1998-01-22       | SEC: end of former name                                          |
+| PCLN  | BKNG  | 2018-02-16       | SEC: end of former name                                          |
+| PKI   | RVTY  | 2023-04-14       | SEC: end of former name                                          |
+| PSTG  | P     |                  | name unchanged; ticker change date not in SEC data               |
+| TMK   | GL    | 2019-08-02       | SEC: end of former name                                          |
+| UTX   | RTX   | 2020-04-06       | SEC: end of former name                                          |
+| WETF  | WT    | 2022-11-04       | SEC: end of former name                                          |
+| XON   | PGEN  | 2020-01-22       | SEC: end of former name                                          |
+| ZIOP  | TCRT  | 2022-01-04       | SEC: end of former name                                          |
 
 Same symbol, company renamed (3): RUM, SLB, UHAL.
 
@@ -1224,77 +1288,77 @@ Rejected by hand (same SEC company, not the same security):
 | ESV      | Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity                       |
 | WTW      | Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity                       |
 
-**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 174 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 35 of them have in-scope trades (94 trades, $5,592,547 at midpoints). CRSP (A04) is the fix.
+**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 177 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 32 of them have in-scope trades (89 trades, $5,487,045 at midpoints). CRSP (A04) is the fix.
 
-| price_ticker   | efd_asset_names                          |   in_scope_trades |   in_scope_midpoint_dollars | first_trade   | last_trade   | why                                                                         |
-|:---------------|:-----------------------------------------|------------------:|----------------------------:|:--------------|:-------------|:----------------------------------------------------------------------------|
-| X              | United States Steel Corporation | United |                22 |                   1,678,011 | 2021-10-18    | 2023-10-11   | no Yahoo price history                                                      |
-| ECOM           | ChannelAdvisor Corporation | ChannelAdvi |                 6 |                   1,215,503 | 2022-03-08    | 2022-09-07   | no Yahoo price history                                                      |
-| WTT            | Wireless Telecom Group Inc               |                 1 |                     750,000 | 2023-08-15    | 2023-08-15   | no Yahoo price history                                                      |
-| ATVI           | Activision Blizzard, Inc - Common Stock  |                 2 |                     350,001 | 2022-11-08    | 2023-04-26   | no Yahoo price history                                                      |
-| SSBK           | Southern States Bancshares, Inc. - Commo |                15 |                     345,508 | 2021-08-12    | 2024-04-30   | no Yahoo price history                                                      |
-| PARA           | Paramount Global - Class B Common Stock  |                 4 |                     315,002 | 2023-09-18    | 2024-05-10   | recycled symbol: Yahoo's history is 'Banzai International, Inc.', another c |
-| WBA            | Walgreens Boots Alliance, Inc. | Walgree |                 7 |                     172,004 | 2022-01-12    | 2024-04-30   | no Yahoo price history                                                      |
-| GOGL           | Golden Ocean Group Limited - Common Stoc |                 2 |                     150,001 | 2024-02-27    | 2024-04-30   | recycled symbol: Yahoo's history is 'Corgi GOOGL 2x Daily ETF', another com |
-| NS             | Nustar Energy L.P. Common Units          |                 1 |                      75,000 | 2021-12-29    | 2021-12-29   | no Yahoo price history                                                      |
-| IBDQ           | Dec 2025 Term Corp Ishares Ibonds ETF |  |                 2 |                      65,001 | 2022-06-30    | 2025-12-18   | no Yahoo price history                                                      |
-| AHL-C          | Aspen Insurance Holdings Ltd [Ahl/Pc]    |                 1 |                      32,500 | 2025-01-02    | 2025-01-02   | no Yahoo price history                                                      |
-| BKEP           | Blueknight Energy Partners L.P., L.L.C.  |                 1 |                      32,500 | 2021-12-29    | 2021-12-29   | no Yahoo price history                                                      |
-| BKEPP          | Blueknight Energy Partners L.P. - Series |                 1 |                      32,500 | 2022-08-19    | 2022-08-19   | no Yahoo price history                                                      |
-| BRK            | Bershire Hathaway Cdr [Cad Hedged]       |                 1 |                      32,500 | 2025-02-13    | 2025-02-13   | no Yahoo price history                                                      |
-| BSCP           | Invesco BulletShares 2025 Corporate Bond |                 1 |                      32,500 | 2025-12-17    | 2025-12-17   | no Yahoo price history                                                      |
-| FUN            | Cedar Fair, L.P. Common Stock            |                 1 |                      32,500 | 2022-01-13    | 2022-01-13   | recycled symbol: Yahoo's history is 'Six Flags Entertainment Corporation',  |
-| RNWK           | RealNetworks, Inc. - Common Stock        |                 1 |                      32,500 | 2022-12-28    | 2022-12-28   | no Yahoo price history                                                      |
-| TACO           | Del Taco Restaurants, Inc. - Common Stoc |                 1 |                      32,500 | 2022-03-09    | 2022-03-09   | recycled symbol: Yahoo's history is 'Berto Acquisition Corp.', another comp |
-| TOELY          | Tokyo Electron Ltd ADR (TOELY)           |                 1 |                      32,500 | 2026-03-30    | 2026-03-30   | no Yahoo price history; Yahoo's last market time 2026-09-24                 |
-| COLPAL         | COLGATE PALMOLIVE LTD.                   |                 2 |                      16,001 | 2025-04-08    | 2025-10-09   | no Yahoo price history                                                      |
-| CYBR           | CyberArk Software Ltd. - Ordinary Shares |                 2 |                      16,001 | 2024-01-04    | 2024-12-18   | no Yahoo price history                                                      |
-| EA             | Electronic Arts Inc | Electronic Arts In |                 2 |                      16,001 | 2026-03-27    | 2026-03-30   | no Yahoo price history; Yahoo's last market time 2026-08-04                 |
-| LMST           | Limestone Bancorp, Inc. - Common Stock   |                 2 |                      16,001 | 2022-03-30    | 2023-04-03   | no Yahoo price history                                                      |
-| MASI           | Masimo Corporation - Common Stock        |                 2 |                      16,001 | 2022-03-30    | 2022-10-05   | no Yahoo price history                                                      |
-| PXD            | Pioneer Natural Resources Company | Pion |                 2 |                      16,001 | 2023-01-10    | 2023-08-22   | no Yahoo price history                                                      |
-| SQ             | Block, Inc. Class A Common Stock, | Squa |                 2 |                      16,001 | 2022-04-11    | 2023-09-20   | no Yahoo price history                                                      |
-| AVB            | AvalonBay Communities, Inc. Common Stock |                 1 |                       8,000 | 2026-03-27    | 2026-03-27   | no Yahoo price history; Yahoo's last market time 2026-08-14                 |
-| DFKCY          | Daifuku Co Ltd ADR (DFKCY)               |                 1 |                       8,000 | 2026-03-30    | 2026-03-30   | no Yahoo price history; Yahoo's last market time 2026-08-24                 |
-| EQC            | Equity Commonwealth                      |                 1 |                       8,000 | 2024-12-13    | 2024-12-13   | no Yahoo price history                                                      |
-| HES            | Hess Corp                                |                 1 |                       8,000 | 2024-03-28    | 2024-03-28   | no Yahoo price history                                                      |
-| IBDO           | iShares iBonds Dec 2023 Term Corporate E |                 1 |                       8,000 | 2022-06-30    | 2022-06-30   | no Yahoo price history                                                      |
-| INST           | Instructure Holdings Inc | Instructure H |                 1 |                       8,000 | 2023-12-22    | 2023-12-22   | no Yahoo price history                                                      |
-| LEG            | Leggett & Platt Inc                      |                 1 |                       8,000 | 2024-10-31    | 2024-10-31   | no Yahoo price history; Yahoo's last market time 2026-08-26                 |
-| SIVB           | SVB Financial Group | SVB Financial Grou |                 1 |                       8,000 | 2022-03-30    | 2022-03-30   | no Yahoo price history                                                      |
-| VMW            | VMware, Inc. | Vmware, Inc. Common stock |                 1 |                       8,000 | 2022-03-30    | 2022-03-30   | no Yahoo price history                                                      |
+| price_ticker   | efd_asset_names                     |   in_scope_trades |   in_scope_purchases |   in_scope_midpoint_dollars | first_trade   | last_trade   | reason                     | reason_source                                                                                                                                                                                                                                                      |
+|:---------------|:------------------------------------|------------------:|---------------------:|----------------------------:|:--------------|:-------------|:---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| X              | United States Steel Corporation | U |                22 |                    5 |                   1,678,011 | 2021-10-18    | 2023-10-11   | acquired for cash          | Nippon Steel bought U.S. Steel for $55.00 cash per share, closed 18 Jun 2025 (SEC 25-NSE 2025-06-18)                                                                                                                                                               |
+| ECOM           | ChannelAdvisor Corporation | Channe |                 6 |                    5 |                   1,215,503 | 2022-03-08    | 2022-09-07   | acquired for cash          | CommerceHub (Francisco Partners / Insight) bought ChannelAdvisor for $23.10 cash, Nov 2022 (SEC 25-NSE 2022-11-15)                                                                                                                                                 |
+| WTT            | Wireless Telecom Group Inc          |                 1 |                    0 |                     750,000 | 2023-08-15    | 2023-08-15   | acquired for cash          | Maury Microwave bought Wireless Telecom Group for $2.13 cash, Aug 2023 (SEC 25-NSE 2023-08-04)                                                                                                                                                                     |
+| ATVI           | Activision Blizzard, Inc - Common S |                 2 |                    1 |                     350,001 | 2022-11-08    | 2023-04-26   | acquired for cash          | Microsoft bought Activision Blizzard for $95.00 cash, closed 13 Oct 2023 (SEC 25-NSE 2023-10-13)                                                                                                                                                                   |
+| SSBK           | Southern States Bancshares, Inc. -  |                15 |                    2 |                     345,508 | 2021-08-12    | 2024-04-30   | acquired for stock         | FB Financial merger, 0.80 FBK shares per SSBK share, closed 1 Jul 2025 (SEC 25-NSE 2025-07-01; FB Financial release 1 Jul 2025)                                                                                                                                    |
+| PARA           | Paramount Global - Class B Common S |                 4 |                    3 |                     315,002 | 2023-09-18    | 2024-05-10   | acquired for stock         | Skydance merger closed 7 Aug 2025: Class B holders elected $15.00 cash or 1 share of Paramount Skydance (PSKY), prorated (SEC 25-NSE 2025-08-07); Yahoo's PARA history now belongs to another company                                                              |
+| WBA            | Walgreens Boots Alliance, Inc. | Wa |                 7 |                    6 |                     172,004 | 2022-01-12    | 2024-04-30   | acquired for cash          | Sycamore Partners take-private, $11.45 cash plus a right to up to $3.00 from the VillageMD sale, closed 28 Aug 2025 (SEC 25-NSE 2025-08-28, SC 13E3)                                                                                                               |
+| GOGL           | Golden Ocean Group Limited - Common |                 2 |                    1 |                     150,001 | 2024-02-27    | 2024-04-30   | acquired for stock         | Merged into CMB.Tech (0.95 CMBT share per GOGL share), Aug 2025 (SEC 25-NSE 2025-08-20); Yahoo's GOGL is now a 2x GOOGL ETF                                                                                                                                        |
+| NS             | Nustar Energy L.P. Common Units     |                 1 |                    0 |                      75,000 | 2021-12-29    | 2021-12-29   | acquired for stock         | Sunoco LP bought NuStar Energy, 0.400 SUN unit per NS unit, May 2024 (no SEC name match; company announcement)                                                                                                                                                     |
+| TACO           | Del Taco Restaurants, Inc. - Common |                 1 |                    0 |                      65,001 | 2022-03-09    | 2022-03-09   | acquired for cash          | Jack in the Box bought Del Taco for $12.51 cash, Mar 2022 (SEC 25-NSE 2022-03-08); Yahoo's TACO is now a SPAC                                                                                                                                                      |
+| AHL-C          | Aspen Insurance Holdings Ltd [Ahl/P |                 1 |                    0 |                      32,500 | 2025-01-02    | 2025-01-02   | unknown                    | Aspen Insurance Holdings preferred depositary shares (AHL-PC); Aspen was bought by Sompo in 2025, what happened to this preferred series is not confirmed here. Also: a preferred share, not common stock                                                          |
+| BKEP           | Blueknight Energy Partners L.P., L. |                 1 |                    0 |                      32,500 | 2021-12-29    | 2021-12-29   | acquired for cash          | Ergon bought Blueknight Energy Partners' common units for $4.65 cash, Oct 2022 (company announcement; no SEC name match)                                                                                                                                           |
+| BKEPP          | Blueknight Energy Partners L.P. - S |                 1 |                    0 |                      32,500 | 2022-08-19    | 2022-08-19   | acquired for cash          | Blueknight Series A preferred units, bought out for cash in the Ergon transaction, Oct 2022 (company announcement). Also: a preferred unit, not common stock                                                                                                       |
+| FUN            | Cedar Fair, L.P. Common Stock       |                 1 |                    0 |                      32,500 | 2022-01-13    | 2022-01-13   | acquired for stock         | Cedar Fair merged with Six Flags 1:1 into a new company that took the FUN symbol, 1 Jul 2024 (SEC 25-NSE 2024-07-02); Yahoo's FUN is the new company, so not used (E27)                                                                                            |
+| RNWK           | RealNetworks, Inc. - Common Stock   |                 1 |                    0 |                      32,500 | 2022-12-28    | 2022-12-28   | acquired for cash          | Founder Rob Glaser took RealNetworks private for $1.05 cash, Dec 2022 (SEC 25-NSE 2022-12-22, SC 13E3)                                                                                                                                                             |
+| TOELY          | Tokyo Electron Ltd ADR (TOELY)      |                 1 |                    1 |                      32,500 | 2026-03-30    | 2026-03-30   | ticker issue               | Tokyo Electron ADR still trades OTC (Yahoo's last market time 2026-09-24), but Yahoo returns an empty daily series (its 'first trade date' was reset to 2026-07-17, as for DFKCY, AVB, EA and LEG)                                                                 |
+| CYBR           | CyberArk Software Ltd. - Ordinary S |                 2 |                    1 |                      16,001 | 2024-01-04    | 2024-12-18   | acquired for stock         | Palo Alto Networks bought CyberArk for $45.00 cash plus 2.2005 PANW shares per share, closed 11 Feb 2026 (SEC 25-NSE 2026-02-11; PANW release)                                                                                                                     |
+| EA             | Electronic Arts Inc | Electronic Ar |                 2 |                    2 |                      16,001 | 2026-03-27    | 2026-03-30   | acquired for cash          | PIF, Silver Lake and Affinity Partners took Electronic Arts private for $210.00 cash, closed 4 Aug 2026 (SEC 25-NSE 2026-08-04; EA release 4 Aug 2026). Yahoo keeps the symbol's metadata but no longer serves its history                                         |
+| LMST           | Limestone Bancorp, Inc. - Common St |                 2 |                    1 |                      16,001 | 2022-03-30    | 2023-04-03   | acquired for stock         | Peoples Bancorp bought Limestone Bancorp, 0.90 PEBO share per share, Apr 2023 (SEC 25-NSE 2023-05-01)                                                                                                                                                              |
+| MASI           | Masimo Corporation - Common Stock   |                 2 |                    1 |                      16,001 | 2022-03-30    | 2022-10-05   | acquired for cash          | Danaher bought Masimo for $180.00 cash per share, closed 10 Jun 2026 (SEC 25-NSE 2026-06-10; Masimo 8-K)                                                                                                                                                           |
+| PXD            | Pioneer Natural Resources Company | |                 2 |                    0 |                      16,001 | 2023-01-10    | 2023-08-22   | acquired for stock         | ExxonMobil bought Pioneer Natural Resources, 2.3234 XOM shares per share, May 2024 (SEC 25-NSE 2024-05-03)                                                                                                                                                         |
+| WIZEY          | Wise plc Sponsored ADR (WIZEY)      |                 2 |                    2 |                      16,001 | 2026-03-30    | 2026-03-31   | ticker issue               | Wise plc unsponsored ADR (OTC); Yahoo no longer knows the symbol. WSE is Wise Group plc's new US listing, a different security (K2)                                                                                                                                |
+| AVB            | AvalonBay Communities, Inc. Common  |                 1 |                    1 |                       8,000 | 2026-03-27    | 2026-03-27   | acquired for stock         | NOT a rename: AvalonBay merged with Equity Residential (renamed Vivmark Residential, VMRK), 2.793 VMRK shares per AVB share, closed 17 Aug 2026 (SEC 25-NSE 2026-08-17; Vivmark 8-K). VMRK is Equity Residential's legal entity, so its history is not AvalonBay's |
+| DFKCY          | Daifuku Co Ltd ADR (DFKCY)          |                 1 |                    1 |                       8,000 | 2026-03-30    | 2026-03-30   | ticker issue               | Daifuku ADR still trades OTC (Yahoo's last market time 2026-08-24), but Yahoo returns an empty daily series ('first trade date' reset to 2026-07-17)                                                                                                               |
+| EQC            | Equity Commonwealth                 |                 1 |                    0 |                       8,000 | 2024-12-13    | 2024-12-13   | matured or liquidated fund | Equity Commonwealth (a REIT) sold its properties and liquidated; delisted Dec 2024 into the EQC Liquidating Trust (SEC 25-NSE 2024-12-03)                                                                                                                          |
+| HES            | Hess Corp                           |                 1 |                    0 |                       8,000 | 2024-03-28    | 2024-03-28   | acquired for stock         | Chevron bought Hess, 1.0250 CVX shares per share, closed 18 Jul 2025 (SEC 25-NSE 2025-07-18)                                                                                                                                                                       |
+| HOLX           | Hologic, Inc. | Hologic, Inc. (HOLX |                 1 |                    1 |                       8,000 | 2026-03-27    | 2026-03-27   | acquired for cash          | Blackstone and TPG took Hologic private for $76.00 cash plus a CVR of up to $3.00, closed 7 Apr 2026 (SEC 25-NSE 2026-04-07; Hologic 8-K)                                                                                                                          |
+| INST           | Instructure Holdings Inc | Instruct |                 1 |                    0 |                       8,000 | 2023-12-22    | 2023-12-22   | acquired for cash          | KKR took Instructure private for $23.60 cash, Nov 2024 (SEC 25-NSE 2024-11-13)                                                                                                                                                                                     |
+| KYOCY          | Kyocera Corporation ADR Japan (KYOC |                 1 |                    1 |                       8,000 | 2026-03-30    | 2026-03-30   | ticker issue               | Kyocera ADR programme under KYOCY; Yahoo no longer knows it. KYOAY is a different ADR programme (K2)                                                                                                                                                               |
+| LEG            | Leggett & Platt Inc                 |                 1 |                    0 |                       8,000 | 2024-10-31    | 2024-10-31   | acquired for stock         | Somnigroup bought Leggett & Platt, 0.1455 SGI share per share, closed 26 Aug 2026 (SEC 25-NSE 2026-08-27; Somnigroup release)                                                                                                                                      |
+| SIVB           | SVB Financial Group | SVB Financial |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | bankrupt                   | SVB Financial Group: Silicon Valley Bank failed 10 Mar 2023, parent filed Chapter 11 17 Mar 2023 (SEC 25-NSE 2023-05-02)                                                                                                                                           |
+| VMW            | VMware, Inc. | Vmware, Inc. Common  |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | acquired for stock         | Broadcom bought VMware, holders elected $142.50 cash or 0.252 AVGO share (prorated about half each), closed 22 Nov 2023 (SEC 25-NSE 2023-11-22)                                                                                                                    |
 
-### 2. Price download
+Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 13, acquired for stock 12, ticker issue 4, unknown 1, matured or liquidated fund 1, bankrupt 1; for all 177 ledger symbols: acquired for stock 69, acquired for cash 61, ticker issue 21, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
 
-- Symbols requested: **1453**; with data: **1278**; without: 175. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+### 2. Price download and repairs
+
+- Symbols requested: **1457**; with data: **1279**; without: 178. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,206,213 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,212,966 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
-Entry date = first NYSE trading day after the disclosure date (D11). **2,442 of 2,540 in-scope records (96.1%) have a price; by midpoint dollars 93.5%** ($86,640,221 of $92,656,270).
+Entry date = first NYSE trading day after the disclosure date (D11). **2,273 of 2,365 in-scope records (96.1%) have a price; by midpoint dollars 93.8%** ($82,954,636 of $88,457,682).
 
 | Senator              |   Trades |   With entry price | Share (count)   |   Midpoint $ | Share ($)   |
 |:---------------------|---------:|-------------------:|:----------------|-------------:|:------------|
-| ALL IN-SCOPE         |     2540 |               2442 | 96.1%           |   92,656,270 | 93.5%       |
-| Tommy Tuberville     |      752 |                686 | 91.2%           |   29,148,876 | 85.2%       |
-| Alan Armstrong       |      700 |                694 | 99.1%           |   24,635,350 | 99.7%       |
-| John Boozman         |      392 |                389 | 99.2%           |    3,760,196 | 99.4%       |
-| Markwayne Mullin     |      327 |                322 | 98.5%           |   13,484,664 | 96.8%       |
-| Sheldon Whitehouse   |       81 |                 80 | 98.8%           |    1,666,040 | 99.5%       |
+| ALL IN-SCOPE         |     2365 |               2273 | 96.1%           |   88,457,682 | 93.8%       |
+| Tommy Tuberville     |      750 |                685 | 91.3%           |   28,998,875 | 85.1%       |
+| Alan Armstrong       |      702 |                692 | 98.6%           |   24,651,351 | 99.6%       |
+| Markwayne Mullin     |      322 |                319 | 99.1%           |   12,294,661 | 99.8%       |
+| John Boozman         |      254 |                253 | 99.6%           |    2,326,127 | 99.7%       |
+| Sheldon Whitehouse   |       81 |                 81 | 100.0%          |    1,666,040 | 100.0%      |
 | Dan Sullivan         |       68 |                 66 | 97.1%           |      807,034 | 98.0%       |
 | Jerry Moran          |       56 |                 56 | 100.0%          |      521,528 | 100.0%      |
 | Gary C. Peters       |       32 |                 31 | 96.9%           |      470,016 | 98.3%       |
-| David McCormick      |       24 |                 24 | 100.0%          |    4,148,012 | 100.0%      |
 | Ashley Moody         |       23 |                 23 | 100.0%          |    1,926,512 | 100.0%      |
 | Bill Hagerty         |       20 |                 12 | 60.0%           |    4,550,010 | 94.4%       |
 | John W. Hickenlooper |       19 |                 19 | 100.0%          |    4,633,010 | 100.0%      |
-| Lindsey Graham       |       12 |                  8 | 66.7%           |      365,506 | 71.1%       |
 | Shelley Moore Capito |        6 |                  6 | 100.0%          |       72,503 | 100.0%      |
 | Jim Banks            |        5 |                  5 | 100.0%          |       40,002 | 100.0%      |
 | Deb Fischer          |        4 |                  4 | 100.0%          |      166,002 | 100.0%      |
 | Mark R. Warner       |        3 |                  3 | 100.0%          |      625,002 | 100.0%      |
 | Bernie Moreno        |        2 |                  2 | 100.0%          |      207,501 | 100.0%      |
+| David McCormick      |        2 |                  2 | 100.0%          |    3,008,001 | 100.0%      |
+| Lindsey Graham       |        2 |                  2 | 100.0%          |       65,001 | 100.0%      |
 | Marco Rubio          |        2 |                  2 | 100.0%          |       16,001 | 100.0%      |
 | Cynthia M. Lummis    |        1 |                  1 | 100.0%          |        8,000 | 100.0%      |
 | J.D. Vance           |        1 |                  1 | 100.0%          |       75,000 | 100.0%      |
@@ -1313,161 +1377,145 @@ Why prices are missing:
 
 | why_missing                                   |   trades |   midpoint_dollars |
 |:----------------------------------------------|---------:|-------------------:|
-| no usable Yahoo history (survivorship ledger) |       96 |          6,000,048 |
+| no usable Yahoo history (survivorship ledger) |       90 |          5,487,045 |
 | series starts after the entry date            |        2 |             16,001 |
 
-Every in-scope record without an entry price (98; also `data/interim/price_missing_entry.csv`):
+Every in-scope record without an entry price (92; also `data/interim/price_missing_entry.csv`):
 
-| senator            | ticker   | price_ticker   | transaction_type   | disclosure_date   | entry_date   |   amount_mid | why_missing                                   |
-|:-------------------|:---------|:---------------|:-------------------|:------------------|:-------------|-------------:|:----------------------------------------------|
-| Alan Armstrong     | TOELY    | TOELY          | Purchase           | 2026-07-21        | 2026-07-22   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Alan Armstrong     | EA       | EA             | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Alan Armstrong     | DFKCY    | DFKCY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Alan Armstrong     | EA       | EA             | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Alan Armstrong     | AVB      | AVB            | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | BKEP     | BKEP           | Sale (Full)        | 2022-01-10        | 2022-01-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | NS       | NS             | Sale (Full)        | 2022-01-10        | 2022-01-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | TACO     | TACO           | Sale (Partial)     | 2022-04-13        | 2022-04-14   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | BKEPP    | BKEPP          | Sale (Full)        | 2022-09-02        | 2022-09-06   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | TACO     | TACO           | Sale (Full)        | 2023-08-14        | 2023-08-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | EQC      | EQC            | Sale (Full)        | 2024-12-30        | 2024-12-31   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty       | AHL-C    | AHL-C          | Sale (Full)        | 2025-01-22        | 2025-01-23   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Dan Sullivan       | PXD      | PXD            | Sale (Partial)     | 2023-02-13        | 2023-02-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Dan Sullivan       | PXD      | PXD            | Sale (Full)        | 2023-09-18        | 2023-09-19   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Gary C. Peters     | LEG      | LEG            | Sale (Full)        | 2024-11-14        | 2024-11-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| John Boozman       | HES      | HES            | Sale (Full)        | 2024-05-08        | 2024-05-09   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| John Boozman       | COLPAL   | COLPAL         | Purchase           | 2025-05-14        | 2025-05-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| John Boozman       | COLPAL   | COLPAL         | Sale (Full)        | 2025-11-15        | 2025-11-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Lindsey Graham     | IBDO     | IBDO           | Purchase           | 2022-07-13        | 2022-07-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Lindsey Graham     | IBDQ     | IBDQ           | Purchase           | 2022-07-13        | 2022-07-14   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Lindsey Graham     | BSCP     | BSCP           | Sale (Full)        | 2026-01-06        | 2026-01-07   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Lindsey Graham     | IBDQ     | IBDQ           | Sale (Full)        | 2026-01-06        | 2026-01-07   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Maria Cantwell     | RNWK     | RNWK           | Sale (Full)        | 2023-01-13        | 2023-01-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Markwayne Mullin   | CYBR     | CYBR           | Purchase           | 2024-01-26        | 2024-01-29   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Markwayne Mullin   | INST     | INST           | Sale (Partial)     | 2024-01-26        | 2024-01-29   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Markwayne Mullin   | HIYS     | HIYS           | Purchase           | 2024-12-03        | 2024-12-04   |      375,000 | no usable Yahoo history (survivorship ledger) |
-| Markwayne Mullin   | CYBR     | CYBR           | Sale (Full)        | 2024-12-31        | 2025-01-02   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Markwayne Mullin   | BRK      | BRK            | Sale (Partial)     | 2025-02-27        | 2025-02-28   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Rick Scott         | WTT      | WTT            | Sale (Full)        | 2023-09-15        | 2023-09-18   |      750,000 | no usable Yahoo history (survivorship ledger) |
-| Sheldon Whitehouse | SQ       | SQ             | Sale (Full)        | 2023-10-17        | 2023-10-18   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Purchase           | 2021-09-08        | 2021-09-09   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Purchase           | 2021-11-10        | 2021-11-11   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2022-02-14        | 2022-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | FUN      | FUN            | Sale (Full)        | 2022-02-14        | 2022-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Purchase           | 2022-03-11        | 2022-03-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | VMW      | VMW            | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SIVB     | SIVB           | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | LMST     | LMST           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | MASI     | MASI           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SQ       | SQ             | Sale (Full)        | 2022-05-13        | 2022-05-16   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Purchase           | 2022-05-13        | 2022-05-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Purchase           | 2022-06-13        | 2022-06-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Purchase           | 2022-07-13        | 2022-07-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Purchase           | 2022-07-13        | 2022-07-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Purchase           | 2022-08-15        | 2022-08-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Purchase           | 2022-10-12        | 2022-10-13   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ECOM     | ECOM           | Sale (Full)        | 2022-10-12        | 2022-10-13   |      750,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | MASI     | MASI           | Sale (Full)        | 2022-11-10        | 2022-11-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ATVI     | ATVI           | Purchase           | 2022-12-14        | 2022-12-15   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | ATVI     | ATVI           | Sale (Full)        | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | LMST     | LMST           | Sale (Full)        | 2023-05-11        | 2023-05-12   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2023-06-15        | 2023-06-16   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Full)        | 2023-07-14        | 2023-07-17   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2023-08-14        | 2023-08-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | PARA     | PARA           | Purchase           | 2023-10-13        | 2023-10-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | PARA     | PARA           | Purchase           | 2024-01-12        | 2024-01-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Full)        | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | GOGL     | GOGL           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | PARA     | PARA           | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | WBA      | WBA            | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | SSBK     | SSBK           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | GOGL     | GOGL           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville   | PARA     | PARA           | Sale (Full)        | 2024-06-14        | 2024-06-17   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Alan Armstrong     | KBGGY    | KBGGY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | series starts after the entry date            |
-| Bill Hagerty       | VRM      | VRM            | Sale (Full)        | 2021-12-22        | 2021-12-23   |        8,000 | series starts after the entry date            |
+| senator          | ticker   | price_ticker   | transaction_type   | disclosure_date   | entry_date   |   amount_mid | why_missing                                   |
+|:-----------------|:---------|:---------------|:-------------------|:------------------|:-------------|-------------:|:----------------------------------------------|
+| Alan Armstrong   | TOELY    | TOELY          | Purchase           | 2026-07-21        | 2026-07-22   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | WIZEY    | WIZEY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | WIZEY    | WIZEY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | KYOCY    | KYOCY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | EA       | EA             | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | DFKCY    | DFKCY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | HOLX     | HOLX           | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | EA       | EA             | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | AVB      | AVB            | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | BKEP     | BKEP           | Sale (Full)        | 2022-01-10        | 2022-01-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | NS       | NS             | Sale (Full)        | 2022-01-10        | 2022-01-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | TACO     | TACO           | Sale (Partial)     | 2022-04-13        | 2022-04-14   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | BKEPP    | BKEPP          | Sale (Full)        | 2022-09-02        | 2022-09-06   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | TACO     | TACO           | Sale (Full)        | 2023-08-14        | 2023-08-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | EQC      | EQC            | Sale (Full)        | 2024-12-30        | 2024-12-31   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Bill Hagerty     | AHL-C    | AHL-C          | Sale (Full)        | 2025-01-22        | 2025-01-23   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Dan Sullivan     | PXD      | PXD            | Sale (Partial)     | 2023-02-13        | 2023-02-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Dan Sullivan     | PXD      | PXD            | Sale (Full)        | 2023-09-18        | 2023-09-19   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Gary C. Peters   | LEG      | LEG            | Sale (Full)        | 2024-11-14        | 2024-11-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| John Boozman     | HES      | HES            | Sale (Full)        | 2024-05-08        | 2024-05-09   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Maria Cantwell   | RNWK     | RNWK           | Sale (Full)        | 2023-01-13        | 2023-01-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Markwayne Mullin | CYBR     | CYBR           | Purchase           | 2024-01-26        | 2024-01-29   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Markwayne Mullin | INST     | INST           | Sale (Partial)     | 2024-01-26        | 2024-01-29   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Markwayne Mullin | CYBR     | CYBR           | Sale (Full)        | 2024-12-31        | 2025-01-02   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Rick Scott       | WTT      | WTT            | Sale (Full)        | 2023-09-15        | 2023-09-18   |      750,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Purchase           | 2021-09-08        | 2021-09-09   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Purchase           | 2021-11-10        | 2021-11-11   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2022-02-14        | 2022-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | FUN      | FUN            | Sale (Full)        | 2022-02-14        | 2022-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Purchase           | 2022-03-11        | 2022-03-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | VMW      | VMW            | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SIVB     | SIVB           | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | LMST     | LMST           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | MASI     | MASI           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-05-13        | 2022-05-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Purchase           | 2022-06-13        | 2022-06-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Purchase           | 2022-07-13        | 2022-07-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-07-13        | 2022-07-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-08-15        | 2022-08-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Purchase           | 2022-10-12        | 2022-10-13   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ECOM     | ECOM           | Sale (Full)        | 2022-10-12        | 2022-10-13   |      750,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | MASI     | MASI           | Sale (Full)        | 2022-11-10        | 2022-11-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ATVI     | ATVI           | Purchase           | 2022-12-14        | 2022-12-15   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | ATVI     | ATVI           | Sale (Full)        | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | LMST     | LMST           | Sale (Full)        | 2023-05-11        | 2023-05-12   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-06-15        | 2023-06-16   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Full)        | 2023-07-14        | 2023-07-17   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-08-14        | 2023-08-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | PARA     | PARA           | Purchase           | 2023-10-13        | 2023-10-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | PARA     | PARA           | Purchase           | 2024-01-12        | 2024-01-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Full)        | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | GOGL     | GOGL           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | PARA     | PARA           | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | WBA      | WBA            | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | SSBK     | SSBK           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | GOGL     | GOGL           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
+| Tommy Tuberville | PARA     | PARA           | Sale (Full)        | 2024-06-14        | 2024-06-17   |      175,000 | no usable Yahoo history (survivorship ledger) |
+| Alan Armstrong   | KBGGY    | KBGGY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | series starts after the entry date            |
+| Bill Hagerty     | VRM      | VRM            | Sale (Full)        | 2021-12-22        | 2021-12-23   |        8,000 | series starts after the entry date            |
 
 ### 4. Price series that end before the window end while a copied position may be open
 
-In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (0 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Proposed engine rule (E20, for Harry): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
+In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (0 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
 
 _None._
 
 ### 5. Daily moves beyond +/-50% (split-adjusted close)
 
-288 moves in 53 symbols; 202 unexplained; 37 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
+378 moves in 52 symbols; 275 unexplained; 27 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
 
-| ticker   | prev_date   | date       |   close | ret_close   | ret_adj   | next_ret_close   | explanation                                                                                          |
-|:---------|:------------|:-----------|--------:|:------------|:----------|:-----------------|:-----------------------------------------------------------------------------------------------------|
-| ADCT     | 2023-12-12  | 2023-12-13 |       2 | 63.1%       | 63.1%     | 6.5%             | unexplained (no split on record)                                                                     |
-| ADCT     | 2024-12-05  | 2024-12-06 |       3 | 63.0%       | 63.0%     | 2.6%             | unexplained (no split on record)                                                                     |
-| ADCT     | 2026-06-03  | 2026-06-04 |       1 | -57.1%      | -57.1%    | -22.0%           | unexplained (no split on record)                                                                     |
-| AMD      | 2016-04-21  | 2016-04-22 |       4 | 52.3%       | 52.3%     | -13.5%           | unexplained (no split on record)                                                                     |
-| ARGX     | 2017-12-08  | 2017-12-11 |      54 | 78.9%       | 78.9%     | 1.0%             | unexplained (no split on record)                                                                     |
-| CODYY    | 2026-07-08  | 2026-07-09 |       9 | -50.8%      | -50.8%    | 0.8%             | unexplained (no split on record)                                                                     |
-| GL       | 2024-04-10  | 2024-04-11 |      49 | -53.1%      | -53.1%    | 20.2%            | unexplained (no split on record)                                                                     |
-| HOOD     | 2021-08-03  | 2021-08-04 |      70 | 50.4%       | 50.4%     | -27.6%           | unexplained (no split on record)                                                                     |
-| IHICY    | 2020-04-13  | 2020-04-14 |       3 | -53.8%      | -53.8%    | -7.2%            | unexplained (no split on record)                                                                     |
-| KAOOY    | 2018-05-02  | 2018-05-03 |      12 | -80.5%      | -80.5%    | 1.3%             | unexplained (no split on record)                                                                     |
-| KD       | 2026-02-06  | 2026-02-09 |      11 | -54.9%      | -54.9%    | 5.0%             | unexplained (no split on record)                                                                     |
-| KPTI     | 2020-02-28  | 2020-03-02 |     416 | 69.6%       | 69.6%     | -11.0%           | unexplained (no split on record)                                                                     |
-| KPTI     | 2026-07-30  | 2026-07-31 |       2 | -72.6%      | -72.6%    | 2.6%             | unexplained (no split on record)                                                                     |
-| LRN      | 2025-10-28  | 2025-10-29 |      70 | -54.4%      | -54.4%    | -4.8%            | unexplained (no split on record)                                                                     |
-| LYSDY    | 2016-05-24  | 2016-05-25 |       1 | 50.0%       | 50.0%     | 0.0%             | unexplained (no split on record)                                                                     |
-| MARUY    | 2026-07-07  | 2026-07-08 |      31 | -90.1%      | -90.1%    | -0.2%            | unexplained (no split on record)                                                                     |
-| MSLOY    | 2017-11-03  | 2017-11-06 |       5 | 104.3%      | 104.3%    | 5.5%             | unexplained (no split on record)                                                                     |
-| OXY      | 2020-03-06  | 2020-03-09 |      13 | -53.4%      | -52.0%    | 14.6%            | unexplained (no split on record)                                                                     |
-| PAM      | 2019-08-09  | 2019-08-12 |      16 | -53.8%      | -53.8%    | 0.2%             | unexplained (no split on record)                                                                     |
-| PNDRY    | 2025-02-05  | 2025-02-06 |      23 | -51.1%      | -51.1%    | -1.3%            | unexplained (no split on record)                                                                     |
-| RUM      | 2024-12-20  | 2024-12-23 |      13 | 81.2%       | 81.2%     | -2.7%            | unexplained (no split on record)                                                                     |
-| TGOPY    | 2016-07-25  | 2016-07-26 |       2 | 59.0%       | 59.0%     | 2.7%             | unexplained (no split on record)                                                                     |
-| TGOPY    | 2016-11-30  | 2016-12-01 |       2 | 399900.0%   | 399899.9% | 0.0%             | unexplained (no split on record)                                                                     |
-| THLLY    | 2016-11-03  | 2016-11-04 |      19 | 70.9%       | 70.9%     | 0.0%             | unexplained (no split on record)                                                                     |
-| THLLY    | 2019-04-01  | 2019-04-02 |      24 | -80.2%      | -80.2%    | 0.0%             | unexplained (no split on record)                                                                     |
-| THLLY    | 2019-03-12  | 2019-03-13 |     123 | 400.0%      | 400.0%    | 0.0%             | split 5:1 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)       |
-| QABSY    | 2018-11-02  | 2018-11-05 |      21 | 82.3%       | 82.3%     | -3.1%            | split 2:1 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)       |
-| TRUMY    | 2019-04-12  | 2019-04-15 |      28 | 100.0%      | 100.0%    | -49.3%           | split 2:1 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)       |
-| EVVTY    | 2019-06-05  | 2019-06-06 |      43 | 149.9%      | 149.9%    | 0.0%             | split 2499:1000 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error) |
-| EVVTY    | 2019-06-07  | 2019-06-10 |      21 | -51.1%      | -51.1%    | -11.2%           | split 2499:1000 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error) |
-| LYSDY    | 2017-12-01  | 2017-12-04 |       1 | -71.1%      | -71.1%    | 200.0%           | split 1:10 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)      |
-| LYSDY    | 2017-12-04  | 2017-12-05 |       2 | 200.0%      | 200.0%    | -1.8%            | split 1:10 within 5 days, yet the split-adjusted close jumps: Yahoo did NOT adjust (data error)      |
-| BEEP     | 2023-10-04  | 2023-10-05 |       6 | 77.9%       | 77.9%     | -40.5%           | reverses the next day (likely a bad print)                                                           |
-| EVVTY    | 2019-09-03  | 2019-09-04 |      41 | 108.6%      | 108.6%    | -48.5%           | reverses the next day (likely a bad print)                                                           |
-| LYSDY    | 2016-05-12  | 2016-05-13 |       1 | 50.0%       | 50.0%     | -33.3%           | reverses the next day (likely a bad print)                                                           |
-| TGOPY    | 2016-11-29  | 2016-11-30 |       0 | -100.0%     | -100.0%   | 399900.0%        | reverses the next day (likely a bad print)                                                           |
-| KDP      | 2018-07-09  | 2018-07-10 |      22 | -82.1%      | 11.5%     | 8.2%             | adjusted close moves less than 50%: a special dividend or distribution                               |
+| ticker   | prev_date   | date       |   close | ret_close   | ret_adj   | next_ret_close   | explanation                                                            |
+|:---------|:------------|:-----------|--------:|:------------|:----------|:-----------------|:-----------------------------------------------------------------------|
+| ADCT     | 2023-12-12  | 2023-12-13 |       2 | 63.1%       | 63.1%     | 6.5%             | unexplained (no split on record)                                       |
+| ADCT     | 2024-12-05  | 2024-12-06 |       3 | 63.0%       | 63.0%     | 2.6%             | unexplained (no split on record)                                       |
+| ADCT     | 2026-06-03  | 2026-06-04 |       1 | -57.1%      | -57.1%    | -22.0%           | unexplained (no split on record)                                       |
+| AMD      | 2016-04-21  | 2016-04-22 |       4 | 52.3%       | 52.3%     | -13.5%           | unexplained (no split on record)                                       |
+| ARGX     | 2017-12-08  | 2017-12-11 |      54 | 78.9%       | 78.9%     | 1.0%             | unexplained (no split on record)                                       |
+| CODYY    | 2026-07-08  | 2026-07-09 |       9 | -50.8%      | -50.8%    | 0.8%             | unexplained (no split on record)                                       |
+| GL       | 2024-04-10  | 2024-04-11 |      49 | -53.1%      | -53.1%    | 20.2%            | unexplained (no split on record)                                       |
+| HOOD     | 2021-08-03  | 2021-08-04 |      70 | 50.4%       | 50.4%     | -27.6%           | unexplained (no split on record)                                       |
+| IHICY    | 2020-04-13  | 2020-04-14 |       3 | -53.8%      | -53.8%    | -7.2%            | unexplained (no split on record)                                       |
+| KAOOY    | 2018-05-02  | 2018-05-03 |      12 | -80.5%      | -80.5%    | 1.3%             | unexplained (no split on record)                                       |
+| KD       | 2026-02-06  | 2026-02-09 |      11 | -54.9%      | -54.9%    | 5.0%             | unexplained (no split on record)                                       |
+| KPTI     | 2020-02-28  | 2020-03-02 |     416 | 69.6%       | 69.6%     | -11.0%           | unexplained (no split on record)                                       |
+| KPTI     | 2026-07-30  | 2026-07-31 |       2 | -72.6%      | -72.6%    | 2.6%             | unexplained (no split on record)                                       |
+| LRN      | 2025-10-28  | 2025-10-29 |      70 | -54.4%      | -54.4%    | -4.8%            | unexplained (no split on record)                                       |
+| LYSDY    | 2016-05-24  | 2016-05-25 |       1 | 50.0%       | 50.0%     | 0.0%             | unexplained (no split on record)                                       |
+| MARUY    | 2026-07-07  | 2026-07-08 |      31 | -90.1%      | -90.1%    | -0.2%            | unexplained (no split on record)                                       |
+| MSLOY    | 2017-11-03  | 2017-11-06 |       5 | 104.3%      | 104.3%    | 5.5%             | unexplained (no split on record)                                       |
+| OXY      | 2020-03-06  | 2020-03-09 |      13 | -53.4%      | -52.0%    | 14.6%            | unexplained (no split on record)                                       |
+| PAM      | 2019-08-09  | 2019-08-12 |      16 | -53.8%      | -53.8%    | 0.2%             | unexplained (no split on record)                                       |
+| PNDRY    | 2025-02-05  | 2025-02-06 |      23 | -51.1%      | -51.1%    | -1.3%            | unexplained (no split on record)                                       |
+| RUM      | 2024-12-20  | 2024-12-23 |      13 | 81.2%       | 81.2%     | -2.7%            | unexplained (no split on record)                                       |
+| TGOPY    | 2016-07-25  | 2016-07-26 |       2 | 59.0%       | 59.0%     | 2.7%             | unexplained (no split on record)                                       |
+| THLLY    | 2016-11-03  | 2016-11-04 |      19 | 70.9%       | 70.9%     | 0.0%             | unexplained (no split on record)                                       |
+| BEEP     | 2023-10-04  | 2023-10-05 |       6 | 77.9%       | 77.9%     | -40.5%           | reverses the next day (likely a bad print)                             |
+| EVVTY    | 2019-09-03  | 2019-09-04 |      41 | 108.6%      | 108.6%    | -48.5%           | reverses the next day (likely a bad print)                             |
+| LYSDY    | 2016-05-12  | 2016-05-13 |       1 | 50.0%       | 50.0%     | -33.3%           | reverses the next day (likely a bad print)                             |
+| KDP      | 2018-07-09  | 2018-07-10 |      22 | -82.1%      | 11.5%     | 8.2%             | adjusted close moves less than 50%: a special dividend or distribution |
 
 ### 6. Staleness: share of days with an unchanged close (tickers above 20%)
 
@@ -1475,12 +1523,13 @@ _None._
 |:---------|:---------|:------------------|-------:|-------------------:|:-------------|:-------------|:------------|
 | IHICY    | True     | True              |   2680 |               1569 | 58.6%        | 2016-01-04   | 2026-08-31  |
 | VUSFX    | False    | False             |   2680 |               1524 | 56.9%        | 2016-01-04   | 2026-08-31  |
+| GGSM     | False    | False             |   2680 |               1356 | 50.6%        | 2016-01-04   | 2026-08-31  |
 | MSLOY    | True     | True              |   2680 |               1347 | 50.3%        | 2016-01-04   | 2026-08-31  |
 | BKNIY    | True     | True              |   2680 |               1312 | 49.0%        | 2016-01-04   | 2026-08-31  |
 | LDSCY    | True     | True              |   2428 |               1258 | 51.8%        | 2017-01-03   | 2026-08-31  |
 | ISMAY    | True     | True              |   2680 |               1248 | 46.6%        | 2016-01-04   | 2026-08-31  |
 | BRRLY    | True     | True              |   1932 |               1225 | 63.4%        | 2018-12-21   | 2026-08-31  |
-| USFR     | False    | True              |   2680 |               1170 | 43.7%        | 2016-01-04   | 2026-08-31  |
+| USFR     | False    | False             |   2680 |               1170 | 43.7%        | 2016-01-04   | 2026-08-31  |
 | BDNNY    | True     | True              |   2680 |               1166 | 43.5%        | 2016-01-04   | 2026-08-31  |
 | VONOY    | True     | True              |   2680 |               1079 | 40.3%        | 2016-01-04   | 2026-08-31  |
 | AIBGY    | True     | True              |   1951 |               1069 | 54.8%        | 2018-11-23   | 2026-08-31  |
@@ -1489,6 +1538,7 @@ _None._
 | NRILY    | True     | True              |   2680 |                990 | 37.0%        | 2016-01-04   | 2026-08-31  |
 | THLLY    | True     | True              |   2680 |                951 | 35.5%        | 2016-01-04   | 2026-08-31  |
 | DUFRY    | True     | True              |   2680 |                937 | 35.0%        | 2016-01-04   | 2026-08-31  |
+| IBM.MX   | False    | False             |   2681 |                911 | 34.0%        | 2016-01-04   | 2026-08-31  |
 | QABSY    | True     | True              |   2680 |                875 | 32.7%        | 2016-01-04   | 2026-08-31  |
 | JRONY    | True     | True              |   2680 |                866 | 32.3%        | 2016-01-04   | 2026-08-31  |
 | AONNY    | True     | True              |   2680 |                830 | 31.0%        | 2016-01-04   | 2026-08-31  |
@@ -1501,14 +1551,14 @@ _None._
 | BTDPY    | True     | True              |   2563 |                702 | 27.4%        | 2016-06-21   | 2026-08-31  |
 | SINGY    | True     | True              |   2680 |                689 | 25.7%        | 2016-01-04   | 2026-08-31  |
 | MTSFY    | True     | True              |   2680 |                684 | 25.5%        | 2016-01-04   | 2026-08-31  |
-| TRUMY    | True     | True              |   2680 |                680 | 25.4%        | 2016-01-04   | 2026-08-31  |
+| TRUMY    | True     | True              |   2680 |                681 | 25.4%        | 2016-01-04   | 2026-08-31  |
 | CHEOY    | True     | True              |   2680 |                673 | 25.1%        | 2016-01-04   | 2026-08-31  |
 | CLLNY    | True     | True              |   2204 |                656 | 29.8%        | 2017-11-21   | 2026-08-31  |
 | UCBJY    | True     | True              |   2680 |                636 | 23.7%        | 2016-01-04   | 2026-08-31  |
 | CHGCY    | True     | True              |   2680 |                605 | 22.6%        | 2016-01-04   | 2026-08-31  |
 | SGIOY    | True     | True              |   2680 |                586 | 21.9%        | 2016-01-04   | 2026-08-31  |
-| GBIL     | False    | True              |   2504 |                584 | 23.3%        | 2016-09-14   | 2026-08-31  |
-| TBLL     | False    | True              |   2415 |                556 | 23.0%        | 2017-01-23   | 2026-08-31  |
+| GBIL     | False    | False             |   2504 |                584 | 23.3%        | 2016-09-14   | 2026-08-31  |
+| TBLL     | False    | False             |   2415 |                556 | 23.0%        | 2017-01-23   | 2026-08-31  |
 | GBERY    | True     | True              |   2680 |                554 | 20.7%        | 2016-01-04   | 2026-08-31  |
 | NEXOY    | True     | True              |   2090 |                510 | 24.4%        | 2018-05-08   | 2026-08-31  |
 | NCBDY    | True     | True              |   1861 |                429 | 23.1%        | 2019-04-05   | 2026-08-31  |
@@ -1532,3 +1582,141 @@ _None._
 - Monthly: 2015-01 to 2026-08 (140 months), `data/processed/factors_monthly.csv`.
 - Columns mkt_rf_pct, smb_pct, hml_pct, rf_pct, mom_pct. **Units: percent** (1.00 = 1%), also stated in each file's `units` column; divide by 100 before use. Raw zips and download dates: `data/raw/french/`.
 - NYSE calendar days without a daily factor row: 0; factor days not in the calendar (from 2016-01-04): 0.
+
+## Phase 4: engine (in-sample only)
+
+_Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-02-29** (627 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._
+
+### 1. Events and what the book did with them
+
+884 events: in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
+
+| action                                                            |   events |    dollars |
+|:------------------------------------------------------------------|---------:|-----------:|
+| bought                                                            |      413 | 13,553,206 |
+| ignored: nothing held                                             |      307 | 16,010,654 |
+| sold all                                                          |      101 |  3,860,203 |
+| sold part                                                         |       37 |  2,595,989 |
+| skipped: survivorship ledger (no usable prices)                   |       22 |  1,786,511 |
+| ignored: nothing held (earlier copied lots already closed)        |        3 |     73,002 |
+| reversal: nothing to undo (the corrected record was not acted on) |        2 |          0 |
+| reversal: sold what was still held of the corrected purchase      |        1 |      8,032 |
+
+### 2. Records not copied
+
+- **Survivorship ledger** (K3, logged and skipped until CRSP): 22 purchases, $1,786,511 at midpoints. V15 (pre-registered, not run) fills them with SPY.
+- **No price on the entry date** (series exists): 0.
+
+| action                                          | price_ticker   |   purchases |   dollars |
+|:------------------------------------------------|:---------------|------------:|----------:|
+| skipped: survivorship ledger (no usable prices) | X              |           5 |   875,002 |
+| skipped: survivorship ledger (no usable prices) | ECOM           |           5 |   465,502 |
+| skipped: survivorship ledger (no usable prices) | ATVI           |           1 |   175,000 |
+| skipped: survivorship ledger (no usable prices) | PARA           |           2 |   107,501 |
+| skipped: survivorship ledger (no usable prices) | SSBK           |           1 |    75,000 |
+| skipped: survivorship ledger (no usable prices) | WBA            |           5 |    64,502 |
+| skipped: survivorship ledger (no usable prices) | MASI           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
+
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 310 of 448 sale records (69%), by senator:
+
+| senator              |   sales_ignored |   dollars |
+|:---------------------|----------------:|----------:|
+| Tommy Tuberville     |             155 | 4,796,078 |
+| Dan Sullivan         |              48 |   506,524 |
+| Jerry Moran          |              27 |   240,514 |
+| Bill Hagerty         |              18 | 4,509,509 |
+| Sheldon Whitehouse   |              14 |   277,007 |
+| Markwayne Mullin     |              11 |    88,006 |
+| John W. Hickenlooper |              11 | 3,700,006 |
+| Shelley Moore Capito |               6 |    72,503 |
+| Deb Fischer          |               4 |   166,002 |
+| John Boozman         |               3 |    48,502 |
+| Gary C. Peters       |               3 |    91,002 |
+| Mark R. Warner       |               3 |   625,002 |
+| Lindsey Graham       |               1 |    32,500 |
+| John Thune           |               1 |    32,500 |
+| J.D. Vance           |               1 |    75,000 |
+| Maria Cantwell       |               1 |    32,500 |
+| Rick Scott           |               1 |   750,000 |
+| Tammy Duckworth      |               1 |    32,500 |
+| Thom Tillis          |               1 |     8,000 |
+
+### 3. Open lots and capital deployed
+
+![open lots and capital](figures/phase4_open_lots_capital.png)
+
+| measure                           |   min |    median |       max |
+|:----------------------------------|------:|----------:|----------:|
+| Open lots at the close            |     0 |       101 |       275 |
+| Capital deployed at the close ($) |     0 | 2,863,230 | 8,606,892 |
+
+Days with no open lot (series A earns RF): 6 of 627. Days without a Ken French RF value: 0.
+
+### 4. Holding periods and exits
+
+Closed lot pieces (every exit except the end-of-window mark; a partial sale closes a piece of a lot):
+
+|   lot pieces |   p25 trading days |   median trading days |   p75 trading days |   p25 calendar days |   median calendar days |   p75 calendar days |
+|-------------:|-------------------:|----------------------:|-------------------:|--------------------:|-----------------------:|--------------------:|
+|          192 |                 64 |                   131 |                232 |                  91 |                    189 |                 337 |
+
+| exit_reason   |   pieces |   lots |   entry_dollars |     pnl |
+|:--------------|---------:|-------:|----------------:|--------:|
+| end of window |      251 |    251 |       7,328,041 | 971,883 |
+| reversal      |        1 |      1 |           8,000 |      31 |
+| senator sale  |      191 |    166 |       6,217,165 | 239,027 |
+
+**Still held on the last in-sample day (2024-02-29)**: 251 lots, 54.1% of all dollars ever invested (at cost; $7,328,041 of $13,553,206), marked at $8,299,924.
+
+### 5. Reconciliation (lot P&L against the daily book)
+
+- Sum of lot P&L: **$1,210,941.02**.
+- Sum of daily book P&L (units x daily change in adjusted close): $1,210,941.02; difference **$-0.000000**.
+- Series A return x capital at the prior close, summed: $1,210,941.02; difference $-0.000000.
+- Series B: final NAV - K - interest earned on cash = $1,210,941.02; difference $-0.000000. K = **$7,755,441.79**; interest on idle cash $219,755.09; lowest cash balance $207,365.97 (never negative by construction).
+
+### 6. K6 price repairs and copied holding periods
+
+| ticker   |   rows | first      | last       | in_sample   | inside_holding   |
+|:---------|-------:|:-----------|:-----------|:------------|:-----------------|
+| EVVTY    |      2 | 2019-06-06 | 2019-06-07 | False       | False            |
+| LYSDY    |      1 | 2017-12-04 | 2017-12-04 | False       | False            |
+| QABSY    |      1 | 2018-11-02 | 2018-11-02 | False       | False            |
+| TGOPY    |      1 | 2016-11-30 | 2016-11-30 | False       | False            |
+| THLLY    |     14 | 2019-03-13 | 2019-04-01 | False       | False            |
+| TRUMY    |      1 | 2019-04-15 | 2019-04-15 | False       | False            |
+
+Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
+
+### 7. Trade-level panel: N per horizon
+
+`data/processed/event_panel.csv`: 883 in-scope purchase and sale records; 69 without a price on the entry date. Horizons that run past the last in-sample day are censored.
+
+| side     |   horizon_days |   N_from_entry |   N_from_transaction |   censored_entry |   no_price |
+|:---------|---------------:|---------------:|---------------------:|-----------------:|-----------:|
+| purchase |              5 |            413 |                  413 |                0 |         22 |
+| purchase |             21 |            413 |                  413 |                0 |         22 |
+| purchase |             63 |            386 |                  388 |               27 |         22 |
+| purchase |            126 |            231 |                  232 |              182 |         22 |
+| purchase |            252 |            157 |                  161 |              256 |         22 |
+| sale     |              5 |            401 |                  401 |                0 |         47 |
+| sale     |             21 |            359 |                  401 |               42 |         47 |
+| sale     |             63 |            312 |                  314 |               89 |         47 |
+| sale     |            126 |            227 |                  262 |              174 |         47 |
+| sale     |            252 |            189 |                  191 |              212 |         47 |
+
+### 8. In-sample annualised return and volatility, identical dates
+
+Daily returns 2021-09-01 to 2024-02-29 (627 days); annualised return = (product of 1 + r)^(252/N) - 1, volatility = daily standard deviation x sqrt(252). Nothing else yet: no Sharpe ratios, alphas or variants (Phases 5 and 6).
+
+| series                                   | annualised return   | annualised volatility   |
+|:-----------------------------------------|:--------------------|:------------------------|
+| A: return on capital deployed (headline) | 7.61%               | 29.34%                  |
+| B: fixed pot (K = $7,755,442)            | 7.04%               | 10.14%                  |
+| SPY (total return)                       | 6.46%               | 18.40%                  |
+
+### 9. Worked examples
+
+Three lots traced step by step in `outputs/phase4_worked_examples.md`.

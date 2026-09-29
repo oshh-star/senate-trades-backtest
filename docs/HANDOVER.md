@@ -1,59 +1,67 @@
 # Handover
 
 ## Current state
-_Last updated: 2026-09-28, end of Phase 3 (Claude, for Harry)._
+_Last updated: 2026-09-28, end of Phase 4 (Claude, for Harry)._
 
-- **Phase 3 (prices) is done.** `python run_all.py --only clean prices` rebuilds everything offline from the
-  caches in about 2.5 minutes. Tests: `python -m pytest` (106 pass). No trade-level or portfolio-level return
-  exists anywhere; per-ticker daily returns appear only inside the price sanity checks.
-- **Decisions**: J1-J5 logged (2026-09-28). V13 (exclude OTC) and V14 (as revised) pre-registered at commit
-  8666206 (main after the Phase 2 merge), logged in commit c5582bc. Engineering interpretations **E19-E27 need
-  Harry's confirmation**; E20 (series that end early) is a proposed engine rule.
-- **J3 (as first published)** is implemented in the clean stage: data/processed/trade_records.csv has one row per
-  published record (2,540 in-scope records for **2,513 in-scope trades**; 2,511 under "as revised", V14).
-  trades_clean.csv carries orig_* values, `corrected`, `correction_datetime`, `in_scope_as_revised`, `price_ticker`.
-- **J5**: 8 of the 11 override lines confirmed against Yahoo's name (GSK, RYCEY x2, IWB, SBUX, MURGY, BK via BNY,
-  PSTG via P). Not confirmed: WIZEY, HOLX, KYOCY (Yahoo no longer knows the symbols; no confirmed successor).
-  In-scope trades went from 2,502 to 2,513 (+9 from J5, +2 from J3).
-- **Renames**: 32 confirmed through SEC company histories (e.g. FB -> META, ANTM -> ELV, BK -> BNY, PSTG -> P,
-  PCLN -> BKNG), 3 same-symbol name changes (RUM, SLB, UHAL), 3 rejected by hand (DVMT, ESV, WTW).
-  config/ticker_renames.yaml.
-- **Prices**: 1,453 symbols requested (every price_ticker in trades_clean.csv plus SPY, NANC, KRUZ, GBPUSD=X);
-  1,278 with usable history. Raw responses and download dates in data/raw/prices/yahoo/. NYSE calendar
-  2016-01-04 to 2026-08-31 (2,680 days).
-- **Coverage**: 96.1% of in-scope records (93.5% of midpoint dollars) have a price on the entry date. The gap is
-  the **survivorship ledger** (data/interim/survivorship_ledger.csv): 35 symbols with in-scope trades have no
-  usable Yahoo history (X, ECOM, ATVI, WBA, SSBK, PARA ...; 94 trades, about $5.6m of midpoint dollars).
-- **Factors**: Ken French daily 2015-01-02 to 2026-08-31 and monthly 2015-01 to 2026-08, in PERCENT.
+- **Phase 4 (engine) is done, IN-SAMPLE ONLY** (disclosures 2021-09-01 to 2024-02-29; the OOS firewall is shut and
+  the engine cuts prices, RF and the calendar at 2024-02-29 before computing anything). `python run_all.py --skip-scrape`
+  rebuilds clean, prices and engine from the caches in about 2.5 minutes. Tests: `python -m pytest` (129 pass).
+- **Decisions**: K1-K7 logged (2026-09-28). **V15 (neutral fill) and V16 (all ETFs) pre-registered at commit
+  cd71368** (main after the Phase 3 merge), logged in commit 842025e before any return existed. Engineering
+  interpretations **E28-E33 need Harry's confirmation** (BRK is a Canadian CDR, not BRK-B; same-day order; book,
+  series and panel details; ETF class rules).
+- **Scope now (K5 + K2 + K4)**: **2,342 in-scope trades** (2,365 records) against 2,513 before: 170 non-equity ETF
+  trades left (123 bond/T-bill, 25 commodity, 22 other = BITB), 3 non-US listings left (BRK CDR, COLPAL), 2 K2 trades
+  entered (HOLX, KYOCY; in the ledger, so skipped).
+- **Prices**: 96.1% of in-scope records have an entry-date price (93.8% of midpoint dollars). SQ now priced as XYZ.
+  K6: 20 bad Yahoo prints repaired in 6 OTC ADRs, all in 2016-2019, none inside a copied holding period.
+- **Survivorship ledger**: 177 symbols, 32 with in-scope records (89 trades, $5.5m at midpoints; in-sample: 22
+  purchases, $1.8m, skipped). Every symbol has a reason and source in config/ledger_reasons.yaml (in-scope: 13
+  acquired for cash, 12 for stock, 4 ticker issues, 1 bankrupt, 1 liquidated, 1 unknown).
+- **Engine results (in-sample)**: 884 events -> 413 copied lots; 310 of 448 sale records ignored (nothing held,
+  mostly stock bought before the window; Tuberville 155); K = $7,755,442; lot P&L = book P&L to the cent.
+  Annualised return / volatility over identical dates: series A 7.61% / 29.34%, series B 7.04% / 10.14%, SPY 6.46% /
+  18.40%. Outputs: data/processed/lots.csv, daily_book.csv, event_panel.csv, engine_events.csv, engine_metadata.json;
+  outputs/data_quality.md Phase 4 section; outputs/figures/phase4_open_lots_capital.png;
+  outputs/phase4_worked_examples.md.
 
 ## Exact next step
-1. **Harry**: confirm E19-E27 (especially the E20 rule for series that end early), and decide WIZEY, HOLX and
-   KYOCY (Open questions 1).
-2. **Phase 4: engine.** From data/processed/trade_records.csv (J3) build copied positions: FIFO sale matching
-   (E18), J3 reversals at correction datetimes, entry at the adjusted close on the first trading day after
-   disclosure (D11), trades in the survivorship ledger logged and skipped (until CRSP), E20 for series that end
-   early; then the trade-level returns (disclosure and transaction dates, D14) and the daily calendar-time
-   portfolio (D15), in-sample only until the OOS firewall is lifted.
+1. **Harry**: confirm E28-E33 (DECISIONS.md), and check one worked example on Yahoo Finance
+   (outputs/phase4_worked_examples.md).
+2. **Phase 5: metrics and benchmarks, in-sample.** From daily_book.csv: monthly returns, Sharpe ratios, SPY,
+   SPY scaled to series A's volatility, the equal-weighted universe, FF3 + momentum regressions; NANC and KRUZ from
+   February 2023 (in-sample: February 2023 to February 2024 only). Event study from event_panel.csv (mean and t-stats
+   by horizon, purchases and sales, copier vs senator, the gap). Still no variants and no out-of-sample numbers.
+
+## Known limitations
+- **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
+  April 2019, Corteva in June 2019): a lot held across a spin-off date is priced with RTX's or DD's history, which may
+  not credit the spun-off shares. Both dates are before the 5-year window, so only the 10-year variant (V12) is
+  affected. Not fixed.
+- **Series A in the first weeks**: from 2021-09-09 to mid-October 2021 the book holds a single lot, so series A's
+  daily returns are one stock's (moves of +/-6% a day). This is what "return on capital deployed" means, but it
+  inflates series A's volatility; Phase 5 should show it (and series B, which does not have the problem).
+- **Yahoo drops delisted names entirely**, so E20 (series ending early) almost never fires (LBRDA only); the
+  survivorship problem sits in the ledger instead, which is why V15 and CRSP matter.
+- Preferred shares (AHL-C, BKEPP) passed Yahoo's EQUITY classification in Phase 2; both are in the ledger and skipped.
 
 ## Pre-submission checklist (before Monday 19 October 2026, 23:59)
 - [ ] **On or after 1 October 2026**: run `python run_all.py --only scrape clean` once to finalise the 2026
-      listing (PTRs received up to 30 September), then `python run_all.py --only prices` and commit.
+      listing (PTRs received up to 30 September), then `python run_all.py --only prices engine` and commit.
 - [ ] If WRDS access arrives: add the CRSP daily CSV to data/raw/crsp/ and run the CRSP robustness check (A04).
 - [ ] Every variant run is logged in DECISIONS.md "Variants run" (the professor asks how many were tried).
 - [ ] `python run_all.py` rebuilds every number from the committed caches.
 
 ## Open questions
-1. **J5 overrides not confirmed**: WIZEY (Wise plc ADR; Yahoo lists the new US listing WSE, "Wise Group plc", a
-   different security from 2026), HOLX (Hologic, taken private; no Yahoo data), KYOCY (Kyocera ADR; Yahoo lists
-   KYOAY, a different ADR programme). All three stay out (NO_TICKER). Harry: keep out, or add by hand to
-   config/ticker_renames.yaml with `hand: true` if you want WSE / KYOAY prices used.
-2. **Survivorship ledger** (35 symbols with in-scope trades, 94 trades): the engine needs a rule for them until
-   CRSP arrives. Proposal: log and skip (the report counts them). US Steel (X, 22 trades, $1.7m) and
-   ChannelAdvisor (ECOM, $1.2m) are the largest.
-3. **Yahoo data errors to watch** (outputs/data_quality.md, Phase 3 sections 5-6): some OTC ADRs show split
-   moves Yahoo did not adjust (THLLY, QABSY, TRUMY, EVVTY, LYSDY) and one absurd print (TGOPY, 2016-11-30).
-   43 symbols, mostly OTC ADRs, have an unchanged close on over 20% of days. V13 (exclude OTC) bounds this.
-4. **WRDS access requested 27 Sep 2026, awaiting approval** (A04).
+1. **E28-E33** need confirmation. In particular E28(a): BRK is a CAD-hedged Canadian Depositary Receipt ("Bershire
+   Hathaway Cdr [Cad Hedged]"), so it is now excluded as a non-US listing instead of being mapped to BRK-B.
+2. **Ledger symbols marked "unknown"**: AHL-C (in scope, $32,500), and variant-only AQFH, CEM, HYH, TWO, HIYS
+   (HIYS: Yahoo has no history; its record is out of scope anyway as a bond ETF).
+3. **Should series A start once the book holds a minimum number of lots?** (See Known limitations.) It must be
+   decided before any out-of-sample number is seen; currently it starts on the window's first day.
+4. **WRDS access requested 27 Sep 2026, awaiting approval** (A04). CRSP should price the 27 in-scope ledger symbols
+   that were acquired, went bankrupt or liquidated; not the 4 OTC ADRs (TOELY, DFKCY, WIZEY, KYOCY) or the
+   preferred share (AHL-C).
 5. **Stooq and theunitedstates.io are unreachable** from the cloud; not needed on the current plan.
 6. **Timing.** The listing's report title date can be one day later than the date received (UTC); we key on
    the date received and the time from the PTR page (E05).

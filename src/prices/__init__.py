@@ -32,8 +32,19 @@ RECORDS = PROCESSED / "trade_records.csv"
 
 
 def symbols_needed(cfg: dict) -> list[str]:
+    """Every price_ticker in trades_clean.csv AND in trade_records.csv (a first-published record can name
+    a symbol the corrected trade no longer uses, e.g. HIYS -> PDBC), plus prices.extra_symbols."""
     tr = pd.read_csv(TRADES_CLEAN, dtype=str, keep_default_na=False)
-    return sorted({t for t in tr["price_ticker"] if t} | set(cfg["prices"]["extra_symbols"]))
+    rc = pd.read_csv(RECORDS, dtype=str, keep_default_na=False)
+    return sorted({t for t in tr["price_ticker"] if t} | {t for t in rc["price_ticker"] if t}
+                  | set(cfg["prices"]["extra_symbols"]))
+
+
+def ledger_only_symbols() -> dict[str, str]:
+    """K2: symbols whose ticker is right but whose Yahoo prices must never be used."""
+    from src.clean.build import load_asset_overrides
+    from src.clean.tickers import normalise_ticker
+    return {normalise_ticker(o["ticker"]): o.get("note", "") for o in load_asset_overrides() if o.get("ledger_only")}
 
 
 def resolve_step(cfg: dict) -> pd.DataFrame:
@@ -76,15 +87,19 @@ def recycled_symbols() -> dict[str, str]:
         return {}
     r = pd.read_csv(RESOLUTION, keep_default_na=False)
     r = r[(r["outcome"] == "delisted_or_unknown") & (r["yahoo_recognised"].astype(str) == "True")]
-    return dict(zip(r["ticker"], r["yahoo_name"]))
+    from src.clean.build import load_recycled
+    return {**dict(zip(r["ticker"], r["yahoo_name"])), **{t: f"hand: {why}" for t, why in load_recycled().items()}}
 
 
 def build_step(cfg: dict) -> dict:
     from . import yahoo_prices as yp
+    from . import repairs as rp
     p = cfg["prices"]
     end = p["end"].isoformat()
     recycled = recycled_symbols()
-    frames, divs, spls, cov = [], [], [], []
+    ledger_only = ledger_only_symbols()
+    fixes = rp.load(Path(p.get("repairs", rp.REPAIRS)))
+    frames, divs, spls, cov, fix_log = [], [], [], [], []
     for sym in symbols_needed(cfg):
         rec = yp.read_cached(yp.cache_path(Path(p["raw_dir"]), sym))
         d = yp.parse(rec) if rec else yp.parse({})
@@ -92,7 +107,13 @@ def build_step(cfg: dict) -> dict:
         meta = (((rec or {}).get("body") or {}).get("chart") or {}).get("result") or [{}]
         rmt = (meta[0] or {}).get("meta", {}).get("regularMarketTime") if meta and meta[0] else None
         note = ""
-        if sym in recycled:
+        px, lg = rp.apply(px, sym, fixes)
+        fix_log += lg
+        if sym in ledger_only:
+            note = f"K2: ticker confirmed by hand but Yahoo's prices are not used ({ledger_only[sym]})"
+            px = px.iloc[0:0]
+            d["dividends"], d["splits"] = d["dividends"].iloc[0:0], d["splits"].iloc[0:0]
+        elif sym in recycled:
             note = f"recycled symbol: Yahoo's history is {recycled[sym]!r}, another company; not used"
             px = px.iloc[0:0]
             d["dividends"], d["splits"] = d["dividends"].iloc[0:0], d["splits"].iloc[0:0]
@@ -120,6 +141,9 @@ def build_step(cfg: dict) -> dict:
     cal.to_csv(CALENDAR, index=False)
     cov = pd.DataFrame(cov)
     cov.to_csv(COVERAGE, index=False)
+    rp.LOG.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(fix_log, columns=rp.LOG_COLUMNS).to_csv(rp.LOG, index=False)
+    print(f"  [prices] K6 repairs: {len(fix_log)} price rows changed in {len({r['ticker'] for r in fix_log})} symbols -> {rp.LOG}")
     print(f"  [prices] {cov['has_data'].sum()}/{len(cov)} symbols with data; {len(prices):,} price rows -> {PRICES}; "
           f"calendar {cal['date'].min()}..{cal['date'].max()} ({len(cal)} days)")
     return {"prices": prices, "calendar": cal, "coverage": cov}

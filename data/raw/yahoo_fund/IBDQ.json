@@ -1,0 +1,11 @@
+{
+ "category": "",
+ "error": "{'code': 'Not Found', 'description': 'Quote not found for symbol: IBDQ'}",
+ "family": "",
+ "legal_type": "",
+ "long_name": "",
+ "queried_at": "2026-09-28T17:19:54Z",
+ "quote_type": "",
+ "status": 404,
+ "symbol": "IBDQ"
+}

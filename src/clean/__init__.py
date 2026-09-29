@@ -12,11 +12,12 @@ from src.config import user_agent
 
 
 def run(cfg: dict) -> dict:
-    from . import build, report, tickers, yahoo
+    from . import build, etf_class, report, tickers, yahoo
 
     ua = user_agent(cfg)
     sec = tickers.SecIndex(tickers.load_sec(ua))
     interval = float(cfg["scrape"]["min_seconds_between_requests"])
-    R = build.build(cfg, yahoo_lookup=lambda syms: yahoo.lookup(syms, ua, interval), sec_index=sec)
+    R = build.build(cfg, yahoo_lookup=lambda syms: yahoo.lookup(syms, ua, interval), sec_index=sec,
+                    fund_lookup=lambda syms: etf_class.lookup(syms, ua, interval))
     report.run_report(cfg, R)
     return R

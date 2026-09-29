@@ -145,15 +145,17 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
     otc = dict(zip(tickers["price_ticker"], tickers["is_otc"].astype(str) == "True"))
     spans = cov.set_index("ticker")[["first_date", "last_date"]].replace("", np.nan)
     splits = pd.read_csv("data/processed/splits.csv", keep_default_na=False)
-    from .resolve import LEDGER, ledger
+    from .resolve import LEDGER, ledger, load_ledger_reasons
     res = pd.read_csv("data/interim/ticker_resolution.csv", keep_default_na=False)
     tr_all = pd.read_csv("data/processed/trades_clean.csv", keep_default_na=False, low_memory=False, dtype={"ticker": str})
     tr_all["in_scope"] = tr_all["in_scope"].astype(str) == "True"
     tr_all["amount_mid"] = pd.to_numeric(tr_all["amount_mid"], errors="coerce")
-    led = ledger(cov, tr_all, res)
+    led = ledger(cov, tr_all, res, recs, load_ledger_reasons(Path(cfg["prices"].get("ledger_reasons", "config/ledger_reasons.yaml"))))
     led.to_csv(LEDGER, index=False)
     ren = yaml.safe_load(Path(cfg["prices"]["ticker_renames"]).read_text()) or {}
 
+    from .repairs import LOG as FIXLOG
+    fixlog = pd.read_csv(FIXLOG) if FIXLOG.exists() else pd.DataFrame(columns=["ticker"])
     s = coverage(recs, prices, cal, spans)
     miss = s[~s["has_entry_price"]]
     miss[["record_id", "senator", "ticker", "price_ticker", "asset_name", "transaction_type", "disclosure_date",
@@ -201,11 +203,20 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          f"symbols whose history now belongs to another company); {len(led_s)} of them have in-scope trades "
          f"({int(led_s['in_scope_trades'].sum())} trades, ${led_s['in_scope_midpoint_dollars'].sum():,.0f} at midpoints). "
          "CRSP (A04) is the fix.", "",
-         md(led_s[["price_ticker", "efd_asset_names", "in_scope_trades", "in_scope_midpoint_dollars", "first_trade",
-                   "last_trade", "why"]].assign(efd_asset_names=led_s["efd_asset_names"].str[:40], why=led_s["why"].str[:75])), "",
-         "### 2. Price download", "",
+         md(led_s[["price_ticker", "efd_asset_names", "in_scope_trades", "in_scope_purchases", "in_scope_midpoint_dollars",
+                   "first_trade", "last_trade", "reason", "reason_source"]].assign(efd_asset_names=led_s["efd_asset_names"].str[:35])), "",
+         "Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: "
+         + ", ".join(f"{k} {v}" for k, v in led_s["reason"].value_counts().items()) + "; for all "
+         f"{len(led)} ledger symbols: " + ", ".join(f"{k} {v}" for k, v in led["reason"].value_counts().items()) + ". "
+         "Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases "
+         "with SPY's return.", "",
+         "### 2. Price download and repairs", "",
          f"- Symbols requested: **{len(cov)}**; with data: **{int(cov['has_data'].sum())}**; without: "
          f"{int((~cov['has_data']).sum())}. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.",
+         f"- K6 repairs (`config/price_repairs.yaml`): {len(fixlog)} price rows changed in "
+         f"{fixlog['ticker'].nunique() if len(fixlog) else 0} symbols ({', '.join(sorted(fixlog['ticker'].unique())) if len(fixlog) else 'none'}); "
+         "every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied "
+         "holding period.",
          f"- NYSE trading calendar (SPY's dates): {cal.min()} to {cal.max()}, {len(cal):,} days "
          "(`data/processed/trading_calendar.csv`).",
          f"- `data/processed/prices.csv.gz`: {len(prices):,} rows (date, ticker, close, adj_close, volume). Yahoo's `close` is "
@@ -225,7 +236,7 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          f"In-scope purchases whose symbol HAS a Yahoo series that ends before {end} ({len(early)} senator-ticker pairs; "
          "symbols with no usable history at all are in the survivorship ledger, section 1; "
          f"`{EARLY_END}`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before "
-         "the series ends (a rough check; FIFO matching is Phase 4). **Proposed engine rule (E20, for Harry): close the "
+         "the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the "
          "position at the last available price and hold the proceeds at the risk-free rate until the window ends.**", "",
          md(early), "",
          "### 5. Daily moves beyond +/-50% (split-adjusted close)", "",
