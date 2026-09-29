@@ -1232,7 +1232,7 @@ ETFs classified as equity only because no category was found and the name has no
 
 ## Phase 3: prices
 
-_Stage `prices` of `python run_all.py`. Yahoo daily history 2016-01-01 to 2026-08-31 for every symbol in trades_clean.csv (all variants) plus SPY, NANC, KRUZ, GBPUSD=X; raw responses with their download date in `data/raw/prices/yahoo/`. No trade or portfolio returns are computed; per-ticker daily returns appear only in the checks below. Coverage uses the headline records (J3: as first published)._
+_Stage `prices` of `python run_all.py`. Yahoo daily history 2016-01-01 to 2026-08-31 for every symbol in trades_clean.csv (all variants) plus SPY, NANC, KRUZ, GOP, GBPUSD=X; raw responses with their download date in `data/raw/prices/yahoo/`. No trade or portfolio returns are computed; per-ticker daily returns appear only in the checks below. Coverage uses the headline records (J3: as first published)._
 
 ### 1. Ticker resolution (renames and the survivorship ledger)
 
@@ -1329,10 +1329,10 @@ Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records
 
 ### 2. Price download and repairs
 
-- Symbols requested: **1457**; with data: **1279**; without: 178. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- Symbols requested: **1458**; with data: **1280**; without: 178. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
 - K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,212,966 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,213,860 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
@@ -1587,18 +1587,50 @@ _None._
 
 _Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-02-29** (627 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._
 
+### 0. Warm-up (L2) against the empty start (V17)
+
+The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 135 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $7,210,573 in cash, K = $8,406,633).
+
+| action                                                     |   events |   dollars |
+|:-----------------------------------------------------------|---------:|----------:|
+| bought                                                     |       72 | 1,552,036 |
+| ignored: nothing held                                      |       49 | 1,114,524 |
+| skipped: survivorship ledger (no usable prices)            |       11 |   353,006 |
+| sold all                                                   |        2 |   409,493 |
+| ignored: nothing held (earlier copied lots already closed) |        1 |    75,000 |
+
+Before (V17: the Phase 4 rule, rebuilt from the same events for this table only; book counts, no returns) against after (the headline). Window 2021-09-01 to 2024-02-29. Also in `outputs/tables/phase5_warmup_before_after.csv`.
+
+| measure                                                                        | V17 empty start (Phase 4 rule)   | warm-up 12 months (L2, headline)   |
+|:-------------------------------------------------------------------------------|:---------------------------------|:-----------------------------------|
+| sale records in the window                                                     | 448                              | 448                                |
+| sales ignored: nothing held                                                    | 310                              | 265                                |
+| sales ignored (share)                                                          | 69.2%                            | 59.2%                              |
+| sales matched to a copied position                                             | 138                              | 183                                |
+| open lots: min                                                                 | 0                                | 65                                 |
+| open lots: median                                                              | 101                              | 136                                |
+| open lots: max                                                                 | 275                              | 308                                |
+| capital deployed: min ($)                                                      | 0                                | 1,136,495                          |
+| capital deployed: median ($)                                                   | 2,863,230                        | 3,387,243                          |
+| capital deployed: max ($)                                                      | 8,606,892                        | 9,066,888                          |
+| days with no open lot                                                          | 6                                | 0                                  |
+| lots held on the last day                                                      | 251                              | 273                                |
+| share of dollars ever invested still held on the last day (at cost)            | 54.1%                            | 51.6%                              |
+| share still held on the last day, lots bought inside the window only (at cost) | 54.1%                            | 55.1%                              |
+| value held on the last day ($)                                                 | 8,299,924                        | 8,755,483                          |
+
 ### 1. Events and what the book did with them
 
-884 events: in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
+884 window events (plus 135 warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
 
 | action                                                            |   events |    dollars |
 |:------------------------------------------------------------------|---------:|-----------:|
 | bought                                                            |      413 | 13,553,206 |
-| ignored: nothing held                                             |      307 | 16,010,654 |
-| sold all                                                          |      101 |  3,860,203 |
-| sold part                                                         |       37 |  2,595,989 |
+| ignored: nothing held                                             |      258 | 15,003,629 |
+| sold all                                                          |      141 |  4,462,311 |
+| sold part                                                         |       42 |  2,636,122 |
 | skipped: survivorship ledger (no usable prices)                   |       22 |  1,786,511 |
-| ignored: nothing held (earlier copied lots already closed)        |        3 |     73,002 |
+| ignored: nothing held (earlier copied lots already closed)        |        7 |    363,504 |
 | reversal: nothing to undo (the corrected record was not acted on) |        2 |          0 |
 | reversal: sold what was still held of the corrected purchase      |        1 |      8,032 |
 
@@ -1619,15 +1651,15 @@ _Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-
 | skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
 
-**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 310 of 448 sale records (69%), by senator:
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 265 of 448 sale records (59%), by senator:
 
 | senator              |   sales_ignored |   dollars |
 |:---------------------|----------------:|----------:|
-| Tommy Tuberville     |             155 | 4,796,078 |
+| Tommy Tuberville     |             123 | 4,208,062 |
 | Dan Sullivan         |              48 |   506,524 |
-| Jerry Moran          |              27 |   240,514 |
 | Bill Hagerty         |              18 | 4,509,509 |
 | Sheldon Whitehouse   |              14 |   277,007 |
+| Jerry Moran          |              14 |   112,007 |
 | Markwayne Mullin     |              11 |    88,006 |
 | John W. Hickenlooper |              11 | 3,700,006 |
 | Shelley Moore Capito |               6 |    72,503 |
@@ -1647,12 +1679,12 @@ _Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-
 
 ![open lots and capital](figures/phase4_open_lots_capital.png)
 
-| measure                           |   min |    median |       max |
-|:----------------------------------|------:|----------:|----------:|
-| Open lots at the close            |     0 |       101 |       275 |
-| Capital deployed at the close ($) |     0 | 2,863,230 | 8,606,892 |
+| measure                           |       min |    median |       max |
+|:----------------------------------|----------:|----------:|----------:|
+| Open lots at the close            |        65 |       136 |       308 |
+| Capital deployed at the close ($) | 1,136,495 | 3,387,243 | 9,066,888 |
 
-Days with no open lot (series A earns RF): 6 of 627. Days without a Ken French RF value: 0.
+Days with no open lot (series A earns RF): 0 of 627. Days without a Ken French RF value: 0.
 
 ### 4. Holding periods and exits
 
@@ -1660,22 +1692,22 @@ Closed lot pieces (every exit except the end-of-window mark; a partial sale clos
 
 |   lot pieces |   p25 trading days |   median trading days |   p75 trading days |   p25 calendar days |   median calendar days |   p75 calendar days |
 |-------------:|-------------------:|----------------------:|-------------------:|--------------------:|-----------------------:|--------------------:|
-|          192 |                 64 |                   131 |                232 |                  91 |                    189 |                 337 |
+|          249 |                 64 |                   145 |                270 |                  91 |                    213 |                 389 |
 
 | exit_reason   |   pieces |   lots |   entry_dollars |     pnl |
 |:--------------|---------:|-------:|----------------:|--------:|
-| end of window |      251 |    251 |       7,328,041 | 971,883 |
+| end of window |      273 |    273 |       7,795,066 | 960,417 |
 | reversal      |        1 |      1 |           8,000 |      31 |
-| senator sale  |      191 |    166 |       6,217,165 | 239,027 |
+| senator sale  |      248 |    217 |       7,302,176 | 205,750 |
 
-**Still held on the last in-sample day (2024-02-29)**: 251 lots, 54.1% of all dollars ever invested (at cost; $7,328,041 of $13,553,206), marked at $8,299,924.
+**Still held on the last in-sample day (2024-02-29)**: 273 lots, 51.6% of all dollars ever invested (at cost; $7,795,066 of $15,105,242), marked at $8,755,483.
 
 ### 5. Reconciliation (lot P&L against the daily book)
 
-- Sum of lot P&L: **$1,210,941.02**.
-- Sum of daily book P&L (units x daily change in adjusted close): $1,210,941.02; difference **$-0.000000**.
-- Series A return x capital at the prior close, summed: $1,210,941.02; difference $-0.000000.
-- Series B: final NAV - K - interest earned on cash = $1,210,941.02; difference $-0.000000. K = **$7,755,441.79**; interest on idle cash $219,755.09; lowest cash balance $207,365.97 (never negative by construction).
+- Sum of lot P&L: **$1,112,680.61**.
+- Sum of daily book P&L (units x daily change in adjusted close): $1,112,680.61; difference **$-0.000000**.
+- Series A return x capital at the prior close, summed: $1,112,680.61; difference $-0.000000.
+- Series B: final NAV - K - interest earned on cash = $1,112,680.61; difference $-0.000000. K = **$8,406,632.95**; interest on idle cash $219,523.96; lowest cash balance $206,519.41 (never negative by construction).
 
 ### 6. K6 price repairs and copied holding periods
 
@@ -1713,10 +1745,55 @@ Daily returns 2021-09-01 to 2024-02-29 (627 days); annualised return = (product 
 
 | series                                   | annualised return   | annualised volatility   |
 |:-----------------------------------------|:--------------------|:------------------------|
-| A: return on capital deployed (headline) | 7.61%               | 29.34%                  |
-| B: fixed pot (K = $7,755,442)            | 7.04%               | 10.14%                  |
+| A: return on capital deployed (headline) | -0.14%              | 24.55%                  |
+| B: fixed pot (K = $8,406,633)            | 6.09%               | 10.63%                  |
 | SPY (total return)                       | 6.46%               | 18.40%                  |
 
 ### 9. Worked examples
 
 Three lots traced step by step in `outputs/phase4_worked_examples.md`.
+
+### 10. Survivorship-ledger exposure over time (L3)
+
+Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, applying the senators' disclosed sales (Full: all; Partial: its midpoint at cost, capped), warm-up included; as a share of the capital deployed at each close (the phantom dollars are not in the denominator). The first line closes a phantom lot only on a senator's sale, so it is an upper bound; the second also drops it after the symbol's last SEC Form 25 delisting date. Most of these names (US Steel, ChannelAdvisor, Activision, Paramount, Walgreens) were still listed during the in-sample period: Yahoo no longer serves their history, which is why CRSP (A04) or V15 matters. Daily values in `data/processed/ledger_exposure.csv`.
+
+| measure                                                     | min     | median   | max       | date of max   |
+|:------------------------------------------------------------|:--------|:---------|:----------|:--------------|
+| Share of capital deployed                                   | 2.6%    | 32.7%    | 68.6%     | 2022-10-11    |
+| Same, each lot dropped after its SEC Form 25 delisting date | 2.5%    | 32.7%    | 68.3%     | 2022-10-11    |
+| Ledger cost basis still held ($)                            | 180,004 | 603,006  | 1,593,510 | 2022-08-16    |
+| Ledger lots still held                                      | 8       | 12       | 21        | 2022-08-16    |
+
+## Phase 5: metrics and benchmarks (in-sample only)
+
+_Stage `metrics`. Sample in-sample 2021-09-01 to 2024-02-29; prices and factors cut there. Results: `outputs/tables/phase5_insample_results.md`, `outputs/tables/phase5_event_study.md`._
+
+### 1. Senate universe (equal weight): members and symbols left out
+
+Members per month: min 48, median 76, max 135. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 181 symbol-months, 15 symbols. Month by month in `data/processed/universe_members.csv`.
+
+| symbol   |   months left out |
+|:---------|------------------:|
+| X        |                26 |
+| ECOM     |                24 |
+| WBA      |                20 |
+| LMST     |                12 |
+| SSBK     |                12 |
+| ATVI     |                12 |
+| MASI     |                12 |
+| JNPR     |                11 |
+| CNR      |                11 |
+| VMW      |                11 |
+| SIVB     |                11 |
+| QRTEP    |                 8 |
+| VRM      |                 6 |
+| PARA     |                 4 |
+| CYBR     |                 1 |
+
+### 2. NANC and KRUZ
+
+Both launched 2023-02-07; in-sample months with a full month of returns: 12 (2023-03 to 2024-02). Yahoo serves no history for KRUZ (renamed GOP on 2025-03-21), so KRUZ is priced with GOP (E34).
+
+### 3. Event study sample
+
+883 in-scope purchase and sale records with an in-sample entry date; 69 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last in-sample day (N per row in the event study table).

@@ -432,6 +432,12 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     u.loc[hand, "reason_detail"] = "by hand: " + u.loc[hand, "ticker"].map(non_us_hand or {})
     u.loc[u["reason_code"] == "NON_EQUITY_ETF", "reason_detail"] = u["etf_class"] + ": " + u["etf_category"]
     u["in_scope"] = u["reason_code"] == ""
+    # L2 warm-up: every filter except the window (valid only inside the classified range, in_any_window)
+    ex = pd.Series(True, index=u.index)
+    for code, c in conds:
+        if code != "OUTSIDE_WINDOW":
+            ex &= ~c
+    u["in_scope_ex_window"] = ex & u["in_any_window"]
     keep = u["in_any_window"].copy()
     for code, c in conds:
         if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "OWNER"):
@@ -495,7 +501,8 @@ def build(cfg: dict, D: dict | None = None, yahoo_lookup=None, sec_index=None,
     record_only = ["view", "record_id", "record_no", "n_records", "record_ptr_id", "changed_fields", "superseded_datetime"]
     rev = rev.drop(columns=[c for c in record_only if c in rev.columns])
     tr = tr.drop(columns=[c for c in rev.columns if c in tr.columns]).join(rev, on="trade_id")
-    tr = tr.rename(columns={"in_scope": "in_scope_as_revised", "reason_code": "reason_code_as_revised",
+    tr = tr.rename(columns={"in_scope": "in_scope_as_revised", "in_scope_ex_window": "in_scope_ex_window_as_revised",
+                            "reason_code": "reason_code_as_revised",
                             "reason_detail": "reason_detail_as_revised"})
     g = recs.groupby("trade_id")
     first = recs[recs["record_no"] == 1].set_index("trade_id")
@@ -559,7 +566,7 @@ def add_scope_flags(tr: pd.DataFrame) -> pd.DataFrame:
 
 CLEAN_COLUMNS = [
     "trade_id", "in_scope", "reason_code", "in_scope_as_revised", "reason_code_as_revised",
-    "bioguide_id", "senator", "party", "state", "owner",
+    "in_scope_ex_window_as_revised", "bioguide_id", "senator", "party", "state", "owner",
     "transaction_date", "disclosure_datetime", "disclosure_date", "disclosure_time", "filed_before_1530_et",
     "transaction_type", "ticker", "price_ticker", "renamed", "ticker_raw", "ticker_source", "asset_name", "asset_type",
     "instrument_type", "is_etf", "etf_class", "etf_category", "etf_class_method", "exchange", "exchange_name", "listing", "is_otc", "instrument_unresolved",
@@ -577,8 +584,8 @@ CLEAN_COLUMNS = [
 ]
 RECORD_COLUMNS = [
     "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
-    "record_ptr_id", "changed_fields", "in_scope", "reason_code", "reason_detail", "bioguide_id", "senator", "owner",
-    "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
+    "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "reason_code", "reason_detail", "bioguide_id",
+    "senator", "owner", "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
     "is_etf", "etf_class", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
     "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
 ]

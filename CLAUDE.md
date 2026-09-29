@@ -44,6 +44,8 @@ one command (`python run_all.py`) must rebuild every number.
   skipped until CRSP arrives (K3); V15 fills their purchases with SPY.
 - **Senator vs copier**: every trade's return is also measured from the transaction date. The gap
   between the two is a core result.
+- **Warm-up (L2)**: the book is built from disclosures in the 12 months before the window (`engine.warmup_months: 12`);
+  returns are measured from the window's first day. The empty start is variant V17.
 - **Portfolio**: calendar-time, daily; dollar-weighted average return of open positions (equal-weight
   rebalanced at each filing date is a variant); idle days earn the risk-free rate. USD total returns.
   Ken French US RF. Sharpe ratios and regressions on monthly returns. Event study at 5, 21, 63, 126
@@ -73,6 +75,10 @@ src/clean/etf_class.py  K5: ETF asset class from Yahoo's fund category (cached i
 src/engine/           Phase 4: events.py (entry dates, sizing, ordering, variant filters), book.py (FIFO lots,
                       J3 reversals, series ending early), portfolio.py (series A and B), panel.py (event
                       study panel), diagnostics.py (data_quality.md section, chart, worked examples)
+                      warmup.py (L2 before/after against V17, L3 ledger exposure)
+src/metrics/          Phase 5: stats.py (returns, Sharpe, CAPM/Carhart with OLS and Newey-West t, drawdown, turnover),
+                      benchmarks.py (SPY, risk-matched SPY, Senate universe, NANC, KRUZ as GOP, sterling),
+                      event_study.py (clustered by entry month); outputs/tables/phase5_*.md, outputs/figures/phase5_*.png
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 config/asset_name_overrides.yaml   hand-written asset name -> ticker (J5), confirmed against Yahoo
@@ -91,7 +97,9 @@ data/raw/prices/yahoo/  raw Yahoo daily price responses (gzipped JSON, with down
 data/processed/       trades_clean.csv (one row per trade + variant flags), trade_records.csv (J3 records),
                       tickers.csv, exclusions.csv, prices.csv.gz (not committed: rebuilt by the prices stage),
                       dividends.csv, splits.csv, trading_calendar.csv, factors_daily.csv, factors_monthly.csv,
-                      lots.csv, daily_book.csv, event_panel.csv, engine_events.csv, engine_metadata.json (Phase 4)
+                      lots.csv, daily_book.csv, event_panel.csv, engine_events.csv, engine_metadata.json (Phase 4),
+                      ledger_exposure.csv, monthly_returns.csv, daily_returns.csv, universe_members.csv,
+                      metrics_insample.json (Phase 5)
 data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
@@ -111,7 +119,7 @@ tests/                pytest suite (run: python -m pytest)
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
-| 5 | Metrics and benchmarks | Not started |
+| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study |
 | 6 | Robustness and mechanism tests (variants, OOS) | Not started |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 
