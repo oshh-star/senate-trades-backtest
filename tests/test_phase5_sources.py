@@ -141,3 +141,17 @@ def test_validation_compares_overlapping_daily_returns():
     r = sc.validate("S", {"crsp": a, "yahoo": b})[0]
     assert r["days"] == 3 and r["max_gap_date"] == "d4"
     assert r["max_abs_gap"] == pytest.approx(1.3 / 1.21 - 1)
+
+
+# ---------------------------------------------------------------- pre-disclosure drift
+def test_predisclosure_drift_table_signs_the_copiers_cost():
+    from src.metrics.event_study import drift_table
+    panel = pd.DataFrame({"side": ["purchase", "purchase", "sale", "sale", "sale"],
+                          "entry_date": ["2022-01-03", "2022-02-01", "2022-01-03", "2022-02-01", "2022-03-01"],
+                          "gap_x": [0.02, 0.04, -0.03, -0.01, np.nan], "gap_raw": [0.03, 0.05, -0.02, 0.0, np.nan],
+                          "gap_spy": [0.01, 0.01, 0.01, 0.01, np.nan], "lag_trading_days": [10, 20, 5, 15, 7]})
+    d = drift_table(panel).set_index("side")
+    assert d.at["purchase", "N"] == 2 and d.at["purchase", "mean SPY-adjusted drift"] == pytest.approx(0.03)
+    assert d.at["sale", "N"] == 2 and d.at["sale", "mean cost to the copier"] == pytest.approx(0.02)   # a fall is a cost
+    assert d.at["sale", "share of events against the copier"] == pytest.approx(1.0)
+    assert d.at["purchase", "median lag (trading days)"] == pytest.approx(15)
