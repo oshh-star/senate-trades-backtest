@@ -16,6 +16,10 @@ import yaml
 
 from src.quality import write_section
 
+CRSP_MAP_PATH = "data/interim/crsp_permno_map.csv"
+MANUAL_PATH = "data/interim/manual_prices_report.csv"
+VALIDATION_PATH = "data/interim/price_source_validation.csv"
+
 INTERIM = Path("data/interim")
 MISSING_ENTRY = INTERIM / "price_missing_entry.csv"
 EARLY_END = INTERIM / "price_series_ending_early.csv"
@@ -267,6 +271,19 @@ def run(cfg: dict, built: dict, daily: pd.DataFrame, monthly: pd.DataFrame) -> N
          "file's `units` column; divide by 100 before use. Raw zips and download dates: `data/raw/french/`.",
          f"- NYSE calendar days without a daily factor row: {len(set(cal) - set(daily['date']))}; factor days not in the "
          f"calendar (from {cal.min()}): {len(set(daily.loc[daily['date'] >= cal.min(), 'date']) - set(cal))}.", ""]
+    val, order = built.get("validation", pd.DataFrame()), built.get("order", ["yahoo"])
+    srcs = cov["source"].replace("", "none").value_counts().rename_axis("source").reset_index(name="symbols") \
+        if "source" in cov else pd.DataFrame()
+    L += ["### 9. Price sources (M2: CRSP, then a terminal export, then Yahoo)", "",
+          f"Order used: **{' > '.join(order)}** (`prices.sources`). Each symbol's series takes each day's return from the "
+          "highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of "
+          "`data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in "
+          f"`{CRSP_MAP_PATH}`); terminal exports: `data/raw/manual_prices/` (checks in `{MANUAL_PATH}`).", "",
+          md(srcs), "",
+          f"Where two sources overlap, their daily returns are compared (`{VALIDATION_PATH}`): "
+          + (f"{len(val)} symbol-source pairs; lowest correlation {val['correlation'].min():.3f}; largest single-day "
+             f"gap {val['max_abs_gap'].max():.2%}." if len(val) else "no overlaps yet (no CRSP or terminal files)."), "",
+          md(val.sort_values("correlation").head(40)) if len(val) else "", ""]
     write_section(3, L)
     print(f"  [checks] entry-price coverage {n_ok}/{n_all} records ({pct(n_ok / n_all)}), dollars {pct(dol_ok / dol_all)}; "
           f"{len(early)} early-ending positions; {len(big)} large moves; {int((st['zero_share'] > STALE_LIMIT).sum())} stale; "

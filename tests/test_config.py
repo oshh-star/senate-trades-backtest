@@ -53,7 +53,7 @@ def test_amended_spec_values():
     cfg = load_config()
     assert cfg["universe"]["owners"] == ["Self", "Joint"]
     assert cfg["universe"]["include_etfs"] is True
-    assert cfg["prices"]["price_source"] in ("yahoo", "crsp")
+    assert cfg["prices"]["sources"] == ["crsp", "manual", "yahoo"]          # M2 hierarchy
     assert cfg["data"]["scrape_filer_types"] == [1, 4, 5]
     assert cfg["data"]["scope_rule"] == "transaction_date_within_senate_service"
     assert cfg["data"]["record_time_received"] is True

@@ -1670,6 +1670,17 @@ _None._
 - Columns mkt_rf_pct, smb_pct, hml_pct, rf_pct, mom_pct. **Units: percent** (1.00 = 1%), also stated in each file's `units` column; divide by 100 before use. Raw zips and download dates: `data/raw/french/`.
 - NYSE calendar days without a daily factor row: 0; factor days not in the calendar (from 2016-01-04): 0.
 
+### 9. Price sources (M2: CRSP, then a terminal export, then Yahoo)
+
+Order used: **crsp > manual > yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
+
+| source   |   symbols |
+|:---------|----------:|
+| yahoo    |      1294 |
+| none     |       197 |
+
+Where two sources overlap, their daily returns are compared (`data/interim/price_source_validation.csv`): no overlaps yet (no CRSP or terminal files).
+
 ## Phase 4: engine (in-sample only)
 
 _Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-02-29** (627 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._

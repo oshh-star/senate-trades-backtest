@@ -91,11 +91,51 @@ def recycled_symbols() -> dict[str, str]:
     return {**dict(zip(r["ticker"], r["yahoo_name"])), **{t: f"hand: {why}" for t, why in load_recycled().items()}}
 
 
+ACQUIRED = ("acquired for cash", "acquired for stock", "bankrupt", "matured or liquidated fund")
+SOURCE_VALIDATION = Path("data/interim/price_source_validation.csv")
+CRSP_MAP = Path("data/interim/crsp_permno_map.csv")
+MANUAL_REPORT = Path("data/interim/manual_prices_report.csv")
+
+
+def delisting_dates_for_request() -> dict[str, str]:
+    """Last SEC Form 25 date, only for ledger symbols whose company really left the market (acquired, bankrupt,
+    liquidated); a renamed company ("ticker issue") keeps trading, so its Form 25 is not the end of its history."""
+    from src.engine.warmup import delisting_dates
+    from .resolve import load_ledger_reasons
+    reasons = load_ledger_reasons()
+    return {t: d for t, d in delisting_dates().items() if (reasons.get(t) or {}).get("reason") in ACQUIRED}
+
+
+def external_sources(cfg: dict, order: list[str], end: str) -> dict:
+    """M2: CRSP and terminal-export (manual) series by symbol, with their reports."""
+    from . import crsp, manual
+    from . import yahoo_prices as yp
+    from .sources import needed
+    out = {"crsp": {}, "manual": {}, "crsp_map": pd.DataFrame(), "manual_report": pd.DataFrame()}
+    delisted = delisting_dates_for_request()
+    if "manual" in order:
+        out["manual"], out["manual_report"] = manual.load(Path(cfg["prices"].get("manual_dir", manual.MANUAL_DIR)),
+                                                          delisted, end)
+    cdir = Path(cfg["prices"].get("crsp_dir", crsp.CRSP_DIR))
+    if "crsp" in order and cdir.exists() and (list(cdir.glob("*.csv")) or list(cdir.glob("*.csv.gz"))):
+        spy = yp.parse(yp.read_cached(yp.cache_path(Path(cfg["prices"]["raw_dir"]), cfg["prices"]["calendar_symbol"])))
+        cal = sorted(spy["prices"]["date"])
+        nd = needed(cfg, cal, end, delisted)
+        wanted = {r.symbol: {"tickers": set(r.efd_tickers.split()), "first": r.first_needed, "last": r.last_needed}
+                  for r in nd.itertuples()}
+        out["crsp"], out["crsp_map"] = crsp.load(wanted, cdir, end)
+    return out
+
+
 def build_step(cfg: dict) -> dict:
     from . import yahoo_prices as yp
     from . import repairs as rp
+    from . import sources as sc
     p = cfg["prices"]
     end = p["end"].isoformat()
+    order = list(p.get("sources", ["yahoo"]))
+    ext = external_sources(cfg, order, end)
+    validation = []
     recycled = recycled_symbols()
     ledger_only = ledger_only_symbols()
     fixes = rp.load(Path(p.get("repairs", rp.REPAIRS)))
@@ -119,7 +159,18 @@ def build_step(cfg: dict) -> dict:
             d["dividends"], d["splits"] = d["dividends"].iloc[0:0], d["splits"].iloc[0:0]
         elif not len(px):
             note = "no Yahoo price history" + (f"; Yahoo's last market time {pd.Timestamp(rmt, unit='s'):%Y-%m-%d}" if rmt else "")
-        cov.append({"ticker": sym, "note": note, "has_data": len(px) > 0, "first_date": px["date"].min() if len(px) else "",
+        # M2: the source hierarchy (CRSP, terminal export, Yahoo), day by day
+        series = {"yahoo": px[["date", "close", "adj_close", "volume"]]} if "yahoo" in order else {}
+        for s in ("crsp", "manual"):
+            if s in order and sym in ext[s]:
+                series[s] = ext[s][sym]
+        validation += sc.validate(sym, series)
+        px, info = sc.merge(series, order)
+        if info["sources"] and info["sources"] != ["yahoo"]:
+            note = (note + "; " if note else "") + "priced from " + " + ".join(
+                f"{k} ({v} days)" for k, v in info["days_by_source"].items())
+        cov.append({"ticker": sym, "note": note, "has_data": len(px) > 0, "source": "+".join(info["sources"]),
+                    "unbridged_days": info["unbridged_days"], "first_date": px["date"].min() if len(px) else "",
                     "last_date": px["date"].max() if len(px) else "", "n_days": len(px),
                     "downloaded_at": (rec or {}).get("downloaded_at", ""), "http_status": (rec or {}).get("status", ""),
                     "yahoo_type": d["meta"].get("instrumentType", ""), "exchange": d["meta"].get("exchangeName", ""),
@@ -130,7 +181,7 @@ def build_step(cfg: dict) -> dict:
             divs.append(d["dividends"][d["dividends"]["date"] <= end].assign(ticker=sym))
         if len(d["splits"]):
             spls.append(d["splits"][d["splits"]["date"] <= end].assign(ticker=sym))
-    prices = pd.concat(frames, ignore_index=True)[["date", "ticker", "close", "adj_close", "volume"]]
+    prices = pd.concat(frames, ignore_index=True)[["date", "ticker", "close", "adj_close", "volume", "source"]]
     prices = prices.sort_values(["ticker", "date"]).reset_index(drop=True)
     PROCESSED.mkdir(parents=True, exist_ok=True)
     prices.to_csv(PRICES, index=False, float_format="%.6f", compression={"method": "gzip", "mtime": 0})
@@ -141,12 +192,22 @@ def build_step(cfg: dict) -> dict:
     cal.to_csv(CALENDAR, index=False)
     cov = pd.DataFrame(cov)
     cov.to_csv(COVERAGE, index=False)
+    val = pd.DataFrame(validation, columns=["symbol", "source_a", "source_b", "days", "first_date", "last_date",
+                                            "correlation", "mean_abs_gap", "max_abs_gap", "max_gap_date"])
+    SOURCE_VALIDATION.parent.mkdir(parents=True, exist_ok=True)
+    val.to_csv(SOURCE_VALIDATION, index=False)
+    ext["crsp_map"].to_csv(CRSP_MAP, index=False)
+    ext["manual_report"].to_csv(MANUAL_REPORT, index=False)
+    unused = sorted((set(ext["crsp"]) | set(ext["manual"])) - set(cov["ticker"]))
+    print(f"  [prices] sources {order}: " + ", ".join(f"{k} {v}" for k, v in cov["source"].replace("", "no data").value_counts().items())
+          + (f"; files for symbols no trade uses: {unused}" if unused else ""))
     rp.LOG.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(fix_log, columns=rp.LOG_COLUMNS).to_csv(rp.LOG, index=False)
     print(f"  [prices] K6 repairs: {len(fix_log)} price rows changed in {len({r['ticker'] for r in fix_log})} symbols -> {rp.LOG}")
     print(f"  [prices] {cov['has_data'].sum()}/{len(cov)} symbols with data; {len(prices):,} price rows -> {PRICES}; "
           f"calendar {cal['date'].min()}..{cal['date'].max()} ({len(cal)} days)")
-    return {"prices": prices, "calendar": cal, "coverage": cov}
+    return {"prices": prices, "calendar": cal, "coverage": cov, "validation": val, "crsp_map": ext["crsp_map"],
+            "manual_report": ext["manual_report"], "order": order}
 
 
 def run(cfg: dict) -> None:
