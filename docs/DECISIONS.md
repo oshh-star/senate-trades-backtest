@@ -148,6 +148,14 @@ Config keys refer to config/config.yaml.
 | E42 | 2026-09-29 | Claude (engineer) | **Event study.** Every in-scope purchase and sale record with an in-sample entry date counts once (equal weight), including sales the copier ignored and records later reversed (J3). The gap at horizon h = (senator's SPY-adjusted return from the transaction date) - (copier's from the entry date), event by event, on events with both. A "pre-disclosure move" row gives the SPY-adjusted return from the transaction-date close to the entry-date close. t-statistics cluster by calendar month of entry (the iid t is shown too). Sign convention stated in the table | `portfolio.event_study_horizons` | The brief asked for three versions; "the gap" is defined per event so it is a paired comparison. |
 | E43 | 2026-09-29 | Claude (engineer) | **Sterling check**: r_GBP = (1 + r_USD) x GBPUSD(t-1) / GBPUSD(t) - 1, with Yahoo's GBPUSD=X carried forward onto NYSE days. Reported as annualised return and volatility only (no UK risk-free rate, so no Sharpe ratio in GBP) | none | A one-line check, as asked. |
 
+## Harry's decisions, Phase 5A.2 (2026-09-29)
+
+| # | Date | Who | Decision | Config key | Reason |
+|---|---|---|---|---|---|
+| M1 | 2026-09-29 | Harry | **E34 to E43 confirmed** as written | as in E34 to E43 | Engineering interpretations reviewed and accepted. |
+| M2 | 2026-09-29 | Harry | **PRICE-SOURCE HIERARCHY, fixed now, before any out-of-sample result exists** (recorded on 2026-09-29 at commit `fafa06ed89990bbf9fef60106963a6534320ec15`, main after the Phase 5A merge; at that commit only IN-SAMPLE results existed). The headline prices every in-scope trade from the best available ACTUAL price source, symbol by symbol, in this order: (1) CRSP, (2) a terminal export (Bloomberg or FactSet) pulled by the group in the LBS library (data/raw/manual_prices/), (3) Yahoo. **V15 (SPY fill) stays a bound, never the headline**, because filling with the market's return mechanically pulls the result towards the market. New pre-registered variant **V18 "Yahoo only, ledger skipped"** (the headline until now), so the effect of the other sources is visible. Supersedes the "CRSP is a robustness check" part of A04 | `prices.sources: [crsp, manual, yahoo]` (V18: `[yahoo]`), `prices.manual_dir` | The survivorship ledger is up to 69% of capital deployed in-sample (L3): what senators bought and Yahoo lost is too large to leave out or to fill with the market. |
+| M3 | 2026-09-29 | Harry | **Out-of-sample stays locked until the price hole is filled and the in-sample results are rerun** | `oos.oos_unlocked: false` | The rules cannot be frozen while the headline still misses a large part of the book. |
+
 ## Pre-registered variants
 Registered 2026-09-27 by Harry (H3) at commit `622a455fb1ce39cf4e975635195d7f44182c1989` (main after the Phase 1
 merge). At that commit no price, return or performance number of any kind had been computed. "Status" changes to
@@ -172,12 +180,15 @@ merge). At that commit no price, return or performance number of any kind had be
 | V15 | 2026-09-28 | Harry (K3) | "Neutral fill": every in-scope purchase skipped because its symbol is in the survivorship ledger (no usable prices) is included and earns SPY's total return over the holding period it would have had (entry and exit dates from the same rules as every other lot) | `engine.ledger_trades: spy_fill` | cd71368 | pre-registered |
 | V16 | 2026-09-28 | Harry (K5) | All ETFs, including bond, T-bill, commodity and other non-equity funds | `universe.etf_classes: [equity, fixed_income, commodity, other]` | cd71368 | pre-registered |
 | V17 | 2026-09-29 | Harry (L2) | "Empty start" (the Phase 4 rule): the book starts EMPTY on the window's first day, with no warm-up; sales of stock bought before the window are ignored. **Registered AFTER the Phase 4 in-sample results were seen** (it is the rule that produced them), so it is not a blind robustness check; it is kept so the reader sees both | `engine.warmup_months: 0` | 8adeaca | run (book only; see Variants run) |
+| V18 | 2026-09-29 | Harry (M2) | "Yahoo only, ledger skipped": every symbol priced from Yahoo alone; survivorship-ledger purchases are logged and skipped (the headline from Phase 4 to Phase 5A). Registered AFTER the in-sample Yahoo-only results were seen (it is the rule that produced them), before any CRSP or terminal price exists | `prices.sources: [yahoo]` | see note below | pre-registered |
 
 V15 and V16 were registered on 2026-09-28 (K3, K5) at commit `cd71368861519843835cfa04ae1a571ed17cdffa` (main after
 the Phase 3 merge). At that commit no trade-level or portfolio-level return had been computed (Phase 4, the engine, had
 not started; the only returns anywhere were per-ticker daily moves inside the Phase 3 price sanity checks).
 
 V17 was registered on 2026-09-29 (L2) at commit `8adeacaf13e3499048f8bd335d7dcd0ed8e3ddc9`, before any warm-up code existed. Unlike V1-V16 it was NOT registered blind: the Phase 4 in-sample returns under this rule (series A 7.61% a year, series B 7.04%, SPY 6.46%) had been seen when the warm-up (L2) replaced it.
+
+V18 was registered on 2026-09-29 (M2) in the commit that adds this row, on top of `fafa06e`; its hash is recorded in docs/HANDOVER.md. Like V17 it was not registered blind: the Yahoo-only in-sample results (Phase 5A) had been seen.
 
 ## Variants run
 Every run with any non-default config value is logged here: date, who, what changed, commit, where the output is.
