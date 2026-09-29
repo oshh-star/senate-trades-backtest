@@ -86,6 +86,8 @@ engine:
                                    #   V3 [v3_first_180d], V4 [bulk_ptr], V13 [v13_otc]
   drop_senator_ranks: []           # V2: [k] drops the senator ranked k by in-scope trade count
   sample: in_sample                # in_sample | full (full needs the OOS firewall open)
+  warmup_months: 12                # L2: the book is built from disclosures in the 12 months before the window;
+                                   #   returns are measured from the window's first day. V17 (empty start): 0
 
 prices:
   price_source: yahoo              # yahoo | crsp (CRSP CSV in data/raw/crsp/, robustness check)
@@ -93,7 +95,7 @@ prices:
   crsp_dir: data/raw/crsp
   start: 2016-01-01                # daily history downloaded for every ticker in trades_clean.csv
   end: 2026-08-31                  # = analysis.window_end
-  extra_symbols: [SPY, NANC, KRUZ, "GBPUSD=X"]   # benchmarks and the sterling-investor check
+  extra_symbols: [SPY, NANC, KRUZ, GOP, "GBPUSD=X"]   # benchmarks and the sterling-investor check (GOP = KRUZ, E34)
   calendar_symbol: SPY             # NYSE trading calendar = SPY's trading dates
   raw_dir: data/raw/prices/yahoo   # raw Yahoo chart responses (gzipped JSON), with download date
   ticker_renames: config/ticker_renames.yaml
@@ -114,7 +116,7 @@ benchmarks:                        # built in Phase 5
   - equal_weighted_universe
   - ff3_plus_momentum_us
   - {ticker: NANC, from: 2023-02-01}
-  - {ticker: KRUZ, from: 2023-02-01}
+  - {ticker: KRUZ, price_symbol: GOP, from: 2023-02-01}   # E34: KRUZ renamed GOP on 2025-03-21
 
 # ---------------------------------------------------------------- OUT-OF-SAMPLE FIREWALL
 oos:

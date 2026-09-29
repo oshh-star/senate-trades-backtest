@@ -6,8 +6,8 @@ Rules (Phase 4 brief, D12, A03, E20/K1, J3, K3):
   Sale (Full)     close every open lot of that senator in that price symbol, regardless of owner.
   Sale (Partial)  sell units worth the event's size at that day's adjusted close, oldest lot first,
                   capped at what is held.
-  Nothing held    a sale is ignored and logged (no shorting; this includes anything bought before the
-                  window, because the book starts EMPTY on the window's first day).
+  Nothing held    a sale is ignored and logged (no shorting; this includes anything bought before the book
+                  starts: 12 months before the window with the warm-up (L2), the window's first day under V17).
   Reversal (J3)   a correction first undoes its predecessor's copied action: a purchase's lots still open
                   are sold ("reversal"); a sale's units are bought back as a new lot. Then the correction
                   acts itself if it is in scope.

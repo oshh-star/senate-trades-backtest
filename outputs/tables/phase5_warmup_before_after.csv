@@ -1,0 +1,16 @@
+measure,V17 empty start (Phase 4 rule),"warm-up 12 months (L2, headline)"
+sale records in the window,448.0,448.0
+sales ignored: nothing held,310.0,265.0
+sales ignored (share),0.6919642857142857,0.5915178571428571
+sales matched to a copied position,138.0,183.0
+open lots: min,0.0,65.0
+open lots: median,101.0,136.0
+open lots: max,275.0,308.0
+capital deployed: min ($),0.0,1136494.7845896762
+capital deployed: median ($),2863229.5993150165,3387243.2625669
+capital deployed: max ($),8606892.26148618,9066887.750534311
+days with no open lot,6.0,0.0
+lots held on the last day,251.0,273.0
+share of dollars ever invested still held on the last day (at cost),0.5406868985200234,0.5160503532087867
+"share still held on the last day, lots bought inside the window only (at cost)",0.5406868985200234,0.5514386114060337
+value held on the last day ($),8299923.803751083,8755482.664187446

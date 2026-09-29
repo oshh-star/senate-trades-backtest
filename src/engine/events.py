@@ -37,12 +37,13 @@ def load_units(cfg: dict) -> pd.DataFrame:
     tr = pd.read_csv(TRADES_CLEAN, keep_default_na=False, low_memory=False, dtype={"ticker": str, "price_ticker": str})
     if cfg["data"].get("amendment_values", "as_first_published") == "as_revised":
         u = tr.assign(record_id=tr["trade_id"] + ".r", record_no=1, n_records=1,
-                      in_scope=tr["in_scope_as_revised"])
+                      in_scope=tr["in_scope_as_revised"], in_scope_ex_window=tr["in_scope_ex_window_as_revised"])
     else:
         u = pd.read_csv(RECORDS, keep_default_na=False, dtype={"ticker": str, "price_ticker": str})
     u = u.reset_index(drop=True)
     u["row_no"] = np.arange(len(u))
     u["in_scope"] = _bool(u["in_scope"])
+    u["in_scope_ex_window"] = _bool(u["in_scope_ex_window"])
     for c in ("is_etf", "is_otc", "filed_before_1530_et"):
         u[c] = _bool(u[c]) if c in u else False
     for c in ("amount_mid", "amount_lower", "record_no"):
@@ -56,6 +57,15 @@ def load_units(cfg: dict) -> pd.DataFrame:
         rk = pd.to_numeric(flags["senator_rank"], errors="coerce")
         drop |= set(flags.index[rk.isin(ranks)])
     u["dropped_by_variant"] = u["trade_id"].isin(drop)
+    return u
+
+
+def add_warmup(u: pd.DataFrame, warm_start: str, window_start: str) -> pd.DataFrame:
+    """L2: records disclosed in [warm_start, window_start) that pass every scope filter except the window act too."""
+    u = u.copy()
+    warm = u["in_scope_ex_window"] & (u["disclosure_date"] >= warm_start) & (u["disclosure_date"] < window_start)
+    u["warmup"] = warm & ~u["in_scope"]
+    u["in_scope"] = u["in_scope"] | warm
     return u
 
 

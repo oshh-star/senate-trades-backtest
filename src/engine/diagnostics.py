@@ -11,6 +11,8 @@ import pandas as pd
 from src.quality import write_section
 
 FIG = Path("outputs/figures/phase4_open_lots_capital.png")
+WARMUP_TABLE = Path("outputs/tables/phase5_warmup_before_after.csv")
+LEDGER_EXPOSURE = Path("data/processed/ledger_exposure.csv")
 EXAMPLES = Path("outputs/phase4_worked_examples.md")
 REPAIR_LOG = Path("data/interim/price_repairs_log.csv")
 # chart tokens (dataviz reference palette: series slot 1, light surface, ink, hairline grid)
@@ -130,10 +132,47 @@ def example_text(title: str, lot: pd.DataFrame, events: pd.DataFrame, px: pd.Dat
 
 
 def run(cfg: dict, o: dict) -> None:
-    pieces, log, daily, rec, panel, ev = o["pieces"], o["log"], o["daily"], o["rec"], o["panel"], o["events"]
-    label, days = o["label"], o["days"]
+    from . import warmup as wu
+    pieces, log_all, daily, rec, panel, ev = o["pieces"], o["log"], o["daily"], o["rec"], o["panel"], o["events"]
+    label, days, first = o["label"], o["days"], o["first"]
     last = days[-1]
+    log = log_all[log_all["entry_date"] >= first]                     # what the book did inside the window
+    wlog = log_all[log_all["entry_date"] < first]                     # ... and during the warm-up (L2)
     chart(daily, label)
+    # L2: before (V17, empty start) vs after (warm-up)
+    mode = cfg.get("engine", {}).get("ledger_trades", "skip")
+    v17 = wu.empty_start_book(ev, o["prices"], days, mode)
+    after = wu.book_summary(pieces, log_all, daily, first)
+    before = wu.book_summary(v17["pieces"], v17["log"], v17["daily"], first)
+    wm = o["warmup"]
+    ba = pd.DataFrame({"measure": list(after), "V17 empty start (Phase 4 rule)": list(before.values()),
+                       f"warm-up {wm['warmup_months_effective']:g} months (L2, headline)": list(after.values())})
+    WARMUP_TABLE.parent.mkdir(parents=True, exist_ok=True)
+    ba.to_csv(WARMUP_TABLE, index=False)
+    ba_fmt = ba.copy()
+    for c in ba.columns[1:]:
+        ba_fmt[c] = [f"{v:.1%}" if "share" in m else f"{v:,.0f}" for m, v in zip(ba["measure"], ba[c])]
+    wacts = wlog.groupby("action").agg(events=("record_id", "size"), dollars=("dollars", "sum")).reset_index() \
+        .sort_values("events", ascending=False)
+    at_start = pieces[(pieces["entry_date"] < first) & (pieces["exit_date"] >= first)]
+    # L3: ledger exposure
+    lx = wu.ledger_exposure(o["events_book"], log_all, o["book_days"], daily)
+    lx.to_csv(LEDGER_EXPOSURE, index=False, float_format="%.6f")
+    sh = lx["share_of_capital_deployed"]
+    lx_t = pd.DataFrame([{"measure": "Share of capital deployed", "min": f"{sh.min():.1%}", "median": f"{sh.median():.1%}",
+                          "max": f"{sh.max():.1%}",
+                          "date of max": lx.loc[sh.idxmax(), "date"] if sh.notna().any() else ""},
+                         {"measure": "Same, each lot dropped after its SEC Form 25 delisting date",
+                          "min": f"{lx['share_to_delisting'].min():.1%}", "median": f"{lx['share_to_delisting'].median():.1%}",
+                          "max": f"{lx['share_to_delisting'].max():.1%}",
+                          "date of max": lx.loc[lx['share_to_delisting'].idxmax(), "date"]},
+                         {"measure": "Ledger cost basis still held ($)", "min": f"{lx['ledger_cost_held'].min():,.0f}",
+                          "median": f"{lx['ledger_cost_held'].median():,.0f}", "max": f"{lx['ledger_cost_held'].max():,.0f}",
+                          "date of max": lx.loc[lx['ledger_cost_held'].idxmax(), "date"]},
+                         {"measure": "Ledger lots still held", "min": f"{lx['ledger_lots_held'].min():,.0f}",
+                          "median": f"{lx['ledger_lots_held'].median():,.0f}", "max": f"{lx['ledger_lots_held'].max():,.0f}",
+                          "date of max": lx.loc[lx['ledger_lots_held'].idxmax(), "date"]}])
+    o["warmup_before_after"], o["ledger_exposure"] = ba, lx
     # actions
     acts = log.assign(kind=log["action"].str.split(":").str[0].str.replace(r" \(.*", "", regex=True))
     act_t = acts.groupby("action").agg(events=("record_id", "size"), dollars=("dollars", "sum")).reset_index() \
@@ -186,13 +225,13 @@ def run(cfg: dict, o: dict) -> None:
     px = o["prices_raw"] if "prices_raw" in o else pd.read_csv("data/processed/prices.csv.gz", dtype={"date": str, "ticker": str})
     px = px[px["date"] <= last]
     evx = ev
-    ex = pick_examples(pieces, evx)
+    ex = pick_examples(pieces[pieces["entry_date"] >= first], o["events_book"])
     EX = ["# Phase 4 worked examples (in-sample, real data)", "",
           "Three copied lots traced step by step from `data/processed/lots.csv` and `engine_events.csv`, so one can be "
           "checked by hand on Yahoo Finance. Prices are Yahoo's adjusted close (splits and dividends) as downloaded on "
           "2026-09-28.", ""]
     for t, lot in ex:
-        EX += example_text(t, lot, evx, px)
+        EX += example_text(t, lot, o["events_book"], px)
     EXAMPLES.parent.mkdir(parents=True, exist_ok=True)
     EXAMPLES.write_text("\n".join(EX))
 
@@ -202,8 +241,20 @@ def run(cfg: dict, o: dict) -> None:
          "The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything "
          "is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, "
          "`engine_metadata.json` (definitions, K, reconciliation, config)._", "",
+         "### 0. Warm-up (L2) against the empty start (V17)", "",
+         (f"The book is built from disclosures from **{wm['warmup_first_disclosure_date']}** (the {wm['warmup_months_config']} "
+          f"months before the window{'; limited by the scrape start' if wm['warmup_limited_by_scrape_start'] else ''}), "
+          f"starting on {wm['book_first_day']}; returns and every statistic are measured only from **{days[0]}**. "
+          f"{wm['warmup_events']} warm-up events. At the close before the window the book holds {at_start['lot_id'].nunique()} "
+          f"lots worth **${wm['warmup_book_value_at_window_start']:,.0f}** (series B's pot starts with this book plus "
+          f"${rec['K_cash']:,.0f} in cash, K = ${rec['K']:,.0f})." if wm["warmup_months_effective"] > 0 else
+          "No warm-up (V17, empty start): the book starts empty on the window's first day."), "",
+         md(wacts, ",.0f") if len(wacts) else "", "",
+         "Before (V17: the Phase 4 rule, rebuilt from the same events for this table only; book counts, no returns) "
+         f"against after (the headline). Window {days[0]} to {last}. Also in `{WARMUP_TABLE}`.", "",
+         md(ba_fmt), "",
          "### 1. Events and what the book did with them", "",
-         f"{n_ev} events: in-scope records (J3, as first published) whose entry date (first NYSE trading day after the "
+         f"{n_ev} window events (plus {wm['warmup_events']} warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the "
          "disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day "
          "order: entry date, disclosure datetime, transaction date, row number (E29).", "",
          md(act_t, ",.0f"), "",
@@ -250,5 +301,14 @@ def run(cfg: dict, o: dict) -> None:
          "(Phases 5 and 6).", "",
          md(rv_fmt), "",
          "### 9. Worked examples", "",
-         f"Three lots traced step by step in `{EXAMPLES}`.", ""]
+         f"Three lots traced step by step in `{EXAMPLES}`.", "",
+         "### 10. Survivorship-ledger exposure over time (L3)", "",
+         "Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, applying the senators' disclosed "
+         "sales (Full: all; Partial: its midpoint at cost, capped), warm-up included; as a share of the capital deployed "
+         "at each close (the phantom dollars are not in the denominator). The first line closes a phantom lot only on a "
+         "senator's sale, so it is an upper bound; the second also drops it after the symbol's last SEC Form 25 delisting "
+         "date. Most of these names (US Steel, ChannelAdvisor, Activision, Paramount, Walgreens) were still listed during "
+         "the in-sample period: Yahoo no longer serves their history, which is why CRSP (A04) or V15 matters. "
+         f"Daily values in `{LEDGER_EXPOSURE}`.", "",
+         md(lx_t), ""]
     write_section(4, L)
