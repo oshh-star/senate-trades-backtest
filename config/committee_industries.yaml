@@ -1,0 +1,64 @@
+# Committee test (Phase 6 prep, Harry 2026-09-30): which industries each Senate committee oversees, as SEC SIC code
+# ranges (inclusive, 4-digit). Written by hand BEFORE any committee split was computed; its commit hash is recorded
+# in docs/DECISIONS.md (E54). A trade is "overseen" when, on its TRANSACTION date, the senator sat on a committee
+# below (data/raw/legislators/committee_membership_history.csv.gz) whose ranges contain the company's SIC code
+# (data/interim/sic_codes.csv). Only these six committees are mapped (Harry's list); a senator's other committees
+# (Finance, Judiciary, ...) do not make a trade "overseen". A company can fall under more than one committee.
+# Committee ids are those of unitedstates/congress-legislators.
+committees:
+  SSAS:
+    name: Armed Services
+    oversees: defence
+    sic:
+      - [3480, 3489]   # ordnance and accessories
+      - [3721, 3721]   # aircraft
+      - [3724, 3724]   # aircraft engines and engine parts
+      - [3728, 3728]   # aircraft parts and auxiliary equipment
+      - [3730, 3732]   # ship and boat building
+      - [3760, 3769]   # guided missiles and space vehicles
+      - [3795, 3795]   # tanks and tank components
+      - [3812, 3812]   # search, detection, navigation, guidance systems
+  SSAF:
+    name: Agriculture, Nutrition, and Forestry
+    oversees: farming, food and forestry
+    sic:
+      - [100, 999]     # agriculture, forestry, fishing
+      - [2000, 2099]   # food and kindred products
+      - [2400, 2499]   # lumber and wood products
+      - [2870, 2879]   # agricultural chemicals (fertilisers, pesticides)
+      - [3523, 3523]   # farm machinery and equipment
+      - [5140, 5159]   # wholesale: groceries, farm-product raw materials
+  SSBK:
+    name: Banking, Housing, and Urban Affairs
+    oversees: financials and housing
+    sic:
+      - [6000, 6799]   # finance, insurance and real estate
+      - [1520, 1531]   # residential builders, operative builders
+  SSEG:
+    name: Energy and Natural Resources
+    oversees: oil, gas, mining and utilities
+    sic:
+      - [1000, 1499]   # mining (metals, coal, oil and gas extraction, field services, non-metallic minerals)
+      - [2910, 2999]   # petroleum refining and related
+      - [4610, 4619]   # pipelines (except natural gas)
+      - [4900, 4999]   # electric, gas and sanitary services (utilities)
+      - [5171, 5172]   # petroleum products wholesale
+  SSHR:
+    name: Health, Education, Labor, and Pensions
+    oversees: health care
+    sic:
+      - [2830, 2836]   # drugs, pharmaceuticals, biologicals
+      - [3841, 3851]   # surgical, medical, dental and ophthalmic instruments and supplies
+      - [5047, 5047]   # wholesale: medical, dental and hospital equipment
+      - [5122, 5122]   # wholesale: drugs
+      - [8000, 8099]   # health services
+  SSCM:
+    name: Commerce, Science, and Transportation
+    oversees: telecoms, transport and technology
+    sic:
+      - [3570, 3579]   # computer and office equipment
+      - [3600, 3699]   # electronic and electrical equipment (includes semiconductors, 3674)
+      - [3711, 3716]   # motor vehicles
+      - [4000, 4799]   # transportation (rail, trucking, water, air, pipelines, travel)
+      - [4800, 4899]   # communications (telecoms, broadcasting, cable)
+      - [7370, 7379]   # computer programming, software, data processing

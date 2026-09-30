@@ -169,12 +169,19 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
         rows.append(run_one(r, sample_dir, last, unlocked))
         print(f"           {rows[-1]['status']}", flush=True)
     df = pd.DataFrame(rows)
-    h = df.iloc[0]
+    stem = TABLES / f"variants_{skey}_{tag}"
+    if only and stem.with_suffix(".csv").exists():          # --only: replace those rows, keep the others
+        old = pd.read_csv(stem.with_suffix(".csv"), keep_default_na=False, na_values=[""])
+        old = old[~old["id"].isin(df["id"])][[c for c in old.columns if not c.startswith("d_")]]
+        df = pd.concat([df, old], ignore_index=True)
+        order = {r["id"]: i for i, r in enumerate([{"id": "H"}] + expand(base, None))}
+        df = df.sort_values("id", key=lambda s: s.map(order)).reset_index(drop=True)
+        rows = df.to_dict("records")
+    h = df[df["id"] == "H"].iloc[0]
     for c in ("A_ann_return", "A_sharpe", "A_capm_alpha", "A_c4_alpha", "B_ann_return", "B_sharpe"):
         if c in df:
             df[f"d_{c}"] = df[c] - h[c]
     TABLES.mkdir(parents=True, exist_ok=True)
-    stem = TABLES / f"variants_{skey}_{tag}"
     df.to_csv(stem.with_suffix(".csv"), index=False, float_format="%.6g")
     stem.with_suffix(".json").write_text(json.dumps({"sample": f"{first}..{last}", "tag": tag, "rows": rows},
                                                     indent=1, default=str))
