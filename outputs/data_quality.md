@@ -1417,10 +1417,10 @@ Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records
 
 ### 2. Price download and repairs
 
-- Symbols requested: **1482**; with data: **1296**; without: 186. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- Symbols requested: **1484**; with data: **1298**; without: 186. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
 - K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,254,372 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,259,732 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
@@ -1675,7 +1675,7 @@ Order used: **crsp > manual > yahoo** (`prices.sources`). Each symbol's series t
 
 | source   |   symbols |
 |:---------|----------:|
-| yahoo    |      1296 |
+| yahoo    |      1298 |
 | none     |       186 |
 
 Where two sources overlap, their daily returns are compared (`data/interim/price_source_validation.csv`): no overlaps yet (no CRSP or terminal files).
