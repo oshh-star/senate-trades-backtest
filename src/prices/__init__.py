@@ -135,7 +135,7 @@ def build_step(cfg: dict) -> dict:
     end = p["end"].isoformat()
     order = list(p.get("sources", ["yahoo"]))
     ext = external_sources(cfg, order, end)
-    validation = []
+    validation, frames_y, cov_y = [], [], []
     recycled = recycled_symbols()
     ledger_only = ledger_only_symbols()
     fixes = rp.load(Path(p.get("repairs", rp.REPAIRS)))
@@ -165,6 +165,11 @@ def build_step(cfg: dict) -> dict:
             if s in order and sym in ext[s]:
                 series[s] = ext[s][sym]
         validation += sc.validate(sym, series)
+        if "yahoo" in series and len(series["yahoo"]):                         # kept for V18 (Yahoo only)
+            frames_y.append(series["yahoo"].assign(ticker=sym, source="yahoo"))
+        cov_y.append({"ticker": sym, "has_data": bool("yahoo" in series and len(series["yahoo"])),
+                      "first_date": series["yahoo"]["date"].min() if "yahoo" in series and len(series["yahoo"]) else "",
+                      "last_date": series["yahoo"]["date"].max() if "yahoo" in series and len(series["yahoo"]) else ""})
         px, info = sc.merge(series, order)
         if info["sources"] and info["sources"] != ["yahoo"]:
             note = (note + "; " if note else "") + "priced from " + " + ".join(
@@ -192,6 +197,15 @@ def build_step(cfg: dict) -> dict:
     cal.to_csv(CALENDAR, index=False)
     cov = pd.DataFrame(cov)
     cov.to_csv(COVERAGE, index=False)
+    # V18 (prices.sources: [yahoo]): when another source replaced some Yahoo rows, keep the Yahoo-only prices too
+    y_only, y_cov = PROCESSED / "prices_yahoo_only.csv.gz", PROCESSED / "price_coverage_yahoo_only.csv"
+    if set(cov.loc[cov["has_data"], "source"]) - {"yahoo"}:
+        pd.concat(frames_y, ignore_index=True)[["date", "ticker", "close", "adj_close", "volume", "source"]].to_csv(
+            y_only, index=False, float_format="%.6f", compression={"method": "gzip", "mtime": 0})
+        pd.DataFrame(cov_y).to_csv(y_cov, index=False)
+    else:
+        for f in (y_only, y_cov):
+            f.unlink(missing_ok=True)
     val = pd.DataFrame(validation, columns=["symbol", "source_a", "source_b", "days", "first_date", "last_date",
                                             "correlation", "mean_abs_gap", "max_abs_gap", "max_gap_date"])
     SOURCE_VALIDATION.parent.mkdir(parents=True, exist_ok=True)

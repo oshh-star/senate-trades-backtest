@@ -43,14 +43,16 @@ def _months(days: list[str]) -> list[str]:
     return sorted({d[:7] for d in days})
 
 
-def load_inputs(cfg: dict) -> dict:
+def load_inputs(cfg: dict, engine_dir: Path | None = None) -> dict:
+    """engine_dir: where the engine's files are (default data/processed/; a variant's own folder for the runner)."""
     from src.engine import sample_bounds
+    ed = Path(engine_dir) if engine_dir else PROCESSED
     first, last_day, label = sample_bounds(cfg)
-    meta = json.loads((PROCESSED / "engine_metadata.json").read_text())
+    meta = json.loads((ed / "engine_metadata.json").read_text())
     if meta["first_day"] != first or meta["last_day"] > last_day or meta["sample"] != label:
         raise RuntimeError(f"engine output covers {meta['sample']} {meta['first_day']}..{meta['last_day']}, but the "
                            f"config asks for {label} {first}..{last_day}: rerun the engine stage first.")
-    daily = pd.read_csv(PROCESSED / "daily_book.csv", dtype={"date": str})
+    daily = pd.read_csv(ed / "daily_book.csv", dtype={"date": str})
     daily = daily[daily["date"] <= last_day].reset_index(drop=True)
     cal_all = pd.read_csv(PROCESSED / "trading_calendar.csv", dtype=str)["date"].tolist()
     cal = [d for d in cal_all if d <= last_day]
@@ -62,8 +64,8 @@ def load_inputs(cfg: dict) -> dict:
     return {"first": first, "last_day": last_day, "label": label, "meta": meta, "daily": daily, "cal_all": cal_all,
             "cal": cal, "fm": fm, "last_dates": dict(zip(cov["ticker"], cov["last_date"])),
             "first_dates": dict(zip(cov["ticker"], cov["first_date"])),
-            "pieces": pd.read_csv(PROCESSED / "lots.csv", dtype={"entry_date": str, "exit_date": str}),
-            "panel": pd.read_csv(PROCESSED / "event_panel.csv", dtype={"entry_date": str}, low_memory=False)}
+            "pieces": pd.read_csv(ed / "lots.csv", dtype={"entry_date": str, "exit_date": str}),
+            "panel": pd.read_csv(ed / "event_panel.csv", dtype={"entry_date": str}, low_memory=False)}
 
 
 def universe_records(cfg: dict, cal_all: list[str]) -> pd.DataFrame:
@@ -88,8 +90,9 @@ def series_stats(r_m: pd.Series, rf_m: pd.Series, F: pd.DataFrame, spy_m: pd.Ser
     return out, dd
 
 
-def run(cfg: dict) -> dict:
-    I = load_inputs(cfg)
+def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
+    """write=False (the variant runner): compute and return the statistics, write nothing."""
+    I = load_inputs(cfg, engine_dir)
     daily, cal, first, last_day = I["daily"], I["cal"], I["first"], I["last_day"]
     days = daily["date"].tolist()
     base = cal[cal.index(days[0]) - 1]                               # the close before the first measured return
@@ -176,6 +179,8 @@ def run(cfg: dict) -> dict:
     hz = list(cfg["portfolio"]["event_study_horizons"])
     evt = es.table(I["panel"], hz)
     drift = es.drift_table(I["panel"])
+    if not write:
+        return {"results": res, "events": evt, "drift": drift, "k": k, "months": months, "meta": I["meta"]}
 
     # ---- write everything
     TABLES.mkdir(parents=True, exist_ok=True)
@@ -203,6 +208,11 @@ def run(cfg: dict) -> dict:
          "overlap_months": ov_months, "results": res, "gbp": gbp}, indent=1, default=str))
     figures(D, dds, days, base, k)
     quality_section(I, members, res, ov_months, evt, k)
+    from . import mechanism                                    # Phase 6 prep: mechanism splits of the event panel
+    from src.variants import price_tag
+    mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+    from . import committee                                    # Phase 6 prep: committee test (E54), when its inputs exist
+    committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
     a = res["Series A (headline)"]
     print(f"  [metrics] {I['label']} {months[0]}..{months[-1]} ({len(months)} months): series A {a['ann_return']:.2%} a year, "
           f"Sharpe {a['sharpe']:.2f}, CAPM alpha {a['capm_alpha_ann']:.2%} (t {a['capm_t_alpha_ols']:.2f}), Carhart alpha "

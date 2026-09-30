@@ -63,6 +63,7 @@ one command (`python run_all.py`) must rebuild every number.
 ## Repo map
 ```
 run_all.py            one command: scrape > clean > prices > engine > metrics > report (--skip-<stage>, --only)
+run_variants.py       every pre-registered variant, each alone against the headline (src/variants.py); respects the firewall
 config/config.yaml    locked parameters
 src/config.py         config loader, analysis window, sample split, OOS firewall guard
 src/scrape/efd.py     eFD client (terms agreement, search, PTR fetch, retries) and HTML parsers
@@ -84,6 +85,8 @@ src/engine/           Phase 4: events.py (entry dates, sizing, ordering, variant
 src/metrics/          Phase 5: stats.py (returns, Sharpe, CAPM/Carhart with OLS and Newey-West t, drawdown, turnover),
                       benchmarks.py (SPY, risk-matched SPY, Senate universe, NANC, KRUZ as GOP, sterling),
                       event_study.py (clustered by entry month); outputs/tables/phase5_*.md, outputs/figures/phase5_*.png
+                      Phase 6 prep: mechanism.py (size/party/lag/senator splits), committee.py (committee test);
+                      outputs/tables/{variants,mechanism,committee}_insample_<prefill|filled>.md
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 config/asset_name_overrides.yaml   hand-written asset name -> ticker (J5), confirmed against Yahoo
@@ -93,6 +96,7 @@ config/ledger_reasons.yaml   K4: why each survivorship-ledger symbol has no pric
 config/price_repairs.yaml    K6: repairs to bad Yahoo prints (logged in data/interim/price_repairs_log.csv)
 config/etf_class_overrides.yaml   K5: hand ETF classes (HIYS)
 config/preferred_shares.yaml   N2/E50: hand-reviewed preferred shares and exchange-listed notes, and the candidates kept
+config/committee_industries.yaml   committee test: committee -> SIC ranges (committed at a124f03 before the split, E54)
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
 data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
@@ -115,6 +119,8 @@ scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
 scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand; cached in data/raw/sec/filings/
 scripts/price_request.py  writes docs/PRICE_REQUEST.md and docs/crsp_tickers_*.txt (M2), by hand after the prices stage
+scripts/committee_history.py  Senate committee memberships by date from congress-legislators' git history (by hand)
+scripts/sec_sic.py        SIC industry codes from SEC submissions -> data/interim/sic_codes.csv (by hand)
 data/raw/manual_prices/  Bloomberg/FactSet CSVs (date, close, total_return_index) and SOURCES.md (who, where, when)
 tests/                pytest suite (run: python -m pytest)
 ```
@@ -128,7 +134,7 @@ tests/                pytest suite (run: python -m pytest)
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request. A.2b done (2026-09-30): preferred shares out (N2), 9 renames (N3); **waiting on terminal/CRSP prices** |
-| 6 | Robustness and mechanism tests (variants, OOS) | Not started |
+| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test; waiting on prices, then OOS |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 
 ## RULES FOR EVERY SESSION

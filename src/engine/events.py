@@ -44,6 +44,8 @@ def load_units(cfg: dict) -> pd.DataFrame:
     u["row_no"] = np.arange(len(u))
     u["in_scope"] = _bool(u["in_scope"])
     u["in_scope_ex_window"] = _bool(u["in_scope_ex_window"])
+    if "scope_base" in u.columns:                      # records: recompute scope for this config (Phase 6 variants)
+        u = rescope(u, cfg)
     for c in ("is_etf", "is_otc", "filed_before_1530_et"):
         u[c] = _bool(u[c]) if c in u else False
     for c in ("amount_mid", "amount_lower", "record_no"):
@@ -57,6 +59,30 @@ def load_units(cfg: dict) -> pd.DataFrame:
         rk = pd.to_numeric(flags["senator_rank"], errors="coerce")
         drop |= set(flags.index[rk.isin(ranks)])
     u["dropped_by_variant"] = u["trade_id"].isin(drop)
+    return u
+
+
+def rescope(u: pd.DataFrame, cfg: dict) -> pd.DataFrame:
+    """Scope of each record for THIS config, from the clean stage's scope_base (every filter except the ones a
+    variant switches) and the switches: the window (analysis.window_years), universe.owners, universe.include_etfs,
+    universe.etf_classes (K5, V16) and universe.include_preferred (N2, V19). For the default config this equals the
+    clean stage's in_scope / in_scope_ex_window exactly (tests/test_phase6.py)."""
+    from src.config import analysis_window
+    u = u.copy()
+    start, end = analysis_window(cfg)
+    uni = cfg["universe"]
+    etf = _bool(u["is_etf"]) if u["is_etf"].dtype != bool else u["is_etf"]
+    pref = _bool(u["is_preferred"]) if "is_preferred" in u else pd.Series(False, index=u.index)
+    ok = _bool(u["scope_base"]) & u["owner"].isin(uni["owners"])
+    if not uni.get("include_etfs", True):
+        ok &= ~etf
+    classes = set(uni.get("etf_classes") or ["equity", "fixed_income", "commodity", "other"])
+    ok &= ~etf | u["etf_class"].isin(classes)
+    if not uni.get("include_preferred", False):
+        ok &= ~pref
+    in_win = (u["disclosure_date"] >= start.isoformat()) & (u["disclosure_date"] <= end.isoformat())
+    u["in_scope_ex_window"] = ok
+    u["in_scope"] = ok & in_win
     return u
 
 

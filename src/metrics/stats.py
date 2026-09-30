@@ -122,7 +122,9 @@ def clustered_mean(x: pd.Series, clusters: pd.Series) -> dict:
         return {"mean": np.nan, "median": np.nan, "n": n, "clusters": int(g.nunique()), "t_cluster": np.nan, "t_iid": np.nan}
     X = np.ones((n, 1))
     codes = pd.factorize(g)[0]
-    fit = sm.OLS(x.to_numpy(), X).fit(cov_type="cluster", cov_kwds={"groups": codes})
     iid = sm.OLS(x.to_numpy(), X).fit()
+    t_cl = np.nan
+    if g.nunique() >= 2:                                   # a clustered standard error needs at least two clusters
+        t_cl = float(sm.OLS(x.to_numpy(), X).fit(cov_type="cluster", cov_kwds={"groups": codes}).tvalues[0])
     return {"mean": float(x.mean()), "median": float(x.median()), "n": n, "clusters": int(g.nunique()),
-            "t_cluster": float(fit.tvalues[0]), "t_iid": float(iid.tvalues[0])}
+            "t_cluster": t_cl, "t_iid": float(iid.tvalues[0])}

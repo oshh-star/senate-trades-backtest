@@ -36,6 +36,8 @@ def load_prices(symbols: set[str], last_day: str) -> pd.DataFrame:
 
 def daily_returns(P_ffill: pd.DataFrame, sym: str, days: list[str]) -> pd.Series:
     """Daily total return of one symbol on `days` (the first uses the previous calendar day's close)."""
+    if sym not in P_ffill.columns:                       # e.g. NANC and KRUZ before their 2023 launch (V12)
+        return pd.Series(np.nan, index=days)
     return P_ffill[sym].pct_change(fill_method=None).reindex(days)
 
 
