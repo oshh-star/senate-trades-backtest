@@ -134,7 +134,7 @@ tests/                pytest suite (run: python -m pytest)
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request. A.2b done (2026-09-30): preferred shares out (N2), 9 renames (N3); **waiting on terminal/CRSP prices** |
-| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test; waiting on prices, then OOS |
+| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"); waiting on prices, then OOS |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 
 ## RULES FOR EVERY SESSION
