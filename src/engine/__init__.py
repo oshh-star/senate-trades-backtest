@@ -67,13 +67,18 @@ def warmup_start(cfg: dict, first: str) -> tuple[str, float, bool]:
     return w.isoformat(), round(eff, 1), bool(limited)
 
 
-def load_market(last_day: str) -> dict:
-    """Prices, calendar and RF cut at last_day (the firewall)."""
+def load_market(last_day: str, cfg: dict | None = None) -> dict:
+    """Prices, calendar and RF cut at last_day (the firewall). With prices.sources: [yahoo] (V18) and a Yahoo-only
+    price file written by the prices stage (it exists once CRSP or terminal prices replace some Yahoo rows), that file
+    and its coverage are used instead."""
     cal = pd.read_csv(PROCESSED / "trading_calendar.csv", dtype=str)["date"].tolist()
-    px = pd.read_csv(PROCESSED / "prices.csv.gz", dtype={"ticker": str, "date": str}, keep_default_na=False,
-                     na_values=[""])
+    yahoo_only = cfg is not None and list(cfg["prices"].get("sources", ["yahoo"])) == ["yahoo"]
+    pfile, cfile = PROCESSED / "prices.csv.gz", PROCESSED / "price_coverage.csv"
+    if yahoo_only and (PROCESSED / "prices_yahoo_only.csv.gz").exists():
+        pfile, cfile = PROCESSED / "prices_yahoo_only.csv.gz", PROCESSED / "price_coverage_yahoo_only.csv"
+    px = pd.read_csv(pfile, dtype={"ticker": str, "date": str}, keep_default_na=False, na_values=[""])
     px = px[px["date"] <= last_day]
-    cov = pd.read_csv(PROCESSED / "price_coverage.csv", keep_default_na=False)
+    cov = pd.read_csv(cfile, keep_default_na=False)
     last_dates = {t: d for t, d, h in zip(cov["ticker"], cov["last_date"], cov["has_data"].astype(str)) if h == "True" and d}
     f = pd.read_csv(PROCESSED / "factors_daily.csv", dtype={"date": str})
     rf = dict(zip(f["date"], f["rf_pct"] / 100.0))
@@ -81,11 +86,14 @@ def load_market(last_day: str) -> dict:
             "last_dates": last_dates, "rf": rf}
 
 
-def run(cfg: dict) -> dict:
+def run(cfg: dict, out_dir: Path | None = None, write_diagnostics: bool = True) -> dict:
+    """out_dir: where the engine's five files go (default data/processed/); the variant runner passes its own
+    folder and write_diagnostics=False, so a variant never touches the headline's files."""
     from . import book as bk, diagnostics, events as evm, panel as pn, portfolio as pf
+    od = Path(out_dir) if out_dir else PROCESSED
     first, last_day, label = sample_bounds(cfg)
     w_start, w_months, w_limited = warmup_start(cfg, first)
-    mk = load_market(last_day)
+    mk = load_market(last_day, cfg)
     days = [d for d in mk["calendar"] if d >= first]
     units = evm.load_units(cfg)
     if w_months > 0:
@@ -109,11 +117,11 @@ def run(cfg: dict) -> dict:
     daily, rec = pf.series(pieces, prices.ffill, book_days, rf_all, cfg["portfolio"]["weighting"], spy, start=first)
     hz = list(cfg["portfolio"]["event_study_horizons"])
     panel = pn.build(ev, log, prices.exact, prices.ffill, mk["calendar"], last_day, hz, mk["last_dates"])
-    PROCESSED.mkdir(parents=True, exist_ok=True)
-    pieces.to_csv(LOTS, index=False, float_format="%.6f")
-    daily.to_csv(DAILY, index=False, float_format="%.10g")
-    panel.to_csv(PANEL, index=False, float_format="%.8g")
-    log.to_csv(EVENTS_OUT, index=False, float_format="%.6f")
+    od.mkdir(parents=True, exist_ok=True)
+    pieces.to_csv(od / LOTS.name, index=False, float_format="%.6f")
+    daily.to_csv(od / DAILY.name, index=False, float_format="%.10g")
+    panel.to_csv(od / PANEL.name, index=False, float_format="%.8g")
+    log.to_csv(od / EVENTS_OUT.name, index=False, float_format="%.6f")
     warm = {"warmup_months_config": int(cfg.get("engine", {}).get("warmup_months", 0) or 0),
             "warmup_first_disclosure_date": w_start if w_months > 0 else None, "warmup_months_effective": w_months,
             "warmup_limited_by_scrape_start": w_limited, "book_first_day": book_days[0],
@@ -125,11 +133,12 @@ def run(cfg: dict) -> dict:
                             "events": evm.__doc__.strip()},
             "K_fixed_pot_dollars": rec["K"], "reconciliation": rec, "days_without_rf": missing_rf,
             "config": {k: cfg[k] for k in ("data", "analysis", "universe", "trades", "portfolio", "engine")}}
-    META.write_text(json.dumps(meta, indent=1, default=str))
+    (od / META.name).write_text(json.dumps(meta, indent=1, default=str))
     out = {"events": ev, "events_book": ev_book, "pieces": pieces, "log": log, "daily": daily, "rec": rec, "panel": panel,
            "days": days, "book_days": book_days, "prices": prices, "label": label, "horizons": hz, "missing_rf": missing_rf,
            "units": units, "warmup": warm, "ev_all": ev_all, "first": first, "rf_all": rf_all}
-    diagnostics.run(cfg, out)
+    if write_diagnostics:
+        diagnostics.run(cfg, out)
     print(f"  [engine] {label} {days[0]}..{days[-1]} ({len(days)} days; book from {book_days[0]}, warm-up "
           f"{w_months} months, {warm['warmup_events']} events): {len(ev)} window events -> {pieces['lot_id'].nunique()} lots "
           f"({len(pieces)} pieces); K = ${rec['K']:,.0f} (warm-up book ${rec['K_warmup_book']:,.0f} + cash ${rec['K_cash']:,.0f}); "

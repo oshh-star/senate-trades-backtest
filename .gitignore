@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 .DS_Store
 data/processed/prices.csv.gz
+data/processed/prices_yahoo_only.csv.gz
+data/interim/variants/

@@ -460,6 +460,13 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
             ex &= ~c
     owner_ok = dict(conds)["OWNER"]
     u["in_scope_ex_window_owner"] = ex & u["in_class_range"]
+    # Phase 6: every filter except the ones a variant switches (window, owners, ETFs, ETF class, preferred), so the
+    # engine can recompute scope for any single-variant config without rerunning this stage (events.load_units)
+    base = pd.Series(True, index=u.index)
+    for code, c in conds:
+        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "PREFERRED_SHARE", "OWNER"):
+            base &= ~c
+    u["scope_base"] = base & u["in_class_range"]
     u["in_scope_ex_window"] = ex & ~owner_ok & u["in_class_range"]
     keep = u["in_any_window"].copy()
     for code, c in conds:
@@ -608,7 +615,7 @@ CLEAN_COLUMNS = [
 ]
 RECORD_COLUMNS = [
     "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
-    "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "in_scope_ex_window_owner", "reason_code", "reason_detail", "bioguide_id",
+    "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "in_scope_ex_window_owner", "scope_base", "reason_code", "reason_detail", "bioguide_id",
     "senator", "owner", "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
     "is_etf", "etf_class", "is_otc", "is_preferred", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
     "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",

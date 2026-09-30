@@ -89,7 +89,7 @@ def run_report(cfg: dict, R: dict) -> None:
     recs = R["records"]
     # every record of a trade in trades_clean, plus (5A.2) every record in scope but for the window and the owner from
     # the scrape start, so the 10-year window's warm-up (from 2016-01-01) has its records
-    recs[recs["in_trades_clean"] | recs["in_scope_ex_window_owner"]].sort_values(["disclosure_datetime", "record_id"])[RECORD_COLUMNS].to_csv(
+    recs[recs["in_trades_clean"] | recs["in_scope_ex_window_owner"] | recs["scope_base"]].sort_values(["disclosure_datetime", "record_id"])[RECORD_COLUMNS].to_csv(
         TRADE_RECORDS, index=False)
     R["overrides"].to_csv(OVERRIDES_LOG, index=False)
     tickers = ticker_table(tr)
