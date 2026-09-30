@@ -1,33 +1,39 @@
 # Handover
 
 ## Current state
-_Last updated: 2026-09-30, end of Phase 5A.2b (scope fixes) (Claude, for Harry)._
+_Last updated: 2026-09-30, end of Phase 6 prep (variants and mechanism, PREFILL) (Claude, for Harry)._
 
-- **CRITICAL PATH: the price request, now ready to send.** docs/PRICE_REQUEST.md: **8 MUST-HAVE stocks = 95.0% of the
-  $2.41m headline dollars at stake** (X, ECOM, ATVI, SSBK, PARA, WBA, GOGL, TOELY), with terminal steps, upload steps
-  and the WRDS settings for CRSP. Out-of-sample stays locked (M3) until these prices are in and in-sample is rerun.
-- **Decisions**: N1-N3 logged (2026-09-30); E44-E49 confirmed (N1). **V19 "include preferred shares" registered at
-  commit a3efd12** (after in-sample results were seen; logged as such). New interpretations **E50-E51 need confirmation**.
-- **N2 (preferred shares out)**: QRTEP, AHL-C, BKEPP, NEE-PC, reviewed by hand (config/preferred_shares.yaml). Trades
-  moved: 5-year 2 (plus QRTEP out of the warm-up), 3-year 1, 10-year 4. In-scope trades 2,342 -> 2,340. **Series A and B
-  unchanged** (none of these was ever copied). HENOY (Henkel preference-share ADR) kept as equity: flagged for Harry.
-  Exchange-listed notes CTAA and SOJA are excluded as bonds in every variant (E50).
-- **N3 (renames)**: 9 variant-only symbols priced from Yahoo by hand renames (ACE -> CB, IRET -> CSR, WTR -> WTRG,
-  CMCSK -> CMCSA, UA-C -> UA, RDS-A and RDSA -> SHEL, MCC -> PFX, ABB -> ABBNY). Survivorship ledger 196 -> 185.
-- **Price-source hierarchy (M2)** and loaders are in place (src/prices/crsp.py, manual.py, sources.py); no CRSP or
-  terminal file exists yet, so today's headline = V18 (Yahoo only).
-- **In-sample headline (unchanged)**: series A -0.14% a year, series B 6.06%, SPY 6.43%
-  (outputs/tables/phase5_insample_results.md). `python run_all.py --skip-scrape` reproduces every committed file.
-  Tests: `python -m pytest` (164 pass).
+- **Still the critical path: the price request** (docs/PRICE_REQUEST.md, 8 MUST-HAVE stocks = 95.0% of headline
+  dollars). Out-of-sample stays locked (M3). **Every Phase 6 prep number is PROVISIONAL ("prefill" in every file name
+  and header)**: the survivorship-ledger stocks are still skipped.
+- **Decisions**: P1 logged (E50-E51 confirmed; HENOY stays common equity). New interpretations **E52-E54 need
+  confirmation** (runner rules, mechanism definitions, committee test inputs).
+- **Variant runner**: `python run_variants.py` runs V1-V19 (V2 as five runs), each alone against the headline, and
+  writes outputs/tables/variants_insample_prefill.md/.csv/.json. All ran except **V11 (3-year window), refused by the
+  firewall**: its in-sample half (2023-09 to 2025-02) lies in the headline's locked period; it runs unchanged once
+  out-of-sample is unlocked (engine.sample: full). Every run is logged in DECISIONS.md "Variants run" (commit a124f03),
+  including the trial runs and V12's first failed attempt. Headline: series A -0.14%, Sharpe 0.02. The biggest moves:
+  V17 empty start +7.71 points, V10 equal weight +3.95, V8 equal dollars +3.57, V6 family +3.33; V18 and V19 equal the
+  headline (no terminal prices yet; the preferred shares were never copied); V13 too (both in-sample OTC events were
+  sales of nothing held). V12 (2016-09 to 2021-08): 25.83% a year, Sharpe 0.90, CAPM alpha 0.76% (t 0.09).
+- **Mechanism splits** (outputs/tables/mechanism_insample_prefill.md, rebuilt by the metrics stage): size, party, filing
+  lag, senator. No split difference reaches |t| = 2; t is blank where a group spans fewer than 5 entry months.
+- **Committee test** (outputs/tables/committee_insample_prefill.md): mapping committed at a124f03 BEFORE the split (E54);
+  membership reconstructed from 206 versions of congress-legislators' committee file (checks passed); SIC codes from
+  SEC for 861 of 868 non-ETF events. Overseen purchases: no edge (copier 21d -0.92%, t -0.61). Overseen SALES were
+  followed by the stock BEATING SPY (senator 63d +2.92%, t 2.16; difference vs not overseen +3.95%, t 2.25): the wrong
+  sign for informed selling, and one of many tests run.
+- **Headline unchanged**: series A -0.14% a year, series B 6.06%, SPY 6.43%. `python run_all.py --skip-scrape` rebuilds
+  everything (the variants: `python run_variants.py`, about 5 minutes). Tests: `python -m pytest` (170 pass).
 
 ## Exact next step
-1. **Group**: pull the 8 MUST-HAVE stocks at a library terminal and upload them (docs/PRICE_REQUEST.md, step by step);
-   if WRDS access arrives, run the CRSP query in the same document and upload the CSV to data/raw/crsp/.
-2. **Claude**: run `python run_all.py --skip-scrape`, check data/interim/manual_prices_report.csv,
-   crsp_permno_map.csv and price_source_validation.csv, then rerun the in-sample metrics with the filled prices, and
-   log V18 (Yahoo only) as run for the before/after comparison.
-3. **Harry**: confirm E50-E51 (and HENOY); then freeze the rules (`project.frozen_rules_commit`, a DECISIONS.md entry) and unlock
-   out-of-sample (M3).
+1. **Group**: pull the 8 MUST-HAVE stocks at a library terminal (docs/PRICE_REQUEST.md); upload to
+   data/raw/manual_prices/. If WRDS access arrives, run the CRSP query in the same document.
+2. **Claude** (when the prices are in): `python run_all.py --skip-scrape`, check the loader reports, then
+   `python run_variants.py`: the files are then tagged "filled" instead of "prefill" automatically; log the runs.
+3. **Harry**: confirm E52-E54; then freeze the rules (`project.frozen_rules_commit`, a DECISIONS.md entry) and unlock
+   out-of-sample (M3). With `engine.sample: full`, `python run_variants.py` also runs V11.
+4. **On or after 1 October 2026**: `python run_all.py --only scrape clean` to finalise the 2026 listing (checklist).
 
 ## Known limitations
 - **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
@@ -53,8 +59,8 @@ _Last updated: 2026-09-30, end of Phase 5A.2b (scope fixes) (Claude, for Harry).
 - [ ] `python run_all.py` rebuilds every number from the committed caches.
 
 ## Open questions
-1. **E50-E51** need confirmation (DECISIONS.md), in particular HENOY: the Henkel preference-share ADR is kept as
-   common equity (German Vorzugsaktien take full part in profits); say if it should count as preferred under N2.
+1. **E52-E54** need confirmation (DECISIONS.md): the runner's firewall rule (V11 not run in-sample), the top-4 senators
+   by in-sample events, the 5-cluster minimum for a t-statistic, and the committee test's inputs.
 2. **Who pulls the terminal data, and when?** The 8 MUST-HAVE stocks are 95.0% of the headline dollars.
 3. **Ledger symbols marked "unknown"**: AHL-C (now out of the headline as a preferred), and variant-only AQFH, CEM, HYH,
    TWO, HIYS.
