@@ -155,3 +155,24 @@ def test_predisclosure_drift_table_signs_the_copiers_cost():
     assert d.at["sale", "N"] == 2 and d.at["sale", "mean cost to the copier"] == pytest.approx(0.02)   # a fall is a cost
     assert d.at["sale", "share of events against the copier"] == pytest.approx(1.0)
     assert d.at["purchase", "median lag (trading days)"] == pytest.approx(15)
+
+
+# ---------------------------------------------------------------- N2 preferred shares, N3 renames
+def test_n2_preferred_shares_and_listed_notes_are_hand_listed_and_out_of_the_headline():
+    from src.clean.build import load_preferred
+    pref, notes = load_preferred()
+    assert set(pref) == {"QRTEP", "AHL-C", "BKEPP", "NEE-PC"} and set(notes) == {"CTAA", "SOJA"}
+    tc = pd.read_csv("data/processed/trades_clean.csv", keep_default_na=False, dtype=str, low_memory=False)
+    p = tc[tc["price_ticker"].isin(pref)]
+    assert len(p) and (p["is_preferred"] == "True").all() and (p["in_scope"] == "False").all()
+    assert set(p["reason_code"]) <= {"PREFERRED_SHARE", "OUTSIDE_WINDOW"}
+    assert not tc["price_ticker"].isin(notes).any()            # bonds are never in trades_clean (every variant)
+
+
+def test_n3_hand_renames_price_same_company_symbols_from_yahoo():
+    from src.clean.build import load_renames, price_symbol
+    ren = load_renames()
+    for old, new in {"ACE": "CB", "IRET": "CSR", "WTR": "WTRG", "CMCSK": "CMCSA", "UA-C": "UA", "RDS-A": "SHEL",
+                     "RDSA": "SHEL", "MCC": "PFX", "ABB": "ABBNY"}.items():
+        assert price_symbol(old, ren) == new
+    assert price_symbol("RDS-B", ren) == "RDS-B"               # not the same line before 2022: stays in the ledger

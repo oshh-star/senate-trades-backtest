@@ -50,6 +50,7 @@ universe:
   asset_classes: [common_stock, etf]   # options, bonds, crypto, mutual funds excluded
   include_etfs: true               # every trade carries is_etf; false = ETF-excluded variant
   etf_classes: [equity]            # K5: equity ETFs only; V16 = [equity, fixed_income, commodity, other]
+  include_preferred: false         # N2: preferred shares are not common equity (config/preferred_shares.yaml); V19 = true
   exclude: [options, bonds, crypto, mutual_funds]
   owners: [Self, Joint]            # add Spouse, Child for the family-included variant
   keep_owner_field: true           # excluded owners stay in the raw cache and are counted by type

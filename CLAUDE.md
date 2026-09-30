@@ -28,7 +28,8 @@ one command (`python run_all.py`) must rebuild every number.
 - **Universe**: US common stocks **and US-listed EQUITY ETFs** (K5: every ETF is classed equity,
   fixed_income, commodity or other from Yahoo's fund category; `universe.etf_classes: [equity]`; V16 keeps
   all). Every trade is flagged `is_etf`; `universe.include_etfs: false` is the ETF-excluded variant (V5).
-  Options, bonds, crypto and mutual funds are excluded.
+  Options, bonds, crypto and mutual funds are excluded. **Preferred shares are out (N2)**, hand-listed in
+  config/preferred_shares.yaml (`universe.include_preferred: false`; V19 puts them back); exchange-listed notes are bonds (E50).
 - **Owners**: `universe.owners: [Self, Joint]`. Spouse and Child trades stay in the raw cache and
   are counted by owner type in the exclusions log; adding them is a one-line variant.
 - **Sizing**: midpoint of the disclosed range (open top band uses its lower bound). Variants:
@@ -91,6 +92,7 @@ config/ticker_renames.yaml   renames (FB -> META, SQ -> XYZ), same-symbol name c
 config/ledger_reasons.yaml   K4: why each survivorship-ledger symbol has no prices, with a one-line source
 config/price_repairs.yaml    K6: repairs to bad Yahoo prints (logged in data/interim/price_repairs_log.csv)
 config/etf_class_overrides.yaml   K5: hand ETF classes (HIYS)
+config/preferred_shares.yaml   N2/E50: hand-reviewed preferred shares and exchange-listed notes, and the candidates kept
 src/{scrape,clean,prices,engine,metrics,report}/   one package per stage, each exposes run(cfg)
 data/raw/             cached raw downloads (committed); data/raw/_dryrun/ holds Phase 0 test output
 data/raw/efd/         search/<year>/*.json listings, ptr/<year>/<ptr_id>.html.gz pages, download_failures.json
@@ -125,7 +127,7 @@ tests/                pytest suite (run: python -m pytest)
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
-| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request; **waiting on terminal/CRSP prices** |
+| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request. A.2b done (2026-09-30): preferred shares out (N2), 9 renames (N3); **waiting on terminal/CRSP prices** |
 | 6 | Robustness and mechanism tests (variants, OOS) | Not started |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 

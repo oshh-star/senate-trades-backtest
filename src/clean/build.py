@@ -76,6 +76,8 @@ REASONS = [
     ("MUTUAL_FUND", "Yahoo: mutual fund"),
     ("OTHER_INSTRUMENT", "Yahoo: neither equity, ETF nor mutual fund"),
     ("NON_US_LISTING", "Yahoo: not listed in the US"),
+    ("LISTED_NOTE", "Exchange-listed note (a bond) filed as Stock (E50; bonds are excluded, D08)"),
+    ("PREFERRED_SHARE", "Preferred share, not common equity (N2); universe.include_preferred puts it back (V19)"),
     ("ETF_EXCLUDED", "ETF, and universe.include_etfs is false"),
     ("NON_EQUITY_ETF", "ETF that is not an equity fund (K5: bond, T-bill, commodity or other)"),
     ("AMOUNT_UNPARSED", "Amount string not understood"),
@@ -147,6 +149,16 @@ def load_non_us(path: Path = TICKER_RENAMES) -> dict[str, str]:
     if not path.exists():
         return {}
     return {tk.normalise_ticker(r["ticker"]): r.get("reason", "") for r in (yaml.safe_load(path.read_text()) or {}).get("non_us") or []}
+
+
+PREFERRED = Path("config/preferred_shares.yaml")
+
+
+def load_preferred(path: Path = PREFERRED) -> tuple[dict[str, str], dict[str, str]]:
+    """N2 / E50: hand-reviewed preferred shares and exchange-listed notes, ticker -> name."""
+    d = yaml.safe_load(path.read_text()) if path.exists() else {}
+    get = lambda k: {tk.normalise_ticker(r["ticker"]): r.get("name", "") for r in (d or {}).get(k) or []}
+    return get("preferred"), get("notes")
 
 
 def load_recycled(path: Path = TICKER_RENAMES) -> dict[str, str]:
@@ -404,6 +416,10 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     # ---- reasons (first failing step)
     owners = cfg["universe"]["owners"]
     include_etfs = bool(cfg["universe"]["include_etfs"])
+    include_preferred = bool(cfg["universe"].get("include_preferred", False))
+    pref, notes = load_preferred()
+    u["is_preferred"] = u["ticker"].isin(set(pref)) | u["price_ticker"].isin(set(pref))
+    u["is_listed_note"] = u["ticker"].isin(set(notes)) | u["price_ticker"].isin(set(notes))
     etf_classes = set(cfg["universe"].get("etf_classes") or ec.CLASSES)
     conds = [
         ("OUTSIDE_SERVICE", ~u["in_service"]),
@@ -415,6 +431,8 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
         ("MUTUAL_FUND", u["instrument_type"] == "mutual_fund"),
         ("OTHER_INSTRUMENT", u["instrument_type"] == "other"),
         ("NON_US_LISTING", u["non_us"]),
+        ("LISTED_NOTE", u["is_listed_note"]),
+        ("PREFERRED_SHARE", u["is_preferred"] & (not include_preferred)),
         ("ETF_EXCLUDED", u["is_etf"] & (not include_etfs)),
         ("NON_EQUITY_ETF", u["is_etf"] & ~u["etf_class"].isin(etf_classes)),
         ("AMOUNT_UNPARSED", ~u["amount_parsed"]),
@@ -445,7 +463,7 @@ def annotate(u: pd.DataFrame, cfg: dict, terms: pd.DataFrame, yahoo_lookup, sec_
     u["in_scope_ex_window"] = ex & ~owner_ok & u["in_class_range"]
     keep = u["in_any_window"].copy()
     for code, c in conds:
-        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "OWNER"):
+        if code not in ("OUTSIDE_WINDOW", "ETF_EXCLUDED", "NON_EQUITY_ETF", "PREFERRED_SHARE", "OWNER"):
             keep &= ~c
     u["in_trades_clean"] = keep
     return u, recovery, meta, pd.DataFrame(override_log)
@@ -566,6 +584,7 @@ def add_scope_flags(tr: pd.DataFrame) -> pd.DataFrame:
     tr["v6_family_owner"] = tr["owner"].isin(["Spouse", "Child"])
     tr["v13_otc"] = tr["is_otc"]
     tr["v16_non_equity_etf"] = tr["is_etf"] & (tr.get("etf_class", pd.Series("equity", index=tr.index)) != "equity")
+    tr["v19_preferred"] = tr.get("is_preferred", pd.Series(False, index=tr.index)).astype(bool)
     return tr
 
 
@@ -585,13 +604,13 @@ CLEAN_COLUMNS = [
     "ptr_n_in_scope", "bulk_ptr", "senator_n_in_scope", "senator_rank",
     "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
     "v1_tuberville", "v2_top5_senator", "v3_first_180d", "v4_bulk_ptr", "v5_etf", "v6_family_owner", "v13_otc",
-    "v16_non_equity_etf", "comment", "url",
+    "v16_non_equity_etf", "is_preferred", "v19_preferred", "comment", "url",
 ]
 RECORD_COLUMNS = [
     "record_id", "trade_id", "record_no", "n_records", "disclosure_datetime", "disclosure_date", "superseded_datetime",
     "record_ptr_id", "changed_fields", "in_scope", "in_scope_ex_window", "in_scope_ex_window_owner", "reason_code", "reason_detail", "bioguide_id",
     "senator", "owner", "transaction_date", "transaction_type", "ticker", "price_ticker", "asset_name", "asset_type", "instrument_type",
-    "is_etf", "etf_class", "is_otc", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
+    "is_etf", "etf_class", "is_otc", "is_preferred", "instrument_unresolved", "amount", "amount_lower", "amount_upper", "amount_mid",
     "filed_before_1530_et", "in_window", "in_window_3y", "in_window_5y", "in_window_10y",
 ]
 EXCLUSION_COLUMNS = [

@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NYQ",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 877095000,
+  "fullExchangeName": "NYSE",
+  "instrumentType": "EQUITY",
+  "longName": "Centerspace",
+  "shortName": "D/B/A Centerspace",
+  "symbol": "CSR"
+ },
+ "queried_at": "2026-09-30T10:24:32Z",
+ "symbol": "CSR"
+}

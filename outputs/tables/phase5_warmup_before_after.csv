@@ -1,7 +1,7 @@
 measure,V17 empty start (Phase 4 rule),"warm-up 12 months (L2, headline)"
-sale records in the window,448.0,448.0
-sales ignored: nothing held,310.0,265.0
-sales ignored (share),0.6919642857142857,0.5915178571428571
+sale records in the window,447.0,447.0
+sales ignored: nothing held,309.0,264.0
+sales ignored (share),0.6912751677852349,0.5906040268456376
 sales matched to a copied position,138.0,183.0
 open lots: min,0.0,65.0
 open lots: median,101.0,136.0

@@ -30,6 +30,68 @@ renames:
   date_basis: 'not a rename: eFD used a symbol the company never traded under'
   hand: true
   source: eFD asset name "CCC Intelligent Solutions Holdings Inc. Common Stock"; the company (SEC CIK 1818201) trades as CCC on NYSE (see the DGNR -> CCC rename)
+- old: ACE
+  new: CB
+  effective_date: '2016-01-15'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: ACE Limited bought The Chubb Corporation and took the name Chubb Limited and the NYSE symbol CB (same company, SEC CIK 896159, same
+    shares). eFD ''ACE Limited (NYSE)''; Yahoo CB ''Chubb Limited'', history from 2016-01-04'
+- old: IRET
+  new: CSR
+  effective_date: '2021-12-20'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Investors Real Estate Trust renamed itself Centerspace (same company, SEC CIK 798359, which lists CSR). eFD ''Investors Real Estate
+    Trust''; Yahoo CSR ''Centerspace'' (name agreement checked on download)'
+- old: WTR
+  new: WTRG
+  effective_date: '2019-02-04'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Aqua America renamed itself Essential Utilities (same company, SEC CIK 78128, which lists WTRG). eFD ''Aqua America Inc.''; Yahoo
+    WTRG ''Essential Utilities, Inc.'', history from 2016-01-04'
+- old: CMCSK
+  new: CMCSA
+  effective_date: '2015-11-20'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Comcast Class A Special shares were reclassified one for one into Class A common (CMCSA), Nov 2015, before any disclosure in the data.
+    eFD ''Comcast Corporation (NASDAQ)''; Yahoo CMCSA ''Comcast Corporation'''
+- old: UA-C
+  new: UA
+  effective_date: '2016-12-07'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Under Armour Class C shares: Yahoo''s symbol is UA (class A is UAA). Checked: Yahoo''s UA series starts 2016-03-29 (class C issue)
+    and differs from UAA throughout 2016, so it is the class C line. eFD ''Under Armour, Inc. Class C Comm''; Yahoo UA ''Under Armour, Inc.'''
+- old: RDS-A
+  new: SHEL
+  effective_date: '2022-01-31'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Royal Dutch Shell A ADSs became Shell plc ADSs one for one when the share classes were unified; Yahoo''s SHEL history runs back to
+    2016 (the A line). eFD ''Royal Dutch Shell plc''; Yahoo SHEL ''Shell plc''. RDS-B is NOT renamed: its prices differed from the A line until 2022'
+- old: RDSA
+  new: SHEL
+  effective_date: '2022-01-31'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: eFD''s symbol for Royal Dutch Shell A (RDS-A); as RDS-A -> SHEL. eFD ''Royal Dutch Shell Plc''; Yahoo SHEL ''Shell plc'''
+- old: MCC
+  new: PFX
+  effective_date: '2021-01-04'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: Medley Capital Corporation renamed itself PhenixFIN (same company, SEC CIK 1490349), after a 1-for-20 reverse split in 2020 (Yahoo''s
+    adjusted close carries the split). eFD ''Medley Capital Corporation''; Yahoo PFX (name agreement checked on download)'
+- old: ABB
+  new: ABBNY
+  effective_date: '2023-05-22'
+  date_basis: ticker change or reclassification date, from the company
+  hand: true
+  source: 'N3 (Harry, 2026-09-30), confirmed by company-name agreement: ABB Ltd delisted its ADSs from the NYSE in May 2023 and the same ADR programme continued over the counter as ABBNY; Yahoo''s ABBNY
+    history runs back to 2016. eFD ''ABB Ltd''; Yahoo ABBNY ''ABB Ltd'''
 - old: ABC
   new: COR
   effective_date: '2023-08-15'
