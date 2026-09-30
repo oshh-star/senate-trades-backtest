@@ -109,26 +109,28 @@ _Stage `clean` of `python run_all.py`. Default window: disclosures 2021-09-01 to
 
 Each row is removed at the FIRST step it fails, in this order. Steps 1-2 count raw rows; from step 3 on, each row is one unique trade (a trade reported in several filings counts once).
 
-| Step   | Reason code         | What happens                                                                     | Removed   |   Left |
-|:-------|:--------------------|:---------------------------------------------------------------------------------|:----------|-------:|
-| 0      |                     | All parsed transaction rows (Phase 1)                                            |           |  14558 |
-| 1      | FILER_UNMATCHED     | Filer not matched to a senator with high confidence                              | 0         |  14558 |
-| 2      | DUPLICATE_AMENDMENT | Duplicate: trade restated in an amendment (kept once, first disclosure datetime) | 2158      |  12400 |
-| 3      | DUPLICATE_REFILED   | Duplicate: trade repeated from another, unrelated filing                         | 24        |  12376 |
-|        |                     | = unique trades                                                                  |           |  12376 |
-| 4      | OUTSIDE_SERVICE     | Transaction date outside the senator's Senate service (A05)                      | 5         |  12371 |
-| 5      | OUTSIDE_WINDOW      | First disclosure outside the analysis window                                     | 7091      |   5280 |
-| 6      | ASSET_TYPE          | eFD asset type is not Stock or Other                                             | 1356      |   3924 |
-| 7      | OPTION_IN_NAME      | Asset name shows a call/put option                                               | 33        |   3891 |
-| 8      | EXCHANGE            | Exchange transaction (not a purchase or sale)                                    | 24        |   3867 |
-| 9      | NO_TICKER           | No ticker, and none recovered from the asset name                                | 235       |   3632 |
-| 10     | MUTUAL_FUND         | Yahoo: mutual fund                                                               | 65        |   3567 |
-| 11     | OTHER_INSTRUMENT    | Yahoo: neither equity, ETF nor mutual fund                                       | 1         |   3566 |
-| 12     | NON_US_LISTING      | Yahoo: not listed in the US                                                      | 3         |   3563 |
-| 13     | NON_EQUITY_ETF      | ETF that is not an equity fund (K5: bond, T-bill, commodity or other)            | 187       |   3376 |
-| 14     | AMOUNT_UNPARSED     | Amount string not understood                                                     | 0         |   3376 |
-| 15     | OWNER               | Owner not in universe.owners                                                     | 1034      |   2342 |
-|        |                     | = IN-SCOPE TRADES (headline sample)                                              |           |   2342 |
+| Step   | Reason code         | What happens                                                                           | Removed   |   Left |
+|:-------|:--------------------|:---------------------------------------------------------------------------------------|:----------|-------:|
+| 0      |                     | All parsed transaction rows (Phase 1)                                                  |           |  14558 |
+| 1      | FILER_UNMATCHED     | Filer not matched to a senator with high confidence                                    | 0         |  14558 |
+| 2      | DUPLICATE_AMENDMENT | Duplicate: trade restated in an amendment (kept once, first disclosure datetime)       | 2158      |  12400 |
+| 3      | DUPLICATE_REFILED   | Duplicate: trade repeated from another, unrelated filing                               | 24        |  12376 |
+|        |                     | = unique trades                                                                        |           |  12376 |
+| 4      | OUTSIDE_SERVICE     | Transaction date outside the senator's Senate service (A05)                            | 5         |  12371 |
+| 5      | OUTSIDE_WINDOW      | First disclosure outside the analysis window                                           | 7091      |   5280 |
+| 6      | ASSET_TYPE          | eFD asset type is not Stock or Other                                                   | 1356      |   3924 |
+| 7      | OPTION_IN_NAME      | Asset name shows a call/put option                                                     | 33        |   3891 |
+| 8      | EXCHANGE            | Exchange transaction (not a purchase or sale)                                          | 24        |   3867 |
+| 9      | NO_TICKER           | No ticker, and none recovered from the asset name                                      | 235       |   3632 |
+| 10     | MUTUAL_FUND         | Yahoo: mutual fund                                                                     | 65        |   3567 |
+| 11     | OTHER_INSTRUMENT    | Yahoo: neither equity, ETF nor mutual fund                                             | 1         |   3566 |
+| 12     | NON_US_LISTING      | Yahoo: not listed in the US                                                            | 3         |   3563 |
+| 13     | LISTED_NOTE         | Exchange-listed note (a bond) filed as Stock (E50; bonds are excluded, D08)            | 0         |   3563 |
+| 14     | PREFERRED_SHARE     | Preferred share, not common equity (N2); universe.include_preferred puts it back (V19) | 2         |   3561 |
+| 15     | NON_EQUITY_ETF      | ETF that is not an equity fund (K5: bond, T-bill, commodity or other)                  | 187       |   3374 |
+| 16     | AMOUNT_UNPARSED     | Amount string not understood                                                           | 0         |   3374 |
+| 17     | OWNER               | Owner not in universe.owners                                                           | 1034      |   2340 |
+|        |                     | = IN-SCOPE TRADES (headline sample)                                                    |           |   2340 |
 
 Owner type by reason (A01: Spouse and Child trades are counted, not silently dropped):
 
@@ -145,9 +147,10 @@ Owner type by reason (A01: Spouse and Child trades are counted, not silently dro
 | MUTUAL_FUND         |       0 |      24 |      7 |       34 |
 | OTHER_INSTRUMENT    |       0 |       0 |      0 |        1 |
 | NON_US_LISTING      |       0 |       3 |      0 |        0 |
+| PREFERRED_SHARE     |       0 |       0 |      2 |        0 |
 | NON_EQUITY_ETF      |       0 |     123 |     46 |       18 |
 | OWNER               |      39 |       0 |      0 |      995 |
-| (in scope)          |       0 |   1,296 |  1,046 |        0 |
+| (in scope)          |       0 |   1,296 |  1,044 |        0 |
 | Total               |     289 |   6,247 |  2,763 |    5,259 |
 
 ASSET_TYPE detail (in-window trades only; earlier steps took the rest):
@@ -169,7 +172,7 @@ OTHER_INSTRUMENT / NON_US_LISTING detail (Yahoo type or exchange):
 | NON_US_LISTING   | by hand: eFD asset name "COLGATE PALMOLIVE LTD.": COLPAL is the NSE (India) symbol of Colgate-Palmolive (India) Ltd, not the US company (CL); K4                                |        2 |
 | OTHER_INSTRUMENT | ECNQUOTE                                                                                                                                                                        |        1 |
 
-Rows excluded from the headline sample but kept in trades_clean.csv for pre-registered variants: OUTSIDE_WINDOW 4,844, OWNER 1,034, NON_EQUITY_ETF 187, NO_TICKER 1 (OUTSIDE_WINDOW rows there fall inside the 3- or 10-year window; OWNER rows are the V6 family trades).
+Rows excluded from the headline sample but kept in trades_clean.csv for pre-registered variants: OUTSIDE_WINDOW 4,842, OWNER 1,034, NON_EQUITY_ETF 187, PREFERRED_SHARE 2, NO_TICKER 1 (OUTSIDE_WINDOW rows there fall inside the 3- or 10-year window; OWNER rows are the V6 family trades).
 
 ### 2. Amendments
 
@@ -201,15 +204,15 @@ Rows excluded from the headline sample but kept in trades_clean.csv for pre-regi
 
 **As first published (J3, headline) vs as revised (V14).** A trade corrected by an amendment has two or more records: the original, effective at the first disclosure, and each corrected version, effective at its amendment's datetime (only changes of owner, date, asset, asset type, type or amount make a new record; a reworded asset name does not). Each record passes the filters on its own values and date. `data/processed/trade_records.csv` lists every record for the engine.
 
-- Trades in trades_clean.csv with more than one record: **131**, 267 records; 5 trades have three or more records.
-- In scope under both rules: 2,340; only as first published (J3): 2; only as revised (V14): 0. Headline (J3) in-scope trades: **2,342**; as revised: **2,340**.
+- Trades in trades_clean.csv with more than one record: **130**, 265 records; 5 trades have three or more records.
+- In scope under both rules: 2,338; only as first published (J3): 2; only as revised (V14): 0. Headline (J3) in-scope trades: **2,340**; as revised: **2,338**.
 
 Corrected trades by which of their records is in scope:
 
 | orig              |   correction in scope |   correction out |
 |:------------------|----------------------:|-----------------:|
 | original in scope |                    23 |                2 |
-| original out      |                     1 |              105 |
+| original out      |                     1 |              104 |
 
 AMBIGUOUS amendments (for Harry):
 
@@ -273,7 +276,7 @@ Every distinct amount string in the raw rows and how it was parsed (open top ban
 
 ### 4. Tickers
 
-- Unique tickers checked with Yahoo (3/5/10-year windows, any owner): **1,563**; kept 1,499; with at least one in-scope trade 949. Status by ticker: kept 1499, excluded: mutual fund 54, excluded: non-US listing 9, excluded: other instrument type 1.
+- Unique tickers checked with Yahoo (3/5/10-year windows, any owner): **1,563**; kept 1,499; with at least one in-scope trade 947. Status by ticker: kept 1499, excluded: mutual fund 54, excluded: non-US listing 9, excluded: other instrument type 1.
 - Rows with a raw ticker changed by normalisation (case, spaces, share class BRK.B -> BRK-B): 23.
 - Missing-ticker asset names recovered: **560** names, 671 trades (383 Self/Joint in the default window). Not recovered: **372** names, 657 trades (37 Self/Joint in window); these are NO_TICKER exclusions. Full list: `data/interim/ticker_recovery.csv`.
 
@@ -931,18 +934,16 @@ Excluded by Yahoo classification (in-window trades):
 | NON_US_LISTING   | COLPAL   |        2 |                                                     |            | COLGATE PALMOLIVE LTD.                                                                |
 | OTHER_INSTRUMENT | KH       |        1 |                                                     | NYSE       | KH                                                                                    |
 
-Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **188** tickers, 83 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
+Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the ticker (recycled or renamed symbol): **179** tickers, 81 in-scope trades. Kept and flagged `instrument_unresolved`; Phase 3 resolves renames and delistings.
 
 | ticker   |   n_in_scope | first_trade_date   | last_trade_date   | yahoo_name_mismatch   | yahoo_name                                  | efd_asset_names                                                                                                                                                                 |
 |:---------|-------------:|:-------------------|:------------------|:----------------------|:--------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0QZI.IL  |            0 | 2019-09-25         | 2019-09-25        | True                  | Meta Platforms, Inc.                        | FACEBOOK INC FACEBOOK CLASS A                                                                                                                                                   |
 | 3V64.TI  |            0 | 2019-09-25         | 2019-09-25        | False                 |                                             | VISA - CLASSE A                                                                                                                                                                 |
 | AAN      |            0 | 2015-01-08         | 2016-04-04        | False                 |                                             | Aaron's, Inc. (NYSE) | Aaron's, Inc.                                                                                                                                            |
-| ABB      |            0 | 2019-07-18         | 2019-07-18        | False                 |                                             | ABB Ltd                                                                                                                                                                         |
-| ACE      |            0 | 2015-01-23         | 2015-01-23        | False                 |                                             | ACE Limited (NYSE)                                                                                                                                                              |
 | AGN      |            0 | 2016-07-21         | 2020-04-14        | False                 |                                             | Allergan plc                                                                                                                                                                    |
 | AGU      |            0 | 2017-04-04         | 2017-04-04        | False                 |                                             | Agrium Inc.                                                                                                                                                                     |
-| AHL-C    |            1 | 2025-01-02         | 2025-01-02        | False                 |                                             | Aspen Insurance Holdings Ltd [Ahl/Pc]                                                                                                                                           |
+| AHL-C    |            0 | 2025-01-02         | 2025-01-02        | False                 |                                             | Aspen Insurance Holdings Ltd [Ahl/Pc]                                                                                                                                           |
 | AJRD     |            0 | 2020-11-20         | 2021-01-08        | False                 |                                             | Aerojet Rocketdyne Holdings, Inc.                                                                                                                                               |
 | AL       |            0 | 2018-04-24         | 2018-04-24        | False                 |                                             | Air Lease Corporation                                                                                                                                                           |
 | ALTM     |            0 | 2024-03-21         | 2024-03-21        | False                 |                                             | Arcadium Lithium Plc                                                                                                                                                            |
@@ -960,7 +961,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | BERY     |            0 | 2020-05-07         | 2020-06-02        | False                 |                                             | Berry Global Group, Inc.                                                                                                                                                        |
 | BIVV     |            0 | 2017-05-24         | 2017-05-24        | False                 |                                             | Bioverativ Inc.                                                                                                                                                                 |
 | BKEP     |            1 | 2021-12-29         | 2021-12-29        | False                 |                                             | Blueknight Energy Partners L.P., L.L.C. - Common U                                                                                                                              |
-| BKEPP    |            1 | 2022-08-19         | 2022-08-19        | False                 |                                             | Blueknight Energy Partners L.P. - Series A Preferr                                                                                                                              |
+| BKEPP    |            0 | 2022-08-19         | 2022-08-19        | False                 |                                             | Blueknight Energy Partners L.P. - Series A Preferr                                                                                                                              |
 | BPL      |            0 | 2015-01-15         | 2019-09-18        | False                 |                                             | Buckeye Partners, L.P. | Buckeye Partners, L.P. (NYSE)                                                                                                                          |
 | BRK      |            0 | 2025-02-13         | 2025-02-13        | False                 |                                             | Bershire Hathaway Cdr [Cad Hedged]                                                                                                                                              |
 | CAB      |            0 | 2016-03-01         | 2016-11-15        | False                 |                                             | Cabela's Incorporated                                                                                                                                                           |
@@ -973,7 +974,6 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | CIT      |            0 | 2015-02-05         | 2015-08-31        | False                 |                                             | CIT Group Inc. (NYSE)                                                                                                                                                           |
 | CLR      |            0 | 2016-01-08         | 2019-04-16        | False                 |                                             | Continental Resources, Inc.                                                                                                                                                     |
 | CMA      |            0 | 2017-03-16         | 2017-06-15        | False                 |                                             | Comerica Incorporated                                                                                                                                                           |
-| CMCSK    |            0 | 2015-05-11         | 2015-05-12        | False                 |                                             | Comcast Corporation (NASDAQ)                                                                                                                                                    |
 | CNR      |            0 | 2021-03-29         | 2021-03-29        | True                  | Core Natural Resources, Inc.                | Cornerstone Building Brands, Inc.                                                                                                                                               |
 | COLPAL   |            0 | 2025-04-08         | 2025-10-09        | False                 |                                             | COLGATE PALMOLIVE LTD.                                                                                                                                                          |
 | CONE     |            0 | 2020-08-21         | 2021-11-26        | False                 |                                             | CyrusOne Inc. | CyrusOne Inc - Common Stock                                                                                                                                     |
@@ -1022,7 +1022,6 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | INST     |            1 | 2023-01-03         | 2024-01-04        | False                 |                                             | Instructure Holdings, Inc. Common Stock | Instructure Holdings Inc                                                                                                              |
 | IPHI     |            0 | 2020-02-24         | 2020-04-07        | False                 |                                             | Inphi Corporation                                                                                                                                                               |
 | IRBT     |            0 | 2020-04-06         | 2025-02-06        | False                 |                                             | iRobot Corporation | iRobot Corporation - Common Stock                                                                                                                          |
-| IRET     |            0 | 2016-04-27         | 2016-04-28        | False                 |                                             | Investors Real Estate Trust                                                                                                                                                     |
 | ITC      |            0 | 2016-01-08         | 2016-01-08        | False                 |                                             | ITC Holdings Corp.                                                                                                                                                              |
 | JNPR     |            0 | 2021-06-07         | 2021-06-07        | False                 |                                             | Juniper Networks, Inc.                                                                                                                                                          |
 | JWN      |            0 | 2016-11-14         | 2016-11-14        | False                 |                                             | Nordstrom, Inc.                                                                                                                                                                 |
@@ -1042,7 +1041,6 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | MANT     |            0 | 2020-07-09         | 2021-06-04        | False                 |                                             | ManTech International Corporation                                                                                                                                               |
 | MASI     |            2 | 2022-03-30         | 2022-10-05        | False                 |                                             | Masimo Corporation - Common Stock                                                                                                                                               |
 | MAXR     |            0 | 2020-11-20         | 2023-01-04        | False                 |                                             | Maxar Technologies Inc | Maxar Technologies Inc.                                                                                                                                |
-| MCC      |            0 | 2017-06-27         | 2017-06-27        | False                 |                                             | Medley Capital Corporation                                                                                                                                                      |
 | MDC      |            0 | 2017-06-15         | 2017-06-15        | False                 |                                             | M.D.C. Holdings, Inc.                                                                                                                                                           |
 | MMP      |            0 | 2016-03-30         | 2020-04-15        | False                 |                                             | Magellan Midstream Partners, L.P. | Magellan Midstream Partners LP                                                                                                              |
 | MRO      |            0 | 2023-01-24         | 2023-01-24        | False                 |                                             | Marathon Oil Corp                                                                                                                                                               |
@@ -1069,9 +1067,7 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | QRTEA    |            0 | 2021-05-10         | 2021-05-10        | False                 |                                             | Qurate Retail, Inc. | Qurate Retail, Inc. - Series A Common Stock                                                                                                               |
 | QRTEP    |            0 | 2021-03-26         | 2021-03-26        | False                 |                                             | Qurate Retail, Inc.                                                                                                                                                             |
 | RAI      |            0 | 2016-11-17         | 2017-06-15        | False                 |                                             | Reynolds American Inc.                                                                                                                                                          |
-| RDS-A    |            0 | 2018-01-04         | 2018-01-04        | False                 |                                             | Royal Dutch Shell plc                                                                                                                                                           |
 | RDS-B    |            0 | 2016-03-31         | 2020-08-21        | False                 |                                             | Royal Dutch Shell plc                                                                                                                                                           |
-| RDSA     |            0 | 2021-07-26         | 2021-07-26        | False                 |                                             | Royal Dutch Shell Plc                                                                                                                                                           |
 | RDSA.AS  |            0 | 2019-06-10         | 2019-06-10        | False                 |                                             | Royal Dutch Shell plc                                                                                                                                                           |
 | REVB     |            0 | 2017-11-15         | 2019-07-31        | True                  | Revelation Biosciences, Inc.                | Revere Bank                                                                                                                                                                     |
 | RGC      |            0 | 2017-03-28         | 2017-12-08        | True                  | Regencell Bioscience Holdings Limited       | Regal Entertainment Group                                                                                                                                                       |
@@ -1098,7 +1094,6 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | TUP      |            0 | 2017-03-16         | 2017-06-15        | False                 |                                             | Tupperware Brands Corporation                                                                                                                                                   |
 | TWTR     |            0 | 2016-01-26         | 2017-05-24        | False                 |                                             | Twitter, Inc.                                                                                                                                                                   |
 | TWX      |            0 | 2017-03-16         | 2018-05-04        | False                 |                                             | Time Warner Inc.                                                                                                                                                                |
-| UA-C     |            0 | 2016-06-28         | 2016-06-28        | False                 |                                             | Under Armour, Inc. Class C Comm                                                                                                                                                 |
 | UN       |            0 | 2015-11-10         | 2020-04-14        | True                  | Corgi UNH 2x Daily ETF                      | Unilever N.V. | UN | The Unilever Group                                                                                                                                         |
 | USG      |            0 | 2015-11-12         | 2018-06-06        | True                  | USCF Gold Strategy Plus Income Fund         | USG Corporation | USG                                                                                                                                                           |
 | VGR      |            0 | 2019-05-02         | 2019-05-02        | False                 |                                             | Vector Group Ltd.                                                                                                                                                               |
@@ -1114,7 +1109,6 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | WPX      |            0 | 2015-01-14         | 2020-04-14        | False                 |                                             | WPX Energy, Inc. | WPX Energy, Inc. (NYSE)                                                                                                                                      |
 | WPZ      |            0 | 2015-02-02         | 2016-09-13        | False                 |                                             | Williams Partners L.P. (NYSE) | Williams Partners L.P.                                                                                                                          |
 | WRK      |            0 | 2017-03-16         | 2017-06-15        | False                 |                                             | WestRock Company                                                                                                                                                                |
-| WTR      |            0 | 2016-06-07         | 2016-06-07        | False                 |                                             | Aqua America Inc.                                                                                                                                                               |
 | WTT      |            1 | 2023-08-15         | 2023-08-15        | False                 |                                             | Wireless Telecom Group Inc                                                                                                                                                      |
 | WTW      |            0 | 2017-01-24         | 2018-12-27        | True                  | Willis Towers Watson Public Limited Company | Weight Watchers International, Inc.                                                                                                                                             |
 | X        |           22 | 2021-05-06         | 2023-10-11        | False                 |                                             | United States Steel Corporation Common Stock | United States Steel Corporation                                                                                                  |
@@ -1124,27 +1118,27 @@ Tickers Yahoo does not resolve, or whose Yahoo name matches no eFD name for the 
 | ZNGA     |            0 | 2016-04-20         | 2016-12-15        | False                 |                                             | Zynga, Inc. | Zynga Inc.                                                                                                                                                        |
 | ZNGA.SW  |            0 | 2017-07-14         | 2017-07-14        | False                 |                                             | Zynga Inc.                                                                                                                                                                      |
 
-OTC-traded tickers (kept, `is_otc`): 304 tickers, 315 in-scope trades.
+OTC-traded tickers (kept, `is_otc`): 305 tickers, 315 in-scope trades.
 
 ### 5. Concentration by senator (in-scope trades)
 
-31 senators, 2,342 trades, $87,814,671 at range midpoints.
+31 senators, 2,340 trades, $87,749,670 at range midpoints.
 
 By trade count:
 
 |   rank | senator              | party      |   trades |    dollars | share_trades   | share_dollars   | cum_share_trades   |
 |-------:|:---------------------|:-----------|---------:|-----------:|:---------------|:----------------|:-------------------|
 |      1 | Tommy Tuberville     | Republican |      732 | 28,469,366 | 31.3%          | 32.4%           | 31.3%              |
-|      2 | Alan Armstrong       | Republican |      702 | 24,651,351 | 30.0%          | 28.1%           | 61.2%              |
-|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.7%          | 14.0%           | 75.0%              |
-|      4 | John Boozman         | Republican |      251 |  2,277,626 | 10.7%          | 2.6%            | 85.7%              |
+|      2 | Alan Armstrong       | Republican |      702 | 24,651,351 | 30.0%          | 28.1%           | 61.3%              |
+|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.8%          | 14.0%           | 75.0%              |
+|      4 | John Boozman         | Republican |      251 |  2,277,626 | 10.7%          | 2.6%            | 85.8%              |
 |      5 | Sheldon Whitehouse   | Democrat   |       81 |  1,666,040 | 3.5%           | 1.9%            | 89.2%              |
 |      6 | Dan Sullivan         | Republican |       68 |    807,034 | 2.9%           | 0.9%            | 92.1%              |
-|      7 | Jerry Moran          | Republican |       56 |    521,528 | 2.4%           | 0.6%            | 94.4%              |
-|      8 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.4%           | 0.5%            | 95.8%              |
-|      9 | Ashley Moody         | Republican |       23 |  1,926,512 | 1.0%           | 2.2%            | 96.8%              |
-|     10 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 5.1%            | 97.6%              |
-|     11 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.3%            | 98.4%              |
+|      7 | Jerry Moran          | Republican |       56 |    521,528 | 2.4%           | 0.6%            | 94.5%              |
+|      8 | Gary C. Peters       | Democrat   |       32 |    470,016 | 1.4%           | 0.5%            | 95.9%              |
+|      9 | Ashley Moody         | Republican |       23 |  1,926,512 | 1.0%           | 2.2%            | 96.9%              |
+|     10 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.3%            | 97.7%              |
+|     11 | Bill Hagerty         | Republican |       17 |  4,452,508 | 0.7%           | 5.1%            | 98.4%              |
 |     12 | Shelley Moore Capito | Republican |        6 |     72,503 | 0.3%           | 0.1%            | 98.7%              |
 |     13 | Jim Banks            | Republican |        5 |     40,002 | 0.2%           | 0.0%            | 98.9%              |
 |     14 | Deb Fischer          | Republican |        4 |    166,002 | 0.2%           | 0.2%            | 99.1%              |
@@ -1172,9 +1166,9 @@ By midpoint dollars:
 |-------:|:---------------------|:-----------|---------:|-----------:|:---------------|:----------------|:--------------------|
 |      1 | Tommy Tuberville     | Republican |      732 | 28,469,366 | 31.3%          | 32.4%           | 32.4%               |
 |      2 | Alan Armstrong       | Republican |      702 | 24,651,351 | 30.0%          | 28.1%           | 60.5%               |
-|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.7%          | 14.0%           | 74.5%               |
+|      3 | Markwayne Mullin     | Republican |      322 | 12,294,661 | 13.8%          | 14.0%           | 74.5%               |
 |      4 | John W. Hickenlooper | Democrat   |       19 |  4,633,010 | 0.8%           | 5.3%            | 79.8%               |
-|      5 | Bill Hagerty         | Republican |       19 |  4,517,510 | 0.8%           | 5.1%            | 84.9%               |
+|      5 | Bill Hagerty         | Republican |       17 |  4,452,508 | 0.7%           | 5.1%            | 84.9%               |
 |      6 | David McCormick      | Republican |        2 |  3,008,001 | 0.1%           | 3.4%            | 88.3%               |
 |      7 | John Boozman         | Republican |      251 |  2,277,626 | 10.7%          | 2.6%            | 90.9%               |
 |      8 | Ashley Moody         | Republican |       23 |  1,926,512 | 1.0%           | 2.2%            | 93.1%               |
@@ -1206,13 +1200,13 @@ By midpoint dollars:
 
 | Group               |   Trades |   Median lag (days) |   75th pct |   95th pct | Share over 45 days   |
 |:--------------------|---------:|--------------------:|-----------:|-----------:|:---------------------|
-| All in-scope trades |     2342 |                  33 |        113 |        116 | 30.6%                |
+| All in-scope trades |     2340 |                  33 |        113 |        116 | 30.6%                |
 | Tommy Tuberville    |      732 |                  31 |         38 |         42 | 0.0%                 |
 | Alan Armstrong      |      702 |                 113 |        116 |        116 | 99.9%                |
 | Markwayne Mullin    |      322 |                  29 |         29 |         34 | 0.6%                 |
 | John Boozman        |      251 |                  25 |         32 |         42 | 1.6%                 |
 | Sheldon Whitehouse  |       81 |                  27 |         29 |         42 | 4.9%                 |
-| All other senators  |      254 |                  27 |         34 |         39 | 2.0%                 |
+| All other senators  |      252 |                  27 |         34 |         39 | 2.0%                 |
 
 ### 7. Paper filings inside the default window (trades we cannot see)
 
@@ -1232,16 +1226,16 @@ By midpoint dollars:
 | year   |   Purchases |   Sales |   Purchases (no ETFs) |   Sales (no ETFs) |   Total |   Total (no ETFs) |
 |:-------|------------:|--------:|----------------------:|------------------:|--------:|------------------:|
 | 2021   |          29 |      35 |                    29 |                35 |      64 |                64 |
-| 2022   |         130 |     149 |                   124 |               144 |     279 |               268 |
+| 2022   |         130 |     148 |                   124 |               143 |     278 |               267 |
 | 2023   |         248 |     166 |                   247 |               165 |     414 |               412 |
 | 2024   |          87 |     287 |                    75 |               265 |     374 |               340 |
-| 2025   |         139 |     162 |                   128 |               129 |     301 |               257 |
+| 2025   |         139 |     161 |                   128 |               128 |     300 |               256 |
 | 2026   |         771 |     139 |                   758 |               124 |     910 |               882 |
-| Total  |       1,404 |     938 |                 1,361 |               862 |   2,342 |             2,223 |
+| Total  |       1,404 |     936 |                 1,361 |               860 |   2,340 |             2,221 |
 
 ### 9. Rows each pre-registered variant flag touches
 
-Relative to the 2,342 in-scope trades. V7, V8 and V10 change sizing or weighting only.
+Relative to the 2,340 in-scope trades. V7, V8 and V10 change sizing or weighting only.
 
 | Variant   | Change                                               |   Trades | Effect                             |
 |:----------|:-----------------------------------------------------|---------:|:-----------------------------------|
@@ -1255,10 +1249,10 @@ Relative to the 2,342 in-scope trades. V7, V8 and V10 change sizing or weighting
 | V4        | Exclude PTRs with 50+ in-scope trades                |     1113 | removed (8 PTRs)                   |
 | V5        | Exclude ETFs                                         |      119 | removed                            |
 | V6        | Add Spouse and Child trades                          |     1054 | added (Spouse 1015, Child 39)      |
-| V9        | Same-day entry (filed before 15:30 ET)               |     1120 | enter same day                     |
+| V9        | Same-day entry (filed before 15:30 ET)               |     1118 | enter same day                     |
 | V16       | Add non-equity ETFs (bond, T-bill, commodity, other) |      169 | added                              |
 | V11       | 3-year window                                        |     2002 | trades in that window (Self/Joint) |
-| V12       | 10-year window                                       |     5457 | trades in that window (Self/Joint) |
+| V12       | 10-year window                                       |     5455 | trades in that window (Self/Joint) |
 
 ### 10. ETF asset classes (K5: the headline keeps equity ETFs only)
 
@@ -1323,15 +1317,24 @@ _Stage `prices` of `python run_all.py`. Yahoo daily history 2016-01-01 to 2026-0
 
 ### 1. Ticker resolution (renames and the survivorship ledger)
 
-202 eFD tickers had no usable Yahoo record, or a Yahoo name matching no eFD name. Outcomes: delisted_or_unknown 167, rename 32, same_symbol 3. Renames and same-symbol name changes are confirmed through SEC EDGAR company histories (same CIK, a current or former SEC name equal to the eFD name) and Yahoo's name for the new symbol (`config/ticker_renames.yaml`, rules in `src/prices/resolve.py`).
+201 eFD tickers had no usable Yahoo record, or a Yahoo name matching no eFD name. Outcomes: delisted_or_unknown 166, rename 32, same_symbol 3. Renames and same-symbol name changes are confirmed through SEC EDGAR company histories (same CIK, a current or former SEC name equal to the eFD name) and Yahoo's name for the new symbol (`config/ticker_renames.yaml`, rules in `src/prices/resolve.py`).
 
-Renames (35; 19 in-scope trades use one):
+Renames (44; 19 in-scope trades use one):
 
 | old   | new   | effective_date   | date_basis                                                       |
 |:------|:------|:-----------------|:-----------------------------------------------------------------|
 | SQ    | XYZ   | 2025-01-21       | ticker change date (NYSE), from the company                      |
 | BRKB  | BRK-B |                  | not a rename: eFD wrote the class B symbol without its separator |
 | CCCS  | CCC   |                  | not a rename: eFD used a symbol the company never traded under   |
+| ACE   | CB    | 2016-01-15       | ticker change or reclassification date, from the company         |
+| IRET  | CSR   | 2021-12-20       | ticker change or reclassification date, from the company         |
+| WTR   | WTRG  | 2019-02-04       | ticker change or reclassification date, from the company         |
+| CMCSK | CMCSA | 2015-11-20       | ticker change or reclassification date, from the company         |
+| UA-C  | UA    | 2016-12-07       | ticker change or reclassification date, from the company         |
+| RDS-A | SHEL  | 2022-01-31       | ticker change or reclassification date, from the company         |
+| RDSA  | SHEL  | 2022-01-31       | ticker change or reclassification date, from the company         |
+| MCC   | PFX   | 2021-01-04       | ticker change or reclassification date, from the company         |
+| ABB   | ABBNY | 2023-05-22       | ticker change or reclassification date, from the company         |
 | ABC   | COR   | 2023-08-15       | SEC: end of former name                                          |
 | ANTM  | ELV   | 2004-11-30       | SEC: end of former name                                          |
 | BIF   | STEW  | 2022-04-26       | SEC: end of former name                                          |
@@ -1375,7 +1378,7 @@ Rejected by hand (same SEC company, not the same security):
 | ESV      | Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity                       |
 | WTW      | Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity                       |
 
-**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 196 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 32 of them have in-scope trades (89 trades, $5,487,045 at midpoints). CRSP (A04) is the fix.
+**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 185 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 30 of them have in-scope trades (87 trades, $5,422,044 at midpoints). CRSP (A04) is the fix.
 
 | price_ticker   | efd_asset_names                     |   in_scope_trades |   in_scope_purchases |   in_scope_midpoint_dollars | first_trade   | last_trade   | reason                     | reason_source                                                                                                                                                                                                                                                      |
 |:---------------|:------------------------------------|------------------:|---------------------:|----------------------------:|:--------------|:-------------|:---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1389,9 +1392,7 @@ Rejected by hand (same SEC company, not the same security):
 | GOGL           | Golden Ocean Group Limited - Common |                 2 |                    1 |                     150,001 | 2024-02-27    | 2024-04-30   | acquired for stock         | Merged into CMB.Tech (0.95 CMBT share per GOGL share), Aug 2025 (SEC 25-NSE 2025-08-20); Yahoo's GOGL is now a 2x GOOGL ETF                                                                                                                                        |
 | NS             | Nustar Energy L.P. Common Units     |                 1 |                    0 |                      75,000 | 2021-12-29    | 2021-12-29   | acquired for stock         | Sunoco LP bought NuStar Energy, 0.400 SUN unit per NS unit, May 2024 (no SEC name match; company announcement)                                                                                                                                                     |
 | TACO           | Del Taco Restaurants, Inc. - Common |                 1 |                    0 |                      65,001 | 2022-03-09    | 2022-03-09   | acquired for cash          | Jack in the Box bought Del Taco for $12.51 cash, Mar 2022 (SEC 25-NSE 2022-03-08); Yahoo's TACO is now a SPAC                                                                                                                                                      |
-| AHL-C          | Aspen Insurance Holdings Ltd [Ahl/P |                 1 |                    0 |                      32,500 | 2025-01-02    | 2025-01-02   | unknown                    | Aspen Insurance Holdings preferred depositary shares (AHL-PC); Aspen was bought by Sompo in 2025, what happened to this preferred series is not confirmed here. Also: a preferred share, not common stock                                                          |
 | BKEP           | Blueknight Energy Partners L.P., L. |                 1 |                    0 |                      32,500 | 2021-12-29    | 2021-12-29   | acquired for cash          | Ergon bought Blueknight Energy Partners' common units for $4.65 cash, Oct 2022 (company announcement; no SEC name match)                                                                                                                                           |
-| BKEPP          | Blueknight Energy Partners L.P. - S |                 1 |                    0 |                      32,500 | 2022-08-19    | 2022-08-19   | acquired for cash          | Blueknight Series A preferred units, bought out for cash in the Ergon transaction, Oct 2022 (company announcement). Also: a preferred unit, not common stock                                                                                                       |
 | FUN            | Cedar Fair, L.P. Common Stock       |                 1 |                    0 |                      32,500 | 2022-01-13    | 2022-01-13   | acquired for stock         | Cedar Fair merged with Six Flags 1:1 into a new company that took the FUN symbol, 1 Jul 2024 (SEC 25-NSE 2024-07-02); Yahoo's FUN is the new company, so not used (E27)                                                                                            |
 | RNWK           | RealNetworks Inc. | RealNetworks, I |                 1 |                    0 |                      32,500 | 2022-12-28    | 2022-12-28   | acquired for cash          | Founder Rob Glaser took RealNetworks private for $1.05 cash, Dec 2022 (SEC 25-NSE 2022-12-22, SC 13E3)                                                                                                                                                             |
 | TOELY          | Tokyo Electron Ltd ADR (TOELY)      |                 1 |                    1 |                      32,500 | 2026-03-30    | 2026-03-30   | ticker issue               | Tokyo Electron ADR still trades OTC (Yahoo's last market time 2026-09-24), but Yahoo returns an empty daily series (its 'first trade date' was reset to 2026-07-17, as for DFKCY, AVB, EA and LEG)                                                                 |
@@ -1412,22 +1413,22 @@ Rejected by hand (same SEC company, not the same security):
 | SIVB           | SVB Financial Group | SVB Financial |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | bankrupt                   | SVB Financial Group: Silicon Valley Bank failed 10 Mar 2023, parent filed Chapter 11 17 Mar 2023 (SEC 25-NSE 2023-05-02)                                                                                                                                           |
 | VMW            | VMware, Inc. | Vmware, Inc. Common  |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | acquired for stock         | Broadcom bought VMware, holders elected $142.50 cash or 0.252 AVGO share (prorated about half each), closed 22 Nov 2023 (SEC 25-NSE 2023-11-22)                                                                                                                    |
 
-Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 13, acquired for stock 12, ticker issue 4, unknown 1, matured or liquidated fund 1, bankrupt 1; for all 196 ledger symbols: acquired for stock 75, acquired for cash 65, ticker issue 30, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
+Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 12, acquired for stock 12, ticker issue 4, matured or liquidated fund 1, bankrupt 1; for all 185 ledger symbols: acquired for stock 75, acquired for cash 65, ticker issue 19, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
 
 ### 2. Price download and repairs
 
-- Symbols requested: **1491**; with data: **1294**; without: 197. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- Symbols requested: **1482**; with data: **1296**; without: 186. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
 - K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,249,012 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,254,372 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
-Entry date = first NYSE trading day after the disclosure date (D11). **2,273 of 2,365 in-scope records (96.1%) have a price; by midpoint dollars 93.8%** ($82,954,636 of $88,457,682).
+Entry date = first NYSE trading day after the disclosure date (D11). **2,273 of 2,363 in-scope records (96.2%) have a price; by midpoint dollars 93.8%** ($82,954,636 of $88,392,682).
 
 | Senator              |   Trades |   With entry price | Share (count)   |   Midpoint $ | Share ($)   |
 |:---------------------|---------:|-------------------:|:----------------|-------------:|:------------|
-| ALL IN-SCOPE         |     2365 |               2273 | 96.1%           |   88,457,682 | 93.8%       |
+| ALL IN-SCOPE         |     2363 |               2273 | 96.2%           |   88,392,682 | 93.8%       |
 | Tommy Tuberville     |      750 |                685 | 91.3%           |   28,998,875 | 85.1%       |
 | Alan Armstrong       |      702 |                692 | 98.6%           |   24,651,351 | 99.6%       |
 | Markwayne Mullin     |      322 |                319 | 99.1%           |   12,294,661 | 99.8%       |
@@ -1437,8 +1438,8 @@ Entry date = first NYSE trading day after the disclosure date (D11). **2,273 of 
 | Jerry Moran          |       56 |                 56 | 100.0%          |      521,528 | 100.0%      |
 | Gary C. Peters       |       32 |                 31 | 96.9%           |      470,016 | 98.3%       |
 | Ashley Moody         |       23 |                 23 | 100.0%          |    1,926,512 | 100.0%      |
-| Bill Hagerty         |       20 |                 12 | 60.0%           |    4,550,010 | 94.4%       |
 | John W. Hickenlooper |       19 |                 19 | 100.0%          |    4,633,010 | 100.0%      |
+| Bill Hagerty         |       18 |                 12 | 66.7%           |    4,485,009 | 95.8%       |
 | Shelley Moore Capito |        6 |                  6 | 100.0%          |       72,503 | 100.0%      |
 | Jim Banks            |        5 |                  5 | 100.0%          |       40,002 | 100.0%      |
 | Deb Fischer          |        4 |                  4 | 100.0%          |      166,002 | 100.0%      |
@@ -1464,10 +1465,10 @@ Why prices are missing:
 
 | why_missing                                   |   trades |   midpoint_dollars |
 |:----------------------------------------------|---------:|-------------------:|
-| no usable Yahoo history (survivorship ledger) |       90 |          5,487,045 |
+| no usable Yahoo history (survivorship ledger) |       88 |          5,422,044 |
 | series starts after the entry date            |        2 |             16,001 |
 
-Every in-scope record without an entry price (92; also `data/interim/price_missing_entry.csv`):
+Every in-scope record without an entry price (90; also `data/interim/price_missing_entry.csv`):
 
 | senator          | ticker   | price_ticker   | transaction_type   | disclosure_date   | entry_date   |   amount_mid | why_missing                                   |
 |:-----------------|:---------|:---------------|:-------------------|:------------------|:-------------|-------------:|:----------------------------------------------|
@@ -1483,10 +1484,8 @@ Every in-scope record without an entry price (92; also `data/interim/price_missi
 | Bill Hagerty     | BKEP     | BKEP           | Sale (Full)        | 2022-01-10        | 2022-01-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
 | Bill Hagerty     | NS       | NS             | Sale (Full)        | 2022-01-10        | 2022-01-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
 | Bill Hagerty     | TACO     | TACO           | Sale (Partial)     | 2022-04-13        | 2022-04-14   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty     | BKEPP    | BKEPP          | Sale (Full)        | 2022-09-02        | 2022-09-06   |       32,500 | no usable Yahoo history (survivorship ledger) |
 | Bill Hagerty     | TACO     | TACO           | Sale (Full)        | 2023-08-14        | 2023-08-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
 | Bill Hagerty     | EQC      | EQC            | Sale (Full)        | 2024-12-30        | 2024-12-31   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Bill Hagerty     | AHL-C    | AHL-C          | Sale (Full)        | 2025-01-22        | 2025-01-23   |       32,500 | no usable Yahoo history (survivorship ledger) |
 | Dan Sullivan     | PXD      | PXD            | Sale (Partial)     | 2023-02-13        | 2023-02-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Dan Sullivan     | PXD      | PXD            | Sale (Full)        | 2023-09-18        | 2023-09-19   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Gary C. Peters   | LEG      | LEG            | Sale (Full)        | 2024-11-14        | 2024-11-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
@@ -1572,7 +1571,7 @@ _None._
 
 ### 5. Daily moves beyond +/-50% (split-adjusted close)
 
-379 moves in 53 symbols; 276 unexplained; 27 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
+380 moves in 54 symbols; 277 unexplained; 27 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
 
 | ticker   | prev_date   | date       |   close | ret_close   | ret_adj   | next_ret_close   | explanation                                                            |
 |:---------|:------------|:-----------|--------:|:------------|:----------|:-----------------|:-----------------------------------------------------------------------|
@@ -1676,8 +1675,8 @@ Order used: **crsp > manual > yahoo** (`prices.sources`). Each symbol's series t
 
 | source   |   symbols |
 |:---------|----------:|
-| yahoo    |      1294 |
-| none     |       197 |
+| yahoo    |      1296 |
+| none     |       186 |
 
 Where two sources overlap, their daily returns are compared (`data/interim/price_source_validation.csv`): no overlaps yet (no CRSP or terminal files).
 
@@ -1687,13 +1686,13 @@ _Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-
 
 ### 0. Warm-up (L2) against the empty start (V17)
 
-The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 135 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $7,210,573 in cash, K = $8,406,633).
+The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 133 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $7,210,573 in cash, K = $8,406,633).
 
 | action                                                     |   events |   dollars |
 |:-----------------------------------------------------------|---------:|----------:|
 | bought                                                     |       72 | 1,552,036 |
-| ignored: nothing held                                      |       49 | 1,114,524 |
-| skipped: survivorship ledger (no usable prices)            |       11 |   353,006 |
+| ignored: nothing held                                      |       48 | 1,082,024 |
+| skipped: survivorship ledger (no usable prices)            |       10 |   320,505 |
 | sold all                                                   |        2 |   409,493 |
 | ignored: nothing held (earlier copied lots already closed) |        1 |    75,000 |
 
@@ -1701,9 +1700,9 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 
 | measure                                                                        | V17 empty start (Phase 4 rule)   | warm-up 12 months (L2, headline)   |
 |:-------------------------------------------------------------------------------|:---------------------------------|:-----------------------------------|
-| sale records in the window                                                     | 448                              | 448                                |
-| sales ignored: nothing held                                                    | 310                              | 265                                |
-| sales ignored (share)                                                          | 69.2%                            | 59.2%                              |
+| sale records in the window                                                     | 447                              | 447                                |
+| sales ignored: nothing held                                                    | 309                              | 264                                |
+| sales ignored (share)                                                          | 69.1%                            | 59.1%                              |
 | sales matched to a copied position                                             | 138                              | 183                                |
 | open lots: min                                                                 | 0                                | 65                                 |
 | open lots: median                                                              | 101                              | 136                                |
@@ -1719,12 +1718,12 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 
 ### 1. Events and what the book did with them
 
-884 window events (plus 135 warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
+883 window events (plus 133 warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
 
 | action                                                            |   events |    dollars |
 |:------------------------------------------------------------------|---------:|-----------:|
 | bought                                                            |      413 | 13,553,206 |
-| ignored: nothing held                                             |      258 | 15,003,629 |
+| ignored: nothing held                                             |      257 | 14,971,128 |
 | sold all                                                          |      141 |  4,462,311 |
 | sold part                                                         |       42 |  2,636,122 |
 | skipped: survivorship ledger (no usable prices)                   |       22 |  1,786,511 |
@@ -1749,13 +1748,13 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 | skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
 
-**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 265 of 448 sale records (59%), by senator:
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 264 of 447 sale records (59%), by senator:
 
 | senator              |   sales_ignored |   dollars |
 |:---------------------|----------------:|----------:|
 | Tommy Tuberville     |             123 | 4,208,062 |
 | Dan Sullivan         |              48 |   506,524 |
-| Bill Hagerty         |              18 | 4,509,509 |
+| Bill Hagerty         |              17 | 4,477,008 |
 | Sheldon Whitehouse   |              14 |   277,007 |
 | Jerry Moran          |              14 |   112,007 |
 | Markwayne Mullin     |              11 |    88,006 |
@@ -1822,7 +1821,7 @@ Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
 
 ### 7. Trade-level panel: N per horizon
 
-`data/processed/event_panel.csv`: 883 in-scope purchase and sale records; 69 without a price on the entry date. Horizons that run past the last in-sample day are censored.
+`data/processed/event_panel.csv`: 882 in-scope purchase and sale records; 68 without a price on the entry date. Horizons that run past the last in-sample day are censored.
 
 | side     |   horizon_days |   N_from_entry |   N_from_transaction |   censored_entry |   no_price |
 |:---------|---------------:|---------------:|---------------------:|-----------------:|-----------:|
@@ -1831,11 +1830,11 @@ Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
 | purchase |             63 |            386 |                  388 |               27 |         22 |
 | purchase |            126 |            231 |                  232 |              182 |         22 |
 | purchase |            252 |            157 |                  161 |              256 |         22 |
-| sale     |              5 |            401 |                  401 |                0 |         47 |
-| sale     |             21 |            359 |                  401 |               42 |         47 |
-| sale     |             63 |            312 |                  314 |               89 |         47 |
-| sale     |            126 |            227 |                  262 |              174 |         47 |
-| sale     |            252 |            189 |                  191 |              212 |         47 |
+| sale     |              5 |            401 |                  401 |                0 |         46 |
+| sale     |             21 |            359 |                  401 |               42 |         46 |
+| sale     |             63 |            312 |                  314 |               89 |         46 |
+| sale     |            126 |            227 |                  262 |              174 |         46 |
+| sale     |            252 |            189 |                  191 |              212 |         46 |
 
 ### 8. In-sample annualised return and volatility, identical dates
 
@@ -1857,10 +1856,10 @@ Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, ap
 
 | measure                                                     | min     | median   | max       | date of max   |
 |:------------------------------------------------------------|:--------|:---------|:----------|:--------------|
-| Share of capital deployed                                   | 2.6%    | 32.7%    | 68.6%     | 2022-10-11    |
-| Same, each lot dropped after its SEC Form 25 delisting date | 2.5%    | 32.7%    | 68.3%     | 2022-10-11    |
-| Ledger cost basis still held ($)                            | 180,004 | 603,006  | 1,593,510 | 2022-08-16    |
-| Ledger lots still held                                      | 8       | 12       | 21        | 2022-08-16    |
+| Share of capital deployed                                   | 2.2%    | 31.4%    | 67.2%     | 2022-10-11    |
+| Same, each lot dropped after its SEC Form 25 delisting date | 2.1%    | 31.4%    | 66.9%     | 2022-10-11    |
+| Ledger cost basis still held ($)                            | 147,504 | 570,506  | 1,561,010 | 2022-08-16    |
+| Ledger lots still held                                      | 7       | 11       | 20        | 2022-08-16    |
 
 ## Phase 5: metrics and benchmarks (in-sample only)
 
@@ -1868,22 +1867,21 @@ _Stage `metrics`. Sample in-sample 2021-09-01 to 2024-02-29; prices and factors 
 
 ### 1. Senate universe (equal weight): members and symbols left out
 
-Members per month: min 48, median 76, max 135. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 181 symbol-months, 15 symbols. Month by month in `data/processed/universe_members.csv`.
+Members per month: min 48, median 76, max 135. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 173 symbol-months, 14 symbols. Month by month in `data/processed/universe_members.csv`.
 
 | symbol   |   months left out |
 |:---------|------------------:|
 | X        |                26 |
 | ECOM     |                24 |
 | WBA      |                20 |
-| LMST     |                12 |
 | SSBK     |                12 |
-| ATVI     |                12 |
+| LMST     |                12 |
 | MASI     |                12 |
-| JNPR     |                11 |
+| ATVI     |                12 |
 | CNR      |                11 |
-| VMW      |                11 |
 | SIVB     |                11 |
-| QRTEP    |                 8 |
+| JNPR     |                11 |
+| VMW      |                11 |
 | VRM      |                 6 |
 | PARA     |                 4 |
 | CYBR     |                 1 |
@@ -1894,4 +1892,4 @@ Both launched 2023-02-07; in-sample months with a full month of returns: 12 (202
 
 ### 3. Event study sample
 
-883 in-scope purchase and sale records with an in-sample entry date; 69 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last in-sample day (N per row in the event study table).
+882 in-scope purchase and sale records with an in-sample entry date; 68 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last in-sample day (N per row in the event study table).

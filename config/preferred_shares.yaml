@@ -1,0 +1,24 @@
+# N2 (Harry, 2026-09-30): preferred shares are not common equity, so they are out of the headline (reason
+# PREFERRED_SHARE; V19 puts them back with universe.include_preferred: true). E50: exchange-listed notes that senators
+# filed as "Stock" are bonds, already excluded by D08 (reason LISTED_NOTE, in every variant).
+# Hand-reviewed list (Claude, 2026-09-30). Candidates came from: Yahoo's names (every cached symbol), every eFD asset
+# name of every record ("Preferred", "Pfd", "Series", a coupon percentage, "notes", "cumulative", ...), and ticker
+# patterns (-P?, a 5-letter symbol ending in P, a class letter after a hyphen). Each entry below was checked by hand.
+preferred:
+  - {ticker: QRTEP,  name: "Qurate Retail, Inc. 8.0% Series A Cumulative Redeemable Preferred", why: "eFD name says only 'Qurate Retail, Inc.'; the symbol is the preferred (the common is QRTEA)"}
+  - {ticker: AHL-C,  name: "Aspen Insurance Holdings 5.625% Perpetual Preference Shares (depositary)", why: "eFD name 'Aspen Insurance Holdings Ltd [Ahl/Pc]': the AHL-PC preference series"}
+  - {ticker: BKEPP,  name: "Blueknight Energy Partners L.P. Series A Preferred Units", why: "eFD name says 'Series A Preferr...'"}
+  - {ticker: NEE-PC, name: "FPL Group, Inc. 5 7/8% Preferred", why: "eFD name 'FPL Group, Inc. 5 7/8% Preferre...'"}
+notes:
+  - {ticker: CTAA,   name: "Qwest Corporation 7% Notes due 2056", why: "eFD name 'Qwest Corp. NT 7% 2056': an exchange-listed bond filed as Stock"}
+  - {ticker: SOJA,   name: "The Southern Company Series 2015A Junior Subordinated Notes", why: "eFD name 'The Southern Company JR SUB NT 2015A': exchange-listed debt filed as Stock"}
+# Reviewed and KEPT as common equity (candidates the patterns caught):
+not_preferred:
+  - {ticker: HENOY, why: "Henkel preference-share ADR (Vorzugsaktien): non-voting shares that take full part in profits with a small extra dividend, i.e. equity, not a fixed-income preferred. Flagged for Harry"}
+  - {ticker: LDP,   why: "Cohen & Steers Limited Duration Preferred and Income Fund: the common shares of a closed-end fund that holds preferreds"}
+  - {ticker: QRTEA, why: "Qurate Retail Series A COMMON stock"}
+  - {ticker: "BATRA BATRK FWONA FWONK LSXMK LTRPA WBD", why: "Liberty Media / Liberty TripAdvisor / Warner Bros. Discovery 'Series A/C' are common share classes and tracking stocks"}
+  - {ticker: "BF-B BRK-B BRKB LGF-B RDS-A RDS-B UA-C", why: "common share classes written with a class letter"}
+  - {ticker: "ATLCY ATLKY", why: "Atlas Copco 'Series A/B' ordinary-share ADRs"}
+  - {ticker: "MDY QQQ", why: "'Series 1' / 'Series I' in the name of an equity ETF trust"}
+  - {ticker: "ARGX ATHM DQ GFI GMAB GSK INFY IX LYG NMR NOK RELX SMFG SNY SONY TEVA", why: "'American Depositary Shares' of ordinary shares (ADRs)"}

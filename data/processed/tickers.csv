@@ -9,7 +9,7 @@ AAN,14,0,0,2015-01-08,2016-04-04,2016-04-29,2016-08-13,"Aaron's, Inc. (NYSE) | A
 AAPL,206,186,28,2015-07-24,2026-07-21,2016-01-12,2026-08-04,Apple Inc. | Apple Inc. - Common Stock | Apple Inc,efd embedded sec_name,AAPL,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Apple Inc.
 AAVMY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,ABN Amro Bank (AAVMY),embedded,AAVMY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,ABN AMRO Bank N.V.
 AAXJ,2,2,2,2024-11-20,2025-11-06,2024-12-17,2025-12-08,iShares MSCI All Country Asia ex Japan ETF,efd,AAXJ,False,kept,etf,ETF,NGM,NasdaqGM,us_exchange,True,False,False,False,iShares MSCI All Country Asia ex Japan ETF
-ABB,1,1,0,2019-07-18,2019-07-18,2019-08-05,2019-08-05,ABB Ltd,efd,ABB,False,kept,unresolved,,,,unknown,False,False,True,False,
+ABB,1,1,0,2019-07-18,2019-07-18,2019-08-05,2019-08-05,ABB Ltd,efd,ABBNY,True,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,ABB Ltd
 ABBNY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,ABB Ltd. (ABBNY),embedded,ABBNY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,ABB Ltd
 ABBV,24,23,8,2015-12-29,2026-03-27,2016-01-07,2026-07-21,AbbVie Inc. | AbbVie Inc. Common Stock | Abbvie,efd embedded sec_name,ABBV,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,AbbVie Inc.
 ABC,1,1,1,2022-01-21,2022-01-21,2022-02-14,2022-02-14,AmerisourceBergen Corporation Common Stock,efd,COR,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Cencora, Inc."
@@ -19,7 +19,7 @@ ABQCX,1,0,0,2022-01-13,2022-01-13,2022-02-14,2022-02-14,Ab Bond Fund Inc. - Ab T
 ABT,19,17,5,2016-03-31,2026-03-27,2016-05-02,2026-07-21,Abbott Laboratories | Abbott Laboratories Common Stock | ABT-Abbott Laboratories,efd,ABT,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Abbott Laboratories
 ABYIX,5,0,0,2020-11-20,2023-02-15,2020-12-02,2023-03-01,Abbey Capital Futures Strategy Fund- Class I Sha | Abbey Capital Futures Strategy Fund Class I,efd,ABYIX,False,excluded: mutual fund,mutual_fund,MUTUALFUND,NAS,Nasdaq,us_exchange,False,False,False,False,Abbey Capital Futures Strategy I
 ACA,8,8,0,2018-12-20,2020-04-14,2019-01-09,2020-05-08,"Arcosa, Inc.",efd,ACA,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Arcosa, Inc."
-ACE,1,0,0,2015-01-23,2015-01-23,2016-08-11,2016-08-11,ACE Limited (NYSE),efd,ACE,False,kept,unresolved,,,,unknown,False,False,True,False,
+ACE,1,0,0,2015-01-23,2015-01-23,2016-08-11,2016-08-11,ACE Limited (NYSE),efd,CB,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Chubb Limited
 ACGL,1,1,1,2026-03-27,2026-03-27,2026-07-21,2026-07-21,Arch Capital Group Ltd. - Common Stock,efd,ACGL,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Arch Capital Group Ltd.
 ACIW,1,1,0,2020-11-20,2020-11-20,2020-12-02,2020-12-02,"ACI Worldwide, Inc.",efd,ACIW,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,"ACI Worldwide, Inc."
 ACM,1,1,1,2026-03-27,2026-03-27,2026-07-21,2026-07-21,AECOM Common Stock,efd,ACM,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,AECOM
@@ -48,7 +48,7 @@ AGU,1,1,0,2017-04-04,2017-04-04,2017-04-05,2017-04-05,Agrium Inc.,efd,AGU,False,
 AGX,2,2,0,2023-02-21,2023-12-11,2023-03-01,2024-01-03,"Argan, Inc. Common Stock | Argan Inc",efd,AGX,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Argan, Inc."
 AGZ,6,6,0,2023-11-07,2026-05-27,2023-12-12,2026-06-16,iShares Agency Bond ETF,efd,AGZ,False,kept,etf,ETF,PCX,NYSEArca,us_exchange,True,False,False,False,iShares Agency Bond ETF
 AHKSY,3,3,1,2017-09-08,2026-03-30,2017-10-06,2026-07-21,Asahi Kasei Corporation | Asahi Kaisei Corp Unsponsored ADR (AHKSY),efd embedded,AHKSY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,Asahi Kasei Corporation
-AHL-C,1,1,1,2025-01-02,2025-01-02,2025-01-22,2025-01-22,Aspen Insurance Holdings Ltd [Ahl/Pc],efd,AHL-C,False,kept,unresolved,,,,unknown,False,False,True,False,
+AHL-C,1,1,0,2025-01-02,2025-01-02,2025-01-22,2025-01-22,Aspen Insurance Holdings Ltd [Ahl/Pc],efd,AHL-C,False,kept,unresolved,,,,unknown,False,False,True,False,
 AIBGY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,AIB Group ADR (AIBGY),embedded,AIBGY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,AIB Group plc
 AIG,8,7,1,2015-01-14,2026-03-27,2016-08-11,2026-07-21,"American International Group, Inc. | American International Group, Inc. (NYSE) | American International Group, Inc. New Common Stock",efd,AIG,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"American International Group, Inc."
 AIQUY,2,2,2,2026-03-30,2026-03-31,2026-07-21,2026-07-21,Air Liquide ADR France (AIQUY) | Air Liquide Ord ADR (AIQUY),embedded,AIQUY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,L'Air Liquide S.A.
@@ -186,7 +186,7 @@ BIVV,1,1,0,2017-05-24,2017-05-24,2017-06-08,2017-06-08,Bioverativ Inc.,efd,BIVV,
 BK,14,8,3,2015-01-13,2026-03-27,2016-08-12,2026-07-21,The Bank of New York Mellon Corporation (NYSE) | The Bank of New York Mellon Corporation | The Bank of New York Mellon Corporation Common Sto,efd override,BNY,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,The Bank of New York Mellon Corporation
 BKE,2,2,2,2021-09-30,2022-03-30,2021-10-15,2022-04-08,"Buckle, Inc. (The) Common Stock",efd,BKE,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"The Buckle, Inc."
 BKEP,1,1,1,2021-12-29,2021-12-29,2022-01-10,2022-01-10,"Blueknight Energy Partners L.P., L.L.C. - Common U",efd,BKEP,False,kept,unresolved,,,,unknown,False,False,True,False,
-BKEPP,1,1,1,2022-08-19,2022-08-19,2022-09-02,2022-09-02,Blueknight Energy Partners L.P. - Series A Preferr,efd,BKEPP,False,kept,unresolved,,,,unknown,False,False,True,False,
+BKEPP,1,1,0,2022-08-19,2022-08-19,2022-09-02,2022-09-02,Blueknight Energy Partners L.P. - Series A Preferr,efd,BKEPP,False,kept,unresolved,,,,unknown,False,False,True,False,
 BKNG,10,10,3,2018-08-16,2026-03-27,2018-08-20,2026-07-21,Booking Holdings Inc. | Booking Holdings Inc. - Common Stock | Booking Holdings Inc,efd,BKNG,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Booking Holdings Inc.
 BKNIY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,Bankinter SA Sponsored ADR (BKNIY),embedded,BKNIY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,"Bankinter, S.A."
 BLK,19,17,3,2016-03-31,2026-02-10,2016-05-02,2026-03-04,"BlackRock, Inc. | BlackRock, Inc. Common Stock | Blackrock Inc",efd,BLK,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"BlackRock, Inc."
@@ -303,7 +303,7 @@ CLX,23,19,9,2015-01-15,2023-10-31,2016-05-04,2023-11-16,The Clorox Company | Clo
 CMA,2,2,0,2017-03-16,2017-06-15,2017-03-21,2017-06-22,Comerica Incorporated,efd,CMA,False,kept,unresolved,,,,unknown,False,False,True,False,
 CMBS,10,10,0,2023-11-07,2026-05-27,2023-12-12,2026-06-16,iShares CMBS Bond ETF | iShares CMBS ETF,efd,CMBS,False,kept,etf,ETF,PCX,NYSEArca,us_exchange,True,False,False,False,iShares CMBS ETF
 CMCSA,30,28,9,2016-05-24,2026-03-27,2016-06-16,2026-07-21,Comcast Corporation | Comcast Corporation - Class A Common Stock | Comcast Corp A,efd,CMCSA,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Comcast Corporation
-CMCSK,2,0,0,2015-05-11,2015-05-12,2016-08-13,2016-08-13,Comcast Corporation (NASDAQ),efd,CMCSK,False,kept,unresolved,,,,unknown,False,False,True,False,
+CMCSK,2,0,0,2015-05-11,2015-05-12,2016-08-13,2016-08-13,Comcast Corporation (NASDAQ),efd,CMCSA,True,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Comcast Corporation
 CME,12,12,1,2017-09-08,2026-03-27,2017-10-06,2026-07-21,CME Group Inc. | CME Group Inc. - Class A Common Stock | CME Group Inc,efd,CME,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,CME Group Inc.
 CMG,10,10,3,2021-05-19,2025-11-03,2021-06-03,2025-11-21,"Chipotle Mexican Grill | Chipotle Mexican Grill, Inc. Common Stock | Chipotle Mexican Grill, Inc.",efd,CMG,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Chipotle Mexican Grill, Inc."
 CMI,2,0,0,2016-01-05,2016-03-31,2016-01-12,2016-05-02,Cummins Inc. (NYSE) | Cummins Inc.,efd,CMI,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Cummins Inc.
@@ -347,7 +347,7 @@ CSII,2,2,0,2023-04-05,2023-04-05,2023-04-19,2023-04-19,"Cardiovascular Systems, 
 CSL,1,1,0,2024-10-08,2024-10-08,2024-11-12,2024-11-12,Carlisle Companies Inc,efd,CSL,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Carlisle Companies Incorporated
 CSLLY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,CSL Ltd Sponsored ADR (CSLLY),embedded,CSLLY,False,kept,equity,EQUITY,OQX,OTC Markets OTCQX,us_otc,False,True,False,False,CSL Limited
 CSX,14,14,10,2016-10-12,2026-06-08,2016-10-20,2026-07-21,CSX Corporation - Common Stock | CSX Corporation | CSX Corp,efd,CSX,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,CSX Corporation
-CTAA,1,1,0,2021-02-16,2021-02-16,2021-02-19,2021-02-19,Qwest Corp. NT 7% 2056,efd,CTAA,False,kept,unresolved,EQUITY,NGM,NasdaqGM,unknown,False,False,True,True,ClearThink 1 Acquisition Corp.
+CTAA,1,0,0,2021-02-16,2021-02-16,2021-02-19,2021-02-19,Qwest Corp. NT 7% 2056,efd,CTAA,False,kept,unresolved,EQUITY,NGM,NasdaqGM,unknown,False,False,True,True,ClearThink 1 Acquisition Corp.
 CTAS,4,4,4,2021-09-30,2024-05-03,2021-10-15,2024-06-14,Cintas Corporation - Common Stock,efd,CTAS,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Cintas Corporation
 CTECBX,1,1,0,2020-05-04,2020-05-04,2020-05-18,2020-05-18,"CTECBX Company: Guggenheim Investments (Chicago, IL) Description: Guggenheim Investments is the global asset management and investment advisory division of Guggenheim Partners",efd,CTECBX,False,kept,unresolved,,,,unknown,False,False,True,False,
 CTL,2,1,0,2016-03-31,2016-12-16,2016-05-02,2016-12-20,"CenturyLink, Inc.",efd,LUMN,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Lumen Technologies, Inc."
@@ -729,7 +729,7 @@ IPHI,2,2,0,2020-02-24,2020-04-07,2020-03-31,2020-05-01,Inphi Corporation,efd,IPH
 IQV,8,8,4,2018-03-09,2025-12-29,2018-03-12,2026-01-16,"IQVIA Holdings Inc. | Iqvia Holdings Inc | IQVIA Holdings, Inc. Common Stock",efd,IQV,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,IQVIA Holdings Inc.
 IR,7,7,1,2016-06-09,2024-04-09,2017-02-14,2024-05-20,Ingersoll-Rand Plc | IR-Ingersoll-Rand Plc | Ingersoll Rand Inc,efd embedded,IR,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Ingersoll Rand Inc.
 IRBT,6,6,0,2020-04-06,2025-02-06,2020-05-05,2025-02-21,iRobot Corporation | iRobot Corporation - Common Stock,efd,IRBT,False,kept,unresolved,,,,unknown,False,False,True,False,
-IRET,2,0,0,2016-04-27,2016-04-28,2016-05-12,2016-05-12,Investors Real Estate Trust,efd,IRET,False,kept,unresolved,,,,unknown,False,False,True,False,
+IRET,2,0,0,2016-04-27,2016-04-28,2016-05-12,2016-05-12,Investors Real Estate Trust,efd,CSR,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Centerspace
 IRM,15,15,4,2017-12-12,2026-02-04,2018-01-05,2026-03-02,Iron Mountain Inc | Iron Mountain | Iron Mountain Incorporated,efd sec_name,IRM,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Iron Mountain Incorporated
 IRT,1,1,1,2022-05-05,2022-05-05,2022-05-12,2022-05-12,"Independence Realty Trust, Inc. Common Stock",efd,IRT,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Independence Realty Trust, Inc."
 ISMAY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,Indra Sistemas ADR (ISMAY),embedded,ISMAY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,"Indra Sistemas, S.A."
@@ -889,7 +889,7 @@ MAXR,3,3,0,2020-11-20,2023-01-04,2020-12-02,2023-02-02,Maxar Technologies Inc | 
 MBB,9,9,0,2023-11-07,2026-05-27,2023-12-12,2026-06-16,iShares MBS ETF | MBS Ishares ETF,efd,MBB,False,kept,etf,ETF,NGM,NasdaqGM,us_exchange,True,False,False,False,iShares MBS ETF
 MBGYY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,Mercedes-Benz Group AG Unsponsored ADR (MBGYY),embedded,MBGYY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,Mercedes-Benz Group AG
 MBXIX,7,0,0,2020-04-02,2023-02-15,2020-05-04,2023-03-01,Catalyst/Millburn Hedge Strategy Fund Class I,efd,MBXIX,False,excluded: mutual fund,mutual_fund,MUTUALFUND,NAS,Nasdaq,us_exchange,False,False,False,False,Catalyst/Millburn Hedge Strategy I
-MCC,1,1,0,2017-06-27,2017-06-27,2017-07-13,2017-07-13,Medley Capital Corporation,efd,MCC,False,kept,unresolved,,,,unknown,False,False,True,False,
+MCC,1,1,0,2017-06-27,2017-06-27,2017-07-13,2017-07-13,Medley Capital Corporation,efd,PFX,True,kept,equity,EQUITY,NGM,NasdaqGM,us_exchange,False,False,False,False,PhenixFIN Corporation
 MCD,20,16,3,2015-01-14,2026-03-27,2016-02-08,2026-07-21,McDonald's Corporation | McDonald's Corporation Common Stock | McDonald's Corp.,efd,MCD,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,McDonald's Corporation
 MCHP,7,7,4,2017-03-06,2026-03-27,2017-04-17,2026-07-21,Microchip Technology Incorporated - Common Stock | Microchip Technology Incorporated,efd,MCHP,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Microchip Technology Incorporated
 MCK,9,9,3,2016-09-28,2026-03-27,2016-10-07,2026-07-21,McKesson Corporation | McKesson Corporation Common Stock | MCK-McKesson Corporation,efd,MCK,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,McKesson Corporation
@@ -1148,9 +1148,9 @@ RBGLY,3,3,1,2017-09-08,2026-03-30,2017-10-06,2026-07-21,Reckitt Benckiser Group 
 RBLX,1,1,1,2025-06-16,2025-06-16,2025-06-26,2025-06-26,RBLX,embedded,RBLX,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Roblox Corporation
 RCL,3,3,1,2017-09-08,2026-03-27,2017-10-06,2026-07-21,Royal Caribbean Cruises Ltd. | Royal Caribbean Cruises Ltd. Common Stock,efd,RCL,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Royal Caribbean Cruises Ltd.
 RCRUY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,Recruit Holdings Co Ltd Unsponsored ADR (RCRUY),embedded,RCRUY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,"Recruit Holdings Co., Ltd."
-RDS-A,1,1,0,2018-01-04,2018-01-04,2018-02-10,2018-02-10,Royal Dutch Shell plc,efd,RDS-A,False,kept,unresolved,,,,unknown,False,False,True,False,
+RDS-A,1,1,0,2018-01-04,2018-01-04,2018-02-10,2018-02-10,Royal Dutch Shell plc,efd,SHEL,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Shell plc
 RDS-B,9,8,0,2016-03-31,2020-08-21,2016-05-02,2020-09-08,Royal Dutch Shell plc,efd,RDS-B,False,kept,unresolved,,,,unknown,False,False,True,False,
-RDSA,1,1,0,2021-07-26,2021-07-26,2021-08-11,2021-08-11,Royal Dutch Shell Plc,efd,RDSA,False,kept,unresolved,,,,unknown,False,False,True,False,
+RDSA,1,1,0,2021-07-26,2021-07-26,2021-08-11,2021-08-11,Royal Dutch Shell Plc,efd,SHEL,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Shell plc
 RDSA.AS,1,0,0,2019-06-10,2019-06-10,2019-07-10,2019-07-10,Royal Dutch Shell plc,efd,RDSA.AS,False,excluded: non-US listing,unresolved,,,,unknown,False,False,True,False,
 REG,1,1,1,2026-03-27,2026-03-27,2026-07-21,2026-07-21,Regency Centers Corporation - Common Stock,efd,REG,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Regency Centers Corporation
 REGN,9,8,4,2016-05-24,2026-03-27,2016-06-16,2026-07-21,"Regeneron Pharmaceuticals, Inc. | Regeneron Pharmaceuticals, Inc. - Common Stock",efd,REGN,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,"Regeneron Pharmaceuticals, Inc."
@@ -1398,7 +1398,7 @@ TWX,3,3,0,2017-03-16,2018-05-04,2017-03-21,2018-06-04,Time Warner Inc.,efd,TWX,F
 TXN,20,20,16,2019-09-25,2026-03-27,2019-10-21,2026-07-21,Texas Instruments Incorporated - Common Stock | Texas Instruments Incorporated | Texas Instruments,efd,TXN,False,kept,equity,EQUITY,NMS,NasdaqGS,us_exchange,False,False,False,False,Texas Instruments Incorporated
 TXT,1,1,1,2026-03-27,2026-03-27,2026-07-21,2026-07-21,Textron Inc. Common Stock,efd,TXT,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,Textron Inc.
 UA,9,5,1,2015-11-20,2023-04-13,2016-01-12,2023-05-01,"Under Armour, Inc. | Under Armour, Inc. Class C Common Stock | Under Armour, Inc. (NYSE)",efd,UA,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Under Armour, Inc."
-UA-C,1,0,0,2016-06-28,2016-06-28,2016-07-12,2016-07-12,"Under Armour, Inc. Class C Comm",efd,UA-C,False,kept,unresolved,,,,unknown,False,False,True,False,
+UA-C,1,0,0,2016-06-28,2016-06-28,2016-07-12,2016-07-12,"Under Armour, Inc. Class C Comm",efd,UA,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Under Armour, Inc."
 UAA,8,8,5,2016-12-16,2023-12-19,2016-12-20,2024-01-12,"Under Armour, Inc. Class A Common Stock | UAA-Under Armour, Inc. Class A Comm | Under Armour, Inc.",efd,UAA,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Under Armour, Inc."
 UBER,7,7,3,2020-05-08,2026-03-30,2020-06-01,2026-07-21,"Uber Technologies, Inc. Common Stock | Uber Technologies, Inc. | Uber Technologies Inc",efd,UBER,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Uber Technologies, Inc."
 UBS,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,UBS Group AG Registered Ordinary Shares,efd,UBS,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,UBS Group AG
@@ -1517,7 +1517,7 @@ WPZ,11,2,0,2015-02-02,2016-09-13,2016-05-26,2016-09-30,Williams Partners L.P. (N
 WRK,2,2,0,2017-03-16,2017-06-15,2017-03-21,2017-06-22,WestRock Company,efd,WRK,False,kept,unresolved,,,,unknown,False,False,True,False,
 WST,2,2,1,2021-03-29,2022-03-30,2021-07-23,2022-04-08,"West Pharmaceutical Services, Inc. | West Pharmaceutical Services, Inc. Common Stock",efd,WST,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"West Pharmaceutical Services, Inc."
 WTKWY,1,1,1,2026-03-30,2026-03-30,2026-07-21,2026-07-21,Wolters Kluwer NV Sponsored ADR (WTKWY),embedded,WTKWY,False,kept,equity,EQUITY,PNK,OTC Markets OTCPK,us_otc,False,True,False,False,Wolters Kluwer N.V.
-WTR,1,0,0,2016-06-07,2016-06-07,2016-07-01,2016-07-01,Aqua America Inc.,efd,WTR,False,kept,unresolved,,,,unknown,False,False,True,False,
+WTR,1,0,0,2016-06-07,2016-06-07,2016-07-01,2016-07-01,Aqua America Inc.,efd,WTRG,True,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Essential Utilities, Inc."
 WTRG,1,1,0,2020-03-05,2020-03-05,2020-04-22,2020-04-22,"Essential Utilities, Inc.",efd,WTRG,False,kept,equity,EQUITY,NYQ,NYSE,us_exchange,False,False,False,False,"Essential Utilities, Inc."
 WTT,3,3,1,2023-08-15,2023-08-15,2023-09-15,2023-09-15,Wireless Telecom Group Inc,efd,WTT,False,kept,unresolved,,,,unknown,False,False,True,False,
 WTW,10,10,0,2017-01-24,2018-12-27,2017-01-25,2019-05-08,"Weight Watchers International, Inc.",efd,WTW,False,kept,unresolved,EQUITY,NMS,NasdaqGS,unknown,False,False,True,True,Willis Towers Watson Public Limited Company

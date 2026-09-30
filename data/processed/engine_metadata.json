@@ -11,7 +11,7 @@
   "warmup_months_effective": 12.0,
   "warmup_limited_by_scrape_start": false,
   "book_first_day": "2020-09-09",
-  "warmup_events": 135,
+  "warmup_events": 133,
   "warmup_book_value_at_window_start": 1196060.42444209
  },
  "definitions": {
@@ -81,6 +81,7 @@
    "etf_classes": [
     "equity"
    ],
+   "include_preferred": false,
    "exclude": [
     "options",
     "bonds",

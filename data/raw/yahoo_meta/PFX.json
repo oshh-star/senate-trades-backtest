@@ -1,0 +1,15 @@
+{
+ "chart": {
+  "currency": "USD",
+  "exchangeName": "NGM",
+  "exchangeTimezoneName": "America/New_York",
+  "firstTradeDate": 1295533800,
+  "fullExchangeName": "NasdaqGM",
+  "instrumentType": "EQUITY",
+  "longName": "PhenixFIN Corporation",
+  "shortName": "PhenixFIN Corporation",
+  "symbol": "PFX"
+ },
+ "queried_at": "2026-09-30T10:24:33Z",
+ "symbol": "PFX"
+}
