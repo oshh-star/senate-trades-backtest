@@ -76,7 +76,7 @@ def split_table(p: pd.DataFrame, col: str, order: list[str] | None = None) -> pd
                 r[f"{key}_mean"], r[f"{key}_t"], r[f"{key}_n"] = m["mean"], t, m["n"]
                 r[f"{key}_clusters"] = m["clusters"]
             rows.append(r)
-        if len(groups) == 2:
+        if len(groups) == 2 and len(q[q[col].isin(groups)]):
             a, b = groups
             r = {"side": side, "group": f"difference ({a} minus {b})", "events": len(q[q[col].isin(groups)])}
             for who, h, c in measures:
