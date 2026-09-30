@@ -71,3 +71,21 @@ def test_mechanism_groups_and_difference_row():
     d = t.loc["difference (small minus large)"]
     assert d["copier_21_mean"] == pytest.approx(0.05, abs=0.01) and d["copier_21_t"] > 5
     assert t.loc["small", "events"] == 30
+
+
+def test_committee_classification_uses_the_membership_on_the_trade_date(tmp_path, monkeypatch):
+    from src.metrics import committee as cm
+    from src.metrics import mechanism as mc
+    (tmp_path / "map.yaml").write_text("committees:\n  SSAS: {name: Armed Services, oversees: defence, sic: [[3760, 3769]]}\n")
+    pd.DataFrame({"commit": ["c1", "c2"], "commit_date": ["2022-01-01", "2022-06-01"], "committee_id": ["SSAS", "SSFI"],
+                  "bioguide": ["B1", "B1"], "name": "x", "party": "R", "rank": 1, "title": ""}).to_csv(tmp_path / "m.csv", index=False)
+    pd.DataFrame({"symbol": ["LMT", "AAPL"], "sic": ["3760", "3571"]}).to_csv(tmp_path / "sic.csv", index=False)
+    monkeypatch.setattr(cm, "MAPPING", tmp_path / "map.yaml")
+    monkeypatch.setattr(cm, "MEMBERSHIP", tmp_path / "m.csv")
+    monkeypatch.setattr(cm, "SIC", tmp_path / "sic.csv")
+    monkeypatch.setattr(mc, "attach", lambda p: p)
+    panel = pd.DataFrame({"bioguide_id": "B1", "price_ticker": ["LMT", "LMT", "AAPL", "LMT"], "is_etf": [False, False, False, True],
+                          "transaction_date": ["2022-03-01", "2022-07-01", "2022-03-01", "2022-03-01"]})
+    g = cm.classify(panel)["committee_group"].tolist()
+    # on SSAS in March (version c1), moved to SSFI by July (version c2); AAPL is not defence; the ETF is left out
+    assert g == [cm.OVERSEEN, cm.NOT, cm.NOT, "left out: ETF"]

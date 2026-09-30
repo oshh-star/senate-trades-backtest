@@ -211,6 +211,8 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
     from . import mechanism                                    # Phase 6 prep: mechanism splits of the event panel
     from src.variants import price_tag
     mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+    from . import committee                                    # Phase 6 prep: committee test (E54), when its inputs exist
+    committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
     a = res["Series A (headline)"]
     print(f"  [metrics] {I['label']} {months[0]}..{months[-1]} ({len(months)} months): series A {a['ann_return']:.2%} a year, "
           f"Sharpe {a['sharpe']:.2f}, CAPM alpha {a['capm_alpha_ann']:.2%} (t {a['capm_t_alpha_ols']:.2f}), Carhart alpha "

@@ -1,0 +1,1316 @@
+symbol,efd_tickers,cik,cik_source,sec_name,sic,sic_description
+A,A,1090872,SEC company_tickers.json (price symbol),"AGILENT TECHNOLOGIES, INC.",3826,Laboratory Analytical Instruments
+AA,AA,1675149,SEC company_tickers.json (price symbol),Alcoa Corp,3334,Primary Production of  Aluminum
+AAGIY,AAGIY,,none found,,,
+AAL,AAL,6201,SEC company_tickers.json (price symbol),American Airlines Group Inc.,4512,"Air Transportation, Scheduled"
+AAN,AAN,706688,ledger evidence (matched by company name),AARON'S INC,7359,"Services-Equipment Rental & Leasing, NEC"
+AAPL,AAPL,320193,SEC company_tickers.json (price symbol),Apple Inc.,3571,Electronic Computers
+AAVMY,AAVMY,,none found,,,
+ABBNY,ABB ABBNY,1091587,SEC company_tickers.json (price symbol),ABB LTD,3613,Switchgear & Switchboard Apparatus
+ABBV,ABBV,1551152,SEC company_tickers.json (price symbol),AbbVie Inc.,2834,Pharmaceutical Preparations
+ABNB,ABNB,1559720,SEC company_tickers.json (price symbol),"Airbnb, Inc.",7340,Services-To Dwellings & Other Buildings
+ABT,ABT,1800,SEC company_tickers.json (price symbol),ABBOTT LABORATORIES,2834,Pharmaceutical Preparations
+ACA,ACA,1739445,SEC company_tickers.json (price symbol),"Arcosa, Inc.",3440,Fabricated Structural Metal Products
+ACGL,ACGL,947484,SEC company_tickers.json (price symbol),ARCH CAPITAL GROUP LTD.,6331,"Fire, Marine & Casualty Insurance"
+ACIW,ACIW,935036,SEC company_tickers.json (price symbol),"ACI WORLDWIDE, INC.",7372,Services-Prepackaged Software
+ACM,ACM,868857,SEC company_tickers.json (price symbol),AECOM,8711,Services-Engineering Services
+ACN,ACN,1467373,SEC company_tickers.json (price symbol),Accenture plc,7389,"Services-Business Services, NEC"
+ACSAY,ACSAY,,none found,,,
+ADBE,ADBE,796343,SEC company_tickers.json (price symbol),ADOBE INC.,7372,Services-Prepackaged Software
+ADCT,ADCT,1771910,SEC company_tickers.json (price symbol),ADC Therapeutics SA,2834,Pharmaceutical Preparations
+ADDYY,ADDYY,,none found,,,
+ADI,ADI,6281,SEC company_tickers.json (price symbol),ANALOG DEVICES INC,3674,Semiconductors & Related Devices
+ADM,ADM,7084,SEC company_tickers.json (price symbol),Archer-Daniels-Midland Co,2070,Fats & Oils
+ADP,ADP,8670,SEC company_tickers.json (price symbol),AUTOMATIC DATA PROCESSING INC,7374,Services-Computer Processing & Data Preparation
+ADRNY,ADRNY,,none found,,,
+ADSK,ADSK,769397,SEC company_tickers.json (price symbol),"Autodesk, Inc.",7372,Services-Prepackaged Software
+ADT,ADT,1703056,SEC company_tickers.json (price symbol),ADT Inc.,7381,"Services-Detective, Guard & Armored Car Services"
+ADYEY,ADYEY,,none found,,,
+AEE,AEE,1002910,SEC company_tickers.json (price symbol),AMEREN CORP,4931,Electric & Other Services Combined
+AEP,AEP,4904,SEC company_tickers.json (price symbol),AMERICAN ELECTRIC POWER CO INC,4911,Electric Services
+AER,AER,1378789,SEC company_tickers.json (price symbol),AerCap Holdings N.V.,7359,"Services-Equipment Rental & Leasing, NEC"
+AES,AES,874761,SEC company_tickers.json (price symbol),AES CORP,4991,Cogeneration Services & Small Power Producers
+AFL,AFL,4977,SEC company_tickers.json (price symbol),AFLAC INC,6321,Accident & Health Insurance
+AGCO,AGCO,880266,SEC company_tickers.json (price symbol),AGCO CORP /DE,3523,Farm Machinery & Equipment
+AGESY,AGESY,,none found,,,
+AGN,AGN,850693,ledger evidence (matched by company name),ALLERGAN INC,2834,Pharmaceutical Preparations
+AGNT,EXPI,1495932,SEC company_tickers.json (price symbol),"AGNT, Inc.",6531,Real Estate Agents & Managers (For Others)
+AGU,AGU,943003,ledger evidence (matched by company name),AGRIUM INC,2870,Agricultural Chemicals
+AGX,AGX,100591,SEC company_tickers.json (price symbol),ARGAN INC,1700,Construction - Special Trade Contractors
+AHKSY,AHKSY,,none found,,,
+AHL-C,AHL-C,,none found,,,
+AIBGY,AIBGY,,none found,,,
+AIG,AIG,5272,SEC company_tickers.json (price symbol),"AMERICAN INTERNATIONAL GROUP, INC.",6331,"Fire, Marine & Casualty Insurance"
+AIQUY,AIQUY,,none found,,,
+AIT,AIT,109563,SEC company_tickers.json (price symbol),APPLIED INDUSTRIAL TECHNOLOGIES INC,5080,"Wholesale-Machinery, Equipment & Supplies"
+AIV,AIV,922864,SEC company_tickers.json (price symbol),APARTMENT INVESTMENT & MANAGEMENT CO,6798,Real Estate Investment Trusts
+AIZ,AIZ,1267238,SEC company_tickers.json (price symbol),"ASSURANT, INC.",6399,"Insurance Carriers, NEC"
+AJG,AJG,354190,SEC company_tickers.json (price symbol),Arthur J. Gallagher & Co.,6411,"Insurance Agents, Brokers & Service"
+AJRD,AJRD,40888,ledger evidence (matched by company name),"AEROJET ROCKETDYNE HOLDINGS, INC.",3760,Guided Missiles & Space Vehicles & Parts
+AKAM,AKAM,1086222,SEC company_tickers.json (price symbol),AKAMAI TECHNOLOGIES INC,7389,"Services-Business Services, NEC"
+AL,AL,1487712,ledger evidence (matched by company name),SUMISHO AIR LEASE CORP,7359,"Services-Equipment Rental & Leasing, NEC"
+ALB,ALB,915913,SEC company_tickers.json (price symbol),ALBEMARLE CORP,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+ALC,ALC,1167379,SEC company_tickers.json (price symbol),ALCON INC,3851,Ophthalmic Goods
+ALFVY,ALFVY,,none found,,,
+ALGM,ALGM,866291,SEC company_tickers.json (price symbol),"ALLEGRO MICROSYSTEMS, INC.",3674,Semiconductors & Related Devices
+ALGN,ALGN,1097149,SEC company_tickers.json (price symbol),ALIGN TECHNOLOGY INC,3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+ALIZY,ALIZY,,none found,,,
+ALL,ALL,899051,SEC company_tickers.json (price symbol),ALLSTATE CORP,6331,"Fire, Marine & Casualty Insurance"
+ALLE,ALLE,1579241,SEC company_tickers.json (price symbol),Allegion plc,7381,"Services-Detective, Guard & Armored Car Services"
+ALPMY,ALPMY,,none found,,,
+ALSMY,ALSMY,,none found,,,
+ALTM,ALTM,1977303,ledger evidence (matched by company name),Arcadium Lithium plc,2810,Industrial Inorganic Chemicals
+AM,AM,1623925,SEC company_tickers.json (price symbol),Antero Midstream Corp,4922,Natural Gas Transmission
+AMADY,AMADY,,none found,,,
+AMAT,AMAT,6951,SEC company_tickers.json (price symbol),APPLIED MATERIALS INC /DE,3674,Semiconductors & Related Devices
+AMBP,AMBP,1845097,SEC company_tickers.json (price symbol),Ardagh Metal Packaging S.A.,3411,Metal Cans
+AMCR,AMCR,1748790,SEC company_tickers.json (price symbol),Amcor plc,3990,Miscellaneous Manufacturing Industries
+AMD,AMD,2488,SEC company_tickers.json (price symbol),ADVANCED MICRO DEVICES INC,3674,Semiconductors & Related Devices
+AME,AME,1037868,SEC company_tickers.json (price symbol),AMETEK INC/,3823,"Industrial Instruments For Measurement, Display, and Control"
+AMG,AMG,1004434,SEC company_tickers.json (price symbol),"AFFILIATED MANAGERS GROUP, INC.",6282,Investment Advice
+AMGN,AMGN,318154,SEC company_tickers.json (price symbol),AMGEN INC,2836,"Biological Products, (No Diagnostic Substances)"
+AMIGY,AMIGY,,none found,,,
+AMKBY,AMKBY,,none found,,,
+AMKR,AMKR,1047127,SEC company_tickers.json (price symbol),"AMKOR TECHNOLOGY, INC.",3674,Semiconductors & Related Devices
+AMP,AMP,820027,SEC company_tickers.json (price symbol),AMERIPRISE FINANCIAL INC,6282,Investment Advice
+AMT,AMT,1053507,SEC company_tickers.json (price symbol),AMERICAN TOWER CORP /MA/,6798,Real Estate Investment Trusts
+AMWD,AMWD,794619,ledger evidence (matched by company name),AMERICAN WOODMARK CORP,2430,"Millwood, Veneer, Plywood, & Structural Wood Members"
+AMZN,AMZN,1018724,SEC company_tickers.json (price symbol),AMAZON COM INC,5961,Retail-Catalog & Mail-Order Houses
+ANDX,ANDX,1507615,ledger evidence (matched by company name),ANDEAVOR LOGISTICS LP,4610,Pipe Lines (No Natural Gas)
+ANET,ANET,1596532,SEC company_tickers.json (price symbol),"Arista Networks, Inc.",3576,Computer Communications Equipment
+ANYYY,ANYYY,,none found,,,
+ANZGY,ANZGY,,none found,,,
+AON,AON,315293,SEC company_tickers.json (price symbol),Aon plc,6411,"Insurance Agents, Brokers & Service"
+AONNY,AONNY,,none found,,,
+AORT,AORT,784199,SEC company_tickers.json (price symbol),"ARTIVION, INC.",3841,Surgical & Medical Instruments & Apparatus
+APA,APA,1841666,SEC company_tickers.json (price symbol),APA Corp,1311,Crude Petroleum & Natural Gas
+APAM,APAM,1517302,SEC company_tickers.json (price symbol),Artisan Partners Asset Management Inc.,6282,Investment Advice
+APC,APC,2080921,SEC company_tickers.json (price symbol),ARKO Petroleum Corp.,5172,Wholesale-Petroleum & Petroleum Products (No Bulk Stations)
+APD,APD,2969,SEC company_tickers.json (price symbol),"Air Products & Chemicals, Inc.",2810,Industrial Inorganic Chemicals
+APG,APG,1796209,SEC company_tickers.json (price symbol),APi Group Corp,7340,Services-To Dwellings & Other Buildings
+APH,APH,820313,SEC company_tickers.json (price symbol),AMPHENOL CORP /DE/,3678,Electronic Connectors
+APO,APO,1858681,SEC company_tickers.json (price symbol),"Apollo Global Management, Inc.",6282,Investment Advice
+APP,APP,1751008,SEC company_tickers.json (price symbol),AppLovin Corp,7370,"Services-Computer Programming, Data Processing, Etc."
+APTV,APTV DLPH,1521332,SEC company_tickers.json (price symbol),Aptiv PLC,3714,Motor Vehicle Parts & Accessories
+AQFH,AQFH,1687884,ledger evidence (matched by company name),"Aquesta Financial Holdings, Inc.",,
+AQN,AQN,1174169,SEC company_tickers.json (price symbol),ALGONQUIN POWER & UTILITIES CORP.,4911,Electric Services
+AR,AR,1433270,SEC company_tickers.json (price symbol),ANTERO RESOURCES Corp,1311,Crude Petroleum & Natural Gas
+ARCC,ARCC,1287750,SEC company_tickers.json (price symbol),ARES CAPITAL CORP,,
+ARE,ARE,1035443,SEC company_tickers.json (price symbol),"ALEXANDRIA REAL ESTATE EQUITIES, INC.",6798,Real Estate Investment Trusts
+ARES,ARES,1176948,SEC company_tickers.json (price symbol),Ares Management Corp,6282,Investment Advice
+ARGX,ARGX,1697862,SEC company_tickers.json (price symbol),ARGENX SE,2836,"Biological Products, (No Diagnostic Substances)"
+ARNA,ARNA,1080709,ledger evidence (matched by company name),ARENA PHARMACEUTICALS INC,2834,Pharmaceutical Preparations
+ARW,ARW,7536,SEC company_tickers.json (price symbol),"ARROW ELECTRONICS, INC.",5065,"Wholesale-Electronic Parts & Equipment, NEC"
+ARZGY,ARZGY,,none found,,,
+ASAZY,ASAZY,,none found,,,
+ASBFY,ASBFY,,none found,,,
+ASCCY,ASCCY,,none found,,,
+ASIX,ASIX,1673985,SEC company_tickers.json (price symbol),AdvanSix Inc.,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+ASML,ASML,937966,SEC company_tickers.json (price symbol),ASML HOLDING NV,3559,"Special Industry Machinery, NEC"
+ASXFY,ASXFY,,none found,,,
+ATEYY,ATEYY,1158838,SEC company_tickers.json (price symbol),ADVANTEST CORP,3674,Semiconductors & Related Devices
+ATHM,ATHM,1527636,SEC company_tickers.json (price symbol),Autohome Inc.,7374,Services-Computer Processing & Data Preparation
+ATKR,ATKR,1666138,SEC company_tickers.json (price symbol),Atkore Inc.,3690,"Miscellaneous Electrical Machinery, Equipment & Supplies"
+ATLCY,ATLCY,,none found,,,
+ATLKY,ATLKY,,none found,,,
+ATO,ATO,731802,SEC company_tickers.json (price symbol),ATMOS ENERGY CORP,4924,Natural Gas Distribution
+ATVI,ATVI,718877,ledger evidence (matched by company name),"Activision Blizzard, Inc.",7372,Services-Prepackaged Software
+AVB,AVB,915912,ledger evidence (matched by company name),AVALONBAY COMMUNITIES INC,6798,Real Estate Investment Trusts
+AVGO,AVGO,1730168,SEC company_tickers.json (price symbol),Broadcom Inc.,3674,Semiconductors & Related Devices
+AVNT,AVNT,1122976,SEC company_tickers.json (price symbol),AVIENT CORP,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+AVP,AVP,8868,ledger evidence (matched by company name),AVON PRODUCTS INC,2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+AVVIY,AVVIY,,none found,,,
+AWK,AWK,1410636,SEC company_tickers.json (price symbol),"American Water Works Company, Inc.",4941,Water Supply
+AXAHY,AXAHY,,none found,,,
+AXLL,AXLL,805264,ledger evidence (matched by company name),AXIALL CORP/DE/,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+AXON,AXON,1069183,SEC company_tickers.json (price symbol),"AXON ENTERPRISE, INC.",3480,"Ordnance & Accessories, (No Vehicles/Guided Missiles)"
+AXP,AXP,4962,SEC company_tickers.json (price symbol),AMERICAN EXPRESS CO,6199,Finance Services
+AXS,AXS,1214816,SEC company_tickers.json (price symbol),AXIS CAPITAL HOLDINGS LTD,6331,"Fire, Marine & Casualty Insurance"
+AXTA,AXTA,1616862,SEC company_tickers.json (price symbol),Axalta Coating Systems Ltd.,2851,"Paints, Varnishes, Lacquers, Enamels & Allied Prods"
+AY,AY,1601072,ledger evidence (matched by company name),Atlantica Sustainable Infrastructure plc,4911,Electric Services
+AYI,AYI,1144215,SEC company_tickers.json (price symbol),ACUITY INC. (DE),3640,Electric Lighting & Wiring Equipment
+AZN,AZN,901832,SEC company_tickers.json (price symbol),ASTRAZENECA PLC,2834,Pharmaceutical Preparations
+AZO,AZO,866787,SEC company_tickers.json (price symbol),AUTOZONE INC,5531,Retail-Auto & Home Supply Stores
+BA,BA,12927,SEC company_tickers.json (price symbol),BOEING CO,3721,Aircraft
+BABA,BABA,1577552,SEC company_tickers.json (price symbol),Alibaba Group Holding Ltd,7389,"Services-Business Services, NEC"
+BAC,BAC,70858,SEC company_tickers.json (price symbol),BANK OF AMERICA CORP /DE/,6021,National Commercial Banks
+BAESY,BAESY,895564,SEC company_tickers.json (price symbol),BAE SYSTEMS PLC /FI/,,
+BAH,BAH,1443646,SEC company_tickers.json (price symbol),Booz Allen Hamilton Holding Corp,8742,Services-Management Consulting Services
+BALL,BALL BLL,9389,SEC company_tickers.json (price symbol),BALL Corp,3411,Metal Cans
+BAM,BAM,1937926,SEC company_tickers.json (price symbol),Brookfield Asset Management Ltd.,6282,Investment Advice
+BASFY,BASFY,,none found,,,
+BATRA,BATRA,1958140,SEC company_tickers.json (price symbol),"Atlanta Braves Holdings, Inc.",7900,Services-Amusement & Recreation Services
+BATRK,BATRK,1958140,SEC company_tickers.json (price symbol),"Atlanta Braves Holdings, Inc.",7900,Services-Amusement & Recreation Services
+BAX,BAX,10456,SEC company_tickers.json (price symbol),BAXTER INTERNATIONAL INC,3841,Surgical & Medical Instruments & Apparatus
+BAYRY,BAYRY,,none found,,,
+BBL,BBL,811809,ledger evidence (matched by company name),BHP Group Ltd,1000,Metal Mining
+BBU,BBU,1654795,ledger evidence (matched by company name),Brookfield Business Partners L.P.,1700,Construction - Special Trade Contractors
+BBVA,BBVA,842180,SEC company_tickers.json (price symbol),"BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",6029,"Commercial Banks, NEC"
+BBWI,LB,701985,SEC company_tickers.json (price symbol),"Bath & Body Works, Inc.",5990,"Retail-Retail Stores, NEC"
+BBY,BBY,764478,SEC company_tickers.json (price symbol),BEST BUY CO INC,5731,"Retail-Radio, Tv & Consumer Electronics Stores"
+BCR,BCR,,none found,,,
+BCS,BCS,312069,SEC company_tickers.json (price symbol),BARCLAYS PLC,6029,"Commercial Banks, NEC"
+BDNNY,BDNNY,,none found,,,
+BDX,BDX,10795,SEC company_tickers.json (price symbol),BECTON DICKINSON & CO,3841,Surgical & Medical Instruments & Apparatus
+BEEP,BEEP,1847874,SEC company_tickers.json (price symbol),Mobile Infrastructure Corp,6500,Real Estate
+BEN,BEN,38777,SEC company_tickers.json (price symbol),FRANKLIN TEMPLETON INC,6282,Investment Advice
+BERY,BERY,1378992,ledger evidence (matched by company name),"BERRY GLOBAL GROUP, INC.",3089,"Plastics Products, NEC"
+BF-B,BF-B,14693,SEC company_tickers.json (price symbol),BROWN FORMAN CORP,2080,Beverages
+BFAM,BFAM,1437578,SEC company_tickers.json (price symbol),BRIGHT HORIZONS FAMILY SOLUTIONS INC.,8351,Services-Child Day Care Services
+BG,BG,1996862,SEC company_tickers.json (price symbol),Bunge Global SA,2070,Fats & Oils
+BGS,BGS,1278027,SEC company_tickers.json (price symbol),"B&G Foods, Inc.",2000,Food and Kindred Products
+BHF,BHF,1685040,SEC company_tickers.json (price symbol),"Brighthouse Financial, Inc.",6311,Life Insurance
+BHKLY,BHKLY,,none found,,,
+BHP,BHP,811809,SEC company_tickers.json (price symbol),BHP Group Ltd,1000,Metal Mining
+BIDU,BIDU,1329099,SEC company_tickers.json (price symbol),"Baidu, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+BIIB,BIIB,875045,SEC company_tickers.json (price symbol),BIOGEN INC.,2836,"Biological Products, (No Diagnostic Substances)"
+BIO,BIO,12208,SEC company_tickers.json (price symbol),"BIO-RAD LABORATORIES, INC.",3826,Laboratory Analytical Instruments
+BIVV,BIVV,1681689,ledger evidence (matched by company name),Bioverativ Inc.,2834,Pharmaceutical Preparations
+BKE,BKE,885245,SEC company_tickers.json (price symbol),BUCKLE INC,5651,Retail-Family Clothing Stores
+BKEP,BKEP,,none found,,,
+BKEPP,BKEPP,,none found,,,
+BKNG,BKNG PCLN,1075531,SEC company_tickers.json (price symbol),Booking Holdings Inc.,4700,Transportation Services
+BKNIY,BKNIY,,none found,,,
+BLK,BLK,2012383,SEC company_tickers.json (price symbol),"BlackRock, Inc.",6211,"Security Brokers, Dealers & Flotation Companies"
+BMEZ,BMEZ,1785971,SEC company_tickers.json (price symbol),BlackRock Health Sciences Term Trust,,
+BMI,BMI,9092,SEC company_tickers.json (price symbol),BADGER METER INC,3824,Totalizing Fluid Meters & Counting Devices
+BMN,BMN,1832871,SEC company_tickers.json (price symbol),BlackRock 2037 Municipal Target Term Trust,,
+BMO,BMO,927971,SEC company_tickers.json (price symbol),BANK OF MONTREAL /CAN/,6029,"Commercial Banks, NEC"
+BMWKY,BMWKY,1446250,SEC company_tickers.json (price symbol),Bayerische Motoren Werke AG/ADR,8880,American Depositary Receipts
+BMY,BMY,14272,SEC company_tickers.json (price symbol),BRISTOL MYERS SQUIBB CO,2834,Pharmaceutical Preparations
+BNPQY,BNPQY,,none found,,,
+BNTGY,BNTGY,,none found,,,
+BNY,BK,1390777,SEC company_tickers.json (price symbol),Bank of New York Mellon Corp,6022,State Commercial Banks
+BOIVF,BOIVF,,none found,,,
+BOUYY,BOUYY,,none found,,,
+BOX,BOX,1372612,SEC company_tickers.json (price symbol),BOX INC,7372,Services-Prepackaged Software
+BP,BP,313807,SEC company_tickers.json (price symbol),BP PLC,2911,Petroleum Refining
+BPL,BPL,805022,ledger evidence (matched by company name),"BUCKEYE PARTNERS, L.P.",4610,Pipe Lines (No Natural Gas)
+BR,BR,1383312,SEC company_tickers.json (price symbol),"BROADRIDGE FINANCIAL SOLUTIONS, INC.",7389,"Services-Business Services, NEC"
+BRDCY,BRDCY,,none found,,,
+BRK-B,BRK-B BRKB,1067983,SEC company_tickers.json (price symbol),BERKSHIRE HATHAWAY INC,6331,"Fire, Marine & Casualty Insurance"
+BRKR,BRKR,1109354,SEC company_tickers.json (price symbol),BRUKER CORP,3826,Laboratory Analytical Instruments
+BRO,BRO,79282,SEC company_tickers.json (price symbol),"BROWN & BROWN, INC.",6411,"Insurance Agents, Brokers & Service"
+BRRLY,BRRLY,,none found,,,
+BRY,BRY,1439597,ledger evidence (matched by company name),Berry CO LLC,,
+BSM,BSM,1621434,SEC company_tickers.json (price symbol),"Black Stone Minerals, L.P.",1311,Crude Petroleum & Natural Gas
+BSTZ,BSTZ,1768666,SEC company_tickers.json (price symbol),BlackRock Science & Technology Term Trust,,
+BSX,BSX,885725,SEC company_tickers.json (price symbol),BOSTON SCIENTIFIC CORP,3841,Surgical & Medical Instruments & Apparatus
+BTDPY,BTDPY,1516324,SEC company_tickers.json (price symbol),Barratt Developments PLC/ADR,,
+BTI,BTI,1303523,SEC company_tickers.json (price symbol),British American Tobacco p.l.c.,2111,Cigarettes
+BTO,BTO,925683,SEC company_tickers.json (price symbol),JOHN HANCOCK FINANCIAL OPPORTUNITIES FUND,,
+BUD,BUD,1668717,SEC company_tickers.json (price symbol),Anheuser-Busch InBev SA/NV,2082,Malt Beverages
+BUNT,BUNT,,none found,,,
+BVVBY,BVVBY,,none found,,,
+BWA,BWA,908255,SEC company_tickers.json (price symbol),BORGWARNER INC,3714,Motor Vehicle Parts & Accessories
+BWXT,BWXT,1486957,SEC company_tickers.json (price symbol),"BWX Technologies, Inc.",3510,Engines & Turbines
+BX,BX,1393818,SEC company_tickers.json (price symbol),Blackstone Inc.,6282,Investment Advice
+BXBLY,BXBLY,,none found,,,
+BXP,BXP,1037540,SEC company_tickers.json (price symbol),"BXP, Inc.",6798,Real Estate Investment Trusts
+BYND,BYND,1655210,SEC company_tickers.json (price symbol),"BEYOND MEAT, INC.",2000,Food and Kindred Products
+BZLFY,BZLFY,1072397,SEC company_tickers.json (price symbol),BUNZL PLC,5141,"Wholesale-Groceries, General Line"
+C,C,831001,SEC company_tickers.json (price symbol),CITIGROUP INC,6021,National Commercial Banks
+CAB,CAB,1267130,ledger evidence (matched by company name),CABELAS INC,5940,Retail-Miscellaneous Shopping Goods Stores
+CABGY,CABGY,,none found,,,
+CABO,CABO,1632127,SEC company_tickers.json (price symbol),"Cable One, Inc.",4841,Cable & Other Pay Television Services
+CAG,CAG,23217,SEC company_tickers.json (price symbol),CONAGRA BRANDS INC.,2000,Food and Kindred Products
+CAH,CAH,721371,SEC company_tickers.json (price symbol),CARDINAL HEALTH INC,5122,"Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+CAIXY,CAIXY,,none found,,,
+CAJPY,CAJPY,16988,SEC company_tickers.json (price symbol),CANON INC,3861,Photographic Equipment & Supplies
+CAPL,CAPL,1538849,SEC company_tickers.json (price symbol),CrossAmerica Partners LP,5172,Wholesale-Petroleum & Petroleum Products (No Bulk Stations)
+CARG,CARG,1494259,SEC company_tickers.json (price symbol),"CarGurus, Inc.",7374,Services-Computer Processing & Data Preparation
+CARR,CARR,1783180,SEC company_tickers.json (price symbol),CARRIER GLOBAL Corp,3585,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip
+CAT,CAT,18230,SEC company_tickers.json (price symbol),CATERPILLAR INC,3531,Construction Machinery & Equip
+CB,ACE CB,896159,SEC company_tickers.json (price symbol),Chubb Ltd,6331,"Fire, Marine & Casualty Insurance"
+CBOE,CBOE,1374310,SEC company_tickers.json (price symbol),"Cboe Global Markets, Inc.",6200,"Security & Commodity Brokers, Dealers, Exchanges & Services"
+CBS,CBS,18366,ledger evidence (matched by company name),CBS BROADCASTING INC,4833,Television Broadcasting Stations
+CBSH,CBSH,22356,SEC company_tickers.json (price symbol),COMMERCE BANCSHARES INC /MO/,6022,State Commercial Banks
+CC,CC,1627223,SEC company_tickers.json (price symbol),Chemours Co,2800,Chemicals & Allied Products
+CCC,CCCS DGNR,1818201,SEC company_tickers.json (price symbol),CCC Intelligent Solutions Holdings Inc.,7372,Services-Prepackaged Software
+CCEP,CCEP,1650107,SEC company_tickers.json (price symbol),COCA-COLA EUROPACIFIC PARTNERS plc,2086,Bottled & Canned Soft Drinks & Carbonated Waters
+CCHGY,CCHGY,,none found,,,
+CCI,CCI,1051470,SEC company_tickers.json (price symbol),CROWN CASTLE INC.,6798,Real Estate Investment Trusts
+CCJ,CCJ,1009001,SEC company_tickers.json (price symbol),CAMECO CORP,1090,Miscellaneous Metal Ores
+CCL,CCL,815097,SEC company_tickers.json (price symbol),Carnival Corp Ltd.,4400,Water Transportation
+CCOEY,CCOEY,,none found,,,
+CDLX,CDLX,1666071,SEC company_tickers.json (price symbol),"Cardlytics, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+CDNS,CDNS,813672,SEC company_tickers.json (price symbol),CADENCE DESIGN SYSTEMS INC,7372,Services-Prepackaged Software
+CDP,OFC,860546,SEC company_tickers.json (price symbol),COPT DEFENSE PROPERTIES,6798,Real Estate Investment Trusts
+CE,CE,1306830,SEC company_tickers.json (price symbol),Celanese Corp,2820,"Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)"
+CEF,CEF,1726122,SEC company_tickers.json (price symbol),Sprott Physical Gold & Silver Trust,6221,Commodity Contracts Brokers & Dealers
+CEG,CEG,1868275,SEC company_tickers.json (price symbol),Constellation Energy Corp,4911,Electric Services
+CELG,CELG,816284,ledger evidence (matched by company name),CELGENE CORP /DE/,2834,Pharmaceutical Preparations
+CELH,CELH,1341766,SEC company_tickers.json (price symbol),"Celsius Holdings, Inc.",2086,Bottled & Canned Soft Drinks & Carbonated Waters
+CEM,CEM,,none found,,,
+CEQP,CEQP,1136352,ledger evidence (matched by company name),Crestwood Equity Partners LP,4923,Natural Gas Transmisison & Distribution
+CERN,CERN,804753,ledger evidence (matched by company name),CERNER Corp,7373,Services-Computer Integrated Systems Design
+CF,CF,1324404,SEC company_tickers.json (price symbol),"CF Industries Holdings, Inc.",2870,Agricultural Chemicals
+CFG,CFG,759944,SEC company_tickers.json (price symbol),CITIZENS FINANCIAL GROUP INC/RI,6022,State Commercial Banks
+CFR,CFR,39263,SEC company_tickers.json (price symbol),"CULLEN/FROST BANKERS, INC.",6021,National Commercial Banks
+CFRUY,CFRUY,,none found,,,
+CGEMY,CGEMY,,none found,,,
+CGNT,CGNT,894237,ledger evidence (matched by company name),COGENTIX MEDICAL INC /DE/,3845,Electromedical & Electrotherapeutic Apparatus
+CGNX,CGNX,851205,SEC company_tickers.json (price symbol),COGNEX CORP,3823,"Industrial Instruments For Measurement, Display, and Control"
+CHD,CHD,313927,SEC company_tickers.json (price symbol),CHURCH & DWIGHT CO INC /DE/,2840,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+CHE,CHE,19584,SEC company_tickers.json (price symbol),CHEMED CORP,8082,Services-Home Health Care Services
+CHEOY,CHEOY,,none found,,,
+CHGCY,CHGCY,,none found,,,
+CHKP,CHKP,1015922,SEC company_tickers.json (price symbol),CHECK POINT SOFTWARE TECHNOLOGIES LTD,7372,Services-Prepackaged Software
+CHRW,CHRW,1043277,SEC company_tickers.json (price symbol),"C. H. ROBINSON WORLDWIDE, INC.",4731,Arrangement of  Transportation of  Freight & Cargo
+CHTR,CHTR,1091667,SEC company_tickers.json (price symbol),"CHARTER COMMUNICATIONS, INC. /MO/",4841,Cable & Other Pay Television Services
+CI,CI,1739940,SEC company_tickers.json (price symbol),Cigna Group,6324,Hospital & Medical Service Plans
+CIEN,CIEN,936395,SEC company_tickers.json (price symbol),CIENA CORP,3661,Telephone & Telegraph Apparatus
+CIT,CIT,20388,ledger evidence (matched by company name),CIT GROUP INC,6172,Finance Lessors
+CJPRY,CJPRY,,none found,,,
+CKHUY,CKHUY,,none found,,,
+CL,CL,21665,SEC company_tickers.json (price symbol),COLGATE PALMOLIVE CO,2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+CLB,CLB,1958086,SEC company_tickers.json (price symbol),Core Laboratories Inc. /DE/,1389,"Oil & Gas Field Services, NEC"
+CLDT,CLDT,1476045,SEC company_tickers.json (price symbol),Chatham Lodging Trust,6798,Real Estate Investment Trusts
+CLF,CLF,764065,SEC company_tickers.json (price symbol),CLEVELAND-CLIFFS INC.,1000,Metal Mining
+CLLNY,CLLNY,,none found,,,
+CLPBY,CLPBY,,none found,,,
+CLR,CLR,732834,ledger evidence (matched by company name),"CONTINENTAL RESOURCES, INC",1311,Crude Petroleum & Natural Gas
+CLX,CLX,21076,SEC company_tickers.json (price symbol),CLOROX CO /DE/,2842,"Specialty Cleaning, Polishing and Sanitation Preparations"
+CMA,CMA,28412,ledger evidence (matched by company name),COMERICA INC,6021,National Commercial Banks
+CMCSA,CMCSA CMCSK,1166691,SEC company_tickers.json (price symbol),COMCAST CORP,4841,Cable & Other Pay Television Services
+CME,CME,1156375,SEC company_tickers.json (price symbol),CME GROUP INC.,6200,"Security & Commodity Brokers, Dealers, Exchanges & Services"
+CMG,CMG,1058090,SEC company_tickers.json (price symbol),CHIPOTLE MEXICAN GRILL INC,5812,Retail-Eating  Places
+CMI,CMI,26172,SEC company_tickers.json (price symbol),CUMMINS INC,3510,Engines & Turbines
+CMP,CMP,1227654,SEC company_tickers.json (price symbol),COMPASS MINERALS INTERNATIONAL INC,1400,Mining & Quarrying of  Nonmetallic Minerals (No Fuels)
+CMPGY,CMPGY,,none found,,,
+CMS,CMS,811156,SEC company_tickers.json (price symbol),CMS ENERGY CORP,4931,Electric & Other Services Combined
+CMSQY,CMSQY,,none found,,,
+CMWAY,CMWAY,,none found,,,
+CNR,CNR,883902,ledger evidence (matched by company name),"Cornerstone Building Brands, Inc.",3448,Prefabricated Metal Buildings & Components
+CODYY,CODYY,,none found,,,
+COF,COF,927628,SEC company_tickers.json (price symbol),CAPITAL ONE FINANCIAL CORP,6021,National Commercial Banks
+COHR,COHR,820318,SEC company_tickers.json (price symbol),COHERENT CORP.,3827,Optical Instruments & Lenses
+COIN,COIN,1679788,SEC company_tickers.json (price symbol),"Coinbase Global, Inc.",6199,Finance Services
+CONE,CONE,1553023,ledger evidence (matched by company name),CyrusOne Holdco LLC,6798,Real Estate Investment Trusts
+COO,COO,711404,SEC company_tickers.json (price symbol),"COOPER COMPANIES, INC.",3851,Ophthalmic Goods
+COP,COP,1163165,SEC company_tickers.json (price symbol),CONOCOPHILLIPS,2911,Petroleum Refining
+COR,ABC COR,1140859,SEC company_tickers.json (price symbol),"Cencora, Inc.",5122,"Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+COST,COST,909832,SEC company_tickers.json (price symbol),COSTCO WHOLESALE CORP /NEW,5331,Retail-Variety Stores
+COUP,COUP,1385867,ledger evidence (matched by company name),Coupa Software Inc,7372,Services-Prepackaged Software
+CP,CP,16875,SEC company_tickers.json (price symbol),CANADIAN PACIFIC KANSAS CITY LTD/CN,4011,"Railroads, Line-Haul Operating"
+CPAY,FLT,1175454,SEC company_tickers.json (price symbol),"CORPAY, INC.",7389,"Services-Business Services, NEC"
+CPB,CPB,16732,SEC company_tickers.json (price symbol),CAMPBELL'S Co,2000,Food and Kindred Products
+CPGX,CPGX,1629995,ledger evidence (matched by company name),"Columbia Pipeline Group, Inc.",4922,Natural Gas Transmission
+CPRT,CPRT,900075,SEC company_tickers.json (price symbol),COPART INC,5500,Retail-Auto Dealers & Gasoline Stations
+CPT,CPT,906345,SEC company_tickers.json (price symbol),CAMDEN PROPERTY TRUST,6798,Real Estate Investment Trusts
+CR,CR,1944013,SEC company_tickers.json (price symbol),Crane Co,3490,Miscellaneous Fabricated Metal Products
+CRARY,CRARY,,none found,,,
+CRDO,CRDO,1807794,SEC company_tickers.json (price symbol),Credo Technology Group Holding Ltd,3674,Semiconductors & Related Devices
+CRM,CRM,1108524,SEC company_tickers.json (price symbol),"Salesforce, Inc.",7372,Services-Prepackaged Software
+CRMT,CRMT,799850,SEC company_tickers.json (price symbol),AMERICAS CARMART INC,5500,Retail-Auto Dealers & Gasoline Stations
+CROX,CROX,1334036,SEC company_tickers.json (price symbol),"Crocs, Inc.",3021,Rubber & Plastics Footwear
+CRRFY,CRRFY,,none found,,,
+CRS,CRS,17843,SEC company_tickers.json (price symbol),CARPENTER TECHNOLOGY CORP,3312,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+CRSP,CRSP,1674416,SEC company_tickers.json (price symbol),CRISPR Therapeutics AG,2836,"Biological Products, (No Diagnostic Substances)"
+CRUS,CRUS,772406,SEC company_tickers.json (price symbol),"CIRRUS LOGIC, INC.",3674,Semiconductors & Related Devices
+CRWD,CRWD,1535527,SEC company_tickers.json (price symbol),"CrowdStrike Holdings, Inc.",7372,Services-Prepackaged Software
+CRZBY,CRZBY,,none found,,,
+CSCO,CSCO,858877,SEC company_tickers.json (price symbol),"CISCO SYSTEMS, INC.",3576,Computer Communications Equipment
+CSII,CSII,1180145,ledger evidence (matched by company name),Cardiovascular Systems Inc,3841,Surgical & Medical Instruments & Apparatus
+CSL,CSL,790051,SEC company_tickers.json (price symbol),CARLISLE COMPANIES INC,3060,"Fabricated Rubber Products, NEC"
+CSLLY,CSLLY,1274152,SEC company_tickers.json (price symbol),CSL LTD,,
+CSR,IRET,798359,SEC company_tickers.json (price symbol),CENTERSPACE,6798,Real Estate Investment Trusts
+CSX,CSX,277948,SEC company_tickers.json (price symbol),CSX CORP,4011,"Railroads, Line-Haul Operating"
+CTAS,CTAS,723254,SEC company_tickers.json (price symbol),CINTAS CORP,2320,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments"
+CTECBX,CTECBX,,none found,,,
+CTSH,CTSH,1058290,SEC company_tickers.json (price symbol),COGNIZANT TECHNOLOGY SOLUTIONS CORP,7371,Services-Computer Programming Services
+CTVA,CTVA,1755672,SEC company_tickers.json (price symbol),"Corteva, Inc.",0100,Agricultural Production-Crops
+CTXS,CTXS,877890,ledger evidence (matched by company name),CITRIX SYSTEMS INC,7372,Services-Prepackaged Software
+CUBE,CUBE,1298675,SEC company_tickers.json (price symbol),CubeSmart,6798,Real Estate Investment Trusts
+CUTR,CUTR,1162461,ledger evidence (matched by company name),CUTERA INC,3845,Electromedical & Electrotherapeutic Apparatus
+CVC,CVC,784681,ledger evidence (matched by company name),CSC HOLDINGS LLC,4841,Cable & Other Pay Television Services
+CVET,CVET,1752836,ledger evidence (matched by company name),"COVETRUS, INC.",5912,Retail-Drug Stores and Proprietary Stores
+CVS,CVS,64803,SEC company_tickers.json (price symbol),CVS HEALTH Corp,5912,Retail-Drug Stores and Proprietary Stores
+CVX,CVX,93410,SEC company_tickers.json (price symbol),CHEVRON CORP,2911,Petroleum Refining
+CWEN,CWEN,1567683,SEC company_tickers.json (price symbol),"Clearway Energy, Inc.",4911,Electric Services
+CYBR,CYBR,1598110,ledger evidence (matched by company name),CyberArk Software Ltd.,7372,Services-Prepackaged Software
+CZR,CZR,1590895,SEC company_tickers.json (price symbol),"Caesars Entertainment, Inc.",7011,Hotels & Motels
+D,D,715957,SEC company_tickers.json (price symbol),"DOMINION ENERGY, INC",4911,Electric Services
+DAL,DAL,27904,SEC company_tickers.json (price symbol),"DELTA AIR LINES, INC.",4512,"Air Transportation, Scheduled"
+DANOY,DANOY,,none found,,,
+DASH,DASH,1792789,SEC company_tickers.json (price symbol),"DoorDash, Inc.",7389,"Services-Business Services, NEC"
+DASTY,DASTY,,none found,,,
+DB,DB,1159508,SEC company_tickers.json (price symbol),DEUTSCHE BANK AKTIENGESELLSCHAFT,6022,State Commercial Banks
+DBOEY,DBOEY,,none found,,,
+DBSDY,DBSDY,,none found,,,
+DCP,DCP,1119811,ledger evidence (matched by company name),"DCP MIDSTREAM, LLC",1311,Crude Petroleum & Natural Gas
+DD,DD DWDP,1666700,SEC company_tickers.json (price symbol),"DuPont de Nemours, Inc.",2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+DDOG,DDOG,1561550,SEC company_tickers.json (price symbol),"Datadog, Inc.",7372,Services-Prepackaged Software
+DE,DE,315189,SEC company_tickers.json (price symbol),DEERE & CO,3523,Farm Machinery & Equipment
+DECK,DECK,910521,SEC company_tickers.json (price symbol),DECKERS OUTDOOR CORP,3021,Rubber & Plastics Footwear
+DELL,DELL,1571996,SEC company_tickers.json (price symbol),Dell Technologies Inc.,3571,Electronic Computers
+DEO,DEO,835403,SEC company_tickers.json (price symbol),DIAGEO PLC,2080,Beverages
+DFKCY,DFKCY,1762831,ledger evidence (matched by company name),"Daifuku Co., Ltd./ADR",,
+DFS,DFS,1393612,ledger evidence (matched by company name),Discover Financial Services,6141,Personal Credit Institutions
+DG,DG,29534,SEC company_tickers.json (price symbol),DOLLAR GENERAL CORP,5331,Retail-Variety Stores
+DGX,DGX,1022079,SEC company_tickers.json (price symbol),QUEST DIAGNOSTICS INC,8071,Services-Medical Laboratories
+DHI,DHI,882184,SEC company_tickers.json (price symbol),HORTON D R INC /DE/,1531,Operative Builders
+DHLGY,DHLGY,,none found,,,
+DHR,DHR,313616,SEC company_tickers.json (price symbol),DANAHER CORP /DE/,3823,"Industrial Instruments For Measurement, Display, and Control"
+DIFTY,DIFTY,,none found,,,
+DIOD,DIOD,29002,SEC company_tickers.json (price symbol),DIODES INC /DEL/,3674,Semiconductors & Related Devices
+DIS,DIS,1744489,SEC company_tickers.json (price symbol),Walt Disney Co,7990,Services-Miscellaneous Amusement & Recreation
+DISH,DISH,920436,ledger evidence (matched by company name),DISH Network LLC,4841,Cable & Other Pay Television Services
+DKILY,DKILY,,none found,,,
+DLAKY,DLAKY,1049724,SEC company_tickers.json (price symbol),DEUTSCHE LUFTHANSA A G                                  /FI,,
+DLICY,DLICY,,none found,,,
+DLR,DLR,1297996,SEC company_tickers.json (price symbol),"DIGITAL REALTY TRUST, INC.",6798,Real Estate Investment Trusts
+DNBBY,DNBBY,,none found,,,
+DNKEY,DNKEY,,none found,,,
+DNKN,DNKN,1357204,ledger evidence (matched by company name),"DUNKIN' BRANDS GROUP, INC.",5810,Retail-Eating & Drinking Places
+DNZOY,DNZOY,,none found,,,
+DOC,DOC,765880,SEC company_tickers.json (price symbol),"HEALTHPEAK PROPERTIES, INC.",6798,Real Estate Investment Trusts
+DOCU,DOCU,1261333,SEC company_tickers.json (price symbol),"DOCUSIGN, INC.",7372,Services-Prepackaged Software
+DOV,DOV,29905,SEC company_tickers.json (price symbol),DOVER Corp,3530,"Construction, Mining & Materials Handling Machinery & Equip"
+DOW,DOW,1751788,SEC company_tickers.json (price symbol),DOW INC.,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+DPM,DPM,1338065,ledger evidence (matched by company name),"DCP Midstream, LP",4922,Natural Gas Transmission
+DPZ,DPZ,1286681,SEC company_tickers.json (price symbol),DOMINOS PIZZA INC,5140,Wholesale-Groceries & Related Products
+DQ,DQ,1477641,SEC company_tickers.json (price symbol),DAQO NEW ENERGY CORP.,3674,Semiconductors & Related Devices
+DQJCY,DQJCY,,none found,,,
+DRI,DRI,940944,SEC company_tickers.json (price symbol),DARDEN RESTAURANTS INC,5812,Retail-Eating  Places
+DRPRY,DRPRY,,none found,,,
+DSCSY,DSCSY,,none found,,,
+DSDVY,DSDVY,,none found,,,
+DSFIY,DSFIY,,none found,,,
+DSNKY,DSNKY,,none found,,,
+DTE,DTE,936340,SEC company_tickers.json (price symbol),DTE ENERGY CO,4911,Electric Services
+DTEGY,DTEGY,946770,SEC company_tickers.json (price symbol),DEUTSCHE TELEKOM AG,4812,Radiotelephone Communications
+DTRUY,DTRUY,,none found,,,
+DUFRY,DUFRY,,none found,,,
+DUK,DUK,1326160,SEC company_tickers.json (price symbol),Duke Energy CORP,4931,Electric & Other Services Combined
+DVA,DVA,927066,SEC company_tickers.json (price symbol),DAVITA INC.,8090,"Services-Misc Health & Allied Services, NEC"
+DVMT,DVMT,1571996,ledger evidence (matched by company name),Dell Technologies Inc.,3571,Electronic Computers
+DVN,DVN,1090012,SEC company_tickers.json (price symbol),DEVON ENERGY CORP/DE,1311,Crude Petroleum & Natural Gas
+DWAHY,DWAHY,,none found,,,
+DXCM,DXCM,1093557,SEC company_tickers.json (price symbol),DEXCOM INC,3841,Surgical & Medical Instruments & Apparatus
+EA,EA,712515,ledger evidence (matched by company name),ELECTRONIC ARTS INC.,7372,Services-Prepackaged Software
+EADSY,EADSY,,none found,,,
+EAF,EAF,931148,SEC company_tickers.json (price symbol),GRAFTECH INTERNATIONAL LTD,3620,Electrical Industrial Apparatus
+EBAY,EBAY,1065088,SEC company_tickers.json (price symbol),EBAY INC,7389,"Services-Business Services, NEC"
+EBCOY,EBCOY,,none found,,,
+EBKDY,EBKDY,,none found,,,
+ECL,ECL,31462,SEC company_tickers.json (price symbol),ECOLAB INC.,2840,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+ECOM,ECOM,1169652,ledger evidence (matched by company name),CHANNELADVISOR CORP,7372,Services-Prepackaged Software
+EDIT,EDIT,1650664,SEC company_tickers.json (price symbol),"Editas Medicine, Inc.",2836,"Biological Products, (No Diagnostic Substances)"
+EEFT,EEFT,1029199,SEC company_tickers.json (price symbol),"EURONET WORLDWIDE, INC.",6099,"Functions Related To Depository Banking, NEC"
+EG,EG,1095073,SEC company_tickers.json (price symbol),"EVEREST GROUP, LTD.",6331,"Fire, Marine & Casualty Insurance"
+EJPRY,EJPRY,,none found,,,
+EL,EL,1001250,SEC company_tickers.json (price symbol),ESTEE LAUDER COMPANIES INC,2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+ELAN,ELAN,1739104,SEC company_tickers.json (price symbol),Elanco Animal Health Inc,2834,Pharmaceutical Preparations
+ELF,ELF,1600033,SEC company_tickers.json (price symbol),"e.l.f. Beauty, Inc.",2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+ELS,ELS,895417,SEC company_tickers.json (price symbol),EQUITY LIFESTYLE PROPERTIES INC,6798,Real Estate Investment Trusts
+ELV,ANTM ELV,1156039,SEC company_tickers.json (price symbol),"Elevance Health, Inc.",6324,Hospital & Medical Service Plans
+EME,EME,105634,SEC company_tickers.json (price symbol),"EMCOR Group, Inc.",1731,Electrical Work
+EMR,EMR,32604,SEC company_tickers.json (price symbol),EMERSON ELECTRIC CO,3600,Electronic & Other Electrical Equipment (No Computer Equip)
+ENB,ENB,895728,SEC company_tickers.json (price symbol),ENBRIDGE INC,4610,Pipe Lines (No Natural Gas)
+ENTG,ENTG,1101302,SEC company_tickers.json (price symbol),ENTEGRIS INC,3089,"Plastics Products, NEC"
+ENTL,ENTL,1374128,ledger evidence (matched by company name),ENTELLUS MEDICAL INC,3841,Surgical & Medical Instruments & Apparatus
+ENVA,ENVA,1529864,SEC company_tickers.json (price symbol),"Enova International, Inc.",6141,Personal Credit Institutions
+EOG,EOG,821189,SEC company_tickers.json (price symbol),EOG RESOURCES INC,1311,Crude Petroleum & Natural Gas
+EPD,EPD,1061219,SEC company_tickers.json (price symbol),ENTERPRISE PRODUCTS PARTNERS L.P.,4922,Natural Gas Transmission
+EPOAY,EPOAY,,none found,,,
+EQC,EQC,803649,ledger evidence (matched by company name),EQC Liquidating Trust,6798,Real Estate Investment Trusts
+EQM,EQM,1540947,ledger evidence (matched by company name),"EQM Midstream Partners, LP",4922,Natural Gas Transmission
+EQNR,EQNR,1140625,SEC company_tickers.json (price symbol),EQUINOR ASA,2911,Petroleum Refining
+ERIC,ERIC,717826,SEC company_tickers.json (price symbol),ERICSSON LM TELEPHONE CO,3663,Radio & Tv Broadcasting & Communications Equipment
+ERIE,ERIE,922621,SEC company_tickers.json (price symbol),ERIE INDEMNITY CO,6411,"Insurance Agents, Brokers & Service"
+ES,ES,72741,SEC company_tickers.json (price symbol),EVERSOURCE ENERGY,4911,Electric Services
+ESAIY,ESAIY,,none found,,,
+ESLOY,ESLOY,,none found,,,
+ESLT,ESLT,1027664,SEC company_tickers.json (price symbol),ELBIT SYSTEMS LTD,3728,"Aircraft Parts & Auxiliary Equipment, NEC"
+ESRX,ESRX,1532063,ledger evidence (matched by company name),Express Scripts Holding Co.,5912,Retail-Drug Stores and Proprietary Stores
+ESS,ESS,920522,SEC company_tickers.json (price symbol),"ESSEX PROPERTY TRUST, INC.",6798,Real Estate Investment Trusts
+ESV,ESV,314808,ledger evidence (matched by company name),Valaris Ltd,1381,Drilling Oil & Gas Wells
+ET,ET ETE,1276187,SEC company_tickers.json (price symbol),Energy Transfer LP,4922,Natural Gas Transmission
+ETN,ETN,1551182,SEC company_tickers.json (price symbol),Eaton Corp plc,3590,Misc Industrial & Commercial Machinery & Equipment
+ETOR,ETOR,1493318,SEC company_tickers.json (price symbol),eToro Group Ltd.,6211,"Security Brokers, Dealers & Flotation Companies"
+ETP,ETP,1012569,ledger evidence (matched by company name),"Energy Transfer, LP",4922,Natural Gas Transmission
+ETR,ETR,65984,SEC company_tickers.json (price symbol),ENTERGY CORP /DE/,4911,Electric Services
+ETRN,ETRN,1747009,ledger evidence (matched by company name),Midstream Co LLC,4922,Natural Gas Transmission
+ETSY,ETSY,1370637,SEC company_tickers.json (price symbol),ETSY INC,7389,"Services-Business Services, NEC"
+ETY,ETY,1340736,SEC company_tickers.json (price symbol),Eaton Vance Tax-Managed Diversified Equity Income Fund,,
+EV,EV,350797,ledger evidence (matched by company name),"Mirror Merger Sub 2, LLC",6282,Investment Advice
+EVOP,EVOP,1704596,ledger evidence (matched by company name),"EVO Payments, Inc.",7389,"Services-Business Services, NEC"
+EVT,EVT,1253327,SEC company_tickers.json (price symbol),Eaton Vance Tax-Advantaged Dividend Income Fund,,
+EVVTY,EVVTY,,none found,,,
+EW,EW,1099800,SEC company_tickers.json (price symbol),Edwards Lifesciences Corp,3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+EXC,EXC,1109357,SEC company_tickers.json (price symbol),EXELON CORP,4931,Electric & Other Services Combined
+EXE,CHK,895126,SEC company_tickers.json (price symbol),EXPAND ENERGY Corp,1311,Crude Petroleum & Natural Gas
+EXLS,EXLS,1297989,SEC company_tickers.json (price symbol),"ExlService Holdings, Inc.",7389,"Services-Business Services, NEC"
+EXP,EXP,918646,SEC company_tickers.json (price symbol),EAGLE MATERIALS INC,3241,"Cement, Hydraulic"
+EXPD,EXPD,746515,SEC company_tickers.json (price symbol),EXPEDITORS INTERNATIONAL OF WASHINGTON INC,4731,Arrangement of  Transportation of  Freight & Cargo
+EXPE,EXPE,1324424,SEC company_tickers.json (price symbol),"Expedia Group, Inc.",4700,Transportation Services
+EXPGY,EXPGY,,none found,,,
+EXR,EXR,1289490,SEC company_tickers.json (price symbol),Extra Space Storage Inc.,6798,Real Estate Investment Trusts
+F,F,37996,SEC company_tickers.json (price symbol),FORD MOTOR CO,3711,Motor Vehicles & Passenger Car Bodies
+FANG,FANG,1539838,SEC company_tickers.json (price symbol),"Diamondback Energy, Inc.",1311,Crude Petroleum & Natural Gas
+FANUY,FANUY,,none found,,,
+FAST,FAST,815556,SEC company_tickers.json (price symbol),FASTENAL CO,5200,"Retail-Building Materials, Hardware, Garden Supply"
+FBIN,FBIN,1519751,SEC company_tickers.json (price symbol),"Fortune Brands Innovations, Inc.",2430,"Millwood, Veneer, Plywood, & Structural Wood Members"
+FCFS,FCFS,840489,SEC company_tickers.json (price symbol),"FirstCash Holdings, Inc.",5900,Retail-Miscellaneous Retail
+FCX,FCX,831259,SEC company_tickers.json (price symbol),FREEPORT-MCMORAN INC,1000,Metal Mining
+FDC,FDC,883980,ledger evidence (matched by company name),FIRST DATA CORP,7389,"Services-Business Services, NEC"
+FDS,FDS,1013237,SEC company_tickers.json (price symbol),FACTSET RESEARCH SYSTEMS INC,7370,"Services-Computer Programming, Data Processing, Etc."
+FDX,FDX,1048911,SEC company_tickers.json (price symbol),FEDEX CORP,4513,Air Courier Services
+FE,FE,1031296,SEC company_tickers.json (price symbol),FIRSTENERGY CORP,4911,Electric Services
+FEYE,FEYE,1370880,ledger evidence (matched by company name),"Mandiant, Inc.",3577,"Computer Peripheral Equipment, NEC"
+FFIV,FFIV,1048695,SEC company_tickers.json (price symbol),"F5, INC.",3576,Computer Communications Equipment
+FGBI,FGBI,1408534,SEC company_tickers.json (price symbol),"First Guaranty Bancshares, Inc.",6035,"Savings Institution, Federally Chartered"
+FHB,FHB,36377,SEC company_tickers.json (price symbol),"FIRST HAWAIIAN, INC.",6022,State Commercial Banks
+FICO,FICO,814547,SEC company_tickers.json (price symbol),FAIR ISAAC CORP,7389,"Services-Business Services, NEC"
+FINMY,FINMY,,none found,,,
+FIS,FIS,1136893,SEC company_tickers.json (price symbol),"Fidelity National Information Services, Inc.",7389,"Services-Business Services, NEC"
+FISV,FI FISV,798354,SEC company_tickers.json (price symbol),FISERV INC,7389,"Services-Business Services, NEC"
+FITB,FITB,35527,SEC company_tickers.json (price symbol),FIFTH THIRD BANCORP,6022,State Commercial Banks
+FIVE,FIVE,1177609,SEC company_tickers.json (price symbol),"FIVE BELOW, INC",5331,Retail-Variety Stores
+FIX,FIX,1035983,SEC company_tickers.json (price symbol),COMFORT SYSTEMS USA INC,1731,Electrical Work
+FJTSY,FJTSY,,none found,,,
+FL,FL,850209,ledger evidence (matched by company name),"FOOT LOCKER, INC.",5661,Retail-Shoe Stores
+FLNG,FLNG,1772253,SEC company_tickers.json (price symbol),Flex LNG Ltd.,4400,Water Transportation
+FLR,FLR,1124198,SEC company_tickers.json (price symbol),FLUOR CORP,1600,Heavy Construction Other Than Bldg Const - Contractors
+FMC,FMC,37785,SEC company_tickers.json (price symbol),FMC CORP,2800,Chemicals & Allied Products
+FMS,FMS,1333141,SEC company_tickers.json (price symbol),Fresenius Medical Care AG,8090,"Services-Misc Health & Allied Services, NEC"
+FN,FN,1408710,SEC company_tickers.json (price symbol),Fabrinet,3661,Telephone & Telegraph Apparatus
+FNF,FNF,1331875,SEC company_tickers.json (price symbol),"Fidelity National Financial, Inc.",6361,Title Insurance
+FNKO,FNKO,1704711,SEC company_tickers.json (price symbol),"Funko, Inc.",3944,"Games, Toys & Children's Vehicles (No Dolls & Bicycles)"
+FOX,FOX,1754301,SEC company_tickers.json (price symbol),Fox Corp,4833,Television Broadcasting Stations
+FOXA,FOXA,1754301,SEC company_tickers.json (price symbol),Fox Corp,4833,Television Broadcasting Stations
+FPI,FPI,1591670,SEC company_tickers.json (price symbol),Farmland Partners Inc.,6798,Real Estate Investment Trusts
+FPL,FPL,1589420,ledger evidence (matched by company name),FIRST TRUST NEW OPPORTUNITIES MLP & ENERGY FUND,,
+FRCOY,FRCOY,,none found,,,
+FRPT,FRPT,1611647,SEC company_tickers.json (price symbol),"Freshpet, Inc.",2040,Grain Mill Products
+FRT,FRT,34903,SEC company_tickers.json (price symbol),FEDERAL REALTY INVESTMENT TRUST,6798,Real Estate Investment Trusts
+FSK,FSK,1422183,SEC company_tickers.json (price symbol),FS KKR Capital Corp,,
+FSLR,FSLR,1274494,SEC company_tickers.json (price symbol),"FIRST SOLAR, INC.",3674,Semiconductors & Related Devices
+FSNUY,FSNUY,904868,SEC company_tickers.json (price symbol),Fresenius SE & Co. KGaA,3841,Surgical & Medical Instruments & Apparatus
+FSUGY,FSUGY,,none found,,,
+FTNT,FTNT,1262039,SEC company_tickers.json (price symbol),"Fortinet, Inc.",3577,"Computer Peripheral Equipment, NEC"
+FTV,FTV,1659166,SEC company_tickers.json (price symbol),Fortive Corp,3823,"Industrial Instruments For Measurement, Display, and Control"
+FUJHY,FUJHY,,none found,,,
+FUJIY,FUJIY,,none found,,,
+FUN,FUN,811532,ledger evidence (matched by company name),CEDAR FAIR L P,7990,Services-Miscellaneous Amusement & Recreation
+FWONA,FWONA,1560385,SEC company_tickers.json (price symbol),Liberty Media Corp,4833,Television Broadcasting Stations
+FWONK,FWONK,1560385,SEC company_tickers.json (price symbol),Liberty Media Corp,4833,Television Broadcasting Stations
+GALDY,GALDY,2021390,SEC company_tickers.json (price symbol),Galderma Group AG/ADR,,
+GAN,GAN,1799332,ledger evidence (matched by company name),GAN Ltd,7370,"Services-Computer Programming, Data Processing, Etc."
+GBERY,GBERY,,none found,,,
+GD,GD,40533,SEC company_tickers.json (price symbol),GENERAL DYNAMICS CORP,3730,Ship & Boat Building & Repairing
+GDDY,GDDY,1609711,SEC company_tickers.json (price symbol),GoDaddy Inc.,7373,Services-Computer Integrated Systems Design
+GDV,GDV,1260729,SEC company_tickers.json (price symbol),GABELLI DIVIDEND & INCOME TRUST,,
+GE,GE,40545,SEC company_tickers.json (price symbol),GENERAL ELECTRIC CO,3600,Electronic & Other Electrical Equipment (No Computer Equip)
+GEHC,GEHC,1932393,SEC company_tickers.json (price symbol),GE HealthCare Technologies Inc.,3844,X-Ray Apparatus & Tubes & Related Irradiation Apparatus
+GEL,GEL,1022321,SEC company_tickers.json (price symbol),GENESIS ENERGY LP,4610,Pipe Lines (No Natural Gas)
+GEN,GEN,849399,SEC company_tickers.json (price symbol),Gen Digital Inc.,7372,Services-Prepackaged Software
+GENI,GENI,1834489,SEC company_tickers.json (price symbol),Genius Sports Ltd,7990,Services-Miscellaneous Amusement & Recreation
+GEV,GEV,1996810,SEC company_tickers.json (price symbol),GE Vernova Inc.,3600,Electronic & Other Electrical Equipment (No Computer Equip)
+GFI,GFI,1172724,SEC company_tickers.json (price symbol),GOLD FIELDS LTD,1040,Gold and Silver Ores
+GGG,GGG,42888,SEC company_tickers.json (price symbol),GRACO INC,3561,Pumps & Pumping Equipment
+GGSM,GGSM,,none found,,,
+GH,GH,1576280,SEC company_tickers.json (price symbol),"Guardant Health, Inc.",8071,Services-Medical Laboratories
+GILD,GILD,882095,SEC company_tickers.json (price symbol),"GILEAD SCIENCES, INC.",2836,"Biological Products, (No Diagnostic Substances)"
+GIS,GIS,40704,SEC company_tickers.json (price symbol),GENERAL MILLS INC,2040,Grain Mill Products
+GL,GL TMK,320335,SEC company_tickers.json (price symbol),GLOBE LIFE INC.,6311,Life Insurance
+GLAD,GLAD,1143513,SEC company_tickers.json (price symbol),GLADSTONE CAPITAL CORP,,
+GLNCY,GLNCY,,none found,,,
+GLPI,GLPI,1575965,SEC company_tickers.json (price symbol),"Gaming & Leisure Properties, Inc.",6798,Real Estate Investment Trusts
+GLW,GLW,24741,SEC company_tickers.json (price symbol),CORNING INC /NY,3357,Drawing & Insulating of  Nonferrous Wire
+GM,GM,1467858,SEC company_tickers.json (price symbol),General Motors Co,3711,Motor Vehicles & Passenger Car Bodies
+GMAB,GMAB,1434265,SEC company_tickers.json (price symbol),GENMAB A/S,2834,Pharmaceutical Preparations
+GME,GME,1326380,SEC company_tickers.json (price symbol),GameStop Corp.,5734,Retail-Computer & Computer Software Stores
+GNRC,GNRC,1474735,SEC company_tickers.json (price symbol),GENERAC HOLDINGS INC.,3621,Motors & Generators
+GNTX,GNTX,355811,SEC company_tickers.json (price symbol),GENTEX CORP,3714,Motor Vehicle Parts & Accessories
+GOGL,GOGL,1029145,ledger evidence (matched by company name),Golden Ocean Group Ltd,4400,Water Transportation
+GOLD,GOLD,1591588,SEC company_tickers.json (price symbol),"Gold.com, Inc.",5094,"Wholesale-Jewelry, Watches, Precious Stones & Metals"
+GOOG,GOOG,1652044,SEC company_tickers.json (price symbol),Alphabet Inc.,7370,"Services-Computer Programming, Data Processing, Etc."
+GOOGL,GOOGL,1652044,SEC company_tickers.json (price symbol),Alphabet Inc.,7370,"Services-Computer Programming, Data Processing, Etc."
+GPC,GPC,40987,SEC company_tickers.json (price symbol),GENUINE PARTS CO,5013,Wholesale-Motor Vehicle Supplies & New Parts
+GPCR,GPCR,1888886,SEC company_tickers.json (price symbol),Structure Therapeutics Inc.,2834,Pharmaceutical Preparations
+GPK,GPK,1408075,SEC company_tickers.json (price symbol),GRAPHIC PACKAGING HOLDING CO,2650,Paperboard Containers & Boxes
+GPN,GPN,1123360,SEC company_tickers.json (price symbol),GLOBAL PAYMENTS INC,7389,"Services-Business Services, NEC"
+GPRO,GPRO,1500435,SEC company_tickers.json (price symbol),"GoPro, Inc.",3861,Photographic Equipment & Supplies
+GRMN,GRMN,1121788,SEC company_tickers.json (price symbol),GARMIN LTD,3812,"Search, Detection, Navigation, Guidance, Aeronautical Sys"
+GRUB,GRUB,1419450,ledger evidence (matched by company name),GrubHub Inc,,
+GS,GS,886982,SEC company_tickers.json (price symbol),GOLDMAN SACHS GROUP INC,6211,"Security Brokers, Dealers & Flotation Companies"
+GSK,GSK,1131399,SEC company_tickers.json (price symbol),GSK plc,2834,Pharmaceutical Preparations
+GTX,GTX,1735707,SEC company_tickers.json (price symbol),Garrett Motion Inc.,3714,Motor Vehicle Parts & Accessories
+GVDNY,GVDNY,,none found,,,
+GWW,GWW,277135,SEC company_tickers.json (price symbol),"W.W. GRAINGER, INC.",5000,Wholesale-Durable Goods
+HAGHY,HAGHY,,none found,,,
+HAL,HAL,45012,SEC company_tickers.json (price symbol),HALLIBURTON CO,1389,"Oil & Gas Field Services, NEC"
+HALMY,HALMY,,none found,,,
+HALO,HALO,1159036,SEC company_tickers.json (price symbol),"HALOZYME THERAPEUTICS, INC.",2836,"Biological Products, (No Diagnostic Substances)"
+HAS,HAS,46080,SEC company_tickers.json (price symbol),"HASBRO, INC.",3944,"Games, Toys & Children's Vehicles (No Dolls & Bicycles)"
+HASI,HASI,1561894,SEC company_tickers.json (price symbol),"HA Sustainable Infrastructure Capital, Inc.",6799,"Investors, NEC"
+HBAN,HBAN,49196,SEC company_tickers.json (price symbol),HUNTINGTON BANCSHARES INC /MD/,6021,National Commercial Banks
+HBI,HBI,1359841,ledger evidence (matched by company name),Hanesbrands Inc.,5600,Retail-Apparel & Accessory Stores
+HCA,HCA,860730,SEC company_tickers.json (price symbol),"HCA Healthcare, Inc.",8062,"Services-General Medical & Surgical Hospitals, NEC"
+HCMLY,HCMLY,,none found,,,
+HD,HD,354950,SEC company_tickers.json (price symbol),"HOME DEPOT, INC.",5211,Retail-Lumber & Other Building Materials Dealers
+HDLMY,HDLMY,,none found,,,
+HDS,HDS,1465254,ledger evidence (matched by company name),"HD SUPPLY HOLDINGS, LLC",,
+HEINY,HEINY,,none found,,,
+HELE,HELE,916789,SEC company_tickers.json (price symbol),HELEN OF TROY LTD,3634,Electric Housewares & Fans
+HENKY,HENKY,,none found,,,
+HENOY,HENOY,,none found,,,
+HES,HES,4447,ledger evidence (matched by company name),HESS CORP,2911,Petroleum Refining
+HESAY,HESAY,,none found,,,
+HIG,HIG,874766,SEC company_tickers.json (price symbol),"HARTFORD INSURANCE GROUP, INC.",6331,"Fire, Marine & Casualty Insurance"
+HKXCY,HKXCY,,none found,,,
+HLN,HLN,1900304,SEC company_tickers.json (price symbol),Haleon plc,2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+HLT,HLT,1585689,SEC company_tickers.json (price symbol),Hilton Worldwide Holdings Inc.,7011,Hotels & Motels
+HMC,HMC,715153,SEC company_tickers.json (price symbol),HONDA MOTOR CO LTD,3711,Motor Vehicles & Passenger Car Bodies
+HNNMY,HNNMY,,none found,,,
+HOCPY,HOCPY,,none found,,,
+HOLX,HOLX,859737,ledger evidence (matched by company name),HOLOGIC INC,3844,X-Ray Apparatus & Tubes & Related Irradiation Apparatus
+HON,HON,773840,SEC company_tickers.json (price symbol),HONEYWELL INTERNATIONAL INC,3724,Aircraft Engines & Engine Parts
+HOOD,HOOD,1783879,SEC company_tickers.json (price symbol),"Robinhood Markets, Inc.",6211,"Security Brokers, Dealers & Flotation Companies"
+HOT,HOT,316206,ledger evidence (matched by company name),"STARWOOD HOTELS & RESORTS WORLDWIDE, LLC",7011,Hotels & Motels
+HPE,HPE,1645590,SEC company_tickers.json (price symbol),Hewlett Packard Enterprise Co,3570,Computer & office Equipment
+HPQ,HPQ,47217,SEC company_tickers.json (price symbol),HP INC,3570,Computer & office Equipment
+HQL,HQL,884121,SEC company_tickers.json (price symbol),abrdn Life Sciences Investors,,
+HRL,HRL,48465,SEC company_tickers.json (price symbol),HORMEL FOODS CORP /DE/,2011,Meat Packing Plants
+HSBC,HSBC,1089113,SEC company_tickers.json (price symbol),HSBC HOLDINGS PLC,6035,"Savings Institution, Federally Chartered"
+HSIC,HSIC,1000228,SEC company_tickers.json (price symbol),HENRY SCHEIN INC,5047,"Wholesale-Medical, Dental & Hospital Equipment & Supplies"
+HSY,HSY,47111,SEC company_tickers.json (price symbol),HERSHEY CO,2060,Sugar & Confectionery Products
+HTHIY,HTHIY,47710,SEC company_tickers.json (price symbol),HITACHI LTD,1600,Heavy Construction Other Than Bldg Const - Contractors
+HUBB,HUBB,48898,SEC company_tickers.json (price symbol),HUBBELL INC,3670,Electronic Components & Accessories
+HUM,HUM,49071,SEC company_tickers.json (price symbol),HUMANA INC,6324,Hospital & Medical Service Plans
+HUMA,HUMA,1818382,SEC company_tickers.json (price symbol),"Humacyte, Inc.",2836,"Biological Products, (No Diagnostic Substances)"
+HUN,HUN,1307954,SEC company_tickers.json (price symbol),Huntsman CORP,2800,Chemicals & Allied Products
+HVRRY,HVRRY,,none found,,,
+HWM,HWM,4281,SEC company_tickers.json (price symbol),Howmet Aerospace Inc.,3350,Rolling Drawing & Extruding of  Nonferrous Metals
+HXGBY,HXGBY,,none found,,,
+HXL,HXL,717605,SEC company_tickers.json (price symbol),HEXCEL CORP /DE/,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+HYH,HYH,1606498,ledger evidence (matched by company name),"AVANOS MEDICAL, INC.",3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+IBKC,IBKC,933141,ledger evidence (matched by company name),IBERIABANK CORP,6022,State Commercial Banks
+IBM,IBM,51143,SEC company_tickers.json (price symbol),INTERNATIONAL BUSINESS MACHINES CORP,3570,Computer & office Equipment
+ICAGY,ICAGY,,none found,,,
+ICE,ICE,1571949,SEC company_tickers.json (price symbol),"Intercontinental Exchange, Inc.",6200,"Security & Commodity Brokers, Dealers, Exchanges & Services"
+ICL,ICL,941221,SEC company_tickers.json (price symbol),ICL Group Ltd.,2870,Agricultural Chemicals
+IDEXY,IDEXY,,none found,,,
+IDXX,IDXX,874716,SEC company_tickers.json (price symbol),IDEXX LABORATORIES INC /DE,2835,In Vitro & In Vivo Diagnostic Substances
+IEX,IEX,832101,SEC company_tickers.json (price symbol),IDEX CORP /DE/,3561,Pumps & Pumping Equipment
+IFF,IFF,51253,SEC company_tickers.json (price symbol),INTERNATIONAL FLAVORS & FRAGRANCES INC,2860,Industrial Organic Chemicals
+IFJPY,IFJPY,,none found,,,
+IFNNY,IFNNY,1107457,SEC company_tickers.json (price symbol),INFINEON TECHNOLOGIES AG,3674,Semiconductors & Related Devices
+IHG,IHG,858446,SEC company_tickers.json (price symbol),INTERCONTINENTAL HOTELS GROUP PLC /NEW/,7011,Hotels & Motels
+IHICY,IHICY,,none found,,,
+IIN,IIN,88790,ledger evidence (matched by company name),INTRICON CORP,3670,Electronic Components & Accessories
+ILMN,ILMN,1110803,SEC company_tickers.json (price symbol),"ILLUMINA, INC.",3826,Laboratory Analytical Instruments
+INCY,INCY,879169,SEC company_tickers.json (price symbol),INCYTE CORP,8731,Services-Commercial Physical & Biological Research
+INFY,INFY,1067491,SEC company_tickers.json (price symbol),Infosys Ltd,7371,Services-Computer Programming Services
+ING,ING,1039765,SEC company_tickers.json (price symbol),ING GROEP NV,6029,"Commercial Banks, NEC"
+INOD,INOD,903651,SEC company_tickers.json (price symbol),INNODATA INC,7374,Services-Computer Processing & Data Preparation
+INST,INST,1841804,ledger evidence (matched by company name),"INSTRUCTURE HOLDINGS, INC.",7372,Services-Prepackaged Software
+INTC,INTC,50863,SEC company_tickers.json (price symbol),INTEL CORP,3674,Semiconductors & Related Devices
+INTU,INTU,896878,SEC company_tickers.json (price symbol),INTUIT INC.,7372,Services-Prepackaged Software
+INVH,INVH,1687229,SEC company_tickers.json (price symbol),Invitation Homes Inc.,6510,Real Estate Operators (No Developers) & Lessors
+IONS,IONS,874015,SEC company_tickers.json (price symbol),IONIS PHARMACEUTICALS INC,2834,Pharmaceutical Preparations
+IP,IP,51434,SEC company_tickers.json (price symbol),INTERNATIONAL PAPER CO /NEW/,2621,Paper Mills
+IPHI,IPHI,1160958,ledger evidence (matched by company name),INPHI Corp,3674,Semiconductors & Related Devices
+IQV,IQV,1478242,SEC company_tickers.json (price symbol),IQVIA HOLDINGS INC.,8731,Services-Commercial Physical & Biological Research
+IR,IR,1699150,SEC company_tickers.json (price symbol),Ingersoll Rand Inc.,3560,General Industrial Machinery & Equipment
+IRBT,IRBT,1159167,ledger evidence (matched by company name),IROBOT CORP,3630,Household Appliances
+IRM,IRM,1020569,SEC company_tickers.json (price symbol),IRON MOUNTAIN INC,6798,Real Estate Investment Trusts
+IRT,IRT,1466085,SEC company_tickers.json (price symbol),"INDEPENDENCE REALTY TRUST, INC.",6798,Real Estate Investment Trusts
+ISMAY,ISMAY,,none found,,,
+ISNPY,ISNPY,,none found,,,
+ISRG,ISRG,1035267,SEC company_tickers.json (price symbol),INTUITIVE SURGICAL INC,3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+ISUZY,ISUZY,,none found,,,
+IT,IT,749251,SEC company_tickers.json (price symbol),GARTNER INC,8741,Services-Management Services
+ITC,ITC,1312470,ledger evidence (matched by company name),ITC Holdings Corp,,
+ITOCY,ITOCY,,none found,,,
+ITW,ITW,49826,SEC company_tickers.json (price symbol),ILLINOIS TOOL WORKS INC,3560,General Industrial Machinery & Equipment
+IVZ,IVZ,914208,SEC company_tickers.json (price symbol),Invesco Ltd.,6282,Investment Advice
+IX,IX,1070304,SEC company_tickers.json (price symbol),ORIX CORP,6159,Miscellaneous Business Credit Institution
+J,J,52988,SEC company_tickers.json (price symbol),JACOBS SOLUTIONS INC.,1600,Heavy Construction Other Than Bldg Const - Contractors
+JAPAY,JAPAY,,none found,,,
+JBAXY,JBAXY,,none found,,,
+JCI,JCI,833444,SEC company_tickers.json (price symbol),Johnson Controls International plc,3585,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip
+JD,JD,1549802,SEC company_tickers.json (price symbol),"JD.com, Inc.",5990,"Retail-Retail Stores, NEC"
+JKHY,JKHY,779152,SEC company_tickers.json (price symbol),JACK HENRY & ASSOCIATES INC,7373,Services-Computer Integrated Systems Design
+JMHLY,JMHLY,,none found,,,
+JNJ,JNJ,200406,SEC company_tickers.json (price symbol),JOHNSON & JOHNSON,2834,Pharmaceutical Preparations
+JNPR,JNPR,1043604,ledger evidence (matched by company name),JUNIPER NETWORKS INC,3576,Computer Communications Equipment
+JPM,JPM,19617,SEC company_tickers.json (price symbol),JPMORGAN CHASE & CO,6021,National Commercial Banks
+JPXGY,JPXGY,,none found,,,
+JRONY,JRONY,,none found,,,
+JSAIY,JSAIY,,none found,,,
+JTKWY,JTKWY,,none found,,,
+JWN,JWN,72333,ledger evidence (matched by company name),NORDSTROM INC,5651,Retail-Family Clothing Stores
+K,K,55067,ledger evidence (matched by company name),KELLANOVA,2040,Grain Mill Products
+KAOOY,KAOOY,,none found,,,
+KBCSY,KBCSY,,none found,,,
+KBGGY,KBGGY,1535759,SEC company_tickers.json (price symbol),Kongsberg Gruppen ASA/ADR,8880,American Depositary Receipts
+KD,KD,1867072,SEC company_tickers.json (price symbol),"Kyndryl Holdings, Inc.",7373,Services-Computer Integrated Systems Design
+KDDIY,KDDIY,,none found,,,
+KDP,DPS KDP,1418135,SEC company_tickers.json (price symbol),Keurig Dr Pepper Inc.,2080,Beverages
+KEX,KEX,56047,SEC company_tickers.json (price symbol),KIRBY CORP,4400,Water Transportation
+KEY,KEY,91576,SEC company_tickers.json (price symbol),KEYCORP /NEW/,6021,National Commercial Banks
+KEYS,KEYS,1601046,SEC company_tickers.json (price symbol),"Keysight Technologies, Inc.",3823,"Industrial Instruments For Measurement, Display, and Control"
+KGFHY,KGFHY,,none found,,,
+KHC,KHC,1637459,SEC company_tickers.json (price symbol),Kraft Heinz Co,2030,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties"
+KHNGY,KHNGY,,none found,,,
+KIM,KIM,879101,SEC company_tickers.json (price symbol),KIMCO REALTY CORP,6798,Real Estate Investment Trusts
+KKPNY,KKPNY,,none found,,,
+KKR,KKR,1404912,SEC company_tickers.json (price symbol),KKR & Co. Inc.,6282,Investment Advice
+KL,KL,1104440,ledger evidence (matched by company name),KIRKLAND LAKE GOLD INC,1040,Gold and Silver Ores
+KLAC,KLAC,319201,SEC company_tickers.json (price symbol),KLA CORP,3827,Optical Instruments & Lenses
+KLXI,KLXI,1617898,ledger evidence (matched by company name),KLX Inc.,3720,Aircraft & Parts
+KMB,KMB,55785,SEC company_tickers.json (price symbol),KIMBERLY CLARK CORP,2670,Converted Paper & Paperboard Prods (No Contaners/Boxes)
+KMI,KMI,1506307,SEC company_tickers.json (price symbol),"KINDER MORGAN, INC.",4922,Natural Gas Transmission
+KMTUY,KMTUY,,none found,,,
+KMX,KMX,1170010,SEC company_tickers.json (price symbol),CARMAX INC,5500,Retail-Auto Dealers & Gasoline Stations
+KN,KN,1587523,SEC company_tickers.json (price symbol),Knowles Corp,3651,Household Audio & Video Equipment
+KNBWY,KNBWY,,none found,,,
+KNRRY,KNRRY,,none found,,,
+KNX,KNX,1492691,SEC company_tickers.json (price symbol),Knight-Swift Transportation Holdings Inc.,4213,Trucking (No Local)
+KNYJY,KNYJY,,none found,,,
+KO,KO,21344,SEC company_tickers.json (price symbol),COCA COLA CO,2080,Beverages
+KPTI,KPTI,1503802,SEC company_tickers.json (price symbol),Karyopharm Therapeutics Inc.,2834,Pharmaceutical Preparations
+KR,KR,56873,SEC company_tickers.json (price symbol),KROGER CO,5411,Retail-Grocery Stores
+KSS,KSS,885639,SEC company_tickers.json (price symbol),KOHLS Corp,5311,Retail-Department Stores
+KTB,KTB,1760965,SEC company_tickers.json (price symbol),"Kontoor Brands, Inc.",2320,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments"
+KUBTY,KUBTY,,none found,,,
+KVUE,KVUE,1944048,SEC company_tickers.json (price symbol),Kenvue Inc.,2844,"Perfumes, Cosmetics & Other Toilet Preparations"
+KWHIY,KWHIY,,none found,,,
+KXIAY,KXIAY,2053383,SEC company_tickers.json (price symbol),Kioxia Holdings Corporation/ADR,,
+KYCCF,KYCCF,,none found,,,
+KYOCY,KYOCY,,none found,,,
+L,L,60086,SEC company_tickers.json (price symbol),LOEWS CORP,6331,"Fire, Marine & Casualty Insurance"
+LAZR,LAZR,1758057,ledger evidence (matched by company name),"Luminar Technologies, Inc./DE",3714,Motor Vehicle Parts & Accessories
+LBRDA,LBRDA,,none found,,,
+LBRDK,LBRDK,1611983,ledger evidence (matched by company name),Liberty Broadband Corp,4841,Cable & Other Pay Television Services
+LDOS,LDOS,1336920,SEC company_tickers.json (price symbol),"Leidos Holdings, Inc.",7373,Services-Computer Integrated Systems Design
+LDP,LDP,1548717,SEC company_tickers.json (price symbol),"Cohen & Steers Ltd Duration Preferred & Income Fund, Inc.",,
+LDSCY,LDSCY,,none found,,,
+LEA,LEA,842162,SEC company_tickers.json (price symbol),LEAR CORP,3714,Motor Vehicle Parts & Accessories
+LEG,LEG,58492,ledger evidence (matched by company name),LEGGETT & PLATT INC,2510,Household Furniture
+LEN,LEN,920760,SEC company_tickers.json (price symbol),LENNAR CORP /NEW/,1520,General Bldg Contractors - Residential Bldgs
+LGF-B,LGF-B,1264383,ledger evidence (matched by company name),LIONS GATE ENTERTAINMENT INC,7812,Services-Motion Picture & Video Tape Production
+LGGNY,LGGNY,,none found,,,
+LGI,LGI,1278211,SEC company_tickers.json (price symbol),LAZARD GLOBAL TOTAL RETURN & INCOME FUND INC,,
+LGRDY,LGRDY,,none found,,,
+LH,LH,920148,SEC company_tickers.json (price symbol),LABCORP HOLDINGS INC.,8071,Services-Medical Laboratories
+LHX,HRS LHX,202058,SEC company_tickers.json (price symbol),"L3HARRIS TECHNOLOGIES, INC. /DE/",3812,"Search, Detection, Navigation, Guidance, Aeronautical Sys"
+LIN,LIN,1707925,SEC company_tickers.json (price symbol),LINDE PLC,2810,Industrial Inorganic Chemicals
+LINE,LINE,1868159,SEC company_tickers.json (price symbol),"Lineage, Inc.",6798,Real Estate Investment Trusts
+LITE,LITE,1633978,SEC company_tickers.json (price symbol),Lumentum Holdings Inc.,3669,"Communications Equipment, NEC"
+LLTC,LLTC,,none found,,,
+LLY,LLY,59478,SEC company_tickers.json (price symbol),ELI LILLY & Co,2834,Pharmaceutical Preparations
+LMACU,LMACU,1831992,ledger evidence (matched by company name),Liberty Media Acquisition Corp,6770,Blank Checks
+LMND,LMND,1691421,SEC company_tickers.json (price symbol),"Lemonade, Inc.",6331,"Fire, Marine & Casualty Insurance"
+LMRK,LMRK,1615346,ledger evidence (matched by company name),Landmark Infrastructure Partners LP,6519,"Lessors of  Real Property, NEC"
+LMST,LMST,1358356,ledger evidence (matched by company name),"LIMESTONE BANCORP, INC.",6021,National Commercial Banks
+LMT,LMT,936468,SEC company_tickers.json (price symbol),LOCKHEED MARTIN CORP,3760,Guided Missiles & Space Vehicles & Parts
+LNC,LNC,59558,SEC company_tickers.json (price symbol),LINCOLN NATIONAL CORP,6311,Life Insurance
+LNG,LNG,3570,SEC company_tickers.json (price symbol),"Cheniere Energy, Inc.",4924,Natural Gas Distribution
+LNT,LNT,352541,SEC company_tickers.json (price symbol),ALLIANT ENERGY CORP,4931,Electric & Other Services Combined
+LOGI,LOGI,1032975,SEC company_tickers.json (price symbol),LOGITECH INTERNATIONAL S.A.,3577,"Computer Peripheral Equipment, NEC"
+LOW,LOW,60667,SEC company_tickers.json (price symbol),LOWES COMPANIES INC,5211,Retail-Lumber & Other Building Materials Dealers
+LPLA,LPLA,1397911,SEC company_tickers.json (price symbol),LPL Financial Holdings Inc.,6200,"Security & Commodity Brokers, Dealers, Exchanges & Services"
+LPX,LPX,60519,SEC company_tickers.json (price symbol),LOUISIANA-PACIFIC CORP,2400,Lumber & Wood Products (No Furniture)
+LQDT,LQDT,1235468,SEC company_tickers.json (price symbol),LIQUIDITY SERVICES INC,7389,"Services-Business Services, NEC"
+LRCX,LRCX,707549,SEC company_tickers.json (price symbol),LAM RESEARCH CORP,3559,"Special Industry Machinery, NEC"
+LRLCY,LRLCY,,none found,,,
+LRN,LRN,1157408,SEC company_tickers.json (price symbol),"Stride, Inc.",8200,Services-Educational Services
+LSCC,LSCC,855658,SEC company_tickers.json (price symbol),LATTICE SEMICONDUCTOR CORP,3674,Semiconductors & Related Devices
+LSEGY,LSEGY,1842726,SEC company_tickers.json (price symbol),London Stock Exchange Group plc,,
+LSRCY,LSRCY,,none found,,,
+LSXMK,LSXMK,,none found,,,
+LTRPA,LTRPA,,none found,,,
+LULU,LULU,1397187,SEC company_tickers.json (price symbol),lululemon athletica inc.,2300,Apparel & Other Finishd Prods of  Fabrics & Similar Matl
+LUMN,CTL,18926,SEC company_tickers.json (price symbol),"Lumen Technologies, Inc.",4813,Telephone Communications (No Radiotelephone)
+LUV,LUV,92380,SEC company_tickers.json (price symbol),SOUTHWEST AIRLINES CO,4512,"Air Transportation, Scheduled"
+LVMUY,LVMUY,,none found,,,
+LVS,LVS,1300514,SEC company_tickers.json (price symbol),LAS VEGAS SANDS CORP,7011,Hotels & Motels
+LW,LW,1679273,SEC company_tickers.json (price symbol),"Lamb Weston Holdings, Inc.",2030,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties"
+LYB,LYB,1489393,SEC company_tickers.json (price symbol),LyondellBasell Industries N.V.,2860,Industrial Organic Chemicals
+LYG,LYG,1160106,SEC company_tickers.json (price symbol),Lloyds Banking Group plc,6029,"Commercial Banks, NEC"
+LYSDY,LYSDY,,none found,,,
+LYV,LYV,1335258,SEC company_tickers.json (price symbol),"Live Nation Entertainment, Inc.",7900,Services-Amusement & Recreation Services
+LZAGY,LZAGY,,none found,,,
+M,M,794367,SEC company_tickers.json (price symbol),"Macy's, Inc.",5311,Retail-Department Stores
+MA,MA,1141391,SEC company_tickers.json (price symbol),Mastercard Inc,7389,"Services-Business Services, NEC"
+MAA,MAA,912595,SEC company_tickers.json (price symbol),MID AMERICA APARTMENT COMMUNITIES INC.,6798,Real Estate Investment Trusts
+MANT,MANT,892537,ledger evidence (matched by company name),MANTECH INTERNATIONAL CORP,8741,Services-Management Services
+MAR,MAR,1048286,SEC company_tickers.json (price symbol),MARRIOTT INTERNATIONAL INC /MD/,7011,Hotels & Motels
+MARUY,MARUY,,none found,,,
+MASI,MASI,937556,ledger evidence (matched by company name),MASIMO CORP,3845,Electromedical & Electrotherapeutic Apparatus
+MAT,MAT,63276,SEC company_tickers.json (price symbol),MATTEL INC /DE/,3942,Dolls & Stuffed Toys
+MAXR,MAXR,1121142,ledger evidence (matched by company name),Maxar Technologies Inc.,3663,Radio & Tv Broadcasting & Communications Equipment
+MBGYY,MBGYY,,none found,,,
+MCD,MCD,63908,SEC company_tickers.json (price symbol),MCDONALDS CORP,5812,Retail-Eating  Places
+MCHP,MCHP,827054,SEC company_tickers.json (price symbol),MICROCHIP TECHNOLOGY INC,3674,Semiconductors & Related Devices
+MCK,MCK,927653,SEC company_tickers.json (price symbol),MCKESSON CORP,5122,"Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+MCO,MCO,1059556,SEC company_tickers.json (price symbol),MOODYS CORP /DE/,7320,"Services-Consumer Credit Reporting, Collection Agencies"
+MDC,MDC,773141,ledger evidence (matched by company name),"SEKISUI HOUSE U.S., INC.",1531,Operative Builders
+MDLZ,MDLZ,1103982,SEC company_tickers.json (price symbol),"Mondelez International, Inc.",2000,Food and Kindred Products
+MDT,MDT,1613103,SEC company_tickers.json (price symbol),Medtronic plc,3845,Electromedical & Electrotherapeutic Apparatus
+MDU,MDU,67716,SEC company_tickers.json (price symbol),MDU RESOURCES GROUP INC,1400,Mining & Quarrying of  Nonmetallic Minerals (No Fuels)
+MET,MET,1099219,SEC company_tickers.json (price symbol),METLIFE INC,6311,Life Insurance
+META,FB META,1326801,SEC company_tickers.json (price symbol),"Meta Platforms, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+MFG,MFG,1335730,SEC company_tickers.json (price symbol),MIZUHO FINANCIAL GROUP INC,6021,National Commercial Banks
+MGA,MGA,749098,SEC company_tickers.json (price symbol),MAGNA INTERNATIONAL INC,3714,Motor Vehicle Parts & Accessories
+MGDDY,MGDDY,,none found,,,
+MGM,MGM,789570,SEC company_tickers.json (price symbol),MGM Resorts International,7011,Hotels & Motels
+MHVIY,MHVIY,,none found,,,
+MIELY,MIELY,,none found,,,
+MITEY,MITEY,,none found,,,
+MITSY,MITSY,,none found,,,
+MKC,MKC,63754,SEC company_tickers.json (price symbol),MCCORMICK & CO INC,2090,Miscellaneous Food Preparations & Kindred Products
+MKSI,MKSI,1049502,SEC company_tickers.json (price symbol),MKS INC,3823,"Industrial Instruments For Measurement, Display, and Control"
+MKTX,MKTX,1278021,SEC company_tickers.json (price symbol),MARKETAXESS HOLDINGS INC,6211,"Security Brokers, Dealers & Flotation Companies"
+MLM,MLM,916076,SEC company_tickers.json (price symbol),MARTIN MARIETTA MATERIALS INC,1400,Mining & Quarrying of  Nonmetallic Minerals (No Fuels)
+MMM,MMM,66740,SEC company_tickers.json (price symbol),3M CO,3841,Surgical & Medical Instruments & Apparatus
+MMP,MMP,1126975,ledger evidence (matched by company name),"Magellan Midstream Partners, L.P.",4610,Pipe Lines (No Natural Gas)
+MNDY,MNDY,1845338,SEC company_tickers.json (price symbol),monday.com Ltd.,7372,Services-Prepackaged Software
+MNST,MNST,865752,SEC company_tickers.json (price symbol),Monster Beverage Corp,2086,Bottled & Canned Soft Drinks & Carbonated Waters
+MO,MO,764180,SEC company_tickers.json (price symbol),"ALTRIA GROUP, INC.",2111,Cigarettes
+MONRY,MONRY,,none found,,,
+MOS,MOS,1285785,SEC company_tickers.json (price symbol),MOSAIC CO,2870,Agricultural Chemicals
+MPC,MPC,1510295,SEC company_tickers.json (price symbol),Marathon Petroleum Corp,2911,Petroleum Refining
+MPLX,MPLX,1552000,SEC company_tickers.json (price symbol),MPLX LP,4610,Pipe Lines (No Natural Gas)
+MPT,MPT MPW,1287865,SEC company_tickers.json (price symbol),MEDICAL PROPERTIES TRUST INC,6798,Real Estate Investment Trusts
+MPWR,MPWR,1280452,SEC company_tickers.json (price symbol),"MONOLITHIC POWER SYSTEMS, INC.",3674,Semiconductors & Related Devices
+MQBKY,MQBKY,,none found,,,
+MRAAY,MRAAY,,none found,,,
+MRK,MRK,310158,SEC company_tickers.json (price symbol),"Merck & Co., Inc.",2834,Pharmaceutical Preparations
+MRO,MRO,101778,ledger evidence (matched by company name),MARATHON OIL CORP,1311,Crude Petroleum & Natural Gas
+MRSH,MMC MRSH,62709,SEC company_tickers.json (price symbol),"MARSH & MCLENNAN COMPANIES, INC.",6411,"Insurance Agents, Brokers & Service"
+MRVL,MRVL,1835632,SEC company_tickers.json (price symbol),"Marvell Technology, Inc.",3674,Semiconductors & Related Devices
+MS,MS,895421,SEC company_tickers.json (price symbol),MORGAN STANLEY,6211,"Security Brokers, Dealers & Flotation Companies"
+MSADY,MSADY,,none found,,,
+MSCI,MSCI,1408198,SEC company_tickers.json (price symbol),MSCI Inc.,7389,"Services-Business Services, NEC"
+MSFT,MSFT,789019,SEC company_tickers.json (price symbol),MICROSOFT CORP,7372,Services-Prepackaged Software
+MSI,MSI,68505,SEC company_tickers.json (price symbol),"Motorola Solutions, Inc.",3663,Radio & Tv Broadcasting & Communications Equipment
+MSLOY,MSLOY,,none found,,,
+MSM,MSM,1003078,SEC company_tickers.json (price symbol),MSC INDUSTRIAL DIRECT CO INC,5084,Wholesale-Industrial Machinery & Equipment
+MT,MT,1243429,SEC company_tickers.json (price symbol),ArcelorMittal,3312,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+MTB,MTB,36270,SEC company_tickers.json (price symbol),M&T BANK CORP,6022,State Commercial Banks
+MTCH,MTCH,891103,SEC company_tickers.json (price symbol),"Match Group, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+MTD,MTD,1037646,SEC company_tickers.json (price symbol),METTLER TOLEDO INTERNATIONAL INC/,3826,Laboratory Analytical Instruments
+MTSFY,MTSFY,,none found,,,
+MTSUY,MTSUY,,none found,,,
+MTZ,MTZ,15615,SEC company_tickers.json (price symbol),MASTEC INC,1623,"Water, Sewer, Pipeline, Comm & Power Line Construction"
+MU,MU,723125,SEC company_tickers.json (price symbol),MICRON TECHNOLOGY INC,3674,Semiconductors & Related Devices
+MURGY,MURGY,,none found,,,
+MXIM,MXIM,743316,ledger evidence (matched by company name),MAXIM INTEGRATED PRODUCTS INC,3674,Semiconductors & Related Devices
+MYL,MYL,69499,ledger evidence (matched by company name),MYLAN INC.,2834,Pharmaceutical Preparations
+NABZY,NABZY,,none found,,,
+NBIS,NBIS,1513845,SEC company_tickers.json (price symbol),Nebius Group N.V.,7370,"Services-Computer Programming, Data Processing, Etc."
+NCBDY,NCBDY,,none found,,,
+NCR,NCR,70866,ledger evidence (matched by company name),NCR Voyix Corp,3578,Calculating & Accounting Machines (No Electronic Computers)
+NDAQ,NDAQ,1120193,SEC company_tickers.json (price symbol),"NASDAQ, INC.",6200,"Security & Commodity Brokers, Dealers, Exchanges & Services"
+NDSN,NDSN,72331,SEC company_tickers.json (price symbol),NORDSON CORP,3569,"General Industrial Machinery & Equipment, NEC"
+NEE,NEE,753308,SEC company_tickers.json (price symbol),NEXTERA ENERGY INC,4911,Electric Services
+NEE-PC,NEE-PC,,none found,,,
+NEM,NEM,1164727,SEC company_tickers.json (price symbol),NEWMONT Corp /DE/,1040,Gold and Silver Ores
+NEXOY,NEXOY,,none found,,,
+NFLX,NFLX,1065280,SEC company_tickers.json (price symbol),NETFLIX INC,7841,Services-Video Tape Rental
+NFX,NFX,912750,ledger evidence (matched by company name),NEWFIELD EXPLORATION CO /DE/,1311,Crude Petroleum & Natural Gas
+NGG,NGG,1004315,SEC company_tickers.json (price symbol),NATIONAL GRID PLC,4922,Natural Gas Transmission
+NGLOY,NGLOY,,none found,,,
+NGLS,NGLS,1379661,ledger evidence (matched by company name),Targa Resources Partners LP,4922,Natural Gas Transmission
+NHYDY,NHYDY,,none found,,,
+NICE,NICE,1003935,SEC company_tickers.json (price symbol),NICE Ltd.,7372,Services-Prepackaged Software
+NID,NID,1557915,ledger evidence (matched by company name),Nuveen Intermediate Duration Municipal Term Fund,,
+NJR,NJR,356309,SEC company_tickers.json (price symbol),NEW JERSEY RESOURCES CORP,4924,Natural Gas Distribution
+NKE,NKE,320187,SEC company_tickers.json (price symbol),"NIKE, Inc.",3021,Rubber & Plastics Footwear
+NKLA,NKLA,1731289,ledger evidence (matched by company name),Nikola Corp,3711,Motor Vehicles & Passenger Car Bodies
+NLY,NLY,1043219,SEC company_tickers.json (price symbol),ANNALY CAPITAL MANAGEMENT INC,6798,Real Estate Investment Trusts
+NMR,NMR,1163653,SEC company_tickers.json (price symbol),NOMURA HOLDINGS INC,6211,"Security Brokers, Dealers & Flotation Companies"
+NNGRY,NNGRY,,none found,,,
+NNVC,NNVC,1379006,SEC company_tickers.json (price symbol),"NANOVIRICIDES, INC.",2834,Pharmaceutical Preparations
+NOC,NOC,1133421,SEC company_tickers.json (price symbol),NORTHROP GRUMMAN CORP /DE/,3812,"Search, Detection, Navigation, Guidance, Aeronautical Sys"
+NOK,NOK,924613,SEC company_tickers.json (price symbol),NOKIA CORP,3663,Radio & Tv Broadcasting & Communications Equipment
+NOW,NOW,1373715,SEC company_tickers.json (price symbol),"ServiceNow, Inc.",7372,Services-Prepackaged Software
+NPK,NPK,80172,SEC company_tickers.json (price symbol),NATIONAL PRESTO INDUSTRIES INC,3480,"Ordnance & Accessories, (No Vehicles/Guided Missiles)"
+NPNYY,NPNYY,,none found,,,
+NPSCY,NPSCY,,none found,,,
+NPSND,NPSND,1106051,ledger evidence (matched by company name),NASPERS LTD,7310,Services-Advertising
+NPSNY,NPSNY,,none found,,,
+NRDBY,NRDBY,,none found,,,
+NRDY,NRDY,1819404,SEC company_tickers.json (price symbol),Nerdy Inc.,8200,Services-Educational Services
+NRG,NRG,1013871,SEC company_tickers.json (price symbol),"NRG ENERGY, INC.",4911,Electric Services
+NRILY,NRILY,,none found,,,
+NS,NS,,none found,,,
+NSC,NSC,702165,SEC company_tickers.json (price symbol),NORFOLK SOUTHERN CORP,4011,"Railroads, Line-Haul Operating"
+NSRGY,NSRGY,,none found,,,
+NTAP,NTAP,1002047,SEC company_tickers.json (price symbol),"NetApp, Inc.",3572,Computer Storage Devices
+NTDOY,NTDOY,,none found,,,
+NTES,NTES,1110646,SEC company_tickers.json (price symbol),"NetEase, Inc.",7372,Services-Prepackaged Software
+NTLA,NTLA,1652130,SEC company_tickers.json (price symbol),"Intellia Therapeutics, Inc.",2835,In Vitro & In Vivo Diagnostic Substances
+NTR,NTR,1725964,SEC company_tickers.json (price symbol),Nutrien Ltd.,2870,Agricultural Chemicals
+NTRA,NTRA,1604821,SEC company_tickers.json (price symbol),"Natera, Inc.",8071,Services-Medical Laboratories
+NTRP,NTRP,1513856,ledger evidence (matched by company name),"Neurotrope, Inc.",2834,Pharmaceutical Preparations
+NTRS,NTRS,73124,SEC company_tickers.json (price symbol),NORTHERN TRUST CORP,6022,State Commercial Banks
+NTTYY,NTTYY,769594,SEC company_tickers.json (price symbol),NIPPON TELEGRAPH & TELEPHONE CORP,4813,Telephone Communications (No Radiotelephone)
+NU,NU,1691493,SEC company_tickers.json (price symbol),Nu Holdings Ltd.,6199,Finance Services
+NUAN,NUAN,1002517,ledger evidence (matched by company name),"Nuance Communications, Inc.",7372,Services-Prepackaged Software
+NUE,NUE,73309,SEC company_tickers.json (price symbol),NUCOR CORP,3312,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+NVAX,NVAX,1000694,SEC company_tickers.json (price symbol),NOVAVAX INC,2836,"Biological Products, (No Diagnostic Substances)"
+NVDA,NVDA,1045810,SEC company_tickers.json (price symbol),NVIDIA CORP,3674,Semiconductors & Related Devices
+NVO,NVO,353278,SEC company_tickers.json (price symbol),NOVO NORDISK A S,2834,Pharmaceutical Preparations
+NVS,NVS,1114448,SEC company_tickers.json (price symbol),NOVARTIS AG,2834,Pharmaceutical Preparations
+NVT,NVT,1720635,SEC company_tickers.json (price symbol),nVent Electric plc,3550,Special Industry Machinery (No Metalworking Machinery)
+NVZMY,NVZMY,,none found,,,
+NWG,NWG,844150,SEC company_tickers.json (price symbol),NatWest Group plc,6029,"Commercial Banks, NEC"
+NWL,NWL,814453,SEC company_tickers.json (price symbol),NEWELL BRANDS INC.,3089,"Plastics Products, NEC"
+NWS,NWS,1564708,SEC company_tickers.json (price symbol),NEWS CORP,2711,Newspapers: Publishing or  Publishing & Printing
+NWSA,NWSA,1564708,SEC company_tickers.json (price symbol),NEWS CORP,2711,Newspapers: Publishing or  Publishing & Printing
+NXPI,NXPI,1413447,SEC company_tickers.json (price symbol),NXP Semiconductors N.V.,3674,Semiconductors & Related Devices
+O,O,726728,SEC company_tickers.json (price symbol),REALTY INCOME CORP,6798,Real Estate Investment Trusts
+OBICY,OBICY,2077146,SEC company_tickers.json (price symbol),"OBIC Co., Ltd./ADR",,
+OC,OC,1370946,SEC company_tickers.json (price symbol),Owens Corning,3290,"Abrasive, Asbestos & Misc Nonmetallic Mineral Prods"
+ODFL,ODFL,878927,SEC company_tickers.json (price symbol),"OLD DOMINION FREIGHT LINE, INC.",4213,Trucking (No Local)
+OGN,OGN,1821825,SEC company_tickers.json (price symbol),Organon & Co.,2834,Pharmaceutical Preparations
+OHI,OHI,888491,SEC company_tickers.json (price symbol),OMEGA HEALTHCARE INVESTORS INC,6798,Real Estate Investment Trusts
+OKE,OKE,1039684,SEC company_tickers.json (price symbol),ONEOK INC /NEW/,4923,Natural Gas Transmisison & Distribution
+OKS,OKS,909281,ledger evidence (matched by company name),ONEOK Partners LP,4922,Natural Gas Transmission
+OKTA,OKTA,1660134,SEC company_tickers.json (price symbol),"Okta, Inc.",7372,Services-Prepackaged Software
+OLCLY,OLCLY,,none found,,,
+OLLI,OLLI,1639300,SEC company_tickers.json (price symbol),"Ollie's Bargain Outlet Holdings, Inc.",5331,Retail-Variety Stores
+OMC,OMC,29989,SEC company_tickers.json (price symbol),OMNICOM GROUP INC.,7311,Services-Advertising Agencies
+ON,ON,1097864,SEC company_tickers.json (price symbol),ON SEMICONDUCTOR CORP,3674,Semiconductors & Related Devices
+ONEW,ONEW,1772921,SEC company_tickers.json (price symbol),OneWater Marine Inc.,5531,Retail-Auto & Home Supply Stores
+ONON,ONON,1858985,SEC company_tickers.json (price symbol),On Holding AG,3021,Rubber & Plastics Footwear
+OPLN,KAR,1395942,SEC company_tickers.json (price symbol),"OPENLANE, Inc.",5500,Retail-Auto Dealers & Gasoline Stations
+ORANY,ORANY,1038143,SEC company_tickers.json (price symbol),ORANGE,4813,Telephone Communications (No Radiotelephone)
+ORCL,ORCL,1341439,SEC company_tickers.json (price symbol),ORACLE CORP,7372,Services-Prepackaged Software
+ORKLY,ORKLY,,none found,,,
+ORLY,ORLY,898173,SEC company_tickers.json (price symbol),O REILLY AUTOMOTIVE INC,5531,Retail-Auto & Home Supply Stores
+OSK,OSK,775158,SEC company_tickers.json (price symbol),OSHKOSH CORP,3711,Motor Vehicles & Passenger Car Bodies
+OTIS,OTIS,1781335,SEC company_tickers.json (price symbol),Otis Worldwide Corp,3600,Electronic & Other Electrical Equipment (No Computer Equip)
+OTSKY,OTSKY,,none found,,,
+OVCHY,OVCHY,,none found,,,
+OXY,OXY,797468,SEC company_tickers.json (price symbol),OCCIDENTAL PETROLEUM CORP /DE/,1311,Crude Petroleum & Natural Gas
+P,PSTG,1474432,SEC company_tickers.json (price symbol),"Everpure, Inc.",3572,Computer Storage Devices
+PAA,PAA,1070423,SEC company_tickers.json (price symbol),PLAINS ALL AMERICAN PIPELINE LP,4610,Pipe Lines (No Natural Gas)
+PAAS,PAAS,771992,SEC company_tickers.json (price symbol),PAN AMERICAN SILVER CORP,1040,Gold and Silver Ores
+PAC,PAC,1347557,SEC company_tickers.json (price symbol),Pacific Airport Group,4581,"Airports, Flying Fields & Airport Terminal Services"
+PAGP,PAGP,1581990,SEC company_tickers.json (price symbol),PLAINS GP HOLDINGS LP,4610,Pipe Lines (No Natural Gas)
+PAGS,PAGS,1712807,SEC company_tickers.json (price symbol),PagSeguro Digital Ltd.,7374,Services-Computer Processing & Data Preparation
+PAM,PAM,1469395,SEC company_tickers.json (price symbol),Pampa Energy Inc.,4911,Electric Services
+PANW,PANW,1327567,SEC company_tickers.json (price symbol),Palo Alto Networks Inc,3577,"Computer Peripheral Equipment, NEC"
+PARA,PARA,813828,ledger evidence (matched by company name),Paramount Global,4833,Television Broadcasting Stations
+PAYC,PAYC,1590955,SEC company_tickers.json (price symbol),"Paycom Software, Inc.",7372,Services-Prepackaged Software
+PAYX,PAYX,723531,SEC company_tickers.json (price symbol),PAYCHEX INC,8700,"Services-Engineering, Accounting, Research, Management"
+PBA,PBA,1546066,SEC company_tickers.json (price symbol),PEMBINA PIPELINE CORP,1382,Oil & Gas Field Exploration Services
+PCAR,PCAR,75362,SEC company_tickers.json (price symbol),PACCAR INC,3711,Motor Vehicles & Passenger Car Bodies
+PCRHY,PCRHY,,none found,,,
+PDM,PDM,1042776,SEC company_tickers.json (price symbol),"Piedmont Realty Trust, Inc.",6512,Opeators of  Nonresidential Buildings
+PDRDY,PDRDY,,none found,,,
+PEBO,PEBO,318300,SEC company_tickers.json (price symbol),PEOPLES BANCORP INC,6022,State Commercial Banks
+PEGA,PEGA,1013857,SEC company_tickers.json (price symbol),PEGASYSTEMS INC,7374,Services-Computer Processing & Data Preparation
+PENN,PENN,921738,SEC company_tickers.json (price symbol),"PENN Entertainment, Inc.",7011,Hotels & Motels
+PEP,PEP,77476,SEC company_tickers.json (price symbol),PEPSICO INC,2080,Beverages
+PFE,PFE,78003,SEC company_tickers.json (price symbol),PFIZER INC,2834,Pharmaceutical Preparations
+PFG,PFG,1126328,SEC company_tickers.json (price symbol),PRINCIPAL FINANCIAL GROUP INC,6321,Accident & Health Insurance
+PFS,PFS,1178970,SEC company_tickers.json (price symbol),PROVIDENT FINANCIAL SERVICES INC,6035,"Savings Institution, Federally Chartered"
+PFX,MCC,1490349,SEC company_tickers.json (price symbol),PhenixFIN Corp,,
+PG,PG,80424,SEC company_tickers.json (price symbol),PROCTER & GAMBLE Co,2840,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+PGEN,XON,1356090,SEC company_tickers.json (price symbol),"PRECIGEN, INC.",2834,Pharmaceutical Preparations
+PGR,PGR,80661,SEC company_tickers.json (price symbol),PROGRESSIVE CORP/OH/,6331,"Fire, Marine & Casualty Insurance"
+PH,PH,76334,SEC company_tickers.json (price symbol),Parker-Hannifin Corp,3490,Miscellaneous Fabricated Metal Products
+PHG,PHG,313216,SEC company_tickers.json (price symbol),KONINKLIJKE PHILIPS NV,3844,X-Ray Apparatus & Tubes & Related Irradiation Apparatus
+PHLD,PHLD,,none found,,,
+PHM,PHM,822416,SEC company_tickers.json (price symbol),PULTEGROUP INC/MI/,1531,Operative Builders
+PII,PII,931015,SEC company_tickers.json (price symbol),Polaris Inc.,3790,Miscellaneous Transportation Equipment
+PINS,PINS,1506293,SEC company_tickers.json (price symbol),"PINTEREST, INC.",7370,"Services-Computer Programming, Data Processing, Etc."
+PKG,PKG,75677,SEC company_tickers.json (price symbol),PACKAGING CORP OF AMERICA,2650,Paperboard Containers & Boxes
+PLD,PLD,1045609,SEC company_tickers.json (price symbol),"Prologis, Inc.",6798,Real Estate Investment Trusts
+PLTR,PLTR,1321655,SEC company_tickers.json (price symbol),Palantir Technologies Inc.,7372,Services-Prepackaged Software
+PLUG,PLUG,1093691,SEC company_tickers.json (price symbol),PLUG POWER INC,3620,Electrical Industrial Apparatus
+PM,PM,1413329,SEC company_tickers.json (price symbol),Philip Morris International Inc.,2111,Cigarettes
+PMI,PMI,2030617,SEC company_tickers.json (price symbol),"Picard Medical, Inc.",3841,Surgical & Medical Instruments & Apparatus
+PNC,PNC,713676,SEC company_tickers.json (price symbol),"PNC FINANCIAL SERVICES GROUP, INC.",6021,National Commercial Banks
+PNDRY,PNDRY,1505880,SEC company_tickers.json (price symbol),Pandora A/S / ADR,8880,American Depositary Receipts
+PNFP,PNFP,2082866,SEC company_tickers.json (price symbol),"Pinnacle Financial Partners, Inc.",6021,National Commercial Banks
+PNR,PNR,77360,SEC company_tickers.json (price symbol),PENTAIR plc,3550,Special Industry Machinery (No Metalworking Machinery)
+PODD,PODD,1145197,SEC company_tickers.json (price symbol),INSULET CORP,3841,Surgical & Medical Instruments & Apparatus
+POOL,POOL,945841,SEC company_tickers.json (price symbol),POOL CORP,5090,Wholesale-Misc Durable Goods
+POT,POT,855931,ledger evidence (matched by company name),POTASH CORP OF SASKATCHEWAN INC,2870,Agricultural Chemicals
+PPG,PPG,79879,SEC company_tickers.json (price symbol),PPG INDUSTRIES INC,2851,"Paints, Varnishes, Lacquers, Enamels & Allied Prods"
+PPL,PPL,922224,SEC company_tickers.json (price symbol),PPL Corp,4911,Electric Services
+PPRUY,PPRUY,,none found,,,
+PRGO,PRGO,1585364,SEC company_tickers.json (price symbol),PERRIGO Co plc,2834,Pharmaceutical Preparations
+PRMB,PRMB,2042694,SEC company_tickers.json (price symbol),Primo Brands Corp,2080,Beverages
+PRNDY,PRNDY,,none found,,,
+PROSY,PROSY,,none found,,,
+PRU,PRU,1137774,SEC company_tickers.json (price symbol),PRUDENTIAL FINANCIAL INC,6311,Life Insurance
+PRYMY,PRYMY,,none found,,,
+PSA,PSA,1393311,SEC company_tickers.json (price symbol),Public Storage,6798,Real Estate Investment Trusts
+PSO,PSO,938323,SEC company_tickers.json (price symbol),PEARSON PLC,2731,Books: Publishing or  Publishing & Printing
+PSX,PSX,1534701,SEC company_tickers.json (price symbol),Phillips 66,2911,Petroleum Refining
+PSXP,PSXP,1572910,ledger evidence (matched by company name),PHILLIPS 66 PARTNERS LP,4610,Pipe Lines (No Natural Gas)
+PTC,PTC,857005,SEC company_tickers.json (price symbol),PTC INC.,7372,Services-Prepackaged Software
+PTON,PTON,1639825,SEC company_tickers.json (price symbol),"PELOTON INTERACTIVE, INC.",3949,"Sporting & Athletic Goods, NEC"
+PUBGY,PUBGY,,none found,,,
+PUK,PUK,1116578,SEC company_tickers.json (price symbol),PRUDENTIAL PLC,6311,Life Insurance
+PWR,PWR,1050915,SEC company_tickers.json (price symbol),"QUANTA SERVICES, INC.",1731,Electrical Work
+PX,PX,884905,ledger evidence (matched by company name),LINDE INC,2810,Industrial Inorganic Chemicals
+PXD,PXD,1038357,ledger evidence (matched by company name),PIONEER NATURAL RESOURCES CO,1311,Crude Petroleum & Natural Gas
+PYPL,PYPL,1633917,SEC company_tickers.json (price symbol),"PayPal Holdings, Inc.",7389,"Services-Business Services, NEC"
+Q,Q,2058873,SEC company_tickers.json (price symbol),"Qnity Electronics, Inc.",3674,Semiconductors & Related Devices
+QABSY,QABSY,,none found,,,
+QBIEY,QBIEY,,none found,,,
+QCOM,QCOM,804328,SEC company_tickers.json (price symbol),QUALCOMM INC/DE,3663,Radio & Tv Broadcasting & Communications Equipment
+QLYS,QLYS,1107843,SEC company_tickers.json (price symbol),"QUALYS, INC.",7372,Services-Prepackaged Software
+QRTEA,QRTEA,1355096,ledger evidence (matched by company name),"Old QVC Group, Inc.",5961,Retail-Catalog & Mail-Order Houses
+QRTEP,QRTEP,1355096,ledger evidence (matched by company name),"Old QVC Group, Inc.",5961,Retail-Catalog & Mail-Order Houses
+QS,QS,1811414,SEC company_tickers.json (price symbol),QuantumScape Corp,3690,"Miscellaneous Electrical Machinery, Equipment & Supplies"
+QSR,QSR,1618756,SEC company_tickers.json (price symbol),Restaurant Brands International Inc.,5812,Retail-Eating  Places
+RACE,RACE,1648416,SEC company_tickers.json (price symbol),Ferrari N.V.,3711,Motor Vehicles & Passenger Car Bodies
+RAI,RAI,1275283,ledger evidence (matched by company name),REYNOLDS AMERICAN INC,2111,Cigarettes
+RAMP,RAMP,733269,SEC company_tickers.json (price symbol),"LiveRamp Holdings, Inc.",7374,Services-Computer Processing & Data Preparation
+RBGLY,RBGLY,1420798,SEC company_tickers.json (price symbol),RECKITT BENCKISER GROUP PLC,,
+RBLX,RBLX,1315098,SEC company_tickers.json (price symbol),Roblox Corp,7372,Services-Prepackaged Software
+RCL,RCL,884887,SEC company_tickers.json (price symbol),ROYAL CARIBBEAN CRUISES LTD,4400,Water Transportation
+RCRUY,RCRUY,,none found,,,
+RDS-B,RDS-B,1306965,ledger evidence (matched by company name),Shell plc,1311,Crude Petroleum & Natural Gas
+REG,REG,910606,SEC company_tickers.json (price symbol),REGENCY CENTERS CORP,6798,Real Estate Investment Trusts
+REGN,REGN,872589,SEC company_tickers.json (price symbol),"REGENERON PHARMACEUTICALS, INC.",2834,Pharmaceutical Preparations
+RELX,RELX,929869,SEC company_tickers.json (price symbol),RELX PLC,7389,"Services-Business Services, NEC"
+REVB,REVB,1810560,SEC company_tickers.json (price symbol),"REVELATION BIOSCIENCES, INC.",2834,Pharmaceutical Preparations
+REZI,REZI,1740332,SEC company_tickers.json (price symbol),"RESIDEO TECHNOLOGIES, INC.",5072,Wholesale-Hardware
+RF,RF,1281761,SEC company_tickers.json (price symbol),REGIONS FINANCIAL CORP,6021,National Commercial Banks
+RGC,RGC,1168696,ledger evidence (matched by company name),REGAL ENTERTAINMENT GROUP,7830,Services-Motion Picture Theaters
+RH,RH,1528849,SEC company_tickers.json (price symbol),RH,5712,Retail-Furniture Stores
+RHHBY,RHHBY,,none found,,,
+RHI,RHI,315213,SEC company_tickers.json (price symbol),ROBERT HALF INC.,7363,Services-Help Supply Services
+RHP,RHP,1040829,SEC company_tickers.json (price symbol),"Ryman Hospitality Properties, Inc.",6798,Real Estate Investment Trusts
+RHT,RHT,1087423,ledger evidence (matched by company name),RED HAT INC,7370,"Services-Computer Programming, Data Processing, Etc."
+RIO,RIO,863064,SEC company_tickers.json (price symbol),RIO TINTO PLC,1000,Metal Mining
+RL,RL,1037038,SEC company_tickers.json (price symbol),RALPH LAUREN CORP,2320,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments"
+RMBS,RMBS,917273,SEC company_tickers.json (price symbol),RAMBUS INC,3674,Semiconductors & Related Devices
+RMD,RMD,943819,SEC company_tickers.json (price symbol),RESMED INC,3841,Surgical & Medical Instruments & Apparatus
+RNECY,RNECY,,none found,,,
+RNLSY,RNLSY,,none found,,,
+RNMBY,RNMBY,,none found,,,
+RNR,RNR,913144,SEC company_tickers.json (price symbol),RENAISSANCERE HOLDINGS LTD,6331,"Fire, Marine & Casualty Insurance"
+RNWK,RNWK,1046327,ledger evidence (matched by company name),REALNETWORKS INC,7371,Services-Computer Programming Services
+ROAD,ROAD,1718227,SEC company_tickers.json (price symbol),"Construction Partners, Inc.",1600,Heavy Construction Other Than Bldg Const - Contractors
+ROK,ROK,1024478,SEC company_tickers.json (price symbol),"ROCKWELL AUTOMATION, INC",3829,"Measuring & Controlling Devices, NEC"
+ROKU,ROKU,1428439,SEC company_tickers.json (price symbol),"ROKU, INC",4841,Cable & Other Pay Television Services
+ROP,ROP,882835,SEC company_tickers.json (price symbol),ROPER TECHNOLOGIES INC,3823,"Industrial Instruments For Measurement, Display, and Control"
+ROST,ROST,745732,SEC company_tickers.json (price symbol),"ROSS STORES, INC.",5651,Retail-Family Clothing Stores
+RPM,RPM,110621,SEC company_tickers.json (price symbol),RPM INTERNATIONAL INC/DE/,2851,"Paints, Varnishes, Lacquers, Enamels & Allied Prods"
+RRC,RRC,315852,SEC company_tickers.json (price symbol),RANGE RESOURCES CORP,1311,Crude Petroleum & Natural Gas
+RSG,RSG,1060391,SEC company_tickers.json (price symbol),"REPUBLIC SERVICES, INC.",4953,Refuse Systems
+RSHGY,RSHGY,1447391,SEC company_tickers.json (price symbol),RESONA HOLDINGS INC,,
+RSPP,RSPP,1588216,ledger evidence (matched by company name),"RSP Permian, Inc.",1311,Crude Petroleum & Natural Gas
+RTN,RTN,82267,ledger evidence (matched by company name),RAYTHEON CO,3812,"Search, Detection, Navigation, Guidance, Aeronautical Sys"
+RTO,RTO,930157,SEC company_tickers.json (price symbol),RENTOKIL INITIAL PLC /FI,8741,Services-Management Services
+RTX,RTX UTX,101829,SEC company_tickers.json (price symbol),RTX Corp,3724,Aircraft Engines & Engine Parts
+RUM,RUM,1830081,SEC company_tickers.json (price symbol),RUM Group Inc.,7370,"Services-Computer Programming, Data Processing, Etc."
+RVNC,RVNC,1388649,ledger evidence (matched by company name),Revance Therapeutics Inc,,
+RVTY,PKI,31791,SEC company_tickers.json (price symbol),"REVVITY, INC.",3826,Laboratory Analytical Instruments
+RYAAY,RYAAY,1038683,SEC company_tickers.json (price symbol),RYANAIR HOLDINGS PLC,4512,"Air Transportation, Scheduled"
+RYCEY,RYCEY,,none found,,,
+S,S,1583708,SEC company_tickers.json (price symbol),"SentinelOne, Inc.",7372,Services-Prepackaged Software
+SAABY,SAABY,,none found,,,
+SABR,SABR,1597033,SEC company_tickers.json (price symbol),Sabre Corp,7370,"Services-Computer Programming, Data Processing, Etc."
+SAFRY,SAFRY,,none found,,,
+SAN,SAN,891478,SEC company_tickers.json (price symbol),"Banco Santander, S.A.",6029,"Commercial Banks, NEC"
+SAND,SAND,1434614,ledger evidence (matched by company name),SANDSTORM GOLD LTD,1040,Gold and Silver Ores
+SAP,SAP,1000184,SEC company_tickers.json (price symbol),SAP SE,7372,Services-Prepackaged Software
+SAXPY,SAXPY,,none found,,,
+SBGSY,SBGSY,,none found,,,
+SBLK,SBLK,1386716,SEC company_tickers.json (price symbol),Star Bulk Carriers Corp.,4412,Deep Sea Foreign Transportation of  Freight
+SBNY,SBNY,,none found,,,
+SBUX,SBUX,829224,SEC company_tickers.json (price symbol),STARBUCKS CORP,5810,Retail-Eating & Drinking Places
+SCBFY,SCBFY,,none found,,,
+SCCO,SCCO,1001838,SEC company_tickers.json (price symbol),SOUTHERN COPPER CORP/,1000,Metal Mining
+SCG,SCG,754737,ledger evidence (matched by company name),SCANA CORP,4931,Electric & Other Services Combined
+SCGLY,SCGLY,,none found,,,
+SCHW,SCHW,316709,SEC company_tickers.json (price symbol),SCHWAB CHARLES CORP,6211,"Security Brokers, Dealers & Flotation Companies"
+SCI,SCI,89089,SEC company_tickers.json (price symbol),SERVICE CORP INTERNATIONAL,7200,Services-Personal Services
+SCMWY,SCMWY,1069336,SEC company_tickers.json (price symbol),SWISSCOM AG,4813,Telephone Communications (No Radiotelephone)
+SDVKY,SDVKY,,none found,,,
+SDXAY,SDXAY,,none found,,,
+SDZNY,SDZNY,,none found,,,
+SE,SE,1703399,SEC company_tickers.json (price symbol),Sea Ltd,7380,Services-Miscellaneous Business Services
+SEIC,SEIC,350894,SEC company_tickers.json (price symbol),SEI INVESTMENTS CO,6211,"Security Brokers, Dealers & Flotation Companies"
+SEOAY,SEOAY,,none found,,,
+SFGYY,SFGYY,2084022,SEC company_tickers.json (price symbol),Sony Financial Group Inc./ADR,,
+SFM,SFM,1575515,SEC company_tickers.json (price symbol),"Sprouts Farmers Market, Inc.",5411,Retail-Grocery Stores
+SFTBY,SFTBY,,none found,,,
+SGAPY,SGAPY,,none found,,,
+SGIOY,SGIOY,,none found,,,
+SGPYY,SGPYY,,none found,,,
+SGSOY,SGSOY,,none found,,,
+SHECY,SHECY,,none found,,,
+SHEL,RDS-A RDSA SHEL,1306965,SEC company_tickers.json (price symbol),Shell plc,1311,Crude Petroleum & Natural Gas
+SHLX,SHLX,1610466,ledger evidence (matched by company name),"Shell Midstream Partners, L.P.",4610,Pipe Lines (No Natural Gas)
+SHOP,SHOP,1594805,SEC company_tickers.json (price symbol),SHOPIFY INC.,7372,Services-Prepackaged Software
+SHPG,SHPG,936402,ledger evidence (matched by company name),Shire plc,2834,Pharmaceutical Preparations
+SHW,SHW,89800,SEC company_tickers.json (price symbol),SHERWIN WILLIAMS CO,5200,"Retail-Building Materials, Hardware, Garden Supply"
+SI,SI,1312109,ledger evidence (matched by company name),Silvergate Capital Corp,6022,State Commercial Banks
+SIEGY,SIEGY,,none found,,,
+SINGY,SINGY,,none found,,,
+SIRI,SIRI,908937,SEC company_tickers.json (price symbol),SIRIUS XM HOLDINGS INC.,4832,Radio Broadcasting Stations
+SIVB,SIVB,719739,ledger evidence (matched by company name),SVB FINANCIAL GROUP,6022,State Commercial Banks
+SJM,SJM,91419,SEC company_tickers.json (price symbol),J M SMUCKER Co,2033,"Canned, Fruits, Veg, Preserves, Jams & Jellies"
+SKBSY,SKBSY,,none found,,,
+SKHHY,SKHHY,,none found,,,
+SKHSY,SKHSY,,none found,,,
+SKY,SKY,90896,SEC company_tickers.json (price symbol),"Champion Homes, Inc.",2451,Mobile Homes
+SLB,SLB,87347,SEC company_tickers.json (price symbol),SLB LIMITED/NV,1389,"Oil & Gas Field Services, NEC"
+SLF,SLF,1097362,SEC company_tickers.json (price symbol),SUN LIFE FINANCIAL INC,6311,Life Insurance
+SMCAY,SMCAY,,none found,,,
+SMCI,SMCI,1375365,SEC company_tickers.json (price symbol),"Super Micro Computer, Inc.",3571,Electronic Computers
+SMECF,SMECF,,none found,,,
+SMERY,SMERY,1830056,SEC company_tickers.json (price symbol),Siemens Energy AG/ADR,,
+SMFG,SMFG,1022837,SEC company_tickers.json (price symbol),"SUMITOMO MITSUI FINANCIAL GROUP, INC.",6029,"Commercial Banks, NEC"
+SMG,SMG,825542,SEC company_tickers.json (price symbol),SCOTTS MIRACLE-GRO CO,2870,Agricultural Chemicals
+SMGZY,SMGZY,,none found,,,
+SMMYY,SMMYY,,none found,,,
+SMNNY,SMNNY,,none found,,,
+SMPNY,SMPNY,,none found,,,
+SMTOY,SMTOY,95227,SEC company_tickers.json (price symbol),SUMITOMO ELECTRIC INDUSTRIES LTD/ADR/,8880,American Depositary Receipts
+SNA,SNA,91440,SEC company_tickers.json (price symbol),Snap-on Inc,3420,"Cutlery, Handtools & General Hardware"
+SNAP,SNAP,1564408,SEC company_tickers.json (price symbol),Snap Inc,7370,"Services-Computer Programming, Data Processing, Etc."
+SNDK,SNDK,2023554,SEC company_tickers.json (price symbol),Sandisk Corp,3572,Computer Storage Devices
+SNDR,SNDR,1692063,SEC company_tickers.json (price symbol),"Schneider National, Inc.",4213,Trucking (No Local)
+SNN,SNN,845982,SEC company_tickers.json (price symbol),SMITH & NEPHEW PLC,3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+SNOW,SNOW,1640147,SEC company_tickers.json (price symbol),Snowflake Inc.,7372,Services-Prepackaged Software
+SNPS,SNPS,883241,SEC company_tickers.json (price symbol),SYNOPSYS INC,7372,Services-Prepackaged Software
+SNY,SNY,1121404,SEC company_tickers.json (price symbol),Sanofi,2834,Pharmaceutical Preparations
+SO,SO,92122,SEC company_tickers.json (price symbol),SOUTHERN CO,4911,Electric Services
+SOBKY,SOBKY,,none found,,,
+SOFI,SOFI,1818874,SEC company_tickers.json (price symbol),"SoFi Technologies, Inc.",6199,Finance Services
+SOLS,SOLS,2064953,SEC company_tickers.json (price symbol),Solstice Advanced Materials Inc.,2800,Chemicals & Allied Products
+SOLV,SOLV,1964738,SEC company_tickers.json (price symbol),Solventum Corp,3841,Surgical & Medical Instruments & Apparatus
+SOMLY,SOMLY,,none found,,,
+SONVY,SONVY,,none found,,,
+SONY,SONY,313838,SEC company_tickers.json (price symbol),Sony Group Corp,3651,Household Audio & Video Equipment
+SOUHY,SOUHY,,none found,,,
+SPG,SPG,1063761,SEC company_tickers.json (price symbol),SIMON PROPERTY GROUP INC.,6798,Real Estate Investment Trusts
+SPGI,SPGI,64040,SEC company_tickers.json (price symbol),S&P Global Inc.,7320,"Services-Consumer Credit Reporting, Collection Agencies"
+SPOT,SPOT,1639920,SEC company_tickers.json (price symbol),Spotify Technology S.A.,4832,Radio Broadcasting Stations
+SPXCY,SPXCY,,none found,,,
+SPYM,SPYM,,none found,,,
+SQM,SQM,909037,SEC company_tickers.json (price symbol),CHEMICAL & MINING CO OF CHILE INC,1400,Mining & Quarrying of  Nonmetallic Minerals (No Fuels)
+SRCL,SRCL,861878,ledger evidence (matched by company name),STERICYCLE INC,4955,Hazardous Waste Management
+SRE,SRE,1032208,SEC company_tickers.json (price symbol),SEMPRA,4932,Gas & Other Services Combined
+SSBK,SSBK,1689731,ledger evidence (matched by company name),"Southern States Bancshares, Inc.",6022,State Commercial Banks
+SSD,SSD,920371,SEC company_tickers.json (price symbol),"Simpson Manufacturing Co., Inc.",3420,"Cutlery, Handtools & General Hardware"
+SSDOY,SSDOY,,none found,,,
+SSMXY,SSMXY,,none found,,,
+SSREY,SSREY,,none found,,,
+SSYS,SSYS,1517396,SEC company_tickers.json (price symbol),STRATASYS LTD.,3577,"Computer Peripheral Equipment, NEC"
+ST,ST,1477294,SEC company_tickers.json (price symbol),Sensata Technologies Holding plc,3823,"Industrial Instruments For Measurement, Display, and Control"
+STAG,STAG,1479094,SEC company_tickers.json (price symbol),"STAG Industrial, Inc.",6798,Real Estate Investment Trusts
+STEW,BIF,102426,SEC company_tickers.json (price symbol),"SRH Total Return Fund, Inc.",,
+STI,STI,750556,ledger evidence (matched by company name),SUNTRUST BANKS INC,6021,National Commercial Banks
+STLA,STLA,1605484,SEC company_tickers.json (price symbol),Stellantis N.V.,3711,Motor Vehicles & Passenger Car Bodies
+STLD,STLD,1022671,SEC company_tickers.json (price symbol),STEEL DYNAMICS INC,3312,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+STM,STM,932787,SEC company_tickers.json (price symbol),STMicroelectronics N.V.,3674,Semiconductors & Related Devices
+STT,STT,93751,SEC company_tickers.json (price symbol),STATE STREET CORP,6022,State Commercial Banks
+STX,STX,1137789,SEC company_tickers.json (price symbol),Seagate Technology Holdings plc,3572,Computer Storage Devices
+STZ,STZ,16918,SEC company_tickers.json (price symbol),"CONSTELLATION BRANDS, INC.",2080,Beverages
+SU,SU,311337,SEC company_tickers.json (price symbol),SUNCOR ENERGY INC,2911,Petroleum Refining
+SUHJY,SUHJY,,none found,,,
+SUN,SUN,1552275,SEC company_tickers.json (price symbol),Sunoco LP,2911,Petroleum Refining
+SUTNY,SUTNY,,none found,,,
+SVNDY,SVNDY,,none found,,,
+SVNLY,SVNLY,,none found,,,
+SWDBY,SWDBY,,none found,,,
+SWGAY,SWGAY,,none found,,,
+SWK,SWK,93556,SEC company_tickers.json (price symbol),"STANLEY BLACK & DECKER, INC.",3420,"Cutlery, Handtools & General Hardware"
+SWKS,SWKS,4127,SEC company_tickers.json (price symbol),"SKYWORKS SOLUTIONS, INC.",3674,Semiconductors & Related Devices
+SWN,SWN,7332,ledger evidence (matched by company name),SOUTHWESTERN ENERGY CO,1311,Crude Petroleum & Natural Gas
+SWRAY,SWRAY,,none found,,,
+SYF,SYF,1601712,SEC company_tickers.json (price symbol),Synchrony Financial,6199,Finance Services
+SYIEY,SYIEY,,none found,,,
+SYK,SYK,310764,SEC company_tickers.json (price symbol),STRYKER CORP,3841,Surgical & Medical Instruments & Apparatus
+SYY,SYY,96021,SEC company_tickers.json (price symbol),SYSCO CORP,5140,Wholesale-Groceries & Related Products
+SZKMY,SZKMY,,none found,,,
+T,T,732717,SEC company_tickers.json (price symbol),AT&T INC.,4813,Telephone Communications (No Radiotelephone)
+TACO,TACO,1585583,ledger evidence (matched by company name),"Del Taco Restaurants, Inc.",5812,Retail-Eating  Places
+TAK,TAK,1395064,SEC company_tickers.json (price symbol),TAKEDA PHARMACEUTICAL CO LTD,2834,Pharmaceutical Preparations
+TAP,TAP,24545,SEC company_tickers.json (price symbol),MOLSON COORS BEVERAGE CO,2082,Malt Beverages
+TCEHY,TCEHY,,none found,,,
+TCMD,TCMD,1027838,SEC company_tickers.json (price symbol),TACTILE SYSTEMS TECHNOLOGY INC,3841,Surgical & Medical Instruments & Apparatus
+TCP,TCP,1075607,ledger evidence (matched by company name),TC PIPELINES LP,4922,Natural Gas Transmission
+TCRT,ZIOP,1107421,SEC company_tickers.json (price symbol),"Alaunos Therapeutics, Inc.",2834,Pharmaceutical Preparations
+TCS,TCS,1411688,ledger evidence (matched by company name),"Container Store Group, Inc.",5700,"Retail-Home Furniture, Furnishings & Equipment Stores"
+TD,TD,947263,SEC company_tickers.json (price symbol),TORONTO DOMINION BANK,6029,"Commercial Banks, NEC"
+TDG,TDG,1260221,SEC company_tickers.json (price symbol),TransDigm Group INC,3728,"Aircraft Parts & Auxiliary Equipment, NEC"
+TDY,TDY,1094285,SEC company_tickers.json (price symbol),TELEDYNE TECHNOLOGIES INC,3812,"Search, Detection, Navigation, Guidance, Aeronautical Sys"
+TEL,TEL,1385157,SEC company_tickers.json (price symbol),TE Connectivity plc,5065,"Wholesale-Electronic Parts & Equipment, NEC"
+TELFY,TELFY,814052,SEC company_tickers.json (price symbol),TELEFONICA S A,4813,Telephone Communications (No Radiotelephone)
+TELNY,TELNY,1126113,SEC company_tickers.json (price symbol),TELENOR ASA,4813,Telephone Communications (No Radiotelephone)
+TER,TER,97210,SEC company_tickers.json (price symbol),"TERADYNE, INC",3825,Instruments For Meas & Testing of  Electricity & Elec Signals
+TEVA,TEVA,818686,SEC company_tickers.json (price symbol),TEVA PHARMACEUTICAL INDUSTRIES LTD,2834,Pharmaceutical Preparations
+TEX,TEX,97216,SEC company_tickers.json (price symbol),TEREX CORP,3537,"Industrial Trucks, Tractors, Trailors & Stackers"
+TFC,TFC,92230,SEC company_tickers.json (price symbol),TRUIST FINANCIAL CORP,6021,National Commercial Banks
+TGOPY,TGOPY,,none found,,,
+TGT,TGT,27419,SEC company_tickers.json (price symbol),TARGET CORP,5331,Retail-Variety Stores
+THLLY,THLLY,,none found,,,
+TIIAY,TIIAY,,none found,,,
+TJX,TJX,109198,SEC company_tickers.json (price symbol),TJX COMPANIES INC /DE/,5651,Retail-Family Clothing Stores
+TKOMY,TKOMY,1169486,SEC company_tickers.json (price symbol),"TOKIO MARINE HOLDINGS, INC.",6331,"Fire, Marine & Casualty Insurance"
+TLGPY,TLGPY,,none found,,,
+TLLP,TLLP,1507615,ledger evidence (matched by company name),ANDEAVOR LOGISTICS LP,4610,Pipe Lines (No Natural Gas)
+TLSNY,TLSNY,,none found,,,
+TM,TM,1094517,SEC company_tickers.json (price symbol),TOYOTA MOTOR CORP/,3711,Motor Vehicles & Passenger Car Bodies
+TMO,TMO,97745,SEC company_tickers.json (price symbol),THERMO FISHER SCIENTIFIC INC.,3829,"Measuring & Controlling Devices, NEC"
+TMUS,TMUS,1283699,SEC company_tickers.json (price symbol),"T-Mobile US, Inc.",4812,Radiotelephone Communications
+TOELY,TOELY,1443276,ledger evidence (matched by company name),Tokyo Electron LTD,,
+TOT,TOT,,none found,,,
+TPR,TPR,1116132,SEC company_tickers.json (price symbol),"TAPESTRY, INC.",3100,Leather & Leather Products
+TREX,TREX,1069878,SEC company_tickers.json (price symbol),TREX CO INC,2400,Lumber & Wood Products (No Furniture)
+TRGP,TRGP,1389170,SEC company_tickers.json (price symbol),Targa Resources Corp.,4922,Natural Gas Transmission
+TRIP,TRIP,1526520,SEC company_tickers.json (price symbol),"TripAdvisor, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+TRIT,TRIT,1819876,ledger evidence (matched by company name),"Triterras, Inc.",7374,Services-Computer Processing & Data Preparation
+TROW,TROW,1113169,SEC company_tickers.json (price symbol),PRICE T ROWE GROUP INC,6282,Investment Advice
+TRP,TRP,1232384,SEC company_tickers.json (price symbol),TC ENERGY CORP,4922,Natural Gas Transmission
+TRUMY,TRUMY,,none found,,,
+TRV,TRV,86312,SEC company_tickers.json (price symbol),"TRAVELERS COMPANIES, INC.",6331,"Fire, Marine & Casualty Insurance"
+TRYIY,TRYIY,,none found,,,
+TSCDY,TSCDY,,none found,,,
+TSCO,TSCO,916365,SEC company_tickers.json (price symbol),TRACTOR SUPPLY CO /DE/,5200,"Retail-Building Materials, Hardware, Garden Supply"
+TSLA,TSLA,1318605,SEC company_tickers.json (price symbol),"Tesla, Inc.",3711,Motor Vehicles & Passenger Car Bodies
+TSM,TSM,1046179,SEC company_tickers.json (price symbol),TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,3674,Semiconductors & Related Devices
+TSN,TSN,100493,SEC company_tickers.json (price symbol),"TYSON FOODS, INC.",2015,Poultry Slaughtering and Processing
+TT,TT,1466258,SEC company_tickers.json (price symbol),Trane Technologies plc,3822,Auto Controls For Regulating Residential & Comml Environments
+TTD,TTD,1671933,SEC company_tickers.json (price symbol),"Trade Desk, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+TTDKY,TTDKY,,none found,,,
+TTE,TTE,879764,SEC company_tickers.json (price symbol),TotalEnergies SE,1311,Crude Petroleum & Natural Gas
+TTNDY,TTNDY,,none found,,,
+TTWO,TTWO,946581,SEC company_tickers.json (price symbol),TAKE TWO INTERACTIVE SOFTWARE INC,7372,Services-Prepackaged Software
+TU,TU,868675,SEC company_tickers.json (price symbol),TELUS CORP,4812,Radiotelephone Communications
+TUP,TUP,1008654,ledger evidence (matched by company name),TUPPERWARE BRANDS CORP,3089,"Plastics Products, NEC"
+TWO,TWO,1465740,ledger evidence (matched by company name),TWO HARBORS INVESTMENT CORP.,6798,Real Estate Investment Trusts
+TWTR,TWTR,1418091,ledger evidence (matched by company name),"TWITTER, INC.",7370,"Services-Computer Programming, Data Processing, Etc."
+TWX,TWX,736157,ledger evidence (matched by company name),TIME WARNER COMPANIES INC,7812,Services-Motion Picture & Video Tape Production
+TXN,TXN,97476,SEC company_tickers.json (price symbol),TEXAS INSTRUMENTS INC,3674,Semiconductors & Related Devices
+TXT,TXT,217346,SEC company_tickers.json (price symbol),TEXTRON INC,3720,Aircraft & Parts
+UA,UA UA-C,1336917,SEC company_tickers.json (price symbol),"Under Armour, Inc.",2300,Apparel & Other Finishd Prods of  Fabrics & Similar Matl
+UAA,UAA,1336917,SEC company_tickers.json (price symbol),"Under Armour, Inc.",2300,Apparel & Other Finishd Prods of  Fabrics & Similar Matl
+UBER,UBER,1543151,SEC company_tickers.json (price symbol),"Uber Technologies, Inc",7389,"Services-Business Services, NEC"
+UBS,UBS,1610520,SEC company_tickers.json (price symbol),UBS Group AG,6021,National Commercial Banks
+UBSI,UBSI,729986,SEC company_tickers.json (price symbol),UNITED BANKSHARES INC/WV,6022,State Commercial Banks
+UCBJY,UCBJY,,none found,,,
+UDR,UDR,74208,SEC company_tickers.json (price symbol),"UDR, Inc.",6798,Real Estate Investment Trusts
+UHAL,UHAL,4457,SEC company_tickers.json (price symbol),U-Haul Holding Co /NV/,7510,Services-Auto Rental & Leasing (No Drivers)
+UHS,UHS,352915,SEC company_tickers.json (price symbol),UNIVERSAL HEALTH SERVICES INC,8062,"Services-General Medical & Surgical Hospitals, NEC"
+UI,UI,1511737,SEC company_tickers.json (price symbol),Ubiquiti Inc.,3663,Radio & Tv Broadcasting & Communications Equipment
+UL,UL,217410,SEC company_tickers.json (price symbol),UNILEVER PLC,2840,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+ULTA,ULTA,1403568,SEC company_tickers.json (price symbol),"Ulta Beauty, Inc.",5990,"Retail-Retail Stores, NEC"
+UN,UN,,none found,,,
+UNCRY,UNCRY,,none found,,,
+UNFI,UNFI,1020859,SEC company_tickers.json (price symbol),UNITED NATURAL FOODS INC,5141,"Wholesale-Groceries, General Line"
+UNH,UNH,731766,SEC company_tickers.json (price symbol),UNITEDHEALTH GROUP INC,6324,Hospital & Medical Service Plans
+UNICY,UNICY,,none found,,,
+UNP,UNP,100885,SEC company_tickers.json (price symbol),UNION PACIFIC CORP,4011,"Railroads, Line-Haul Operating"
+UNVGY,UNVGY,1890126,SEC company_tickers.json (price symbol),Universal Music Group N.V./ADR,,
+UOVEY,UOVEY,,none found,,,
+UPMMY,UPMMY,,none found,,,
+UPS,UPS,1090727,SEC company_tickers.json (price symbol),UNITED PARCEL SERVICE INC,4210,Trucking & Courier Services (No Air)
+URBN,URBN,912615,SEC company_tickers.json (price symbol),URBAN OUTFITTERS INC,5651,Retail-Family Clothing Stores
+URI,URI,1067701,SEC company_tickers.json (price symbol),"UNITED RENTALS, INC.",7359,"Services-Equipment Rental & Leasing, NEC"
+USB,USB,36104,SEC company_tickers.json (price symbol),US BANCORP \DE\,6021,National Commercial Banks
+USG,USG,757011,ledger evidence (matched by company name),USG CORP,3270,"Concrete, Gypsum & Plaster Products"
+V,V,1403161,SEC company_tickers.json (price symbol),VISA INC.,7389,"Services-Business Services, NEC"
+VAC,VAC,1524358,SEC company_tickers.json (price symbol),MARRIOTT VACATIONS WORLDWIDE Corp,6531,Real Estate Agents & Managers (For Others)
+VACNY,VACNY,,none found,,,
+VAXX,VAXX,,none found,,,
+VCISY,VCISY,,none found,,,
+VCTR,VCTR,1570827,SEC company_tickers.json (price symbol),"Victory Capital Holdings, Inc.",6282,Investment Advice
+VEEV,VEEV,1393052,SEC company_tickers.json (price symbol),VEEVA SYSTEMS INC,7372,Services-Prepackaged Software
+VFC,VFC,103379,SEC company_tickers.json (price symbol),V F CORP,2320,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments"
+VGR,VGR,59440,ledger evidence (matched by company name),VECTOR GROUP LTD,2111,Cigarettes
+VIAB,VIAB,813828,ledger evidence (matched by company name),Paramount Global,4833,Television Broadcasting Stations
+VIAC,VIAC,813828,ledger evidence (matched by company name),Paramount Global,4833,Television Broadcasting Stations
+VIAV,VIAV,912093,SEC company_tickers.json (price symbol),VIAVI SOLUTIONS INC.,3674,Semiconductors & Related Devices
+VICI,VICI,1705696,SEC company_tickers.json (price symbol),VICI PROPERTIES INC.,6798,Real Estate Investment Trusts
+VLO,VLO,1035002,SEC company_tickers.json (price symbol),VALERO ENERGY CORP/TX,2911,Petroleum Refining
+VLP,VLP,1583103,ledger evidence (matched by company name),VALERO ENERGY PARTNERS LP,4610,Pipe Lines (No Natural Gas)
+VLTO,VLTO,1967680,SEC company_tickers.json (price symbol),Veralto Corp,3825,Instruments For Meas & Testing of  Electricity & Elec Signals
+VLVLY,VLVLY,,none found,,,
+VMC,VMC,1396009,SEC company_tickers.json (price symbol),Vulcan Materials CO,1400,Mining & Quarrying of  Nonmetallic Minerals (No Fuels)
+VMW,VMW,1124610,ledger evidence (matched by company name),VMWARE LLC,7372,Services-Prepackaged Software
+VOD,VOD,839923,SEC company_tickers.json (price symbol),VODAFONE GROUP PUBLIC LTD CO,4812,Radiotelephone Communications
+VONOY,VONOY,,none found,,,
+VRM,VRM,1580864,SEC company_tickers.json (price symbol),"Vroom, Inc.",5500,Retail-Auto Dealers & Gasoline Stations
+VRSK,VRSK,1442145,SEC company_tickers.json (price symbol),"Verisk Analytics, Inc.",7374,Services-Computer Processing & Data Preparation
+VRSN,VRSN,1014473,SEC company_tickers.json (price symbol),VERISIGN INC/CA,7371,Services-Computer Programming Services
+VRT,VRT,1674101,SEC company_tickers.json (price symbol),Vertiv Holdings Co,3679,"Electronic Components, NEC"
+VRTX,VRTX,875320,SEC company_tickers.json (price symbol),VERTEX PHARMACEUTICALS INC / MA,2834,Pharmaceutical Preparations
+VSAT,VSAT,797721,SEC company_tickers.json (price symbol),VIASAT INC,4899,"Communications Services, NEC"
+VSEC,VSEC,102752,SEC company_tickers.json (price symbol),VSE CORP,8711,Services-Engineering Services
+VSH,VSH,103730,SEC company_tickers.json (price symbol),VISHAY INTERTECHNOLOGY INC,3670,Electronic Components & Accessories
+VSM,VSM,1660690,ledger evidence (matched by company name),"Versum Materials, Inc.",2890,Miscellaneous Chemical Products
+VTKLY,VTKLY,,none found,,,
+VTR,VTR,740260,SEC company_tickers.json (price symbol),"Ventas, Inc.",6798,Real Estate Investment Trusts
+VTRS,VTRS,1792044,SEC company_tickers.json (price symbol),Viatris Inc,2834,Pharmaceutical Preparations
+VWAPY,VWAPY,,none found,,,
+VWDRY,VWDRY,,none found,,,
+VZ,VZ,732712,SEC company_tickers.json (price symbol),VERIZON COMMUNICATIONS INC,4813,Telephone Communications (No Radiotelephone)
+W,W,1616707,SEC company_tickers.json (price symbol),Wayfair Inc.,5961,Retail-Catalog & Mail-Order Houses
+WAB,WAB,943452,SEC company_tickers.json (price symbol),WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP,3743,Railroad Equipment
+WAL,WAL,1212545,SEC company_tickers.json (price symbol),WESTERN ALLIANCE BANCORPORATION,6022,State Commercial Banks
+WAT,WAT,1000697,SEC company_tickers.json (price symbol),WATERS CORP /DE/,3826,Laboratory Analytical Instruments
+WBA,WBA,1618921,ledger evidence (matched by company name),"Walgreens Boots Alliance, Inc.",5912,Retail-Drug Stores and Proprietary Stores
+WBD,DISCA WBD,1437107,SEC company_tickers.json (price symbol),"Warner Bros. Discovery, Inc.",4841,Cable & Other Pay Television Services
+WDAY,WDAY,1327811,SEC company_tickers.json (price symbol),"Workday, Inc.",7374,Services-Computer Processing & Data Preparation
+WDC,WDC,106040,SEC company_tickers.json (price symbol),WESTERN DIGITAL CORP,3572,Computer Storage Devices
+WEC,WEC,783325,SEC company_tickers.json (price symbol),"WEC ENERGY GROUP, INC.",4931,Electric & Other Services Combined
+WELL,WELL,766704,SEC company_tickers.json (price symbol),WELLTOWER INC.,6798,Real Estate Investment Trusts
+WES,WES,1423902,SEC company_tickers.json (price symbol),"Western Midstream Partners, LP",4922,Natural Gas Transmission
+WEX,WEX,1309108,SEC company_tickers.json (price symbol),WEX Inc.,7389,"Services-Business Services, NEC"
+WF,WF,1264136,SEC company_tickers.json (price symbol),WOORI FINANCIAL GROUP INC.,6029,"Commercial Banks, NEC"
+WFAFY,WFAFY,,none found,,,
+WFC,WFC,72971,SEC company_tickers.json (price symbol),WELLS FARGO & COMPANY/MN,6021,National Commercial Banks
+WFM,WFM,865436,ledger evidence (matched by company name),WHOLE FOODS MARKET INC,5411,Retail-Grocery Stores
+WIT,WIT,1123799,SEC company_tickers.json (price symbol),WIPRO LTD,7371,Services-Computer Programming Services
+WIW,WIW,1267902,SEC company_tickers.json (price symbol),WESTERN ASSET INFLATION-LINKED OPPORTUNITIES & INCOME FUND,,
+WIZEY,WIZEY,1156842,ledger evidence (matched by company name),"S E CEMETERIES OF VIRGINIA, LLC",,
+WLK,WLK,1262823,SEC company_tickers.json (price symbol),WESTLAKE CORP,2860,Industrial Organic Chemicals
+WLMIY,WLMIY,,none found,,,
+WM,WM,823768,SEC company_tickers.json (price symbol),WASTE MANAGEMENT INC,4953,Refuse Systems
+WMB,WMB,107263,SEC company_tickers.json (price symbol),"WILLIAMS COMPANIES, INC.",4922,Natural Gas Transmission
+WMS,WMS,1604028,SEC company_tickers.json (price symbol),"ADVANCED DRAINAGE SYSTEMS, INC.",3086,Plastics Foam Products
+WMT,WMT,104169,SEC company_tickers.json (price symbol),Walmart Inc.,5331,Retail-Variety Stores
+WOOF,WOOF,817366,ledger evidence (matched by company name),VCA INC,0700,Agricultural Services
+WPC,WPC,1025378,SEC company_tickers.json (price symbol),W. P. Carey Inc.,6798,Real Estate Investment Trusts
+WPX,WPX,1518832,ledger evidence (matched by company name),"WPX ENERGY, INC.",1311,Crude Petroleum & Natural Gas
+WPZ,WPZ,1324518,ledger evidence (matched by company name),Williams Partners L.P.,4922,Natural Gas Transmission
+WRK,WRK,1636023,ledger evidence (matched by company name),WRKCo Inc.,2650,Paperboard Containers & Boxes
+WST,WST,105770,SEC company_tickers.json (price symbol),WEST PHARMACEUTICAL SERVICES INC,3841,Surgical & Medical Instruments & Apparatus
+WT,WETF,880631,SEC company_tickers.json (price symbol),"WisdomTree, Inc.",6211,"Security Brokers, Dealers & Flotation Companies"
+WTKWY,WTKWY,861967,SEC company_tickers.json (price symbol),WOLTERS KLUWER N V /FI,,
+WTRG,WTR WTRG,78128,SEC company_tickers.json (price symbol),"Essential Utilities, Inc.",4941,Water Supply
+WTT,WTT,878828,ledger evidence (matched by company name),WIRELESS TELECOM GROUP INC,3669,"Communications Equipment, NEC"
+WTW,WTW,105319,ledger evidence (matched by company name),"WW INTERNATIONAL, INC.",7200,Services-Personal Services
+WU,WU,1365135,SEC company_tickers.json (price symbol),Western Union CO,7389,"Services-Business Services, NEC"
+WW,WW,105319,SEC company_tickers.json (price symbol),"WW INTERNATIONAL, INC.",7200,Services-Personal Services
+WY,WY,106535,SEC company_tickers.json (price symbol),WEYERHAEUSER CO,6798,Real Estate Investment Trusts
+WYNN,WYNN,1174922,SEC company_tickers.json (price symbol),WYNN RESORTS LTD,7011,Hotels & Motels
+X,X,1163302,ledger evidence (matched by company name),UNITED STATES STEEL CORP,3312,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+XEL,XEL,72903,SEC company_tickers.json (price symbol),XCEL ENERGY INC,4931,Electric & Other Services Combined
+XLNX,XLNX,743988,ledger evidence (matched by company name),XILINX INC,3674,Semiconductors & Related Devices
+XLS-WI,XLS-WI,,none found,,,
+XOM,XOM,2115436,SEC company_tickers.json (price symbol),ExxonMobil Holdings Corp,2911,Petroleum Refining
+XP,XP,1787425,SEC company_tickers.json (price symbol),XP Inc.,6211,"Security Brokers, Dealers & Flotation Companies"
+XPO,XPO,1166003,SEC company_tickers.json (price symbol),"XPO, Inc.",4700,Transportation Services
+XRN,GMRE,1533615,SEC company_tickers.json (price symbol),Chiron Real Estate Inc.,6798,Real Estate Investment Trusts
+XYZ,SQ,1512673,SEC company_tickers.json (price symbol),"Block, Inc.",7372,Services-Prepackaged Software
+YAHOY,YAHOY,,none found,,,
+YARIY,YARIY,1279956,SEC company_tickers.json (price symbol),YARA INTERNATIONAL ASA,8880,American Depositary Receipts
+YUM,YUM,1041061,SEC company_tickers.json (price symbol),YUM BRANDS INC,5812,Retail-Eating  Places
+YUMC,YUMC,1673358,SEC company_tickers.json (price symbol),"Yum China Holdings, Inc.",5812,Retail-Eating  Places
+ZAYO,ZAYO,1608249,ledger evidence (matched by company name),"Zayo Group Holdings, Inc.",4813,Telephone Communications (No Radiotelephone)
+ZBH,ZBH,1136869,SEC company_tickers.json (price symbol),"ZIMMER BIOMET HOLDINGS, INC.",3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+ZM,ZM,1585521,SEC company_tickers.json (price symbol),"Zoom Communications, Inc.",7370,"Services-Computer Programming, Data Processing, Etc."
+ZNGA,ZNGA,1439404,ledger evidence (matched by company name),ZYNGA INC,7374,Services-Computer Processing & Data Preparation
+ZTS,ZTS,1555280,SEC company_tickers.json (price symbol),Zoetis Inc.,2834,Pharmaceutical Preparations
+ZURVY,ZURVY,,none found,,,
