@@ -210,6 +210,14 @@ Config keys refer to config/config.yaml.
 |---|---|---|---|---|---|
 | E55 | 2026-09-30 | Claude (engineer) | **Test mechanics for H0 to H4 where Q2 left details open. None changes a test or a prediction; each needs Harry's confirmation BEFORE the firewall opens.** (a) **Sample**: the out-of-sample half of the headline 5-year window, 2024-03-01 to 2026-08-31 (30 months): monthly returns in those months for H0, events with an entry date in that range for H1 to H4. Headline config at the frozen rules commit, with the prices Phase 5A.3 delivers. Horizons that run past 2026-08-31 are censored, as in-sample (E32). (b) **Statistics exactly as in-sample**: H0 = the monthly CAPM and Carhart regressions of E37; H1 = the pre-disclosure drift of E49 (event panel `gap_x`), per side; H2 to H4 = mean SPY-adjusted returns from the event panel (E42), a difference being OLS on a group dummy (E53). t-statistics: Newey-West, 3 lags, for H0 (OLS shown beside it); clustered by calendar month of entry for H1 to H4, blank below 5 entry months (Q1). (c) **Thresholds**: two-sided 5% (\|t\| >= 1.96) for H0, H1, H3 and H4; one-sided 5% (t >= 1.645) for H2. "Not distinguishable from zero" and "close to zero" mean \|t\| < 1.96. (d) **H2's reversal check is secondary** (no threshold): copier purchases' 126-day and 252-day SPY-adjusted means are reported beside the 21-day mean whatever H2's result, so the check cannot be chosen after seeing it; "partly reversed" = below the 21-day mean, "fully reversed" = at or below zero. (e) **H3 inputs unchanged**: committee mapping config/committee_industries.yaml (blob `c76d21cc1bbcdc20c3262d205c4f807fcb15849a`), membership on the transaction date and SIC codes exactly as E54. **H4's cut** is unchanged: midpoint <= $32,500.50 (the two smallest bands, up to $50,000) against larger (E53). (f) **Q1's "in-scope trades"** are counted as E53 counts them: the half's event-panel rows (in-scope purchase and sale records with an entry date in that half), so a trade corrected under J3 counts once per record. (g) **No multiple-testing correction** across the 7 confirmatory statistics (H0 two alphas, H1 two drifts, H2, H3, H4): Q2 did not specify one. If Harry wants one (e.g. Holm), it must be added by a new entry before the firewall opens | none (plan only; no code) | Makes each test mechanical, so the out-of-sample reading cannot be tuned after the numbers are seen. |
 
+## Harry's decisions on E55 (2026-10-01)
+
+| # | Date | Who | Decision | Config key | Reason |
+|---|---|---|---|---|---|
+| R1 | 2026-10-01 | Harry | **E55 confirmed** (thresholds, standard errors, and reporting the H2 reversal check whatever H2 shows), **with two additions. (1) Multiple testing**: report BOTH the unadjusted p-value and the Holm-adjusted p-value across the 7 confirmatory statistics; verdicts use Holm; both are shown. Supersedes E55 (g). **(2) Power**: for every confirmatory test, also report the minimum detectable effect (the value that would reach significance at that test's threshold, given its standard error), so a null result reads as "no effect larger than X" | none (plan only) | Seven confirmatory statistics at 5% each would give about a 30% chance of at least one false positive; and three of the predictions are nulls, which mean little without the size of effect the test could have detected. |
+| R2 | 2026-10-01 | Harry | **Pre-specified sensitivity for H1, H2 and H4.** One out-of-sample filing (Armstrong's, July 2026) holds roughly half the out-of-sample purchases. Each of these three tests is also reported excluding bulk filings (the V4 flag, `bulk_ptr`: a PTR with 50 or more in-scope transactions, E17). The registered full-sample test stays confirmatory; the ex-bulk value is shown alongside it, not instead of it | none (plan only) | A single filing that large can decide an equal-weighted event average on its own; fixing the check now means it cannot be chosen after seeing which way that filing went. |
+| R3 | 2026-10-01 | Harry | **Deadline for the price fill: 2026-10-04.** If no terminal or CRSP files have been uploaded by 2026-10-04, Part B proceeds with Yahoo as the best available source under M2, and the survivorship gap is reported as a limitation, with V15 (SPY fill) as its bound. Sets a deadline on M3's wait for the price hole to be filled | `prices.sources` unchanged (`[crsp, manual, yahoo]`: with no CRSP or terminal file, Yahoo is what the hierarchy uses) | The submission deadline (19 October 2026) leaves no room to wait indefinitely for terminal or WRDS access. |
+
 ## Out-of-sample test plan
 Registered **2026-09-30** by Harry (Q2), on top of commit **`eac5bf69d877e02f13a793be73ae94263f025d72`** (main after the
 Phase 6 prep merge, pull request #9). At that commit the firewall was shut (`oos.oos_unlocked: false`,
@@ -233,6 +241,27 @@ only (Phases 1 and 2, and the price request's headline dollars, E48), never a pr
 | **H2 (short-horizon drift)** | Copier purchases (from the entry date), 21-day SPY-adjusted return, mean (outputs/tables/phase5_event_study.md) | +1.16% (t 1.91, N 413) | **Tested one-sided: is it positive out-of-sample?** If so, check whether it **reverses by 126 and 252 days**, which would point to price pressure from copy-trading rather than information (in-sample, for reference: 126 days -0.33%, t -0.20; 252 days -2.48%, t -0.98) |
 | **H3 (committee anomaly)** | SALES, senator measure (from the transaction date), 63 days: overseen by the senator's committee minus not overseen (outputs/tables/committee_insample_prefill.md) | +3.95% (t 2.25): the opposite sign to informed selling | **It disappears out-of-sample** (it was noise) |
 | **H4 (size)** | Purchases, copier measure (from the entry date), 126 days: purchases up to $50,000 minus larger purchases (outputs/tables/mechanism_insample_prefill.md) | +3.98% (t 1.52) | If senators trade on information, **this should be negative** |
+
+**Additions of 2026-10-01 (R1 to R3)**, recorded on top of commit `7c61f63b870270737132a2f153dd75a91d88080a` (pull
+request #10, not yet merged), with the firewall still shut and still no out-of-sample number computed. They add to the
+plan above; nothing above is changed.
+
+5. **E55 is confirmed** (R1): two-sided 5% for H0, H1, H3 and H4; one-sided 5% for H2; Newey-West t (3 lags) for the
+   alphas; t clustered by entry month for H1 to H4; the H2 reversal check reported whatever H2 shows.
+6. **Multiple testing** (R1): every confirmatory statistic is reported with BOTH its unadjusted p-value and its
+   Holm-adjusted p-value, across the 7 confirmatory statistics (H0: CAPM alpha, Carhart alpha; H1: purchases, sales;
+   H2; H3; H4). **Verdicts use the Holm-adjusted p-value**; both are shown. H2 enters with its one-sided p-value.
+7. **Power** (R1): every confirmatory test also reports its minimum detectable effect: the value that would reach
+   significance at that test's threshold given its standard error (two-sided: 1.96 x SE; H2 one-sided: 1.645 x SE;
+   SE = the Newey-West SE for H0, annualised as the alpha is; the clustered SE for H1 to H4, of the difference for H3
+   and H4). A null result is written as "no effect larger than X".
+8. **Ex-bulk sensitivity** (R2): H1 (purchases and sales), H2 and H4 are also reported excluding events from bulk
+   filings (`bulk_ptr`, the V4 flag: a PTR with 50 or more in-scope transactions). The full-sample test stays the
+   confirmatory one; the ex-bulk value is shown beside it, not instead of it, and is not one of the 7 statistics in the
+   Holm family.
+9. **Price-fill deadline** (R3): if no terminal or CRSP file is uploaded by 2026-10-04, Part B proceeds with Yahoo as
+   the best available source under M2; the survivorship gap is reported as a limitation, with V15 (SPY fill) as its
+   bound.
 
 ## Pre-registered variants
 Registered 2026-09-27 by Harry (H3) at commit `622a455fb1ce39cf4e975635195d7f44182c1989` (main after the Phase 1
