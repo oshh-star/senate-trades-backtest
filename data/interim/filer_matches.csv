@@ -17,7 +17,7 @@ debra s|fischer,Debra S,Fischer,"Fischer, Deb (Senator)",Senator,1,2022-07-20,20
 dianne|feinstein,DIANNE,FEINSTEIN,Former Senator,Former Senator,37,2016-05-16,2022-02-15,F000062,Dianne Feinstein,exact,high,1.0,,
 gary c|peters,Gary C,Peters,"Peters, Gary (Senator)",Senator,77,2016-02-12,2026-08-07,P000595,Gary C. Peters,exact,high,1.0,,
 jacklyn s|rosen,Jacklyn S,Rosen,"Rosen, Jacky (Senator)",Senator,7,2019-05-09,2023-01-11,R000608,Jacky Rosen,exact,high,1.0,,
-james conley|justice,James Conley,"Justice, II","Justice II, James Conley (Senator)",Senator,1,2025-10-10,2025-10-10,J000312,James C. Justice,exact,high,1.0,,
+james conley|justice,James Conley,"Justice, II","Justice II, James Conley (Senator)",Senator,2,2025-10-10,2026-09-28,J000312,James C. Justice,exact,high,1.0,,
 james m|inhofe,James M,Inhofe,"Inhofe, James M. (Senator) | Senator",Former Senator,62,2016-01-11,2021-01-15,I000024,James M. Inhofe,exact,high,1.0,,
 james|banks,James,Banks,"Banks, James E. (Senator)",Senator,5,2025-03-10,2026-06-07,B001299,Jim Banks,override,high,,,"eFD ""Banks, James E."" is Jim Banks (R-IN, Senate from 2025-01-03); confirmed by Harry 2026-09-27 (H1)"
 jd|vance,JD,Vance,"Vance, J.D. (Senator)",Former Senator,2,2023-09-29,2023-10-23,V000137,J.D. Vance,exact,high,1.0,,
@@ -58,7 +58,7 @@ pat|roberts,Pat,Roberts,"Former Senator (Former Senator) | Roberts, Pat (Senator
 rafael e|cruz,Rafael E,Cruz,"Cruz, Ted (Senator)",Senator,9,2016-03-28,2025-11-12,C001098,Ted Cruz,exact,high,1.0,,
 rand|paul,Rand,Paul,"Paul, Rand (Senator)",Senator,1,2021-08-11,2021-08-11,P000603,Rand Paul,exact,high,1.0,,
 richard m|burr,RICHARD M,BURR,Senator,Former Senator,63,2016-01-11,2021-05-17,B001135,Richard Burr,exact,high,1.0,,
-richard|blumenthal,RICHARD,BLUMENTHAL,Senator,Senator,118,2016-04-04,2026-08-31,B001277,Richard Blumenthal,exact,high,1.0,,
+richard|blumenthal,RICHARD,BLUMENTHAL,"Blumenthal, Richard (Senator) | Senator",Senator,119,2016-04-04,2026-09-28,B001277,Richard Blumenthal,exact,high,1.0,,
 rick|scott,Rick,Scott,"Scott, Rick (Senator)",Senator,59,2019-02-21,2026-08-13,S001217,Rick Scott,exact,high,1.0,,
 robert j|portman,Robert J,Portman,"Portman, Rob (Senator)",Former Senator,1,2018-05-15,2018-05-15,P000449,Rob Portman,exact,high,1.0,,
 robert p|casey,Robert P,"Casey, Jr.","Casey, Robert P. Jr. (Senator)",Former Senator,1,2018-05-15,2018-05-15,C001070,"Robert P. Casey, Jr.",exact,high,1.0,,
