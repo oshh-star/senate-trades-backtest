@@ -4,8 +4,8 @@ Every exclusion and every data problem, counted and explained. One section per p
 
 ## Phase 1: scrape
 
-- Filings in the eFD listing (received 2016-01-01 to 2026-09-30, all filer types): **1,874**; electronic **1,566**, paper **308**, other **0**.
-- Electronic PTRs downloaded: **1,566**; failed: **0**; pending: **0**.
+- Filings in the eFD listing (received 2016-01-01 to 2026-09-30, all filer types): **1,876**; electronic **1,568**, paper **308**, other **0**.
+- Electronic PTRs downloaded: **1,568**; failed: **0**; pending: **0**.
 - Listing fetched on or before the scrape end date is refreshed automatically on the next run (the 2026 listing is incomplete until after 2026-09-30).
 
 ### Download failures
@@ -28,7 +28,7 @@ None.
 
 ### Parse validation
 
-Each of the 1,566 downloaded PTRs was checked three ways: rows parsed, `<tbody>` rows counted by a separate parser, and the page's own "(N transactions total)" line.
+Each of the 1,568 downloaded PTRs was checked three ways: rows parsed, `<tbody>` rows counted by a separate parser, and the page's own "(N transactions total)" line.
 
 - Row-count mismatches: **0**
 - Owner-count mismatches (page's "N Self / N Spouse ..." line vs parsed Owner column): **0**
@@ -93,7 +93,7 @@ Checks for departures the dataset may NOT record (a successor in the same seat s
 82 distinct filer names: override 1, exact 80, fuzzy 1, ambiguous 0, unmatched 0. Unmatched or low-confidence: **0** (listed in outputs/phase1_summary.md section 8; their transactions are left out of the key number).
 
 - Matched filers none of whose transactions fall inside that senator's service (would suggest the wrong person): **0**
-- Transactions by high-confidence matched filers dated OUTSIDE Senate service (excluded by A05 in Phase 2): **5** of 14,558.
+- Transactions by high-confidence matched filers dated OUTSIDE Senate service (excluded by A05 in Phase 2): **5** of 14,592.
 
 | matched_name    |   Rows outside service |
 |:----------------|-----------------------:|
@@ -111,13 +111,13 @@ Each row is removed at the FIRST step it fails, in this order. Steps 1-2 count r
 
 | Step   | Reason code         | What happens                                                                           | Removed   |   Left |
 |:-------|:--------------------|:---------------------------------------------------------------------------------------|:----------|-------:|
-| 0      |                     | All parsed transaction rows (Phase 1)                                                  |           |  14558 |
-| 1      | FILER_UNMATCHED     | Filer not matched to a senator with high confidence                                    | 0         |  14558 |
-| 2      | DUPLICATE_AMENDMENT | Duplicate: trade restated in an amendment (kept once, first disclosure datetime)       | 2158      |  12400 |
-| 3      | DUPLICATE_REFILED   | Duplicate: trade repeated from another, unrelated filing                               | 24        |  12376 |
-|        |                     | = unique trades                                                                        |           |  12376 |
-| 4      | OUTSIDE_SERVICE     | Transaction date outside the senator's Senate service (A05)                            | 5         |  12371 |
-| 5      | OUTSIDE_WINDOW      | First disclosure outside the analysis window                                           | 7091      |   5280 |
+| 0      |                     | All parsed transaction rows (Phase 1)                                                  |           |  14592 |
+| 1      | FILER_UNMATCHED     | Filer not matched to a senator with high confidence                                    | 0         |  14592 |
+| 2      | DUPLICATE_AMENDMENT | Duplicate: trade restated in an amendment (kept once, first disclosure datetime)       | 2158      |  12434 |
+| 3      | DUPLICATE_REFILED   | Duplicate: trade repeated from another, unrelated filing                               | 24        |  12410 |
+|        |                     | = unique trades                                                                        |           |  12410 |
+| 4      | OUTSIDE_SERVICE     | Transaction date outside the senator's Senate service (A05)                            | 5         |  12405 |
+| 5      | OUTSIDE_WINDOW      | First disclosure outside the analysis window                                           | 7125      |   5280 |
 | 6      | ASSET_TYPE          | eFD asset type is not Stock or Other                                                   | 1356      |   3924 |
 | 7      | OPTION_IN_NAME      | Asset name shows a call/put option                                                     | 33        |   3891 |
 | 8      | EXCHANGE            | Exchange transaction (not a purchase or sale)                                          | 24        |   3867 |
@@ -139,7 +139,7 @@ Owner type by reason (A01: Spouse and Child trades are counted, not silently dro
 | DUPLICATE_AMENDMENT |      17 |   1,176 |    168 |      797 |
 | DUPLICATE_REFILED   |       1 |       2 |      6 |       15 |
 | OUTSIDE_SERVICE     |       0 |       3 |      0 |        2 |
-| OUTSIDE_WINDOW      |     127 |   3,172 |  1,037 |    2,755 |
+| OUTSIDE_WINDOW      |     127 |   3,172 |  1,038 |    2,788 |
 | ASSET_TYPE          |      88 |     434 |    382 |      452 |
 | OPTION_IN_NAME      |       0 |       0 |     33 |        0 |
 | EXCHANGE            |       0 |       7 |      8 |        9 |
@@ -151,7 +151,7 @@ Owner type by reason (A01: Spouse and Child trades are counted, not silently dro
 | NON_EQUITY_ETF      |       0 |     123 |     46 |       18 |
 | OWNER               |      39 |       0 |      0 |      995 |
 | (in scope)          |       0 |   1,296 |  1,044 |        0 |
-| Total               |     289 |   6,247 |  2,763 |    5,259 |
+| Total               |     289 |   6,247 |  2,764 |    5,292 |
 
 ASSET_TYPE detail (in-window trades only; earlier steps took the rest):
 
@@ -265,14 +265,15 @@ Every distinct amount string in the raw rows and how it was parsed (open top ban
 
 | amount                   |   rows | amount_lower   | amount_upper   | amount_mid   | amount_rule                        |
 |:-------------------------|-------:|:---------------|:---------------|:-------------|:-----------------------------------|
-| $1,001 - $15,000         |   9527 | 1,001          | 15,000         | 8,000.5      | range: midpoint of lower and upper |
-| $15,001 - $50,000        |   2712 | 15,001         | 50,000         | 32,500.5     | range: midpoint of lower and upper |
-| $50,001 - $100,000       |    911 | 50,001         | 100,000        | 75,000.5     | range: midpoint of lower and upper |
-| $100,001 - $250,000      |    751 | 100,001        | 250,000        | 175,000.5    | range: midpoint of lower and upper |
-| $250,001 - $500,000      |    337 | 250,001        | 500,000        | 375,000.5    | range: midpoint of lower and upper |
+| $1,001 - $15,000         |   9541 | 1,001          | 15,000         | 8,000.5      | range: midpoint of lower and upper |
+| $15,001 - $50,000        |   2720 | 15,001         | 50,000         | 32,500.5     | range: midpoint of lower and upper |
+| $50,001 - $100,000       |    916 | 50,001         | 100,000        | 75,000.5     | range: midpoint of lower and upper |
+| $100,001 - $250,000      |    753 | 100,001        | 250,000        | 175,000.5    | range: midpoint of lower and upper |
+| $250,001 - $500,000      |    341 | 250,001        | 500,000        | 375,000.5    | range: midpoint of lower and upper |
 | $500,001 - $1,000,000    |    257 | 500,001        | 1,000,000      | 750,000.5    | range: midpoint of lower and upper |
 | $1,000,001 - $5,000,000  |     50 | 1,000,001      | 5,000,000      | 3,000,000.5  | range: midpoint of lower and upper |
 | $5,000,001 - $25,000,000 |     13 | 5,000,001      | 25,000,000     | 15,000,000.5 | range: midpoint of lower and upper |
+| Over $50,000,000         |      1 | 50,000,000     |                | 50,000,000   | open top band: lower bound (D10)   |
 
 ### 4. Tickers
 

@@ -27,8 +27,15 @@ out-of-sample number computed; additions R1-R3 recorded 2026-10-01. Full plan: d
   survivorship gap reported as a limitation and V15 as its bound.
 
 ## Current state
-_Last updated: 2026-10-01, out-of-sample test plan completed with R1-R3 (no code changes, no new numbers) (Claude, for Harry)._
+_Last updated: 2026-10-02, final scrape refresh (no in-sample number changed) (Claude, for Harry)._
 
+- **Final scrape refresh done (2026-10-02)**: the 2026 listing is final (PTRs received up to 2026-09-30). Two new
+  filings, both received 2026-09-28: Richard Blumenthal (33 spouse rows in private LLCs and partnerships) and Jim Justice
+  (1 row, Greenbrier Hotel non-public stock, "Over $50,000,000", a band not seen before, parsed as its lower bound per
+  D10). All 34 rows are OUTSIDE_WINDOW (received after 2026-08-31). No amendment was received after 2026-08-31, so none
+  acts after the window (no record in trade_records.csv is effective after 2026-08-20). trades_clean.csv,
+  trade_records.csv, the in-scope count (2,340 trades) and every in-sample output are unchanged; headline and V14
+  reproduce exactly (logged in "Variants run").
 - **Out-of-sample tests pre-registered** (Q2, see above) and their mechanics confirmed (R1-R3). The firewall is still
   shut.
 - **Still the critical path: the price request** (docs/PRICE_REQUEST.md, 8 MUST-HAVE stocks = 95.0% of headline
@@ -64,12 +71,11 @@ _Last updated: 2026-10-01, out-of-sample test plan completed with R1-R3 (no code
 3. **Claude**, after the rerun: update the in-sample (prefill) values in the "Out-of-sample test plan" table with the
    filled ones (a new DECISIONS.md entry; the tests and predictions stay as registered).
 4. **Claude, before unlocking**: code the reporting R1 and R2 require (the Holm-adjusted p-values across the 7
-   confirmatory statistics, the minimum detectable effects, the ex-bulk values for H1, H2 and H4), tested on the
+   confirmatory statistics, the minimum detectable effects at both levels (R4), the ex-bulk values for H1, H2 and H4), tested on the
    in-sample half only.
 5. **Harry**: freeze the rules (`project.frozen_rules_commit`, a DECISIONS.md entry) and unlock out-of-sample (M3, with
    R3's deadline). With `engine.sample: full`, `python run_variants.py` also runs V11. Report H0-H4 first, as
    confirmatory (Holm verdicts); everything else as exploratory.
-6. **On or after 1 October 2026 (now due)**: `python run_all.py --only scrape clean` to finalise the 2026 listing (checklist).
 
 ## Known limitations
 - **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
@@ -87,8 +93,9 @@ _Last updated: 2026-10-01, out-of-sample test plan completed with R1-R3 (no code
 - Preferred shares (AHL-C, BKEPP) passed Yahoo's EQUITY classification in Phase 2; both are in the ledger and skipped.
 
 ## Pre-submission checklist (before Monday 19 October 2026, 23:59)
-- [ ] **On or after 1 October 2026**: run `python run_all.py --only scrape clean` once to finalise the 2026
+- [x] **On or after 1 October 2026**: run `python run_all.py --only scrape clean` once to finalise the 2026
       listing (PTRs received up to 30 September), then `python run_all.py --only prices engine` and commit.
+      Done 2026-10-02: 2 new filings (both received 2026-09-28, outside the window); no in-sample number changed.
 - [ ] **Price request (M2)**: terminal CSVs for the 8 MUST-HAVE stocks in data/raw/manual_prices/ (docs/PRICE_REQUEST.md);
       CRSP CSV in data/raw/crsp/ if WRDS access arrives. Then rerun in-sample, and only then unlock out-of-sample (M3).
       Deadline 2026-10-04 (R3): after that, Yahoo with the gap stated as a limitation and V15 as its bound.

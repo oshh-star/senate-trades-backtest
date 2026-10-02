@@ -129,7 +129,7 @@ tests/                pytest suite (run: python -m pytest)
 | Phase | Work | Status |
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
-| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
+| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); 2026 listing finalised 2026-10-02 (2 new filings, both outside the window) |
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
