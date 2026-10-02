@@ -217,6 +217,7 @@ Config keys refer to config/config.yaml.
 | R1 | 2026-10-01 | Harry | **E55 confirmed** (thresholds, standard errors, and reporting the H2 reversal check whatever H2 shows), **with two additions. (1) Multiple testing**: report BOTH the unadjusted p-value and the Holm-adjusted p-value across the 7 confirmatory statistics; verdicts use Holm; both are shown. Supersedes E55 (g). **(2) Power**: for every confirmatory test, also report the minimum detectable effect (the value that would reach significance at that test's threshold, given its standard error), so a null result reads as "no effect larger than X" | none (plan only) | Seven confirmatory statistics at 5% each would give about a 30% chance of at least one false positive; and three of the predictions are nulls, which mean little without the size of effect the test could have detected. |
 | R2 | 2026-10-01 | Harry | **Pre-specified sensitivity for H1, H2 and H4.** One out-of-sample filing (Armstrong's, July 2026) holds roughly half the out-of-sample purchases. Each of these three tests is also reported excluding bulk filings (the V4 flag, `bulk_ptr`: a PTR with 50 or more in-scope transactions, E17). The registered full-sample test stays confirmatory; the ex-bulk value is shown alongside it, not instead of it | none (plan only) | A single filing that large can decide an equal-weighted event average on its own; fixing the check now means it cannot be chosen after seeing which way that filing went. |
 | R3 | 2026-10-01 | Harry | **Deadline for the price fill: 2026-10-04.** If no terminal or CRSP files have been uploaded by 2026-10-04, Part B proceeds with Yahoo as the best available source under M2, and the survivorship gap is reported as a limitation, with V15 (SPY fill) as its bound. Sets a deadline on M3's wait for the price hole to be filled | `prices.sources` unchanged (`[crsp, manual, yahoo]`: with no CRSP or terminal file, Yahoo is what the hierarchy uses) | The submission deadline (19 October 2026) leaves no room to wait indefinitely for terminal or WRDS access. |
+| R4 | 2026-10-02 | Harry | **Minimum detectable effect at two levels** (closes HANDOVER open question 1, raised by R1). Every confirmatory test reports its minimum detectable effect at (1) the **nominal** threshold (\|t\| 1.96; t 1.645 one-sided for H2) and (2) the **Bonferroni** level, 0.05/7 (\|t\| about 2.69; about 2.45 one-sided for H2), which is Holm's strictest step. The report's "no effect larger than X" sentence uses the **Bonferroni-level** figure. Adds to R1 (2) | none (plan only) | Bonferroni is used rather than Holm's actual step because it is fixed in advance, whereas Holm's threshold for each test depends on how the p-values rank. |
 
 ## Out-of-sample test plan
 Registered **2026-09-30** by Harry (Q2), on top of commit **`eac5bf69d877e02f13a793be73ae94263f025d72`** (main after the
@@ -262,6 +263,12 @@ plan above; nothing above is changed.
 9. **Price-fill deadline** (R3): if no terminal or CRSP file is uploaded by 2026-10-04, Part B proceeds with Yahoo as
    the best available source under M2; the survivorship gap is reported as a limitation, with V15 (SPY fill) as its
    bound.
+10. **Minimum detectable effect at two levels** (R4, 2026-10-02, recorded on top of commit
+    `bbe46839884e8d884013cbfc898ca493419b96be`, pull request #10, firewall still shut, no out-of-sample number
+    computed): every confirmatory test reports its minimum detectable effect at the nominal threshold (|t| 1.96; t 1.645
+    one-sided for H2) AND at the Bonferroni level, 0.05/7 (|t| about 2.69; about 2.45 one-sided for H2), Holm's strictest
+    step. The "no effect larger than X" sentence uses the Bonferroni-level figure. Bonferroni rather than Holm's actual
+    step, because it is fixed in advance, whereas Holm's threshold for each test depends on how the p-values rank.
 
 ## Pre-registered variants
 Registered 2026-09-27 by Harry (H3) at commit `622a455fb1ce39cf4e975635195d7f44182c1989` (main after the Phase 1

@@ -100,15 +100,12 @@ _Last updated: 2026-10-01, out-of-sample test plan completed with R1-R3 (no code
 - [ ] `python run_all.py` rebuilds every number from the committed caches.
 
 ## Open questions
-1. **Minimum detectable effect vs Holm (R1)**: R1 sets the minimum detectable effect at each test's own threshold
-   (1.96 or 1.645 x SE), but verdicts use Holm, which can require more (up to |t| of about 2.69 for the smallest p-value
-   of 7). Report the Holm-level effect as well? Not done unless Harry asks.
-2. **Who pulls the terminal data, and when?** The 8 MUST-HAVE stocks are 95.0% of the headline dollars.
-3. **Ledger symbols marked "unknown"**: AHL-C (now out of the headline as a preferred), and variant-only AQFH, CEM, HYH,
+1. **Who pulls the terminal data, and when?** The 8 MUST-HAVE stocks are 95.0% of the headline dollars.
+2. **Ledger symbols marked "unknown"**: AHL-C (now out of the headline as a preferred), and variant-only AQFH, CEM, HYH,
    TWO, HIYS.
-4. **WRDS access requested 27 Sep 2026, awaiting approval** (A04). The legacy CRSP files may end in December 2024;
+3. **WRDS access requested 27 Sep 2026, awaiting approval** (A04). The legacy CRSP files may end in December 2024;
    the loader also reads the v2 format (its column names are from memory: check on first use).
-5. **Timing.** The listing's report title date can be one day later than the date received (UTC); we key on
+4. **Timing.** The listing's report title date can be one day later than the date received (UTC); we key on
    the date received and the time from the PTR page (E05).
 
 ## How to hand over
