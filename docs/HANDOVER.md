@@ -1,13 +1,42 @@
 # Handover
 
-## Current state
-_Last updated: 2026-09-30, end of Phase 6 prep (variants and mechanism, PREFILL) (Claude, for Harry)._
+## READ BEFORE UNLOCKING: out-of-sample test plan (pre-registered 2026-09-30)
+Registered by Harry (Q2) on top of commit `eac5bf69d877e02f13a793be73ae94263f025d72`, with the firewall shut and no
+out-of-sample number computed; additions R1-R3 recorded 2026-10-01. Full plan: docs/DECISIONS.md, section
+"Out-of-sample test plan" (Q1-Q3, E55, R1-R3).
 
+- **Only these five tests are confirmatory out of sample.** Everything else is exploratory and is reported with the
+  note that roughly 150 cells were examined in-sample, so a few will reach |t| = 2 by chance.
+  - **H0 (primary)**: series A's CAPM and Carhart alphas. Prediction: not distinguishable from zero.
+  - **H1 (information)**: pre-disclosure drift, purchases and sales. Prediction: both close to zero, as in-sample.
+  - **H2 (short-horizon drift)**: copier purchases, 21-day SPY-adjusted return, one-sided: is it positive? If so, does
+    it reverse by 126 and 252 days (price pressure, not information)?
+  - **H3 (committee anomaly)**: overseen minus not-overseen SALES, senator measure, 63 days. Prediction: it disappears.
+  - **H4 (size)**: purchases up to $50,000 minus larger ones, copier measure, 126 days. Negative if senators are informed.
+- The tests and predictions are fixed. The in-sample values are provisional ("prefill") and are updated after Phase
+  5A.3; the predictions do not change.
+- **How they are judged (E55, confirmed by R1)**: two-sided 5% for H0, H1, H3, H4; one-sided 5% for H2; Newey-West t
+  for the alphas, t clustered by entry month for the rest; the H2 reversal check is reported whatever H2 shows.
+- **Multiple testing (R1)**: each of the 7 confirmatory statistics shows its unadjusted AND its Holm-adjusted p-value;
+  **verdicts use Holm**.
+- **Power (R1)**: each confirmatory test also shows its minimum detectable effect, so a null reads "no effect larger
+  than X".
+- **Ex-bulk sensitivity (R2)**: H1, H2 and H4 are also shown excluding bulk filings (the V4 flag), because one July 2026
+  Armstrong filing holds roughly half the out-of-sample purchases. The full-sample test stays confirmatory.
+- **Price-fill deadline (R3): 2026-10-04.** No terminal or CRSP files by then = Part B proceeds on Yahoo (M2), with the
+  survivorship gap reported as a limitation and V15 as its bound.
+
+## Current state
+_Last updated: 2026-10-01, out-of-sample test plan completed with R1-R3 (no code changes, no new numbers) (Claude, for Harry)._
+
+- **Out-of-sample tests pre-registered** (Q2, see above) and their mechanics confirmed (R1-R3). The firewall is still
+  shut.
 - **Still the critical path: the price request** (docs/PRICE_REQUEST.md, 8 MUST-HAVE stocks = 95.0% of headline
   dollars). Out-of-sample stays locked (M3). **Every Phase 6 prep number is PROVISIONAL ("prefill" in every file name
   and header)**: the survivorship-ledger stocks are still skipped.
-- **Decisions**: P1 logged (E50-E51 confirmed; HENOY stays common equity). New interpretations **E52-E54 need
-  confirmation** (runner rules, mechanism definitions, committee test inputs).
+- **Decisions**: Q1-Q3 logged (E52-E54 confirmed; the "senator" split is a rule applied to each half; the out-of-sample
+  test plan); R1-R3 logged (E55 confirmed plus Holm and minimum detectable effects; ex-bulk sensitivity; price-fill
+  deadline 2026-10-04). No interpretation is waiting for confirmation.
 - **Variant runner**: `python run_variants.py` runs V1-V19 (V2 as five runs), each alone against the headline, and
   writes outputs/tables/variants_insample_prefill.md/.csv/.json. All ran except **V11 (3-year window), refused by the
   firewall**: its in-sample half (2023-09 to 2025-02) lies in the headline's locked period; it runs unchanged once
@@ -27,13 +56,20 @@ _Last updated: 2026-09-30, end of Phase 6 prep (variants and mechanism, PREFILL)
   everything (the variants: `python run_variants.py`, about 5 minutes). Tests: `python -m pytest` (170 pass).
 
 ## Exact next step
-1. **Group**: pull the 8 MUST-HAVE stocks at a library terminal (docs/PRICE_REQUEST.md); upload to
-   data/raw/manual_prices/. If WRDS access arrives, run the CRSP query in the same document.
-2. **Claude** (when the prices are in): `python run_all.py --skip-scrape`, check the loader reports, then
+1. **Group, by 2026-10-04 (R3)**: pull the 8 MUST-HAVE stocks at a library terminal (docs/PRICE_REQUEST.md); upload to
+   data/raw/manual_prices/. If WRDS access arrives, run the CRSP query in the same document. **If nothing is uploaded by
+   2026-10-04, Part B proceeds on Yahoo** (M2), the survivorship gap becomes a stated limitation and V15 its bound.
+2. **Claude** (when the prices are in, or on 2026-10-04 without them): `python run_all.py --skip-scrape`, check the loader reports, then
    `python run_variants.py`: the files are then tagged "filled" instead of "prefill" automatically; log the runs.
-3. **Harry**: confirm E52-E54; then freeze the rules (`project.frozen_rules_commit`, a DECISIONS.md entry) and unlock
-   out-of-sample (M3). With `engine.sample: full`, `python run_variants.py` also runs V11.
-4. **On or after 1 October 2026**: `python run_all.py --only scrape clean` to finalise the 2026 listing (checklist).
+3. **Claude**, after the rerun: update the in-sample (prefill) values in the "Out-of-sample test plan" table with the
+   filled ones (a new DECISIONS.md entry; the tests and predictions stay as registered).
+4. **Claude, before unlocking**: code the reporting R1 and R2 require (the Holm-adjusted p-values across the 7
+   confirmatory statistics, the minimum detectable effects, the ex-bulk values for H1, H2 and H4), tested on the
+   in-sample half only.
+5. **Harry**: freeze the rules (`project.frozen_rules_commit`, a DECISIONS.md entry) and unlock out-of-sample (M3, with
+   R3's deadline). With `engine.sample: full`, `python run_variants.py` also runs V11. Report H0-H4 first, as
+   confirmatory (Holm verdicts); everything else as exploratory.
+6. **On or after 1 October 2026 (now due)**: `python run_all.py --only scrape clean` to finalise the 2026 listing (checklist).
 
 ## Known limitations
 - **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
@@ -55,12 +91,18 @@ _Last updated: 2026-09-30, end of Phase 6 prep (variants and mechanism, PREFILL)
       listing (PTRs received up to 30 September), then `python run_all.py --only prices engine` and commit.
 - [ ] **Price request (M2)**: terminal CSVs for the 8 MUST-HAVE stocks in data/raw/manual_prices/ (docs/PRICE_REQUEST.md);
       CRSP CSV in data/raw/crsp/ if WRDS access arrives. Then rerun in-sample, and only then unlock out-of-sample (M3).
+      Deadline 2026-10-04 (R3): after that, Yahoo with the gap stated as a limitation and V15 as its bound.
 - [ ] Every variant run is logged in DECISIONS.md "Variants run" (the professor asks how many were tried).
+- [ ] Out of sample, H0-H4 are reported as the only confirmatory tests (DECISIONS.md "Out-of-sample test plan");
+      every other cell is labelled exploratory, with the note about roughly 150 in-sample cells. Each confirmatory
+      statistic shows unadjusted and Holm p-values (verdicts on Holm) and its minimum detectable effect; H1, H2 and H4
+      also show their ex-bulk values (R1, R2).
 - [ ] `python run_all.py` rebuilds every number from the committed caches.
 
 ## Open questions
-1. **E52-E54** need confirmation (DECISIONS.md): the runner's firewall rule (V11 not run in-sample), the top-4 senators
-   by in-sample events, the 5-cluster minimum for a t-statistic, and the committee test's inputs.
+1. **Minimum detectable effect vs Holm (R1)**: R1 sets the minimum detectable effect at each test's own threshold
+   (1.96 or 1.645 x SE), but verdicts use Holm, which can require more (up to |t| of about 2.69 for the smallest p-value
+   of 7). Report the Holm-level effect as well? Not done unless Harry asks.
 2. **Who pulls the terminal data, and when?** The 8 MUST-HAVE stocks are 95.0% of the headline dollars.
 3. **Ledger symbols marked "unknown"**: AHL-C (now out of the headline as a preferred), and variant-only AQFH, CEM, HYH,
    TWO, HIYS.
