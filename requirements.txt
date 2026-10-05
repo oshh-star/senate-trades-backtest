@@ -1,6 +1,8 @@
 # Pinned versions. Python 3.11.
 # Verified 2026-09-27 (Phase 1): every pin below installs from PyPI on Python 3.11.15 and the
 # pytest suite passes. The SessionStart hook (scripts/install_pkgs.sh) installs them in cloud sessions.
+# 2026-10-05: yfinance removed (only scripts/phase0_checks.py tried it, and falls back without it; prices come from
+# Yahoo's chart endpoint directly, E19). Clean-room test: fresh venv, these pins, offline rebuild byte-for-byte.
 pandas==2.2.3
 numpy==2.1.3
 scipy==1.14.1
@@ -8,7 +10,6 @@ requests==2.33.1
 beautifulsoup4==4.12.3
 lxml==5.3.0
 pyyaml==6.0.1
-yfinance==0.2.65
 statsmodels==0.14.4
 matplotlib==3.9.2
 tabulate==0.9.0

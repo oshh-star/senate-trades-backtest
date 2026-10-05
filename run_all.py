@@ -19,6 +19,15 @@ STAGES = [("scrape", scrape), ("clean", clean), ("prices", prices),
           ("engine", engine), ("metrics", metrics), ("report", report)]
 
 
+def _ensure_utf8() -> None:
+    """Every text file is UTF-8. Where the machine's default text encoding is not (Windows: cp1252), rerun this command
+    in Python's UTF-8 mode, so reading and writing files never depends on the computer it runs on."""
+    import locale
+    import subprocess
+    if not sys.flags.utf8_mode and locale.getpreferredencoding(False).lower().replace("-", "") != "utf8":
+        sys.exit(subprocess.call([sys.executable, "-X", "utf8", *sys.argv]))
+
+
 def main(argv=None) -> int:
     if not Path("config/config.yaml").exists():
         sys.exit("Run this from the repository root (config/config.yaml not found).")
@@ -45,4 +54,5 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
+    _ensure_utf8()
     sys.exit(main())
