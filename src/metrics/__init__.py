@@ -6,6 +6,8 @@ factors_monthly.csv, prices.csv.gz, trading_calendar.csv, price_coverage.csv, tr
 Writes:
   outputs/tables/phase5_insample_results.csv and .md   ONE table: strategy and benchmarks side by side
   outputs/tables/phase5_event_study.csv and .md
+  outputs/tables/confirmatory_insample.csv and .md (and confirmatory_oos once the firewall is open): H0-H4,
+    calendar-year returns, worst rolling 12 months (confirmatory.py)
   outputs/figures/phase5_cumulative_value.png, phase5_drawdowns.png
   data/processed/monthly_returns.csv, daily_returns.csv, universe_members.csv, metrics_insample.json
   the Phase 5 section of outputs/data_quality.md
@@ -213,6 +215,14 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
     mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
     from . import committee                                    # Phase 6 prep: committee test (E54), when its inputs exist
     committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+    from . import confirmatory                                 # Part B Step 1: the registered tests H0-H4, per half
+    from src.config import sample_split
+    halves = [("insample", "in-sample", first, last_day)]
+    if I["label"] != "in-sample":                              # full window: the firewall is open (sample_bounds)
+        sp = sample_split(cfg)
+        halves = [("insample", "in-sample", *[d.isoformat() for d in sp["in_sample"]]),
+                  ("oos", "out-of-sample", *[d.isoformat() for d in sp["out_of_sample"]])]
+    confirmatory.write(I["panel"], mret, I["cal_all"], halves, TABLES)
     a = res["Series A (headline)"]
     print(f"  [metrics] {I['label']} {months[0]}..{months[-1]} ({len(months)} months): series A {a['ann_return']:.2%} a year, "
           f"Sharpe {a['sharpe']:.2f}, CAPM alpha {a['capm_alpha_ann']:.2%} (t {a['capm_t_alpha_ols']:.2f}), Carhart alpha "
