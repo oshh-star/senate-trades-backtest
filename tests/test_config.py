@@ -35,9 +35,13 @@ def test_split_variants(years, oos_start):
     assert sample_split(cfg)["out_of_sample"][0] == oos_start
 
 
-def test_oos_firewall_is_locked_by_default():
+def test_oos_firewall_is_open_only_with_a_frozen_commit():
+    cfg = load_config()                                   # U1 (2026-10-06): unlocked, with the F1 frozen commit
+    assert cfg["oos"]["oos_unlocked"] is True and len(str(cfg["project"]["frozen_rules_commit"])) == 40
+    require_oos_unlocked(cfg)
+    cfg["oos"]["oos_unlocked"] = False
     with pytest.raises(OutOfSampleLocked):
-        require_oos_unlocked(load_config())
+        require_oos_unlocked(cfg)
 
 
 def test_oos_unlock_needs_frozen_commit():

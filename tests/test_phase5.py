@@ -188,6 +188,7 @@ def test_metrics_stage_refuses_a_mismatched_engine_sample(tmp_path, monkeypatch)
     import json
     import src.metrics as mt
     cfg = copy.deepcopy(load_config())
+    cfg["oos"]["oos_unlocked"], cfg["engine"]["sample"] = False, "in_sample"  # config asks in-sample, engine ran full
     (tmp_path / "engine_metadata.json").write_text(json.dumps({"first_day": "2021-09-01", "last_day": "2026-08-31",
                                                                "sample": "full window"}))
     monkeypatch.setattr(mt, "PROCESSED", tmp_path)

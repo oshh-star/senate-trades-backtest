@@ -86,7 +86,7 @@ engine:
   drop_flags: []                   # trades_clean.csv flag columns whose trades are dropped: V1 [v1_tuberville],
                                    #   V3 [v3_first_180d], V4 [bulk_ptr], V13 [v13_otc]
   drop_senator_ranks: []           # V2: [k] drops the senator ranked k by in-scope trade count
-  sample: in_sample                # in_sample | full (full needs the OOS firewall open)
+  sample: full                     # U1: one continuous 5-year run (S5). in_sample | full (full needs the firewall open)
   warmup_months: 12                # L2: the book is built from disclosures in the 12 months before the window;
                                    #   returns are measured from the window's first day. V17 (empty start): 0
 
@@ -125,7 +125,7 @@ benchmarks:                        # built in Phase 5
 # ---------------------------------------------------------------- OUT-OF-SAMPLE FIREWALL
 oos:
   split: midpoint_months           # A06: first half of the window in whole months (5y: IS to 2024-02-29)
-  oos_unlocked: false              # true only with a DECISIONS.md entry naming the frozen commit
+  oos_unlocked: true               # U1, 2026-10-06 (docs/DECISIONS.md); rules frozen at F1
 
 # ---------------------------------------------------------------- SCRAPING ETIQUETTE
 scrape:
