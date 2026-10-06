@@ -30,16 +30,17 @@ From the folder that contains this README:
 python run_all.py --skip-scrape
 ```
 
-This takes about **2.5 minutes** (153 seconds in our clean-room test). It works offline. On Windows it switches
+This takes about **2.5 minutes** (142 to 155 seconds in our tests). It works offline. On Windows it switches
 itself into Python's UTF-8 mode, because the tables contain characters such as Δ and ±. It
-reads the raw data in `data/raw/` and rebuilds every table in `outputs/tables/`, every figure in `outputs/figures/`, the
+reads the raw data in `data/raw/` and rebuilds the full-window and second-half tables in `outputs/tables/` (the in-sample
+design record is described below), every figure in `outputs/figures/`, the
 data-quality log `outputs/data_quality.md` and the derived data in `data/processed/`. No file path needs editing:
 everything runs relative to this folder.
 
 The robustness variants (V1 to V20, each run alone against the headline) are a second command, run after the first:
 
 ```bash
-python run_variants.py             # about 4 minutes; writes outputs/tables/variants_insample_yahoo.*
+python run_variants.py             # about 8 minutes; writes outputs/tables/variants_full_yahoo.*
 ```
 
 **Checking the rebuild.** If you unpacked `submission.zip`, compare the rebuilt files with the submitted ones:
@@ -58,22 +59,34 @@ on Windows, every text file (Windows ends lines with CR LF).
 Tests: `python -m pytest` (about 5 seconds; on Windows `python -X utf8 -m pytest`).
 
 ## Which file feeds each table and figure in the report
+The **main result** is ONE continuous backtest of the 5-year window, 2021-09-01 to 2026-08-31, with a 12-month warm-up
+before it. The rules were fixed on the first half and frozen at a recorded commit before the second half was opened. The
+second half (2024-03-01 to 2026-08-31) is read off the same run as the robustness check, and it is where the registered
+tests H0-H4 are judged (`docs/DECISIONS.md`, "Out-of-sample test plan", and F1/U1 for the freeze and the unlock).
+
 | In the report | File | Built by |
 |---|---|---|
-| Main results: strategy (series A and B) against every benchmark, identical dates (return, volatility, Sharpe, CAPM and Carhart alphas, drawdown, turnover, break-even cost) | `outputs/tables/phase5_insample_results.md` (and `.csv`) | `src/metrics/` |
-| Confirmatory tests H0-H4 (Holm-adjusted p-values, minimum detectable effects, ex-bulk sensitivity, reversal check), calendar-year returns, worst 12 months | `outputs/tables/confirmatory_insample.md` (and `.csv`); `confirmatory_oos.md` once the out-of-sample half is opened | `src/metrics/confirmatory.py` |
-| Event study: senator vs copier at 5, 21, 63, 126 and 252 trading days | `outputs/tables/phase5_event_study.md` | `src/metrics/event_study.py` |
-| Pre-disclosure drift (what the delay costs a copier) | `outputs/tables/phase5_predisclosure_drift.md` | `src/metrics/event_study.py` |
-| Mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_insample_yahoo.md` | `src/metrics/mechanism.py` |
-| Committee test (trades in industries the senator's committee oversees) | `outputs/tables/committee_insample_yahoo.md` | `src/metrics/committee.py` |
-| Robustness variants V1-V20 | `outputs/tables/variants_insample_yahoo.md` | `run_variants.py` |
-| Warm-up before/after (the book's first year) | `outputs/tables/phase5_warmup_before_after.csv` | `src/engine/warmup.py` |
-| Figure: cumulative value, strategy and benchmarks | `outputs/figures/phase5_cumulative_value.png` | `src/metrics/` |
-| Figure: drawdowns | `outputs/figures/phase5_drawdowns.png` | `src/metrics/` |
+| **Main results, full 5 years**: series A and B against every benchmark over identical dates (return, volatility, Sharpe, CAPM and Carhart alphas and loadings, drawdown with dates and recovery, correlation, turnover, break-even cost), calendar-year returns, worst 12 months | `outputs/tables/phase5_full_results.md` (and `.csv`) | `src/metrics/` |
+| **Second-half check** (2024-03 to 2026-08), the same table read off the same run | `outputs/tables/phase5_oos_results.md` | `src/metrics/` |
+| **Confirmatory tests H0-H4** (Holm-adjusted p-values, minimum detectable effects, ex-bulk sensitivity, reversal check) | `outputs/tables/confirmatory_oos.md` (and `.csv`) | `src/metrics/confirmatory.py` |
+| Figure: cumulative value over the 5 years, in-sample/out-of-sample boundary marked | `outputs/figures/phase5_cumulative_value.png` | `src/metrics/` |
+| Figure: drawdowns over the 5 years, boundary marked | `outputs/figures/phase5_drawdowns.png` | `src/metrics/` |
+| EXPLORATORY: event study, senator vs copier at 5, 21, 63, 126 and 252 trading days | `outputs/tables/phase5_event_study_full.md`, `_oos.md` | `src/metrics/event_study.py` |
+| EXPLORATORY: pre-disclosure drift (what the delay costs a copier) | `outputs/tables/phase5_predisclosure_drift_full.md`, `_oos.md` | `src/metrics/event_study.py` |
+| EXPLORATORY: mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_full_yahoo.md`, `mechanism_oos_yahoo.md` | `src/metrics/mechanism.py` |
+| EXPLORATORY: committee test | `outputs/tables/committee_full_yahoo.md`, `committee_oos_yahoo.md` | `src/metrics/committee.py` |
+| EXPLORATORY: robustness variants V1-V20, full window and second half | `outputs/tables/variants_full_yahoo.md` | `run_variants.py` |
 | Figure: open positions and capital deployed over time | `outputs/figures/phase4_open_lots_capital.png` | `src/engine/diagnostics.py` |
 | Three copied trades traced step by step | `outputs/phase4_worked_examples.md` | `src/engine/diagnostics.py` |
+| Warm-up before/after (the book's first year) | `outputs/tables/phase5_warmup_before_after.csv` | `src/engine/warmup.py` |
 | Data appendix: every exclusion counted and explained | `outputs/data_quality.md` | every stage |
 | Raw data first look (filings, transactions, owners by year) | `outputs/phase1_summary.md` | `src/scrape/summary.py` |
+
+**The in-sample design record.** The files named `*_insample*` (`phase5_insample_results.md`, `confirmatory_insample.md`,
+`mechanism_insample_yahoo.md`, `committee_insample_yahoo.md`, `variants_insample_yahoo.md`), plus `phase5_event_study.md`
+and `phase5_predisclosure_drift.md`, are the first-half results that were seen while the rules were designed, before the
+freeze. The full-window run does not overwrite them. To rebuild them, set `engine.sample: in_sample` in
+`config/config.yaml` and run the same two commands.
 
 "yahoo" in a file name names the price source: every price is Yahoo's (no CRSP or terminal price file arrived in time,
 so Yahoo is final). The survivorship-ledger stocks (delisted names Yahoo no longer serves) have no prices and are
