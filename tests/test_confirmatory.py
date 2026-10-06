@@ -126,3 +126,29 @@ def test_the_in_sample_half_reproduces_the_registered_values():
     p = cf.restrict(panel, cal, "2021-09-01", "2024-02-29")
     xcols = [k for k in panel.columns if k.startswith("x_")]
     assert len(p) == len(panel) and (p[xcols].isna().to_numpy() == panel[xcols].isna().to_numpy()).all()
+
+
+def test_variant_table_reads_the_second_half_columns():
+    from src import variants as vr
+    df = pd.DataFrame({"id": ["H", "V1"], "name": ["Headline", "V1"], "sample": ["a", "a"], "status": ["run", "run"],
+                       "months": ["2021-09 to 2026-08"] * 2, "oos_months": ["2024-03 to 2026-08"] * 2,
+                       "purchases_copied": [10, 8], "sales_executed": [5, 4]})
+    for p in ("", "oos_"):
+        for k, v in {"A_ann_return": [0.01, 0.02], "A_ann_vol": [0.2, 0.2], "A_sharpe": [0.1, 0.2],
+                     "A_capm_alpha": [0.0, 0.01], "A_capm_t": [0.1, 0.2], "A_c4_alpha": [0.0, 0.01], "A_c4_t": [0.1, 0.2],
+                     "A_max_dd": [-0.3, -0.2], "B_ann_return": [0.05, 0.06], "B_sharpe": [0.3, 0.4]}.items():
+            df[p + k] = [x + (0.5 if p else 0) for x in v]
+            df["d_" + p + k] = [0.0, v[1] - v[0]]
+    full, oos = vr.fmt_table(df), vr.fmt_table(df, "oos_")
+    assert full.loc[1, "A return"] == "2.00%" and oos.loc[1, "A return"] == "52.00%"
+    assert oos.loc[0, "sample"] == "2024-03 to 2026-08" and "purchases copied" not in oos and "purchases copied" in full
+
+
+def test_mechanism_and_committee_write_one_file_per_period(tmp_path):
+    panel = pd.read_csv("data/processed/event_panel.csv", dtype={"entry_date": str, "txn_price_date": str},
+                        low_memory=False).head(200)
+    mc.write(panel, "out-of-sample half", "2021-09-01", "2024-02-29", "yahoo", tmp_path, key="oos", exploratory=True)
+    text = (tmp_path / "mechanism_oos_yahoo.md").read_text()
+    assert "**EXPLORATORY.**" in text and "events in this sample" in text
+    mc.write(panel, "in-sample", "2021-09-01", "2024-02-29", "yahoo", tmp_path)
+    assert "EXPLORATORY" not in (tmp_path / "mechanism_insample_yahoo.md").read_text()

@@ -100,15 +100,24 @@ def summarise(rid: str, out: dict, eng: dict) -> dict:
     log = eng["log"]
     first = eng["first"]
     lw = log[log["entry_date"] >= first]
+    row = {"months": a["months"], "n_months": a["n_months"],
+           "purchases_copied": int(lw["action"].str.startswith("bought").sum()),
+           "sales_executed": int(lw["action"].str.startswith("sold").sum()),
+           "lots": int(eng["pieces"]["lot_id"].nunique()), **period_cols(out["results"])}
+    oos = (out.get("periods") or {}).get("oos")                # full window: the variant's own out-of-sample half
+    if oos:
+        row.update({f"oos_{k}": v for k, v in period_cols(oos).items()})
+    return row
+
+
+def period_cols(res: dict) -> dict:
+    a, b = res["Series A (headline)"], res["Series B (fixed pot)"]
     return {"months": a["months"], "n_months": a["n_months"],
-            "purchases_copied": int(lw["action"].str.startswith("bought").sum()),
-            "sales_executed": int(lw["action"].str.startswith("sold").sum()),
-            "lots": int(eng["pieces"]["lot_id"].nunique()),
             "A_ann_return": a["ann_return"], "A_ann_vol": a["ann_vol"], "A_sharpe": a["sharpe"],
             "A_capm_alpha": a["capm_alpha_ann"], "A_capm_t": a["capm_t_alpha_ols"], "A_capm_t_nw": a["capm_t_alpha_nw"],
             "A_c4_alpha": a["c4_alpha_ann"], "A_c4_t": a["c4_t_alpha_ols"], "A_c4_t_nw": a["c4_t_alpha_nw"],
             "A_max_dd": a["dd_depth"], "B_ann_return": b["ann_return"], "B_sharpe": b["sharpe"],
-            "SPY_ann_return": out["results"]["SPY"]["ann_return"]}
+            "SPY_ann_return": res["SPY"]["ann_return"]}
 
 
 def run_one(run: dict, sample_dir: Path, limit_last: str, unlocked: bool) -> dict:
@@ -138,31 +147,34 @@ def run_one(run: dict, sample_dir: Path, limit_last: str, unlocked: bool) -> dic
     return row
 
 
-def fmt_table(df: pd.DataFrame) -> pd.DataFrame:
-    months = df["months"].fillna(df["sample"]) if "months" in df else df["sample"]
+def fmt_table(df: pd.DataFrame, p: str = "") -> pd.DataFrame:
+    """p = "" for the run's whole sample, "oos_" for the out-of-sample half read off the same run."""
+    c = lambda name: f"{p}{name}"
+    months = df[c("months")].fillna(df["sample"]) if c("months") in df else df["sample"]
     v = pd.DataFrame({"id": df["id"], "variant": df["name"], "sample": months, "status": df["status"]})
     pct = lambda x: "" if pd.isna(x) else f"{x:.2%}"
     num = lambda x, f="{:.2f}": "" if pd.isna(x) else f.format(x)
-    if "A_ann_return" in df:
-        v["A return"] = df["A_ann_return"].map(pct)
-        v["A vol"] = df["A_ann_vol"].map(pct)
-        v["A Sharpe"] = df["A_sharpe"].map(num)
-        v["CAPM alpha (t)"] = [("" if pd.isna(a) else f"{a:.2%} ({t:.2f})") for a, t in zip(df["A_capm_alpha"], df["A_capm_t"])]
-        v["Carhart alpha (t)"] = [("" if pd.isna(a) else f"{a:.2%} ({t:.2f})") for a, t in zip(df["A_c4_alpha"], df["A_c4_t"])]
-        v["A max drawdown"] = df["A_max_dd"].map(pct)
-        v["purchases copied"] = df["purchases_copied"].map(lambda x: "" if pd.isna(x) else f"{int(x)}")
-        v["sales executed"] = df["sales_executed"].map(lambda x: "" if pd.isna(x) else f"{int(x)}")
-        v["B return"] = df["B_ann_return"].map(pct)
-        v["B Sharpe"] = df["B_sharpe"].map(num)
-        v["Δ A return"] = df["d_A_ann_return"].map(lambda x: "" if pd.isna(x) else f"{x:+.2%}")
-        v["Δ A Sharpe"] = df["d_A_sharpe"].map(lambda x: "" if pd.isna(x) else f"{x:+.2f}")
-        v["Δ CAPM alpha"] = df["d_A_capm_alpha"].map(lambda x: "" if pd.isna(x) else f"{x:+.2%}")
+    if c("A_ann_return") in df:
+        v["A return"] = df[c("A_ann_return")].map(pct)
+        v["A vol"] = df[c("A_ann_vol")].map(pct)
+        v["A Sharpe"] = df[c("A_sharpe")].map(num)
+        v["CAPM alpha (t)"] = [("" if pd.isna(a) else f"{a:.2%} ({t:.2f})") for a, t in zip(df[c("A_capm_alpha")], df[c("A_capm_t")])]
+        v["Carhart alpha (t)"] = [("" if pd.isna(a) else f"{a:.2%} ({t:.2f})") for a, t in zip(df[c("A_c4_alpha")], df[c("A_c4_t")])]
+        v["A max drawdown"] = df[c("A_max_dd")].map(pct)
+        if not p:
+            v["purchases copied"] = df["purchases_copied"].map(lambda x: "" if pd.isna(x) else f"{int(x)}")
+            v["sales executed"] = df["sales_executed"].map(lambda x: "" if pd.isna(x) else f"{int(x)}")
+        v["B return"] = df[c("B_ann_return")].map(pct)
+        v["B Sharpe"] = df[c("B_sharpe")].map(num)
+        v["Δ A return"] = df[f"d_{p}A_ann_return"].map(lambda x: "" if pd.isna(x) else f"{x:+.2%}")
+        v["Δ A Sharpe"] = df[f"d_{p}A_sharpe"].map(lambda x: "" if pd.isna(x) else f"{x:+.2f}")
+        v["Δ CAPM alpha"] = df[f"d_{p}A_capm_alpha"].map(lambda x: "" if pd.isna(x) else f"{x:+.2%}")
     return v
 
 
-def main(only: list[str] | None = None) -> pd.DataFrame:
+def main(only: list[str] | None = None, config_path: str | None = None) -> pd.DataFrame:
     from src.engine import sample_bounds
-    base = load_config()
+    base = load_config(config_path) if config_path else load_config()
     first, last, label = sample_bounds(base)
     unlocked = bool(base["oos"].get("oos_unlocked")) and base.get("engine", {}).get("sample") == "full"
     tag = price_tag()
@@ -189,8 +201,9 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
     h = df[df["id"] == "H"].iloc[0]
     sig6 = lambda v: float(f"{v:.6g}") if pd.notna(v) else np.nan    # the CSV's precision, so that a full run and an
     for c in ("A_ann_return", "A_sharpe", "A_capm_alpha", "A_c4_alpha", "B_ann_return", "B_sharpe"):  # --only run agree
-        if c in df:
-            df[f"d_{c}"] = df[c].map(sig6) - sig6(h[c])
+        for pc in (c, f"oos_{c}"):
+            if pc in df:
+                df[f"d_{pc}"] = df[pc].map(sig6) - sig6(h[pc])
     TABLES.mkdir(parents=True, exist_ok=True)
     df.to_csv(stem.with_suffix(".csv"), index=False, float_format="%.6g")
     stem.with_suffix(".json").write_text(json.dumps({"sample": f"{first}..{last}", "tag": tag, "rows": rows},
@@ -203,9 +216,20 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
               "Series A = return on capital deployed (headline); B = fixed pot. Monthly statistics as in "
               "outputs/tables/phase5_insample_results.md: annualised geometric return, volatility, Sharpe on excess returns, "
               "CAPM and Carhart alphas (annualised, OLS t), maximum drawdown of the daily index. \"Purchases copied\" = "
-              "purchases the book bought inside the window. Δ = variant minus headline. V12 covers different dates "
-              "(2016-09 to 2021-08), so its Δ compares different periods. Unrounded numbers: the .csv._\n\n")
-    stem.with_suffix(".md").write_text(head + v.to_markdown(index=False) + "\n")
+              "purchases the book bought inside the window. Δ = variant minus headline. "
+              + ("V12 covers different dates (2016-09 to 2021-08), so its Δ compares different periods. " if skey != "full" else
+                 "V11 (2023-09 to 2026-08) and V12 (2016-09 to 2026-08) cover different dates, so their Δ compare different "
+                 "periods. ")
+              + "Unrounded numbers: the .csv._\n\n")
+    body = v.to_markdown(index=False) + "\n"
+    if skey == "full":
+        from src.metrics.confirmatory import EXPLORATORY_NOTE
+        body = (EXPLORATORY_NOTE + "\n\n## Full window (each variant's whole window, one continuous run)\n\n" + body
+                + "\n## Second half: each variant's own out-of-sample half, read off the same run\n\n"
+                + "_The headline and every 5-year variant: 2024-03 to 2026-08. V11 (3-year window): 2025-03 to 2026-08. "
+                  "V12 (10-year window): 2021-09 to 2026-08._\n\n"
+                + (fmt_table(df, "oos_").to_markdown(index=False) + "\n" if "oos_A_ann_return" in df else "_None._\n"))
+    stem.with_suffix(".md").write_text(head + body)
     print(f"[variants] {len(df)} rows -> {stem}.md")
     return df
 
@@ -214,4 +238,6 @@ if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="+")
-    main(ap.parse_args().only)
+    ap.add_argument("--config")
+    a = ap.parse_args()
+    main(a.only, a.config)
