@@ -122,10 +122,12 @@ def test_the_in_sample_half_reproduces_the_registered_values():
     assert round(c.loc["H1p", "t"], 2) == 1.06 and round(c.loc["H1s", "t"], 2) == 0.54
     assert np.allclose(c["mde_bonferroni"], c["se"] * c["z_bonferroni"])
     assert np.allclose(c["p_holm"], cf.holm(c["p"]))
-    # censoring the in-sample panel at its own end changes nothing
+    # the in-sample half holds the in-sample run's 882 events (also when the panel on disk is the full window's),
+    # and restricting twice changes nothing
     p = cf.restrict(panel, cal, "2021-09-01", "2024-02-29")
     xcols = [k for k in panel.columns if k.startswith("x_")]
-    assert len(p) == len(panel) and (p[xcols].isna().to_numpy() == panel[xcols].isna().to_numpy()).all()
+    q = cf.restrict(p, cal, "2021-09-01", "2024-02-29")
+    assert len(p) == 882 and (p[xcols].isna().to_numpy() == q[xcols].isna().to_numpy()).all()
 
 
 def test_variant_table_reads_the_second_half_columns():

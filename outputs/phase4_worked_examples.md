@@ -12,24 +12,23 @@ Three copied lots traced step by step from `data/processed/lots.csv` and `engine
 
 _To check on Yahoo Finance: open finance.yahoo.com/quote/JNJ/history, set the dates, and compare the 'Close' column (adjusted for splits only) with the Close shown here; the return uses 'Adj Close', which also reinvests dividends. Yahoo re-adjusts 'Adj Close' after every new dividend, so its level today can differ slightly from ours; the ratio between two dates should match._
 
-### A partial sale: Tommy Tuberville, Microsoft Corporation - Common Stock (MSFT)
+### A partial sale: Tommy Tuberville, Intel Corporation - Common Stock (INTC)
 
-1. **Senator's trade**: Purchase dated 2022-09-19, owner Joint, disclosed range $250,001 - $500,000 (record T07887.1, trade T07887).
-2. **Disclosure**: PTR received 2022-10-12 10:09:00 (US Eastern).
-3. **Entry date** = first NYSE trading day after the disclosure date = **2022-10-13**.
-4. **Entry price**: adjusted close 226.6893 (Yahoo 'Close' that day: 234.24). Size = midpoint $375,000.50; units = 375,000.50 / 226.6893 = 1,654.2490.
-5. **Exit (senator sale)**: Sale (Partial) dated 2022-10-05, disclosed 2022-11-10 14:56:00 ($100,001 - $250,000); executed at the close of **2022-11-11**, adjusted close 239.1444 (Yahoo 'Close' 247.11). The partial sale sells $175,000.50 / 239.1444 = 731.7775 units of this lot (entry cost 165,886.11). Return 239.1444 / 226.6893 - 1 = **5.49%**; P&L $9,114.39 over 21 trading days (29 calendar days).
-6. **Exit (senator sale)**: Sale (Partial) dated 2022-11-22, disclosed 2022-12-14 14:51:00 ($100,001 - $250,000); executed at the close of **2022-12-15**, adjusted close 241.6623 (Yahoo 'Close' 249.01). The partial sale sells $175,000.50 / 241.6623 = 724.1531 units of this lot (entry cost 164,157.74). Return 241.6623 / 226.6893 - 1 = **6.61%**; P&L $10,842.76 over 44 trading days (63 calendar days).
-7. **Exit (senator sale)**: Sale (Full) dated 2023-06-20, disclosed 2023-07-14 12:55:00 ($250,001 - $500,000); executed at the close of **2023-07-17**, adjusted close 337.1040 (Yahoo 'Close' 345.73). Sells all 198.3184 units. Return 337.1040 / 226.6893 - 1 = **48.71%**; P&L $21,897.28 over 188 trading days (277 calendar days).
-
-_To check on Yahoo Finance: open finance.yahoo.com/quote/MSFT/history, set the dates, and compare the 'Close' column (adjusted for splits only) with the Close shown here; the return uses 'Adj Close', which also reinvests dividends. Yahoo re-adjusts 'Adj Close' after every new dividend, so its level today can differ slightly from ours; the ratio between two dates should match._
-
-### A lot held to the end of the in-sample window: Tommy Tuberville, Intel Corporation - Common Stock (INTC)
-
-1. **Senator's trade**: Purchase dated 2021-10-15, owner Joint, disclosed range $15,001 - $50,000 (record T07164.1, trade T07164).
-2. **Disclosure**: PTR received 2021-11-10 14:26:00 (US Eastern).
-3. **Entry date** = first NYSE trading day after the disclosure date = **2021-11-11**.
-4. **Entry price**: adjusted close 46.8649 (Yahoo 'Close' that day: 50.53). Size = midpoint $32,500.50; units = 32,500.50 / 46.8649 = 693.4937.
-5. **End of window**: 693.4937 units marked at the adjusted close of **2024-02-29**, 42.6056 (Yahoo 'Close' 43.05). Return 42.6056 / 46.8649 - 1 = **-9.09%**; P&L $-2,953.80 over 576 trading days (840 calendar days).
+1. **Senator's trade**: Purchase dated 2022-08-05, owner Joint, disclosed range $1,001 - $15,000 (record T07860.1, trade T07860).
+2. **Disclosure**: PTR received 2022-09-15 12:53:00 (US Eastern).
+3. **Entry date** = first NYSE trading day after the disclosure date = **2022-09-16**.
+4. **Entry price**: adjusted close 27.8197 (Yahoo 'Close' that day: 29.24). Size = midpoint $8,000.50; units = 8,000.50 / 27.8197 = 287.5835.
+5. **Exit (senator sale)**: Sale (Partial) dated 2024-05-10, disclosed 2024-06-14 14:39:00 ($100,001 - $250,000); executed at the close of **2024-06-17**, adjusted close 30.7847 (Yahoo 'Close' 30.98). The partial sale sells $175,000.50 / 30.7847 = 187.5587 units of this lot (entry cost 5,217.84). Return 30.7847 / 27.8197 - 1 = **10.66%**; P&L $556.11 over 439 trading days (640 calendar days).
+6. **Exit (senator sale)**: Sale (Full) dated 2024-05-13, disclosed 2024-06-14 14:39:00 ($100,001 - $250,000); executed at the close of **2024-06-17**, adjusted close 30.7847 (Yahoo 'Close' 30.98). Sells all 100.0248 units. Return 30.7847 / 27.8197 - 1 = **10.66%**; P&L $296.57 over 439 trading days (640 calendar days).
 
 _To check on Yahoo Finance: open finance.yahoo.com/quote/INTC/history, set the dates, and compare the 'Close' column (adjusted for splits only) with the Close shown here; the return uses 'Adj Close', which also reinvests dividends. Yahoo re-adjusts 'Adj Close' after every new dividend, so its level today can differ slightly from ours; the ratio between two dates should match._
+
+### A lot held to the end of the in-sample window: Gary C. Peters, VZ (VZ)
+
+1. **Senator's trade**: Purchase dated 2021-11-09, owner Self, disclosed range $1,001 - $15,000 (record T07204.1, trade T07204).
+2. **Disclosure**: PTR received 2021-12-07 10:59:00 (US Eastern).
+3. **Entry date** = first NYSE trading day after the disclosure date = **2021-12-08**.
+4. **Entry price**: adjusted close 37.2436 (Yahoo 'Close' that day: 50.49). Size = midpoint $8,000.50; units = 8,000.50 / 37.2436 = 214.8155.
+5. **End of window**: 214.8155 units marked at the adjusted close of **2026-08-31**, 50.0200 (Yahoo 'Close' 50.02). Return 50.0200 / 37.2436 - 1 = **34.31%**; P&L $2,744.57 over 1185 trading days (1727 calendar days).
+
+_To check on Yahoo Finance: open finance.yahoo.com/quote/VZ/history, set the dates, and compare the 'Close' column (adjusted for splits only) with the Close shown here; the return uses 'Adj Close', which also reinvests dividends. Yahoo re-adjusts 'Adj Close' after every new dividend, so its level today can differ slightly from ours; the ratio between two dates should match._
