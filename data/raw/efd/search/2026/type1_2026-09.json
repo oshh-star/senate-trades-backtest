@@ -1,6 +1,20 @@
 {
  "data": [
   [
+   "James Conley",
+   "Justice, II",
+   "Justice II,  James Conley (Senator)",
+   "<a href=\"/search/view/ptr/0a93a20c-2a0f-4979-80ca-cc2f61297527/\" target=\"_blank\">Periodic Transaction Report for 09/28/2026</a>",
+   "09/28/2026"
+  ],
+  [
+   "Richard",
+   "Blumenthal",
+   "Blumenthal, Richard (Senator)",
+   "<a href=\"/search/view/ptr/9e2ff733-aeac-4ce8-872c-3d6b7913da88/\" target=\"_blank\">Periodic Transaction Report for 09/28/2026</a>",
+   "09/28/2026"
+  ],
+  [
    "A. Mitchell",
    "McConnell, Jr.",
    "McConnell, A. Mitchell Jr. (Senator)",
@@ -57,7 +71,7 @@
    "09/02/2026"
   ]
  ],
- "fetched_at": "2026-09-27T16:32:09",
+ "fetched_at": "2026-10-02T09:16:47",
  "query": {
   "date_field": "date received",
   "end": "2026-09-30",
@@ -65,5 +79,5 @@
   "report_type": 11,
   "start": "2026-09-01"
  },
- "recordsTotal": 8
+ "recordsTotal": 10
 }

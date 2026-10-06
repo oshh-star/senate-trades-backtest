@@ -117,13 +117,12 @@ def run_one(run: dict, sample_dir: Path, limit_last: str, unlocked: bool) -> dic
         row.update({"status": f"not run: its {label} sample ends {last}, after the headline's {limit_last} "
                               "(out-of-sample firewall)"})
         return row
-    t0 = time.time()
     try:
         d = sample_dir / run["id"]
         eng = engine.run(cfg, out_dir=d, write_diagnostics=False)
         out = metrics.run(cfg, engine_dir=d, write=False)
         row.update(summarise(run["id"], out, eng))
-        row["status"] = f"run ({time.time() - t0:.0f}s)"
+        row["status"] = "run"                                 # no run time here: the tables must rebuild byte-for-byte
     except Exception as e:                                    # a failure is a result: log it, keep going
         row["status"] = f"failed: {type(e).__name__}: {e}"
         (sample_dir / f"{run['id']}_error.txt").write_text(traceback.format_exc())
@@ -166,8 +165,9 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
     rows = []
     for r in runs:
         print(f"[variants] {r['id']}: {r['name']} ...", flush=True)
+        t0 = time.time()
         rows.append(run_one(r, sample_dir, last, unlocked))
-        print(f"           {rows[-1]['status']}", flush=True)
+        print(f"           {rows[-1]['status']} ({time.time() - t0:.0f}s)", flush=True)
     df = pd.DataFrame(rows)
     stem = TABLES / f"variants_{skey}_{tag}"
     if only and stem.with_suffix(".csv").exists():          # --only: replace those rows, keep the others
@@ -178,9 +178,10 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
         df = df.sort_values("id", key=lambda s: s.map(order)).reset_index(drop=True)
         rows = df.to_dict("records")
     h = df[df["id"] == "H"].iloc[0]
-    for c in ("A_ann_return", "A_sharpe", "A_capm_alpha", "A_c4_alpha", "B_ann_return", "B_sharpe"):
+    sig6 = lambda v: float(f"{v:.6g}") if pd.notna(v) else np.nan    # the CSV's precision, so that a full run and an
+    for c in ("A_ann_return", "A_sharpe", "A_capm_alpha", "A_c4_alpha", "B_ann_return", "B_sharpe"):  # --only run agree
         if c in df:
-            df[f"d_{c}"] = df[c] - h[c]
+            df[f"d_{c}"] = df[c].map(sig6) - sig6(h[c])
     TABLES.mkdir(parents=True, exist_ok=True)
     df.to_csv(stem.with_suffix(".csv"), index=False, float_format="%.6g")
     stem.with_suffix(".json").write_text(json.dumps({"sample": f"{first}..{last}", "tag": tag, "rows": rows},

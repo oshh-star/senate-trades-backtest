@@ -7,3 +7,4 @@ data/processed/prices.csv.gz
 data/processed/prices_yahoo_only.csv.gz
 data/interim/variants/
 data/interim/_congress_legislators/
+dist/

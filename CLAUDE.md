@@ -87,6 +87,8 @@ src/metrics/          Phase 5: stats.py (returns, Sharpe, CAPM/Carhart with OLS 
                       event_study.py (clustered by entry month); outputs/tables/phase5_*.md, outputs/figures/phase5_*.png
                       Phase 6 prep: mechanism.py (size/party/lag/senator splits), committee.py (committee test);
                       outputs/tables/{variants,mechanism,committee}_insample_<prefill|filled>.md
+                      Part B Step 1: confirmatory.py (H0-H4 per half: Holm, MDE, ex-bulk, reversal; calendar years,
+                      worst 12 months) -> outputs/tables/confirmatory_insample.md (confirmatory_oos.md once unlocked)
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
 config/name_overrides.yaml   hand-checked eFD filer name -> bioguide_id
 config/asset_name_overrides.yaml   hand-written asset name -> ticker (J5), confirmed against Yahoo
@@ -115,12 +117,14 @@ outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
 outputs/phase4_worked_examples.md   three copied lots traced step by step (Phase 4)
 docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
+README.md             for the professor: install, the one command, run times, which file feeds each report table
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
 scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand; cached in data/raw/sec/filings/
 scripts/price_request.py  writes docs/PRICE_REQUEST.md and docs/crsp_tickers_*.txt (M2), by hand after the prices stage
 scripts/committee_history.py  Senate committee memberships by date from congress-legislators' git history (by hand)
 scripts/sec_sic.py        SIC industry codes from SEC submissions -> data/interim/sic_codes.csv (by hand)
+scripts/make_submission.py  dist/submission.zip (committed files + CHECKSUMS.sha256), deterministic; dist/ is git-ignored
 data/raw/manual_prices/  Bloomberg/FactSet CSVs (date, close, total_return_index) and SOURCES.md (who, where, when)
 tests/                pytest suite (run: python -m pytest)
 ```
@@ -129,12 +133,12 @@ tests/                pytest suite (run: python -m pytest)
 | Phase | Work | Status |
 |---|---|---|
 | 0 | Set-up and environment checks | Done (2026-09-27) |
-| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); re-run once after 30 Sep to finalise the 2026 listing |
+| 1 | Scrape eFD PTRs 2016-01-01 to 2026-09-30 into data/raw/ (resumable), parse, match names | Done (2026-09-27); 2026 listing finalised 2026-10-02 (2 new filings, both outside the window) |
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request. A.2b done (2026-09-30): preferred shares out (N2), 9 renames (N3); **waiting on terminal/CRSP prices** |
-| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R3 2026-10-01: Holm, minimum detectable effects, ex-bulk sensitivity); waiting on prices (deadline 2026-10-04, R3), then OOS |
+| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R4: Holm, minimum detectable effects, ex-bulk sensitivity). **Part B Step 1 done (2026-10-05)**: confirmatory.py, outputs/tables/confirmatory_insample.md. Price fill closed by R3 (Yahoo only). Submission readiness done (clean-room test, make_submission.py). Next: freeze, unlock, OOS |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 
 ## RULES FOR EVERY SESSION

@@ -1,0 +1,8 @@
+id,hypothesis,statistic,sides,prediction,estimate,se,t,n,clusters,p,z_nominal,z_bonferroni,mde_nominal,mde_bonferroni,p_holm,verdict
+H0a,H0 (primary),"Series A, CAPM alpha, annualised",2,Not distinguishable from zero,-0.0394657,0.0665159,-0.593327,30,,0.552962,1.95996,2.69011,0.130369,0.178935,1,not distinguishable from zero
+H0b,H0 (primary),"Series A, Carhart 4-factor alpha, annualised",2,Not distinguishable from zero,-0.0186491,0.0680228,-0.274159,30,,0.783962,1.95996,2.69011,0.133322,0.182989,1,not distinguishable from zero
+H1p,H1 (information),"Purchases: pre-disclosure drift (transaction close to entry close, SPY-adjusted)",2,Close to zero (positive if senators trade on information),0.00605026,0.00570936,1.05971,413,29,0.289278,1.95996,2.69011,0.0111901,0.0153588,1,not distinguishable from zero
+H1s,H1 (information),Sales: pre-disclosure drift,2,Close to zero (negative if senators trade on information),0.00327738,0.00601615,0.544765,401,26,0.585915,1.95996,2.69011,0.0117914,0.0161841,1,not distinguishable from zero
+H2,H2 (short-horizon drift),"Copier purchases, 21-day SPY-adjusted return",1,One-sided test: is it positive?,0.0115713,0.00606724,1.90718,413,29,0.0282484,1.64485,2.45,0.00997972,0.0148647,0.170884,not shown to be positive
+H3,H3 (committee anomaly),"Sales, senator measure, 63 days: overseen minus not overseen",2,It disappears (it was noise),0.0394817,0.0175429,2.25058,305,24,0.024412,1.95996,2.69011,0.0343834,0.0471922,0.170884,not distinguishable from zero
+H4,H4 (size),"Purchases, copier measure, 126 days: up to $50,000 minus larger",2,Negative if senators trade on information,0.039757,0.0261381,1.52104,231,24,0.12825,1.95996,2.69011,0.0512297,0.0703143,0.641252,not distinguishable from zero
