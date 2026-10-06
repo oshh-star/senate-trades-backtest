@@ -13,8 +13,8 @@ out-of-sample number computed; additions R1-R3 recorded 2026-10-01. Full plan: d
     it reverse by 126 and 252 days (price pressure, not information)?
   - **H3 (committee anomaly)**: overseen minus not-overseen SALES, senator measure, 63 days. Prediction: it disappears.
   - **H4 (size)**: purchases up to $50,000 minus larger ones, copier measure, 126 days. Negative if senators are informed.
-- The tests and predictions are fixed. The in-sample values are provisional ("prefill") and are updated after Phase
-  5A.3; the predictions do not change.
+- The tests and predictions are fixed. The in-sample values are on Yahoo prices, final under R3 and S2; the predictions
+  do not change.
 - **How they are judged (E55, confirmed by R1)**: two-sided 5% for H0, H1, H3, H4; one-sided 5% for H2; Newey-West t
   for the alphas, t clustered by entry month for the rest; the H2 reversal check is reported whatever H2 shows.
 - **Multiple testing (R1)**: each of the 7 confirmatory statistics shows its unadjusted AND its Holm-adjusted p-value;
@@ -46,8 +46,8 @@ _Last updated: 2026-10-05, Part B Step 1 (pre-unlock statistics) and submission 
   dropped. `python scripts/make_submission.py` builds dist/submission.zip: **111.3 MB, over the 100 MB line**, so
   open question 1 asks what to leave out. README.md is rewritten for the professor.
 - **Price fill (R3)**: no CRSP or terminal file had been uploaded by 2026-10-04, so every price stays Yahoo's and the
-  survivorship gap is a stated limitation, bounded by V15. File names keep the tag "prefill" (the code sets it
-  mechanically while no CRSP or terminal file exists); see open question 2.
+  survivorship gap is a stated limitation, bounded by V15. S2 (2026-10-06) made Yahoo final and renamed the
+  "prefill" files to "yahoo"; S3 fixed the headline's source to Yahoo and registered V20 for a late CRSP file.
 - **PRs #10 and #11**: #10 was merged before R4 was pushed, and #11 was merged into #10's branch, not main. R4 and the
   final scrape refresh therefore reach main through this pull request.
 
@@ -60,21 +60,21 @@ _Last updated: 2026-10-05, Part B Step 1 (pre-unlock statistics) and submission 
   reproduce exactly (logged in "Variants run").
 - **Out-of-sample tests pre-registered** (Q2, see above) and their mechanics confirmed (R1-R3). The firewall is still
   shut.
-- Out-of-sample stays locked (M3). Every in-sample number is on Yahoo prices ("prefill" in the file names): the
+- Out-of-sample stays locked (M3). Every in-sample number is on Yahoo prices ("yahoo" in the file names): the
   survivorship-ledger stocks are skipped.
 - **Decisions**: Q1-Q3 and R1-R4 logged. New interpretations **E56 (how the confirmatory statistics are computed) and
   E57 (reproducibility fixes, submission zip) need confirmation**.
 - **Variant runner**: `python run_variants.py` runs V1-V19 (V2 as five runs), each alone against the headline, and
-  writes outputs/tables/variants_insample_prefill.md/.csv/.json. All ran except **V11 (3-year window), refused by the
+  writes outputs/tables/variants_insample_yahoo.md/.csv/.json. All ran except **V11 (3-year window), refused by the
   firewall**: its in-sample half (2023-09 to 2025-02) lies in the headline's locked period; it runs unchanged once
   out-of-sample is unlocked (engine.sample: full). Every run is logged in DECISIONS.md "Variants run" (commit a124f03),
   including the trial runs and V12's first failed attempt. Headline: series A -0.14%, Sharpe 0.02. The biggest moves:
   V17 empty start +7.71 points, V10 equal weight +3.95, V8 equal dollars +3.57, V6 family +3.33; V18 and V19 equal the
   headline (no terminal prices yet; the preferred shares were never copied); V13 too (both in-sample OTC events were
   sales of nothing held). V12 (2016-09 to 2021-08): 25.83% a year, Sharpe 0.90, CAPM alpha 0.76% (t 0.09).
-- **Mechanism splits** (outputs/tables/mechanism_insample_prefill.md, rebuilt by the metrics stage): size, party, filing
+- **Mechanism splits** (outputs/tables/mechanism_insample_yahoo.md, rebuilt by the metrics stage): size, party, filing
   lag, senator. No split difference reaches |t| = 2; t is blank where a group spans fewer than 5 entry months.
-- **Committee test** (outputs/tables/committee_insample_prefill.md): mapping committed at a124f03 BEFORE the split (E54);
+- **Committee test** (outputs/tables/committee_insample_yahoo.md): mapping committed at a124f03 BEFORE the split (E54);
   membership reconstructed from 206 versions of congress-legislators' committee file (checks passed); SIC codes from
   SEC for 861 of 868 non-ETF events. Overseen purchases: no edge (copier 21d -0.92%, t -0.61). Overseen SALES were
   followed by the stock BEATING SPY (senator 63d +2.92%, t 2.16; difference vs not overseen +3.95%, t 2.25): the wrong
@@ -142,8 +142,7 @@ _Last updated: 2026-10-05, Part B Step 1 (pre-unlock statistics) and submission 
    (d) **leave the price cache out and fetch it** from the GitHub repository with a small script. This needs internet
        and access to the repository. Re-downloading from Yahoo instead would NOT reproduce the numbers (Yahoo revises
        its history).
-2. **"prefill" in file names**: R3 made Yahoo the final source, but the tag stays "prefill" while no CRSP or terminal file
-   exists. Rename to "yahoo", or keep it until the submission?
+2. **"prefill" renamed to "yahoo"** (S2, 2026-10-06): resolved.
 3. **Ledger symbols marked "unknown"**: AHL-C (now out of the headline as a preferred), and variant-only AQFH, CEM, HYH,
    TWO, HIYS.
 4. **WRDS access requested 27 Sep 2026, awaiting approval** (A04). If it arrives before the unlock, use CRSP (M2) or stay

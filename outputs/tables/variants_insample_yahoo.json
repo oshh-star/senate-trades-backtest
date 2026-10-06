@@ -1,6 +1,6 @@
 {
  "sample": "2021-09-01..2024-02-29",
- "tag": "prefill",
+ "tag": "yahoo",
  "rows": [
   {
    "id": "H",
@@ -607,6 +607,14 @@
    "B_sharpe": 0.3068811728959502,
    "SPY_ann_return": 0.0643087184583584,
    "status": "run"
+  },
+  {
+   "id": "V20",
+   "variant": "V20",
+   "name": "CRSP-filled prices (Yahoo first, CRSP where Yahoo has no price)",
+   "config": "prices.sources: ['yahoo', 'crsp']",
+   "sample": "2021-09-01..2024-02-29",
+   "status": "not run: no CRSP data"
   }
  ]
 }

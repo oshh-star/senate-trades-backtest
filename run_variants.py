@@ -1,4 +1,4 @@
-"""Run every pre-registered variant (V1-V19), each alone against the headline, from the repo root:
+"""Run every pre-registered variant (V1-V20), each alone against the headline, from the repo root:
 
     python run_variants.py                  # all of them (about 4 minutes)
     python run_variants.py --only V1 V17    # some of them

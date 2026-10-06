@@ -108,7 +108,7 @@ def test_verdicts():
 
 
 def test_the_in_sample_half_reproduces_the_registered_values():
-    """The test plan's in-sample (prefill) values, from the committed engine and metrics outputs."""
+    """The test plan's in-sample values (Yahoo prices), from the committed engine and metrics outputs."""
     panel = pd.read_csv("data/processed/event_panel.csv", dtype={"entry_date": str, "txn_price_date": str},
                         low_memory=False)
     mon = pd.read_csv("data/processed/monthly_returns.csv", dtype={"month": str}).set_index("month")

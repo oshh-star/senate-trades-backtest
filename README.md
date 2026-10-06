@@ -36,10 +36,10 @@ reads the raw data in `data/raw/` and rebuilds every table in `outputs/tables/`,
 data-quality log `outputs/data_quality.md` and the derived data in `data/processed/`. No file path needs editing:
 everything runs relative to this folder.
 
-The robustness variants (V1 to V19, each run alone against the headline) are a second command, run after the first:
+The robustness variants (V1 to V20, each run alone against the headline) are a second command, run after the first:
 
 ```bash
-python run_variants.py             # about 4 minutes; writes outputs/tables/variants_insample_prefill.*
+python run_variants.py             # about 4 minutes; writes outputs/tables/variants_insample_yahoo.*
 ```
 
 **Checking the rebuild.** If you unpacked `submission.zip`, compare the rebuilt files with the submitted ones:
@@ -64,9 +64,9 @@ Tests: `python -m pytest` (about 5 seconds; on Windows `python -X utf8 -m pytest
 | Confirmatory tests H0-H4 (Holm-adjusted p-values, minimum detectable effects, ex-bulk sensitivity, reversal check), calendar-year returns, worst 12 months | `outputs/tables/confirmatory_insample.md` (and `.csv`); `confirmatory_oos.md` once the out-of-sample half is opened | `src/metrics/confirmatory.py` |
 | Event study: senator vs copier at 5, 21, 63, 126 and 252 trading days | `outputs/tables/phase5_event_study.md` | `src/metrics/event_study.py` |
 | Pre-disclosure drift (what the delay costs a copier) | `outputs/tables/phase5_predisclosure_drift.md` | `src/metrics/event_study.py` |
-| Mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_insample_prefill.md` | `src/metrics/mechanism.py` |
-| Committee test (trades in industries the senator's committee oversees) | `outputs/tables/committee_insample_prefill.md` | `src/metrics/committee.py` |
-| Robustness variants V1-V19 | `outputs/tables/variants_insample_prefill.md` | `run_variants.py` |
+| Mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_insample_yahoo.md` | `src/metrics/mechanism.py` |
+| Committee test (trades in industries the senator's committee oversees) | `outputs/tables/committee_insample_yahoo.md` | `src/metrics/committee.py` |
+| Robustness variants V1-V20 | `outputs/tables/variants_insample_yahoo.md` | `run_variants.py` |
 | Warm-up before/after (the book's first year) | `outputs/tables/phase5_warmup_before_after.csv` | `src/engine/warmup.py` |
 | Figure: cumulative value, strategy and benchmarks | `outputs/figures/phase5_cumulative_value.png` | `src/metrics/` |
 | Figure: drawdowns | `outputs/figures/phase5_drawdowns.png` | `src/metrics/` |
@@ -75,9 +75,9 @@ Tests: `python -m pytest` (about 5 seconds; on Windows `python -X utf8 -m pytest
 | Data appendix: every exclusion counted and explained | `outputs/data_quality.md` | every stage |
 | Raw data first look (filings, transactions, owners by year) | `outputs/phase1_summary.md` | `src/scrape/summary.py` |
 
-"prefill" in a file name means the survivorship-ledger stocks (delisted names Yahoo no longer serves) have no prices
-and are skipped: no CRSP or terminal price file was available, so every price is Yahoo's. Each table says so in its
-header, and variant V15 bounds the effect.
+"yahoo" in a file name names the price source: every price is Yahoo's (no CRSP or terminal price file arrived in time,
+so Yahoo is final). The survivorship-ledger stocks (delisted names Yahoo no longer serves) have no prices and are
+skipped. Each table says so in its header, and variant V15 bounds the effect.
 
 ## Where the rules and the reasons are
 - `config/config.yaml`: every rule, as a parameter (the single source of truth for the code).

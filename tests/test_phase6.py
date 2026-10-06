@@ -43,7 +43,9 @@ def test_rescope_switches_owners_etfs_and_preferred():
 def test_every_preregistered_variant_is_expanded_with_its_switch():
     runs = vr.expand(load_config(), None)
     ids = [r["id"] for r in runs]
-    assert ids[:1] == ["V1"] and "V2.1" in ids and "V2.5" in ids and "V19" in ids and len(ids) == 23
+    assert ids[:1] == ["V1"] and "V2.1" in ids and "V2.5" in ids and "V19" in ids and len(ids) == 24
+    v20 = next(r for r in runs if r["id"] == "V20")                       # S3: CRSP fills the ledger, Yahoo first
+    assert v20["cfg"]["prices"]["sources"] == ["yahoo", "crsp"]
     v17 = next(r for r in runs if r["id"] == "V17")
     assert v17["cfg"]["engine"]["warmup_months"] == 0
     v2 = next(r for r in runs if r["id"] == "V2.3")

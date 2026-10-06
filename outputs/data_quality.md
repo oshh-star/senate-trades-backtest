@@ -1672,7 +1672,7 @@ _None._
 
 ### 9. Price sources (M2: CRSP, then a terminal export, then Yahoo)
 
-Order used: **crsp > manual > yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
+Order used: **yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
 
 | source   |   symbols |
 |:---------|----------:|

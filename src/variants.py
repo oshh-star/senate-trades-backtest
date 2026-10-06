@@ -1,4 +1,4 @@
-"""Run every pre-registered variant (docs/DECISIONS.md, V1-V19) through the engine and the metrics, each ALONE against
+"""Run every pre-registered variant (docs/DECISIONS.md, V1-V20) through the engine and the metrics, each ALONE against
 the headline (one config switch at a time, never combined), and write one summary table.
 
     python run_variants.py                 # every variant, in-sample (the firewall decides the sample)
@@ -6,7 +6,7 @@ the headline (one config switch at a time, never combined), and write one summar
 
 Each variant's engine files go to data/interim/variants/<sample>_<tag>/<id>/ (not committed); the headline is run the
 same way first, so every difference is measured against a run of the same code. Outputs:
-  outputs/tables/variants_<sample>_<tag>.csv, .md and .json    (<tag> = prefill until CRSP or terminal prices exist)
+  outputs/tables/variants_<sample>_<tag>.csv, .md and .json    (<tag> = yahoo: the headline's price source, S2)
 FIREWALL: the sample is the one src.engine.sample_bounds gives for the BASE config (in-sample while the firewall is
 shut). A variant whose own sample would end after the headline's sample end (V11: the 3-year window's in-sample half
 runs to 2025-02-28) is NOT run, and the table says why; with the firewall open (engine.sample: full) it runs.
@@ -49,13 +49,18 @@ VARIANTS = [
     ("V17", "Empty start (no warm-up)", [("engine.warmup_months", 0)]),
     ("V18", "Yahoo only, ledger skipped", [("prices.sources", ["yahoo"])]),
     ("V19", "Include preferred shares", [("universe.include_preferred", True)]),
+    ("V20", "CRSP-filled prices (Yahoo first, CRSP where Yahoo has no price)", [("prices.sources", ["yahoo", "crsp"])]),
 ]
 
 
 def price_tag() -> str:
-    """'prefill' while no CRSP or terminal price file exists (the ledger prices are about to change)."""
-    have = [p for d in ("data/raw/crsp", "data/raw/manual_prices") for p in Path(d).glob("*.csv*")]
-    return "filled" if have else "prefill"
+    """The headline's price source, used in output file names: Yahoo, final under R3 and S2 (S3: a CRSP file can only
+    ever feed V20, never the headline)."""
+    return "yahoo"
+
+
+def crsp_files() -> list[Path]:
+    return sorted(Path("data/raw/crsp").glob("*.csv*"))
 
 
 def set_path(cfg: dict, path: str, value) -> None:
@@ -113,6 +118,10 @@ def run_one(run: dict, sample_dir: Path, limit_last: str, unlocked: bool) -> dic
     first, last, label = sample_bounds(cfg)
     row = {k: run[k] for k in ("id", "variant", "name", "config")}
     row.update({"sample": f"{first}..{last}"})
+    if run["variant"] == "V20":                            # S3: needs a CRSP file and its own price build
+        row["status"] = ("not run: no CRSP data" if not crsp_files() else
+                         "not run: CRSP data present, but the V20 price build is not implemented yet")
+        return row
     if last > limit_last and not unlocked:
         row.update({"status": f"not run: its {label} sample ends {last}, after the headline's {limit_last} "
                               "(out-of-sample firewall)"})
@@ -188,8 +197,7 @@ def main(only: list[str] | None = None) -> pd.DataFrame:
                                                     indent=1, default=str))
     v = fmt_table(df)
     head = (f"# Variants, {label} ({first} to {last}), {tag.upper()}\n\n"
-            + (f"**PROVISIONAL ({tag}): the survivorship-ledger stocks are still skipped (no CRSP or terminal prices "
-               "yet), so every number here will change when the price request is filled.**\n\n" if tag == "prefill" else "")
+            + ("**Prices: Yahoo, the final headline source (R3, S2).** Stocks in the survivorship ledger (mostly delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases are skipped in the book; V15 (SPY fill) bounds the effect." "\n\n" if tag == "yahoo" else "")
             + "_Built by `python run_variants.py` (src/variants.py). Each pre-registered variant is run ALONE against the "
               "headline: one config switch, everything else as the headline (docs/DECISIONS.md, \"Pre-registered variants\"). "
               "Series A = return on capital deployed (headline); B = fixed pot. Monthly statistics as in "
