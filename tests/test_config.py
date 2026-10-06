@@ -43,6 +43,7 @@ def test_oos_firewall_is_locked_by_default():
 def test_oos_unlock_needs_frozen_commit():
     cfg = load_config()
     cfg["oos"]["oos_unlocked"] = True
+    cfg["project"]["frozen_rules_commit"] = None          # independent of the live config (frozen since F1)
     with pytest.raises(OutOfSampleLocked):
         require_oos_unlocked(cfg)
     cfg["project"]["frozen_rules_commit"] = "abc1234"
