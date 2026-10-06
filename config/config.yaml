@@ -5,7 +5,7 @@
 project:
   name: senate-trades-backtest
   course: LBS CA01 Investment Fundamentals, Autumn 2026
-  frozen_rules_commit: null        # set when the rules are frozen (see oos below)
+  frozen_rules_commit: "348318447daa58a91af14ae65c8ee3c98522d896"   # F1, 2026-10-06: rules frozen at this commit (docs/DECISIONS.md)
 
 paths:                             # relative to the repo root, always
   raw: data/raw
