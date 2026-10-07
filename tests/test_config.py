@@ -35,14 +35,19 @@ def test_split_variants(years, oos_start):
     assert sample_split(cfg)["out_of_sample"][0] == oos_start
 
 
-def test_oos_firewall_is_locked_by_default():
+def test_oos_firewall_is_open_only_with_a_frozen_commit():
+    cfg = load_config()                                   # U1 (2026-10-06): unlocked, with the F1 frozen commit
+    assert cfg["oos"]["oos_unlocked"] is True and len(str(cfg["project"]["frozen_rules_commit"])) == 40
+    require_oos_unlocked(cfg)
+    cfg["oos"]["oos_unlocked"] = False
     with pytest.raises(OutOfSampleLocked):
-        require_oos_unlocked(load_config())
+        require_oos_unlocked(cfg)
 
 
 def test_oos_unlock_needs_frozen_commit():
     cfg = load_config()
     cfg["oos"]["oos_unlocked"] = True
+    cfg["project"]["frozen_rules_commit"] = None          # independent of the live config (frozen since F1)
     with pytest.raises(OutOfSampleLocked):
         require_oos_unlocked(cfg)
     cfg["project"]["frozen_rules_commit"] = "abc1234"
@@ -53,7 +58,7 @@ def test_amended_spec_values():
     cfg = load_config()
     assert cfg["universe"]["owners"] == ["Self", "Joint"]
     assert cfg["universe"]["include_etfs"] is True
-    assert cfg["prices"]["sources"] == ["crsp", "manual", "yahoo"]          # M2 hierarchy
+    assert cfg["prices"]["sources"] == ["yahoo"]                            # S2/S3: Yahoo final (was M2's hierarchy)
     assert cfg["data"]["scrape_filer_types"] == [1, 4, 5]
     assert cfg["data"]["scope_rule"] == "transaction_date_within_senate_service"
     assert cfg["data"]["record_time_received"] is True

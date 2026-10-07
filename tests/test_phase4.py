@@ -251,6 +251,7 @@ def test_panel_horizons_and_censoring():
 
 def test_out_of_sample_is_refused_while_the_firewall_is_shut():
     c = copy.deepcopy(load_config())
+    c["oos"]["oos_unlocked"], c["engine"]["sample"] = False, "in_sample"     # the locked state (the live config is U1)
     assert sample_bounds(c)[:2] == ("2021-09-01", "2024-02-29")
     c["engine"]["sample"] = "full"
     with pytest.raises(OutOfSampleLocked):

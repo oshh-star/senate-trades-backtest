@@ -1672,7 +1672,7 @@ _None._
 
 ### 9. Price sources (M2: CRSP, then a terminal export, then Yahoo)
 
-Order used: **crsp > manual > yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
+Order used: **yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
 
 | source   |   symbols |
 |:---------|----------:|
@@ -1683,106 +1683,126 @@ Where two sources overlap, their daily returns are compared (`data/interim/price
 
 ## Phase 4: engine (in-sample only)
 
-_Stage `engine` of `python run_all.py`. Sample: **in-sample, 2021-09-01 to 2024-02-29** (627 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._
+_Stage `engine` of `python run_all.py`. Sample: **full window, 2021-09-01 to 2026-08-31** (1254 NYSE trading days). The out-of-sample firewall is shut: prices, RF and the calendar are cut at the last in-sample day before anything is computed. Outputs: `data/processed/lots.csv`, `daily_book.csv`, `event_panel.csv`, `engine_events.csv`, `engine_metadata.json` (definitions, K, reconciliation, config)._
 
 ### 0. Warm-up (L2) against the empty start (V17)
 
-The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 133 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $7,210,573 in cash, K = $8,406,633).
+The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 133 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $16,268,273 in cash, K = $17,464,333).
 
 | action                                                     |   events |   dollars |
 |:-----------------------------------------------------------|---------:|----------:|
 | bought                                                     |       72 | 1,552,036 |
 | ignored: nothing held                                      |       48 | 1,082,024 |
-| skipped: survivorship ledger (no usable prices)            |       10 |   320,505 |
+| skipped: survivorship ledger (no usable prices)            |        9 |   312,504 |
 | sold all                                                   |        2 |   409,493 |
+| skipped: no price on the entry date                        |        1 |     8,000 |
 | ignored: nothing held (earlier copied lots already closed) |        1 |    75,000 |
 
-Before (V17: the Phase 4 rule, rebuilt from the same events for this table only; book counts, no returns) against after (the headline). Window 2021-09-01 to 2024-02-29. Also in `outputs/tables/phase5_warmup_before_after.csv`.
+Before (V17: the Phase 4 rule, rebuilt from the same events for this table only; book counts, no returns) against after (the headline). Window 2021-09-01 to 2026-08-31. Also in `outputs/tables/phase5_warmup_before_after.csv`.
 
 | measure                                                                        | V17 empty start (Phase 4 rule)   | warm-up 12 months (L2, headline)   |
 |:-------------------------------------------------------------------------------|:---------------------------------|:-----------------------------------|
-| sale records in the window                                                     | 447                              | 447                                |
-| sales ignored: nothing held                                                    | 309                              | 264                                |
-| sales ignored (share)                                                          | 69.1%                            | 59.1%                              |
-| sales matched to a copied position                                             | 138                              | 183                                |
+| sale records in the window                                                     | 955                              | 955                                |
+| sales ignored: nothing held                                                    | 626                              | 576                                |
+| sales ignored (share)                                                          | 65.5%                            | 60.3%                              |
+| sales matched to a copied position                                             | 329                              | 379                                |
 | open lots: min                                                                 | 0                                | 65                                 |
-| open lots: median                                                              | 101                              | 136                                |
-| open lots: max                                                                 | 275                              | 308                                |
+| open lots: median                                                              | 170                              | 187                                |
+| open lots: max                                                                 | 960                              | 974                                |
 | capital deployed: min ($)                                                      | 0                                | 1,136,495                          |
-| capital deployed: median ($)                                                   | 2,863,230                        | 3,387,243                          |
-| capital deployed: max ($)                                                      | 8,606,892                        | 9,066,888                          |
+| capital deployed: median ($)                                                   | 5,046,313                        | 5,489,195                          |
+| capital deployed: max ($)                                                      | 24,491,210                       | 24,868,120                         |
 | days with no open lot                                                          | 6                                | 0                                  |
-| lots held on the last day                                                      | 251                              | 273                                |
-| share of dollars ever invested still held on the last day (at cost)            | 54.1%                            | 51.6%                              |
-| share still held on the last day, lots bought inside the window only (at cost) | 54.1%                            | 55.1%                              |
-| value held on the last day ($)                                                 | 8,299,924                        | 8,755,483                          |
+| lots held on the last day                                                      | 960                              | 974                                |
+| share of dollars ever invested still held on the last day (at cost)            | 56.6%                            | 54.7%                              |
+| share still held on the last day, lots bought inside the window only (at cost) | 56.6%                            | 56.6%                              |
+| value held on the last day ($)                                                 | 23,902,988                       | 24,274,604                         |
 
 ### 1. Events and what the book did with them
 
-883 window events (plus 133 warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
+2365 window events (plus 133 warm-up events, section 0): in-scope records (J3, as first published) whose entry date (first NYSE trading day after the disclosure date) falls in the sample, plus out-of-scope corrections that reverse an in-scope record. Same-day order: entry date, disclosure datetime, transaction date, row number (E29).
 
 | action                                                            |   events |    dollars |
 |:------------------------------------------------------------------|---------:|-----------:|
-| bought                                                            |      413 | 13,553,206 |
-| ignored: nothing held                                             |      257 | 14,971,128 |
-| sold all                                                          |      141 |  4,462,311 |
-| sold part                                                         |       42 |  2,636,122 |
-| skipped: survivorship ledger (no usable prices)                   |       22 |  1,786,511 |
-| ignored: nothing held (earlier copied lots already closed)        |        7 |    363,504 |
-| reversal: nothing to undo (the corrected record was not acted on) |        2 |          0 |
-| reversal: sold what was still held of the corrected purchase      |        1 |      8,032 |
+| bought                                                            |     1372 | 30,984,186 |
+| ignored: nothing held                                             |      523 | 41,934,262 |
+| sold all                                                          |      273 | 10,636,224 |
+| sold part                                                         |      106 |  4,071,262 |
+| ignored: nothing held (earlier copied lots already closed)        |       53 |  1,702,526 |
+| skipped: survivorship ledger (no usable prices)                   |       35 |  2,098,018 |
+| reversal: nothing to undo (the corrected record was not acted on) |       19 |          0 |
+| reversal: sold what was still held of the corrected purchase      |        4 |     80,575 |
+| reversal: bought back the units the corrected sale sold           |        2 |     72,147 |
+| skipped: no price on the entry date                               |        1 |      8,000 |
 
 ### 2. Records not copied
 
-- **Survivorship ledger** (K3, logged and skipped until CRSP): 22 purchases, $1,786,511 at midpoints. V15 (pre-registered, not run) fills them with SPY.
-- **No price on the entry date** (series exists): 0.
+- **Survivorship ledger** (K3, logged and skipped until CRSP): 35 purchases, $2,098,018 at midpoints. V15 (pre-registered, not run) fills them with SPY.
+- **No price on the entry date** (series exists): 1.
 
 | action                                          | price_ticker   |   purchases |   dollars |
 |:------------------------------------------------|:---------------|------------:|----------:|
 | skipped: survivorship ledger (no usable prices) | X              |           5 |   875,002 |
 | skipped: survivorship ledger (no usable prices) | ECOM           |           5 |   465,502 |
 | skipped: survivorship ledger (no usable prices) | ATVI           |           1 |   175,000 |
-| skipped: survivorship ledger (no usable prices) | PARA           |           2 |   107,501 |
-| skipped: survivorship ledger (no usable prices) | SSBK           |           1 |    75,000 |
-| skipped: survivorship ledger (no usable prices) | WBA            |           5 |    64,502 |
-| skipped: survivorship ledger (no usable prices) | MASI           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | SSBK           |           2 |   150,001 |
+| skipped: survivorship ledger (no usable prices) | PARA           |           3 |   140,002 |
+| skipped: survivorship ledger (no usable prices) | WBA            |           6 |    97,003 |
+| skipped: survivorship ledger (no usable prices) | GOGL           |           1 |    75,000 |
+| skipped: survivorship ledger (no usable prices) | TOELY          |           1 |    32,500 |
+| skipped: survivorship ledger (no usable prices) | WIZEY          |           2 |    16,001 |
+| skipped: survivorship ledger (no usable prices) | EA             |           2 |    16,001 |
+| skipped: no price on the entry date             | KBGGY          |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | KYOCY          |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | DFKCY          |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | AVB            |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | HOLX           |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | MASI           |           1 |     8,000 |
 
-**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 264 of 447 sale records (59%), by senator:
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 576 of 955 sale records (60%), by senator:
 
-| senator              |   sales_ignored |   dollars |
-|:---------------------|----------------:|----------:|
-| Tommy Tuberville     |             123 | 4,208,062 |
-| Dan Sullivan         |              48 |   506,524 |
-| Bill Hagerty         |              17 | 4,477,008 |
-| Sheldon Whitehouse   |              14 |   277,007 |
-| Jerry Moran          |              14 |   112,007 |
-| Markwayne Mullin     |              11 |    88,006 |
-| John W. Hickenlooper |              11 | 3,700,006 |
-| Shelley Moore Capito |               6 |    72,503 |
-| Deb Fischer          |               4 |   166,002 |
-| John Boozman         |               3 |    48,502 |
-| Gary C. Peters       |               3 |    91,002 |
-| Mark R. Warner       |               3 |   625,002 |
-| Lindsey Graham       |               1 |    32,500 |
-| John Thune           |               1 |    32,500 |
-| J.D. Vance           |               1 |    75,000 |
-| Maria Cantwell       |               1 |    32,500 |
-| Rick Scott           |               1 |   750,000 |
-| Tammy Duckworth      |               1 |    32,500 |
-| Thom Tillis          |               1 |     8,000 |
+| senator              |   sales_ignored |    dollars |
+|:---------------------|----------------:|-----------:|
+| Tommy Tuberville     |             219 |  7,306,610 |
+| John Boozman         |              87 |    818,544 |
+| Sheldon Whitehouse   |              49 |  1,165,024 |
+| Dan Sullivan         |              48 |    506,524 |
+| Alan Armstrong       |              48 | 16,995,524 |
+| Markwayne Mullin     |              27 |  2,290,514 |
+| Bill Hagerty         |              18 |  4,485,009 |
+| John W. Hickenlooper |              15 |  4,033,008 |
+| Jerry Moran          |              14 |    112,007 |
+| Gary C. Peters       |              13 |    195,506 |
+| Ashley Moody         |               6 |    231,003 |
+| Shelley Moore Capito |               6 |     72,503 |
+| Deb Fischer          |               4 |    166,002 |
+| Jim Banks            |               3 |     24,002 |
+| Mark R. Warner       |               3 |    625,002 |
+| Lindsey Graham       |               2 |     65,001 |
+| Marco Rubio          |               2 |     16,001 |
+| David McCormick      |               2 |  3,008,001 |
+| Bernie Moreno        |               2 |    207,501 |
+| James C. Justice     |               1 |    375,000 |
+| J.D. Vance           |               1 |     75,000 |
+| John Thune           |               1 |     32,500 |
+| Katie Boyd Britt     |               1 |      8,000 |
+| Maria Cantwell       |               1 |     32,500 |
+| Rick Scott           |               1 |    750,000 |
+| Tammy Duckworth      |               1 |     32,500 |
+| Thom Tillis          |               1 |      8,000 |
 
 ### 3. Open lots and capital deployed
 
 ![open lots and capital](figures/phase4_open_lots_capital.png)
 
-| measure                           |       min |    median |       max |
-|:----------------------------------|----------:|----------:|----------:|
-| Open lots at the close            |        65 |       136 |       308 |
-| Capital deployed at the close ($) | 1,136,495 | 3,387,243 | 9,066,888 |
+| measure                           |       min |    median |        max |
+|:----------------------------------|----------:|----------:|-----------:|
+| Open lots at the close            |        65 |       187 |        974 |
+| Capital deployed at the close ($) | 1,136,495 | 5,489,195 | 24,868,120 |
 
-Days with no open lot (series A earns RF): 0 of 627. Days without a Ken French RF value: 0.
+Days with no open lot (series A earns RF): 0 of 1254. Days without a Ken French RF value: 0.
 
 ### 4. Holding periods and exits
 
@@ -1790,22 +1810,22 @@ Closed lot pieces (every exit except the end-of-window mark; a partial sale clos
 
 |   lot pieces |   p25 trading days |   median trading days |   p75 trading days |   p25 calendar days |   median calendar days |   p75 calendar days |
 |-------------:|-------------------:|----------------------:|-------------------:|--------------------:|-----------------------:|--------------------:|
-|          249 |                 64 |                   145 |                270 |                  91 |                    213 |                 389 |
+|          559 |                 99 |                   189 |                344 |                 144 |                    275 |                 502 |
 
-| exit_reason   |   pieces |   lots |   entry_dollars |     pnl |
-|:--------------|---------:|-------:|----------------:|--------:|
-| end of window |      273 |    273 |       7,795,066 | 960,417 |
-| reversal      |        1 |      1 |           8,000 |      31 |
-| senator sale  |      248 |    217 |       7,302,176 | 205,750 |
+| exit_reason   |   pieces |   lots |   entry_dollars |       pnl |
+|:--------------|---------:|-------:|----------------:|----------:|
+| end of window |      974 |    974 |      17,848,906 | 6,425,698 |
+| reversal      |        4 |      4 |          56,502 |    24,073 |
+| senator sale  |      555 |    491 |      14,702,961 |   414,018 |
 
-**Still held on the last in-sample day (2024-02-29)**: 273 lots, 51.6% of all dollars ever invested (at cost; $7,795,066 of $15,105,242), marked at $8,755,483.
+**Still held on the last in-sample day (2026-08-31)**: 974 lots, 54.7% of all dollars ever invested (at cost; $17,848,906 of $32,608,369), marked at $24,274,604.
 
 ### 5. Reconciliation (lot P&L against the daily book)
 
-- Sum of lot P&L: **$1,112,680.61**.
-- Sum of daily book P&L (units x daily change in adjusted close): $1,112,680.61; difference **$-0.000000**.
-- Series A return x capital at the prior close, summed: $1,112,680.61; difference $-0.000000.
-- Series B: final NAV - K - interest earned on cash = $1,112,680.61; difference $-0.000000. K = **$8,406,632.95**; interest on idle cash $219,523.96; lowest cash balance $206,519.41 (never negative by construction).
+- Sum of lot P&L: **$6,810,271.21**.
+- Sum of daily book P&L (units x daily change in adjusted close): $6,810,271.21; difference **$-0.000000**.
+- Series A return x capital at the prior close, summed: $6,810,271.21; difference $-0.000000.
+- Series B: final NAV - K - interest earned on cash = $6,810,271.21; difference $-0.000000. K = **$17,464,333.12**; interest on idle cash $2,320,909.07; lowest cash balance $2,319,517.01 (never negative by construction).
 
 ### 6. K6 price repairs and copied holding periods
 
@@ -1822,30 +1842,30 @@ Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
 
 ### 7. Trade-level panel: N per horizon
 
-`data/processed/event_panel.csv`: 882 in-scope purchase and sale records; 68 without a price on the entry date. Horizons that run past the last in-sample day are censored.
+`data/processed/event_panel.csv`: 2363 in-scope purchase and sale records; 90 without a price on the entry date. Horizons that run past the last in-sample day are censored.
 
 | side     |   horizon_days |   N_from_entry |   N_from_transaction |   censored_entry |   no_price |
 |:---------|---------------:|---------------:|---------------------:|-----------------:|-----------:|
-| purchase |              5 |            413 |                  413 |                0 |         22 |
-| purchase |             21 |            413 |                  413 |                0 |         22 |
-| purchase |             63 |            386 |                  388 |               27 |         22 |
-| purchase |            126 |            231 |                  232 |              182 |         22 |
-| purchase |            252 |            157 |                  161 |              256 |         22 |
-| sale     |              5 |            401 |                  401 |                0 |         46 |
-| sale     |             21 |            359 |                  401 |               42 |         46 |
-| sale     |             63 |            312 |                  314 |               89 |         46 |
-| sale     |            126 |            227 |                  262 |              174 |         46 |
-| sale     |            252 |            189 |                  191 |              212 |         46 |
+| purchase |              5 |           1372 |                 1372 |                0 |         36 |
+| purchase |             21 |           1364 |                 1372 |                8 |         36 |
+| purchase |             63 |            707 |                 1357 |              665 |         36 |
+| purchase |            126 |            682 |                  699 |              690 |         36 |
+| purchase |            252 |            575 |                  583 |              797 |         36 |
+| sale     |              5 |            901 |                  901 |                0 |         54 |
+| sale     |             21 |            879 |                  901 |               22 |         54 |
+| sale     |             63 |            799 |                  877 |              102 |         54 |
+| sale     |            126 |            776 |                  809 |              125 |         54 |
+| sale     |            252 |            684 |                  710 |              217 |         54 |
 
 ### 8. In-sample annualised return and volatility, identical dates
 
-Daily returns 2021-09-01 to 2024-02-29 (627 days); annualised return = (product of 1 + r)^(252/N) - 1, volatility = daily standard deviation x sqrt(252). Nothing else yet: no Sharpe ratios, alphas or variants (Phases 5 and 6).
+Daily returns 2021-09-01 to 2026-08-31 (1254 days); annualised return = (product of 1 + r)^(252/N) - 1, volatility = daily standard deviation x sqrt(252). Nothing else yet: no Sharpe ratios, alphas or variants (Phases 5 and 6).
 
 | series                                   | annualised return   | annualised volatility   |
 |:-----------------------------------------|:--------------------|:------------------------|
-| A: return on capital deployed (headline) | -0.14%              | 24.55%                  |
-| B: fixed pot (K = $8,406,633)            | 6.09%               | 10.63%                  |
-| SPY (total return)                       | 6.46%               | 18.40%                  |
+| A: return on capital deployed (headline) | 10.86%              | 21.96%                  |
+| B: fixed pot (K = $17,464,333)           | 8.82%               | 7.19%                   |
+| SPY (total return)                       | 12.76%              | 17.20%                  |
 
 ### 9. Worked examples
 
@@ -1855,42 +1875,51 @@ Three lots traced step by step in `outputs/phase4_worked_examples.md`.
 
 Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, applying the senators' disclosed sales (Full: all; Partial: its midpoint at cost, capped), warm-up included; as a share of the capital deployed at each close (the phantom dollars are not in the denominator). The first line closes a phantom lot only on a senator's sale, so it is an upper bound; the second also drops it after the symbol's last SEC Form 25 delisting date. Most of these names (US Steel, ChannelAdvisor, Activision, Paramount, Walgreens) were still listed during the in-sample period: Yahoo no longer serves their history, which is why CRSP (A04) or V15 matters. Daily values in `data/processed/ledger_exposure.csv`.
 
-| measure                                                     | min     | median   | max       | date of max   |
-|:------------------------------------------------------------|:--------|:---------|:----------|:--------------|
-| Share of capital deployed                                   | 2.2%    | 31.4%    | 67.2%     | 2022-10-11    |
-| Same, each lot dropped after its SEC Form 25 delisting date | 2.1%    | 31.4%    | 66.9%     | 2022-10-11    |
-| Ledger cost basis still held ($)                            | 147,504 | 570,506  | 1,561,010 | 2022-08-16    |
-| Ledger lots still held                                      | 7       | 11       | 20        | 2022-08-16    |
+| measure                                                     | min    | median   | max       | date of max   |
+|:------------------------------------------------------------|:-------|:---------|:----------|:--------------|
+| Share of capital deployed                                   | 0.1%   | 2.7%     | 67.2%     | 2022-10-11    |
+| Same, each lot dropped after its SEC Form 25 delisting date | 0.0%   | 2.6%     | 66.9%     | 2022-10-11    |
+| Ledger cost basis still held ($)                            | 16,001 | 164,003  | 1,561,010 | 2022-08-16    |
+| Ledger lots still held                                      | 2      | 8        | 20        | 2022-08-16    |
 
-## Phase 5: metrics and benchmarks (in-sample only)
+## Phase 5: metrics and benchmarks (full window, firewall open)
 
-_Stage `metrics`. Sample in-sample 2021-09-01 to 2024-02-29; prices and factors cut there. Results: `outputs/tables/phase5_insample_results.md`, `outputs/tables/phase5_event_study.md`._
+_Stage `metrics`. Sample full window 2021-09-01 to 2026-08-31; prices and factors cut there. Results: `outputs/tables/phase5_full_results.md`, `outputs/tables/phase5_oos_results.md`, `outputs/tables/confirmatory_oos.md`._
 
 ### 1. Senate universe (equal weight): members and symbols left out
 
-Members per month: min 48, median 76, max 135. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 173 symbol-months, 14 symbols. Month by month in `data/processed/universe_members.csv`.
+Members per month: min 47, median 78, max 662. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 244 symbol-months, 23 symbols. Month by month in `data/processed/universe_members.csv`.
 
 | symbol   |   months left out |
 |:---------|------------------:|
+| WBA      |                34 |
 | X        |                26 |
 | ECOM     |                24 |
-| WBA      |                20 |
-| SSBK     |                12 |
+| SSBK     |                24 |
+| PARA     |                18 |
 | LMST     |                12 |
 | MASI     |                12 |
+| CYBR     |                12 |
 | ATVI     |                12 |
+| GOGL     |                12 |
 | CNR      |                11 |
 | SIVB     |                11 |
-| JNPR     |                11 |
 | VMW      |                11 |
+| JNPR     |                11 |
 | VRM      |                 6 |
-| PARA     |                 4 |
-| CYBR     |                 1 |
+| AVB      |                 1 |
+| DFKCY    |                 1 |
+| EA       |                 1 |
+| HOLX     |                 1 |
+| KBGGY    |                 1 |
+| KYOCY    |                 1 |
+| TOELY    |                 1 |
+| WIZEY    |                 1 |
 
 ### 2. NANC and KRUZ
 
-Both launched 2023-02-07; in-sample months with a full month of returns: 12 (2023-03 to 2024-02). Yahoo serves no history for KRUZ (renamed GOP on 2025-03-21), so KRUZ is priced with GOP (E34).
+Both launched 2023-02-07; sample months with a full month of returns: 42 (2023-03 to 2026-08). Yahoo serves no history for KRUZ (renamed GOP on 2025-03-21), so KRUZ is priced with GOP (E34).
 
 ### 3. Event study sample
 
-882 in-scope purchase and sale records with an in-sample entry date; 68 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last in-sample day (N per row in the event study table).
+2363 in-scope purchase and sale records with an entry date in the sample; 90 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last day of the window (N per row in the event study table).

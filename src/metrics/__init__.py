@@ -93,7 +93,11 @@ def series_stats(r_m: pd.Series, rf_m: pd.Series, F: pd.DataFrame, spy_m: pd.Ser
 
 
 def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
-    """write=False (the variant runner): compute and return the statistics, write nothing."""
+    """write=False (the variant runner): compute and return the statistics, write nothing.
+
+    In-sample (firewall shut): one period, the in-sample half. Full window (firewall open, S5): the MAIN period is the
+    whole window, one continuous run; the out-of-sample half is read off the same run as a second period (its own
+    risk-matched k, NANC/KRUZ months, drawdown base and turnover months)."""
     I = load_inputs(cfg, engine_dir)
     daily, cal, first, last_day = I["daily"], I["cal"], I["first"], I["last_day"]
     days = daily["date"].tolist()
@@ -120,11 +124,6 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
     chk = bm.daily_returns(P, "SPY", days)
     assert np.allclose(chk.to_numpy(), D["SPY"].to_numpy(), atol=1e-12), "SPY returns differ from the engine's"
     M = {k: st.monthly(v, days) for k, v in D.items()}
-    ex_spy = M["SPY"] - rf_m
-    k = {s: st.risk_match_k(M[s] - rf_m, ex_spy) for s in ("A", "B")}
-    for s in ("A", "B"):
-        M[f"RM_{s}"] = st.risk_matched(M["SPY"], rf_m, k[s])                     # monthly: exact volatility match
-        D[f"RM_{s}"] = st.risk_matched(D["SPY"], rf_d, k[s])                     # daily, same k: drawdown and chart
     D["EW"], members = bm.universe_ew(recs, P, cal, days, I["last_dates"], I["first_dates"])
     M["EW"] = st.monthly(D["EW"], days)
     for name, sym in (("NANC", "NANC"), ("KRUZ", kruz)):
@@ -134,33 +133,7 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
     for s in ("A_GBP", "SPY_GBP"):
         M[s] = st.monthly(D[s], days)
 
-    # ---- the overlap sample for NANC and KRUZ: months whose previous close exists for both
-    def has_prior_close(sym, m):
-        form = cal[cal.index(next(d for d in days if d[:7] == m)) - 1]
-        return np.isfinite(wide[sym].get(form, np.nan)) if sym in wide else False
-    ov_months = [m for m in months if has_prior_close("NANC", m) and has_prior_close(kruz, m)]
-    ov_days = [d for d in days if d[:7] in set(ov_months)]
-    ov_base = cal[cal.index(ov_days[0]) - 1] if ov_days else None
-    for name in ("NANC", "KRUZ"):
-        M[name] = st.monthly(D[name].reindex(ov_days), ov_days) if ov_days else pd.Series(dtype=float)
-
-    # ---- statistics, one column each
-    cols = [("Series A (headline)", "A", months), ("Series B (fixed pot)", "B", months), ("SPY", "SPY", months),
-            (f"SPY risk-matched to A (k = {k['A']:.2f})", "RM_A", months),
-            (f"SPY risk-matched to B (k = {k['B']:.2f})", "RM_B", months), ("Senate universe, equal weight", "EW", months),
-            ("NANC", "NANC", ov_months), ("KRUZ (as GOP)", "KRUZ", ov_months),
-            ("Series A, NANC/KRUZ months", "A", ov_months), ("Series B, NANC/KRUZ months", "B", ov_months),
-            ("SPY, NANC/KRUZ months", "SPY", ov_months)]
-    rm_title = {s: f"SPY risk-matched to {s} (k = {k[s]:.2f})" for s in ("A", "B")}
-    res, dds = {}, {}
-    for title, key, ms in cols:
-        if not ms:
-            continue
-        dsub = [d for d in days if d[:7] in set(ms)]
-        b0 = cal[cal.index(dsub[0]) - 1]
-        res[title], dds[title] = series_stats(M[key].loc[ms], rf_m.loc[ms], F.loc[ms], M["SPY"].loc[ms],
-                                              D[key].reindex(dsub), dsub, b0)
-    # ---- turnover and break-even (series A and B)
+    # ---- turnover (series A and B), daily over the whole sample
     book_days = [d for d in cal if d >= I["meta"]["warmup"]["book_first_day"]]
     pre, post, _ = bm.holdings_values(pieces, P, book_days, first)
     to_d = {"A": st.turnover(pre, post)}
@@ -168,67 +141,164 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
     cash_post = daily["pot_cash"].to_numpy()
     cash_pre = np.concatenate([[c0], cash_post[:-1]]) * (1 + daily["rf"].to_numpy())
     to_d["B"] = st.turnover(np.column_stack([pre, cash_pre]), np.column_stack([post, cash_post]))
-    turnover_m = {}
-    for s, title in (("A", "Series A (headline)"), ("B", "Series B (fixed pot)")):
-        tm = pd.Series(to_d[s], index=pd.Index(days).str[:7]).groupby(level=0).sum()
-        turnover_m[s] = tm
-        ex_rm = float((M[s] - M[f"RM_{s}"]).mean() * 12)
-        res[title].update({"turnover_monthly_mean": float(tm.mean()), "turnover_ann": float(tm.mean() * 12),
-                           "excess_vs_risk_matched_ann": ex_rm,
-                           "excess_vs_risk_matched_geo": res[title]["ann_return"] - res[rm_title[s]]["ann_return"],
-                           "break_even_bps": st.break_even_bps(ex_rm, float(tm.mean() * 12))})
+    turnover_m = {s: pd.Series(to_d[s], index=pd.Index(days).str[:7]).groupby(level=0).sum() for s in ("A", "B")}
+
+    def has_prior_close(sym, m):
+        form = cal[cal.index(next(d for d in days if d[:7] == m)) - 1]
+        return np.isfinite(wide[sym].get(form, np.nan)) if sym in wide else False
+
+    def period(ms: list[str]) -> dict:
+        """Every statistic over the months ms (all of them, or one half), identical dates in every column."""
+        dsub = [d for d in days if d[:7] in set(ms)]
+        b0 = cal[cal.index(dsub[0]) - 1]
+        Mp = {key: M[key].loc[ms] for key in ("A", "B", "SPY", "EW", "A_GBP", "SPY_GBP")}
+        Dp = {key: D[key].reindex(dsub) for key in ("A", "B", "SPY", "EW", "NANC", "KRUZ")}
+        ex_spy = Mp["SPY"] - rf_m.loc[ms]
+        k = {s: st.risk_match_k(Mp[s] - rf_m.loc[ms], ex_spy) for s in ("A", "B")}
+        for s in ("A", "B"):
+            Mp[f"RM_{s}"] = st.risk_matched(Mp["SPY"], rf_m.loc[ms], k[s])        # monthly: exact volatility match
+            Dp[f"RM_{s}"] = st.risk_matched(D["SPY"], rf_d, k[s]).reindex(dsub)   # daily, same k: drawdown and chart
+        # NANC and KRUZ: the months whose previous close exists for both
+        ov = [m for m in ms if has_prior_close("NANC", m) and has_prior_close(kruz, m)]
+        ov_days = [d for d in dsub if d[:7] in set(ov)]
+        for name in ("NANC", "KRUZ"):
+            Mp[name] = st.monthly(D[name].reindex(ov_days), ov_days) if ov_days else pd.Series(dtype=float)
+        cols = [("Series A (headline)", "A", ms), ("Series B (fixed pot)", "B", ms), ("SPY", "SPY", ms),
+                (f"SPY risk-matched to A (k = {k['A']:.2f})", "RM_A", ms),
+                (f"SPY risk-matched to B (k = {k['B']:.2f})", "RM_B", ms), ("Senate universe, equal weight", "EW", ms),
+                ("NANC", "NANC", ov), ("KRUZ (as GOP)", "KRUZ", ov),
+                ("Series A, NANC/KRUZ months", "A", ov), ("Series B, NANC/KRUZ months", "B", ov),
+                ("SPY, NANC/KRUZ months", "SPY", ov)]
+        rm_title = {s: f"SPY risk-matched to {s} (k = {k[s]:.2f})" for s in ("A", "B")}
+        res, dds = {}, {}
+        for title, key, mm in cols:
+            if not mm:
+                continue
+            ds = [d for d in dsub if d[:7] in set(mm)]
+            bb = cal[cal.index(ds[0]) - 1]
+            res[title], dds[title] = series_stats(Mp[key].loc[mm], rf_m.loc[mm], F.loc[mm], M["SPY"].loc[mm],
+                                                  Dp[key].reindex(ds), ds, bb)
+        for s, title in (("A", "Series A (headline)"), ("B", "Series B (fixed pot)")):
+            tm = turnover_m[s].loc[ms]
+            ex_rm = float((Mp[s] - Mp[f"RM_{s}"]).mean() * 12)
+            res[title].update({"turnover_monthly_mean": float(tm.mean()), "turnover_ann": float(tm.mean() * 12),
+                               "excess_vs_risk_matched_ann": ex_rm,
+                               "excess_vs_risk_matched_geo": res[title]["ann_return"] - res[rm_title[s]]["ann_return"],
+                               "break_even_bps": st.break_even_bps(ex_rm, float(tm.mean() * 12))})
+        gbp = {"A": (st.ann_return(Mp["A_GBP"]), st.ann_vol(Mp["A_GBP"])),
+               "SPY": (st.ann_return(Mp["SPY_GBP"]), st.ann_vol(Mp["SPY_GBP"]))}
+        mon = pd.DataFrame({"rf": rf_m.loc[ms], **{c: F.loc[ms, c] for c in FACTORS},
+                            **{f"r_{s}": Mp[s] for s in ("A", "B", "SPY", "RM_A", "RM_B", "EW", "A_GBP", "SPY_GBP")},
+                            "r_NANC": Mp["NANC"], "r_KRUZ": Mp["KRUZ"], "turnover_A": turnover_m["A"].loc[ms],
+                            "turnover_B": turnover_m["B"].loc[ms]})
+        mon.index.name = "month"
+        return {"res": res, "dds": dds, "k": k, "ov": ov, "gbp": gbp, "monthly": mon, "days": dsub, "base": b0,
+                "D": Dp, "months": ms}
+
+    full = I["label"] != "in-sample"
+    halves = {}
+    if full:                                                         # the firewall is open (sample_bounds)
+        from src.config import sample_split
+        sp = sample_split(cfg)
+        halves = {"oos": ("out-of-sample half", *[d.isoformat() for d in sp["out_of_sample"]])}
+    main_key = "full" if full else "insample"
+    PER = {main_key: period(months)}
+    for key, (_, a, b) in halves.items():
+        PER[key] = period([m for m in months if a[:7] <= m <= b[:7]])
+    main = PER[main_key]
+    res, k, ov_months, gbp = main["res"], main["k"], main["ov"], main["gbp"]
+
     # ---- the event study
     hz = list(cfg["portfolio"]["event_study_horizons"])
     evt = es.table(I["panel"], hz)
     drift = es.drift_table(I["panel"])
     if not write:
-        return {"results": res, "events": evt, "drift": drift, "k": k, "months": months, "meta": I["meta"]}
+        return {"results": res, "events": evt, "drift": drift, "k": k, "months": months, "meta": I["meta"],
+                "periods": {key: p["res"] for key, p in PER.items()}}
 
     # ---- write everything
+    from . import committee, confirmatory, mechanism
+    from src.variants import price_tag
     TABLES.mkdir(parents=True, exist_ok=True)
     FIGS.mkdir(parents=True, exist_ok=True)
-    tab = results_table(res)
-    tab.to_csv(RESULTS.with_suffix(".csv"), index=False)
-    gbp = {"A": (st.ann_return(M["A_GBP"]), st.ann_vol(M["A_GBP"])), "SPY": (st.ann_return(M["SPY_GBP"]), st.ann_vol(M["SPY_GBP"]))}
-    RESULTS.with_suffix(".md").write_text(results_md(tab, res, k, I, gbp, ov_months, base))
-    evt.to_csv(EVENTS.with_suffix(".csv"), index=False)
-    EVENTS.with_suffix(".md").write_text(events_md(evt, I, hz))
-    drift.to_csv(DRIFT.with_suffix(".csv"), index=False)
-    DRIFT.with_suffix(".md").write_text(drift_md(drift, I))
-    mret = pd.DataFrame({"rf": rf_m, **{c: F[c] for c in FACTORS}, **{f"r_{s}": M[s] for s in
-                         ("A", "B", "SPY", "RM_A", "RM_B", "EW", "A_GBP", "SPY_GBP")},
-                         "r_NANC": M["NANC"], "r_KRUZ": M["KRUZ"], "turnover_A": turnover_m["A"], "turnover_B": turnover_m["B"]})
-    mret.index.name = "month"
+    mret = main["monthly"]
     mret.to_csv(PROCESSED / "monthly_returns.csv", float_format="%.10g")
-    dret = pd.DataFrame({f"r_{s}": D[s] for s in ("A", "B", "SPY", "RM_A", "RM_B", "EW", "NANC", "KRUZ", "A_GBP", "SPY_GBP")})
+    dret = pd.DataFrame({f"r_{s}": (main["D"][s] if s in main["D"] else D[s])
+                         for s in ("A", "B", "SPY", "RM_A", "RM_B", "EW", "NANC", "KRUZ", "A_GBP", "SPY_GBP")})
     dret["rf"], dret["turnover_A"], dret["turnover_B"] = rf_d, to_d["A"], to_d["B"]
     dret.index.name = "date"
     dret.to_csv(PROCESSED / "daily_returns.csv", float_format="%.10g")
     members.to_csv(PROCESSED / "universe_members.csv", index=False)
-    (PROCESSED / "metrics_insample.json").write_text(json.dumps(
+    (PROCESSED / f"metrics_{'full' if full else 'insample'}.json").write_text(json.dumps(
         {"sample": I["label"], "first_day": first, "last_day": last_day, "base_date": base, "k": k,
-         "overlap_months": ov_months, "results": res, "gbp": gbp}, indent=1, default=str))
-    figures(D, dds, days, base, k)
+         "overlap_months": ov_months, "results": res, "gbp": gbp,
+         **({"periods": {key: {"k": p["k"], "overlap_months": p["ov"], "results": p["res"], "gbp": p["gbp"]}
+                         for key, p in PER.items() if key != main_key}} if full else {})}, indent=1, default=str))
+    if not full:
+        tab = results_table(res)
+        tab.to_csv(RESULTS.with_suffix(".csv"), index=False)
+        RESULTS.with_suffix(".md").write_text(results_md(tab, res, k, I, gbp, ov_months, base))
+        evt.to_csv(EVENTS.with_suffix(".csv"), index=False)
+        EVENTS.with_suffix(".md").write_text(events_md(evt, I, hz))
+        drift.to_csv(DRIFT.with_suffix(".csv"), index=False)
+        DRIFT.with_suffix(".md").write_text(drift_md(drift, I))
+        figures({**D, **main["D"]}, main["dds"], days, base, k)
+        mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+        committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+        confirmatory.write(I["panel"], mret, I["cal_all"], [("insample", "in-sample", first, last_day)], TABLES)
+    else:
+        spans = {"full": ("full window", first, last_day), **halves}
+        for key, (label, a, b) in spans.items():
+            p = PER[key]
+            stem = TABLES / f"phase5_{key}_results"
+            tab = results_table(p["res"])
+            tab.to_csv(stem.with_suffix(".csv"), index=False)
+            Ip = {**I, "label": label, "first": a, "last_day": b}
+            stem.with_suffix(".md").write_text(
+                results_md(tab, p["res"], p["k"], Ip, p["gbp"], p["ov"], p["base"], stem=stem, full_first=first)
+                + period_years_md(p["monthly"], label))
+            panel_p = confirmatory.restrict(I["panel"], I["cal_all"], a, b)
+            e_p, d_p = es.table(panel_p, hz), es.drift_table(panel_p)
+            e_stem, d_stem = TABLES / f"phase5_event_study_{key}", TABLES / f"phase5_predisclosure_drift_{key}"
+            e_p.to_csv(e_stem.with_suffix(".csv"), index=False)
+            e_stem.with_suffix(".md").write_text(events_md(e_p, Ip, hz, exploratory=True))
+            d_p.to_csv(d_stem.with_suffix(".csv"), index=False)
+            d_stem.with_suffix(".md").write_text(drift_md(d_p, Ip, exploratory=True))
+            mechanism.write(panel_p, label, a, b, price_tag(), TABLES, key=key, exploratory=True)
+            committee.write(panel_p, label, a, b, price_tag(), TABLES, key=key, exploratory=True)
+        _, a, b = halves["oos"]
+        confirmatory.write(I["panel"], PER["oos"]["monthly"], I["cal_all"], [("oos", "out-of-sample", a, b)], TABLES)
+        figures({**D, **main["D"]}, main["dds"], days, base, k, boundary=halves["oos"][1])
     quality_section(I, members, res, ov_months, evt, k)
-    from . import mechanism                                    # Phase 6 prep: mechanism splits of the event panel
-    from src.variants import price_tag
-    mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
-    from . import committee                                    # Phase 6 prep: committee test (E54), when its inputs exist
-    committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
-    from . import confirmatory                                 # Part B Step 1: the registered tests H0-H4, per half
-    from src.config import sample_split
-    halves = [("insample", "in-sample", first, last_day)]
-    if I["label"] != "in-sample":                              # full window: the firewall is open (sample_bounds)
-        sp = sample_split(cfg)
-        halves = [("insample", "in-sample", *[d.isoformat() for d in sp["in_sample"]]),
-                  ("oos", "out-of-sample", *[d.isoformat() for d in sp["out_of_sample"]])]
-    confirmatory.write(I["panel"], mret, I["cal_all"], halves, TABLES)
     a = res["Series A (headline)"]
+    out_md = RESULTS if not full else TABLES / "phase5_full_results"
     print(f"  [metrics] {I['label']} {months[0]}..{months[-1]} ({len(months)} months): series A {a['ann_return']:.2%} a year, "
           f"Sharpe {a['sharpe']:.2f}, CAPM alpha {a['capm_alpha_ann']:.2%} (t {a['capm_t_alpha_ols']:.2f}), Carhart alpha "
-          f"{a['c4_alpha_ann']:.2%} (t {a['c4_t_alpha_ols']:.2f}); SPY {res['SPY']['ann_return']:.2%}; -> {RESULTS}.md")
-    return {"results": res, "events": evt, "monthly": mret, "daily": dret, "members": members, "k": k}
+          f"{a['c4_alpha_ann']:.2%} (t {a['c4_t_alpha_ols']:.2f}); SPY {res['SPY']['ann_return']:.2%}; -> {out_md}.md")
+    return {"results": res, "events": evt, "monthly": mret, "daily": dret, "members": members, "k": k,
+            "periods": {key: p["res"] for key, p in PER.items()}}
 
+
+def period_years_md(mon: pd.DataFrame, label: str) -> str:
+    """Calendar-year returns and the worst rolling 12 months for one period (confirmatory.py's definitions, E56)."""
+    from . import confirmatory as cf
+    cy = cf.calendar_years(mon)
+    show = cy.copy()
+    for _, name in cf.SERIES:
+        show[name] = show[name].map(cf._pct)
+    w = cf.worst_12m(mon)
+    wv = pd.DataFrame({"series": w["series"], "from": w["start"], "to": w["end"], "return": w["return"].map(cf._pct),
+                       "series A, same months": w.get("series A, same months", pd.Series(dtype=float)).map(cf._pct),
+                       "SPY, same months": w.get("SPY, same months", pd.Series(dtype=float)).map(cf._pct),
+                       "12-month windows": w.get("windows", pd.Series(dtype=float))})
+    return "\n".join([
+        f"## Calendar-year returns ({label})", "",
+        "_Monthly returns compounded within each calendar year or part-year; USD total returns. Risk-matched SPY uses this "
+        "table's k. NANC and KRUZ only over the months both have a previous month-end close (E41); `coverage` names them._",
+        "", show.to_markdown(index=False), "",
+        f"## Worst rolling 12 months ({label})", "",
+        "_The worst 12 consecutive calendar months (compounded monthly returns) of series A and of SPY, with the other's "
+        "return over the same months._", "", wv.to_markdown(index=False), ""])
 
 # ------------------------------------------------------------------ tables
 ROWS = [  # (section, label, key, format)
@@ -300,7 +370,10 @@ def results_table(res: dict) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def results_md(tab: pd.DataFrame, res: dict, k: dict, I: dict, gbp: dict, ov: list[str], base: str) -> str:
+def results_md(tab: pd.DataFrame, res: dict, k: dict, I: dict, gbp: dict, ov: list[str], base: str,
+               stem: Path = RESULTS, full_first: str | None = None) -> str:
+    """One results table. In-sample (stem RESULTS) the text is the Phase 5 one; for the full window and the
+    out-of-sample half (Phase 5B, firewall open) the title and the firewall sentence say so."""
     view = tab.copy()
     fmts = {key: f for _, _, key, f in ROWS}
     for c in res:
@@ -308,14 +381,20 @@ def results_md(tab: pd.DataFrame, res: dict, k: dict, I: dict, gbp: dict, ov: li
     view = view.drop(columns=["key"])
     main = [c for c in res if "NANC/KRUZ" not in c and c not in ("NANC", "KRUZ (as GOP)")]
     over = [c for c in res if c not in main]
-    L = [f"# Phase 5: in-sample results ({I['label']}, {I['first']} to {I['last_day']})", "",
-         "_Built by the `metrics` stage of `python run_all.py` (src/metrics/). Out-of-sample firewall shut: nothing after "
-         f"{I['last_day']} is used. Monthly returns are compounded from daily returns; Sharpe ratios, volatilities and "
+    insample = stem == RESULTS
+    title = (f"# Phase 5: in-sample results ({I['label']}, {I['first']} to {I['last_day']})" if insample else
+             f"# Phase 5B: results, {I['label']} ({I['first']} to {I['last_day']})")
+    fw = (f"Out-of-sample firewall shut: nothing after {I['last_day']} is used." if insample else
+          "Out-of-sample firewall open (rules frozen at `project.frozen_rules_commit`). ONE continuous backtest of the "
+          f"whole window from {full_first}, with the warm-up before it (S5); this table reads the period {I['first']} to "
+          f"{I['last_day']} off that run (risk-matched k, NANC/KRUZ months and the drawdown base are this period's own).")
+    L = [title, "",
+         f"_Built by the `metrics` stage of `python run_all.py` (src/metrics/). {fw} Monthly returns are compounded from daily returns; Sharpe ratios, volatilities and "
          "regressions use monthly returns; drawdowns use the daily value index (1 at the close of "
          f"{base}). RF = Ken French US RF (monthly file, converted from percent). Every column in a panel covers "
          "identical dates. Both factor models are always reported. All numbers are also in "
-         f"`{RESULTS.with_suffix('.csv')}` (unrounded)._", "",
-         "## Panel 1: full in-sample period", "",
+         f"`{stem.with_suffix('.csv')}` (unrounded)._", "",
+         "## Panel 1: full in-sample period" if insample else f"## Panel 1: the whole period ({I['label']})", "",
          view[["section", "statistic"] + main].to_markdown(index=False), "",
          f"## Panel 2: NANC and KRUZ, the months their history covers ({ov[0] if ov else '-'} to {ov[-1] if ov else '-'}, "
          f"{len(ov)} months)", "",
@@ -343,16 +422,20 @@ def results_md(tab: pd.DataFrame, res: dict, k: dict, I: dict, gbp: dict, ov: li
          f"(volatility {gbp['A'][1]:.2%}), against {res['Series A (headline)']['ann_return']:.2%} in USD; SPY "
          f"{gbp['SPY'][0]:.2%} in GBP (volatility {gbp['SPY'][1]:.2%}) against {res['SPY']['ann_return']:.2%} in USD.",
          f"- **Warm-up (L2)**: the book was built from disclosures from {I['meta']['warmup']['warmup_first_disclosure_date']}; "
-         f"returns are measured from {I['first']}. The Phase 4 empty start is variant V17 (not run through these metrics).",
+         f"returns are measured from {full_first or I['first']}. The Phase 4 empty start is variant V17"
+         + (" (not run through these metrics)." if insample else " (in the variants table)."),
          ""]
     return "\n".join(L)
 
 
-def events_md(evt: pd.DataFrame, I: dict, hz: list[int]) -> str:
-    L = [f"# Phase 5: event study ({I['label']}, entry dates {I['first']} to {I['last_day']})", "",
+def events_md(evt: pd.DataFrame, I: dict, hz: list[int], exploratory: bool = False) -> str:
+    from .confirmatory import EXPLORATORY_NOTE
+    L = [f"# Phase {'5B' if exploratory else '5'}: event study ({I['label']}, entry dates {I['first']} to {I['last_day']})", "",
+         *([EXPLORATORY_NOTE, ""] if exploratory else []),
          "_From `data/processed/event_panel.csv`. Returns are SPY-adjusted (stock minus SPY over exactly the same trading "
          "days, total returns). t-statistics use standard errors clustered by calendar month of entry; the iid t is "
-         "shown for comparison. Horizons past the last in-sample day are censored, so N falls with the horizon._", "",
+         "shown for comparison. Horizons past the last " + ("day of the sample" if exploratory else "in-sample day")
+         + " are censored, so N falls with the horizon._", "",
          "**Sign convention: every number is the STOCK's return minus SPY's, whatever the side. After a PURCHASE a "
          "positive mean means the stock beat SPY (an informative purchase). After a SALE a NEGATIVE mean means the "
          "stock trailed SPY (an informative sale).**", "",
@@ -374,7 +457,8 @@ def events_md(evt: pd.DataFrame, I: dict, hz: list[int]) -> str:
     return "\n".join(L)
 
 
-def drift_md(d: pd.DataFrame, I: dict) -> str:
+def drift_md(d: pd.DataFrame, I: dict, exploratory: bool = False) -> str:
+    from .confirmatory import EXPLORATORY_NOTE
     v = d.copy()
     for c in ("mean SPY-adjusted drift", "median SPY-adjusted drift", "mean stock return", "mean SPY return",
               "mean cost to the copier", "share of events against the copier"):
@@ -383,10 +467,12 @@ def drift_md(d: pd.DataFrame, I: dict) -> str:
         v[c] = v[c].map(lambda x: f"{x:.2f}")
     v["median lag (trading days)"] = v["median lag (trading days)"].map(lambda x: f"{x:.0f}")
     return "\n".join([
-        f"# Phase 5: pre-disclosure drift ({I['label']}, entry dates {I['first']} to {I['last_day']})", "",
+        f"# Phase {'5B' if exploratory else '5'}: pre-disclosure drift ({I['label']}, entry dates {I['first']} to {I['last_day']})", "",
+        *([EXPLORATORY_NOTE, ""] if exploratory else []),
         "_What the disclosure lag costs a copier: the stock's return minus SPY's from the close on the TRANSACTION date "
         "(the senator's trade; the first trading day on or after it) to the close on the ENTRY date (the first trading day "
-        "after the disclosure, when the copier acts). Every in-scope purchase and sale record with an in-sample entry date "
+        "after the disclosure, when the copier acts). Every in-scope purchase and sale record with an "
+        + ("entry date in the sample " if exploratory else "in-sample entry date ") +
         "and prices on both dates counts once. t-statistics cluster by calendar month of entry. From "
         "`data/processed/event_panel.csv` (column gap_x)._", "",
         "**Sign convention.** The drift is the stock's move, whatever the side. For a PURCHASE a positive drift means the "
@@ -411,7 +497,19 @@ def _style(ax):
         ax.spines[s].set_color(GRID)
 
 
-def figures(D: dict, dds: dict, days: list[str], base: str, k: dict) -> None:
+def _boundary(ax, day: str) -> None:
+    """The in-sample / out-of-sample split: a dashed vertical line, labelled on both sides at the top."""
+    x0 = pd.Timestamp(day)
+    ax.axvline(x0, color=INK2, linewidth=1, linestyle=(0, (4, 3)), zorder=1)
+    top = ax.get_ylim()[1]
+    ax.annotate("in-sample  ", (x0, top), xytext=(-4, -4), textcoords="offset points", ha="right", va="top", fontsize=8,
+                color=INK2)
+    ax.annotate(f"  out-of-sample (from {day})", (x0, top), xytext=(4, -4), textcoords="offset points", ha="left",
+                va="top", fontsize=8, color=INK2)
+
+
+def figures(D: dict, dds: dict, days: list[str], base: str, k: dict, boundary: str | None = None) -> None:
+    """boundary: the first day of the out-of-sample half (full window only): a dashed line marks the split."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.dates as mdates
@@ -440,7 +538,10 @@ def figures(D: dict, dds: dict, days: list[str], base: str, k: dict) -> None:
     ax.set_xlabel("Date", color=INK2, fontsize=9)
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
     ax.legend(frameon=False, fontsize=8.5, loc="upper left", labelcolor=INK)
-    ax.set_title(f"Cumulative value, in-sample {days[0]} to {days[-1]} (daily)", loc="left", color=INK, fontsize=12)
+    span = "full window" if boundary else "in-sample"
+    if boundary:
+        _boundary(ax, boundary)
+    ax.set_title(f"Cumulative value, {span} {days[0]} to {days[-1]} (daily)", loc="left", color=INK, fontsize=12)
     fig.text(0.01, 0.01, "NANC and KRUZ start in March 2023 and are compared over their own months in the results table.",
              fontsize=7.5, color=MUTED)
     fig.tight_layout(rect=(0, 0.03, 1, 1))
@@ -462,7 +563,9 @@ def figures(D: dict, dds: dict, days: list[str], base: str, k: dict) -> None:
     ax.set_xlabel("Date", color=INK2, fontsize=9)
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
     ax.legend(frameon=False, fontsize=8.5, loc="upper left", bbox_to_anchor=(0, -0.14), ncol=2, labelcolor=INK)
-    ax.set_title(f"Drawdowns of the daily value index, in-sample {days[0]} to {days[-1]}", loc="left", color=INK, fontsize=12)
+    if boundary:
+        _boundary(ax, boundary)
+    ax.set_title(f"Drawdowns of the daily value index, {span} {days[0]} to {days[-1]}", loc="left", color=INK, fontsize=12)
     fig.tight_layout()
     fig.savefig(FIG_DD, dpi=150, facecolor=SURFACE)
     plt.close(fig)
@@ -473,9 +576,13 @@ def quality_section(I: dict, members: pd.DataFrame, res: dict, ov: list[str], ev
     left = members["left_out_symbols"].str.split().explode().dropna()
     left_t = left.value_counts().rename_axis("symbol").reset_index(name="months left out")
     panel = I["panel"]
-    L = ["## Phase 5: metrics and benchmarks (in-sample only)", "",
+    insample = I["label"] == "in-sample"
+    outs = (f"`{RESULTS.with_suffix('.md')}`, `{EVENTS.with_suffix('.md')}`" if insample else
+            "`outputs/tables/phase5_full_results.md`, `outputs/tables/phase5_oos_results.md`, "
+            "`outputs/tables/confirmatory_oos.md`")
+    L = ["## Phase 5: metrics and benchmarks (" + ("in-sample only" if insample else "full window, firewall open") + ")", "",
          f"_Stage `metrics`. Sample {I['label']} {I['first']} to {I['last_day']}; prices and factors cut there. Results: "
-         f"`{RESULTS.with_suffix('.md')}`, `{EVENTS.with_suffix('.md')}`._", "",
+         f"{outs}._", "",
          "### 1. Senate universe (equal weight): members and symbols left out", "",
          f"Members per month: min {members['members_priced'].min()}, median {members['members_priced'].median():.0f}, "
          f"max {members['members_priced'].max()}. Symbols with a qualifying purchase but no usable price at the formation "
@@ -484,11 +591,13 @@ def quality_section(I: dict, members: pd.DataFrame, res: dict, ov: list[str], ev
          "`data/processed/universe_members.csv`.", "",
          left_t.to_markdown(index=False) if len(left_t) else "_None._", "",
          "### 2. NANC and KRUZ", "",
-         f"Both launched 2023-02-07; in-sample months with a full month of returns: {len(ov)} "
+         f"Both launched 2023-02-07; {'in-sample' if insample else 'sample'} months with a full month of returns: {len(ov)} "
          f"({ov[0] if ov else '-'} to {ov[-1] if ov else '-'}). Yahoo serves no history for KRUZ (renamed GOP on "
          "2025-03-21), so KRUZ is priced with GOP (E34).", "",
          "### 3. Event study sample", "",
-         f"{len(panel)} in-scope purchase and sale records with an in-sample entry date; {int(panel['no_price'].astype(str).eq('True').sum())} "
+         f"{len(panel)} in-scope purchase and sale records with an " + ("in-sample entry date" if insample else
+                                                                         "entry date in the sample") + "; "
+         f"{int(panel['no_price'].astype(str).eq('True').sum())} "
          "have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the "
-         "last in-sample day (N per row in the event study table).", ""]
+         + ("last in-sample day" if insample else "last day of the window") + " (N per row in the event study table).", ""]
     write_section(5, L)

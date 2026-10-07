@@ -1,4 +1,4 @@
-"""Run every pre-registered variant (V1-V19), each alone against the headline, from the repo root:
+"""Run every pre-registered variant (V1-V20), each alone against the headline, from the repo root:
 
     python run_variants.py                  # all of them (about 4 minutes)
     python run_variants.py --only V1 V17    # some of them
@@ -27,4 +27,6 @@ if __name__ == "__main__":
         sys.exit("Run this from the repository root (config/config.yaml not found).")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--only", nargs="+", help="variant ids, e.g. V1 V2 V17")
-    main(ap.parse_args().only)
+    ap.add_argument("--config", help="another config file (default config/config.yaml)")
+    a = ap.parse_args()
+    main(a.only, a.config)

@@ -58,12 +58,13 @@ def classify(panel: pd.DataFrame) -> pd.DataFrame:
     return pd.concat([p.reset_index(drop=True), pd.DataFrame(rows)], axis=1)
 
 
-def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_dir) -> pd.DataFrame | None:
+def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_dir,
+          key: str | None = None, exploratory: bool = False) -> pd.DataFrame | None:
     if not available():
         return None
     p = classify(panel)
     t = mc.split_table(p, "committee_group", [OVERSEEN, NOT])
-    stem = Path(out_dir) / f"committee_{'insample' if label == 'in-sample' else 'full'}_{tag}"
+    stem = Path(out_dir) / f"committee_{key or ('insample' if label == 'in-sample' else 'full')}_{tag}"
     t.to_csv(stem.with_suffix(".csv"), index=False, float_format="%.6g")
     p[["record_id", "senator", "price_ticker", "side", "transaction_date", "committee_group", "mapped_seats", "overseeing",
        "sic", "membership_version_date"]].to_csv(stem.parent / f"{stem.name}_events.csv", index=False)
@@ -75,9 +76,11 @@ def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_
     by_sen = (p[p["committee_group"] == OVERSEEN].groupby(["senator", "side"]).size().unstack(fill_value=0)
               .sort_values(by=list(p["side"].unique())[:1], ascending=False).head(10))
     L = [f"# Committee test, {label} ({first} to {last}), {tag.upper()}", ""]
-    if tag == "prefill":
-        L += ["**PROVISIONAL (prefill): events whose stock is in the survivorship ledger have no prices yet and drop out; "
-              "these numbers will change when the price request is filled.**", ""]
+    if exploratory:
+        from .confirmatory import EXPLORATORY_NOTE
+        L += [EXPLORATORY_NOTE, ""]
+    if tag == "yahoo":
+        L += ["**Prices: Yahoo, the final headline source (R3, S2).** Stocks in the survivorship ledger (mostly delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases are skipped in the book; V15 (SPY fill) bounds the effect.", ""]
     L += ["_src/metrics/committee.py. An event is **overseen** when, on its transaction date, the senator sat on a committee "
           "in config/committee_industries.yaml (committed at a124f03 before this split was computed, E54) whose SIC ranges "
           "contain the company's SIC code. Membership: the latest version of congress-legislators' "

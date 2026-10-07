@@ -35,9 +35,10 @@ one command (`python run_all.py`) must rebuild every number.
 - **Sizing**: midpoint of the disclosed range (open top band uses its lower bound). Variants:
   lower_bound, equal_dollar.
 - **Prices**: adjusted close on the first trading day AFTER the disclosure (date received).
-  Variant: same-day close. **Source hierarchy (M2)**: `prices.sources: [crsp, manual, yahoo]`, CRSP first, then a
-  Bloomberg/FactSet export (data/raw/manual_prices/, docs/PRICE_REQUEST.md), then Yahoo, merged day by day; V18 = Yahoo
-  only. V15 (SPY fill) is a bound, never the headline. OOS stays locked until the price hole is filled (M3).
+  Variant: same-day close. **Headline prices: Yahoo only (S2, S3)**: `prices.sources: [yahoo]`; no CRSP or terminal file
+  arrived by the R3 deadline. V20 (`[yahoo, crsp]`) would fill the survivorship ledger from CRSP if WRDS access arrives;
+  it can never change the headline. The M2 day-by-day merge (src/prices/sources.py) stays for V20. V18 = headline.
+  V15 (SPY fill) is a bound, never the headline.
 - **Matching**: a sale is matched FIFO to that senator's open copied positions in the same ticker,
   regardless of owner. Sale (Full) closes it; Sale (Partial) sells the midpoint amount, capped at
   the holding. Sales of anything we do not hold (for example, bought before the window) are ignored
@@ -58,7 +59,10 @@ one command (`python run_all.py`) must rebuild every number.
 - **Out-of-sample firewall**: the window splits at its midpoint in whole months (5y: in-sample to
   2024-02-29, out-of-sample from 2024-03-01). Code refuses to compute
   out-of-sample results unless `oos.oos_unlocked: true` AND `project.frozen_rules_commit` is set,
-  and flipping them requires a DECISIONS.md entry naming the frozen commit.
+  and flipping them requires a DECISIONS.md entry naming the frozen commit. **Rules frozen at
+  348318447daa58a91af14ae65c8ee3c98522d896 (F1, 2026-10-06); unlocked (U1); `engine.sample: full`.
+  From here on NO rule, parameter, scope, test or prediction changes; a bug fix is a logged
+  post-unlock correction (DECISIONS.md) with before and after values.**
 
 ## Repo map
 ```
@@ -86,7 +90,7 @@ src/metrics/          Phase 5: stats.py (returns, Sharpe, CAPM/Carhart with OLS 
                       benchmarks.py (SPY, risk-matched SPY, Senate universe, NANC, KRUZ as GOP, sterling),
                       event_study.py (clustered by entry month); outputs/tables/phase5_*.md, outputs/figures/phase5_*.png
                       Phase 6 prep: mechanism.py (size/party/lag/senator splits), committee.py (committee test);
-                      outputs/tables/{variants,mechanism,committee}_insample_<prefill|filled>.md
+                      outputs/tables/{variants,mechanism,committee}_<sample>_yahoo.md
                       Part B Step 1: confirmatory.py (H0-H4 per half: Holm, MDE, ex-bulk, reversal; calendar years,
                       worst 12 months) -> outputs/tables/confirmatory_insample.md (confirmatory_oos.md once unlocked)
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
@@ -137,8 +141,8 @@ tests/                pytest suite (run: python -m pytest)
 | 2 | Clean: amendments, de-duplication, scope filters, tickers, instrument types, flags, exclusions log | Done (2026-09-27); FIFO sale matching moved to Phase 4 (E18) |
 | 3 | Prices (Yahoo, or CRSP CSV) and Ken French factors | Done (2026-09-28); CRSP pending WRDS access |
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
-| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample only: warm-up (L2), metrics, benchmarks, event study. A.2 done (2026-09-29): price-source hierarchy (M2), loaders, price request. A.2b done (2026-09-30): preferred shares out (N2), 9 renames (N3); **waiting on terminal/CRSP prices** |
-| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, PREFILL: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R4: Holm, minimum detectable effects, ex-bulk sensitivity). **Part B Step 1 done (2026-10-05)**: confirmatory.py, outputs/tables/confirmatory_insample.md. Price fill closed by R3 (Yahoo only). Submission readiness done (clean-room test, make_submission.py). Next: freeze, unlock, OOS |
+| 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample: warm-up (L2), metrics, benchmarks, event study. A.2 (M2), A.2b (N2, N3) done. **Part B done (2026-10-06)**: S1-S5, rules FROZEN at 3483184 (F1), out-of-sample UNLOCKED (U1); ONE continuous 5-year backtest (phase5_full_results.md, the main result) with the second half read off it (phase5_oos_results.md); H0-H4 judged (confirmatory_oos.md) |
+| 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, Yahoo prices: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. S1-S5 (2026-10-06): Yahoo final, V20 registered. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R4: Holm, minimum detectable effects, ex-bulk sensitivity). **Part B Step 1 done (2026-10-05)**: confirmatory.py, outputs/tables/confirmatory_insample.md. Price fill closed by R3 (Yahoo only). Submission readiness done (clean-room test, make_submission.py). **Out-of-sample done (2026-10-06)**: exploratory tables for the full window and the second half; variants_full_yahoo.md (V11 run, V20 not run: no CRSP data) |
 | 7 | Report outputs (tables, figures, data_quality.md) | Not started |
 
 ## RULES FOR EVERY SESSION

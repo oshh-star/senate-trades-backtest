@@ -108,21 +108,26 @@ def to_md(t: pd.DataFrame) -> str:
     return v.to_markdown(index=False)
 
 
-def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_dir) -> dict:
+def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_dir,
+          key: str | None = None, exploratory: bool = False) -> dict:
     from pathlib import Path
     S = all_splits(panel)
     out_dir = Path(out_dir)
-    stem = out_dir / f"mechanism_{'insample' if label == 'in-sample' else 'full'}_{tag}"
+    stem = out_dir / f"mechanism_{key or ('insample' if label == 'in-sample' else 'full')}_{tag}"
     pd.concat([t.assign(split=k) for k, t in S.items()], ignore_index=True).to_csv(stem.with_suffix(".csv"), index=False,
                                                                                     float_format="%.6g")
     titles = {"size": "Trade size: the two smallest disclosed bands against every larger band",
               "party": "Party of the senator's term on the trade date",
               "lag": "Filing lag (disclosure date minus transaction date): 30 days or less against longer",
-              "senator": "Senator: the top 4 by number of in-sample events, one by one, and everyone else pooled"}
+              "senator": "Senator: the top 4 by number of " + ("events in this sample (Q1: the rule is applied to each sample)"
+                                                               if exploratory else "in-sample events")
+                         + ", one by one, and everyone else pooled"}
     L = [f"# Mechanism splits, {label} ({first} to {last}), {tag.upper()}", ""]
-    if tag == "prefill":
-        L += ["**PROVISIONAL (prefill): events whose stock is in the survivorship ledger have no prices yet and drop "
-              "out; these numbers will change when the price request is filled.**", ""]
+    if exploratory:
+        from .confirmatory import EXPLORATORY_NOTE
+        L += [EXPLORATORY_NOTE, ""]
+    if tag == "yahoo":
+        L += ["**Prices: Yahoo, the final headline source (R3, S2).** Stocks in the survivorship ledger (mostly delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases are skipped in the book; V15 (SPY fill) bounds the effect.", ""]
     L += ["_From `data/processed/event_panel.csv` (src/metrics/mechanism.py). Each cell: mean SPY-adjusted return "
           "(t-statistic, standard errors clustered by calendar month of entry). **copier** = from the close on the entry "
           "date (first trading day after the disclosure); **senator** = from the close on the transaction date; "

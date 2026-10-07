@@ -46,6 +46,9 @@ LEVEL = 0.05
 Z_NOMINAL = {2: float(norm.ppf(1 - LEVEL / 2)), 1: float(norm.ppf(1 - LEVEL))}                       # 1.960, 1.645
 Z_BONFERRONI = {2: float(norm.ppf(1 - LEVEL / M_TESTS / 2)), 1: float(norm.ppf(1 - LEVEL / M_TESTS))}  # 2.690, 2.450
 MIN_CLUSTERS = mc.MIN_CLUSTERS
+EXPLORATORY_NOTE = ("**EXPLORATORY.** Not one of the registered confirmatory tests (H0-H4, docs/DECISIONS.md, \"Out-of-sample "
+                    "test plan\"; outputs/tables/confirmatory_oos.md). Roughly 150 cells were examined in-sample, so a few "
+                    "cells in a table like this one will reach |t| = 2 by chance.**")
 
 
 # ------------------------------------------------------------------ statistics
@@ -285,9 +288,8 @@ def price_sources(coverage: str = "data/processed/price_coverage.csv") -> str:
     s = (f"**Price sources in use** (`prices.sources`, M2): symbols priced by {parts}; {n_none:,} symbols have no prices "
          f"(the survivorship ledger; their purchases are skipped, K3). CRSP or terminal price files present: "
          f"{len(files)}{' (' + ', '.join(sorted(files)) + ')' if files else ''}. Price tag: **{price_tag()}**.")
-    if not files:
-        s += (" With no CRSP or terminal file, every price is Yahoo's: under R3 (deadline 2026-10-04) Yahoo is the best "
-              "available source, the survivorship gap is a stated limitation and V15 (SPY fill) bounds it.")
+    s += (" Yahoo is the final headline source (R3, S2); a CRSP file could only ever feed variant V20, never the headline "
+          "(S3). The survivorship gap is a stated limitation and V15 (SPY fill) bounds it.")
     return s
 
 
