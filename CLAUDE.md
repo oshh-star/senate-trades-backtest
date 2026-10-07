@@ -120,7 +120,7 @@ data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
 outputs/phase4_worked_examples.md   three copied lots traced step by step (Phase 4)
-docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
+docs/                 DECISIONS.md, HANDOVER.md (new owner: start at its top), PROJECT_SUMMARY.md (plain English), the course guidance PDF
 README.md             for the professor: install, the one command, run times, which file feeds each report table
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)

@@ -96,6 +96,7 @@ skipped. Each table says so in its header, and variant V15 bounds the effect.
 - `config/config.yaml`: every rule, as a parameter (the single source of truth for the code).
 - `docs/DECISIONS.md`: the dated reason for every rule, every change, and every variant ever run.
 - `docs/HANDOVER.md`: the current state of the project.
+- `docs/PROJECT_SUMMARY.md`: what we did and found, in plain English.
 - `CLAUDE.md`: the map of the code and the phase plan.
 
 ## Data sources
