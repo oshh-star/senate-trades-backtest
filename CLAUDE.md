@@ -128,7 +128,7 @@ scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand;
 scripts/price_request.py  writes docs/PRICE_REQUEST.md and docs/crsp_tickers_*.txt (M2), by hand after the prices stage
 scripts/committee_history.py  Senate committee memberships by date from congress-legislators' git history (by hand)
 scripts/sec_sic.py        SIC industry codes from SEC submissions -> data/interim/sic_codes.csv (by hand)
-scripts/make_submission.py  dist/submission.zip (committed files + CHECKSUMS.sha256), deterministic; dist/ is git-ignored
+scripts/make_submission.py  dist/submission.zip + dist/submission_prices.zip (S4: Yahoo price cache apart; CHECKSUMS.sha256), deterministic; dist/ is git-ignored
 data/raw/manual_prices/  Bloomberg/FactSet CSVs (date, close, total_return_index) and SOURCES.md (who, where, when)
 tests/                pytest suite (run: python -m pytest)
 ```

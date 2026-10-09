@@ -43,7 +43,11 @@ The robustness variants (V1 to V20, each run alone against the headline) are a s
 python run_variants.py             # about 8 minutes; writes outputs/tables/variants_full_yahoo.*
 ```
 
-**Checking the rebuild.** If you unpacked `submission.zip`, compare the rebuilt files with the submitted ones:
+**Two zips.** The submission comes as two files: `submission.zip` (the code, the small data and the results) and
+`submission_prices.zip` (the Yahoo price cache, `data/raw/prices/yahoo/`). Unzip both in the same place: each contains
+the folder `senate-trades-backtest/`, and the second fills in its price folder. Both are needed before the command above.
+
+**Checking the rebuild.** If you unpacked the two zips, compare the rebuilt files with the submitted ones:
 
 ```bash
 sha256sum -c CHECKSUMS.sha256 --quiet          # on a Mac: shasum -a 256 -c CHECKSUMS.sha256 --quiet
