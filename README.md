@@ -106,7 +106,7 @@ skipped. Each table says so in its header, and variant V15 bounds the effect.
 | Data | Source | Notes |
 |---|---|---|
 | Senate trades | Senate eFD (efdsearch.senate.gov), Periodic Transaction Reports received 2016-01-01 to 2026-09-30, scraped directly | Keyed to the date and time each report was **received** (made public). In scope only if the transaction date falls within the filer's Senate service (unitedstates/congress-legislators). Paper filings, amendments, owners and every other exclusion are counted in `outputs/data_quality.md`. |
-| Prices | Yahoo Finance daily adjusted close (dividends reinvested), USD; hierarchy CRSP, then terminal exports, then Yahoo (`prices.sources`) | Delisted stocks are missing from Yahoo (survivorship bias); they are listed with a reason in `data/interim/survivorship_ledger.csv`. |
+| Prices | Yahoo Finance daily adjusted close (dividends reinvested), USD. The headline uses Yahoo only (`prices.sources: [yahoo]`, decisions S2 and S3); a Bloomberg-filled copy is in `outputs/tables/bloomberg_fill/` | Delisted stocks are missing from Yahoo (survivorship bias); they are listed with a reason in `data/interim/survivorship_ledger.csv`. |
 | Factors and risk-free rate | Kenneth French Data Library: US Fama-French 3 factors, momentum, RF (daily and monthly) | One risk-free series throughout. |
 | Company names, renames, industries | SEC EDGAR (company tickers, submissions, Form 25 delisting filings) | Cached in `data/raw/sec/`. |
 | Committee memberships | unitedstates/congress-legislators, every version of the committee membership file | Cached in `data/raw/legislators/`. |
