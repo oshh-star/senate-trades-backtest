@@ -1379,24 +1379,16 @@ Rejected by hand (same SEC company, not the same security):
 | ESV      | Ensco -> Ensco Rowan -> Valaris; the old equity was cancelled in the 2020-21 Chapter 11; VAL is new equity                       |
 | WTW      | Weight Watchers -> WW International; the old equity was cancelled in the 2025 Chapter 11; WW is new equity                       |
 
-**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 185 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 30 of them have in-scope trades (87 trades, $5,422,044 at midpoints). CRSP (A04) is the fix.
+**Survivorship ledger** (`data/interim/survivorship_ledger.csv`): 177 price symbols needed by some trade (any variant) have no usable Yahoo history (delisted or acquired names Yahoo no longer serves, and recycled symbols whose history now belongs to another company); 22 of them have in-scope trades (28 trades, $1,163,514 at midpoints). CRSP (A04) is the fix.
 
 | price_ticker   | efd_asset_names                     |   in_scope_trades |   in_scope_purchases |   in_scope_midpoint_dollars | first_trade   | last_trade   | reason                     | reason_source                                                                                                                                                                                                                                                      |
 |:---------------|:------------------------------------|------------------:|---------------------:|----------------------------:|:--------------|:-------------|:---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| X              | United States Steel Corporation | U |                22 |                    5 |                   1,678,011 | 2021-10-18    | 2023-10-11   | acquired for cash          | Nippon Steel bought U.S. Steel for $55.00 cash per share, closed 18 Jun 2025 (SEC 25-NSE 2025-06-18)                                                                                                                                                               |
-| ECOM           | ChannelAdvisor Corporation | Channe |                 6 |                    5 |                   1,215,503 | 2022-03-08    | 2022-09-07   | acquired for cash          | CommerceHub (Francisco Partners / Insight) bought ChannelAdvisor for $23.10 cash, Nov 2022 (SEC 25-NSE 2022-11-15)                                                                                                                                                 |
 | WTT            | Wireless Telecom Group Inc          |                 1 |                    0 |                     750,000 | 2023-08-15    | 2023-08-15   | acquired for cash          | Maury Microwave bought Wireless Telecom Group for $2.13 cash, Aug 2023 (SEC 25-NSE 2023-08-04)                                                                                                                                                                     |
-| ATVI           | Activision Blizzard, Inc - Common S |                 2 |                    1 |                     350,001 | 2022-11-08    | 2023-04-26   | acquired for cash          | Microsoft bought Activision Blizzard for $95.00 cash, closed 13 Oct 2023 (SEC 25-NSE 2023-10-13)                                                                                                                                                                   |
-| SSBK           | Southern States Bancshares, Inc. -  |                15 |                    2 |                     345,508 | 2021-08-12    | 2024-04-30   | acquired for stock         | FB Financial merger, 0.80 FBK shares per SSBK share, closed 1 Jul 2025 (SEC 25-NSE 2025-07-01; FB Financial release 1 Jul 2025)                                                                                                                                    |
-| PARA           | Paramount Global - Class B Common S |                 4 |                    3 |                     315,002 | 2023-09-18    | 2024-05-10   | acquired for stock         | Skydance merger closed 7 Aug 2025: Class B holders elected $15.00 cash or 1 share of Paramount Skydance (PSKY), prorated (SEC 25-NSE 2025-08-07); Yahoo's PARA history now belongs to another company                                                              |
-| WBA            | Walgreens Boots Alliance, Inc. | Wa |                 7 |                    6 |                     172,004 | 2022-01-12    | 2024-04-30   | acquired for cash          | Sycamore Partners take-private, $11.45 cash plus a right to up to $3.00 from the VillageMD sale, closed 28 Aug 2025 (SEC 25-NSE 2025-08-28, SC 13E3)                                                                                                               |
-| GOGL           | Golden Ocean Group Limited - Common |                 2 |                    1 |                     150,001 | 2024-02-27    | 2024-04-30   | acquired for stock         | Merged into CMB.Tech (0.95 CMBT share per GOGL share), Aug 2025 (SEC 25-NSE 2025-08-20); Yahoo's GOGL is now a 2x GOOGL ETF                                                                                                                                        |
 | NS             | Nustar Energy L.P. Common Units     |                 1 |                    0 |                      75,000 | 2021-12-29    | 2021-12-29   | acquired for stock         | Sunoco LP bought NuStar Energy, 0.400 SUN unit per NS unit, May 2024 (no SEC name match; company announcement)                                                                                                                                                     |
 | TACO           | Del Taco Restaurants, Inc. - Common |                 1 |                    0 |                      65,001 | 2022-03-09    | 2022-03-09   | acquired for cash          | Jack in the Box bought Del Taco for $12.51 cash, Mar 2022 (SEC 25-NSE 2022-03-08); Yahoo's TACO is now a SPAC                                                                                                                                                      |
 | BKEP           | Blueknight Energy Partners L.P., L. |                 1 |                    0 |                      32,500 | 2021-12-29    | 2021-12-29   | acquired for cash          | Ergon bought Blueknight Energy Partners' common units for $4.65 cash, Oct 2022 (company announcement; no SEC name match)                                                                                                                                           |
 | FUN            | Cedar Fair, L.P. Common Stock       |                 1 |                    0 |                      32,500 | 2022-01-13    | 2022-01-13   | acquired for stock         | Cedar Fair merged with Six Flags 1:1 into a new company that took the FUN symbol, 1 Jul 2024 (SEC 25-NSE 2024-07-02); Yahoo's FUN is the new company, so not used (E27)                                                                                            |
 | RNWK           | RealNetworks Inc. | RealNetworks, I |                 1 |                    0 |                      32,500 | 2022-12-28    | 2022-12-28   | acquired for cash          | Founder Rob Glaser took RealNetworks private for $1.05 cash, Dec 2022 (SEC 25-NSE 2022-12-22, SC 13E3)                                                                                                                                                             |
-| TOELY          | Tokyo Electron Ltd ADR (TOELY)      |                 1 |                    1 |                      32,500 | 2026-03-30    | 2026-03-30   | ticker issue               | Tokyo Electron ADR still trades OTC (Yahoo's last market time 2026-09-24), but Yahoo returns an empty daily series (its 'first trade date' was reset to 2026-07-17, as for DFKCY, AVB, EA and LEG)                                                                 |
 | CYBR           | CyberArk Software Ltd. - Ordinary S |                 2 |                    1 |                      16,001 | 2024-01-04    | 2024-12-18   | acquired for stock         | Palo Alto Networks bought CyberArk for $45.00 cash plus 2.2005 PANW shares per share, closed 11 Feb 2026 (SEC 25-NSE 2026-02-11; PANW release)                                                                                                                     |
 | EA             | Electronic Arts Inc | Electronic Ar |                 2 |                    2 |                      16,001 | 2026-03-27    | 2026-03-30   | acquired for cash          | PIF, Silver Lake and Affinity Partners took Electronic Arts private for $210.00 cash, closed 4 Aug 2026 (SEC 25-NSE 2026-08-04; EA release 4 Aug 2026). Yahoo keeps the symbol's metadata but no longer serves its history                                         |
 | LMST           | Limestone Bancorp, Inc. - Common St |                 2 |                    1 |                      16,001 | 2022-03-30    | 2023-04-03   | acquired for stock         | Peoples Bancorp bought Limestone Bancorp, 0.90 PEBO share per share, Apr 2023 (SEC 25-NSE 2023-05-01)                                                                                                                                                              |
@@ -1414,24 +1406,24 @@ Rejected by hand (same SEC company, not the same security):
 | SIVB           | SVB Financial Group | SVB Financial |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | bankrupt                   | SVB Financial Group: Silicon Valley Bank failed 10 Mar 2023, parent filed Chapter 11 17 Mar 2023 (SEC 25-NSE 2023-05-02)                                                                                                                                           |
 | VMW            | VMware, Inc. | Vmware, Inc. Common  |                 1 |                    0 |                       8,000 | 2022-03-30    | 2022-03-30   | acquired for stock         | Broadcom bought VMware, holders elected $142.50 cash or 0.252 AVGO share (prorated about half each), closed 22 Nov 2023 (SEC 25-NSE 2023-11-22)                                                                                                                    |
 
-Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for cash 12, acquired for stock 12, ticker issue 4, matured or liquidated fund 1, bankrupt 1; for all 185 ledger symbols: acquired for stock 75, acquired for cash 65, ticker issue 19, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
+Reasons (K4, `config/ledger_reasons.yaml`) for the symbols with in-scope records: acquired for stock 9, acquired for cash 8, ticker issue 3, matured or liquidated fund 1, bankrupt 1; for all 177 ledger symbols: acquired for stock 72, acquired for cash 61, ticker issue 18, bankrupt 12, matured or liquidated fund 8, unknown 6. Until CRSP arrives these records are logged and skipped by the engine (K3); variant V15 fills their purchases with SPY's return.
 
 ### 2. Price download and repairs
 
-- Symbols requested: **1484**; with data: **1298**; without: 186. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
+- Symbols requested: **1484**; with data: **1306**; without: 178. Per-symbol first/last date and download time: `data/processed/price_coverage.csv`.
 - K6 repairs (`config/price_repairs.yaml`): 20 price rows changed in 6 symbols (EVVTY, LYSDY, QABSY, TGOPY, THLLY, TRUMY); every row is in `data/interim/price_repairs_log.csv`, and Phase 4 reports whether each falls inside a copied holding period.
 - NYSE trading calendar (SPY's dates): 2016-01-04 to 2026-08-31, 2,680 days (`data/processed/trading_calendar.csv`).
-- `data/processed/prices.csv.gz`: 3,259,732 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
+- `data/processed/prices.csv.gz`: 3,266,327 rows (date, ticker, close, adj_close, volume). Yahoo's `close` is adjusted for splits only; `adj_close` for splits and dividends. Dividends and splits: `data/processed/dividends.csv`, `splits.csv`.
 
 ### 3. Coverage: in-scope trades with a usable price on the entry date
 
-Entry date = first NYSE trading day after the disclosure date (D11). **2,273 of 2,363 in-scope records (96.2%) have a price; by midpoint dollars 93.8%** ($82,954,636 of $88,392,682).
+Entry date = first NYSE trading day after the disclosure date (D11). **2,332 of 2,363 in-scope records (98.7%) have a price; by midpoint dollars 98.7%** ($87,213,166 of $88,392,682).
 
 | Senator              |   Trades |   With entry price | Share (count)   |   Midpoint $ | Share ($)   |
 |:---------------------|---------:|-------------------:|:----------------|-------------:|:------------|
-| ALL IN-SCOPE         |     2363 |               2273 | 96.2%           |   88,392,682 | 93.8%       |
-| Tommy Tuberville     |      750 |                685 | 91.3%           |   28,998,875 | 85.1%       |
-| Alan Armstrong       |      702 |                692 | 98.6%           |   24,651,351 | 99.6%       |
+| ALL IN-SCOPE         |     2363 |               2332 | 98.7%           |   88,392,682 | 98.7%       |
+| Tommy Tuberville     |      750 |                743 | 99.1%           |   28,998,875 | 99.7%       |
+| Alan Armstrong       |      702 |                693 | 98.7%           |   24,651,351 | 99.7%       |
 | Markwayne Mullin     |      322 |                319 | 99.1%           |   12,294,661 | 99.8%       |
 | John Boozman         |      254 |                253 | 99.6%           |    2,326,127 | 99.7%       |
 | Sheldon Whitehouse   |       81 |                 81 | 100.0%          |    1,666,040 | 100.0%      |
@@ -1466,14 +1458,13 @@ Why prices are missing:
 
 | why_missing                                   |   trades |   midpoint_dollars |
 |:----------------------------------------------|---------:|-------------------:|
-| no usable Yahoo history (survivorship ledger) |       88 |          5,422,044 |
+| no usable Yahoo history (survivorship ledger) |       29 |          1,163,514 |
 | series starts after the entry date            |        2 |             16,001 |
 
-Every in-scope record without an entry price (90; also `data/interim/price_missing_entry.csv`):
+Every in-scope record without an entry price (31; also `data/interim/price_missing_entry.csv`):
 
 | senator          | ticker   | price_ticker   | transaction_type   | disclosure_date   | entry_date   |   amount_mid | why_missing                                   |
 |:-----------------|:---------|:---------------|:-------------------|:------------------|:-------------|-------------:|:----------------------------------------------|
-| Alan Armstrong   | TOELY    | TOELY          | Purchase           | 2026-07-21        | 2026-07-22   |       32,500 | no usable Yahoo history (survivorship ledger) |
 | Alan Armstrong   | WIZEY    | WIZEY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Alan Armstrong   | WIZEY    | WIZEY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Alan Armstrong   | KYOCY    | KYOCY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | no usable Yahoo history (survivorship ledger) |
@@ -1496,83 +1487,33 @@ Every in-scope record without an entry price (90; also `data/interim/price_missi
 | Markwayne Mullin | INST     | INST           | Sale (Partial)     | 2024-01-26        | 2024-01-29   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Markwayne Mullin | CYBR     | CYBR           | Sale (Full)        | 2024-12-31        | 2025-01-02   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Rick Scott       | WTT      | WTT            | Sale (Full)        | 2023-09-15        | 2023-09-18   |      750,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Purchase           | 2021-09-08        | 2021-09-09   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Purchase           | 2021-11-10        | 2021-11-11   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2022-02-14        | 2022-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | FUN      | FUN            | Sale (Full)        | 2022-02-14        | 2022-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Purchase           | 2022-03-11        | 2022-03-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | VMW      | VMW            | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | SIVB     | SIVB           | Sale (Full)        | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | LMST     | LMST           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | MASI     | MASI           | Purchase           | 2022-04-08        | 2022-04-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-04-08        | 2022-04-11   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-05-13        | 2022-05-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Purchase           | 2022-06-13        | 2022-06-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Purchase           | 2022-07-13        | 2022-07-14   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-07-13        | 2022-07-14   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Purchase           | 2022-08-15        | 2022-08-16   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Purchase           | 2022-10-12        | 2022-10-13   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ECOM     | ECOM           | Sale (Full)        | 2022-10-12        | 2022-10-13   |      750,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | MASI     | MASI           | Sale (Full)        | 2022-11-10        | 2022-11-11   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ATVI     | ATVI           | Purchase           | 2022-12-14        | 2022-12-15   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-02-14        | 2023-02-15   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-04-12        | 2023-04-13   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | ATVI     | ATVI           | Sale (Full)        | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-05-11        | 2023-05-12   |      175,000 | no usable Yahoo history (survivorship ledger) |
 | Tommy Tuberville | LMST     | LMST           | Sale (Full)        | 2023-05-11        | 2023-05-12   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-06-15        | 2023-06-16   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Full)        | 2023-07-14        | 2023-07-17   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-07-14        | 2023-07-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2023-08-14        | 2023-08-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | PARA     | PARA           | Purchase           | 2023-10-13        | 2023-10-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | X        | X              | Sale (Partial)     | 2023-11-16        | 2023-11-17   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | PARA     | PARA           | Purchase           | 2024-01-12        | 2024-01-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Full)        | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |        8,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Partial)     | 2024-02-14        | 2024-02-15   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | GOGL     | GOGL           | Purchase           | 2024-03-15        | 2024-03-18   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | PARA     | PARA           | Purchase           | 2024-04-15        | 2024-04-16   |       32,500 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | WBA      | WBA            | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | SSBK     | SSBK           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | GOGL     | GOGL           | Sale (Full)        | 2024-05-15        | 2024-05-16   |       75,000 | no usable Yahoo history (survivorship ledger) |
-| Tommy Tuberville | PARA     | PARA           | Sale (Full)        | 2024-06-14        | 2024-06-17   |      175,000 | no usable Yahoo history (survivorship ledger) |
 | Alan Armstrong   | KBGGY    | KBGGY          | Purchase           | 2026-07-21        | 2026-07-22   |        8,000 | series starts after the entry date            |
 | Bill Hagerty     | VRM      | VRM            | Sale (Full)        | 2021-12-22        | 2021-12-23   |        8,000 | series starts after the entry date            |
 
 ### 4. Price series that end before the window end while a copied position may be open
 
-In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (0 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
+In-scope purchases whose symbol HAS a Yahoo series that ends before 2026-08-31 (7 senator-ticker pairs; symbols with no usable history at all are in the survivorship ledger, section 1; `data/interim/price_series_ending_early.csv`). `full_sale_disclosed_before_last_price` = the same senator disclosed a Sale (Full) of it before the series ends (a rough check; FIFO matching is Phase 4). **Engine rule (E20, confirmed by K1): close the position at the last available price and hold the proceeds at the risk-free rate until the window ends.**
 
-_None._
+| senator          | price_ticker   | ticker   | asset_name                                    |   purchases |   midpoint_$ | first_purchase_disclosed   | last_price_date   | full_sale_disclosed_before_last_price   |
+|:-----------------|:---------------|:---------|:----------------------------------------------|------------:|-------------:|:---------------------------|:------------------|:----------------------------------------|
+| Tommy Tuberville | X              | X        | United States Steel Corporation Common Stock  |           5 |      875,002 | 2021-11-10                 | 2025-06-17        | True                                    |
+| Tommy Tuberville | ECOM           | ECOM     | ChannelAdvisor Corporation Common Stock       |           5 |      465,502 | 2022-04-08                 | 2022-11-14        | True                                    |
+| Tommy Tuberville | ATVI           | ATVI     | Activision Blizzard, Inc - Common Stock       |           1 |      175,000 | 2022-12-14                 | 2023-10-12        | True                                    |
+| Tommy Tuberville | SSBK           | SSBK     | Southern States Bancshares, Inc. - Common Sto |           2 |      150,001 | 2021-09-08                 | 2025-06-30        | True                                    |
+| Tommy Tuberville | PARA           | PARA     | Paramount Global - Class B Common Stock       |           3 |      140,002 | 2023-10-13                 | 2025-08-06        | True                                    |
+| Tommy Tuberville | WBA            | WBA      | Walgreens Boots Alliance, Inc. - Common Stock |           6 |       97,003 | 2022-02-14                 | 2025-08-27        | True                                    |
+| Tommy Tuberville | GOGL           | GOGL     | Golden Ocean Group Limited - Common Stock     |           1 |       75,000 | 2024-03-15                 | 2025-08-19        | True                                    |
 
 ### 5. Daily moves beyond +/-50% (split-adjusted close)
 
-380 moves in 54 symbols; 277 unexplained; 27 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
+381 moves in 55 symbols; 278 unexplained; 28 in symbols with in-scope trades, listed below (all of them: `data/interim/price_large_moves.csv`). Genuine news moves (earnings, March 2020, meme stocks) also appear as 'unexplained': the check only rules out splits and one-day bad prints.
 
 | ticker   | prev_date   | date       |   close | ret_close   | ret_adj   | next_ret_close   | explanation                                                            |
 |:---------|:------------|:-----------|--------:|:------------|:----------|:-----------------|:-----------------------------------------------------------------------|
@@ -1582,6 +1523,7 @@ _None._
 | AMD      | 2016-04-21  | 2016-04-22 |       4 | 52.3%       | 52.3%     | -13.5%           | unexplained (no split on record)                                       |
 | ARGX     | 2017-12-08  | 2017-12-11 |      54 | 78.9%       | 78.9%     | 1.0%             | unexplained (no split on record)                                       |
 | CODYY    | 2026-07-08  | 2026-07-09 |       9 | -50.8%      | -50.8%    | 0.8%             | unexplained (no split on record)                                       |
+| ECOM     | 2022-09-02  | 2022-09-06 |      23 | 55.0%       | 55.0%     | -0.1%            | unexplained (no split on record)                                       |
 | GL       | 2024-04-10  | 2024-04-11 |      49 | -53.1%      | -53.1%    | 20.2%            | unexplained (no split on record)                                       |
 | HOOD     | 2021-08-03  | 2021-08-04 |      70 | 50.4%       | 50.4%     | -27.6%           | unexplained (no split on record)                                       |
 | IHICY    | 2020-04-13  | 2020-04-14 |       3 | -53.8%      | -53.8%    | -7.2%            | unexplained (no split on record)                                       |
@@ -1672,12 +1614,13 @@ _None._
 
 ### 9. Price sources (M2: CRSP, then a terminal export, then Yahoo)
 
-Order used: **yahoo** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
+Order used: **yahoo > manual** (`prices.sources`). Each symbol's series takes each day's return from the highest-priority source that has a price on that day and the previous one (src/prices/sources.py). Every row of `data/processed/prices.csv.gz` carries its `source`. CRSP files: `data/raw/crsp/` (PERMNO choices in `data/interim/crsp_permno_map.csv`); terminal exports: `data/raw/manual_prices/` (checks in `data/interim/manual_prices_report.csv`).
 
 | source   |   symbols |
 |:---------|----------:|
 | yahoo    |      1298 |
-| none     |       186 |
+| none     |       178 |
+| manual   |         8 |
 
 Where two sources overlap, their daily returns are compared (`data/interim/price_source_validation.csv`): no overlaps yet (no CRSP or terminal files).
 
@@ -1687,13 +1630,13 @@ _Stage `engine` of `python run_all.py`. Sample: **full window, 2021-09-01 to 202
 
 ### 0. Warm-up (L2) against the empty start (V17)
 
-The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 133 warm-up events. At the close before the window the book holds 65 lots worth **$1,196,060** (series B's pot starts with this book plus $16,268,273 in cash, K = $17,464,333).
+The book is built from disclosures from **2020-09-01** (the 12 months before the window), starting on 2020-09-09; returns and every statistic are measured only from **2021-09-01**. 133 warm-up events. At the close before the window the book holds 70 lots worth **$1,506,533** (series B's pot starts with this book plus $15,632,319 in cash, K = $17,138,852).
 
 | action                                                     |   events |   dollars |
 |:-----------------------------------------------------------|---------:|----------:|
-| bought                                                     |       72 | 1,552,036 |
+| bought                                                     |       77 | 1,832,538 |
 | ignored: nothing held                                      |       48 | 1,082,024 |
-| skipped: survivorship ledger (no usable prices)            |        9 |   312,504 |
+| skipped: survivorship ledger (no usable prices)            |        4 |    32,002 |
 | sold all                                                   |        2 |   409,493 |
 | skipped: no price on the entry date                        |        1 |     8,000 |
 | ignored: nothing held (earlier copied lots already closed) |        1 |    75,000 |
@@ -1703,20 +1646,20 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 | measure                                                                        | V17 empty start (Phase 4 rule)   | warm-up 12 months (L2, headline)   |
 |:-------------------------------------------------------------------------------|:---------------------------------|:-----------------------------------|
 | sale records in the window                                                     | 955                              | 955                                |
-| sales ignored: nothing held                                                    | 626                              | 576                                |
-| sales ignored (share)                                                          | 65.5%                            | 60.3%                              |
-| sales matched to a copied position                                             | 329                              | 379                                |
-| open lots: min                                                                 | 0                                | 65                                 |
+| sales ignored: nothing held                                                    | 604                              | 554                                |
+| sales ignored (share)                                                          | 63.2%                            | 58.0%                              |
+| sales matched to a copied position                                             | 351                              | 401                                |
+| open lots: min                                                                 | 0                                | 70                                 |
 | open lots: median                                                              | 170                              | 187                                |
-| open lots: max                                                                 | 960                              | 974                                |
-| capital deployed: min ($)                                                      | 0                                | 1,136,495                          |
-| capital deployed: median ($)                                                   | 5,046,313                        | 5,489,195                          |
-| capital deployed: max ($)                                                      | 24,491,210                       | 24,868,120                         |
+| open lots: max                                                                 | 961                              | 975                                |
+| capital deployed: min ($)                                                      | 0                                | 1,482,278                          |
+| capital deployed: median ($)                                                   | 5,181,630                        | 5,751,439                          |
+| capital deployed: max ($)                                                      | 24,521,291                       | 24,898,200                         |
 | days with no open lot                                                          | 6                                | 0                                  |
-| lots held on the last day                                                      | 960                              | 974                                |
-| share of dollars ever invested still held on the last day (at cost)            | 56.6%                            | 54.7%                              |
-| share still held on the last day, lots bought inside the window only (at cost) | 56.6%                            | 56.6%                              |
-| value held on the last day ($)                                                 | 23,902,988                       | 24,274,604                         |
+| lots held on the last day                                                      | 961                              | 975                                |
+| share of dollars ever invested still held on the last day (at cost)            | 53.3%                            | 51.2%                              |
+| share still held on the last day, lots bought inside the window only (at cost) | 53.3%                            | 53.3%                              |
+| value held on the last day ($)                                                 | 23,930,849                       | 24,302,465                         |
 
 ### 1. Events and what the book did with them
 
@@ -1724,48 +1667,40 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 
 | action                                                            |   events |    dollars |
 |:------------------------------------------------------------------|---------:|-----------:|
-| bought                                                            |     1372 | 30,984,186 |
-| ignored: nothing held                                             |      523 | 41,934,262 |
-| sold all                                                          |      273 | 10,636,224 |
-| sold part                                                         |      106 |  4,071,262 |
-| ignored: nothing held (earlier copied lots already closed)        |       53 |  1,702,526 |
-| skipped: survivorship ledger (no usable prices)                   |       35 |  2,098,018 |
+| bought                                                            |     1396 | 32,994,198 |
+| ignored: nothing held                                             |      488 | 39,685,744 |
+| sold all                                                          |      281 | 12,594,683 |
+| sold part                                                         |      120 |  4,758,769 |
+| ignored: nothing held (earlier copied lots already closed)        |       66 |  1,855,533 |
 | reversal: nothing to undo (the corrected record was not acted on) |       19 |          0 |
+| skipped: survivorship ledger (no usable prices)                   |       11 |     88,006 |
 | reversal: sold what was still held of the corrected purchase      |        4 |     80,575 |
 | reversal: bought back the units the corrected sale sold           |        2 |     72,147 |
 | skipped: no price on the entry date                               |        1 |      8,000 |
 
 ### 2. Records not copied
 
-- **Survivorship ledger** (K3, logged and skipped until CRSP): 35 purchases, $2,098,018 at midpoints. V15 (pre-registered, not run) fills them with SPY.
+- **Survivorship ledger** (K3, logged and skipped until CRSP): 11 purchases, $88,006 at midpoints. V15 (pre-registered, not run) fills them with SPY.
 - **No price on the entry date** (series exists): 1.
 
 | action                                          | price_ticker   |   purchases |   dollars |
 |:------------------------------------------------|:---------------|------------:|----------:|
-| skipped: survivorship ledger (no usable prices) | X              |           5 |   875,002 |
-| skipped: survivorship ledger (no usable prices) | ECOM           |           5 |   465,502 |
-| skipped: survivorship ledger (no usable prices) | ATVI           |           1 |   175,000 |
-| skipped: survivorship ledger (no usable prices) | SSBK           |           2 |   150,001 |
-| skipped: survivorship ledger (no usable prices) | PARA           |           3 |   140,002 |
-| skipped: survivorship ledger (no usable prices) | WBA            |           6 |    97,003 |
-| skipped: survivorship ledger (no usable prices) | GOGL           |           1 |    75,000 |
-| skipped: survivorship ledger (no usable prices) | TOELY          |           1 |    32,500 |
 | skipped: survivorship ledger (no usable prices) | WIZEY          |           2 |    16,001 |
 | skipped: survivorship ledger (no usable prices) | EA             |           2 |    16,001 |
-| skipped: no price on the entry date             | KBGGY          |           1 |     8,000 |
-| skipped: survivorship ledger (no usable prices) | KYOCY          |           1 |     8,000 |
-| skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
-| skipped: survivorship ledger (no usable prices) | DFKCY          |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | AVB            |           1 |     8,000 |
+| skipped: no price on the entry date             | KBGGY          |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | DFKCY          |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | CYBR           |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | HOLX           |           1 |     8,000 |
+| skipped: survivorship ledger (no usable prices) | KYOCY          |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | LMST           |           1 |     8,000 |
 | skipped: survivorship ledger (no usable prices) | MASI           |           1 |     8,000 |
 
-**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 576 of 955 sale records (60%), by senator:
+**Sales ignored because nothing was held** (no shorting; includes anything bought before the window): 554 of 955 sale records (58%), by senator:
 
 | senator              |   sales_ignored |    dollars |
 |:---------------------|----------------:|-----------:|
-| Tommy Tuberville     |             219 |  7,306,610 |
+| Tommy Tuberville     |             197 |  5,211,098 |
 | John Boozman         |              87 |    818,544 |
 | Sheldon Whitehouse   |              49 |  1,165,024 |
 | Dan Sullivan         |              48 |    506,524 |
@@ -1799,8 +1734,8 @@ Before (V17: the Phase 4 rule, rebuilt from the same events for this table only;
 
 | measure                           |       min |    median |        max |
 |:----------------------------------|----------:|----------:|-----------:|
-| Open lots at the close            |        65 |       187 |        974 |
-| Capital deployed at the close ($) | 1,136,495 | 5,489,195 | 24,868,120 |
+| Open lots at the close            |        70 |       187 |        975 |
+| Capital deployed at the close ($) | 1,482,278 | 5,751,439 | 24,898,200 |
 
 Days with no open lot (series A earns RF): 0 of 1254. Days without a Ken French RF value: 0.
 
@@ -1810,22 +1745,22 @@ Closed lot pieces (every exit except the end-of-window mark; a partial sale clos
 
 |   lot pieces |   p25 trading days |   median trading days |   p75 trading days |   p25 calendar days |   median calendar days |   p75 calendar days |
 |-------------:|-------------------:|----------------------:|-------------------:|--------------------:|-----------------------:|--------------------:|
-|          559 |                 99 |                   189 |                344 |                 144 |                    275 |                 502 |
+|          601 |                102 |                   191 |                346 |                 149 |                    279 |                 504 |
 
 | exit_reason   |   pieces |   lots |   entry_dollars |       pnl |
 |:--------------|---------:|-------:|----------------:|----------:|
-| end of window |      974 |    974 |      17,848,906 | 6,425,698 |
+| end of window |      975 |    975 |      17,881,407 | 6,421,059 |
 | reversal      |        4 |      4 |          56,502 |    24,073 |
-| senator sale  |      555 |    491 |      14,702,961 |   414,018 |
+| senator sale  |      597 |    519 |      16,960,975 |   801,970 |
 
-**Still held on the last in-sample day (2026-08-31)**: 974 lots, 54.7% of all dollars ever invested (at cost; $17,848,906 of $32,608,369), marked at $24,274,604.
+**Still held on the last in-sample day (2026-08-31)**: 975 lots, 51.2% of all dollars ever invested (at cost; $17,881,407 of $34,898,884), marked at $24,302,465.
 
 ### 5. Reconciliation (lot P&L against the daily book)
 
-- Sum of lot P&L: **$6,810,271.21**.
-- Sum of daily book P&L (units x daily change in adjusted close): $6,810,271.21; difference **$-0.000000**.
-- Series A return x capital at the prior close, summed: $6,810,271.21; difference $-0.000000.
-- Series B: final NAV - K - interest earned on cash = $6,810,271.21; difference $-0.000000. K = **$17,464,333.12**; interest on idle cash $2,320,909.07; lowest cash balance $2,319,517.01 (never negative by construction).
+- Sum of lot P&L: **$7,163,613.14**.
+- Sum of daily book P&L (units x daily change in adjusted close): $7,163,613.14; difference **$-0.000000**.
+- Series A return x capital at the prior close, summed: $7,163,613.14; difference $-0.000000.
+- Series B: final NAV - K - interest earned on cash = $7,163,613.14; difference $-0.000000. K = **$17,138,852.05**; interest on idle cash $2,260,580.79; lowest cash balance $2,259,224.91 (never negative by construction).
 
 ### 6. K6 price repairs and copied holding periods
 
@@ -1842,20 +1777,20 @@ Repairs inside the sample: 0 rows; inside a copied holding period: **0**.
 
 ### 7. Trade-level panel: N per horizon
 
-`data/processed/event_panel.csv`: 2363 in-scope purchase and sale records; 90 without a price on the entry date. Horizons that run past the last in-sample day are censored.
+`data/processed/event_panel.csv`: 2363 in-scope purchase and sale records; 31 without a price on the entry date. Horizons that run past the last in-sample day are censored.
 
 | side     |   horizon_days |   N_from_entry |   N_from_transaction |   censored_entry |   no_price |
 |:---------|---------------:|---------------:|---------------------:|-----------------:|-----------:|
-| purchase |              5 |           1372 |                 1372 |                0 |         36 |
-| purchase |             21 |           1364 |                 1372 |                8 |         36 |
-| purchase |             63 |            707 |                 1357 |              665 |         36 |
-| purchase |            126 |            682 |                  699 |              690 |         36 |
-| purchase |            252 |            575 |                  583 |              797 |         36 |
-| sale     |              5 |            901 |                  901 |                0 |         54 |
-| sale     |             21 |            879 |                  901 |               22 |         54 |
-| sale     |             63 |            799 |                  877 |              102 |         54 |
-| sale     |            126 |            776 |                  809 |              125 |         54 |
-| sale     |            252 |            684 |                  710 |              217 |         54 |
+| purchase |              5 |           1396 |                 1392 |                0 |         12 |
+| purchase |             21 |           1388 |                 1392 |                8 |         12 |
+| purchase |             63 |            730 |                 1377 |              666 |         12 |
+| purchase |            126 |            705 |                  719 |              691 |         12 |
+| purchase |            252 |            598 |                  603 |              798 |         12 |
+| sale     |              5 |            936 |                  936 |                0 |         19 |
+| sale     |             21 |            914 |                  936 |               22 |         19 |
+| sale     |             63 |            834 |                  912 |              102 |         19 |
+| sale     |            126 |            811 |                  844 |              125 |         19 |
+| sale     |            252 |            719 |                  745 |              217 |         19 |
 
 ### 8. In-sample annualised return and volatility, identical dates
 
@@ -1863,8 +1798,8 @@ Daily returns 2021-09-01 to 2026-08-31 (1254 days); annualised return = (product
 
 | series                                   | annualised return   | annualised volatility   |
 |:-----------------------------------------|:--------------------|:------------------------|
-| A: return on capital deployed (headline) | 10.86%              | 21.96%                  |
-| B: fixed pot (K = $17,464,333)           | 8.82%               | 7.19%                   |
+| A: return on capital deployed (headline) | 13.48%              | 22.56%                  |
+| B: fixed pot (K = $17,138,852)           | 9.20%               | 7.74%                   |
 | SPY (total return)                       | 12.76%              | 17.20%                  |
 
 ### 9. Worked examples
@@ -1875,12 +1810,12 @@ Three lots traced step by step in `outputs/phase4_worked_examples.md`.
 
 Skipped ledger purchases (no usable prices, K3) kept as phantom lots AT COST, applying the senators' disclosed sales (Full: all; Partial: its midpoint at cost, capped), warm-up included; as a share of the capital deployed at each close (the phantom dollars are not in the denominator). The first line closes a phantom lot only on a senator's sale, so it is an upper bound; the second also drops it after the symbol's last SEC Form 25 delisting date. Most of these names (US Steel, ChannelAdvisor, Activision, Paramount, Walgreens) were still listed during the in-sample period: Yahoo no longer serves their history, which is why CRSP (A04) or V15 matters. Daily values in `data/processed/ledger_exposure.csv`.
 
-| measure                                                     | min    | median   | max       | date of max   |
-|:------------------------------------------------------------|:-------|:---------|:----------|:--------------|
-| Share of capital deployed                                   | 0.1%   | 2.7%     | 67.2%     | 2022-10-11    |
-| Same, each lot dropped after its SEC Form 25 delisting date | 0.0%   | 2.6%     | 66.9%     | 2022-10-11    |
-| Ledger cost basis still held ($)                            | 16,001 | 164,003  | 1,561,010 | 2022-08-16    |
-| Ledger lots still held                                      | 2      | 8        | 20        | 2022-08-16    |
+| measure                                                     | min    | median   | max    | date of max   |
+|:------------------------------------------------------------|:-------|:---------|:-------|:--------------|
+| Share of capital deployed                                   | 0.1%   | 0.3%     | 2.2%   | 2021-09-08    |
+| Same, each lot dropped after its SEC Form 25 delisting date | 0.0%   | 0.2%     | 2.2%   | 2021-09-08    |
+| Ledger cost basis still held ($)                            | 16,001 | 24,002   | 80,005 | 2026-07-22    |
+| Ledger lots still held                                      | 2      | 3        | 10     | 2026-07-22    |
 
 ## Phase 5: metrics and benchmarks (full window, firewall open)
 
@@ -1888,32 +1823,26 @@ _Stage `metrics`. Sample full window 2021-09-01 to 2026-08-31; prices and factor
 
 ### 1. Senate universe (equal weight): members and symbols left out
 
-Members per month: min 47, median 78, max 662. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 244 symbol-months, 23 symbols. Month by month in `data/processed/universe_members.csv`.
+Members per month: min 50, median 80, max 663. Symbols with a qualifying purchase but no usable price at the formation close (survivorship ledger, or a series not yet started / already ended) are left out: 104 symbol-months, 17 symbols. Month by month in `data/processed/universe_members.csv`.
 
 | symbol   |   months left out |
 |:---------|------------------:|
-| WBA      |                34 |
-| X        |                26 |
-| ECOM     |                24 |
-| SSBK     |                24 |
-| PARA     |                18 |
-| LMST     |                12 |
 | MASI     |                12 |
 | CYBR     |                12 |
-| ATVI     |                12 |
-| GOGL     |                12 |
+| LMST     |                12 |
 | CNR      |                11 |
-| SIVB     |                11 |
-| VMW      |                11 |
 | JNPR     |                11 |
+| VMW      |                11 |
+| SIVB     |                11 |
+| ECOM     |                 9 |
 | VRM      |                 6 |
+| ATVI     |                 2 |
 | AVB      |                 1 |
 | DFKCY    |                 1 |
 | EA       |                 1 |
 | HOLX     |                 1 |
 | KBGGY    |                 1 |
 | KYOCY    |                 1 |
-| TOELY    |                 1 |
 | WIZEY    |                 1 |
 
 ### 2. NANC and KRUZ
@@ -1922,4 +1851,4 @@ Both launched 2023-02-07; sample months with a full month of returns: 42 (2023-0
 
 ### 3. Event study sample
 
-2363 in-scope purchase and sale records with an entry date in the sample; 90 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last day of the window (N per row in the event study table).
+2363 in-scope purchase and sale records with an entry date in the sample; 31 have no price on the entry date and drop out of every horizon; longer horizons lose events to censoring at the last day of the window (N per row in the event study table).

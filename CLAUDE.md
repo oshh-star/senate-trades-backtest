@@ -35,10 +35,10 @@ one command (`python run_all.py`) must rebuild every number.
 - **Sizing**: midpoint of the disclosed range (open top band uses its lower bound). Variants:
   lower_bound, equal_dollar.
 - **Prices**: adjusted close on the first trading day AFTER the disclosure (date received).
-  Variant: same-day close. **Headline prices: Yahoo only (S2, S3)**: `prices.sources: [yahoo]`; no CRSP or terminal file
-  arrived by the R3 deadline. V20 (`[yahoo, crsp]`) would fill the survivorship ledger from CRSP if WRDS access arrives;
-  it can never change the headline. The M2 day-by-day merge (src/prices/sources.py) stays for V20. V18 = headline.
-  V15 (SPY fill) is a bound, never the headline.
+  Variant: same-day close. **Headline prices: Yahoo plus Bloomberg (C1, 2026-10-09, post-unlock correction)**:
+  `prices.sources: [yahoo, manual]`; 8 Bloomberg files (data/raw/manual_prices/) fill delisted stocks Yahoo lacks
+  (S2/S3 had made it Yahoo only). V18 (`[yahoo]`) = the old headline. V20 (`[yahoo, manual, crsp]`) would add CRSP if WRDS
+  access arrives; it can never change the headline. V15 (SPY fill) is never the headline and is not a bound.
 - **Matching**: a sale is matched FIFO to that senator's open copied positions in the same ticker,
   regardless of owner. Sale (Full) closes it; Sale (Partial) sells the midpoint amount, capped at
   the holding. Sales of anything we do not hold (for example, bought before the window) are ignored
@@ -90,7 +90,7 @@ src/metrics/          Phase 5: stats.py (returns, Sharpe, CAPM/Carhart with OLS 
                       benchmarks.py (SPY, risk-matched SPY, Senate universe, NANC, KRUZ as GOP, sterling),
                       event_study.py (clustered by entry month); outputs/tables/phase5_*.md, outputs/figures/phase5_*.png
                       Phase 6 prep: mechanism.py (size/party/lag/senator splits), committee.py (committee test);
-                      outputs/tables/{variants,mechanism,committee}_<sample>_yahoo.md
+                      outputs/tables/{variants,mechanism,committee}_<sample>_<tag>.md (tag bloomberg since C1; in-sample record yahoo)
                       Part B Step 1: confirmatory.py (H0-H4 per half: Holm, MDE, ex-bulk, reversal; calendar years,
                       worst 12 months) -> outputs/tables/confirmatory_insample.md (confirmatory_oos.md once unlocked)
 src/quality.py        each phase rewrites only its own section of outputs/data_quality.md
@@ -143,7 +143,7 @@ tests/                pytest suite (run: python -m pytest)
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample: warm-up (L2), metrics, benchmarks, event study. A.2 (M2), A.2b (N2, N3) done. **Part B done (2026-10-06)**: S1-S5, rules FROZEN at 3483184 (F1), out-of-sample UNLOCKED (U1); ONE continuous 5-year backtest (phase5_full_results.md, the main result) with the second half read off it (phase5_oos_results.md); H0-H4 judged (confirmatory_oos.md) |
 | 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, Yahoo prices: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. S1-S5 (2026-10-06): Yahoo final, V20 registered. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R4: Holm, minimum detectable effects, ex-bulk sensitivity). **Part B Step 1 done (2026-10-05)**: confirmatory.py, outputs/tables/confirmatory_insample.md. Price fill closed by R3 (Yahoo only). Submission readiness done (clean-room test, make_submission.py). **Out-of-sample done (2026-10-06)**: exploratory tables for the full window and the second half; variants_full_yahoo.md (V11 run, V20 not run: no CRSP data) |
-| 7 | Report outputs (tables, figures, data_quality.md) | Not started |
+| 7 | Report outputs (tables, figures, data_quality.md) | Started (2026-10-09): C1 (Bloomberg prices in the headline), two submission zips (S4), report draft docs/REPORT_DRAFT.md |
 
 ## RULES FOR EVERY SESSION
 1. At the start of every session, read CLAUDE.md, docs/HANDOVER.md and docs/DECISIONS.md before

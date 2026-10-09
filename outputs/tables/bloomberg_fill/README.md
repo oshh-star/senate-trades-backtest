@@ -1,4 +1,6 @@
-# Bloomberg-filled run (NOT the headline)
+# Bloomberg-filled run (became the headline on 2026-10-09, C1)
+
+**Superseded**: since C1 (docs/DECISIONS.md, "Post-unlock corrections") the main tables use these prices, so this folder is kept only as the record of the first run; the numbers are identical.
 
 Built 2026-10-07 (PARA added the same day) by Claude, in a separate copy of the repo, with one change: `prices.sources: [yahoo, manual]`
 (Yahoo first; Bloomberg terminal prices in data/raw/manual_prices/ fill symbols Yahoo has no price for).

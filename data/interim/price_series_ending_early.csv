@@ -1,1 +1,8 @@
-senator,price_ticker
+senator,price_ticker,ticker,asset_name,purchases,midpoint_$,first_purchase_disclosed,last_price_date,full_sale_disclosed_before_last_price
+Tommy Tuberville,X,X,United States Steel Corporation Common Stock,5,875002.5,2021-11-10,2025-06-17,True
+Tommy Tuberville,ECOM,ECOM,ChannelAdvisor Corporation Common Stock,5,465502.5,2022-04-08,2022-11-14,True
+Tommy Tuberville,ATVI,ATVI,"Activision Blizzard, Inc - Common Stock",1,175000.5,2022-12-14,2023-10-12,True
+Tommy Tuberville,SSBK,SSBK,"Southern States Bancshares, Inc. - Common Sto",2,150001.0,2021-09-08,2025-06-30,True
+Tommy Tuberville,PARA,PARA,Paramount Global - Class B Common Stock,3,140001.5,2023-10-13,2025-08-06,True
+Tommy Tuberville,WBA,WBA,"Walgreens Boots Alliance, Inc. - Common Stock",6,97003.0,2022-02-14,2025-08-27,True
+Tommy Tuberville,GOGL,GOGL,Golden Ocean Group Limited - Common Stock,1,75000.5,2024-03-15,2025-08-19,True
