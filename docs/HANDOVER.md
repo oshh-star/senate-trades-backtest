@@ -39,7 +39,7 @@ _Last updated: 2026-10-09 (Claude). Phase 7 started._
 ## Exact next step
 1. **The group: edit docs/REPORT_DRAFT.md** into the 10-page report. Every **[GROUP]** mark needs a decision or check:
    group names; the Armstrong framing (H1, H2); the wording on C1 (why the corrected number is the headline); NANC and
-   KRUZ descriptions; recount the exploratory |t| >= 2 cells on the corrected tables before quoting "78".
+   KRUZ descriptions. (The exploratory count is redone: 81 of 516 cells reach |t| = 2 on the corrected tables, was 78.)
 2. **Put the puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC").
 3. **Submission (S4)**: on the FINAL commit, run `python scripts/make_submission.py`, then the clean-room test (unzip
    both into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet`). Only the
