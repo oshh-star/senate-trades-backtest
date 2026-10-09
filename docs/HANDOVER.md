@@ -28,9 +28,9 @@ _Last updated: 2026-10-09 (Claude). Phase 7 started._
 - **This session's commits**: two submission zips (S4, scripts/make_submission.py); the teammate's Bloomberg run logged
   (BBG, BBG-V); C1 applied (code, config, tests, every output rebuilt, variants rerun, README and CLAUDE.md updated);
   first report draft docs/REPORT_DRAFT.md.
-- **Clean-room test** (both zips unzipped into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c`):
-  every file identical except the 3 PNG figures, which differ only in font rendering (this machine's fonts; the README
-  already warns about it). The data behind the figures are identical.
+- **Clean-room test** on commit cf5acae (both zips unzipped into an empty folder, `python run_all.py --skip-scrape`,
+  `sha256sum -c`): all 6,484 files identical, byte for byte. On another machine the 3 PNG figures can differ in font
+  rendering only (the README warns about it).
 - Tests: `python -m pytest` (183 pass). `python run_all.py --skip-scrape` about 2.5 minutes; `python run_variants.py`
   about 8 minutes. Zips: submission.zip 26 MB, submission_prices.zip 86 MB.
 - docs/BLOOMBERG_UPDATE.md and outputs/tables/bloomberg_fill/ are the record of the teammate's first Bloomberg run; the
@@ -71,7 +71,7 @@ _Last updated: 2026-10-09 (Claude). Phase 7 started._
 - [x] Rules frozen (F1) and out-of-sample unlocked (U1); full backtest and second half run (2026-10-06).
 - [x] Bloomberg prices for the 8 MUST-HAVE stocks in the headline (C1, 2026-10-09), before/after logged.
 - [x] Every variant run logged in DECISIONS.md "Variants run" (latest: C1-V).
-- [x] Two-zip submission script (S4) and a clean-room test (2026-10-09; only PNG fonts differ).
+- [x] Two-zip submission script (S4) and a clean-room test (2026-10-09, cf5acae: every file identical).
 - [ ] The report: edit docs/REPORT_DRAFT.md (the **[GROUP]** marks), cut to 10 pages, label every table and figure.
 - [ ] Puller's name in data/raw/manual_prices/SOURCES.md.
 - [ ] Two zips built from the FINAL commit; clean-room rebuild and `sha256sum -c` on it.
