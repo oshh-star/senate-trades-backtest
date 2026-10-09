@@ -79,8 +79,8 @@ def write(panel: pd.DataFrame, label: str, first: str, last: str, tag: str, out_
     if exploratory:
         from .confirmatory import EXPLORATORY_NOTE
         L += [EXPLORATORY_NOTE, ""]
-    if tag == "yahoo":
-        L += ["**Prices: Yahoo, the final headline source (R3, S2).** Stocks in the survivorship ledger (mostly delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases are skipped in the book; V15 (SPY fill) bounds the effect.", ""]
+    from src.variants import price_note
+    L += [price_note(tag), ""]
     L += ["_src/metrics/committee.py. An event is **overseen** when, on its transaction date, the senator sat on a committee "
           "in config/committee_industries.yaml (committed at a124f03 before this split was computed, E54) whose SIC ranges "
           "contain the company's SIC code. Membership: the latest version of congress-legislators' "

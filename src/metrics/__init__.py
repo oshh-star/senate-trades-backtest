@@ -243,8 +243,8 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
         drift.to_csv(DRIFT.with_suffix(".csv"), index=False)
         DRIFT.with_suffix(".md").write_text(drift_md(drift, I))
         figures({**D, **main["D"]}, main["dds"], days, base, k)
-        mechanism.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
-        committee.write(I["panel"], I["label"], first, last_day, price_tag(), TABLES)
+        mechanism.write(I["panel"], I["label"], first, last_day, price_tag(cfg), TABLES)
+        committee.write(I["panel"], I["label"], first, last_day, price_tag(cfg), TABLES)
         confirmatory.write(I["panel"], mret, I["cal_all"], [("insample", "in-sample", first, last_day)], TABLES)
     else:
         spans = {"full": ("full window", first, last_day), **halves}
@@ -264,8 +264,8 @@ def run(cfg: dict, engine_dir: Path | None = None, write: bool = True) -> dict:
             e_stem.with_suffix(".md").write_text(events_md(e_p, Ip, hz, exploratory=True))
             d_p.to_csv(d_stem.with_suffix(".csv"), index=False)
             d_stem.with_suffix(".md").write_text(drift_md(d_p, Ip, exploratory=True))
-            mechanism.write(panel_p, label, a, b, price_tag(), TABLES, key=key, exploratory=True)
-            committee.write(panel_p, label, a, b, price_tag(), TABLES, key=key, exploratory=True)
+            mechanism.write(panel_p, label, a, b, price_tag(cfg), TABLES, key=key, exploratory=True)
+            committee.write(panel_p, label, a, b, price_tag(cfg), TABLES, key=key, exploratory=True)
         _, a, b = halves["oos"]
         confirmatory.write(I["panel"], PER["oos"]["monthly"], I["cal_all"], [("oos", "out-of-sample", a, b)], TABLES)
         figures({**D, **main["D"]}, main["dds"], days, base, k, boundary=halves["oos"][1])

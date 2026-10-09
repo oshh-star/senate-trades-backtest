@@ -49,14 +49,32 @@ VARIANTS = [
     ("V17", "Empty start (no warm-up)", [("engine.warmup_months", 0)]),
     ("V18", "Yahoo only, ledger skipped", [("prices.sources", ["yahoo"])]),
     ("V19", "Include preferred shares", [("universe.include_preferred", True)]),
-    ("V20", "CRSP-filled prices (Yahoo first, CRSP where Yahoo has no price)", [("prices.sources", ["yahoo", "crsp"])]),
+    ("V20", "CRSP-filled prices (the headline's sources, then CRSP where they have no price)",
+     [("prices.sources", ["yahoo", "manual", "crsp"])]),          # C1: was [yahoo, crsp] on top of the Yahoo-only headline
 ]
 
 
-def price_tag() -> str:
-    """The headline's price source, used in output file names: Yahoo, final under R3 and S2 (S3: a CRSP file can only
-    ever feed V20, never the headline)."""
-    return "yahoo"
+def price_tag(cfg: dict | None = None) -> str:
+    """The headline's price source, used in output file names: "yahoo" for `prices.sources: [yahoo]` (S2, S3), and
+    "bloomberg" since C1 (2026-10-09: `[yahoo, manual]`, the Bloomberg terminal files fill symbols Yahoo has no price
+    for)."""
+    sources = list((cfg or load_config())["prices"].get("sources", ["yahoo"]))
+    return "yahoo" if sources == ["yahoo"] else "bloomberg" if sources == ["yahoo", "manual"] else "_".join(sources)
+
+
+def price_note(tag: str) -> str:
+    """The one-paragraph price note at the top of every table whose file name carries the tag."""
+    if tag == "yahoo":
+        return ("**Prices: Yahoo only** (`prices.sources: [yahoo]`; R3, S2). Stocks in the survivorship ledger (mostly "
+                "delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases "
+                "are skipped in the book. Superseded as the headline by C1 (2026-10-09): see docs/DECISIONS.md.")
+    if tag == "bloomberg":
+        return ("**Prices: Yahoo, with Bloomberg terminal prices where Yahoo has none** (`prices.sources: [yahoo, "
+                "manual]`, post-unlock correction C1, 2026-10-09): 8 delisted stocks (X, ECOM, ATVI, SSBK, PARA, WBA, "
+                "GOGL, TOELY; 95% of the missing headline dollars) are priced from data/raw/manual_prices/. The other "
+                "survivorship-ledger stocks still have no prices: their events drop out here and their purchases are "
+                "skipped in the book. V18 is the Yahoo-only run (the headline before C1).")
+    return f"**Prices: `prices.sources` = {tag}.**"
 
 
 def crsp_files() -> list[Path]:
@@ -177,7 +195,7 @@ def main(only: list[str] | None = None, config_path: str | None = None) -> pd.Da
     base = load_config(config_path) if config_path else load_config()
     first, last, label = sample_bounds(base)
     unlocked = bool(base["oos"].get("oos_unlocked")) and base.get("engine", {}).get("sample") == "full"
-    tag = price_tag()
+    tag = price_tag(base)
     skey = "insample" if label == "in-sample" else "full"
     sample_dir = WORK / f"{skey}_{tag}"
     sample_dir.mkdir(parents=True, exist_ok=True)
@@ -210,7 +228,7 @@ def main(only: list[str] | None = None, config_path: str | None = None) -> pd.Da
                                                     indent=1, default=str))
     v = fmt_table(df)
     head = (f"# Variants, {label} ({first} to {last}), {tag.upper()}\n\n"
-            + ("**Prices: Yahoo, the final headline source (R3, S2).** Stocks in the survivorship ledger (mostly delisted names Yahoo no longer serves) have no prices: their events drop out here and their purchases are skipped in the book; V15 (SPY fill) bounds the effect." "\n\n" if tag == "yahoo" else "")
+            + price_note(tag) + "\n\n"
             + "_Built by `python run_variants.py` (src/variants.py). Each pre-registered variant is run ALONE against the "
               "headline: one config switch, everything else as the headline (docs/DECISIONS.md, \"Pre-registered variants\"). "
               "Series A = return on capital deployed (headline); B = fixed pot. Monthly statistics as in "
