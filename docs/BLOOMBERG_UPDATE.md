@@ -1,5 +1,7 @@
 # Bloomberg price fill (2026-10-07)
 
+> **2026-10-09: C1 adopted this as the headline** (docs/DECISIONS.md, "Post-unlock corrections"). Steps 1-3 below are done; this file is kept as the record.
+
 _Written by Claude for the teammate who pulled the prices. The headline is NOT changed: `config/config.yaml` still has
 `prices.sources: [yahoo]` (S2, S3). Using these prices in the report needs a group decision, logged in DECISIONS.md._
 
