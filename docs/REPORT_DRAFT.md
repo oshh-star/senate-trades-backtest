@@ -240,9 +240,14 @@ much on who happens to be in the Senate is not an edge an investor can rely on.
 
 **6.3 How many things we looked at.** Besides the 24 variant runs, the first half produced about 150 table cells
 (horizons, sides, splits by size, party, filing lag, senator and committee). That is why only the seven registered
-statistics in Table 4 count as tests. Across the full-window and second-half tables, 78 exploratory cells reach |t| = 2,
-and most of them in the second half are the same Armstrong filing. **[GROUP]** this count is from the Yahoo-only run
-(6 October); recount on the corrected tables before quoting it. [`outputs/tables/mechanism_*_bloomberg.md`, `committee_*_bloomberg.md`]
+statistics in Table 4 count as tests. Across the full-window and second-half exploratory tables (event study, pre-disclosure drift,
+mechanism splits and committee test: 516 cells with a clustered t-statistic), **81 reach |t| = 2**. That is more than
+the 26 that independent cells would give by chance at 5%, but the cells are far from independent: the same trades
+appear at several horizons, in both the copier and senator measures, and in overlapping splits. In the second half, 13
+of the 39 mechanism hits are purchases in groups that Armstrong's filing dominates: filed after 30 days, Republican,
+the two smallest bands (all 654 of his purchases were filed more than 30 days after the trade, and 649 are in the two
+smallest bands). Of the other 26, 21 are sales (9 of them in the Tuberville, Boozman and Mullin splits) and 5 are
+purchases in the Boozman, Tuberville and size-difference rows. [`outputs/tables/mechanism_*_bloomberg.md`, `committee_*_bloomberg.md`]
 
 **6.4 Decisions made after seeing results (logged).** Three choices were made with some results in view, and we report
 the alternative beside each:
