@@ -100,6 +100,14 @@ alone, those skipped purchases would have been up to **67% of the capital deploy
 largest (95% of the missing dollars) from a Bloomberg terminal. The remaining 178 symbols are now at most **2.2%** of
 capital (median 0.3%). [`outputs/data_quality.md`, Phase 4 section 10]
 
+**The missing stocks pushed the return down, not up.** The usual worry about survivorship is that the dead stocks were
+losers, so leaving them out flatters the result. Here it ran the other way. Seven of the 8 we priced were taken over at
+a premium (U.S. Steel, ChannelAdvisor, Activision and others), so pricing them raised series A from 10.81% (Yahoo only,
+variant V18) to 13.41% a year. For the same reason, filling the gaps with SPY's return (variant V15) is not a bound:
+with Yahoo only it gave 11.63%, below the 13.41% the real prices give. Every copied position in these stocks was
+closed by the senator's own disclosed sale before the takeover, so the takeover dates themselves do not enter the
+portfolio; in 8 of the 2,363 event-study trades the horizon runs past a cash takeover and the deal price is held flat.
+
 ## 5. Results
 
 **Table 1. Copying the Senate against the alternatives, 1 September 2021 to 31 August 2026 (60 months, identical
@@ -278,9 +286,10 @@ disclosure, which is what information would look like.
 ## 9. Weaknesses we know about
 
 - **Short sample.** 60 months, 30 per half; only very large alphas would be detectable (Table 1).
-- **Survivorship.** 178 delisted symbols are still unpriced (at most 2.2% of capital). V15, which fills them with SPY,
-  gives 13.42%. The 8 we did price were mostly takeover targets that *raised* the return, so the remaining gap is more
-  likely to bias the return down than up.
+- **Survivorship.** 178 delisted symbols are still unpriced (at most 2.2% of capital). Filling them with SPY (V15)
+  gives 13.42%, almost the headline, so the gap is now small. It is not a bound: the 8 stocks we did price were
+  takeover targets that *raised* the return (10.81% to 13.41%), so if the remaining gap biases anything, it most likely
+  biases the return down.
 - **Spin-offs.** Two renamed tickers (UTX and DWDP) included spin-offs that Yahoo's history may not credit; both are
   before the 5-year window and affect only the 10-year variant.
 - **Disclosed bands, not amounts.** We size at band midpoints. V7 and V8 change the sizing.
