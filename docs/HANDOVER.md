@@ -1,6 +1,13 @@
 # Handover
 
 ## Read this first (2026-10-09)
+- **Status in one line**: the analysis is finished and **a first draft of the report is written**
+  (`docs/REPORT_DRAFT.md`, every number from the committed tables). What is left: the group edits it into the final
+  10-page report, then builds and uploads the submission.
+- **Not merged yet**: all work from the 2026-10-09 session is on branch `claude/magical-dijkstra-3poiyr`, pull request
+  https://github.com/oshh-star/senate-trades-backtest/pull/15. `main` does not have it until that pull request is merged
+  (on GitHub: open the link, click **Merge pull request**, then **Confirm merge**). To see the files before merging,
+  pick that branch in the branch menu (it says **main**) above the file list.
 - **Frozen and unlocked**: rules frozen at `348318447daa58a91af14ae65c8ee3c98522d896` (F1), out-of-sample unlocked (U1).
   No rule, parameter, scope, test or prediction may change; a fix is a logged post-unlock correction.
 - **C1 (2026-10-09), post-unlock correction: the headline now uses Bloomberg prices** for the 8 delisted stocks Yahoo
@@ -23,25 +30,44 @@
   or any variant's own second half.
 
 ## Current state
-_Last updated: 2026-10-09 (Claude). Phase 7 started._
+_Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submission tooling ready._
 
-- **This session's commits**: two submission zips (S4, scripts/make_submission.py); the teammate's Bloomberg run logged
-  (BBG, BBG-V); C1 applied (code, config, tests, every output rebuilt, variants rerun, README and CLAUDE.md updated);
-  first report draft docs/REPORT_DRAFT.md.
+- **Done in the 2026-10-09 session** (pull request #15):
+  - **C1**: Bloomberg prices for 8 delisted stocks in the headline; code, config and tests changed; every output
+    rebuilt; before and after values in DECISIONS.md.
+  - **Variants** rerun with the Bloomberg prices (C1-V; V2.2 no Armstrong 13.15%, V4 no bulk filings 11.38%, V15 13.42%).
+  - **Survivorship wording** fixed everywhere: the missing stocks pushed the return DOWN (Yahoo only 10.81%,
+    Bloomberg-filled 13.41%), so V15 (SPY fill) is not a bound.
+  - **Report first draft**: `docs/REPORT_DRAFT.md`. The full 5 years is the main result, the second half is the check,
+    and H0-H4 carry the Armstrong caveat with the ex-bulk values beside them. It follows the course guidance's
+    structure, is longer than 10 pages (to be cut), and has **[GROUP]** marks where a decision is needed.
+  - **Exploratory recount**: 81 of 516 cells reach |t| = 2 on the corrected tables (78 with Yahoo only); the draft's
+    Section 6.3 says where they sit.
+  - **Takeovers checked**: 7 of the 8 Bloomberg stocks were taken over; their files end one day before delisting, at
+    the deal price. Every copied lot in them was closed by the senator's own sale before the takeover, so the end dates
+    do not affect the portfolio (the draft says so in Section 4).
+  - **Two submission zips (S4)**: `python scripts/make_submission.py` builds dist/submission.zip (26 MB) and
+    dist/submission_prices.zip (86 MB).
+  - The teammate's first Bloomberg run is logged (BBG, BBG-V).
 - **Clean-room test** on commit cf5acae (both zips unzipped into an empty folder, `python run_all.py --skip-scrape`,
   `sha256sum -c`): all 6,484 files identical, byte for byte. On another machine the 3 PNG figures can differ in font
-  rendering only (the README warns about it).
+  rendering only (the README warns about it). Later commits changed only documents, not results.
 - Tests: `python -m pytest` (183 pass). `python run_all.py --skip-scrape` about 2.5 minutes; `python run_variants.py`
-  about 8 minutes. Zips: submission.zip 26 MB, submission_prices.zip 86 MB.
+  about 8 minutes.
 - docs/BLOOMBERG_UPDATE.md and outputs/tables/bloomberg_fill/ are the record of the teammate's first Bloomberg run; the
   main tables now carry the same numbers.
+- **Considered and not done**: pricing everything from Bloomberg (about 1,300 symbols; little effect expected, and a
+  second post-unlock change). A cheaper option if the group wants it: pull Bloomberg for the 35 largest positions (half
+  the dollars) plus SPY, and the prices stage compares the two sources automatically.
 
 ## Exact next step
+0. **Merge pull request #15** (link above) so `main` has this work.
 1. **The group: edit docs/REPORT_DRAFT.md** into the 10-page report. Every **[GROUP]** mark needs a decision or check:
    group names; the Armstrong framing (H1, H2); the wording on C1 (why the corrected number is the headline); NANC and
    KRUZ descriptions. (The exploratory count is redone: 81 of 516 cells reach |t| = 2 on the corrected tables, was 78.)
-2. **Put the puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC").
-3. **Submission (S4)**: on the FINAL commit, run `python scripts/make_submission.py`, then the clean-room test (unzip
+2. **Put the puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC"; not known on 2026-10-09:
+   the files were uploaded by the GitHub account esun1019, which shows who uploaded them, not who pulled them).
+3. **Submission (S4)**: only once the report is final, on the FINAL commit, run `python scripts/make_submission.py`, then the clean-room test (unzip
    both into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet`). Only the
    3 PNGs may differ (fonts). Upload the report, submission.zip and submission_prices.zip to Canvas before Monday
    19 October 2026, 23:59.
@@ -72,7 +98,8 @@ _Last updated: 2026-10-09 (Claude). Phase 7 started._
 - [x] Bloomberg prices for the 8 MUST-HAVE stocks in the headline (C1, 2026-10-09), before/after logged.
 - [x] Every variant run logged in DECISIONS.md "Variants run" (latest: C1-V).
 - [x] Two-zip submission script (S4) and a clean-room test (2026-10-09, cf5acae: every file identical).
-- [ ] The report: edit docs/REPORT_DRAFT.md (the **[GROUP]** marks), cut to 10 pages, label every table and figure.
+- [x] Report first draft written (docs/REPORT_DRAFT.md, 2026-10-09).
+- [ ] The final report: edit the draft (the **[GROUP]** marks), cut to 10 pages, label every table and figure.
 - [ ] Puller's name in data/raw/manual_prices/SOURCES.md.
 - [ ] Two zips built from the FINAL commit; clean-room rebuild and `sha256sum -c` on it.
 
