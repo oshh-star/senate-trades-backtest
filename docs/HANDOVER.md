@@ -61,7 +61,7 @@ _Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submiss
   the dollars) plus SPY, and the prices stage compares the two sources automatically.
 
 ## Exact next step
-0. **Merge pull request #15** (link above) so `main` has this work.
+0. **Merge pull request #15** (link above) so `main` has this work, ONLY when the group decides to (as of 2026-10-09 the user asked for it NOT to be merged yet).
 1. **The group: edit docs/REPORT_DRAFT.md** into the 10-page report. Every **[GROUP]** mark needs a decision or check:
    group names; the Armstrong framing (H1, H2); the wording on C1 (why the corrected number is the headline); NANC and
    KRUZ descriptions. (The exploratory count is redone: 81 of 516 cells reach |t| = 2 on the corrected tables, was 78.)
