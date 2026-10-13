@@ -120,12 +120,16 @@ data/interim/, data/processed/   derived data, rebuilt by run_all.py
 outputs/tables/, outputs/figures/, outputs/data_quality.md   report outputs
 outputs/phase1_summary.md   Phase 1 first-look counts (no prices or returns)
 outputs/phase4_worked_examples.md   three copied lots traced step by step (Phase 4)
-docs/                 DECISIONS.md, HANDOVER.md, the course guidance PDF
-README.md             for the professor: install, the one command, run times, which file feeds each report table
+docs/                 DECISIONS.md (plain-English key on top), HANDOVER.md, REPRODUCING.md (full rebuild detail), the course
+                      guidance PDF; docs/archive/ holds finished paperwork (price request, Bloomberg workbook, CRSP ticker
+                      lists, BLOOMBERG_UPDATE.md, the first Bloomberg run, REPORT_DRAFT_v1.md)
+README.md             one page for the professor: the result, the commands, what is where
+outputs/README.md     which output file feeds each table and figure in the report
+report/               Report V2 (.docx and .pdf), build_report.js (Node, docx), build_figures.py, diagnostics.py
 scripts/install_pkgs.sh   SessionStart hook: pip install in cloud sessions
 scripts/phase0_checks.py  environment checks (connectivity, eFD, counts, prices, factors)
 scripts/ledger_evidence.py  SEC delisting evidence for the ledger (K4), by hand; cached in data/raw/sec/filings/
-scripts/price_request.py  writes docs/PRICE_REQUEST.md and docs/crsp_tickers_*.txt (M2), by hand after the prices stage
+scripts/price_request.py  writes docs/archive/PRICE_REQUEST.md and docs/archive/crsp_tickers_*.txt (M2), by hand after the prices stage
 scripts/committee_history.py  Senate committee memberships by date from congress-legislators' git history (by hand)
 scripts/sec_sic.py        SIC industry codes from SEC submissions -> data/interim/sic_codes.csv (by hand)
 scripts/make_submission.py  dist/submission.zip + dist/submission_prices.zip (S4: Yahoo price cache apart; CHECKSUMS.sha256), deterministic; dist/ is git-ignored
@@ -143,7 +147,7 @@ tests/                pytest suite (run: python -m pytest)
 | 4 | Engine: trade-level and calendar-time portfolio returns | Done (2026-09-28), in-sample only |
 | 5 | Metrics and benchmarks | Part A done (2026-09-29), in-sample: warm-up (L2), metrics, benchmarks, event study. A.2 (M2), A.2b (N2, N3) done. **Part B done (2026-10-06)**: S1-S5, rules FROZEN at 3483184 (F1), out-of-sample UNLOCKED (U1); ONE continuous 5-year backtest (phase5_full_results.md, the main result) with the second half read off it (phase5_oos_results.md); H0-H4 judged (confirmatory_oos.md) |
 | 6 | Robustness and mechanism tests (variants, OOS) | Prep done (2026-09-30), in-sample, Yahoo prices: variant runner (all V1-V19 run except V11, firewall), mechanism splits, committee test. S1-S5 (2026-10-06): Yahoo final, V20 registered. OOS tests H0-H4 pre-registered (2026-09-30, DECISIONS.md "Out-of-sample test plan"; R1-R4: Holm, minimum detectable effects, ex-bulk sensitivity). **Part B Step 1 done (2026-10-05)**: confirmatory.py, outputs/tables/confirmatory_insample.md. Price fill closed by R3 (Yahoo only). Submission readiness done (clean-room test, make_submission.py). **Out-of-sample done (2026-10-06)**: exploratory tables for the full window and the second half; variants_full_yahoo.md (V11 run, V20 not run: no CRSP data); since C1 variants_full_bloomberg.md |
-| 7 | Report outputs (tables, figures, data_quality.md) | First draft done (2026-10-09): C1 (Bloomberg prices in the headline), two submission zips (S4), report first draft docs/REPORT_DRAFT.md; the group finalises it |
+| 7 | Report outputs (tables, figures, data_quality.md) | First draft 2026-10-09 (C1, submission zips). **Report V2 2026-10-13** (report/), repo tidy, C2. Left: the group's [GROUP] checks, then the zips from the final commit |
 
 ## RULES FOR EVERY SESSION
 1. At the start of every session, read CLAUDE.md, docs/HANDOVER.md and docs/DECISIONS.md before

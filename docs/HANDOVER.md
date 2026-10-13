@@ -1,6 +1,24 @@
 # Handover
 
-## Read this first (2026-10-09)
+## Read this first (2026-10-13)
+- **Status in one line**: the analysis is finished and **Report V2 is written**
+  (`report/Copying_the_Senate_Report_V2.docx`, body exactly 10 pages, 18 with references and appendix). What is left:
+  the group's checks on four points (below), then the submission zips.
+- **Branch**: this work is on `cleanup/report-v2`, in a pull request against `main`. Merge it only when the group has
+  read the report.
+- **Headline** (unchanged since C1): series A 13.41% a year (volatility 23.41%, Sharpe 0.50) against SPY 12.69% and
+  risk-matched SPY 16.30%; CAPM alpha +1.07% (NW t 0.18); test half 22.94% against 26.02% for risk-matched SPY.
+- **Done on 2026-10-13**: Report V2 (LBS layout, annotated charts, predictions scorecard, AI-use statement);
+  `report/diagnostics.py` (Sharpe-difference test, block bootstrap, rolling alpha: report extras, not registered
+  tests); repository tidied (one-page README, `outputs/README.md` map, finished paperwork in `docs/archive/`,
+  plain-English key at the top of DECISIONS.md); **C2**, a stale test fixed and the design-half values C1 moved logged
+  (H4 flips sign in the design half; the registered predictions are unchanged).
+- **Frozen and unlocked**: rules frozen at `348318447daa58a91af14ae65c8ee3c98522d896` (F1), test half unlocked (U1).
+  No rule, parameter, scope, test or prediction may change; any fix is a logged post-unlock correction.
+
+<details><summary>The 2026-10-09 summary this replaces</summary>
+
+### Read this first (2026-10-09)
 - **Status in one line**: the analysis is finished and **a first draft of the report is written**
   (`docs/REPORT_DRAFT.md`, every number from the committed tables). What is left: the group edits it into the final
   10-page report, then builds and uploads the submission.
@@ -28,6 +46,9 @@
 - **Survivorship**: the 178 still-unpriced symbols are at most 2.2% of capital (was 67.2% with Yahoo only).
 - **Variants** (variants_full_bloomberg.md): 9.43% (V3) to 25.50% (V11); no alpha reaches |t| = 2 in the full window
   or any variant's own second half.
+
+
+</details>
 
 ## Current state
 _Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submission tooling ready._
@@ -61,18 +82,16 @@ _Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submiss
   the dollars) plus SPY, and the prices stage compares the two sources automatically.
 
 ## Exact next step
-0. **Merge pull request #15** (link above) so `main` has this work, ONLY when the group decides to (as of 2026-10-09 the user asked for it NOT to be merged yet).
-1. **The group: edit docs/REPORT_DRAFT.md** into the 10-page report. Every **[GROUP]** mark needs a decision or check:
-   group names; the Armstrong framing (H1, H2); the wording on C1 (why the corrected number is the headline); NANC and
-   KRUZ descriptions. (The exploratory count is redone: 81 of 516 cells reach |t| = 2 on the corrected tables, was 78.)
-2. **Put the puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC"; not known on 2026-10-09:
-   the files were uploaded by the GitHub account esun1019, which shows who uploaded them, not who pulled them).
-3. **Submission (S4)**: only once the report is final, on the FINAL commit, run `python scripts/make_submission.py`, then the clean-room test (unzip
-   both into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet`). Only the
-   3 PNGs may differ (fonts). Upload the report, submission.zip and submission_prices.zip to Canvas before Monday
-   19 October 2026, 23:59.
-4. **If WRDS access arrives**: V20 is now `[yahoo, manual, crsp]`; run `python run_variants.py --only V20`. It cannot
-   change the headline.
+1. **The group reads Report V2** and settles the four `[GROUP]` points: group number and names on page 1; the AI-use
+   statement against the CA01 AI policy; the framing of H1 and H2 (both rest on bulk filings); the description of
+   NANC and KRUZ. The first draft is kept as `docs/archive/REPORT_DRAFT_v1.md`.
+2. **Put the Bloomberg puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC").
+3. **Merge the pull request** for `cleanup/report-v2` once the group is happy.
+4. **Submission (S4)**, on the FINAL commit only: `python scripts/make_submission.py`, then the clean-room test (unzip
+   both zips into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet`; only
+   PNG fonts may differ). Upload the report (Word or PDF), submission.zip and submission_prices.zip to Canvas before
+   Monday 19 October 2026, 23:59.
+5. **If WRDS access arrives**: `python run_variants.py --only V20`. It cannot change the headline.
 
 ## Known limitations
 - **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
@@ -98,12 +117,14 @@ _Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submiss
 - [x] Bloomberg prices for the 8 MUST-HAVE stocks in the headline (C1, 2026-10-09), before/after logged.
 - [x] Every variant run logged in DECISIONS.md "Variants run" (latest: C1-V).
 - [x] Two-zip submission script (S4) and a clean-room test (2026-10-09, cf5acae: every file identical).
-- [x] Report first draft written (docs/REPORT_DRAFT.md, 2026-10-09).
-- [ ] The final report: edit the draft (the **[GROUP]** marks), cut to 10 pages, label every table and figure.
+- [x] Report first draft written (2026-10-09; now docs/archive/REPORT_DRAFT_v1.md).
+- [x] Report V2: body 10 pages, every table and figure labelled and referred to, independent fact-check (2026-10-13).
+- [ ] The group settles the four [GROUP] points in Report V2.
 - [ ] Puller's name in data/raw/manual_prices/SOURCES.md.
 - [ ] Two zips built from the FINAL commit; clean-room rebuild and `sha256sum -c` on it.
 
 ## Open questions
+0. **AI-use policy.** Report V2 has a statement on the use of Claude; check its wording against the CA01 policy.
 1. **How to frame H1 and H2** (one filing, 67% of the half's purchases). The draft keeps the registered verdicts and
    puts the ex-bulk values beside them.
 2. **Who decided C1?** It was given in the Claude session of 2026-10-09; add the name(s) to DECISIONS.md C1 if the

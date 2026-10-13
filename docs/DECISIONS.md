@@ -4,6 +4,32 @@ Every locked parameter, every change to one, and every variant run goes here: **
 Newest entries at the bottom. Never edit an old entry; add a new one that supersedes it.
 Config keys refer to config/config.yaml.
 
+## Plain-English summary (added 2026-10-13; nothing below it is changed)
+
+**How to read the codes.** Each entry has a letter and a number. **D** is the specification locked on 27 September 2026
+and **A** its amendments. **E** entries are Claude's engineering interpretations, each confirmed by the group in a later
+entry. **H, J, K, L, M, N, P, Q, R, S** are the group's decisions in the order they were made. **F** and **U** are the
+freeze and the unlock of the test half. **C** entries are corrections made after the unlock, each with before and after
+values. **V** numbers are the robustness variants.
+
+**The decisions that shape the result**
+
+| Code | Date | Decision |
+|---|---|---|
+| D01 | 27 Sep | Scrape the Senate's own disclosure site (eFD) directly, keyed to when each report was received. |
+| A05 | 27 Sep | A trade is in scope if the filer was a senator on the transaction date (official service dates, not eFD's label). |
+| A01, K5, N2 | 27 Sep to 30 Sep | Copy the senator's own and joint accounts; US common stocks and equity ETFs only; no preferred shares. |
+| D10, D11, D12 | 27 Sep | Size at the band midpoint; buy at the close of the first trading day after receipt; sell first in, first out on the same senator's disclosed sale; never short. |
+| J3 | 28 Sep | Every record acts as first published; a later amendment reverses it at its own date (no look-ahead). |
+| L2 | 29 Sep | Build the book from a 12-month warm-up so it is not empty on day one (decided after seeing design-half results; the old rule is variant V17). |
+| D19 | 27 Sep | Split the window at its midpoint; the code refuses to compute test-half results until the rules are frozen. |
+| H3, J4, K3, K5 | 27 to 28 Sep | Variants V1 to V16 registered before any return was computed. |
+| Q2, R1, R2, R4 | 30 Sep to 2 Oct | Tests H0 to H4 and their predictions registered; Holm adjustment, detectable effects and the without-bulk-filings check added. |
+| F1, U1 | 6 Oct | Rules frozen at commit 348318447daa; test half unlocked in a separate commit. |
+| S5 | 6 Oct | The main result is one continuous five-year backtest; the test half is the check. |
+| C1 | 9 Oct | Bloomberg prices for 8 stocks missing from Yahoo enter the headline (Series A 10.81% to 13.41% a year); Yahoo-only kept as V18. |
+| C2 | 13 Oct | A stale test fixed; the design-half values C1 moved are logged. |
+
 ## Locked specification (2026-09-27, Harry)
 
 | # | Date | Who | Decision | Config key | Reason |
