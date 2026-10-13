@@ -1,4 +1,4 @@
-"""Write docs/PRICE_REQUEST.md (M2, Phase 5A.2): the survivorship-ledger symbols to pull from a Bloomberg or FactSet
+"""Write docs/archive/PRICE_REQUEST.md (M2, Phase 5A.2): the survivorship-ledger symbols to pull from a Bloomberg or FactSet
 terminal, and the WRDS settings and ticker lists for CRSP. Run by hand from the repo root after the prices stage:
 
     python scripts/price_request.py
@@ -7,7 +7,7 @@ Rows: every ledger symbol (data/interim/survivorship_ledger.csv) that a trade of
 headline with its warm-up, V6 family owners, V11 3 years, V12 10 years, V16 all ETFs, first-published J3 records),
 sorted by the headline's midpoint purchase dollars (warm-up included), then by all-variant dollars. MUST-HAVE = the
 smallest set of rows, from the top, that covers 95% of the headline dollars.
-Also writes docs/crsp_tickers_ledger.txt (ledger symbols and their eFD tickers) and docs/crsp_tickers_all.txt (every
+Also writes docs/archive/crsp_tickers_ledger.txt (ledger symbols and their eFD tickers) and docs/archive/crsp_tickers_all.txt (every
 symbol any trade uses), one ticker per line, for the WRDS upload.
 """
 from __future__ import annotations
@@ -24,9 +24,9 @@ from src.config import load_config  # noqa: E402
 from src.prices import delisting_dates_for_request  # noqa: E402
 from src.prices.sources import needed  # noqa: E402
 
-OUT = Path("docs/PRICE_REQUEST.md")
-TICKERS_LEDGER = Path("docs/crsp_tickers_ledger.txt")
-TICKERS_ALL = Path("docs/crsp_tickers_all.txt")
+OUT = Path("docs/archive/PRICE_REQUEST.md")
+TICKERS_LEDGER = Path("docs/archive/crsp_tickers_ledger.txt")
+TICKERS_ALL = Path("docs/archive/crsp_tickers_all.txt")
 MUST_SHARE = 0.95
 
 
@@ -174,8 +174,8 @@ CRSP comes first in the hierarchy and covers every US stock, delisted ones inclu
 2. **Date range**: start `2015-12-01`, end `2026-08-31`. (If the query form does not go that far, take the latest end
    date it allows and say so: the legacy files may stop at the end of 2024; see step 7.)
 3. **Company codes**: choose **TICKER**, then **Upload a plain text file** and upload
-   `docs/crsp_tickers_ledger.txt` ({len(TICKERS_LEDGER.read_text().split())} tickers, the ledger only). If WRDS
-   accepts a bigger request, use `docs/crsp_tickers_all.txt` ({len(TICKERS_ALL.read_text().split())} tickers, every
+   `docs/archive/crsp_tickers_ledger.txt` ({len(TICKERS_LEDGER.read_text().split())} tickers, the ledger only). If WRDS
+   accepts a bigger request, use `docs/archive/crsp_tickers_all.txt` ({len(TICKERS_ALL.read_text().split())} tickers, every
    stock any trade uses) instead: CRSP then replaces Yahoo for all of them.
 4. **Variables**: tick **TICKER** (Ticker Symbol), **COMNAM** (Company Name), **PRC** (Price or Bid/Ask Average),
    **RET** (Returns) and **DLRET** (Delisting Return). PERMNO and the date are always included.

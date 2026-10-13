@@ -66,8 +66,8 @@ CRSP comes first in the hierarchy and covers every US stock, delisted ones inclu
 2. **Date range**: start `2015-12-01`, end `2026-08-31`. (If the query form does not go that far, take the latest end
    date it allows and say so: the legacy files may stop at the end of 2024; see step 7.)
 3. **Company codes**: choose **TICKER**, then **Upload a plain text file** and upload
-   `docs/crsp_tickers_ledger.txt` (185 tickers, the ledger only). If WRDS
-   accepts a bigger request, use `docs/crsp_tickers_all.txt` (1525 tickers, every
+   `docs/archive/crsp_tickers_ledger.txt` (185 tickers, the ledger only). If WRDS
+   accepts a bigger request, use `docs/archive/crsp_tickers_all.txt` (1525 tickers, every
    stock any trade uses) instead: CRSP then replaces Yahoo for all of them.
 4. **Variables**: tick **TICKER** (Ticker Symbol), **COMNAM** (Company Name), **PRC** (Price or Bid/Ask Average),
    **RET** (Returns) and **DLRET** (Delisting Return). PERMNO and the date are always included.
