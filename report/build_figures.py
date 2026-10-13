@@ -1,4 +1,4 @@
-"""Figures for Report V2, in London Business School colours, with annotations.
+"""Figures for Report V3, in London Business School navy and red, with annotations.
 
 Reads only committed pipeline outputs (data/processed, outputs/tables) and report/diagnostics.py's files, so every
 figure can be rebuilt. Run from the repo root, after python run_all.py --skip-scrape and python report/diagnostics.py:
@@ -24,15 +24,15 @@ TABLES = ROOT / "outputs" / "tables"
 OUT = ROOT / "report" / "figures"
 OUT.mkdir(parents=True, exist_ok=True)
 
-# LBS palette (logo colours), checked with the dataviz validator: all checks pass on a light surface
-NAVY = "#1D5A99"     # series A, the headline
-RED = "#C23349"      # SPY
-SKY = "#2E8FD0"      # series B
+# LBS palette: navy and red, plus a mid blue and a gold for secondary series
+NAVY = "#001E62"     # series A, the headline
+RED = "#C8102E"      # SPY
+SKY = "#4A7EBB"      # series B
 GOLD = "#A87A0F"     # Senate universe
 INK = "#1F2A37"
 MUTED = "#6B7480"
 GRID = "#E3E7EC"
-PALE = "#D8E3EE"     # LBS light blue, for bands
+PALE = "#D6E2F0"     # light blue, for bands
 FREEZE = pd.Timestamp("2024-03-01")
 ARMSTRONG = pd.Timestamp("2026-07-21")
 
@@ -257,7 +257,8 @@ def fig_variants():
              "V8": "Equal dollars per trade", "V9": "Same-day entry before 15:30", "V10": "Equal-weight lots",
              "V11": "3-year window*", "V12": "10-year window*", "V13": "No OTC names", "V14": "Amendments as revised",
              "V15": "Unpriced names earn SPY", "V16": "All ETFs incl. bond, T-bill", "V17": "Empty start, no warm-up",
-             "V18": "Yahoo prices only (old headline)", "V19": "Add preferred shares"}
+             "V18": "Yahoo prices only (old headline)", "V19": "Add preferred shares",
+             "V21": "Sell when senator leaves office‡"}
     v["label"] = v.id.map(short)
     v["alpha"] = v.A_capm_alpha * 100
     v["se"] = np.abs(v.alpha / v.A_capm_t_nw)
@@ -266,7 +267,7 @@ def fig_variants():
     yy = np.arange(len(v))
     for y, (_, r) in zip(yy, v.iterrows()):
         head = r.id == "H"
-        ax.plot([r.alpha - 1.96 * r.se, r.alpha + 1.96 * r.se], [y, y], color=NAVY if head else "#9DB4CF",
+        ax.plot([r.alpha - 1.96 * r.se, r.alpha + 1.96 * r.se], [y, y], color=NAVY if head else "#A7BCD9",
                 lw=3, alpha=0.9 if head else 0.55, solid_capstyle="round")
         ax.plot(r.alpha, y, "o", color=NAVY if head else INK, ms=5 if head else 4)
         ax.text(1.01, (y + 0.5) / len(v), f"{r.A_ann_return * 100:.1f}%", fontsize=7.2, va="center", transform=ax.transAxes,
@@ -281,7 +282,7 @@ def fig_variants():
     ax.set_xlim(-16, 20); ax.set_ylim(-0.5, len(v) - 0.5); ax.grid(axis="y", visible=False)
     ax.set_xlabel("Series A CAPM alpha, % a year (bar = 95% interval, Newey-West). No interval excludes zero.")
     fig.subplots_adjust(left=0.27, right=0.92)
-    save(fig, "fig7_variants.png", "No specification produces a reliable alpha", "Series A CAPM alpha by variant, % a year, 95% interval (Newey-West); one rule changed at a time", "Source: Senate eFD, Yahoo Finance, Bloomberg, Kenneth French Data Library; group calculations. *V11 and V12 cover 3 and 10 years.")
+    save(fig, "fig7_variants.png", "No specification produces a reliable alpha", "Series A CAPM alpha by variant, % a year, 95% interval (Newey-West); one rule changed at a time", "Source: Senate eFD, Yahoo Finance, Bloomberg, Kenneth French Data Library; group calculations. *V11 and V12 cover 3 and 10 years. ‡Exploratory, added after the test half was opened.")
 
 
 def fig_rolling():

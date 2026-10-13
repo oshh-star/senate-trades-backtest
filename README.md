@@ -8,7 +8,7 @@ have held instead. **It does not.** Over September 2021 to August 2026 the copie
 volatility, against 12.7% for SPY and 16.3% for SPY at the same volatility. Its alpha is statistically zero, and the
 half of the data we never used to design the rules gives the same answer.
 
-**The report:** [`report/Copying_the_Senate_Report_V2.docx`](report/Copying_the_Senate_Report_V2.docx) (PDF copy beside it).
+**The report:** [`report/Copying_the_Senate_Report_V3.docx`](report/Copying_the_Senate_Report_V3.docx) (PDF copy beside it).
 
 ## Rebuild every number
 

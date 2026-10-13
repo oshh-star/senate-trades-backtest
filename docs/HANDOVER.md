@@ -1,6 +1,22 @@
 # Handover
 
-## Read this first (2026-10-13)
+## Read this first (2026-10-13, evening)
+- **Status in one line**: **Report V3 is written** (`report/Copying_the_Senate_Report_V3.docx` and `.pdf`; body 9 pages,
+  18 with references and appendix). It replaces V2 (moved to `docs/archive/`) after Max's review: professional register,
+  a reason beside every rule (Table 1), Series A and B defined as two measures of the same trades, where $1.5m and
+  $17.1m come from, the French data library's role, why there is a test half, why next-day close, why no shorting,
+  Series B's higher Sharpe ratio explained, the Mullin contradiction explained (Table 5), LBS navy and red.
+- **New exploratory check V21** (after the unlock, logged in DECISIONS.md): sell a senator's positions when they leave
+  office. Mullin left on 2026-03-23 and his 150 positions ($6.0m at cost) stayed open to the end of the window under the
+  frozen rules. V21: series A 15.98% a year, CAPM alpha +3.30% (t 0.46), still 1.3 points below SPY at the same risk.
+  Switch `engine.exit_on_departure`, default false, so the headline reproduces byte for byte.
+- **Left for the group**: study group number and member names on page 1; check the AI-use statement (top of the
+  appendix) against the CA01 policy; merge the pull request; build the submission zips from the final commit.
+- **Branch**: `report-v3`, in a pull request against `main`.
+
+<details><summary>The earlier 2026-10-13 summary this replaces</summary>
+
+### Read this first (2026-10-13)
 - **Status in one line**: the analysis is finished and **Report V2 is written**
   (`report/Copying_the_Senate_Report_V2.docx`, body exactly 10 pages, 18 with references and appendix). What is left:
   the group's checks on four points (below), then the submission zips.
@@ -15,6 +31,8 @@
   (H4 flips sign in the design half; the registered predictions are unchanged).
 - **Frozen and unlocked**: rules frozen at `348318447daa58a91af14ae65c8ee3c98522d896` (F1), test half unlocked (U1).
   No rule, parameter, scope, test or prediction may change; any fix is a logged post-unlock correction.
+
+</details>
 
 <details><summary>The 2026-10-09 summary this replaces</summary>
 

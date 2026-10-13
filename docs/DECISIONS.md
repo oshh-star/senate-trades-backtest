@@ -29,6 +29,7 @@ values. **V** numbers are the robustness variants.
 | S5 | 6 Oct | The main result is one continuous five-year backtest; the test half is the check. |
 | C1 | 9 Oct | Bloomberg prices for 8 stocks missing from Yahoo enter the headline (Series A 10.81% to 13.41% a year); Yahoo-only kept as V18. |
 | C2 | 13 Oct | A stale test fixed; the design-half values C1 moved are logged. |
+| V21 | 13 Oct | Exploratory check after the unlock: sell a senator's positions when they leave office (Mullin, 23 Mar 2026). Series A 15.98% a year against 17.30% for SPY at the same risk; headline unchanged (switch off by default). |
 
 ## Locked specification (2026-09-27, Harry)
 

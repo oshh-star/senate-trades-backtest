@@ -1,4 +1,4 @@
-"""Extra robustness diagnostics for the written report (Report V2).
+"""Extra robustness diagnostics for the written report (Report V3).
 
 Not registered tests: computed after the unlock from the committed monthly returns, to show how much the five-year
 sample can and cannot say. Nothing here feeds the pipeline. Run from the repo root:
@@ -115,6 +115,65 @@ res = {
     "capm_resid_vol_annual": resid_vol, "years_needed_for_t2": years_needed,
     "bootstrap": {"draws": B, "mean_block_months": L, "seed": 20261013},
 }
+
+
+def sleeve_returns(lots, prices, days):
+    """Series A's daily return rebuilt from the lots, for any subset of them: dollar-weighted return of the lots held
+    from the previous close (the engine's definition, data/processed/lots.csv). Returns (return, capital) by day."""
+    num, den = np.zeros(len(days)), np.zeros(len(days))
+    for r in lots.itertuples():
+        if r.val_symbol not in prices:
+            continue
+        p = prices[r.val_symbol].to_numpy()
+        a = max(int(np.searchsorted(days, r.entry_date, side="right")), 1)
+        b = int(np.searchsorted(days, r.exit_date, side="right"))
+        if b <= a:
+            continue
+        prev, cur = p[a - 1:b - 1], p[a:b].copy()
+        if days[b - 1] == r.exit_date:
+            cur[-1] = r.exit_price
+        num[a:b] += r.units * (cur - prev)
+        den[a:b] += r.units * prev
+    with np.errstate(invalid="ignore", divide="ignore"):
+        ret = np.where(den > 0, num / den, 0.0)
+    return pd.Series(ret[1:], index=days[1:]), pd.Series(den[1:], index=days[1:])
+
+
+# Who drives series A: Mullin's positions against the rest, by calendar year (Section 6.4 of the report)
+LOTS = pd.read_csv(ROOT / "data" / "processed" / "lots.csv")
+PX = pd.read_csv(ROOT / "data" / "processed" / "prices.csv.gz", usecols=["ticker", "date", "adj_close"])
+PX = PX[PX.ticker.isin(set(LOTS.val_symbol))].pivot(index="date", columns="ticker", values="adj_close").sort_index().ffill()
+DAYS = np.array([d for d in PX.index if "2021-08-31" <= d <= "2026-08-31"])
+PX = PX.loc[DAYS]
+full, _ = sleeve_returns(LOTS, PX, DAYS)
+book = pd.read_csv(ROOT / "data" / "processed" / "daily_book.csv").set_index("date")["series_a_return"]
+assert np.nanmax(np.abs(full.to_numpy() - book.reindex(full.index).to_numpy())) < 1e-8   # same as the engine
+sleeves = {}
+for name, mask in {"mullin": LOTS.senator == "Markwayne Mullin", "rest": LOTS.senator != "Markwayne Mullin"}.items():
+    r, c = sleeve_returns(LOTS[mask], PX, DAYS)
+    yr = pd.to_datetime(r.index).year
+    sleeves[name] = {"return_by_year": {int(y): float(v) for y, v in ((1 + r).groupby(yr).prod() - 1).items()},
+                     "avg_capital_by_year": {int(y): float(v) for y, v in c.groupby(yr).mean().items()}}
+pnl = LOTS.groupby("senator").pnl.sum()
+moody = LOTS[LOTS.senator == "Ashley Moody"].sort_values("pnl", ascending=False)
+res["concentration"] = {
+    "sleeves": sleeves, "lot_pnl_total": float(LOTS.pnl.sum()),
+    "pnl_share_mullin_plus_moody": float((pnl["Markwayne Mullin"] + pnl["Ashley Moody"]) / LOTS.pnl.sum()),
+    "moody_top4": [{"ticker": t, "pnl": float(p)} for t, p in zip(moody.price_ticker.head(4), moody.pnl.head(4))],
+    "moody_top4_share_of_all_pnl": float(moody.pnl.head(4).sum() / LOTS.pnl.sum()),
+}
+
+# V21 (exploratory): sell when the senator leaves office, against SPY at its own volatility
+V21_BOOK = ROOT / "data" / "interim" / "variants" / "full_bloomberg" / "V21" / "daily_book.csv"
+if V21_BOOK.exists():
+    v = pd.read_csv(V21_BOOK, parse_dates=["date"])
+    v = v[(v.date >= "2021-09-01") & (v.date <= "2026-08-31")]
+    mv = (v.set_index("date").series_a_return.add(1).resample("ME").prod() - 1).to_numpy()
+    ann = lambda r: float(np.prod(1 + r) ** (12 / len(r)) - 1)
+    k = (mv - M.rf).std(ddof=1) / (M.r_SPY - M.rf).std(ddof=1)
+    rm = (M.rf + k * (M.r_SPY - M.rf)).to_numpy()
+    res["v21_departure_exit"] = {"return": ann(mv), "k": float(k), "risk_matched_spy": ann(rm),
+                                 "gap_geometric": ann(mv) - ann(rm), "gap_arithmetic": float((mv - rm).mean() * 12)}
 (OUT / "diagnostics.json").write_text(json.dumps(res, indent=1))
 
 # Appendix E rows, rounded (not truncated) straight from the variants table, so the report cannot drift from it
