@@ -1,4 +1,4 @@
-"""CRSP daily stock data from a WRDS web-query export (A04, M2: source 1 of 3). Settings: docs/PRICE_REQUEST.md.
+"""CRSP daily stock data from a WRDS web-query export (A04, M2: source 1 of 3). Settings: docs/archive/PRICE_REQUEST.md.
 
 Input: every *.csv / *.csv.gz in data/raw/crsp/, with (case-insensitive) columns
   PERMNO, date, TICKER, COMNAM, PRC, RET, DLRET          (CRSP legacy "Daily Stock File")
@@ -16,7 +16,7 @@ Rules:
 Mapping to this project's symbols: a PERMNO is a security, a ticker is only a label that CRSP records by date and
 that companies reuse. For each project symbol, the candidate tickers are the symbol and every eFD ticker that maps
 to it; the PERMNO chosen is the one with the most rows carrying a candidate ticker INSIDE the dates the project needs
-(docs/PRICE_REQUEST.md). config/crsp_permnos.yaml (symbol: PERMNO) overrides the choice by hand. Every choice, and
+(docs/archive/PRICE_REQUEST.md). config/crsp_permnos.yaml (symbol: PERMNO) overrides the choice by hand. Every choice, and
 every symbol with more than one candidate PERMNO, is reported.
 """
 from __future__ import annotations

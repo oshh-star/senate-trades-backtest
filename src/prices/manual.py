@@ -1,7 +1,7 @@
 """Terminal exports (Bloomberg or FactSet), pulled by hand in the LBS library (M2, source 2 of 3).
 
 One CSV per symbol at data/raw/manual_prices/<TICKER>.csv (TICKER = the price symbol this project uses, as in
-docs/PRICE_REQUEST.md), with exactly these columns:
+docs/archive/PRICE_REQUEST.md), with exactly these columns:
   date                YYYY-MM-DD, one row per trading day, strictly increasing
   close               the closing price (information only)
   total_return_index  a daily total return index, dividends reinvested (Bloomberg TOT_RETURN_INDEX_GROSS_DVDS)

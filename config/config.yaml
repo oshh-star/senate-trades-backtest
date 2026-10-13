@@ -93,7 +93,7 @@ engine:
 prices:
   sources: [yahoo, manual]         # C1 (2026-10-09, post-unlock correction): Bloomberg files fill symbols Yahoo has no price for. S2/S3 (2026-10-06): was [yahoo]; a late CRSP file can
                                    #   only feed V20 ([yahoo, crsp]). Was M2's [crsp, manual, yahoo]. manual = terminal
-                                   #   exports (Bloomberg / FactSet) in manual_dir; see docs/PRICE_REQUEST.md
+                                   #   exports (Bloomberg / FactSet) in manual_dir; see docs/archive/PRICE_REQUEST.md
   manual_dir: data/raw/manual_prices
   fallback_source: stooq           # Stooq was unreachable from the cloud on 2026-09-27
   crsp_dir: data/raw/crsp

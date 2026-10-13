@@ -6,9 +6,9 @@ _Written by Claude for the teammate who pulled the prices. The headline is NOT c
 `prices.sources: [yahoo]` (S2, S3). Using these prices in the report needs a group decision, logged in DECISIONS.md._
 
 ## What was done
-1. **Pulled daily Bloomberg prices for all 8 MUST-HAVE stocks** in docs/PRICE_REQUEST.md (95% of the missing headline
+1. **Pulled daily Bloomberg prices for all 8 MUST-HAVE stocks** in docs/archive/PRICE_REQUEST.md (95% of the missing headline
    dollars) at the LBS library terminal, with Excel BDH: `PX_LAST` and `TOT_RETURN_INDEX_GROSS_DVDS`, trading days.
-   The workbook is `docs/bloomberg_price_pull.xlsx` (Setup sheet: identifier, dates, checks).
+   The workbook is `docs/archive/bloomberg_price_pull.xlsx` (Setup sheet: identifier, dates, checks).
 2. **Fixed two identifiers.** The tickers GOGL and PARA now belong to other securities:
    - GOGL: Golden Ocean Group Ltd = `2663476D US Equity` (acquired by CMB Tech, completed 2025-08-21).
    - PARA: Paramount Global Class B = `2677689D US Equity` (acquired 2025-08-08). The first pull (`PARA US Equity`)
@@ -21,7 +21,7 @@ _Written by Claude for the teammate who pulled the prices. The headline is NOT c
 5. **Rebuilt the headline unchanged** on a Mac (Python 3.12, the pinned packages): every table matched the committed
    one (only the "files present" note and the order of two tied committee rows differ).
 6. **Ran a Bloomberg-filled copy** with one change, `prices.sources: [yahoo, manual]` (Yahoo first; Bloomberg only
-   where Yahoo has no price). Results in `outputs/tables/bloomberg_fill/`.
+   where Yahoo has no price). Results in `docs/archive/bloomberg_fill_first_run/`.
 
 ## Results: Bloomberg-filled against the headline
 | Full window 2021-09 to 2026-08 | Headline (Yahoo only) | Bloomberg-filled (8 stocks) |

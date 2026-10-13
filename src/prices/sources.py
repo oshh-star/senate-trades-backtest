@@ -13,7 +13,7 @@ and largest absolute gap and its date (data/interim/price_source_validation.csv)
 
 needed(): for each symbol a trade of any window or variant uses, the dates prices are needed (earliest entry date
 minus 5 trading days, to the delisting date or the end of the data) and the eFD tickers that map to it; used to map
-CRSP PERMNOs and to write the price request (docs/PRICE_REQUEST.md).
+CRSP PERMNOs and to write the price request (docs/archive/PRICE_REQUEST.md).
 """
 from __future__ import annotations
 

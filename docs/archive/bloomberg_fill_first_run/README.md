@@ -2,7 +2,7 @@
 
 **Superseded**: since C1 (docs/DECISIONS.md, "Post-unlock corrections") the main tables use these prices, so this folder is kept only as the record of the first run; the numbers are identical.
 
-Built 2026-10-07 (PARA added the same day) by Claude, in a separate copy of the repo, with one change: `prices.sources: [yahoo, manual]`
+Archived 2026-10-13: superseded by the headline after correction C1, which carries the same numbers. Built 2026-10-07 (PARA added the same day) by Claude, in a separate copy of the repo, with one change: `prices.sources: [yahoo, manual]`
 (Yahoo first; Bloomberg terminal prices in data/raw/manual_prices/ fill symbols Yahoo has no price for).
 Files filled: X, ECOM, ATVI, SSBK, PARA, WBA, GOGL, TOELY, all 8 MUST-HAVE rows (see data/raw/manual_prices/SOURCES.md).
 PARA's first pull (PARA US Equity) was a different security and was discarded; the re-pull uses 2677689D US Equity. The headline (`prices.sources: [yahoo]`, decisions S2/S3) is unchanged;

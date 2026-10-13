@@ -107,19 +107,29 @@ def test_verdicts():
     assert cf.verdict("H1p", 0.01, np.nan, 1.0).startswith("not testable")
 
 
+# The test plan's in-sample values were registered on Yahoo-only prices (Q2). After post-unlock correction C1 the headline
+# prices are [yahoo, manual], which moves the design-half values; C2 logs both sets (docs/DECISIONS.md).
+REGISTERED_YAHOO = {"H2": (0.0116, 1.91), "H3": (0.0395, 2.25), "H4": (0.0398, 1.52), "H0a": (-0.0395, -0.59),
+                    "H1p_t": 1.06, "H1s_t": 0.54}
+AFTER_C1 = {"H2": (0.0115, 1.82), "H3": (0.0425, 2.25), "H4": (-0.0285, -0.80), "H0a": (0.0114, 0.12),
+            "H1p_t": 0.95, "H1s_t": -0.04}
+
+
 def test_the_in_sample_half_reproduces_the_registered_values():
-    """The test plan's in-sample values (Yahoo prices), from the committed engine and metrics outputs."""
+    """The design-half values, from the committed engine and metrics outputs: the registered Yahoo values when the
+    headline is Yahoo only, the C1 values (logged in C2) when Bloomberg files fill Yahoo's gaps."""
+    import yaml
+    sources = yaml.safe_load(open("config/config.yaml"))["prices"]["sources"]
+    expect = REGISTERED_YAHOO if sources == ["yahoo"] else AFTER_C1
     panel = pd.read_csv("data/processed/event_panel.csv", dtype={"entry_date": str, "txn_price_date": str},
                         low_memory=False)
     mon = pd.read_csv("data/processed/monthly_returns.csv", dtype={"month": str}).set_index("month")
     cal = pd.read_csv("data/processed/trading_calendar.csv", dtype=str)["date"].tolist()
     R = cf.half_report(panel, mon, cal, "2021-09-01", "2024-02-29")
     c = R["confirmatory"].set_index("id")
-    assert round(c.loc["H2", "estimate"], 4) == 0.0116 and round(c.loc["H2", "t"], 2) == 1.91
-    assert round(c.loc["H3", "estimate"], 4) == 0.0395 and round(c.loc["H3", "t"], 2) == 2.25
-    assert round(c.loc["H4", "estimate"], 4) == 0.0398 and round(c.loc["H4", "t"], 2) == 1.52
-    assert round(c.loc["H0a", "estimate"], 4) == -0.0395 and round(c.loc["H0a", "t"], 2) == -0.59
-    assert round(c.loc["H1p", "t"], 2) == 1.06 and round(c.loc["H1s", "t"], 2) == 0.54
+    for k in ("H2", "H3", "H4", "H0a"):
+        assert (round(c.loc[k, "estimate"], 4), round(c.loc[k, "t"], 2)) == expect[k], k
+    assert round(c.loc["H1p", "t"], 2) == expect["H1p_t"] and round(c.loc["H1s", "t"], 2) == expect["H1s_t"]
     assert np.allclose(c["mde_bonferroni"], c["se"] * c["z_bonferroni"])
     assert np.allclose(c["p_holm"], cf.holm(c["p"]))
     # the in-sample half holds the in-sample run's 882 events (also when the panel on disk is the full window's),
