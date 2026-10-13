@@ -87,6 +87,8 @@ engine:
                                    #   V3 [v3_first_180d], V4 [bulk_ptr], V13 [v13_otc]
   drop_senator_ranks: []           # V2: [k] drops the senator ranked k by in-scope trade count
   sample: full                     # U1: one continuous 5-year run (S5). in_sample | full (full needs the firewall open)
+  exit_on_departure: false         # V21 (2026-10-13, exploratory, after the unlock): true sells a senator's lots at the
+                                   #   close after their last day in office. Off in the headline (D12 unchanged)
   warmup_months: 12                # L2: the book is built from disclosures in the 12 months before the window;
                                    #   returns are measured from the window's first day. V17 (empty start): 0
 

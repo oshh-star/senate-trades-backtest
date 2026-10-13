@@ -19,6 +19,11 @@ Rules (Phase 4 brief, D12, A03, E20/K1, J3, K3):
   Series ends     a lot whose price series ends before the last day closes at the last available adjusted
                   close on that day ("series ended", E20).
   Last day        lots still open are marked at that day's close ("end of window").
+  Left office     only with engine.exit_on_departure: true (exploratory check V21, registered after the results were
+                  seen): every lot of a senator whose Senate service ends inside the sample is sold at the close of
+                  the first trading day after the last day of service ("senator left office"), and later disclosed
+                  purchases of that senator are skipped. Off in the headline, where such lots stay open until the
+                  senator discloses a sale or the sample ends.
 Same-day order: the events' order (see events.py). Series that end are closed after the day's events.
 
 Lots are written as PIECES: a partial sale splits a lot into a closed piece and the remainder, so every row
@@ -83,8 +88,10 @@ class Prices:
 
 
 def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode: str = "skip",
-             fill_symbol: str = "SPY") -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Run the book over `days` (the trading days of the sample, in order). Returns (pieces, event_log)."""
+             fill_symbol: str = "SPY", departures: dict[str, str] | None = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Run the book over `days` (the trading days of the sample, in order). Returns (pieces, event_log).
+    departures: {bioguide_id: exit date} (V21 only): lots of that senator are sold at that date's close."""
+    departures = departures or {}
     first, last_day = days[0], days[-1]
     open_lots: dict[tuple, list[Lot]] = {}
     acted: dict[str, tuple] = {}            # record_id -> ("bought", [Lot]) | ("sold", [(Lot, units)])
@@ -177,6 +184,9 @@ def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode:
             # (b) act on the record
             if e.transaction_type == "Purchase":
                 p = prices.at(e.price_ticker, d)
+                if e.bioguide_id in departures and d >= departures[e.bioguide_id]:
+                    log.append({**base, "action": "skipped: senator left office (V21)", "dollars": e.size})
+                    continue
                 if np.isfinite(p):
                     lot = new_lot(e, e.price_ticker, e.price_ticker, d, p, e.size / p, "purchase")
                     acted[e.record_id] = ("bought", [lot])
@@ -213,6 +223,16 @@ def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode:
                             "lots_touched": len(sold)})
             else:
                 log.append({**base, "action": f"ignored: transaction type {e.transaction_type!r}"})
+        # V21: senators whose service ended sell everything at the close after their last day in office
+        for key, lots in list(open_lots.items()):
+            if departures.get(key[0]) == d:
+                for lot in held(key):
+                    p = prices.at(lot.val_symbol, d)
+                    flag = ""
+                    if not np.isfinite(p):
+                        p, flag = prices.last(lot.val_symbol, d), "no print that day: last available close used"
+                    close_piece(lot, lot.open_units, d, p, "senator left office", "", flag)
+                open_lots[key] = held(key)
         # E20: series that end today close at today's (last) close
         for key, lots in list(open_lots.items()):
             for lot in held(key):

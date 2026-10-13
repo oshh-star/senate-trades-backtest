@@ -51,6 +51,7 @@ VARIANTS = [
     ("V19", "Include preferred shares", [("universe.include_preferred", True)]),
     ("V20", "CRSP-filled prices (the headline's sources, then CRSP where they have no price)",
      [("prices.sources", ["yahoo", "manual", "crsp"])]),          # C1: was [yahoo, crsp] on top of the Yahoo-only headline
+    ("V21", "Sell when the senator leaves office (exploratory, after the unlock)", [("engine.exit_on_departure", True)]),
 ]
 
 

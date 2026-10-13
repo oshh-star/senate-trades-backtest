@@ -86,6 +86,18 @@ def load_market(last_day: str, cfg: dict | None = None) -> dict:
             "last_dates": last_dates, "rf": rf}
 
 
+def departure_dates(calendar: list[str], first_day: str, last_day: str) -> dict[str, str]:
+    """V21 only: {bioguide_id: first trading day after the last day of Senate service}, for every senator whose
+    service ends inside the book (data/interim/senate_terms.csv, the service dates that also define scope, A05)."""
+    t = pd.read_csv("data/interim/senate_terms.csv", dtype=str)
+    out = {}
+    for bid, end in t.groupby("bioguide_id")["term_end"].max().items():
+        nxt = [d for d in calendar if d > end]
+        if nxt and first_day <= nxt[0] <= last_day:
+            out[bid] = nxt[0]
+    return out
+
+
 def run(cfg: dict, out_dir: Path | None = None, write_diagnostics: bool = True) -> dict:
     """out_dir: where the engine's five files go (default data/processed/); the variant runner passes its own
     folder and write_diagnostics=False, so a variant never touches the headline's files."""
@@ -109,7 +121,9 @@ def run(cfg: dict, out_dir: Path | None = None, write_diagnostics: bool = True) 
     book_days = [d for d in mk["calendar"] if d >= min(first, ev_book["entry_date"].min())]
     prices = bk.Prices(mk["prices"], mk["calendar"], mk["last_dates"])
     mode = cfg.get("engine", {}).get("ledger_trades", "skip")
-    pieces, log = bk.simulate(ev_book, prices, book_days, ledger_mode=mode)
+    departures = departure_dates(mk["calendar_all"], book_days[0], last_day) \
+        if cfg.get("engine", {}).get("exit_on_departure", False) else {}
+    pieces, log = bk.simulate(ev_book, prices, book_days, ledger_mode=mode, departures=departures)
     rf_all = np.array([mk["rf"].get(d, np.nan) for d in book_days])
     missing_rf = int(np.isnan(rf_all[book_days.index(first):]).sum())
     rf_all = np.nan_to_num(rf_all)
