@@ -118,7 +118,7 @@ ATKR,,True,yahoo,0,2016-06-10,2026-08-31,2570,2026-09-28T15:00:54Z,200,EQUITY,NY
 ATLCY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:00:55Z,200,EQUITY,PNK,USD,Atlas Copco AB (publ)
 ATLKY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:00:56Z,200,EQUITY,PNK,USD,Atlas Copco AB (publ)
 ATO,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:00:57Z,200,EQUITY,NYQ,USD,Atmos Energy Corporation
-ATVI,no Yahoo price history,False,,0,,,0,2026-09-28T15:23:57Z,404,,,,
+ATVI,no Yahoo price history; priced from manual (1135 days),True,manual,0,2019-04-11,2023-10-12,1135,2026-09-28T15:23:57Z,404,,,,
 AVB,no Yahoo price history; Yahoo's last market time 2026-08-14,False,,0,,,0,2026-09-28T15:23:58Z,200,,,,
 AVGO,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:01:00Z,200,EQUITY,NMS,USD,Broadcom Inc.
 AVNT,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:01:01Z,200,EQUITY,NYQ,USD,Avient Corporation
@@ -418,7 +418,7 @@ EBAY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:52Z,200,EQUITY,NM
 EBCOY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:53Z,200,EQUITY,PNK,USD,Ebara Corporation
 EBKDY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:54Z,200,EQUITY,PNK,USD,Erste Group Bank AG
 ECL,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:55Z,200,EQUITY,NYQ,USD,Ecolab Inc.
-ECOM,no Yahoo price history,False,,0,,,0,2026-09-28T15:24:37Z,404,,,,
+ECOM,no Yahoo price history; priced from manual (336 days),True,manual,0,2021-07-19,2022-11-14,336,2026-09-28T15:24:37Z,404,,,,
 EDIT,,True,yahoo,0,2016-02-03,2026-08-31,2659,2026-09-28T15:05:57Z,200,EQUITY,NMS,USD,"Editas Medicine, Inc."
 EEFT,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:58Z,200,EQUITY,NMS,USD,"Euronet Worldwide, Inc."
 EELV,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:05:59Z,200,ETF,PCX,USD,Invesco S&P Emerging Markets Low Volatility ETF
@@ -573,7 +573,7 @@ GME,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:26Z,200,EQUITY,NYQ
 GNR,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:28Z,200,ETF,PCX,USD,State Street SPDR S&P Global Natural Resources ETF
 GNRC,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:29Z,200,EQUITY,NYQ,USD,Generac Holdings Inc.
 GNTX,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:30Z,200,EQUITY,NMS,USD,Gentex Corporation
-GOGL,"recycled symbol: Yahoo's history is 'Corgi GOOGL 2x Daily ETF', another company; not used",False,,0,,,0,2026-09-28T15:08:30Z,200,ETF,BTS,USD,Corgi GOOGL 2x Daily ETF
+GOGL,"recycled symbol: Yahoo's history is 'Corgi GOOGL 2x Daily ETF', another company; not used; priced from manual (362 days)",True,manual,0,2024-03-11,2025-08-19,362,2026-09-28T15:08:30Z,200,ETF,BTS,USD,Corgi GOOGL 2x Daily ETF
 GOLD,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:32Z,200,EQUITY,NYQ,USD,"Gold.com, Inc."
 GOOG,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:32Z,200,EQUITY,NMS,USD,Alphabet Inc.
 GOOGL,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:08:34Z,200,EQUITY,NMS,USD,Alphabet Inc.
@@ -1002,7 +1002,7 @@ PAGS,,True,yahoo,0,2018-01-24,2026-08-31,2162,2026-09-28T15:15:25Z,200,EQUITY,NY
 PALL,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:26Z,200,ETF,PCX,USD,abrdn Physical Palladium Shares ETF
 PAM,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:27Z,200,EQUITY,NYQ,USD,Pampa Energía S.A.
 PANW,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:28Z,200,EQUITY,NMS,USD,"Palo Alto Networks, Inc."
-PARA,"recycled symbol: Yahoo's history is 'Banzai International, Inc.', another company; not used",False,,0,,,0,2026-09-28T15:15:29Z,200,EQUITY,NCM,USD,"Banzai International, Inc."
+PARA,"recycled symbol: Yahoo's history is 'Banzai International, Inc.', another company; not used; priced from manual (458 days)",True,manual,0,2023-10-09,2025-08-06,458,2026-09-28T15:15:29Z,200,EQUITY,NCM,USD,"Banzai International, Inc."
 PAYC,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:30Z,200,EQUITY,NYQ,USD,"Paycom Software, Inc."
 PAYX,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:31Z,200,EQUITY,NMS,USD,"Paychex, Inc."
 PBA,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:15:32Z,200,EQUITY,NYQ,USD,Pembina Pipeline Corporation
@@ -1231,7 +1231,7 @@ SQM,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:19:17Z,200,EQUITY,NYQ
 SRCL,no Yahoo price history,False,,0,,,0,2026-09-28T15:25:56Z,404,,,,
 SRE,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:19:19Z,200,EQUITY,NYQ,USD,Sempra
 SRVR,,True,yahoo,0,2018-05-16,2026-08-31,2084,2026-09-28T15:19:20Z,200,ETF,PCX,USD,Pacer Data & Infrastructure Real Estate ETF
-SSBK,no Yahoo price history,False,,0,,,0,2026-09-28T15:25:57Z,404,,,,
+SSBK,no Yahoo price history; priced from manual (952 days),True,manual,0,2021-09-01,2025-06-30,952,2026-09-28T15:25:57Z,404,,,,
 SSD,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:19:22Z,200,EQUITY,NYQ,USD,"Simpson Manufacturing Co., Inc."
 SSDOY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:19:23Z,200,EQUITY,PNK,USD,"Shiseido Company, Limited"
 SSMXY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:19:24Z,200,EQUITY,PNK,USD,Sysmex Corporation
@@ -1300,7 +1300,7 @@ TLT,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:27Z,200,ETF,NGM,US
 TM,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:28Z,200,EQUITY,NYQ,USD,Toyota Motor Corporation
 TMO,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:29Z,200,EQUITY,NYQ,USD,Thermo Fisher Scientific Inc.
 TMUS,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:30Z,200,EQUITY,NMS,USD,"T-Mobile US, Inc."
-TOELY,no Yahoo price history; Yahoo's last market time 2026-09-24,False,,0,,,0,2026-09-28T15:26:01Z,200,,,,
+TOELY,no Yahoo price history; Yahoo's last market time 2026-09-24; priced from manual (34 days),True,manual,0,2026-07-15,2026-08-31,34,2026-09-28T15:26:01Z,200,,,,
 TOT,,True,yahoo,0,2025-09-03,2026-08-31,250,2026-09-28T15:20:32Z,200,EQUITY,PCX,USD,Lionshares U.S. Equity Total Return ETF
 TPR,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:33Z,200,EQUITY,NYQ,USD,"Tapestry, Inc."
 TPYP,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:20:34Z,200,ETF,NYQ,USD,Tortoise North American Pipeline Fund
@@ -1414,7 +1414,7 @@ W,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:21Z,200,EQUITY,NYQ,U
 WAB,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:22Z,200,EQUITY,NYQ,USD,Westinghouse Air Brake Technologies Corporation
 WAL,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:23Z,200,EQUITY,NYQ,USD,Western Alliance Bancorporation
 WAT,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:24Z,200,EQUITY,NYQ,USD,Waters Corporation
-WBA,no Yahoo price history,False,,0,,,0,2026-09-28T15:26:13Z,404,,,,
+WBA,no Yahoo price history; priced from manual (2334 days),True,manual,0,2016-05-17,2025-08-27,2334,2026-09-28T15:26:13Z,404,,,,
 WBD,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:26Z,200,EQUITY,NMS,USD,"Warner Bros. Discovery, Inc."
 WDAY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:27Z,200,EQUITY,NMS,USD,"Workday, Inc."
 WDC,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:28Z,200,EQUITY,NMS,USD,Western Digital Corporation
@@ -1450,7 +1450,7 @@ WU,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:57Z,200,EQUITY,NYQ,
 WW,,True,yahoo,0,2025-06-27,2026-08-31,296,2026-09-28T15:22:58Z,200,EQUITY,NGM,USD,"WW International, Inc."
 WY,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:22:59Z,200,EQUITY,NYQ,USD,Weyerhaeuser Company
 WYNN,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:23:00Z,200,EQUITY,NMS,USD,"Wynn Resorts, Limited"
-X,no Yahoo price history,False,,0,,,0,2026-09-28T15:26:19Z,404,,,,
+X,no Yahoo price history; priced from manual (984 days),True,manual,0,2021-07-19,2025-06-17,984,2026-09-28T15:26:19Z,404,,,,
 XAR,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:23:02Z,200,ETF,PCX,USD,State Street SPDR S&P Aerospace & Defense ETF
 XBI,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:23:03Z,200,ETF,PCX,USD,State Street SPDR S&P Biotech ETF
 XCEM,,True,yahoo,0,2016-01-04,2026-08-31,2680,2026-09-28T15:23:04Z,200,ETF,PCX,USD,Columbia EM Core ex-China ETF

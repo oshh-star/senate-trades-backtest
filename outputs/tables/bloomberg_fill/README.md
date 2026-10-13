@@ -1,4 +1,6 @@
-# Bloomberg-filled run (NOT the headline)
+# Bloomberg-filled run (became the headline on 2026-10-09, C1)
+
+**Superseded**: since C1 (docs/DECISIONS.md, "Post-unlock corrections") the main tables use these prices, so this folder is kept only as the record of the first run; the numbers are identical.
 
 Built 2026-10-07 (PARA added the same day) by Claude, in a separate copy of the repo, with one change: `prices.sources: [yahoo, manual]`
 (Yahoo first; Bloomberg terminal prices in data/raw/manual_prices/ fill symbols Yahoo has no price for).
@@ -19,3 +21,9 @@ using these numbers in the report needs a group decision logged in docs/DECISION
 Second half (2024-03 to 2026-08): series A 22.95% -> 22.94%. Confirmatory tests H0-H4: every verdict unchanged.
 For reference, V15 (ledger purchases earn SPY) gave 11.63%: the real prices are HIGHER than that "bound", because the
 missing stocks were mostly takeover targets that rose on the bid.
+
+**Variants with Bloomberg prices** (2026-10-09, `variants_full.md` / `.csv`): every pre-registered variant rerun with the
+same one change. No full-window or second-half alpha reaches |t| = 2 (with Yahoo, V12's second-half Carhart t was -2.11;
+here -1.75). The gain from Bloomberg sits almost entirely in Tuberville's trades: leaving him out (V1) gives 13.32% with
+Yahoo and 13.31% with Bloomberg. V2.2 (no Armstrong) 13.15%; V4 (no bulk filings) 11.38%; V15 (remaining ledger
+purchases earn SPY) 13.42%.

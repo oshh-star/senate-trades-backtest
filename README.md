@@ -40,10 +40,14 @@ everything runs relative to this folder.
 The robustness variants (V1 to V20, each run alone against the headline) are a second command, run after the first:
 
 ```bash
-python run_variants.py             # about 8 minutes; writes outputs/tables/variants_full_yahoo.*
+python run_variants.py             # about 8 minutes; writes outputs/tables/variants_full_bloomberg.*
 ```
 
-**Checking the rebuild.** If you unpacked `submission.zip`, compare the rebuilt files with the submitted ones:
+**Two zips.** The submission comes as two files: `submission.zip` (the code, the small data and the results) and
+`submission_prices.zip` (the Yahoo price cache, `data/raw/prices/yahoo/`). Unzip both in the same place: each contains
+the folder `senate-trades-backtest/`, and the second fills in its price folder. Both are needed before the command above.
+
+**Checking the rebuild.** If you unpacked the two zips, compare the rebuilt files with the submitted ones:
 
 ```bash
 sha256sum -c CHECKSUMS.sha256 --quiet          # on a Mac: shasum -a 256 -c CHECKSUMS.sha256 --quiet
@@ -73,9 +77,9 @@ tests H0-H4 are judged (`docs/DECISIONS.md`, "Out-of-sample test plan", and F1/U
 | Figure: drawdowns over the 5 years, boundary marked | `outputs/figures/phase5_drawdowns.png` | `src/metrics/` |
 | EXPLORATORY: event study, senator vs copier at 5, 21, 63, 126 and 252 trading days | `outputs/tables/phase5_event_study_full.md`, `_oos.md` | `src/metrics/event_study.py` |
 | EXPLORATORY: pre-disclosure drift (what the delay costs a copier) | `outputs/tables/phase5_predisclosure_drift_full.md`, `_oos.md` | `src/metrics/event_study.py` |
-| EXPLORATORY: mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_full_yahoo.md`, `mechanism_oos_yahoo.md` | `src/metrics/mechanism.py` |
-| EXPLORATORY: committee test | `outputs/tables/committee_full_yahoo.md`, `committee_oos_yahoo.md` | `src/metrics/committee.py` |
-| EXPLORATORY: robustness variants V1-V20, full window and second half | `outputs/tables/variants_full_yahoo.md` | `run_variants.py` |
+| EXPLORATORY: mechanism splits (trade size, party, filing lag, senator) | `outputs/tables/mechanism_full_bloomberg.md`, `mechanism_oos_bloomberg.md` | `src/metrics/mechanism.py` |
+| EXPLORATORY: committee test | `outputs/tables/committee_full_bloomberg.md`, `committee_oos_bloomberg.md` | `src/metrics/committee.py` |
+| EXPLORATORY: robustness variants V1-V20, full window and second half | `outputs/tables/variants_full_bloomberg.md` | `run_variants.py` |
 | Figure: open positions and capital deployed over time | `outputs/figures/phase4_open_lots_capital.png` | `src/engine/diagnostics.py` |
 | Three copied trades traced step by step | `outputs/phase4_worked_examples.md` | `src/engine/diagnostics.py` |
 | Warm-up before/after (the book's first year) | `outputs/tables/phase5_warmup_before_after.csv` | `src/engine/warmup.py` |
@@ -88,9 +92,13 @@ and `phase5_predisclosure_drift.md`, are the first-half results that were seen w
 freeze. The full-window run does not overwrite them. To rebuild them, set `engine.sample: in_sample` in
 `config/config.yaml` and run the same two commands.
 
-"yahoo" in a file name names the price source: every price is Yahoo's (no CRSP or terminal price file arrived in time,
-so Yahoo is final). The survivorship-ledger stocks (delisted names Yahoo no longer serves) have no prices and are
-skipped. Each table says so in its header, and variant V15 bounds the effect.
+The word at the end of a file name names the price source. "bloomberg" (the full-window and second-half tables): Yahoo,
+with Bloomberg terminal prices for the 8 delisted stocks that carried 95% of the missing dollars (U.S. Steel,
+ChannelAdvisor, Activision, Southern States Bancshares, Paramount B, Walgreens, Golden Ocean, Toei), a post-unlock
+correction logged as C1 in `docs/DECISIONS.md` with every before and after value. "yahoo" (the in-sample design record):
+Yahoo only. The remaining 178 survivorship-ledger stocks (delisted names Yahoo no longer serves, about 5% of the missing
+dollars) have no prices and are skipped; each table says so in its header. Variant V18 is the Yahoo-only run, and V15
+(skipped purchases earn SPY) shows the size of the remaining gap.
 
 ## Where the rules and the reasons are
 - `config/config.yaml`: every rule, as a parameter (the single source of truth for the code).
@@ -102,7 +110,7 @@ skipped. Each table says so in its header, and variant V15 bounds the effect.
 | Data | Source | Notes |
 |---|---|---|
 | Senate trades | Senate eFD (efdsearch.senate.gov), Periodic Transaction Reports received 2016-01-01 to 2026-09-30, scraped directly | Keyed to the date and time each report was **received** (made public). In scope only if the transaction date falls within the filer's Senate service (unitedstates/congress-legislators). Paper filings, amendments, owners and every other exclusion are counted in `outputs/data_quality.md`. |
-| Prices | Yahoo Finance daily adjusted close (dividends reinvested), USD; hierarchy CRSP, then terminal exports, then Yahoo (`prices.sources`) | Delisted stocks are missing from Yahoo (survivorship bias); they are listed with a reason in `data/interim/survivorship_ledger.csv`. |
+| Prices | Yahoo Finance daily adjusted close (dividends reinvested), USD. The headline uses Yahoo, plus Bloomberg terminal prices for 8 delisted stocks where Yahoo has none (`prices.sources: [yahoo, manual]`, correction C1; files and their sources in `data/raw/manual_prices/`) | Delisted stocks are missing from Yahoo (survivorship bias); they are listed with a reason in `data/interim/survivorship_ledger.csv`. |
 | Factors and risk-free rate | Kenneth French Data Library: US Fama-French 3 factors, momentum, RF (daily and monthly) | One risk-free series throughout. |
 | Company names, renames, industries | SEC EDGAR (company tickers, submissions, Form 25 delisting filings) | Cached in `data/raw/sec/`. |
 | Committee memberships | unitedstates/congress-legislators, every version of the committee membership file | Cached in `data/raw/legislators/`. |

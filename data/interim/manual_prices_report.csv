@@ -1,1 +1,9 @@
-
+symbol,file,rows,blank_rows_dropped,first_date,last_date,delisting_date,days_from_delisting,warnings
+ATVI,data/raw/manual_prices/ATVI.csv,1135,0,2019-04-11,2023-10-12,2023-10-13,1.0,
+ECOM,data/raw/manual_prices/ECOM.csv,336,0,2021-07-19,2022-11-14,2022-11-15,1.0,
+GOGL,data/raw/manual_prices/GOGL.csv,362,0,2024-03-11,2025-08-19,2025-08-20,1.0,
+PARA,data/raw/manual_prices/PARA.csv,458,0,2023-10-09,2025-08-06,2025-08-07,1.0,
+SSBK,data/raw/manual_prices/SSBK.csv,952,0,2021-09-01,2025-06-30,2025-07-01,1.0,
+TOELY,data/raw/manual_prices/TOELY.csv,34,0,2026-07-15,2026-08-31,,,
+WBA,data/raw/manual_prices/WBA.csv,2334,0,2016-05-17,2025-08-27,2025-08-28,1.0,
+X,data/raw/manual_prices/X.csv,984,0,2021-07-19,2025-06-17,2025-06-18,1.0,

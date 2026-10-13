@@ -1,16 +1,16 @@
 measure,V17 empty start (Phase 4 rule),"warm-up 12 months (L2, headline)"
 sale records in the window,955.0,955.0
-sales ignored: nothing held,626.0,576.0
-sales ignored (share),0.6554973821989529,0.6031413612565445
-sales matched to a copied position,329.0,379.0
-open lots: min,0.0,65.0
+sales ignored: nothing held,604.0,554.0
+sales ignored (share),0.6324607329842932,0.5801047120418849
+sales matched to a copied position,351.0,401.0
+open lots: min,0.0,70.0
 open lots: median,170.0,187.0
-open lots: max,960.0,974.0
-capital deployed: min ($),0.0,1136494.7845896762
-capital deployed: median ($),5046313.352209684,5489195.006590038
-capital deployed: max ($),24491209.896519188,24868119.583623912
+open lots: max,961.0,975.0
+capital deployed: min ($),0.0,1482277.6075066756
+capital deployed: median ($),5181630.128423583,5751438.708179945
+capital deployed: max ($),24521290.666342318,24898200.353447042
 days with no open lot,6.0,0.0
-lots held on the last day,960.0,974.0
-share of dollars ever invested still held on the last day (at cost),0.5663868619040562,0.5473719336109649
-"share still held on the last day, lots bought inside the window only (at cost)",0.5663868619040562,0.5663868619040562
-value held on the last day ($),23902988.143294115,24274604.32849782
+lots held on the last day,961.0,975.0
+share of dollars ever invested still held on the last day (at cost),0.5329406528730627,0.5123776092677937
+"share still held on the last day, lots bought inside the window only (at cost)",0.5329406528730627,0.5329406528730627
+value held on the last day ($),23930849.006332092,24302465.1915358

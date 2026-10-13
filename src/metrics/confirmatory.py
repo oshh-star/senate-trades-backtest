@@ -288,8 +288,9 @@ def price_sources(coverage: str = "data/processed/price_coverage.csv") -> str:
     s = (f"**Price sources in use** (`prices.sources`, M2): symbols priced by {parts}; {n_none:,} symbols have no prices "
          f"(the survivorship ledger; their purchases are skipped, K3). CRSP or terminal price files present: "
          f"{len(files)}{' (' + ', '.join(sorted(files)) + ')' if files else ''}. Price tag: **{price_tag()}**.")
-    s += (" Yahoo is the final headline source (R3, S2); a CRSP file could only ever feed variant V20, never the headline "
-          "(S3). The survivorship gap is a stated limitation and V15 (SPY fill) bounds it.")
+    s += (" Since C1 (2026-10-09) the headline is Yahoo with the Bloomberg terminal files where Yahoo has no price; a "
+          "CRSP file could only ever feed variant V20, never the headline (S3). The remaining survivorship gap is a stated "
+          "limitation; V15 (SPY fill) shows its size but is not a bound (the priced ledger stocks beat SPY).")
     return s
 
 
