@@ -86,6 +86,28 @@ def load_market(last_day: str, cfg: dict | None = None) -> dict:
             "last_dates": last_dates, "rf": rf}
 
 
+def departure_days(book_days: list[str], last_day: str) -> dict:
+    """Supplementary check D1: for every senator whose continuous Senate service (terms less than 32 days apart are
+    one spell, as E17) ends inside the book, the first trading day strictly after the last day of service."""
+    t = pd.read_csv(Path("data/interim/senate_terms.csv"), dtype=str)
+    out = {}
+    for b, g in t.groupby("bioguide_id"):
+        g = g.sort_values("term_start")
+        ends = []
+        cur_end = None
+        for s0, e0 in zip(g["term_start"], g["term_end"]):
+            if cur_end is not None and (pd.Timestamp(s0) - pd.Timestamp(cur_end)).days >= 32:
+                ends.append(cur_end)
+            cur_end = e0 if cur_end is None or e0 > cur_end else cur_end
+        ends.append(cur_end)
+        for e0 in ends:
+            if book_days[0] <= e0 < last_day:
+                nxt = [d for d in book_days if d > e0]
+                if nxt:
+                    out[b] = nxt[0]
+    return out
+
+
 def run(cfg: dict, out_dir: Path | None = None, write_diagnostics: bool = True) -> dict:
     """out_dir: where the engine's five files go (default data/processed/); the variant runner passes its own
     folder and write_diagnostics=False, so a variant never touches the headline's files."""
@@ -109,7 +131,10 @@ def run(cfg: dict, out_dir: Path | None = None, write_diagnostics: bool = True) 
     book_days = [d for d in mk["calendar"] if d >= min(first, ev_book["entry_date"].min())]
     prices = bk.Prices(mk["prices"], mk["calendar"], mk["last_dates"])
     mode = cfg.get("engine", {}).get("ledger_trades", "skip")
-    pieces, log = bk.simulate(ev_book, prices, book_days, ledger_mode=mode)
+    dep_mode = cfg.get("engine", {}).get("sell_on_departure", False)
+    departures = departure_days(book_days, last_day) if dep_mode else {}
+    pieces, log = bk.simulate(ev_book, prices, book_days, ledger_mode=mode, departures=departures,
+                              skip_after_departure=bool(dep_mode))
     rf_all = np.array([mk["rf"].get(d, np.nan) for d in book_days])
     missing_rf = int(np.isnan(rf_all[book_days.index(first):]).sum())
     rf_all = np.nan_to_num(rf_all)

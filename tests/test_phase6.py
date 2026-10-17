@@ -43,7 +43,7 @@ def test_rescope_switches_owners_etfs_and_preferred():
 def test_every_preregistered_variant_is_expanded_with_its_switch():
     runs = vr.expand(load_config(), None)
     ids = [r["id"] for r in runs]
-    assert ids[:1] == ["V1"] and "V2.1" in ids and "V2.5" in ids and "V19" in ids and len(ids) == 24
+    assert ids[:1] == ["V1"] and "V2.1" in ids and "V2.5" in ids and "V19" in ids and "V21" in ids and len(ids) == 25
     v20 = next(r for r in runs if r["id"] == "V20")                       # S3, C1: CRSP after the headline sources
     assert v20["cfg"]["prices"]["sources"] == ["yahoo", "manual", "crsp"]
     v17 = next(r for r in runs if r["id"] == "V17")
@@ -91,3 +91,18 @@ def test_committee_classification_uses_the_membership_on_the_trade_date(tmp_path
     g = cm.classify(panel)["committee_group"].tolist()
     # on SSAS in March (version c1), moved to SSFI by July (version c2); AAPL is not defence; the ETF is left out
     assert g == [cm.OVERSEEN, cm.NOT, cm.NOT, "left out: ETF"]
+
+
+def test_departure_rule_is_off_in_the_headline_and_sells_on_departure_in_v21():
+    """D1 (2026-10-17): the headline has no departure exits; V21 closes a departed senator's lots at the first close
+    after their service ends and copies none of their later purchases."""
+    import yaml
+    from src.engine import departure_days
+    cfg = yaml.safe_load(open("config/config.yaml"))
+    assert not cfg.get("engine", {}).get("sell_on_departure", False)
+    lots = pd.read_csv("data/processed/lots.csv")
+    assert "senator left office" not in set(lots["exit_reason"])
+    cal = pd.read_csv("data/processed/trading_calendar.csv", dtype=str)["date"].tolist()
+    dep = departure_days([d for d in cal if "2020-09-09" <= d <= "2026-08-31"], "2026-08-31")
+    assert dep["M001190"] == "2026-03-24"          # Mullin's service ended 2026-03-23
+    assert "A000383" not in dep                     # Armstrong is still serving at the window end

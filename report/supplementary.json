@@ -1,0 +1,109 @@
+{
+ "positions_open_at_window_start": 70,
+ "share_transactions_received_after_1530_ET": 0.5260262378332629,
+ "share_PTRs_received_after_1530_ET": 0.356,
+ "sales_copier_21d_vs_SPY": {
+  "mean": 0.0014638595717341,
+  "t_clustered": 0.271294685830961
+ },
+ "series_b_pot": {
+  "K": 17138852.05108755,
+  "warmup_book": 1506533.386045048,
+  "cash": 15632318.665042503,
+  "cash_share_day_one": 0.9120983493203414
+ },
+ "senators_in_window": 31,
+ "senators_with_no_position": [
+  "Bernie Moreno",
+  "David McCormick",
+  "Deb Fischer",
+  "J.D. Vance",
+  "James C. Justice",
+  "John Thune",
+  "Katie Boyd Britt",
+  "Lindsey Graham",
+  "Marco Rubio",
+  "Maria Cantwell",
+  "Mark R. Warner",
+  "Rick Scott",
+  "Shelley Moore Capito",
+  "Tammy Duckworth",
+  "Thom Tillis"
+ ],
+ "etf_correlations": {
+  "months": 42,
+  "NANC_SPY": 0.9648051784801777,
+  "KRUZ_SPY": 0.8936604009644246,
+  "NANC_seriesA": 0.7747861720632665,
+  "KRUZ_seriesA": 0.8818481989241819
+ },
+ "check_series_a_reproduced_max_abs_diff": 2.4102525530977914e-11,
+ "window_profit_total": 7163613.139395574,
+ "window_profit_check_vs_engine": -0.0010526785627007484,
+ "share_profit_mullin_plus_moody": 0.7666895949519785,
+ "share_profit_by_senator": {
+  "Markwayne Mullin": 0.39450383784086857,
+  "Ashley Moody": 0.3721857571111099,
+  "Tommy Tuberville": 0.11616976967781933,
+  "Alan Armstrong": 0.03961817530509608,
+  "John Boozman": 0.03422154126926607,
+  "Sheldon Whitehouse": 0.011145377663975314
+ },
+ "moody": {
+  "positions": 16,
+  "top4_lots": {
+   "L00589": {
+    "symbol": "MU",
+    "pnl": 681547.9459616013
+   },
+   "L00625": {
+    "symbol": "AMD",
+    "pnl": 548550.110470584
+   },
+   "L00590": {
+    "symbol": "AMAT",
+    "pnl": 306243.97807952476
+   },
+   "L00588": {
+    "symbol": "AMAT",
+    "pnl": 306243.97807952476
+   }
+  },
+  "top4_pnl": 1842586.0125912349,
+  "top4_share_of_window_profit": 0.257214617363704
+ },
+ "mullin_open_at_window_end": {
+  "positions": 150,
+  "cost": 5999947.400668
+ },
+ "table_E2": {
+  "2023": {
+   "mullin_return": 0.1259460646053443,
+   "others_return": 0.22574565240468147,
+   "mullin_share_of_capital": 0.08832307926771633
+  },
+  "2024": {
+   "mullin_return": 0.20722401149686354,
+   "others_return": -0.0021494196676260513,
+   "mullin_share_of_capital": 0.5237639785640875
+  },
+  "2025": {
+   "mullin_return": 0.18202160892972152,
+   "others_return": 0.44636456500375443,
+   "mullin_share_of_capital": 0.5872177082054932
+  },
+  "2026": {
+   "mullin_return": 0.14389415592829935,
+   "others_return": 0.44615395051301654,
+   "mullin_share_of_capital": 0.49408342405048433
+  }
+ },
+ "departure_check_V21": {
+  "departure_days": "first trading day after the end of continuous Senate service",
+  "series_a": 0.15975277932415866,
+  "k": 1.6313878228179073,
+  "risk_matched_spy": 0.17302340890861,
+  "gap_vs_risk_matched": -0.013270629584451354,
+  "change_vs_headline": 0.02566381673381657
+ }
+}

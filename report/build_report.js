@@ -1,4 +1,5 @@
-// Builds Report V2: report/Copying_the_Senate_Report_V2.docx
+// Builds the Report V2 DRAFT (the group then edited it into the final report, report/Copying_the_US_Senate_Study_Group_B12_final.pdf):
+// docs/archive/report_v2_draft/Copying_the_Senate_Report_V2.docx
 // Text below; figures from report/figures (python report/build_figures.py); extra statistics from
 // report/diagnostics.json (python report/diagnostics.py). Every number is read off a committed file named
 // in the table notes, figure source lines or appendix. Run from the repo root:  node report/build_report.js
@@ -403,7 +404,7 @@ add(figure("report/figures/figA3_price_sources.png", 15.5, "D1", "The second hal
 add(H2("E. Every Variant, Full Window and Its Own Test Half"));
 add(figure("report/figures/fig7_variants.png", 15.5, "E1", "Return a year on the right. *V11 and V12 use 3- and 10-year windows, so their dates differ."));
 const VROWS = JSON.parse(fs.readFileSync(path.join(ROOT, "report", "variants_rows.json")));
-const VNAMES = {"H":"Headline","V1":"V1 / V2.1 exclude Tuberville","V2.2":"V2.2 exclude Armstrong","V2.3":"V2.3 exclude Mullin","V2.4":"V2.4 exclude Boozman","V2.5":"V2.5 exclude Whitehouse","V3":"V3 drop first 180 days in office","V4":"V4 drop bulk filings (50+ trades)","V5":"V5 exclude ETFs","V6":"V6 add spouse and child trades","V7":"V7 size at band lower bound","V8":"V8 equal dollars per trade","V9":"V9 same-day entry before 15:30 ET","V10":"V10 equal-weight lots","V11":"V11 3-year window (2023-09 on)","V12":"V12 10-year window (2016-09 on)","V13":"V13 exclude OTC names","V14":"V14 amendments as revised","V15":"V15 unpriced names earn SPY","V16":"V16 all ETFs incl. bond and T-bill","V17":"V17 empty start (no warm-up)†","V18":"V18 Yahoo prices only†","V19":"V19 include preferred shares†","V20":"V20 CRSP-filled prices†"};
+const VNAMES = {"H":"Headline","V1":"V1 / V2.1 exclude Tuberville","V2.2":"V2.2 exclude Armstrong","V2.3":"V2.3 exclude Mullin","V2.4":"V2.4 exclude Boozman","V2.5":"V2.5 exclude Whitehouse","V3":"V3 drop first 180 days in office","V4":"V4 drop bulk filings (50+ trades)","V5":"V5 exclude ETFs","V6":"V6 add spouse and child trades","V7":"V7 size at band lower bound","V8":"V8 equal dollars per trade","V9":"V9 same-day entry before 15:30 ET","V10":"V10 equal-weight lots","V11":"V11 3-year window (2023-09 on)","V12":"V12 10-year window (2016-09 on)","V13":"V13 exclude OTC names","V14":"V14 amendments as revised","V15":"V15 unpriced names earn SPY","V16":"V16 all ETFs incl. bond and T-bill","V17":"V17 empty start (no warm-up)†","V18":"V18 Yahoo prices only†","V19":"V19 include preferred shares†","V20":"V20 CRSP-filled prices†","V21":"V21 sale on departure from office‡"};
 add(table(["Variant (one rule changed)", "Return", "Sharpe", "CAPM alpha (t)", "Carhart alpha (t)", "Max DD", "Test-half return", "Test-half CAPM alpha (t)"],
   VROWS.filter((r) => r.id !== "V2.1").map((r) => r.status === "run" ? [VNAMES[r.id], r.ret, r.sharpe, r.capm, r.c4, r.mdd, r.oos_ret, r.oos_capm] : [VNAMES[r.id], "not run", "", "", "", "", "", ""]),
   [28, 9, 7, 13, 13, 8, 10, 14], { highlight: (r) => r[0] === "Headline" }));
@@ -486,7 +487,7 @@ const doc = new Document({
   }],
 });
 Packer.toBuffer(doc).then((buf) => {
-  const out = path.join(ROOT, "report", "Copying_the_Senate_Report_V2.docx");
+  const out = path.join(ROOT, "docs", "archive", "report_v2_draft", "Copying_the_Senate_Report_V2.docx");
   fs.writeFileSync(out, buf);
   console.log("wrote", out);
 });

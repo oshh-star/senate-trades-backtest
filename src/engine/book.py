@@ -83,8 +83,18 @@ class Prices:
 
 
 def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode: str = "skip",
-             fill_symbol: str = "SPY") -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Run the book over `days` (the trading days of the sample, in order). Returns (pieces, event_log)."""
+             fill_symbol: str = "SPY", departures: dict | None = None,
+             skip_after_departure: bool = False) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Run the book over `days` (the trading days of the sample, in order). Returns (pieces, event_log).
+
+    departures (supplementary check D1, off in the headline): {bioguide_id: first trading day after the senator's
+    service ended}. At that day's close every open lot of the senator is sold (exit reason "senator left office").
+    skip_after_departure: also ignore that senator's purchases disclosed from that day on (a former senator's late
+    filings of trades made in office are not copied). V21 sets both."""
+    departures = departures or {}
+    gone_on: dict[str, list] = {}
+    for b, d0 in departures.items():
+        gone_on.setdefault(d0, []).append(b)
     first, last_day = days[0], days[-1]
     open_lots: dict[tuple, list[Lot]] = {}
     acted: dict[str, tuple] = {}            # record_id -> ("bought", [Lot]) | ("sold", [(Lot, units)])
@@ -137,6 +147,15 @@ def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode:
         return lot
 
     for d in days:
+        for b in gone_on.get(d, []):                     # D1: the senator has left office; sell at this close
+            for key in [k for k in open_lots if k[0] == b]:
+                lots = held(key)
+                if lots:
+                    sold = sell(key, None, d, "senator left office", "")
+                    log.append({"event_no": np.nan, "record_id": "", "trade_id": "", "entry_date": d,
+                                "senator": lots[0].senator, "price_ticker": key[1], "transaction_type": "",
+                                "action": "sold all: senator left office (D1)",
+                                "dollars": sum(u for _, u in sold) * pieces[-1]["exit_price"], "lots_touched": len(sold)})
         for e in (by_day[d].itertuples() if d in by_day else []):
             key = (e.bioguide_id, e.price_ticker)
             base = {"event_no": e.event_no, "record_id": e.record_id, "trade_id": e.trade_id, "entry_date": d,
@@ -175,6 +194,10 @@ def simulate(events: pd.DataFrame, prices: Prices, days: list[str], ledger_mode:
             if not e.act:
                 continue
             # (b) act on the record
+            if (skip_after_departure and e.transaction_type == "Purchase" and e.bioguide_id in departures
+                    and d >= departures[e.bioguide_id]):
+                log.append({**base, "action": "skipped: senator has left office (D1)", "dollars": e.size})
+                continue
             if e.transaction_type == "Purchase":
                 p = prices.at(e.price_ticker, d)
                 if np.isfinite(p):
