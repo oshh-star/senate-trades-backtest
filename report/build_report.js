@@ -1,4 +1,5 @@
-// Builds Report V2: report/Copying_the_Senate_Report_V2.docx
+// Builds the Report V2 DRAFT (the group then edited it into the final report, report/Copying_the_US_Senate_Study_Group_B12_final.pdf):
+// docs/archive/report_v2_draft/Copying_the_Senate_Report_V2.docx
 // Text below; figures from report/figures (python report/build_figures.py); extra statistics from
 // report/diagnostics.json (python report/diagnostics.py). Every number is read off a committed file named
 // in the table notes, figure source lines or appendix. Run from the repo root:  node report/build_report.js
@@ -486,7 +487,7 @@ const doc = new Document({
   }],
 });
 Packer.toBuffer(doc).then((buf) => {
-  const out = path.join(ROOT, "report", "Copying_the_Senate_Report_V2.docx");
+  const out = path.join(ROOT, "docs", "archive", "report_v2_draft", "Copying_the_Senate_Report_V2.docx");
   fs.writeFileSync(out, buf);
   console.log("wrote", out);
 });

@@ -1,6 +1,23 @@
 # Handover
 
-## Read this first (2026-10-13)
+## Read this first (2026-10-17)
+- **Status**: the group's final report is in the repo (`report/Copying_the_US_Senate_Study_Group_B12_final.pdf`,
+  17 pages, body 10). The code reproduces every number in it: on 2026-10-17 the figures the group had computed outside
+  the repository (the departure check and Table E2, among others) were added as code (C3, V21,
+  `report/supplementary.py`). Report V2, the draft it was edited from, is in `docs/archive/report_v2_draft/`.
+- **What is left**: merge this branch's pull request, then build the two zips from main
+  (`python scripts/make_submission.py`), clean-room test them, and upload the report plus both zips to Canvas before
+  Monday 19 October 2026, 23:59.
+- **Two small wording points in the final report** (the group's call; neither changes a result): Table 2 says 53% of
+  PTRs arrive after 15:30 ET, but it is 53% of transactions (36% of PTRs); Table E2 gives Mullin's 2026 capital share
+  as 50%, which the code puts at 49.4%.
+- **Headline** unchanged since C1: Series A 13.41% a year, SPY 12.69%, risk-matched SPY 16.30%, CAPM alpha +1.07%
+  (NW t 0.18). The departure rule is off in the headline; V21 switches it on (15.98% a year).
+
+<details><summary>The 2026-10-13 summary this replaces</summary>
+
+### Read this first (2026-10-13)
+
 - **Status in one line**: the analysis is finished and **Report V2 is written**
   (`report/Copying_the_Senate_Report_V2.docx`, body exactly 10 pages, 18 with references and appendix). What is left:
   the group's checks on four points (below), then the submission zips.
@@ -15,6 +32,8 @@
   (H4 flips sign in the design half; the registered predictions are unchanged).
 - **Frozen and unlocked**: rules frozen at `348318447daa58a91af14ae65c8ee3c98522d896` (F1), test half unlocked (U1).
   No rule, parameter, scope, test or prediction may change; any fix is a logged post-unlock correction.
+
+</details>
 
 <details><summary>The 2026-10-09 summary this replaces</summary>
 
@@ -82,16 +101,16 @@ _Last updated: 2026-10-09 (Claude). Phase 7: report first draft written; submiss
   the dollars) plus SPY, and the prices stage compares the two sources automatically.
 
 ## Exact next step
-1. **The group reads Report V2** and settles the four `[GROUP]` points: group number and names on page 1; the AI-use
-   statement against the CA01 AI policy; the framing of H1 and H2 (both rest on bulk filings); the description of
-   NANC and KRUZ. The first draft is kept as `docs/archive/REPORT_DRAFT_v1.md`.
-2. **Put the Bloomberg puller's name in data/raw/manual_prices/SOURCES.md** (every row says "name TBC").
-3. **Merge the pull request** for `cleanup/report-v2` once the group is happy.
-4. **Submission (S4)**, on the FINAL commit only: `python scripts/make_submission.py`, then the clean-room test (unzip
-   both zips into an empty folder, `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet`; only
-   PNG fonts may differ). Upload the report (Word or PDF), submission.zip and submission_prices.zip to Canvas before
-   Monday 19 October 2026, 23:59.
-5. **If WRDS access arrives**: `python run_variants.py --only V20`. It cannot change the headline.
+1. **Merge the pull request** for `supplementary/departure-check` (adds V21, `report/supplementary.py`, the final
+   report, C3).
+2. **Build the zips from main**: `python scripts/make_submission.py` -> dist/submission.zip and
+   dist/submission_prices.zip. Clean-room test: unzip both into an empty folder, `pip install -r requirements.txt`,
+   `python run_all.py --skip-scrape`, `sha256sum -c CHECKSUMS.sha256 --quiet` (only the 3 PNGs in outputs/figures may
+   differ, font rendering).
+3. **Upload to Canvas** before Monday 19 October 2026, 23:59: the final report PDF, submission.zip,
+   submission_prices.zip. If Canvas rejects the size, email the report and a link to the zips to
+   rgomezcram@london.edu before the deadline (course guidance).
+4. Optional: put the Bloomberg puller's name in data/raw/manual_prices/SOURCES.md.
 
 ## Known limitations
 - **K7: spin-offs in renamed tickers.** UTX -> RTX (Carrier and Otis spun off in April 2020) and DWDP -> DD (Dow in
